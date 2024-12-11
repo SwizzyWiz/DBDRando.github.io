@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Killer Perk Randomizer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/3bdd4bb3ab.js" crossorigin="anonymous"></script>
+        <script src="Scripts/killer.js"></script>
+        <script>
+            $(document).ready(function(){
+                selectAllKill();
+                selectAllPerk();
+                selectAllAddon();
+                selectAllOffering();
+            });
+        </script>
+        <link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
+        <link rel="stylesheet" href="Scripts/killer.css">
+        <style>
+            
+        </style>
+    </head>
+    <body class="body">
+        <div class="navSurvivor">
+            <button onclick="document.location='Survivor.htm'">Switch to Survivor</button>
+        </div>
+        
+        <div class="selections">
+            <button class="dropSelections" onclick="dropdownSelections()">Toggle Selections</button>
+    <!--Killers Selection Start Here-->
+            <button class= "dropBtn" id="selectionsKill" onclick="dropdownKillers()">Owned Killers</button>
+            <div>
+            <!--Select/Deselect All Killer Buttons-->
+                <div class="dropdownKillBtn" id="dropKillsBtn">
+                    <input type="button" id="checkAllKill" name="checkAllKill" value="Check All Killers" onclick="selectAllKill()">
+
+                    <input type="button" id="decheckAllKill" name="decheckAllKill" value="Uncheck All Killers" onclick="deselectAllKill()">
+                </div>
+            <!--First Killer Selection Column-->
+                <div class="dropdownKill" id="dropKills1">
+                    <input type="checkbox" id="houndmaster" name="houndmaster" value="The Houndmaster" onchange="namedCharPooled(name)">
+                    <label for="houndmaster">The Houndmaster <mark>NEW!</mark></label><br>
+
+                    <input type="checkbox" id="trapper" name="trapper" value="The Trapper" onchange="namedCharPooled(name)">
+                    <label for="trapper">The Trapper</label><br>
+
+                    <input type="checkbox" id="wraith" name="wraith" value="The Wraith" onchange="namedCharPooled(name)">
+                    <label for="wraith">The Wraith</label><br>
+                
+                    <input type="checkbox" id="hillbilly" name="hillbilly" value="The Hillbilly" onchange="namedCharPooled(name)">
+                    <label for="hillbilly">The Hillbilly</label><br>
+                
+                    <input type="checkbox" id="nurse" name="nurse" value="The Nurse" onchange="namedCharPooled(name)">
+                    <label for="nurse">The Nurse</label><br>
+                
+                    <input type="checkbox" id="shape" name="shape" value="The Shape" onchange="namedCharPooled(name)">
+                    <label for="shape">The Shape</label><br>
+                
+                    <input type="checkbox" id="hag" name="hag" value="The Hag" onchange="namedCharPooled(name)">
+                    <label for="hag">The Hag</label><br>
+                
+                    <input type="checkbox" id="doctor" name="doctor" value="The Doctor" onchange="namedCharPooled(name)">
+                    <label for="doctor">The Doctor</label><br>
+
+                </div>
+            <!--Second Killer Selection Column-->               
+                <div class="dropdownKill" id="dropKills2">
+                    <input type="checkbox" id="huntress" name="huntress" value="The Huntress" onchange="namedCharPooled(name)">
+                    <label for="huntress">The Huntress</label><br>
+
+                    <input type="checkbox" id="cannibal" name="cannibal" value="The Cannibal" onchange="namedCharPooled(name)">
+                    <label for="cannibal">The Cannibal</label><br>
+
+                    <input type="checkbox" id="nightmare" name="nightmare" value="The Nightmare" onchange="namedCharPooled(name)">
+                    <label for="nightmare">The Nightmare</label><br>
+                                
+                    <input type="checkbox" id="pig" name="pig" value="The Pig" onchange="namedCharPooled(name)">
+                    <label for="pig">The Pig</label><br>
+                                
+                    <input type="checkbox" id="clown" name="clown" value="The Clown" onchange="namedCharPooled(name)">
+                    <label for="clown">The Clown</label><br>
+                
+                    <input type="checkbox" id="spirit" name="spirit" value="The Spirit" onchange="namedCharPooled(name)">
+                    <label for="spirit">The Spirit</label><br>
+                                
+                    <input type="checkbox" id="legion" name="legion" value="The Legion" onchange="namedCharPooled(name)">
+                    <label for="legion">The Legion</label><br>
+                                
+                    <input type="checkbox" id="plague" name="plague" value="The Plague" onchange="namedCharPooled(name)">
+                    <label for="plague">The Plague</label><br>
+
+                </div>
+            <!--Third Killer Selection Column-->
+                <div class="dropdownKill" id="dropKills3">
+                    <input type="checkbox" id="ghostface" name="ghostface" value="The Ghost Face" onchange="namedCharPooled(name)">
+                    <label for="ghostface">The Ghost Face</label><br>
+
+                    <input type="checkbox" id="demogorgon" name="demogorgon" value="The Demogorgon" onchange="namedCharPooled(name)">
+                    <label for="demogorgon">The Demogorgon</label><br>
+                                
+                    <input type="checkbox" id="oni" name="oni" value="The Oni" onchange="namedCharPooled(name)">
+                    <label for="oni">The Oni</label><br>
+
+                    <input type="checkbox" id="deathslinger" name="deathslinger" value="The Deathslinger" onchange="namedCharPooled(name)">
+                    <label for="deathslinger">The Deathslinger</label><br>
+                                 
+                    <input type="checkbox" id="executioner" name="executioner" value="The Executioner" onchange="namedCharPooled(name)">
+                    <label for="executioner">The Executioner</label><br>
+                                 
+                    <input type="checkbox" id="blight" name="blight" value="The Blight" onchange="namedCharPooled(name)">
+                    <label for="blight">The Blight</label><br>
+                                 
+                    <input type="checkbox" id="twins" name="twins" value="The Twins" onchange="namedCharPooled(name)">
+                    <label for="twins">The Twins</label><br>
+                                  
+                    <input type="checkbox" id="trickster" name="trickster" value="The Trickster" onchange="namedCharPooled(name)">
+                    <label for="trickster">The Trickster</label><br>
+
+                </div>                
+            <!--Fourth Killer Selection Column-->
+                <div class="dropdownKill" id="dropKills4">
+                    <input type="checkbox" id="nemesis" name="nemesis" value="The Nemesis" onchange="namedCharPooled(name)">
+                    <label for="nemesis">The Nemesis</label><br>
+
+                    <input type="checkbox" id="cenobite" name="cenobite" value="The Cenobite" onchange="namedCharPooled(name)">
+                    <label for="cenobite">The Cenobite</label><br>
+
+                    <input type="checkbox" id="artist" name="artist" value="The Artist" onchange="namedCharPooled(name)">
+                    <label for="artist">The Artist</label><br>
+                                
+                    <input type="checkbox" id="onryo" name="onryo" value="The Onryo" onchange="namedCharPooled(name)">
+                    <label for="onryo">The Onryō</label><br>
+
+                    <input type="checkbox" id="dredge" name="dredge" value="The Dredge" onchange="namedCharPooled(name)">
+                    <label for="dredge">The Dredge</label><br>
+                                
+                    <input type="checkbox" id="mastermind" name="mastermind" value="The Mastermind" onchange="namedCharPooled(name)">
+                    <label for="mastermind">The Mastermind</label><br>
+                                
+                    <input type="checkbox" id="knight" name="knight" value="The Knight" onchange="namedCharPooled(name)">
+                    <label for="knight">The Knight</label><br>
+                                
+                    <input type="checkbox" id="skullMerc" name="skullMerc" value="The Skull Merchant" onchange="namedCharPooled(name)">
+                    <label for="skullMerc">The Skull Merchant</label><br>
+  
+                </div>   
+            <!--Fifth Killer Selection Column-->
+                <div class="dropdownKill" id="dropKills5">
+                    <input type="checkbox" id="singularity" name="singularity" value="The Singularity" onchange="namedCharPooled(name)">
+                    <label for="singularity">The Singularity</label><br>
+
+                    <input type="checkbox" id="xenomorph" name="xenomorph" value="The Xenomorph" onchange="namedCharPooled(name)">
+                    <label for="xenomorph">The Xenomorph</label><br>
+                                
+                    <input type="checkbox" id="goodGuy" name="goodGuy" value="The Good Guy" onchange="namedCharPooled(name)">
+                    <label for="goodGuy">The Good Guy</label><br>
+                                
+                    <input type="checkbox" id="unknown" name="unknown" value="The Unknown" onchange="namedCharPooled(name)">
+                    <label for="unknown">The Unknown</label><br>
+                                
+                    <input type="checkbox" id="lich" name="lich" value="The Lich" onchange="namedCharPooled(name)">
+                    <label for="lich">The Lich</label><br>
+
+                    <input type="checkbox" id="darkLord" name="darkLord" value="The Dark Lord" onchange="namedCharPooled(name)">
+                    <label for="darkLord">The Dark Lord</label><br>
+
+                    
+                </div>  
+            </div>
+    <!--Perks Selection Start Here-->
+            <button class="dropBtn" id="selectionsPerks" onclick="dropdownPerks()">Selectable Perks</button>
+            <div>
+            <!--Select/Deselect All Perk Buttons-->
+                <div class="dropdownPerkBtn" id="dropPerksBtn">
+                    <input type="button" id="checkAllPerk" name="checkAllPerk" value="Check All Perks" onclick="selectAllPerk()">
+
+                    <input type="button" id="decheckAllPerk" name="decheckAllPerk" value="Uncheck All Perks" onclick="deselectAllPerk()">
+                </div>
+            <!--First Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks1">
+                    <fieldset class="baseOptPerks">
+                        <legend>Basic Options</legend>
+                        <input type="checkbox" id="univPerks" name="univPerks" value="Universal Perks" onchange="universalPerkPooled(name)">
+                        <label for="univPerks">Universal Perks</label><br>
+
+                        <input type="checkbox" id="anyCho" name="anyCho" value="Any Choice" onchange="multiPerkPooled('multiAnyHide', name,'anyNum')">
+                        <label for="anyCho">Any Choice</label>
+                        <button class="multiAnyHide" id="anyDecBtn" onclick="decrease('anyNum','anyCho')"><i class='fas fa-angle-left'></i></button>
+                        <i class="multiAnyHide" id="anyNum">1</i>
+                        <button class="multiAnyHide" id="anyIncBtn" onclick="increase('anyNum','anyCho')"><i class='fas fa-angle-right'></i></button>
+                        <br>
+
+                        <input type="checkbox" id="noCho" name="noCho" value="No Choice" onchange="multiPerkPooled('multiNoHide', name,'noNum')">
+                        <label for="noCho">No Choice</label>
+                        <button class="multiNoHide" id="noDecBtn" onclick="decrease('noNum','noCho')"><i class='fas fa-angle-left'></i></button>
+                        <i class="multiNoHide" id="noNum">1</i>
+                        <button class="multiNoHide" id="noIncBtn" onclick="increase('noNum','noCho')"><i class='fas fa-angle-right'></i></button>
+                        <br>
+                    </fieldset>
+
+                    <fieldset class="houndmasterPerks">
+                        <legend>The Houndmaster <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="allShaThu" name="allShaThu" value="All-Shaking Thunder" onchange="namedPerkPooled(name)">
+                        <label for="allShaThu">All-Shaking Thunder</label><br>
+
+                        <input type="checkbox" id="noQua" name="noQua" value="No Quarter" onchange="namedPerkPooled(name)">
+                        <label for="noQua">No Quarter</label><br>
+
+                        <input type="checkbox" id="scoHooJagCom" name="scoHooJagCom" value="Scourge Hook: Jagged Compass" onchange="namedPerkPooled(name)">
+                        <label for="scoHooJagCom">Scourge Hook: Jagged Compass</label><br>
+                    </fieldset>
+
+                    <fieldset class="trapperPerks">
+                        <legend>The Trapper</legend>
+                        <input type="checkbox" id="agi" name="agi" value="Agitation" onchange="namedPerkPooled(name)">
+                        <label for="agi">Agitation</label><br>
+    
+                        <input type="checkbox" id="bruStr" name="bruStr" value="Brutal Strength" onchange="namedPerkPooled(name)">
+                        <label for="bruStr">Brutal Strength</label><br>
+    
+                        <input type="checkbox" id="unnPre" name="unnPre" value="Unnerving Presence" onchange="namedPerkPooled(name)">
+                        <label for="unnPre">Unnerving Presence</label><br>
+                    </fieldset>
+                
+                    <fieldset class="wraithPerks">
+                        <legend>The Wraith</legend>
+                        <input type="checkbox" id="blo" name="blo" value="Bloodhound" onchange="namedPerkPooled(name)">
+                        <label for="blo">Bloodhound</label><br>
+    
+                        <input type="checkbox" id="pre" name="pre" value="Predator" onchange="namedPerkPooled(name)">
+                        <label for="pre">Predator</label><br>
+    
+                        <input type="checkbox" id="sha" name="sha" value="Shadowborn" onchange="namedPerkPooled(name)">
+                        <label for="sha">Shadowborn</label><br>
+                    </fieldset>
+
+                    <fieldset class="hillbillyPerks">
+                        <legend>The Hillbilly</legend>
+                        <input type="checkbox" id="end" name="end" value="Enduring" onchange="namedPerkPooled(name)">
+                        <label for="end">Enduring</label><br>
+    
+                        <input type="checkbox" id="lig" name="lig" value="Lightborn" onchange="namedPerkPooled(name)">
+                        <label for="lig">Lightborn</label><br>
+    
+                        <input type="checkbox" id="tin" name="tin" value="Tinkerer" onchange="namedPerkPooled(name)">
+                        <label for="tin">Tinkerer</label><br>
+                    </fieldset>
+                    
+                    <fieldset class="nursePerks">
+                        <legend>Claudette Morel</legend>
+                        <input type="checkbox" id="nurCal" name="nurCal" value="A Nurse's Calling" onchange="namedPerkPooled(name)">
+                        <label for="nurCal">A Nurse's Calling</label><br>
+    
+                        <input type="checkbox" id="str" name="str" value="Stridor" onchange="namedPerkPooled(name)">
+                        <label for="str">Stridor</label><br>
+    
+                        <input type="checkbox" id="tha" name="tha" value="Thanatophobia" onchange="namedPerkPooled(name)">
+                        <label for="tha">Thanatophobia</label><br>
+                    </fieldset>
+                
+                    <fieldset class="shapePerks">
+                        <legend>The Shape</legend>
+                        <input type="checkbox" id="dyiLig" name="dyiLig" value="Dying Light" onchange="namedPerkPooled(name)">
+                        <label for="dyiLig">Dying Light</label><br>
+    
+                        <input type="checkbox" id="plaWitYouFoo" name="plaWitYouFoo" value="Play with Your Food" onchange="namedPerkPooled(name)">
+                        <label for="plaWitYouFoo">Play with Your Food</label><br>
+    
+                        <input type="checkbox" id="savBesLas" name="savBesLas" value="Save the Best for Last" onchange="namedPerkPooled(name)">
+                        <label for="savBesLas">Save the Best for Last</label><br>
+                    </fieldset>
+                
+                    <fieldset class="hagPerks">
+                        <legend>The Hag</legend>
+                        <input type="checkbox" id="hexDevHop" name="hexDevHop" value="Hex: Devour Hope" onchange="namedPerkPooled(name)">
+                        <label for="hexDevHop">Hex: Devour Hope</label><br>
+    
+                        <input type="checkbox" id="hexRui" name="hexRui" value="Hex: Ruin" onchange="namedPerkPooled(name)">
+                        <label for="hexRui">Hex: Ruin</label><br>
+    
+                        <input type="checkbox" id="hexThiSea" name="hexThiSea" value="Hex: The Third Seal" onchange="namedPerkPooled(name)">
+                        <label for="hexThiSea">Hex: The Third Seal</label><br>
+                    </fieldset>
+
+                </div>
+            <!--Second Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks2">
+                    <fieldset class="doctorPerks">
+                        <legend>The Doctor</legend>
+                        <input type="checkbox" id="monAbu" name="monAbu" value="Monitor & Abuse" onchange="namedPerkPooled(name)">
+                        <label for="monAbu">Monitor & Abuse</label><br>
+    
+                        <input type="checkbox" id="ove" name="ove" value="Overcharge" onchange="namedPerkPooled(name)">
+                        <label for="ove">Overcharge</label><br>
+    
+                        <input type="checkbox" id="ovePre" name="ovePre" value="Overwhelming Presence" onchange="namedPerkPooled(name)">
+                        <label for="ovePre">Overwhelming Presence</label><br>
+                    </fieldset>
+
+                    <fieldset class="huntressPerks">
+                        <legend>The Huntress</legend>
+                        <input type="checkbox" id="beaPre" name="beaPre" value="Beast of Prey" onchange="namedPerkPooled(name)">
+                        <label for="beaPre">Beast of Prey</label><br>
+    
+                        <input type="checkbox" id="hexHunLul" name="hexHunLul" value="Hex: Huntress Lullaby" onchange="namedPerkPooled(name)">
+                        <label for="hexHunLul">Hex: Huntress Lullaby</label><br>
+    
+                        <input type="checkbox" id="terImp" name="terImp" value="Territorial Imperative" onchange="namedPerkPooled(name)">
+                        <label for="terImp">Territorial Imperative</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="cannibalPerks">
+                        <legend>The Cannibal</legend>
+                        <input type="checkbox" id="bbq" name="bbq" value="Barbecue & Chilli" onchange="namedPerkPooled(name)">
+                        <label for="bbq">Barbecue & Chilli</label><br>
+    
+                        <input type="checkbox" id="fraDem" name="fraDem" value="Franklin's Demise" onchange="namedPerkPooled(name)">
+                        <label for="fraDem">Franklin's Demise</label><br>
+    
+                        <input type="checkbox" id="knoOut" name="knoOut" value="Knock Out" onchange="namedPerkPooled(name)">
+                        <label for="knoOut">Knock Out</label><br>
+                    </fieldset>
+
+                    <fieldset class="nightmarePerks">
+                        <legend>The Nightmare</legend>
+                        <input type="checkbox" id="bloWar" name="bloWar" value="Blood Warden" onchange="namedPerkPooled(name)">
+                        <label for="bloWar">Blood Warden</label><br>
+
+                        <input type="checkbox" id="firUp" name="firUp" value="Fire Up" onchange="namedPerkPooled(name)">
+                        <label for="firUp">Fire Up</label><br>
+
+                        <input type="checkbox" id="remMe" name="remMe" value="Remember Me" onchange="namedPerkPooled(name)">
+                        <label for="remMe">Remember Me</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="pigPerks">
+                        <legend>The Pig</legend>
+                        <input type="checkbox" id="makYouCho" name="makYouCho" value="Make Your Choice" onchange="namedPerkPooled(name)">
+                        <label for="makYouCho">Make Your Choice</label><br>
+
+                        <input type="checkbox" id="scoHooHanTri" name="scoHooHanTri" value="Scourge Hook: Hangman's Trick" onchange="namedPerkPooled(name)">
+                        <label for="scoHooHanTri">Scourge Hook: Hangman's Trick</label><br>
+
+                        <input type="checkbox" id="sur" name="sur" value="Surveillance" onchange="namedPerkPooled(name)">
+                        <label for="sur">Surveillance</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="clownPerks">
+                        <legend>The Clown</legend>
+                        <input type="checkbox" id="bam" name="bam" value="Bamboozle" onchange="namedPerkPooled(name)">
+                        <label for="bam">Bamboozle</label><br>
+
+                        <input type="checkbox" id="cou" name="cou" value="Coulrophobia" onchange="namedPerkPooled(name)">
+                        <label for="cou">Coulrophobia</label><br>
+
+                        <input type="checkbox" id="popGoWea" name="popGoWea" value="Pop Goes the Weasel" onchange="namedPerkPooled(name)">
+                        <label for="popGoWea">Pop Goes the Weasel</label><br>
+                    </fieldset>
+                    
+                    <fieldset class="spiritPerks">
+                        <legend>The Spirit</legend>
+                        <input type="checkbox" id="hexHauGro" name="hexHauGro" value="Hex: Haunted Ground" onchange="namedPerkPooled(name)">
+                        <label for="hexHauGro">Hex: Haunted Ground</label><br>
+
+                        <input type="checkbox" id="ran" name="ran" value="Rancor" onchange="namedPerkPooled(name)">
+                        <label for="ran">Rancor</label><br>
+
+                        <input type="checkbox" id="spiFur" name="spiFur" value="Spirit Fury" onchange="namedPerkPooled(name)">
+                        <label for="spiFur">Spirit Fury</label><br>
+                    </fieldset>
+            
+                    <fieldset class="legionPerks">
+                        <legend>The Legion</legend>
+                        <input type="checkbox" id="dis" name="dis" value="Discordance" onchange="namedPerkPooled(name)">
+                        <label for="dis">Discordance</label><br>
+
+                        <input type="checkbox" id="iroMai" name="iroMai" value="Iron Maiden" onchange="namedPerkPooled(name)">
+                        <label for="iroMai">Iron Maiden</label><br>
+
+                        <input type="checkbox" id="madGri" name="madGri" value="Mad Grit" onchange="namedPerkPooled(name)">
+                        <label for="madGri">Mad Grit</label><br>
+                    </fieldset>
+             
+                </div>
+            <!--Third Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks3">
+                    <fieldset class="plaguePerks">
+                        <legend>The Plague</legend>
+                        <input type="checkbox" id="corInt" name="corInt" value="Corrupt Intervention" onchange="namedPerkPooled(name)">
+                        <label for="corInt">Corrupt Intervention</label><br>
+
+                        <input type="checkbox" id="darDev" name="darDev" value="Dark Devotion" onchange="namedPerkPooled(name)">
+                        <label for="darDev">Dark Devotion</label><br>
+
+                        <input type="checkbox" id="infFri" name="infFri" value="Infectious Fright" onchange="namedPerkPooled(name)">
+                        <label for="infFri">Infectious Fright</label><br>
+                    </fieldset>
+
+                    <fieldset class="ghostfacePerks">
+                        <legend>The Ghost Face</legend>
+                        <input type="checkbox" id="furCha" name="furCha" value="Furtive Chase" onchange="namedPerkPooled(name)">
+                        <label for="furCha">Furtive Chase</label><br>
+
+                        <input type="checkbox" id="imAllEar" name="imAllEar" value="I'm All Ears" onchange="namedPerkPooled(name)">
+                        <label for="imAllEar">I'm All Ears</label><br>
+
+                        <input type="checkbox" id="thrTre" name="thrTre" value="Thrilling Tremors" onchange="namedPerkPooled(name)">
+                        <label for="thrTre">Thrilling Tremors</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="demogorgonPerks">
+                        <legend>The Demogorgon</legend>
+                        <input type="checkbox" id="cruLim" name="cruLim" value="Cruel Limits" onchange="namedPerkPooled(name)">
+                        <label for="cruLim">Cruel Limits</label><br>
+
+                        <input type="checkbox" id="min" name="min" value="Mindbreaker" onchange="namedPerkPooled(name)">
+                        <label for="min">Mindbreaker</label><br>
+
+                        <input type="checkbox" id="surge" name="surge" value="Surge" onchange="namedPerkPooled(name)">
+                        <label for="surge">Surge</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="oniPerks">
+                        <legend>The Oni</legend>
+                        <input type="checkbox" id="bloEch" name="bloEch" value="Blood Echo" onchange="namedPerkPooled(name)">
+                        <label for="bloEch">Blood Echo</label><br>
+
+                        <input type="checkbox" id="nem" name="nem" value="Nemesis" onchange="namedPerkPooled(name)">
+                        <label for="nem">Nemesis</label><br>
+
+                        <input type="checkbox" id="zanTac" name="zanTac" value="Zanshin Tactics" onchange="namedPerkPooled(name)">
+                        <label for="zanTac">Zanshin Tactics</label><br>
+                    </fieldset>
+
+                    <fieldset class="deathslingerPerks">
+                        <legend>The Deathslinger</legend>
+                        <input type="checkbox" id="deaManSwi" name="deaManSwi" value="Dead Man's Switch" onchange="namedPerkPooled(name)">
+                        <label for="deaManSwi">Dead Man's Switch</label><br>
+
+                        <input type="checkbox" id="gea" name="gea" value="Gearhead" onchange="namedPerkPooled(name)">
+                        <label for="gea">Gearhead</label><br>
+
+                        <input type="checkbox" id="hexRet" name="hexRet" value="Hex: Retribution" onchange="namedPerkPooled(name)">
+                        <label for="hexRet">Hex: Retribution</label><br>
+                    </fieldset>   
+                                 
+                    <fieldset class="executionerPerks">
+                        <legend>The Executioner</legend>
+                        <input type="checkbox" id="dea" name="dea" value="Deathbound" onchange="namedPerkPooled(name)">
+                        <label for="dea">Deathbound</label><br>
+
+                        <input type="checkbox" id="forPen" name="forPen" value="Forced Penance" onchange="namedPerkPooled(name)">
+                        <label for="forPen">Forced Penance</label><br>
+
+                        <input type="checkbox" id="traTor" name="traTor" value="Trail of Torment" onchange="namedPerkPooled(name)">
+                        <label for="traTor">Trail of Torment</label><br>
+                    </fieldset>   
+                                 
+                    <fieldset class="blightPerks">
+                        <legend>The Blight</legend>
+                        <input type="checkbox" id="draGri" name="draGri" value="Dragon's Grip" onchange="namedPerkPooled(name)">
+                        <label for="draGri">Dragon's Grip</label><br>
+
+                        <input type="checkbox" id="hexBloFav" name="hexBloFav" value="Hex: Blood Favour" onchange="namedPerkPooled(name)">
+                        <label for="hexBloFav">Hex: Blood Favour</label><br>
+
+                        <input type="checkbox" id="hexUnd" name="hexUnd" value="Hex: Undying" onchange="namedPerkPooled(name)">
+                        <label for="hexUnd">Hex: Undying</label><br>
+                    </fieldset>   
+                                 
+                    <fieldset class="twinsPerks">
+                        <legend>The Twins</legend>
+                        <input type="checkbox" id="couDeGra" name="couDeGra" value="Coup de Grace" onchange="namedPerkPooled(name)">
+                        <label for="couDeGra">Coup de Grâce</label><br>
+
+                        <input type="checkbox" id="hoa" name="hoa" value="Hoarder" onchange="namedPerkPooled(name)">
+                        <label for="hoa">Hoarder</label><br>
+
+                        <input type="checkbox" id="opp" name="opp" value="Oppression" onchange="namedPerkPooled(name)">
+                        <label for="opp">Oppression</label><br>
+                    </fieldset>   
+      
+                </div>
+            <!--Fourth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks4">
+                    <fieldset class="tricksterPerks">
+                        <legend>The Trickster</legend>
+                        <input type="checkbox" id="hexCroCon" name="hexCroCon" value="Hex: Crowd Control" onchange="namedPerkPooled(name)">
+                        <label for="hexCroCon">Hex: Crowd Control</label><br>
+
+                        <input type="checkbox" id="noWayOut" name="noWayOut" value="No Way Out" onchange="namedPerkPooled(name)">
+                        <label for="noWayOut">No Way Out</label><br>
+
+                        <input type="checkbox" id="sta" name="sta" value="Starstruck" onchange="namedPerkPooled(name)">
+                        <label for="sta">Starstruck</label><br>
+                    </fieldset>
+
+                    <fieldset class="nemesisPerks">
+                        <legend>The Nemesis</legend>
+                        <input type="checkbox" id="eru" name="eru" value="Eruption" onchange="namedPerkPooled(name)">
+                        <label for="eru">Eruption</label><br>
+
+                        <input type="checkbox" id="hys" name="hys" value="Hysteria" onchange="namedPerkPooled(name)">
+                        <label for="hys">Hysteria</label><br>
+
+                        <input type="checkbox" id="letPur" name="letPur" value="Lethal Pursuer" onchange="namedPerkPooled(name)">
+                        <label for="letPur">Lethal Pursuer</label><br>
+                    </fieldset>   
+                                
+                    <fieldset class="cenobitePerks">
+                        <legend>The Cenobite</legend>
+                        <input type="checkbox" id="dead" name="dead" value="Deadlock" onchange="namedPerkPooled(name)">
+                        <label for="dead">Deadlock</label><br>
+
+                        <input type="checkbox" id="hexPla" name="hexPla" value="Hex: Plaything" onchange="namedPerkPooled(name)">
+                        <label for="hexPla">Hex: Plaything</label><br>
+
+                        <input type="checkbox" id="scoHooGifPai" name="scoHooGifPai" value="Scourge Hook: Gift of Pain" onchange="namedPerkPooled(name)">
+                        <label for="scoHooGifPai">Scourge Hook: Gift of Pain</label><br>
+                    </fieldset>   
+                                
+                    <fieldset class="artistPerks">
+                        <legend>The Artist</legend>
+                        <input type="checkbox" id="griEmb" name="griEmb" value="Grim Embrace" onchange="namedPerkPooled(name)">
+                        <label for="griEmb">Grim Embrace</label><br>
+
+                        <input type="checkbox" id="hexPen" name="hexPen" value="Hex: Pentimento" onchange="namedPerkPooled(name)">
+                        <label for="hexPen">Hex: Pentimento</label><br>
+
+                        <input type="checkbox" id="scoHooPaiRes" name="scoHooPaiRes" value="Scourge Hook: Pain Resonance" onchange="namedPerkPooled(name)">
+                        <label for="scoHooPaiRes">Scourge Hook: Pain Resonance</label><br>
+                    </fieldset>   
+                                
+                    <fieldset class="onryoPerks">
+                        <legend>The Onryō</legend>
+                        <input type="checkbox" id="calBri" name="calBri" value="Call of Brine" onchange="namedPerkPooled(name)">
+                        <label for="calBri">Call of Brine</label><br>
+
+                        <input type="checkbox" id="merSto" name="merSto" value="Merciless Storm" onchange="namedPerkPooled(name)">
+                        <label for="merSto">Merciless Storm</label><br>
+
+                        <input type="checkbox" id="scoHooFloRag" name="scoHooFloRag" value="Scourge Hook: Floods of Rage" onchange="namedPerkPooled(name)">
+                        <label for="scoHooFloRag">Scourge Hook: Floods of Rage</label><br>
+                    </fieldset>
+
+                    <fieldset class="dredgePerks">
+                        <legend>The Dredge</legend>
+                        <input type="checkbox" id="darRev" name="darRev" value="Darkness Revealed" onchange="namedPerkPooled(name)">
+                        <label for="darRev">Darkness Revealed</label><br>
+
+                        <input type="checkbox" id="diss" name="diss" value="Dissolution" onchange="namedPerkPooled(name)">
+                        <label for="diss">Dissolution</label><br>
+
+                        <input type="checkbox" id="sepTou" name="sepTou" value="Septic Touch" onchange="namedPerkPooled(name)">
+                        <label for="sepTou">Septic Touch</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="mastermindPerks">
+                        <legend>The Mastermind</legend>
+                        <input type="checkbox" id="awaAwa" name="awaAwa" value="Awakened Awareness" onchange="namedPerkPooled(name)">
+                        <label for="awaAwa">Awakened Awareness</label><br>
+
+                        <input type="checkbox" id="supAna" name="supAna" value="Superior Anatomy" onchange="namedPerkPooled(name)">
+                        <label for="supAna">Superior Anatomy</label><br>
+
+                        <input type="checkbox" id="ter" name="ter" value="Terminus" onchange="namedPerkPooled(name)">
+                        <label for="ter">Terminus</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="knightPerks">
+                        <legend>The Knight</legend>
+                        <input type="checkbox" id="hexFacDar" name="hexFacDar" value="Hex: Face the Darkness" onchange="namedPerkPooled(name)">
+                        <label for="hexFacDar">Hex: Face the Darkness</label><br>
+
+                        <input type="checkbox" id="hub" name="hub" value="Hubris" onchange="namedPerkPooled(name)">
+                        <label for="hub">Hubris</label><br>
+
+                        <input type="checkbox" id="nowHid" name="nowHid" value="Nowhere to Hide" onchange="namedPerkPooled(name)">
+                        <label for="nowHid">Nowhere to Hide</label><br>
+                    </fieldset>
+ 
+                </div>
+            <!--Fifth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks5">
+                    <fieldset class="skullMercPerks">
+                        <legend>The Skull Merchant</legend>
+                        <input type="checkbox" id="gamAfo" name="gamAfo" value="Game Afoot" onchange="namedPerkPooled(name)">
+                        <label for="gamAfo">Game Afoot</label><br>
+
+                        <input type="checkbox" id="lev" name="lev" value="Leverage" onchange="namedPerkPooled(name)">
+                        <label for="lev">Leverage</label><br>
+
+                        <input type="checkbox" id="thw" name="thw" value="THWACK!" onchange="namedPerkPooled(name)">
+                        <label for="thw">THWACK!</label><br>
+                    </fieldset>
+
+                    <fieldset class="singularityPerks">
+                        <legend>The Singularity</legend>
+                        <input type="checkbox" id="forHes" name="forHes" value="Forced Hesitation" onchange="namedPerkPooled(name)">
+                        <label for="forHes">Forced Hesitation</label><br>
+
+                        <input type="checkbox" id="genLim" name="genLim" value="Genetic Limits" onchange="namedPerkPooled(name)">
+                        <label for="genLim">Genetic Limits</label><br>
+
+                        <input type="checkbox" id="macLea" name="macLea" value="Machine Learning" onchange="namedPerkPooled(name)">
+                        <label for="macLea">Machine Learning</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="xenomorphPerks">
+                        <legend>The Xenomorph</legend>
+                        <input type="checkbox" id="aliIns" name="aliIns" value="Alien Instinct" onchange="namedPerkPooled(name)">
+                        <label for="aliIns">Alien Instinct</label><br>
+
+                        <input type="checkbox" id="rapBru" name="rapBru" value="Rapid Brutality" onchange="namedPerkPooled(name)">
+                        <label for="rapBru">Rapid Brutality</label><br>
+
+                        <input type="checkbox" id="ultWea" name="ultWea" value="Ultimate Weapon" onchange="namedPerkPooled(name)">
+                        <label for="ultWea">Ultimate Weapon</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="goodGuyPerks">
+                        <legend>The Good Guy</legend>
+                        <input type="checkbox" id="batInc" name="batInc" value="Batteries Included" onchange="namedPerkPooled(name)">
+                        <label for="batInc">Batteries Included</label><br>
+
+                        <input type="checkbox" id="friEnd" name="friEnd" value="Friends 'til the End" onchange="namedPerkPooled(name)">
+                        <label for="friEnd">Friends 'til the End</label><br>
+
+                        <input type="checkbox" id="hexTwoCanPla" name="hexTwoCanPla" value="Hex: Two Can Play" onchange="namedPerkPooled(name)">
+                        <label for="hexTwoCanPla">Hex: Two Can Play</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="unknownPerks">
+                        <legend>The Unknown</legend>
+                        <input type="checkbox" id="unb" name="unb" value="Unbound" onchange="namedPerkPooled(name)">
+                        <label for="unb">Unbound</label><br>
+
+                        <input type="checkbox" id="und" name="und" value="Undone" onchange="namedPerkPooled(name)">
+                        <label for="und">Undone</label><br>
+
+                        <input type="checkbox" id="unf" name="unf" value="Unforeseen" onchange="namedPerkPooled(name)">
+                        <label for="unf">Unforeseen</label><br>
+                    </fieldset>
+                                
+                    <fieldset class="lichPerks">
+                        <legend>The Lich</legend>
+                        <input type="checkbox" id="darArr" name="darArr" value="Dark Arrogance" onchange="namedPerkPooled(name)">
+                        <label for="darArr">Dark Arrogance</label><br>
+
+                        <input type="checkbox" id="lanTou" name="lanTou" value="Languid Touch" onchange="namedPerkPooled(name)">
+                        <label for="lanTou">Languid Touch</label><br>
+
+                        <input type="checkbox" id="weaAtt" name="weaAtt" value="Weave Attunement" onchange="namedPerkPooled(name)">
+                        <label for="weaAtt">Weave Attunement</label><br>
+                    </fieldset>
+
+                    <fieldset class="darkLordPerks">
+                        <legend>The Dark Lord</legend>
+                        <input type="checkbox" id="dom" name="dom" value="Dominance" onchange="namedPerkPooled(name)">
+                        <label for="dom">Dominance</label><br>
+
+                        <input type="checkbox" id="hexWreFat" name="hexWreFat" value="Hex: Wretched Fate" onchange="namedPerkPooled(name)">
+                        <label for="hexWreFat">Hex: Wretched Fate</label><br>
+
+                        <input type="checkbox" id="humGre" name="humGre" value="Human Greed" onchange="namedPerkPooled(name)">
+                        <label for="humGre">Human Greed</label><br>
+                    </fieldset>
+
+                </div>
+            </div>
+    <!--Add-ons Selection Start Here-->
+            <button class="dropBtn" id="selectionsAddons" onclick="dropdownAddons()">Selectable Add-Ons</button>
+            <div>
+            <!--Select/Deselect All Addon Buttons-->
+                <div class="dropdownAddonsBtn" id="dropAddonsBtn">
+                    <input type="button" id="checkAllAddon" name="checkAllAddon" value="Check All Addons" onclick="selectAllAddon()">
+
+                    <input type="button" id="decheckAllAddon" name="decheckAllAddon" value="Uncheck All Addons" onclick="deselectAllAddon()">
+                </div>
+            <!--Commons Selection Column-->
+                <div class="dropdownAddon" id="dropCommons">
+                    <input type="checkbox" id="commons" name="commons" value="Commons">
+                    <label for="commons">Commons</label><br>
+                </div>
+            <!--Uncommons Selection Column-->
+                <div class="dropdownAddon" id="dropUncommons">
+                    <input type="checkbox" id="uncommons" name="uncommons" value="Uncommons">
+                    <label for="uncommons">Uncommons</label><br>
+                </div>
+            <!--Rares Selection Column-->
+                <div class="dropdownAddon" id="dropRares">
+                    <input type="checkbox" id="rares" name="rares" value="Rares">
+                    <label for="rares">Rares</label><br>
+                </div>
+            <!--Very Rares Selection Column-->
+                <div class="dropdownAddon" id="dropVeryRares">
+                    <input type="checkbox" id="veryRares" name="veryRares" value="Very Rares">
+                    <label for="veryRares">Very Rares</label><br>
+                </div>
+            <!--Ultra Rares Selection Column-->
+                <div class="dropdownAddon" id="dropUltraRares">
+                    <input type="checkbox" id="ultraRares" name="ultraRares" value="Ultra Rares">
+                    <label for="ultraRares">Ultra Rares</label><br>
+                </div>
+            </div>
+    <!--Offerings Selection Start Here-->
+            <button class="dropBtn" id="selectionsOffer" onclick="dropdownOfferings()">Selectable Offerings</button>
+            <div>
+            <!--Select/Deselect All Offering Buttons-->
+                <div class="dropdownOfferingBtn" id="dropOfferingsBtn">
+                    <input type="button" id="checkAllOffering" name="checkAllOffering" value="Check All Offerings" onclick="selectAllOffering()">
+
+                    <input type="button" id="decheckAllOffering" name="decheckAllOffering" value="Uncheck All Offerings" onclick="deselectAllOffering()">
+                </div>
+            <!--Bloodpoints Column-->
+                <div class="dropdownOffering" id="dropBloodpoints">
+                    <input type="checkbox" id="bloodpoints" name="bloodpoints" value="Bloodpoints" onchange="namedOfferingSelected(name)">
+                    <label for="bloodpoints">All Bloodpoints</label><br>
+                <!--Bloodpoint Options-->
+                    <fieldset class="offeringOptions" id="bloodpointsOptions">
+                        <legend>Options</legend>
+                        <input type="checkbox" id="allCategories" name="allCategories" value="All Categories" onchange="namedOfferingPooled(name)">
+                        <label for="allCategories">All Categories</label><br>
+
+                        <input type="checkbox" id="brutality" name="brutality" value="Brutality" onchange="namedOfferingPooled(name)">
+                        <label for="brutality">Brutality</label><br>
+
+                        <input type="checkbox" id="deviousness" name="deviousness" value="Deviousness" onchange="namedOfferingPooled(name)">
+                        <label for="deviousness">Deviousness</label><br>
+
+                        <input type="checkbox" id="hunter" name="hunter" value="Hunter" onchange="namedOfferingPooled(name)">
+                        <label for="hunter">Hunter</label><br>
+
+                        <input type="checkbox" id="sacrifice" name="sacrifice" value="Sacrifice" onchange="namedOfferingPooled(name)">
+                        <label for="sacrifice">Sacrifice</label><br>
+                    </fieldset>
+                </div>
+            <!--Map Modifications Column-->
+                <div class="dropdownOffering" id="dropMapMods">
+                    <input type="checkbox" id="mapMods" name="mapMods" value="Map Modifications" onchange="namedOfferingSelected(name)">
+                    <label for="mapMods">All Map Modifications</label><br>
+                <!--Map Modification Options-->
+                    <fieldset class="offeringOptions" id="mapModsOptions">
+                        <legend>Options</legend>
+                        <input type="checkbox" id="basement" name="basement" value="Basement Location" onchange="namedOfferingPooled(name)">
+                        <label for="basement">Basement Location</label><br>
+
+                        <input type="checkbox" id="chests" name="chests" value="Chest Reductions" onchange="namedOfferingPooled(name)">
+                        <label for="chests">Chest Reductions</label><br>
+
+                        <input type="checkbox" id="fogThick" name="fogThick" value="Fog Thickness" onchange="namedOfferingPooled(name)">
+                        <label for="fogThick">Fog Thickness</label><br>
+
+                        <input type="checkbox" id="hatch" name="hatch" value="Hatch Location" onchange="namedOfferingPooled(name)">
+                        <label for="hatch">Hatch Location</label><br>
+
+                        <input type="checkbox" id="hook" name="hook" value="Hook Distance" onchange="namedOfferingPooled(name)">
+                        <label for="hook">Hook Distance</label><br>
+                    </fieldset>
+                </div>
+            <!--Realms Column-->
+                <div class="dropdownOffering2" id="dropRealms">
+                    <input type="checkbox" id="realm" name="realm" value="Realms" onchange="namedOfferingSelected(name)">
+                    <label for="realm">All Realms</label><br>
+                <!--Realm Options-->
+                    <fieldset class="offeringOptions" id="realmOptions">
+                        <legend>Options</legend>
+                        <div class="dropRealms">
+                            <input type="checkbox" id="azaKey" name="azaKey" value="Azarov's Key" onchange="namedOfferingPooled(name)">
+                            <label title="(Autohaven Wreckers)" for="azaKey">Azarov's Key</label><br>
+
+                            <input type="checkbox" id="grandmaCook" name="grandmaCook" value="Grandma's Cookbook" onchange="namedOfferingPooled(name)">
+                            <label title="(Backwater Swamp)" for="grandmaCook">Grandma's Cookbook </label><br>
+
+                            <input type="checkbox" id="heartLock" name="heartLock" value="Heart Locket" onchange="namedOfferingPooled(name)">
+                            <label title="(Coldwind Farm)" for="heartLock">Heart Locket </label><br>
+
+                            <input type="checkbox" id="charWedPhoto" name="charWedPhoto" value="Charred Wedding Photograph" onchange="namedOfferingPooled(name)">
+                            <label title="(Crotus Prenn Asylum)" for="charWedPhoto">Charred Wedding Photograph </label><br>
+
+                            <input type="checkbox" id="beefTallow" name="beefTallow" value="Beef Tallow Mixture" onchange="namedOfferingPooled(name)">
+                            <label title="(The Decimated Borgo)" for="beefTallow">Beef Tallow Mixture </label><br>
+
+                            <input type="checkbox" id="airlockDoors" name="airlockDoors" value="Airlock Doors" onchange="namedOfferingPooled(name)">
+                            <label title="(Nostromo Wreckage)" for="airlockDoors">Airlock Doors </label><br>
+
+                            <input type="checkbox" id="alienFlora" name="alienFlora" value="Alien Flora" onchange="namedOfferingPooled(name)">
+                            <label title="(Toba Landing)" for="alienFlora">Alien Flora </label><br>
+
+                            <input type="checkbox" id="crowEye" name="crowEye" value="Crow's Eye" onchange="namedOfferingPooled(name)">
+                            <label title="(Forsaken Boneyard)" for="crowEye">Crow's Eye </label><br>
+
+                            <input type="checkbox" id="jigsawPiece" name="jigsawPiece" value="Jigsaw Piece" onchange="namedOfferingPooled(name)">
+                            <label title="(Gideon Meat Plant)" for="jigsawPiece">Jigsaw Piece </label><br>
+
+                            <input type="checkbox" id="shatteredBottle" name="shatteredBottle" value="Shattered Bottle" onchange="namedOfferingPooled(name)">
+                            <label title="(Grave of Glenvale)" for="shatteredBottle">Shattered Bottle </label><br>
+
+                            <input type="checkbox" id="strodeKey" name="strodeKey" value="Strode Realty Key" onchange="namedOfferingPooled(name)">
+                            <label title="(Haddonfield)" for="strodeKey">Strode Realty Key </label><br>
+                        </div>
+                        <div class="dropRealms">
+                            <input type="checkbox" id="hawkinsID" name="hawkinsID" value="Hawkins National Laboratory ID" onchange="namedOfferingPooled(name)">
+                            <label title="(Hawkins National Laboratory)" for="hawkinsID">Hawkins National Laboratory ID </label><br>
+
+                            <input type="checkbox" id="shatteredGlasses" name="shatteredGlasses" value="Shattered Glasses" onchange="namedOfferingPooled(name)">
+                            <label title="(Léry's Memorial Institute)" for="shatteredGlasses">Shattered Glasses </label><br>
+                            
+                            <input type="checkbox" id="macmillanBone" name="macmillanBone" value="MacMillan's Phalanx Bone" onchange="namedOfferingPooled(name)">
+                            <label title="(The MacMillan Estate)" for="macmillanBone">MacMillan's Phalanx Bone </label><br>
+                            
+                            <input type="checkbox" id="damagedPhoto" name="damagedPhoto" value="Damaged Photo" onchange="namedOfferingPooled(name)">
+                            <label title="(Ormond)" for="damagedPhoto">Damaged Photo </label><br>
+                            
+                            <input type="checkbox" id="rpdBadge" name="rpdBadge" value="RPD Badge" onchange="namedOfferingPooled(name)">
+                            <label title="(Raccoon City Police Department)" for="rpdBadge">RPD Badge </label><br>
+                            
+                            <input type="checkbox" id="lastMask" name="lastMask" value="The Last Mask" onchange="namedOfferingPooled(name)">
+                            <label title="(Red Forest)" for="lastMask">The Last Mask </label><br>
+
+                            <input type="checkbox" id="marysLetter" name="marysLetter" value="Mary's Letter" onchange="namedOfferingPooled(name)">
+                            <label title="(Silent Hill)" for="marysLetter">Mary's Letter </label><br>
+                        
+                            <input type="checkbox" id="piedPiper" name="piedPiper" value="The Pied Piper" onchange="namedOfferingPooled(name)">
+                            <label title="(Springwood)" for="piedPiper">The Pied Piper </label><br>
+                            
+                            <input type="checkbox" id="ichorousLoam" name="ichorousLoam" value="Ichorous Loam" onchange="namedOfferingPooled(name)">
+                            <label title="(Withered Isle)" for="ichorousLoam">Ichorous Loam </label><br>
+                            
+                            <input type="checkbox" id="yamaokaCrest" name="yamaokaCrest" value="Yamaoka Family Crest" onchange="namedOfferingPooled(name)">
+                            <label title="(Yamaoka Estate)" for="yamaokaCrest">Yamaoka Family Crest </label><br>
+                        </div>
+                    </fieldset>
+                </div>
+            <!--Secrets/Wards Column-->
+                <div class="dropdownOffering" id="dropSecretsWards">
+                    <input type="checkbox" id="secretsWards" name="secretsWards" value="Secrets/Wards" onchange="namedOfferingSelected(name)">
+                    <label for="secretsWards">All Secrets/Wards</label><br>
+                <!--Secrets/Wards Options-->
+                    <fieldset class="offeringOptions" id="secretsWardsOptions">
+                        <legend>Options</legend>
+                        <input type="checkbox" id="sepShroud" name="sepShroud" value="Shroud of Separation" onchange="namedOfferingPooled(name)">
+                        <label for="sepShroud">Shroud of Separation</label><br>
+
+                        <input type="checkbox" id="mori" name="mori" value="Mori" onchange="namedOfferingPooled(name)">
+                        <label for="mori">Mori</label><br>
+
+                        <input type="checkbox" id="wards" name="wards" value="Wards" onchange="namedOfferingPooled(name)">
+                        <label for="wards">Wards</label><br>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <button class="randoAllBtn" onclick="randomize()">Randomize All</button>
+        <div class="displayResults">
+            <!--Perks Display-->
+                <div>
+                    <h2 style="text-align: center;">Perks</h2>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 1</legend>
+                            <img id= "perk1Img" src="Perks/Perks/RandomPerkKillerPlaceholder.png" alt="Missing Perk Image">
+                            <h2 id="perk1">Select</h2>
+                        </fieldset>
+                    </div>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 2</legend>
+                            <img id= "perk2Img" src="Perks/Perks/RandomPerkKillerPlaceholder.png" alt="Missing Perk Image">
+                            <h2 id="perk2">Your</h2>
+                        </fieldset>
+                    </div>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 3</legend>
+                            <img id= "perk3Img" src="Perks/Perks/RandomPerkKillerPlaceholder.png" alt="Missing Perk Image">
+                            <h2 id="perk3">Randomized</h2>
+                        </fieldset>
+                    </div>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 4</legend>
+                            <img id= "perk4Img" src="Perks/Perks/RandomPerkKillerPlaceholder.png" alt="Missing Perk Image">
+                            <h2 id="perk4">Perks</h2>
+                        </fieldset>
+                    </div>
+                    <button class="randoPerksBtn" onclick="randomPerks()">Randomize Perks</button>
+                </div>
+            <!--Power Display-->
+                <div class="powersDisplay">
+                    <fieldset>
+                        <legend>Power & Add-Ons</legend>
+                        <div class="powerDisplay">
+                            <img id="powerImg" src="Powers/Powers/RandomKillerPowerPlaceholder.png" alt="Missing Item Image">
+                            <h2 id="powerName">Random Power</h2>
+                        </div>
+                        <div class="addonDisplay">
+                            <div>
+                                <img id="addonImg1" src="Add-Ons/ItemAddons/RandomKillerAddonPlaceholder.png" alt="Missing Add-On Image">
+                                <p id="addonName1">Random Add-On</p><br>
+                            </div>
+                            <div>
+                                <img id="addonImg2" src="Add-Ons/ItemAddons/RandomKillerAddonPlaceholder.png" alt="Missing Add-On Image">
+                                <p id="addonName2">Random Add-On</p>
+                            </div> 
+                        </div>
+                        <button class="randoOthersBtn" onclick="randomAddons(char)">Randomize Items</button>
+                    </fieldset>
+                </div>
+            <!--Offerings Display-->
+                <div class="offeringDisplay">
+                    <fieldset>
+                        <legend>Offering</legend>
+                        <img id="offeringImg" src="Offerings/Favors/RandomOfferingPlaceholder.png" alt="Missing Offering Image">
+                        <h2 id="offeringName">Random Offering</h2>
+                        <button class="randoOthersBtn" onclick="randomOffering()">Randomize Offering</button>
+                    </fieldset>
+                </div>
+            <!--Character Display-->
+                <div class="characterDisplay">
+                    <fieldset>
+                        <legend>Character</legend>
+                        <img id="charImg" src="Portraits/StoreBackgrounds/RandomKiller Placeholder.png" alt="Missing Character Image">
+                        <h2 id="charName">Random Character</h2>
+                        <button class="randoOthersBtn" onclick="randomChar()">Randomize Character</button>
+                    </fieldset>
+                </div>
+            </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

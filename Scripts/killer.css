@@ -1,0 +1,312 @@
+.body{
+    margin: 0%;
+    background-image: linear-gradient(#860000,#351c1c);
+}
+.navSurvivor button{
+    background-color: #000a24;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 50px 10px;
+    float: right;
+}
+.navSurvivor button:hover{
+    background-color: #002583;
+}
+.selections{
+    background-color: #333;
+    font-size: 22px;
+    font-family: 'Julee';
+    color: white;
+    margin: 0%;
+}
+.dropSelections{
+    font-size: 20px;
+    font-family: inherit;
+    background-color: #4d4d4d;
+    color: white;
+    float: left;
+    width: 100%;
+    padding: 5px 6px;
+}
+.dropBtn{
+    font-size: 24px;
+    font-family: inherit;
+    padding: 15px 16px;
+    background-color: inherit;
+    color: white;
+    float: left;
+    width: 100%;
+    box-shadow: black;
+    display: none;
+}
+.dropdownKillBtn {
+    display: none;
+    background-color: rgb(39, 16, 16);
+    width: 100%;
+}
+.dropdownKillBtn input{
+    width: 50%;
+    font-size: 24px;
+    float: left;
+    font-family: inherit;
+    background-color: rgb(53, 17, 17);
+    color: white;
+    border: none;
+    padding: 15px;
+}
+.dropdownKillBtn input:hover{
+    background-color: #5a0c0c;
+}
+.dropdownKill{
+    display: none;
+    background-color: rgb(39, 16, 16);
+    height: 600px;
+    width: 20%;
+    float: left;
+    text-align: left;
+}
+.dropdownKill input{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+.dropdownPerkBtn {
+    display: none;
+    background-color: rgb(39, 16, 16);
+    width: 100%;
+}
+.dropdownPerkBtn input{
+    width: 50%;
+    font-size: 24px;
+    float: left;
+    font-family: inherit;
+    background-color: rgb(53, 17, 17);
+    color: white;
+    border: none;
+    padding: 15px;
+
+}
+.dropdownPerkBtn input:hover{
+    background-color: #5a0c0c;
+}
+.dropdownPerk {
+    display: none;
+    background-color: rgb(122, 8, 8);
+    height: 1300px;
+    float: left;
+    width: 20%;
+}
+.dropdownPerk input{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.dropdownPerk fieldset{
+    background-color: rgb(95, 1, 1);
+    border-radius: 7px;
+    border-color: rgb(148, 148, 148);
+    border-width: 3px;
+}
+.baseOptPerks button{
+    background-color: #2900009d;
+    color: white;
+    font-size: large;
+    border: 1px;
+}
+.multiAnyHide{
+    display: none;
+}
+.multiNoHide{
+    display: none;
+}
+.dropdownAddonsBtn {
+    display: none;
+    background-color: rgb(39, 16, 16);
+    width: 100%;
+}
+.dropdownAddonsBtn input{
+    width: 50%;
+    font-size: 24px;
+    float: left;
+    font-family: inherit;
+    background-color: rgb(53, 17, 17);
+    color: white;
+    border: none;
+    padding: 15px;
+}
+.dropdownAddonsBtn input:hover{
+    background-color: #5a0c0c;
+}
+.dropdownAddon {
+    display: none;
+    background-color: rgb(65, 4, 4);
+    float: left;
+    width: 20%;
+    height: 50px;
+}
+.dropdownAddon input{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+.dropdownOfferingBtn {
+    display: none;
+    background-color: rgb(39, 16, 16);
+    width: 100%;
+}
+.dropdownOfferingBtn input{
+    width: 50%;
+    font-size: 24px;
+    float: left;
+    font-family: inherit;
+    background-color: rgb(53, 17, 17);
+    color: white;
+    border: none;
+    padding: 15px;
+}
+.dropdownOffering{
+    width: 20%;
+    display: none;
+    float: left;
+    height: 400px;
+    background-color: rgb(41, 2, 2);
+}
+.offeringOptions{
+    display: block;
+}
+.dropdownOffering2{
+    width: 40%;
+    display: none;
+    float: left;
+    height: 400px;
+    background-color: rgb(41, 2, 2);
+}
+.dropRealms{
+    float: left;
+    padding-right: 20px;
+}
+.randoAllBtn{
+    font-size: 30px;
+    width: 33%;
+    background-color: #a73535;
+    color: white;
+    margin-left: 33%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.displayResults{
+    font-family: 'Julee';
+    color: white;
+    background-color: #02040c;
+    background-image: linear-gradient(#7d0303,#02040c);  
+}
+.perkDisplay{
+    text-align: center;
+    width: 25%;
+    float: left;
+    color: white;  
+}
+.perkDisplay fieldset{
+    border: 0px;
+}
+.perkDisplay legend{
+    font-size: 22px;
+}
+.perkDisplay img{
+    width: 200px;
+    height: 200px;
+}
+.randoPerksBtn{
+    font-size: 24px;
+    width: 33%;
+    background-color: #881a1a;
+    color: white;
+    margin-left: 33%;
+}
+.powersDisplay{
+    width: 50%;
+    height: 440px;
+    float: left;
+    text-align: center;
+    background-color: #0c0202;
+}
+.powersDisplay fieldset{
+    height: 400px;
+}
+.powersDisplay legend{
+    font-size: 24px;
+    font-weight: bold;
+}
+.powerDisplay{
+    width: 50%;
+    float: left;
+}
+.powerDisplay img{
+    width: 200px;
+    height: 200px;
+}
+.addonDisplay{
+    width: 50%;
+    float: left;
+}
+.addonDisplay img{
+    width: 125px;
+    height: 125px;
+    float: left;
+}
+.addonDisplay p{
+    float: left;
+    font-size: 22px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.addonDisplay div{
+    height: 150px;
+}
+.offeringDisplay{
+    width: 25%;
+    height: 440px;
+    float: left;
+    text-align: center;
+    background-color: #0c0202;
+}
+.offeringDisplay fieldset{
+    height: 400px;
+}
+.offeringDisplay legend{
+    font-size: 24px;
+    font-weight: bold;
+}
+.offeringDisplay img{
+    width: 225px;
+    height: 225px;
+}
+.characterDisplay{
+    width: 25%;
+    height: 440px;
+    float: left;
+    text-align: center;
+    background-color: #0c0202;
+}
+.characterDisplay fieldset{
+    height: 400px;
+}
+.characterDisplay legend{
+    font-size: 24px;
+    font-weight: bold;
+}
+.characterDisplay img{
+    width: 115px;
+    height: 225px;
+}
+.randoOthersBtn{
+    font-size: 24px;
+    width: 75%;
+    background-color: #881a1a;
+    color: white;
+    font-family: inherit;
+}

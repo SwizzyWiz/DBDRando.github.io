@@ -22,9 +22,9 @@
         </style>
     </head>
     <body class="body">
-        <!--<div class="navKiller">
-            <b>Switch to Killer</b>
-        </div>-->
+        <div class="navKiller">
+            <button onclick="document.location='Killer.htm'">Switch to Killer</button>
+        </div>
         
         <div class="selections">
             <button class="dropSelections" onclick="dropdownSelections()">Show Selections</button>
@@ -39,8 +39,8 @@
                 </div>
             <!--First Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs1">
-                    <input type="checkbox" id="trevBel" name="trevBel" value="Trevor Belmont" onchange="namedCharPooled(name)">
-                    <label for="trevBel">Trevor Belmont</label><br>
+                    <input type="checkbox" id="taurCai" name="taurCai" value="Taurie Cain" onchange="namedCharPooled(name)">
+                    <label for="taurCai">Taurie Cain <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="dwigFai" name="dwigFai" value="Dwight Fairfield" onchange="namedCharPooled(name)">
                     <label for="dwigFai">Dwight Fairfield</label><br>
@@ -182,6 +182,9 @@
                 
                     <input type="checkbox" id="laraCro" name="laraCro" value="Lara Croft" onchange="namedCharPooled(name)">
                     <label for="laraCro">Lara Croft</label><br>
+
+                    <input type="checkbox" id="trevBel" name="trevBel" value="Trevor Belmont" onchange="namedCharPooled(name)">
+                    <label for="trevBel">Trevor Belmont</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -215,16 +218,16 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="trevBelPerks">
-                        <legend>Trevor Belmont</legend>
-                        <input type="checkbox" id="exu" name="exu" value="Exultation" onchange="namedPerkPooled(name)">
-                        <label for="exu">Exultation</label><br>
+                    <fieldset class="taurCaiPerks">
+                        <legend>Taurie Cain <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="cleBre" name="cleBre" value="Clean Break" onchange="namedPerkPooled(name)">
+                        <label for="cleBre">Clean Break</label><br>
     
-                        <input type="checkbox" id="eyeOfBel" name="eyeOfBel" value="Eyes of Belmont" onchange="namedPerkPooled(name)">
-                        <label for="eyeOfBel">Eyes of Belmont</label><br>
+                        <input type="checkbox" id="invTreCro" name="invTreCro" value="Invocation: Treacherous Crows" onchange="namedPerkPooled(name)">
+                        <label for="invTreCro">Invocation: Treacherous Crows</label><br>
     
-                        <input type="checkbox" id="momOfGlo" name="momOfGlo" value="Moment of Glory" onchange="namedPerkPooled(name)">
-                        <label for="momOfGlo">Moment of Glory</label><br>
+                        <input type="checkbox" id="shoTheBur" name="shoTheBur" value="Shoulder the Burden" onchange="namedPerkPooled(name)">
+                        <label for="shoTheBur">Shoulder the Burden</label><br>
                     </fieldset>
                 
                     <fieldset class="dwigFaiPerks">
@@ -245,7 +248,7 @@
                         <label for="adr">Adrenaline</label><br>
     
                         <input type="checkbox" id="quiQui" name="quiQui" value="Quick & Quiet" onchange="namedPerkPooled(name)">
-                        <label for="qui&Qui">Quick & Quiet</label><br>
+                        <label for="quiQui">Quick & Quiet</label><br>
     
                         <input type="checkbox" id="sprBur" name="sprBur" value="Sprint Burst" onchange="namedPerkPooled(name)">
                         <label for="sprBur">Sprint Burst</label><br>
@@ -310,9 +313,7 @@
                         <input type="checkbox" id="upTheAnt" name="upTheAnt" value="Up the Ante" onchange="namedPerkPooled(name)">
                         <label for="upTheAnt">Up the Ante</label><br>
                     </fieldset>
-                </div>
-            <!--Second Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks2">
+
                     <fieldset class="billOvePerks">
                         <legend>William "Bill" Overbeck</legend>
                         <input type="checkbox" id="borTim" name="borTim" value="Borrowed Time" onchange="namedPerkPooled(name)">
@@ -324,7 +325,9 @@
                         <input type="checkbox" id="unb" name="unb" value="Unbreakable" onchange="namedPerkPooled(name)">
                         <label for="unb">Unbreakable</label><br>
                     </fieldset>
-                                
+                </div>
+            <!--Second Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks2">
                     <fieldset class="fengMinPerks">
                         <legend>Feng Min</legend>
                         <input type="checkbox" id="ale" name="ale" value="Alert" onchange="namedPerkPooled(name)">
@@ -419,10 +422,8 @@
 
                         <input type="checkbox" id="sol" name="sol" value="Solidarity" onchange="namedPerkPooled(name)">
                         <label for="sol">Solidarity</label><br>
-                    </fieldset>            
-                </div>
-            <!--Third Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks3">
+                    </fieldset> 
+                    
                     <fieldset class="ashWilPerks">
                         <legend>Ash Williams</legend>
                         <input type="checkbox" id="bucUp" name="bucUp" value="Buckle Up" onchange="namedPerkPooled(name)">
@@ -446,7 +447,9 @@
                         <input type="checkbox" id="innStr" name="innStr" value="Inner Strength" onchange="namedPerkPooled(name)">
                         <label for="innStr">Inner Strength</label><br>
                     </fieldset>
-                                
+                </div>
+            <!--Third Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks3">
                     <fieldset class="stevHarPerks">
                         <legend>Steve Harrington</legend>
                         <input type="checkbox" id="bab" name="bab" value="Babysitter" onchange="namedPerkPooled(name)">
@@ -529,10 +532,8 @@
 
                         <input type="checkbox" id="smaHit" name="smaHit" value="Smash Hit" onchange="namedPerkPooled(name)">
                         <label for="smaHit">Smash Hit</label><br>
-                    </fieldset>   
-                </div>
-            <!--Fourth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks4">
+                    </fieldset> 
+                    
                     <fieldset class="jillValPerks">
                         <legend>Jill Valentine</legend>
                         <input type="checkbox" id="blaMin" name="blaMin" value="Blast Mine" onchange="namedPerkPooled(name)">
@@ -567,8 +568,10 @@
 
                         <input type="checkbox" id="cla" name="cla" value="Clairvoyance" onchange="namedPerkPooled(name)">
                         <label for="cla">Clairvoyance</label><br>
-                    </fieldset>   
-                                
+                    </fieldset> 
+                </div>
+            <!--Fourth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks4">
                     <fieldset class="jonaVasPerks">
                         <legend>Jonah Vasquez</legend>
                         <input type="checkbox" id="booExp" name="booExp" value="Boon: Exponential" onchange="namedPerkPooled(name)">
@@ -640,9 +643,7 @@
                         <input type="checkbox" id="quiGam" name="quiGam" value="Quick Gambit" onchange="namedPerkPooled(name)">
                         <label for="quiGam">Quick Gambit</label><br>
                     </fieldset>
-                </div>
-            <!--Fifth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks5">
+
                     <fieldset class="thalLyrPerks">
                         <legend>Thalita Lyra</legend>
                         <input type="checkbox" id="cutLoo" name="cutLoo" value="Cut Loose" onchange="namedPerkPooled(name)">
@@ -690,7 +691,9 @@
                         <input type="checkbox" id="scePar" name="scePar" value="Scene Partner" onchange="namedPerkPooled(name)">
                         <label for="scePar">Scene Partner</label><br>
                     </fieldset>
-                                
+                </div>
+            <!--Fifth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks5">
                     <fieldset class="elleRipPerks">
                         <legend>Ellen Ripley</legend>
                         <input type="checkbox" id="cheTra" name="cheTra" value="Chemical Trap" onchange="namedPerkPooled(name)">
@@ -749,6 +752,18 @@
 
                         <input type="checkbox" id="spe" name="spe" value="Specialist" onchange="namedPerkPooled(name)">
                         <label for="spe">Specialist</label><br>
+                    </fieldset>
+
+                    <fieldset class="trevBelPerks">
+                        <legend>Trevor Belmont</legend>
+                        <input type="checkbox" id="exu" name="exu" value="Exultation" onchange="namedPerkPooled(name)">
+                        <label for="exu">Exultation</label><br>
+    
+                        <input type="checkbox" id="eyeOfBel" name="eyeOfBel" value="Eyes of Belmont" onchange="namedPerkPooled(name)">
+                        <label for="eyeOfBel">Eyes of Belmont</label><br>
+    
+                        <input type="checkbox" id="momOfGlo" name="momOfGlo" value="Moment of Glory" onchange="namedPerkPooled(name)">
+                        <label for="momOfGlo">Moment of Glory</label><br>
                     </fieldset>
                 </div>
             </div>
@@ -1033,9 +1048,6 @@
                 <!--Shroud Options-->
                     <fieldset class="offeringOptions" id="shroudOptions">
                         <legend>Options</legend>
-                        <input type="checkbox" id="sepShroud" name="sepShroud" value="Shroud of Separation" onchange="namedOfferingPooled(name)">
-                        <label for="sepShroud">Shroud of Separation</label><br>
-
                         <input type="checkbox" id="unionShroud" name="unionShroud" value="Shroud of Union" onchange="namedOfferingPooled(name)">
                         <label for="unionShroud">Shroud of Union</label><br>
 
@@ -1049,9 +1061,6 @@
             </div>
         </div>
         <button class="randoAllBtn" onclick="randomize()">Randomize All</button>
-        <div>
-            <!--<p id="viewPool"></p>-->
-        </div>
         <div class="displayResults">
         <!--Perks Display-->
             <div>
@@ -1059,28 +1068,28 @@
                 <div class="perkDisplay">
                     <fieldset>
                         <legend>Perk 1</legend>
-                        <img id= "perk1Img" src="Perks/Perks/RandomPerkPlaceholder.png" alt="Missing Perk Image">
+                        <img id= "perk1Img" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
                         <h2 id="perk1">Select</h2>
                     </fieldset>
                 </div>
                 <div class="perkDisplay">
                     <fieldset>
                         <legend>Perk 2</legend>
-                        <img id= "perk2Img" src="Perks/Perks/RandomPerkPlaceholder.png" alt="Missing Perk Image">
+                        <img id= "perk2Img" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
                         <h2 id="perk2">Your</h2>
                     </fieldset>
                 </div>
                 <div class="perkDisplay">
                     <fieldset>
                         <legend>Perk 3</legend>
-                        <img id= "perk3Img" src="Perks/Perks/RandomPerkPlaceholder.png" alt="Missing Perk Image">
+                        <img id= "perk3Img" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
                         <h2 id="perk3">Randomized</h2>
                     </fieldset>
                 </div>
                 <div class="perkDisplay">
                     <fieldset>
                         <legend>Perk 4</legend>
-                        <img id= "perk4Img" src="Perks/Perks/RandomPerkPlaceholder.png" alt="Missing Perk Image">
+                        <img id= "perk4Img" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
                         <h2 id="perk4">Perks</h2>
                     </fieldset>
                 </div>
@@ -1095,10 +1104,14 @@
                         <h2 id="itemName">Random Item</h2>
                     </div>
                     <div class="addonDisplay">
-                        <img id="addonImg1" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
-                        <p id="addonName1">Random Add-On</p><br>
-                        <img id="addonImg2" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
-                        <p id="addonName2">Random Add-On</p>
+                        <div>
+                            <img id="addonImg1" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
+                            <p id="addonName1">Random Add-On</p><br>
+                        </div>
+                        <div>
+                            <img id="addonImg2" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
+                            <p id="addonName2">Random Add-On</p>
+                        </div> 
                     </div>
                     <button class="randoOthersBtn" onclick="randomItem()">Randomize Items</button>
                 </fieldset>

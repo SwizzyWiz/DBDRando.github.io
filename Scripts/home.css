@@ -1,0 +1,58 @@
+.body{
+    margin: 0px;
+    background-image: linear-gradient(#0d0c4b, #09007d, #230c0c, #851616);
+}
+.a{
+    text-align: center;
+    color: white;
+    height: 250px;
+}
+.a i{
+    font-size: 22px;
+}
+.navSurvivor button{
+    padding: 30px;
+    background-color: #19155e;
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 50px;
+    height: 200px;
+    margin-left: 10%;
+}
+.navSurvivor button:hover{
+    background-color: #292486;
+}
+.navKiller{
+    height: 365px;
+}
+.navKiller button{
+    padding: 30px;
+    background-color: #581717;
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 50px;
+    height: 200px;
+    margin-left: 10%;
+}
+.navKiller button:hover{
+    background-color: #7a2323;
+}
+.changelog{
+    width: 90%;
+    height: fit-content;
+    background-color: #000000cc;
+    margin-left: 5%;
+    color: white;
+    padding: 5px;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.changelog h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.changelog h3{
+    text-decoration: underline;
+}

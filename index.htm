@@ -2,52 +2,51 @@
 <html lang="en-US">
     <head>
         <title>DBD Perk Randomizer</title>
+        <link rel="stylesheet" href="Scripts/home.css">
         <style>
-            .body{
-                margin: 0px;
-                background-image: linear-gradient(#09007d,#1e1c35);
-            }
-            .a{
-                text-align: center;
-                color: white;
-                height: 250px;
-            }
-            .navSurvivor button{
-                padding: 30px;
-                background-color: #19155e;
-                color: white;
-                text-align: center;
-                width: 80%;
-                font-size: 50px;
-                height: 200px;
-                margin-left: 10%;
-            }
-            .navKiller{
-                height: 600px;
-            }
-            .navKiller button{
-                padding: 30px;
-                background-color: #581717;
-                color: white;
-                text-align: center;
-                width: 80%;
-                font-size: 50px;
-                height: 200px;
-                margin-left: 10%;
-            }
+            
         </style>
     </head>
     <body class="body">
         <div class="a">
             <h1>Welcome to DBD Rando</h1>
-            <mark>Homepage Under Development</mark><br>
-            <i>Updated to Version DBD <mark>Castlevania 8.1.0</mark> </i>
+            <h3>Version 1.1</h3>
+            <i>Updated to Version DBD <mark>Doomed Course 8.4.0</mark> </i>
         </div>
         <div class="navSurvivor">
             <button onclick="document.location='Survivor.htm'">Survivor Side</button>
         </div>
         <div class="navKiller">
-            <button>Killer Side<br><mark>Under Development</mark></button>
+            <button onclick="document.location='Killer.htm'">Killer Side</button>
+        </div>
+        <div class="changelog">
+            <h1>Changelog</h1>
+            <h3>Version 1.1</h3>
+            <h5>December 11, 2024</h5>
+            <ul>
+                <li>Added Killer Side Randomizer Webpage</li>
+                <li>Added <b>Changelog</b> to the Homepage</li>
+                <li>Added button to navigate to the <b>Killer Side Randomzier</b> on the Survivor Side Randomizer Webpage</li> 
+                <li>Added button to navigate to the <b>Survivor Side Randomzier</b> on the Killer Side Randomizer Webpage</li>               
+                <li>Added <b style="color: #003bb9;">Taurie Cain</b> and their Unique Perks</li>
+                <li>Added <b style="color: #860e0e;">The Houndmaster</b> and their Unique Perks</li>
+                <li>Removed <b style="color: #ad9217;">Shroud of Separation</b> from the Survivor Side as it is not a Survivor Offering</li>
+                <li>Enabled the Killer Side Randomizer Button on the Homepage</li>
+                <li>Fixed Typo for <b style="color: #003bb9;">Ashley Williams</b> when chosen to display "Any Survivor" on Survivor Side Randomizer</li>
+                <li>Fixed a bug where <b style="color: #003bb9;">Detective's Hunch Perk</b> was not being selected</li>
+                <li>Fixed a bug where <b style="color: #003bb9;">Overzealous Perk</b> was not being selected</li>
+                <li>Fixed a bug where <b style="color: #003bb9;">Better Than New Perk</b> was not being selected</li>
+                <li>Fixed bugs where <b style="color: #003bb9;">Survivor Side Select/Deselect All Buttons</b> were not working as intended</li>
+                <li>Design changes for the display area</li>
+                <li>Fixed minor issues and added optimizations for Survivor Side Randomizer</li>
+            </ul>
+            <h3>Version 1.0</h3>
+            <h5>November 8, 2024</h5>
+            <ul>
+                <li>Website Created</li>
+                <li>Added Functional Survivor Side Randomizer</li>
+                <li>Added Homepage</li>
+            </ul>
         </div>
     </body>
 </html>

@@ -2,14 +2,17 @@
     margin: 0px;
     background-image: linear-gradient(#09007d,#1e1c35);
 }
-.navKiller {
+.navKiller button{
     background-color: #240000;
     color: white;
-    width: 33%;
+    width: 100%;
     font-size: 30px;
     text-align: center;
     padding: 15px 50px 10px;
-    margin-left: 30%;
+    float: right;
+}
+.navKiller button:hover{
+    background-color: #7a0000;
 }
 .dropdownSurvBtn {
     display: none;
@@ -66,7 +69,7 @@
 .dropdownPerk {
     display: none;
     background-color: rgb(8, 16, 122);
-    height: max-content;
+    height: 1650px;
     float: left;
     width: 20%;
 }
@@ -204,6 +207,8 @@
     background-color: #354aa7;
     color: white;
     margin-left: 33%;
+    margin-top: 20px;
+    padding: 10px;
 }
 .displayResults{
     font-family: 'Julee';
@@ -215,8 +220,7 @@
     text-align: center;
     width: 25%;
     float: left;
-    color: white;
-    
+    color: white;  
 }
 .perkDisplay fieldset{
     border: 0px;
@@ -236,13 +240,13 @@
 }
 .itemsDisplay{
     width: 50%;
-    height: 700px;;
+    height: 440px;
     float: left;
     text-align: center;
     background-color: #02040c;
 }
 .itemsDisplay fieldset{
-    margin-top: 30%;
+    height: 400px;
 }
 .itemsDisplay legend{
     font-size: 24px;
@@ -253,54 +257,60 @@
     float: left;
 }
 .itemDisplay img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .addonDisplay{
     width: 50%;
     float: left;
 }
 .addonDisplay img{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
+    float: left;
 }
 .addonDisplay p{
-    float: right;
+    float: left;
     font-size: 22px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.addonDisplay div{
+    height: 150px;
 }
 .offeringDisplay{
     width: 25%;
-    height: 700px;
+    height: 440px;
     float: left;
     text-align: center;
     background-color: #02040c;
 }
 .offeringDisplay fieldset{
-    margin-top: 45%;
+    height: 400px;
 }
 .offeringDisplay legend{
     font-size: 24px;
     font-weight: bold;
 }
 .offeringDisplay img{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
 }
 .characterDisplay{
     width: 25%;
-    height: 700px;
+    height: 440px;
     float: left;
     text-align: center;
     background-color: #02040c;
 }
 .characterDisplay fieldset{
-    margin-top: 20%;
+    height: 400px;
 }
 .characterDisplay legend{
     font-size: 24px;
     font-weight: bold;
 }
 .characterDisplay img{
-    width: 250px;
-    height: 450px;
+    width: 115px;
+    height: 225px;
 }

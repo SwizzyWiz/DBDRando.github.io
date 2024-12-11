@@ -876,10 +876,6 @@ function selectOfferingOptions(name){
             break;
     //Shrouds
         case "shroud": 
-        //Shroud of Separation
-            if (!$("#sepShroud").is(":checked")){
-                offeringPool.push("sepShroud");
-            }
         //Shroud of Union
             if (!$("#unionShroud").is(":checked")){
                 offeringPool.push("unionShroud");
@@ -1071,10 +1067,6 @@ function deselectOfferingOptions(name){
             break;
     //Shrouds
         case "shroud": 
-        //Shroud of Separation
-            if (!$("#sepShroud").is(":checked")){
-                offeringPool.splice((offeringPool.indexOf("sepShroud")),1);
-            }
         //Shroud of Union
             if (!$("#unionShroud").is(":checked")){
                 offeringPool.splice((offeringPool.indexOf("unionShroud")),1);
@@ -1219,9 +1211,6 @@ function namedOfferingPooled(name){
             case "yamaokaCrest": 
                 offeringPool.push(name);
                 break;
-            case "sepShroud": 
-                offeringPool.push(name);
-                break;
             case "unionShroud": 
                 offeringPool.push(name);
                 break;
@@ -1360,9 +1349,6 @@ function namedOfferingPooled(name){
             case "yamaokaCrest": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
                 break;
-            case "sepShroud": 
-                offeringPool.splice((offeringPool.indexOf(name)),1);
-                break;
             case "unionShroud": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
                 break;
@@ -1406,3272 +1392,1267 @@ function checking(id,boolean){
 }
 //Characters
 function selectAllSurv(){
-    checking("trevBel",true);
-    checking("dwigFai",true);
-    checking("megTho",true);
-    checking("clauMor",true);
-    checking("jakePar",true);
-    checking("neaKar",true);
-    checking("laurStr",true);
-    checking("aceVis",true);
-    checking("billOve",true);
-    checking("fengMin",true);
-    checking("daviKin",true);
-    checking("quenSmi",true);
-    checking("daviTap",true);   
-    checking("kateDen",true);
-    checking("adamFra",true);
-    checking("jeffJoh",true);
-    checking("janeRom",true);
-    checking("ashWil",true);
-    checking("nancWhe",true);
-    checking("stevHar",true);
-    checking("yuiKim",true);
-    checking("zariKas",true);
-    checking("cherMas",true);
-    checking("feliRic",true);
-    checking("elodRak",true);
-    checking("yunjLee",true);
-    checking("jillVal",true);
-    checking("leonKen",true);
-    checking("mikaRei",true);
-    checking("jonaVas",true);
-    checking("yoicAsa",true);
-    checking("haddKur",true);
-    checking("adaWon",true);
-    checking("rebeCha",true);
-    checking("vittTos",true);
-    checking("thalLyr",true);
-    checking("renaLyr",true);
-    checking("gabrSom",true);
-    checking("nicoCag",true);
-    checking("elleRip",true);
-    checking("alanWak",true);
-    checking("sablWar",true);
-    checking("theTro",true);
-    checking("laraCro",true);
+    if(!$("#dwigFai").is(":checked")){checking("dwigFai",true);}
+    if(!$("#megTho").is(":checked")){checking("megTho",true);}
+    if(!$("#clauMor").is(":checked")){checking("clauMor",true);}
+    if(!$("#jakePar").is(":checked")){checking("jakePar",true);}
+    if(!$("#neaKar").is(":checked")){checking("neaKar",true);}
+    if(!$("#laurStr").is(":checked")){checking("laurStr",true);}
+    if(!$("#aceVis").is(":checked")){checking("aceVis",true);}
+    if(!$("#billOve").is(":checked")){checking("billOve",true);}
+    if(!$("#fengMin").is(":checked")){checking("fengMin",true);}
+    if(!$("#daviKin").is(":checked")){checking("daviKin",true);}
+    if(!$("#quenSmi").is(":checked")){checking("quenSmi",true);}
+    if(!$("#daviTap").is(":checked")){checking("daviTap",true);}   
+    if(!$("#kateDen").is(":checked")){checking("kateDen",true);}
+    if(!$("#adamFra").is(":checked")){checking("adamFra",true);}
+    if(!$("#jeffJoh").is(":checked")){checking("jeffJoh",true);}
+    if(!$("#janeRom").is(":checked")){checking("janeRom",true);}
+    if(!$("#ashWil").is(":checked")){checking("ashWil",true);}
+    if(!$("#nancWhe").is(":checked")){checking("nancWhe",true);}
+    if(!$("#stevHar").is(":checked")){checking("stevHar",true);}
+    if(!$("#yuiKim").is(":checked")){checking("yuiKim",true);}
+    if(!$("#zariKas").is(":checked")){checking("zariKas",true);}
+    if(!$("#cherMas").is(":checked")){checking("cherMas",true);}
+    if(!$("#feliRic").is(":checked")){checking("feliRic",true);}
+    if(!$("#elodRak").is(":checked")){checking("elodRak",true);}
+    if(!$("#yunjLee").is(":checked")){checking("yunjLee",true);}
+    if(!$("#jillVal").is(":checked")){checking("jillVal",true);}
+    if(!$("#leonKen").is(":checked")){checking("leonKen",true);}
+    if(!$("#mikaRei").is(":checked")){checking("mikaRei",true);}
+    if(!$("#jonaVas").is(":checked")){checking("jonaVas",true);}
+    if(!$("#yoicAsa").is(":checked")){checking("yoicAsa",true);}
+    if(!$("#haddKur").is(":checked")){checking("haddKur",true);}
+    if(!$("#adaWon").is(":checked")){checking("adaWon",true);}
+    if(!$("#rebeCha").is(":checked")){checking("rebeCha",true);}
+    if(!$("#vittTos").is(":checked")){checking("vittTos",true);}
+    if(!$("#thalLyr").is(":checked")){checking("thalLyr",true);}
+    if(!$("#renaLyr").is(":checked")){checking("renaLyr",true);}
+    if(!$("#gabrSom").is(":checked")){checking("gabrSom",true);}
+    if(!$("#nicoCag").is(":checked")){checking("nicoCag",true);}
+    if(!$("#elleRip").is(":checked")){checking("elleRip",true);}
+    if(!$("#alanWak").is(":checked")){checking("alanWak",true);}
+    if(!$("#sablWar").is(":checked")){checking("sablWar",true);}
+    if(!$("#theTro").is(":checked")){checking("theTro",true);}
+    if(!$("#laraCro").is(":checked")){checking("laraCro",true);}
+    if(!$("#trevBel").is(":checked")){checking("trevBel",true);}
+    if(!$("#taurCai").is(":checked")){checking("taurCai",true);}
 }
 function deselectAllSurv(){
-    checking("trevBel",false);
-    checking("dwigFai",false);
-    checking("megTho",false);
-    checking("clauMor",false);
-    checking("jakePar",false);
-    checking("neaKar",false);
-    checking("laurStr",false);
-    checking("aceVis",false);
-    checking("billOve",false);
-    checking("fengMin",false);
-    checking("daviKin",false);
-    checking("quenSmi",false);
-    checking("daviTap",false);   
-    checking("kateDen",false);
-    checking("adamFra",false);
-    checking("jeffJoh",false);
-    checking("janeRom",false);
-    checking("ashWil",false);
-    checking("nancWhe",false);
-    checking("stevHar",false);
-    checking("yuiKim",false);
-    checking("zariKas",false);
-    checking("cherMas",false);
-    checking("feliRic",false);
-    checking("elodRak",false);
-    checking("yunjLee",false);
-    checking("jillVal",false);
-    checking("leonKen",false);
-    checking("mikaRei",false);
-    checking("jonaVas",false);
-    checking("yoicAsa",false);
-    checking("haddKur",false);
-    checking("adaWon",false);
-    checking("rebeCha",false);
-    checking("vittTos",false);
-    checking("thalLyr",false);
-    checking("renaLyr",false);
-    checking("gabrSom",false);
-    checking("nicoCag",false);
-    checking("elleRip",false);
-    checking("alanWak",false);
-    checking("sablWar",false);
-    checking("theTro",false);
-    checking("laraCro",false);
+    if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
+    if($("#megTho").is(":checked")){checking("megTho",false);}
+    if($("#clauMor").is(":checked")){checking("clauMor",false);}
+    if($("#jakePar").is(":checked")){checking("jakePar",false);}
+    if($("#neaKar").is(":checked")){checking("neaKar",false);}
+    if($("#laurStr").is(":checked")){checking("laurStr",false);}
+    if($("#aceVis").is(":checked")){checking("aceVis",false);}
+    if($("#billOve").is(":checked")){checking("billOve",false);}
+    if($("#fengMin").is(":checked")){checking("fengMin",false);}
+    if($("#daviKin").is(":checked")){checking("daviKin",false);}
+    if($("#quenSmi").is(":checked")){checking("quenSmi",false);}
+    if($("#daviTap").is(":checked")){checking("daviTap",false);}   
+    if($("#kateDen").is(":checked")){checking("kateDen",false);}
+    if($("#adamFra").is(":checked")){checking("adamFra",false);}
+    if($("#jeffJoh").is(":checked")){checking("jeffJoh",false);}
+    if($("#janeRom").is(":checked")){checking("janeRom",false);}
+    if($("#ashWil").is(":checked")){checking("ashWil",false);}
+    if($("#nancWhe").is(":checked")){checking("nancWhe",false);}
+    if($("#stevHar").is(":checked")){checking("stevHar",false);}
+    if($("#yuiKim").is(":checked")){checking("yuiKim",false);}
+    if($("#zariKas").is(":checked")){checking("zariKas",false);}
+    if($("#cherMas").is(":checked")){checking("cherMas",false);}
+    if($("#feliRic").is(":checked")){checking("feliRic",false);}
+    if($("#elodRak").is(":checked")){checking("elodRak",false);}
+    if($("#yunjLee").is(":checked")){checking("yunjLee",false);}
+    if($("#jillVal").is(":checked")){checking("jillVal",false);}
+    if($("#leonKen").is(":checked")){checking("leonKen",false);}
+    if($("#mikaRei").is(":checked")){checking("mikaRei",false);}
+    if($("#jonaVas").is(":checked")){checking("jonaVas",false);}
+    if($("#yoicAsa").is(":checked")){checking("yoicAsa",false);}
+    if($("#haddKur").is(":checked")){checking("haddKur",false);}
+    if($("#adaWon").is(":checked")){checking("adaWon",false);}
+    if($("#rebeCha").is(":checked")){checking("rebeCha",false);}
+    if($("#vittTos").is(":checked")){checking("vittTos",false);}
+    if($("#thalLyr").is(":checked")){checking("thalLyr",false);}
+    if($("#renaLyr").is(":checked")){checking("renaLyr",false);}
+    if($("#gabrSom").is(":checked")){checking("gabrSom",false);}
+    if($("#nicoCag").is(":checked")){checking("nicoCag",false);}
+    if($("#elleRip").is(":checked")){checking("elleRip",false);}
+    if($("#alanWak").is(":checked")){checking("alanWak",false);}
+    if($("#sablWar").is(":checked")){checking("sablWar",false);}
+    if($("#theTro").is(":checked")){checking("theTro",false);}
+    if($("#laraCro").is(":checked")){checking("laraCro",false);}
+    if($("#trevBel").is(":checked")){checking("trevBel",false);}
+    if($("#taurCai").is(":checked")){checking("taurCai",false);}
 }
 //Perks
 function selectAllPerk(){
-    checking("univPerks",true);
-    checking("anyCho",true);
-    checking("noCho",true);
+    if(!$("#univPerks").is(":checked")){checking("univPerks",true);}
+    if(!$("#anyCho").is(":checked")){checking("anyCho",true);}
+    if(!$("#noCho").is(":checked")){checking("noCho",true);}
     //Dwight Fairfield Perks
-    checking("bon",true);  
-    checking("lea",true);  
-    checking("proThy",true); 
+    if(!$("#bon").is(":checked")){checking("bon",true);}  
+    if(!$("#lea").is(":checked")){checking("lea",true);}  
+    if(!$("#proThy").is(":checked")){checking("proThy",true);} 
     //Meg Thomas Perks
-    checking("adr",true);  
-    checking("quiQui",true);  
-    checking("sprBur",true); 
+    if(!$("#adr").is(":checked")){checking("adr",true);}  
+    if(!$("#quiQui").is(":checked")){checking("quiQui",true);}  
+    if(!$("#sprBur").is(":checked")){checking("sprBur",true);} 
     //Claudette Morel Perks
-    checking("botKno",true);  
-    checking("emp",true);  
-    checking("selCar",true);  
+    if(!$("#botKno").is(":checked")){checking("botKno",true);}  
+    if(!$("#emp").is(":checked")){checking("emp",true);}  
+    if(!$("#selCar").is(":checked")){checking("selCar",true);}  
     //Jake Park Perks
-    checking("calSpi",true);  
-    checking("iroWil",true);  
-    checking("sab",true);  
+    if(!$("#calSpi").is(":checked")){checking("calSpi",true);}  
+    if(!$("#iroWil").is(":checked")){checking("iroWil",true);}  
+    if(!$("#sab").is(":checked")){checking("sab",true);}  
     //Nea Karlsson Perks
-    checking("balLan",true);  
-    checking("str",true);  
-    checking("urbEva",true);  
+    if(!$("#balLan").is(":checked")){checking("balLan",true);}  
+    if(!$("#str").is(":checked")){checking("str",true);}  
+    if(!$("#urbEva").is(":checked")){checking("urbEva",true);}  
     //Laurie Strode Perks
-    checking("decStr",true);  
-    checking("objOfObs",true);  
-    checking("solSur",true);  
+    if(!$("#decStr").is(":checked")){checking("decStr",true);}  
+    if(!$("#objOfObs").is(":checked")){checking("objOfObs",true);}  
+    if(!$("#solSur").is(":checked")){checking("solSur",true);}  
     //Ace Visconti Perks
-    checking("aceInTheHol",true);  
-    checking("opeHan",true);  
-    checking("upTheAnt",true);  
+    if(!$("#aceInTheHol").is(":checked")){checking("aceInTheHol",true);}  
+    if(!$("#opeHan").is(":checked")){checking("opeHan",true);}  
+    if(!$("#upTheAnt").is(":checked")){checking("upTheAnt",true);}  
     //William "Bill" Overbeck Perks
-    checking("borTim",true);  
-    checking("lefBeh",true);  
-    checking("unb",true);  
+    if(!$("#borTim").is(":checked")){checking("borTim",true);}  
+    if(!$("#lefBeh").is(":checked")){checking("lefBeh",true);}  
+    if(!$("#unb").is(":checked")){checking("unb",true);}  
     //Feng Min Perks
-    checking("ale",true);  
-    checking("lit",true);  
-    checking("tec",true);  
+    if(!$("#ale").is(":checked")){checking("ale",true);}  
+    if(!$("#lit").is(":checked")){checking("lit",true);}  
+    if(!$("#tec").is(":checked")){checking("tec",true);}  
     //David King Perks
-    checking("deaHar",true);  
-    checking("noMit",true);  
-    checking("weGonLivFor",true);  
+    if(!$("#deaHar").is(":checked")){checking("deaHar",true);}  
+    if(!$("#noMit").is(":checked")){checking("noMit",true);}  
+    if(!$("#weGonLivFor").is(":checked")){checking("weGonLivFor",true);}  
     //Quentin Smith Perks
-    checking("pha",true);  
-    checking("vig",true);  
-    checking("wakUp",true);  
+    if(!$("#pha").is(":checked")){checking("pha",true);}  
+    if(!$("#vig").is(":checked")){checking("vig",true);}  
+    if(!$("#wakUp").is(":checked")){checking("wakUp",true);}  
     //David Tapp Perks
-    checking("decHun",true);  
-    checking("staOut",true);  
-    checking("ten",true);  
+    if(!$("#detHun").is(":checked")){checking("detHun",true);}  
+    if(!$("#staOut").is(":checked")){checking("staOut",true);}  
+    if(!$("#ten").is(":checked")){checking("ten",true);}  
     //Kate Denson Perks
-    checking("boiOve",true);  
-    checking("danWitMe",true);  
-    checking("winOfOpp",true);  
+    if(!$("#boiOve").is(":checked")){checking("boiOve",true);}  
+    if(!$("#danWitMe").is(":checked")){checking("danWitMe",true);}  
+    if(!$("#winOfOpp").is(":checked")){checking("winOfOpp",true);}  
     //Adam Francis Perks
-    checking("aut",true);  
-    checking("del",true);  
-    checking("div",true);  
+    if(!$("#aut").is(":checked")){checking("aut",true);}  
+    if(!$("#del").is(":checked")){checking("del",true);}  
+    if(!$("#div").is(":checked")){checking("div",true);}  
     //Jeff Johansen Perks
-    checking("aft",true);  
-    checking("bre",true);  
-    checking("dis",true);  
+    if(!$("#aft").is(":checked")){checking("aft",true);}  
+    if(!$("#bre").is(":checked")){checking("bre",true);}  
+    if(!$("#dis").is(":checked")){checking("dis",true);}  
     //Jane Romero Perks
-    checking("heaOn",true);  
-    checking("poi",true);  
-    checking("sol",true);  
+    if(!$("#heaOn").is(":checked")){checking("heaOn",true);}  
+    if(!$("#poi").is(":checked")){checking("poi",true);}  
+    if(!$("#sol").is(":checked")){checking("sol",true);}  
     //Ash Willaims Perks
-    checking("bucUp",true);  
-    checking("fliFlo",true);  
-    checking("metOfMan",true);  
+    if(!$("#bucUp").is(":checked")){checking("bucUp",true);}  
+    if(!$("#fliFlo").is(":checked")){checking("fliFlo",true);}  
+    if(!$("#metOfMan").is(":checked")){checking("metOfMan",true);}  
     //Nancy Wheeler Perks
-    checking("betTog",true);  
-    checking("fix",true);  
-    checking("innStr",true);  
+    if(!$("#betTog").is(":checked")){checking("betTog",true);}  
+    if(!$("#fix").is(":checked")){checking("fix",true);}  
+    if(!$("#innStr").is(":checked")){checking("innStr",true);}  
     //Steve Harrington Perks
-    checking("bab",true);  
-    checking("cam",true);  
-    checking("secWin",true);  
+    if(!$("#bab").is(":checked")){checking("bab",true);}  
+    if(!$("#cam").is(":checked")){checking("cam",true);}  
+    if(!$("#secWiin").is(":checked")){checking("secWin",true);}  
     //Yui Kimura Perks
-    checking("anyMeaNec",true);  
-    checking("brea",true);  
-    checking("lucBre",true);  
+    if(!$("#anyMeaNec").is(":checked")){checking("anyMeaNec",true);}  
+    if(!$("#brea").is(":checked")){checking("brea",true);}  
+    if(!$("#lucBre").is(":checked")){checking("lucBre",true);}  
     //Zarina Kassir Perks
-    checking("forThePeo",true);  
-    checking("offTheRec",true);  
-    checking("redHer",true);  
+    if(!$("#forThePeo").is(":checked")){checking("forThePeo",true);}  
+    if(!$("#offTheRec").is(":checked")){checking("offTheRec",true);}  
+    if(!$("#redHer").is(":checked")){checking("redHer",true);}  
     //Cheryl Mason Perks
-    checking("bloPac",true);  
-    checking("repAll",true);  
-    checking("souGua",true);  
+    if(!$("#bloPac").is(":checked")){checking("bloPac",true);}  
+    if(!$("#repAll").is(":checked")){checking("repAll",true);}  
+    if(!$("#souGua").is(":checked")){checking("souGua",true);}  
     //Felix Richter Perks
-    checking("buiToLas",true);  
-    checking("desMea",true);  
-    checking("vis",true);  
+    if(!$("#buiToLas").is(":checked")){checking("buiToLas",true);}  
+    if(!$("#desMea").is(":checked")){checking("desMea",true);}  
+    if(!$("#vis").is(":checked")){checking("vis",true);}  
     //Élodie Rakoto Perks
-    checking("app",true);  
-    checking("dec",true);  
-    checking("powStr",true);  
+    if(!$("#app").is(":checked")){checking("app",true);}  
+    if(!$("#dec").is(":checked")){checking("dec",true);}  
+    if(!$("#powStr").is(":checked")){checking("powStr",true);}  
     //Yun-Jin Lee Perks
-    checking("fasTra",true);  
-    checking("selPre",true);  
-    checking("smaHit",true);  
+    if(!$("#fasTra").is(":checked")){checking("fasTra",true);}  
+    if(!$("#selPre").is(":checked")){checking("selPre",true);}  
+    if(!$("#smaHit").is(":checked")){checking("smaHit",true);}  
     //Jill Valentine Perks
-    checking("blaMin",true);  
-    checking("cou",true);  
-    checking("res",true);  
+    if(!$("#blaMin").is(":checked")){checking("blaMin",true);}  
+    if(!$("#cou").is(":checked")){checking("cou",true);}  
+    if(!$("#res").is(":checked")){checking("res",true);}  
     //Leon S. Kennedy Perks
-    checking("bitTheBul",true);  
-    checking("fla",true);  
-    checking("rooSpi",true);  
+    if(!$("#bitTheBul").is(":checked")){checking("bitTheBul",true);}  
+    if(!$("#fla").is(":checked")){checking("fla",true);}  
+    if(!$("#rooSpi").is(":checked")){checking("rooSpi",true);}  
     //Mikaela Reid Perks
-    checking("booCirOfHea",true);  
-    checking("booShaSte",true);  
-    checking("cla",true);  
+    if(!$("#booCirOfHea").is(":checked")){checking("booCirOfHea",true);}  
+    if(!$("#booShaSte").is(":checked")){checking("booShaSte",true);}  
+    if(!$("#cla").is(":checked")){checking("cla",true);}  
     //Jonah Vasquez Perks
-    checking("booExp",true);  
-    checking("corAct",true);  
-    checking("ove",true);  
+    if(!$("#booExp").is(":checked")){checking("booExp",true);}  
+    if(!$("#corAct").is(":checked")){checking("corAct",true);}  
+    if(!$("#ove").is(":checked")){checking("ove",true);}  
     //Yoichi Asakawa Perks
-    checking("booDarThe",true);  
-    checking("empCon",true);  
-    checking("parGui",true);  
+    if(!$("#booDarThe").is(":checked")){checking("booDarThe",true);}  
+    if(!$("#empCon").is(":checked")){checking("empCon",true);}  
+    if(!$("#parGui").is(":checked")){checking("parGui",true);}  
     //Haddie Kaur Perks
-    checking("innFoc",true);  
-    checking("ove",true);  
-    checking("resMan",true);  
+    if(!$("#innFoc").is(":checked")){checking("innFoc",true);}  
+    if(!$("#over").is(":checked")){checking("over",true);}  
+    if(!$("#resMan").is(":checked")){checking("resMan",true);}  
     //Ada Wong Perks
-    checking("lowPro",true);  
-    checking("reaHea",true);  
-    checking("wir",true);  
+    if(!$("#lowPro").is(":checked")){checking("lowPro",true);}  
+    if(!$("#reaHea").is(":checked")){checking("reaHea",true);}  
+    if(!$("#wir").is(":checked")){checking("wir",true);}  
     //Rebecca Chambers Perks
-    checking("betThaNew",true);  
-    checking("hyp",true);  
-    checking("rea",true);  
+    if(!$("#betThanNew").is(":checked")){checking("betThanNew",true);}  
+    if(!$("#hyp").is(":checked")){checking("hyp",true);}  
+    if(!$("#rea").is(":checked")){checking("rea",true);}  
     //Vittorio Toscano Perks
-    checking("fog",true);  
-    checking("potEne",true);  
-    checking("quiGam",true);  
+    if(!$("#fog").is(":checked")){checking("fog",true);}  
+    if(!$("#potEne").is(":checked")){checking("potEne",true);} 
+    if(!$("#quiGam").is(":checked")){checking("quiGam",true);}  
     //Thalita Lyra Perks
-    checking("cutLoo",true);  
-    checking("friCom",true);  
-    checking("teaPowOfTwo",true);  
+    if(!$("#cutLoo").is(":checked")){checking("cutLoo",true);}  
+    if(!$("#friCom").is(":checked")){checking("friCom",true);} 
+    if(!$("#teaPowOfTwo").is(":checked")){checking("teaPowOfTwo",true);}  
     //Renato Lyra Perks
-    checking("bacPla",true);  
-    checking("bloRus",true);  
-    checking("teaColSte",true);  
+    if(!$("#bacPla").is(":checked")){checking("bacPla",true);}  
+    if(!$("#bloRus").is(":checked")){checking("bloRus",true);}  
+    if(!$("#teaColSte").is(":checked")){checking("teaColSte",true);} 
     //Gabriel Soma Perks
-    checking("madForThi",true);  
-    checking("sca",true);  
-    checking("tro",true);  
+    if(!$("#madForThi").is(":checked")){checking("madForThi",true);}  
+    if(!$("#sca").is(":checked")){checking("sca",true);}  
+    if(!$("#tro").is(":checked")){checking("tro",true);}  
     //Nicolas Cage Perks
-    checking("dra",true);  
-    checking("ploTwi",true);  
-    checking("scePar",true);  
+    if(!$("#dra").is(":checked")){checking("dra",true);}  
+    if(!$("#ploTwi").is(":checked")){checking("ploTwi",true);}  
+    if(!$("#scePar").is(":checked")){checking("scePar",true);}  
     //Ellen Ripley Perks
-    checking("cheTra",true);  
-    checking("ligFoo",true);  
-    checking("lucSta",true);  
+    if(!$("#cheTra").is(":checked")){checking("cheTra",true);}  
+    if(!$("#ligFoo").is(":checked")){checking("ligFoo",true);}  
+    if(!$("#lucSta").is(":checked")){checking("lucSta",true);}  
     //Alan Wake Perks
-    checking("booIll",true);  
-    checking("chaOfLig",true);  
-    checking("dea",true);  
+    if(!$("#booIll").is(":checked")){checking("booIll",true);}  
+    if(!$("#chaOfLig").is(":checked")){checking("chaOfLig",true);}  
+    if(!$("#dea").is(":checked")){checking("dea",true);}  
     //Sable Ward Perks
-    checking("invWeaSpi",true);  
-    checking("strInSha",true);  
-    checking("wic",true);  
+    if(!$("#invWeaSpi").is(":checked")){checking("invWeaSpi",true);}  
+    if(!$("#strInSha").is(":checked")){checking("strInSha",true);}  
+    if(!$("#wic").is(":checked")){checking("wic",true);}  
     //The Troupe Perks
-    checking("barIns",true);  
-    checking("mirIll",true);  
-    checking("stiSig",true);  
+    if(!$("#barIns").is(":checked")){checking("barIns",true);}  
+    if(!$("#mirIll").is(":checked")){checking("mirIll",true);}  
+    if(!$("#stiSig").is(":checked")){checking("stiSig",true);}  
     //Lara Croft Perks
-    checking("fin",true);  
-    checking("har",true);  
-    checking("spe",true);  
+    if(!$("#fin").is(":checked")){checking("fin",true);}  
+    if(!$("#har").is(":checked")){checking("har",true);}  
+    if(!$("#spe").is(":checked")){checking("spe",true);}  
     //Trevor Belmont Perks
-    checking("exu",true);  
-    checking("eyeOfBel",true);  
-    checking("momOfGlo",true);   
+    if(!$("#exu").is(":checked")){checking("exu",true);}  
+    if(!$("#eyeOfBel").is(":checked")){checking("eyeOfBel",true);}  
+    if(!$("#momOfGlo").is(":checked")){checking("momOfGlo",true);}  
+    //Taurie Cain Perks
+    if(!$("#cleBre").is(":checked")){checking("cleBre",true);}  
+    if(!$("#invTreCro").is(":checked")){checking("invTreCro",true);}  
+    if(!$("#shoTheBur").is(":checked")){checking("shoTheBur",true);} 
 }
 function deselectAllPerk(){
-    checking("univPerks",false);
-    checking("anyCho",false);
-    checking("noCho",false);
+    if($("#univPerks").is(":checked")){checking("univPerks",false);}
+    if($("#anyCho").is(":checked")){checking("anyCho",false);}
+    if($("#noCho").is(":checked")){checking("noCho",false);}
     //Dwight Fairfield Perks
-    checking("bon",false);  
-    checking("lea",false);  
-    checking("proThy",false); 
+    if($("#bon").is(":checked")){checking("bon",false);}  
+    if($("#lea").is(":checked")){checking("lea",false);}  
+    if($("#proThy").is(":checked")){checking("proThy",false);} 
     //Meg Thomas Perks
-    checking("adr",false);  
-    checking("quiQui",false);  
-    checking("sprBur",false); 
+    if($("#adr").is(":checked")){checking("adr",false);}  
+    if($("#quiQui").is(":checked")){checking("quiQui",false);}  
+    if($("#sprBur").is(":checked")){checking("sprBur",false);} 
     //Claudette Morel Perks
-    checking("botKno",false);  
-    checking("emp",false);  
-    checking("selCar",false);  
+    if($("#botKno").is(":checked")){checking("botKno",false);}  
+    if($("#emp").is(":checked")){checking("emp",false);}  
+    if($("#selCar").is(":checked")){checking("selCar",false);}  
     //Jake Park Perks
-    checking("calSpi",false);  
-    checking("iroWil",false);  
-    checking("sab",false);  
+    if($("#calSpi").is(":checked")){checking("calSpi",false);}  
+    if($("#iroWil").is(":checked")){checking("iroWil",false);}  
+    if($("#sab").is(":checked")){checking("sab",false);}  
     //Nea Karlsson Perks
-    checking("balLan",false);  
-    checking("str",false);  
-    checking("urbEva",false);  
+    if($("#balLan").is(":checked")){checking("balLan",false);}  
+    if($("#str").is(":checked")){checking("str",false);}  
+    if($("#urbEva").is(":checked")){checking("urbEva",false);}  
     //Laurie Strode Perks
-    checking("decStr",false);  
-    checking("objOfObs",false);  
-    checking("solSur",false);  
+    if($("#decStr").is(":checked")){checking("decStr",false);}  
+    if($("#objOfObs").is(":checked")){checking("objOfObs",false);}  
+    if($("#solSur").is(":checked")){checking("solSur",false);}  
     //Ace Visconti Perks
-    checking("aceInTheHol",false);  
-    checking("opeHan",false);  
-    checking("upTheAnt",false);  
+    if($("#aceInTheHol").is(":checked")){checking("aceInTheHol",false);}  
+    if($("#opeHan").is(":checked")){checking("opeHan",false);}  
+    if($("#upTheAnt").is(":checked")){checking("upTheAnt",false);}  
     //William "Bill" Overbeck Perks
-    checking("borTim",false);  
-    checking("lefBeh",false);  
-    checking("unb",false);  
+    if($("#borTim").is(":checked")){checking("borTim",false);}  
+    if($("#lefBeh").is(":checked")){checking("lefBeh",false);}  
+    if($("#unb").is(":checked")){checking("unb",false);}  
     //Feng Min Perks
-    checking("ale",false);  
-    checking("lit",false);  
-    checking("tec",false);  
+    if($("#ale").is(":checked")){checking("ale",false);}  
+    if($("#lit").is(":checked")){checking("lit",false);}  
+    if($("#tec").is(":checked")){checking("tec",false);}  
     //David King Perks
-    checking("deaHar",false);  
-    checking("noMit",false);  
-    checking("weGonLivFor",false);  
+    if($("#deaHar").is(":checked")){checking("deaHar",false);}  
+    if($("#noMit").is(":checked")){checking("noMit",false);}  
+    if($("#weGonLivFor").is(":checked")){checking("weGonLivFor",false);}  
     //Quentin Smith Perks
-    checking("pha",false);  
-    checking("vig",false);  
-    checking("wakUp",false);  
+    if($("#pha").is(":checked")){checking("pha",false);}  
+    if($("#vig").is(":checked")){checking("vig",false);}  
+    if($("#wakUp").is(":checked")){checking("wakUp",false);}  
     //David Tapp Perks
-    checking("decHun",false);  
-    checking("staOut",false);  
-    checking("ten",false);  
+    if($("#detHun").is(":checked")){checking("detHun",false);}  
+    if($("#staOut").is(":checked")){checking("staOut",false);}  
+    if($("#ten").is(":checked")){checking("ten",false);}  
     //Kate Denson Perks
-    checking("boiOve",false);  
-    checking("danWitMe",false);  
-    checking("winOfOpp",false);  
+    if($("#boiOve").is(":checked")){checking("boiOve",false);}  
+    if($("#danWitMe").is(":checked")){checking("danWitMe",false);}  
+    if($("#winOfOpp").is(":checked")){checking("winOfOpp",false);}  
     //Adam Francis Perks
-    checking("aut",false);  
-    checking("del",false);  
-    checking("div",false);  
+    if($("#aut").is(":checked")){checking("aut",false);}  
+    if($("#del").is(":checked")){checking("del",false);}  
+    if($("#div").is(":checked")){checking("div",false);}  
     //Jeff Johansen Perks
-    checking("aft",false);  
-    checking("bre",false);  
-    checking("dis",false);  
+    if($("#aft").is(":checked")){checking("aft",false);}  
+    if($("#bre").is(":checked")){checking("bre",false);}  
+    if($("#dis").is(":checked")){checking("dis",false);}  
     //Jane Romero Perks
-    checking("heaOn",false);  
-    checking("poi",false);  
-    checking("sol",false);  
+    if($("#heaOn").is(":checked")){checking("heaOn",false);}  
+    if($("#poi").is(":checked")){checking("poi",false);}  
+    if($("#sol").is(":checked")){checking("sol",false);}  
     //Ash Willaims Perks
-    checking("bucUp",false);  
-    checking("fliFlo",false);  
-    checking("metOfMan",false);  
+    if($("#bucUp").is(":checked")){checking("bucUp",false);}  
+    if($("#fliFlo").is(":checked")){checking("fliFlo",false);}  
+    if($("#metOfMan").is(":checked")){checking("metOfMan",false);}  
     //Nancy Wheeler Perks
-    checking("betTog",false);  
-    checking("fix",false);  
-    checking("innStr",false);  
+    if($("#betTog").is(":checked")){checking("betTog",false);}  
+    if($("#fix").is(":checked")){checking("fix",false);}  
+    if($("#innStr").is(":checked")){checking("innStr",false);}  
     //Steve Harrington Perks
-    checking("bab",false);  
-    checking("cam",false);  
-    checking("secWin",false);  
+    if($("#bab").is(":checked")){checking("bab",false);}  
+    if($("#cam").is(":checked")){checking("cam",false);}  
+    if($("#secWiin").is(":checked")){checking("secWin",false);}  
     //Yui Kimura Perks
-    checking("anyMeaNec",false);  
-    checking("brea",false);  
-    checking("lucBre",false);  
+    if($("#anyMeaNec").is(":checked")){checking("anyMeaNec",false);}  
+    if($("#brea").is(":checked")){checking("brea",false);}  
+    if($("#lucBre").is(":checked")){checking("lucBre",false);}  
     //Zarina Kassir Perks
-    checking("forThePeo",false);  
-    checking("offTheRec",false);  
-    checking("redHer",false);  
+    if($("#forThePeo").is(":checked")){checking("forThePeo",false);}  
+    if($("#offTheRec").is(":checked")){checking("offTheRec",false);}  
+    if($("#redHer").is(":checked")){checking("redHer",false);}  
     //Cheryl Mason Perks
-    checking("bloPac",false);  
-    checking("repAll",false);  
-    checking("souGua",false);  
+    if($("#bloPac").is(":checked")){checking("bloPac",false);}  
+    if($("#repAll").is(":checked")){checking("repAll",false);}  
+    if($("#souGua").is(":checked")){checking("souGua",false);}  
     //Felix Richter Perks
-    checking("buiToLas",false);  
-    checking("desMea",false);  
-    checking("vis",false);  
+    if($("#buiToLas").is(":checked")){checking("buiToLas",false);}  
+    if($("#desMea").is(":checked")){checking("desMea",false);}  
+    if($("#vis").is(":checked")){checking("vis",false);}  
     //Élodie Rakoto Perks
-    checking("app",false);  
-    checking("dec",false);  
-    checking("powStr",false);  
+    if($("#app").is(":checked")){checking("app",false);}  
+    if($("#dec").is(":checked")){checking("dec",false);}  
+    if($("#powStr").is(":checked")){checking("powStr",false);}  
     //Yun-Jin Lee Perks
-    checking("fasTra",false);  
-    checking("selPre",false);  
-    checking("smaHit",false);  
+    if($("#fasTra").is(":checked")){checking("fasTra",false);}  
+    if($("#selPre").is(":checked")){checking("selPre",false);}  
+    if($("#smaHit").is(":checked")){checking("smaHit",false);}  
     //Jill Valentine Perks
-    checking("blaMin",false);  
-    checking("cou",false);  
-    checking("res",false);  
+    if($("#blaMin").is(":checked")){checking("blaMin",false);}  
+    if($("#cou").is(":checked")){checking("cou",false);}  
+    if($("#res").is(":checked")){checking("res",false);}  
     //Leon S. Kennedy Perks
-    checking("bitTheBul",false);  
-    checking("fla",false);  
-    checking("rooSpi",false);  
+    if($("#bitTheBul").is(":checked")){checking("bitTheBul",false);}  
+    if($("#fla").is(":checked")){checking("fla",false);}  
+    if($("#rooSpi").is(":checked")){checking("rooSpi",false);}  
     //Mikaela Reid Perks
-    checking("booCirOfHea",false);  
-    checking("booShaSte",false);  
-    checking("cla",false);  
+    if($("#booCirOfHea").is(":checked")){checking("booCirOfHea",false);}  
+    if($("#booShaSte").is(":checked")){checking("booShaSte",false);}  
+    if($("#cla").is(":checked")){checking("cla",false);}  
     //Jonah Vasquez Perks
-    checking("booExp",false);  
-    checking("corAct",false);  
-    checking("ove",false);  
+    if($("#booExp").is(":checked")){checking("booExp",false);}  
+    if($("#corAct").is(":checked")){checking("corAct",false);}  
+    if($("#ove").is(":checked")){checking("ove",false);}  
     //Yoichi Asakawa Perks
-    checking("booDarThe",false);  
-    checking("empCon",false);  
-    checking("parGui",false);  
+    if($("#booDarThe").is(":checked")){checking("booDarThe",false);}  
+    if($("#empCon").is(":checked")){checking("empCon",false);}  
+    if($("#parGui").is(":checked")){checking("parGui",false);}  
     //Haddie Kaur Perks
-    checking("innFoc",false);  
-    checking("ove",false);  
-    checking("resMan",false);  
+    if($("#innFoc").is(":checked")){checking("innFoc",false);}  
+    if($("#over").is(":checked")){checking("over",false);}  
+    if($("#resMan").is(":checked")){checking("resMan",false);}  
     //Ada Wong Perks
-    checking("lowPro",false);  
-    checking("reaHea",false);  
-    checking("wir",false);  
+    if($("#lowPro").is(":checked")){checking("lowPro",false);}  
+    if($("#reaHea").is(":checked")){checking("reaHea",false);}  
+    if($("#wir").is(":checked")){checking("wir",false);}  
     //Rebecca Chambers Perks
-    checking("betThaNew",false);  
-    checking("hyp",false);  
-    checking("rea",false);  
+    if($("#betThanNew").is(":checked")){checking("betThanNew",false);}  
+    if($("#hyp").is(":checked")){checking("hyp",false);}  
+    if($("#rea").is(":checked")){checking("rea",false);}  
     //Vittorio Toscano Perks
-    checking("fog",false);  
-    checking("potEne",false);  
-    checking("quiGam",false);  
+    if($("#fog").is(":checked")){checking("fog",false);}  
+    if($("#potEne").is(":checked")){checking("potEne",false);} 
+    if($("#quiGam").is(":checked")){checking("quiGam",false);}  
     //Thalita Lyra Perks
-    checking("cutLoo",false);  
-    checking("friCom",false);  
-    checking("teaPowOfTwo",false);  
+    if($("#cutLoo").is(":checked")){checking("cutLoo",false);}  
+    if($("#friCom").is(":checked")){checking("friCom",false);} 
+    if($("#teaPowOfTwo").is(":checked")){checking("teaPowOfTwo",false);}  
     //Renato Lyra Perks
-    checking("bacPla",false);  
-    checking("bloRus",false);  
-    checking("teaColSte",false);  
+    if($("#bacPla").is(":checked")){checking("bacPla",false);}  
+    if($("#bloRus").is(":checked")){checking("bloRus",false);}  
+    if($("#teaColSte").is(":checked")){checking("teaColSte",false);} 
     //Gabriel Soma Perks
-    checking("madForThi",false);  
-    checking("sca",false);  
-    checking("tro",false);  
+    if($("#madForThi").is(":checked")){checking("madForThi",false);}  
+    if($("#sca").is(":checked")){checking("sca",false);}  
+    if($("#tro").is(":checked")){checking("tro",false);}  
     //Nicolas Cage Perks
-    checking("dra",false);  
-    checking("ploTwi",false);  
-    checking("scePar",false);  
+    if($("#dra").is(":checked")){checking("dra",false);}  
+    if($("#ploTwi").is(":checked")){checking("ploTwi",false);}  
+    if($("#scePar").is(":checked")){checking("scePar",false);}  
     //Ellen Ripley Perks
-    checking("cheTra",false);  
-    checking("ligFoo",false);  
-    checking("lucSta",false);  
+    if($("#cheTra").is(":checked")){checking("cheTra",false);}  
+    if($("#ligFoo").is(":checked")){checking("ligFoo",false);}  
+    if($("#lucSta").is(":checked")){checking("lucSta",false);}  
     //Alan Wake Perks
-    checking("booIll",false);  
-    checking("chaOfLig",false);  
-    checking("dea",false);  
+    if($("#booIll").is(":checked")){checking("booIll",false);}  
+    if($("#chaOfLig").is(":checked")){checking("chaOfLig",false);}  
+    if($("#dea").is(":checked")){checking("dea",false);}  
     //Sable Ward Perks
-    checking("invWeaSpi",false);  
-    checking("strInSha",false);  
-    checking("wic",false);  
+    if($("#invWeaSpi").is(":checked")){checking("invWeaSpi",false);}  
+    if($("#strInSha").is(":checked")){checking("strInSha",false);}  
+    if($("#wic").is(":checked")){checking("wic",false);}  
     //The Troupe Perks
-    checking("barIns",false);  
-    checking("mirIll",false);  
-    checking("stiSig",false);  
+    if($("#barIns").is(":checked")){checking("barIns",false);}  
+    if($("#mirIll").is(":checked")){checking("mirIll",false);}  
+    if($("#stiSig").is(":checked")){checking("stiSig",false);}  
     //Lara Croft Perks
-    checking("fin",false);  
-    checking("har",false);  
-    checking("spe",false);  
+    if($("#fin").is(":checked")){checking("fin",false);}  
+    if($("#har").is(":checked")){checking("har",false);}  
+    if($("#spe").is(":checked")){checking("spe",false);}  
     //Trevor Belmont Perks
-    checking("exu",false);  
-    checking("eyeOfBel",false);  
-    checking("momOfGlo",false);  
+    if($("#exu").is(":checked")){checking("exu",false);}  
+    if($("#eyeOfBel").is(":checked")){checking("eyeOfBel",false);}  
+    if($("#momOfGlo").is(":checked")){checking("momOfGlo",false);}  
+    //Taurie Cain Perks
+    if($("#cleBre").is(":checked")){checking("cleBre",false);}  
+    if($("#invTreCro").is(":checked")){checking("invTreCro",false);}  
+    if($("#shoTheBur").is(":checked")){checking("shoTheBur",false);} 
 }
 //Items
 function selectAllItem(){
 //Flashlights
-    checking("flashlight",true);
-    checking("flashlightAnyAddon",true);
-    checking("flashlightCommons",true);
-    checking("flashlightUncommons",true);
-    checking("flashlightRares",true);
-    checking("flashlightVeryRares",true);
-    checking("flashlightUltraRares",true);
+    if(!$("#flashlight").is(":checked")){checking("flashlight",true);}
+    if(!$("#flashlightAnyAddon").is(":checked")){checking("flashlightAnyAddon",true);}
+    if(!$("#flashlightCommons").is(":checked")){checking("flashlightCommons",true);}
+    if(!$("#flashlightUncommons").is(":checked")){checking("flashlightUncommons",true);}
+    if(!$("#flashlightRares").is(":checked")){checking("flashlightRares",true);}
+    if(!$("#flashlightVeryRares").is(":checked")){checking("flashlightVeryRares",true);}
+    if(!$("#flashlightUltraRares").is(":checked")){checking("flashlightUltraRares",true);}
 //Keys
-    checking("key",true);
-    checking("keyAnyAddon",true);
-    checking("keyCommons",true);
-    checking("keyUncommons",true);
-    checking("keyRares",true);
-    checking("keyVeryRares",true);
+    if(!$("#key").is(":checked")){checking("key",true);}
+    if(!$("#keyAnyAddon").is(":checked")){checking("keyAnyAddon",true);}
+    if(!$("#keyCommons").is(":checked")){checking("keyCommons",true);}
+    if(!$("#keyUncommons").is(":checked")){checking("keyUncommons",true);}
+    if(!$("#keyRares").is(":checked")){checking("keyRares",true);}
+    if(!$("#keyVeryRares").is(":checked")){checking("keyVeryRares",true);}
 //Maps
-    checking("map",true);
-    checking("mapAnyAddon",true);
-    checking("mapCommons",true);
-    checking("mapUncommons",true);
-    checking("mapRares",true);
-    checking("mapVeryRares",true);
+    if(!$("#map").is(":checked")){checking("map",true);}
+    if(!$("#mapAnyAddon").is(":checked")){checking("mapAnyAddon",true);}
+    if(!$("#mapCommons").is(":checked")){checking("mapCommons",true);}
+    if(!$("#mapUncommons").is(":checked")){checking("mapUncommons",true);}
+    if(!$("#mapRares").is(":checked")){checking("mapRares",true);}
+    if(!$("#mapVeryRares").is(":checked")){checking("mapVeryRares",true);}
 //Medkits
-    checking("medkit",true);
-    checking("medkitAnyAddon",true);
-    checking("medkitCommons",true);
-    checking("medkitUncommons",true);
-    checking("medkitRares",true);
-    checking("medkitVeryRares",true);
-    checking("medkitUltraRares",true);
+    if(!$("#medkit").is(":checked")){checking("medkit",true);}
+    if(!$("#medkitAnyAddon").is(":checked")){checking("medkitAnyAddon",true);}
+    if(!$("#medkitCommons").is(":checked")){checking("medkitCommons",true);}
+    if(!$("#medkitUncommons").is(":checked")){checking("medkitUncommons",true);}
+    if(!$("#medkitRares").is(":checked")){checking("medkitRares",true);}
+    if(!$("#medkitVeryRares").is(":checked")){checking("medkitVeryRares",true);}
+    if(!$("#medkitUltraRares").is(":checked")){checking("medkitUltraRares",true);}
 //Toolboxes
-    checking("toolbox",true);
-    checking("toolboxAnyAddon",true);
-    checking("toolboxCommons",true);
-    checking("toolboxUncommons",true);
-    checking("toolboxRares",true);
-    checking("toolboxUltraRares",true);
+    if(!$("#toolbox").is(":checked")){checking("toolbox",true);}
+    if(!$("#toolboxAnyAddon").is(":checked")){checking("toolboxAnyAddon",true);}
+    if(!$("#toolboxCommons").is(":checked")){checking("toolboxCommons",true);}
+    if(!$("#toolboxUncommons").is(":checked")){checking("toolboxUncommons",true);}
+    if(!$("#toolboxRares").is(":checked")){checking("toolboxRares",true);}
+    if(!$("#toolboxUltraRares").is(":checked")){checking("toolboxUltraRares",true);}
 }
 function deselectAllItem(){
-    //Flashlights
-    checking("flashlight",false);
-    checking("flashlightAnyAddon",false);
-    checking("flashlightCommons",false);
-    checking("flashlightUncommons",false);
-    checking("flashlightRares",false);
-    checking("flashlightVeryRares",false);
-    checking("flashlightUltraRares",false);
+//Flashlights
+    if($("#flashlight").is(":checked")){checking("flashlight",false);}
+    if($("#flashlightAnyAddon").is(":checked")){checking("flashlightAnyAddon",false);}
+    if($("#flashlightCommons").is(":checked")){checking("flashlightCommons",false);}
+    if($("#flashlightUncommons").is(":checked")){checking("flashlightUncommons",false);}
+    if($("#flashlightRares").is(":checked")){checking("flashlightRares",false);}
+    if($("#flashlightVeryRares").is(":checked")){checking("flashlightVeryRares",false);}
+    if($("#flashlightUltraRares").is(":checked")){checking("flashlightUltraRares",false);}
 //Keys
-    checking("key",false);
-    checking("keyAnyAddon",false);
-    checking("keyCommons",false);
-    checking("keyUncommons",false);
-    checking("keyRares",false);
-    checking("keyVeryRares",false);
+    if($("#key").is(":checked")){checking("key",false);}
+    if($("#keyAnyAddon").is(":checked")){checking("keyAnyAddon",false);}
+    if($("#keyCommons").is(":checked")){checking("keyCommons",false);}
+    if($("#keyUncommons").is(":checked")){checking("keyUncommons",false);}
+    if($("#keyRares").is(":checked")){checking("keyRares",false);}
+    if($("#keyVeryRares").is(":checked")){checking("keyVeryRares",false);}
 //Maps
-    checking("map",false);
-    checking("mapAnyAddon",false);
-    checking("mapCommons",false);
-    checking("mapUncommons",false);
-    checking("mapRares",false);
-    checking("mapVeryRares",false);
+    if($("#map").is(":checked")){checking("map",false);}
+    if($("#mapAnyAddon").is(":checked")){checking("mapAnyAddon",false);}
+    if($("#mapCommons").is(":checked")){checking("mapCommons",false);}
+    if($("#mapUncommons").is(":checked")){checking("mapUncommons",false);}
+    if($("#mapRares").is(":checked")){checking("mapRares",false);}
+    if($("#mapVeryRares").is(":checked")){checking("mapVeryRares",false);}
 //Medkits
-    checking("medkit",false);
-    checking("medkitAnyAddon",false);
-    checking("medkitCommons",false);
-    checking("medkitUncommons",false);
-    checking("medkitRares",false);
-    checking("medkitVeryRares",false);
-    checking("medkitUltraRares",false);
+    if($("#medkit").is(":checked")){checking("medkit",false);}
+    if($("#medkitAnyAddon").is(":checked")){checking("medkitAnyAddon",false);}
+    if($("#medkitCommons").is(":checked")){checking("medkitCommons",false);}
+    if($("#medkitUncommons").is(":checked")){checking("medkitUncommons",false);}
+    if($("#medkitRares").is(":checked")){checking("medkitRares",false);}
+    if($("#medkitVeryRares").is(":checked")){checking("medkitVeryRares",false);}
+    if($("#medkitUltraRares").is(":checked")){checking("medkitUltraRares",false);}
 //Toolboxes
-    checking("toolbox",false);
-    checking("toolboxAnyAddon",false);
-    checking("toolboxCommons",false);
-    checking("toolboxUncommons",false);
-    checking("toolboxRares",false);
-    checking("toolboxUltraRares",false);
+    if($("#toolbox").is(":checked")){checking("toolbox",false);}
+    if($("#toolboxAnyAddon").is(":checked")){checking("toolboxAnyAddon",false);}
+    if($("#toolboxCommons").is(":checked")){checking("toolboxCommons",false);}
+    if($("#toolboxUncommons").is(":checked")){checking("toolboxUncommons",false);}
+    if($("#toolboxRares").is(":checked")){checking("toolboxRares",false);}
+    if($("#toolboxUltraRares").is(":checked")){checking("toolboxUltraRares",false);}
 }
 //Offerings
 function selectAllOffering(){
-    checking("bloodpoints",true);
-    checking("luck",true);
-    checking("mapMods",true);
-    checking("realm",true);
-    checking("shroud",true);
+    if(!$("#bloodpoints").is(":checked")){checking("bloodpoints",true);}
+    if(!$("#luck").is(":checked")){checking("luck",true);}
+    if(!$("#mapMods").is(":checked")){checking("mapMods",true);}
+    if(!$("#realm").is(":checked")){checking("realm",true);}
+    if(!$("#shroud").is(":checked")){checking("shroud",true);}
 }
 function deselectAllOffering(){
-    if ($("#bloodpoints").is(":checked")){
-        checking("bloodpoints",false);
-    }
-    if ($("#luck").is(":checked")){
-        checking("luck",false);
-    }
-    if ($("#mapMods").is(":checked")){
-        checking("mapMods",false);
-    }
-    if ($("#realm").is(":checked")){
-        checking("realm",false);
-    }
-    if ($("#shroud").is(":checked")){
-        checking("shroud",false);
-    }
-    if ($("#allCategories").is(":checked")){
-        checking("allCategories",false);
-    }
-    if ($("#altruism").is(":checked")){
-        checking("altruism",false);
-    }
-    if ($("#boldness").is(":checked")){
-        checking("boldness",false);
-    }
-    if ($("#objectives").is(":checked")){
-        checking("objectives",false);
-    }
-    if ($("#survival").is(":checked")){
-        checking("survival",false);
-    }
-    if ($("#singleLuck").is(":checked")){
-        checking("singleLuck",false);
-    }
-    if ($("#allLuck").is(":checked")){
-        checking("allLuck",false);
-    }
-    if ($("#wards").is(":checked")){
-        checking("wards",false);
-    }
-    if ($("#basement").is(":checked")){
-        checking("basement",false);
-    }
-    if ($("#chests").is(":checked")){
-        checking("chests",false);
-    }
-    if ($("#fogThick").is(":checked")){
-        checking("fogThick",false);
-    }
-    if ($("#hatch").is(":checked")){
-        checking("hatch",false);
-    }
-    if ($("#hook").is(":checked")){
-        checking("hook",false);
-    }
-    if ($("#azaKey").is(":checked")){
-        checking("azaKey",false);
-    }
-    if ($("#grandmaCook").is(":checked")){
-        checking("grandmaCook",false);
-    }
-    if ($("#heartLock").is(":checked")){
-        checking("heartLock",false);
-    }
-    if ($("#charWedPhoto").is(":checked")){
-        checking("charWedPhoto",false);
-    }
-    if ($("#beefTallow").is(":checked")){
-        checking("beefTallow",false);
-    }
-    if ($("#airlockDoors").is(":checked")){
-        checking("airlockDoors",false);
-    }
-    if ($("#alienFlora").is(":checked")){
-        checking("alienFlora",false);
-    }
-    if ($("#crowEye").is(":checked")){
-        checking("crowEye",false);
-    }
-    if ($("#jigsawPiece").is(":checked")){
-        checking("jigsawPiece",false);
-    }
-    if ($("#shatteredBottle").is(":checked")){
-        checking("shatteredBottle",false);
-    }
-    if ($("#strodeKey").is(":checked")){
-        checking("strodeKey",false);
-    }
-    if ($("#hawkinsID").is(":checked")){
-        checking("hawkinsID",false);
-    }
-    if ($("#shatteredGlasses").is(":checked")){
-        checking("shatteredGlasses",false);
-    }
-    if ($("#macmillanBone").is(":checked")){
-        checking("macmillanBone",false);
-    }
-    if ($("#damagedPhoto").is(":checked")){
-        checking("damagedPhoto",false);
-    }
-    if ($("#rpdBadge").is(":checked")){
-        checking("rpdBadge",false);
-    }
-    if ($("#lastMask").is(":checked")){
-        checking("lastMask",false);
-    }
-    if ($("#marysLetter").is(":checked")){
-        checking("marysLetter",false);
-    }
-    if ($("#piedPiper").is(":checked")){
-        checking("piedPiper",false);
-    }
-    if ($("#ichorousLoam").is(":checked")){
-        checking("ichorousLoam",false);
-    }
-    if ($("#yamaokaCrest").is(":checked")){
-        checking("yamaokaCrest",false);
-    }
-    if ($("#sepShroud").is(":checked")){
-        checking("sepShroud",false);
-    }
-    if ($("#unionShroud").is(":checked")){
-        checking("unionShroud",false);
-    }
-    if ($("#vigoShroud").is(":checked")){
-        checking("vigoShroud",false);
-    }
-    if ($("#bindShroud").is(":checked")){
-        checking("bindShroud",false);
-    }
+    if ($("#bloodpoints").is(":checked")){checking("bloodpoints",false);}
+    if ($("#luck").is(":checked")){checking("luck",false);}
+    if ($("#mapMods").is(":checked")){checking("mapMods",false);}
+    if ($("#realm").is(":checked")){checking("realm",false);}
+    if ($("#shroud").is(":checked")){checking("shroud",false);}
+    if ($("#allCategories").is(":checked")){checking("allCategories",false);}
+    if ($("#altruism").is(":checked")){checking("altruism",false);}
+    if ($("#boldness").is(":checked")){checking("boldness",false);}
+    if ($("#objectives").is(":checked")){checking("objectives",false);}
+    if ($("#survival").is(":checked")){checking("survival",false);}
+    if ($("#singleLuck").is(":checked")){checking("singleLuck",false);}
+    if ($("#allLuck").is(":checked")){checking("allLuck",false);}
+    if ($("#wards").is(":checked")){checking("wards",false);}
+    if ($("#basement").is(":checked")){checking("basement",false);}
+    if ($("#chests").is(":checked")){checking("chests",false);}
+    if ($("#fogThick").is(":checked")){checking("fogThick",false);}
+    if ($("#hatch").is(":checked")){checking("hatch",false);}
+    if ($("#hook").is(":checked")){checking("hook",false);}
+    if ($("#azaKey").is(":checked")){checking("azaKey",false);}
+    if ($("#grandmaCook").is(":checked")){checking("grandmaCook",false);}
+    if ($("#heartLock").is(":checked")){checking("heartLock",false);}
+    if ($("#charWedPhoto").is(":checked")){checking("charWedPhoto",false);}
+    if ($("#beefTallow").is(":checked")){checking("beefTallow",false);}
+    if ($("#airlockDoors").is(":checked")){checking("airlockDoors",false);}
+    if ($("#alienFlora").is(":checked")){checking("alienFlora",false);}
+    if ($("#crowEye").is(":checked")){checking("crowEye",false);}
+    if ($("#jigsawPiece").is(":checked")){checking("jigsawPiece",false);}
+    if ($("#shatteredBottle").is(":checked")){checking("shatteredBottle",false);}
+    if ($("#strodeKey").is(":checked")){checking("strodeKey",false);}
+    if ($("#hawkinsID").is(":checked")){checking("hawkinsID",false);}
+    if ($("#shatteredGlasses").is(":checked")){checking("shatteredGlasses",false);}
+    if ($("#macmillanBone").is(":checked")){checking("macmillanBone",false);}
+    if ($("#damagedPhoto").is(":checked")){checking("damagedPhoto",false);}
+    if ($("#rpdBadge").is(":checked")){checking("rpdBadge",false);}
+    if ($("#lastMask").is(":checked")){checking("lastMask",false);}
+    if ($("#marysLetter").is(":checked")){checking("marysLetter",false);}
+    if ($("#piedPiper").is(":checked")){checking("piedPiper",false);}
+    if ($("#ichorousLoam").is(":checked")){checking("ichorousLoam",false);}
+    if ($("#yamaokaCrest").is(":checked")){checking("yamaokaCrest",false);}
+    if ($("#unionShroud").is(":checked")){checking("unionShroud",false);}
+    if ($("#vigoShroud").is(":checked")){checking("vigoShroud",false);}
+    if ($("#bindShroud").is(":checked")){checking("bindShroud",false);}
     
 }
 //After Randomize Display Fixes
 //Perks
 function fixedPerks(perk1,perk2,perk3,perk4){
-    switch (perk1){
-    //Any Choice Perks Start 
-        case "anyCho":
-            document.getElementById("perk1Img").src="Perks/Perks/RandomPerkPlaceholder.png";
-            document.getElementById("perk1").innerHTML = "Any Choice";
-            break;
-    //No Choice Perks Start
-        case "noCho":
-            document.getElementById("perk1Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk1").innerHTML = "No Choice";
-            break;
-    //Universal Perks Start
-        case "darSen":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_DarkSense.png";
-            document.getElementById("perk1").innerHTML = "Dark Sense";
-            break;
-        case "dejVu":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_DejaVu.png";
-            document.getElementById("perk1").innerHTML = "Déjà Vu";
-            break;
-        case "hope":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Hope.png";
-            document.getElementById("perk1").innerHTML = "Hope";
-            break;
-        case "kindred":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Kindred.png";
-            document.getElementById("perk1").innerHTML = "Kindred";
-            break;
-        case "lightweight":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Lightweight.png";
-            document.getElementById("perk1").innerHTML = "Lightweight";
-            break;
-        case "noOneLefBeh":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
-            document.getElementById("perk1").innerHTML = "No One Left Behind";
-            break;
-        case "pluIns":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
-            document.getElementById("perk1").innerHTML = "Plunder's Instinct";
-            break;
-        case "premonition":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Premonition.png";
-            document.getElementById("perk1").innerHTML = "Premonition";
-            break;
-        case "resilience":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Resilience.png";
-            document.getElementById("perk1").innerHTML = "Resilience";
-            break;
-        case "sliMea":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
-            document.getElementById("perk1").innerHTML = "Slippery Meat";
-            break;
-        case "smaGam":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_SmallGame.png";
-            document.getElementById("perk1").innerHTML = "Small Game";
-            break;
-        case "spiChi":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_SpineChill.png";
-            document.getElementById("perk1").innerHTML = "Spine Chill";
-            break;
-        case "thiIsNotHap":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
-            document.getElementById("perk1").innerHTML = "This is Not Happening";
-            break;
-        case "weMakIt":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
-            document.getElementById("perk1").innerHTML = "We'll Make It";
-            break;
-//Unique Survivor Perks Start
+    const perks = [perk1,perk2,perk3,perk4];
+    for (let i = 0; i < 4; i++){
+        switch (perks[i]){
+        //Any Choice Perks Start 
+            case "anyCho":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/RandomSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Any Choice";
+                break;
+        //No Choice Perks Start
+            case "noCho":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "No Choice";
+                break;
+        //Universal Perks Start
+            case "darSen":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_DarkSense.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Dark Sense";
+                break;
+            case "dejVu":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_DejaVu.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Déjà Vu";
+                break;
+            case "hope":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Hope.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hope";
+                break;
+            case "kindred":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Kindred.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Kindred";
+                break;
+            case "lightweight":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Lightweight.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lightweight";
+                break;
+            case "noOneLefBeh":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "No One Left Behind";
+                break;
+            case "pluIns":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Plunder's Instinct";
+                break;
+            case "premonition":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Premonition.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Premonition";
+                break;
+            case "resilience":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Resilience.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Resilience";
+                break;
+            case "sliMea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Slippery Meat";
+                break;
+            case "smaGam":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SmallGame.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Small Game";
+                break;
+            case "spiChi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SpineChill.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Spine Chill";
+                break;
+            case "thiIsNotHap":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "This is Not Happening";
+                break;
+            case "weMakIt":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "We'll Make It";
+                break;
+    //Unique Survivor Perks Start
 
-    //Dwight Fairfield Perks
-        case "bon":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Bond.png";
-            document.getElementById("perk1").innerHTML = "Bond";
-            break;
-        case "lea":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Leader.png";
-            document.getElementById("perk1").innerHTML = "Leader";
-            break;
-        case "proThy":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_ProveThyself.png";
-            document.getElementById("perk1").innerHTML = "Prove Thyself";
-            break;
-    //Meg Thomas Perks
-        case "adr":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Adrenaline.png";
-            document.getElementById("perk1").innerHTML = "Adrenaline";
-            break;
-        case "quiQui":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
-            document.getElementById("perk1").innerHTML = "Quick & Quiet";
-            break;
-        case "sprBur":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_SprintBurst.png";
-            document.getElementById("perk1").innerHTML = "Sprint Burst";
-            break;
-    //Claudette Morel Perks
-        case "botKno":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
-            document.getElementById("perk1").innerHTML = "Botany Knowledge";
-            break;
-        case "emp":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Empathy.png";
-            document.getElementById("perk1").innerHTML = "Empathy";
-            break;
-        case "selCar":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_SelfCare.png";
-            document.getElementById("perk1").innerHTML = "Self-Care";
-            break;
-    //Jake Park Perks
-        case "calSpi":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
-            document.getElementById("perk1").innerHTML = "Calm Spirit";
-            break;
-        case "iroWil":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_IronWill.png";
-            document.getElementById("perk1").innerHTML = "Iron Will";
-            break;
-        case "sab":
-            document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Saboteur.png";
-            document.getElementById("perk1").innerHTML = "Saboteur";
-            break;
-    //Nea Karlsson Perks
-        case "balLan":
-        document.getElementById("perk1Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
-            document.getElementById("perk1").innerHTML = "Balanced Landing";
-            break;
-        case "str":
-        document.getElementById("perk1Img").src="Perks/Perks/iconPerks_Streetwise.png";
-            document.getElementById("perk1").innerHTML = "Streetwise";
-            break;
-        case "urbEva":
-        document.getElementById("perk1Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
-            document.getElementById("perk1").innerHTML = "Urban Evasion";
-            break;
-    //Laurie Strode Perks
-        case "decStr":
-        document.getElementById("perk1Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
-            document.getElementById("perk1").innerHTML = "Decisive Strike";
-            break;
-        case "objOfObs":
-        document.getElementById("perk1Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
-            document.getElementById("perk1").innerHTML = "Object of Obsession";
-            break;
-        case "solSur":
-        document.getElementById("perk1Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
-            document.getElementById("perk1").innerHTML = "Sole Survivor";
-            break;
-    //Ace Visconti Perks
-        case "aceInTheHol":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
-            document.getElementById("perk1").innerHTML = "Ace in the Hole";
-            break;
-        case "opeHan":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
-            document.getElementById("perk1").innerHTML = "Open-Handed";
-            break;
-        case "upTheAnt":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
-            document.getElementById("perk1").innerHTML = "Up the Ante";
-            break;
-    //William "Bill" Overbeck Perks
-        case "borTim":
-            document.getElementById("perk1Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
-            document.getElementById("perk1").innerHTML = "Borrowed Time";
-            break;
-        case "lefBeh":
-            document.getElementById("perk1Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
-            document.getElementById("perk1").innerHTML = "Left Behind";
-            break;
-        case "unb":
-            document.getElementById("perk1Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
-            document.getElementById("perk1").innerHTML = "Unbreakable";
-            break;
-    //Feng Min Perks
-        case "ale":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
-            document.getElementById("perk1").innerHTML = "Alert";
-            break;
-        case "lit":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
-            document.getElementById("perk1").innerHTML = "Lithe";
-            break;
-        case "tec":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
-            document.getElementById("perk1").innerHTML = "Technician";
-            break;
-    //David King Perks
-        case "deaHar":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
-            document.getElementById("perk1").innerHTML = "Dead Hard";
-            break;
-        case "noMit":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
-            document.getElementById("perk1").innerHTML = "No Mither";
-            break;
-        case "weGonLivFor":
-            document.getElementById("perk1Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
-            document.getElementById("perk1").innerHTML = "We're Gonna Live Forever";
-            break;
-    //Quentin Smith Perks
-        case "pha":
-            document.getElementById("perk1Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
-            document.getElementById("perk1").innerHTML = "Pharmacy";
-            break;
-        case "vig":
-            document.getElementById("perk1Img").src="Perks/Perks/England/iconPerks_Vigil.png";
-            document.getElementById("perk1").innerHTML = "Vigil";
-            break;
-        case "wakUp":
-            document.getElementById("perk1Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
-            document.getElementById("perk1").innerHTML = "Wake Up!";
-            break;
-    //David Tapp Perks
-        case "decHun":
-            document.getElementById("perk1Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
-            document.getElementById("perk1").innerHTML = "Dectective's Hunch";
-            break;
-        case "staOut":
-            document.getElementById("perk1Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
-            document.getElementById("perk1").innerHTML = "Stake Out";
-            break;
-        case "ten":
-            document.getElementById("perk1Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
-            document.getElementById("perk1").innerHTML = "Tenacity";
-            break;
-    //Kate Denson Perks
-        case "boiOve":
-            document.getElementById("perk1Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
-            document.getElementById("perk1").innerHTML = "Boil Over";
-            break;
-        case "danWitMe":
-            document.getElementById("perk1Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
-            document.getElementById("perk1").innerHTML = "Dance With Me";
-            break;
-        case "winOfOpp":
-            document.getElementById("perk1Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
-            document.getElementById("perk1").innerHTML = "Windows of Opportunity";
-            break;
-    //Adam Francis Perks
-        case "aut":
-            document.getElementById("perk1Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
-            document.getElementById("perk1").innerHTML = "Autodidact";
-            break;
-        case "del":
-            document.getElementById("perk1Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
-            document.getElementById("perk1").innerHTML = "Deliverance";
-            break;
-        case "div":
-            document.getElementById("perk1Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
-            document.getElementById("perk1").innerHTML = "Diversion";
-            break;
-    //Jeff Johansen Perks
-        case "aft":
-            document.getElementById("perk1Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
-            document.getElementById("perk1").innerHTML = "Aftercare";
-            break;
-        case "bre":
-            document.getElementById("perk1Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
-            document.getElementById("perk1").innerHTML = "Breakdown";
-            break;
-        case "dis":
-            document.getElementById("perk1Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
-            document.getElementById("perk1").innerHTML = "Distortion";
-            break;
-    //Jane Romero Perks
-        case "heaOn":
-            document.getElementById("perk1Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
-            document.getElementById("perk1").innerHTML = "Head On";
-            break;
-        case "poi":
-            document.getElementById("perk1Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
-            document.getElementById("perk1").innerHTML = "Poised";
-            break;
-        case "sol":
-            document.getElementById("perk1Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
-            document.getElementById("perk1").innerHTML = "Solidarity";
-            break;
-    //Ash Willaims Perks
-        case "bucUp":
-            document.getElementById("perk1Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
-            document.getElementById("perk1").innerHTML = "Buckle Up";
-            break;
-        case "fliFlo":
-            document.getElementById("perk1Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
-            document.getElementById("perk1").innerHTML = "Flip-Flop";
-            break;
-        case "metOfMan":
-            document.getElementById("perk1Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
-            document.getElementById("perk1").innerHTML = "Mettle of Man";
-            break;
-    //Nancy Wheeler Perks
-        case "betTog":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
-            document.getElementById("perk1").innerHTML = "Better Together";
-            break;
-        case "fix":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
-            document.getElementById("perk1").innerHTML = "Fixated";
-            break;
-        case "innStr":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
-            document.getElementById("perk1").innerHTML = "Inner Strength";
-            break;
-    //Steve Harrington Perks
-        case "bab":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
-            document.getElementById("perk1").innerHTML = "Babysitter";
-            break;
-        case "cam":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
-            document.getElementById("perk1").innerHTML = "Camaradeire";
-            break;
-        case "secWin":
-            document.getElementById("perk1Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
-            document.getElementById("perk1").innerHTML = "Second Wind";
-            break;
-    //Yui Kimura Perks
-        case "anyMeaNec":
-            document.getElementById("perk1Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
-            document.getElementById("perk1").innerHTML = "Any Means Necessary";
-            break;
-        case "brea":
-            document.getElementById("perk1Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
-            document.getElementById("perk1").innerHTML = "Breakout";
-            break;
-        case "lucBre":
-            document.getElementById("perk1Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
-            document.getElementById("perk1").innerHTML = "Lucky Break";
-            break;
-    //Zarina Kassir Perks
-        case "forThePeo":
-            document.getElementById("perk1Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
-            document.getElementById("perk1").innerHTML = "For the People";
-            break;
-        case "offTheRec":
-            document.getElementById("perk1Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
-            document.getElementById("perk1").innerHTML = "Off the Record";
-            break;
-        case "redHer":
-            document.getElementById("perk1Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
-            document.getElementById("perk1").innerHTML = "Red Herring";
-            break;
-    //Cheryl Mason Perks
-        case "bloPac":
-            document.getElementById("perk1Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
-            document.getElementById("perk1").innerHTML = "Blood Pact";
-            break;
-        case "repAll":
-            document.getElementById("perk1Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
-            document.getElementById("perk1").innerHTML = "Repressed Alliance";
-            break;
-        case "souGua":
-            document.getElementById("perk1Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
-            document.getElementById("perk1").innerHTML = "Soul Guard";
-            break;
-    //Felix Richter Perks
-        case "buiToLas":
-            document.getElementById("perk1Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
-            document.getElementById("perk1").innerHTML = "Built to Last";
-            break;
-        case "desMea":
-            document.getElementById("perk1Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
-            document.getElementById("perk1").innerHTML = "Desperate Measures";
-            break;
-        case "vis":
-            document.getElementById("perk1Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
-            document.getElementById("perk1").innerHTML = "Visionary";
-            break;
-    //Élodie Rakoto Perks
-        case "app":
-            document.getElementById("perk1Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
-            document.getElementById("perk1").innerHTML = "Appraisal";
-            break;
-        case "dec":
-            document.getElementById("perk1Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
-            document.getElementById("perk1").innerHTML = "Deception";
-            break;
-        case "powStr":
-            document.getElementById("perk1Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
-            document.getElementById("perk1").innerHTML = "Power Struggle";
-            break;
-    //Yun-Jin Lee Perks
-        case "fasTra":
-            document.getElementById("perk1Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
-            document.getElementById("perk1").innerHTML = "Fast Track";
-            break;
-        case "selPre":
-            document.getElementById("perk1Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
-            document.getElementById("perk1").innerHTML = "Self-Preservation";
-            break;
-        case "smaHit":
-            document.getElementById("perk1Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
-            document.getElementById("perk1").innerHTML = "Smash Hit";
-            break;
-    //Jill Valentine Perks
-        case "blaMin":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
-            document.getElementById("perk1").innerHTML = "Blast Mine";
-            break;
-        case "cou":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
-            document.getElementById("perk1").innerHTML = "Counterforce";
-            break;
-        case "res":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
-            document.getElementById("perk1").innerHTML = "Resurgence";
-            break;
-    //Leon S. Kennedy Perks
-        case "bitTheBul":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
-            document.getElementById("perk1").innerHTML = "Bite the Bullet";
-            break;
-        case "fla":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
-            document.getElementById("perk1").innerHTML = "Flashbang";
-            break;
-        case "rooSpi":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
-            document.getElementById("perk1").innerHTML = "Rookie Spirit";
-            break;
-    //Mikaela Reid Perks
-        case "booCirOfHea":
-            document.getElementById("perk1Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
-            document.getElementById("perk1").innerHTML = "Boon: Circle of Healing";
-            break;
-        case "booShaSte":
-            document.getElementById("perk1Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
-            document.getElementById("perk1").innerHTML = "Boon: Shadow Step";
-            break;
-        case "cla":
-            document.getElementById("perk1Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
-            document.getElementById("perk1").innerHTML = "Clairvoyance";
-            break;
-    //Jonah Vasquez Perks
-        case "booExp":
-            document.getElementById("perk1Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
-            document.getElementById("perk1").innerHTML = "Boon: Exponential";
-            break;
-        case "corAct":
-            document.getElementById("perk1Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
-            document.getElementById("perk1").innerHTML = "Corrective Action";
-            break;
-        case "ove":
-            document.getElementById("perk1Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
-            document.getElementById("perk1").innerHTML = "Overcome";
-            break;
-    //Yoichi Asakawa Perks
-        case "booDarThe":
-            document.getElementById("perk1Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
-            document.getElementById("perk1").innerHTML = "Boon: Dark Theory";
-            break;
-        case "empCon":
-            document.getElementById("perk1Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
-            document.getElementById("perk1").innerHTML = "Empathic Connection";
-            break;
-        case "parGui":
-            document.getElementById("perk1Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
-            document.getElementById("perk1").innerHTML = "Parental Guidance";
-            break;
-    //Haddie Kaur Perks
-        case "innFoc":
-            document.getElementById("perk1Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
-            document.getElementById("perk1").innerHTML = "Inner Focus";
-            break;
-        case "ove":
-            document.getElementById("perk1Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
-            document.getElementById("perk1").innerHTML = "Overzealous";
-            break;
-        case "resMan":
-            document.getElementById("perk1Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
-            document.getElementById("perk1").innerHTML = "Residual Manifest";
-            break;
-    //Ada Wong Perks
-        case "lowPro":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
-            document.getElementById("perk1").innerHTML = "Low Profile";
-            break;
-        case "reaHea":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
-            document.getElementById("perk1").innerHTML = "Reactive Healing";
-            break;
-        case "wir":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
-            document.getElementById("perk1").innerHTML = "Wiretap";
-            break;
-    //Rebecca Chambers Perks
-        case "betThaNew":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
-            document.getElementById("perk1").innerHTML = "Better than New";
-            break;
-        case "hyp":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
-            document.getElementById("perk1").innerHTML = "Hyperfocus";
-            break;
-        case "rea":
-            document.getElementById("perk1Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
-            document.getElementById("perk1").innerHTML = "Reassurance";
-            break;
-    //Vittorio Toscano Perks
-        case "fog":
-            document.getElementById("perk1Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
-            document.getElementById("perk1").innerHTML = "Fogwise";
-            break;
-        case "potEne":
-            document.getElementById("perk1Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
-            document.getElementById("perk1").innerHTML = "Potential Energy";
-            break;
-        case "quiGam":
-            document.getElementById("perk1Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
-            document.getElementById("perk1").innerHTML = "Quick Gambit";
-            break;
-    //Thalita Lyra Perks
-        case "cutLoo":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
-            document.getElementById("perk1").innerHTML = "Cut Loose";
-            break;
-        case "friCom":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
-            document.getElementById("perk1").innerHTML = "Friendly Competition";
-            break;
-        case "teaPowOfTwo":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
-            document.getElementById("perk1").innerHTML = "Teamwork: Power of Two";
-            break;
-    //Renato Lyra Perks
-        case "bacPla":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
-            document.getElementById("perk1").innerHTML = "Background Player";
-            break;
-        case "bloRus":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
-            document.getElementById("perk1").innerHTML = "Blood Rush";
-            break;
-        case "teaColSte":
-            document.getElementById("perk1Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
-            document.getElementById("perk1").innerHTML = "Teamwork: Collective Stealth";
-            break;
-    //Gabriel Soma Perks
-        case "madForThi":
-            document.getElementById("perk1Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
-            document.getElementById("perk1").innerHTML = "Made for This";
-            break;
-        case "sca":
-            document.getElementById("perk1Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
-            document.getElementById("perk1").innerHTML = "Scavenger";
-            break;
-        case "tro":
-            document.getElementById("perk1Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
-            document.getElementById("perk1").innerHTML = "Troubleshooter";
-            break;
-    //Nicolas Cage Perks
-        case "dra":
-            document.getElementById("perk1Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
-            document.getElementById("perk1").innerHTML = "Dramaturgy";
-            break;
-        case "ploTwi":
-            document.getElementById("perk1Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
-            document.getElementById("perk1").innerHTML = "Plot Twist";
-            break;
-        case "scePar":
-            document.getElementById("perk1Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
-            document.getElementById("perk1").innerHTML = "Scene Partner";
-            break;
-    //Ellen Ripley Perks
-        case "cheTra":
-            document.getElementById("perk1Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
-            document.getElementById("perk1").innerHTML = "Chemical Trap";
-            break;
-        case "ligFoo":
-            document.getElementById("perk1Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
-            document.getElementById("perk1").innerHTML = "Light-Footed";
-            break;
-        case "lucSta":
-            document.getElementById("perk1Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
-            document.getElementById("perk1").innerHTML = "Lucky Star";
-            break;
-    //Alan Wake Perks
-        case "booIll":
-            document.getElementById("perk1Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
-            document.getElementById("perk1").innerHTML = "Boon: Illumination";
-            break;
-        case "chaOfLig":
-            document.getElementById("perk1Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
-            document.getElementById("perk1").innerHTML = "Champion of Light";
-            break;
-        case "dea":
-            document.getElementById("perk1Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
-            document.getElementById("perk1").innerHTML = "Deadline";
-            break;
-    //Sable Ward Perks
-        case "invWeaSpi":
-            document.getElementById("perk1Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
-            document.getElementById("perk1").innerHTML = "Invocation: Weaving Spiders";
-            break;
-        case "strInSha":
-            document.getElementById("perk1Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
-            document.getElementById("perk1").innerHTML = "Strength in Shadows";
-            break;
-        case "wic":
-            document.getElementById("perk1Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
-            document.getElementById("perk1").innerHTML = "Wicked";
-            break;
-    //The Troupe Perks
-        case "barIns":
-            document.getElementById("perk1Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
-            document.getElementById("perk1").innerHTML = "Bardic Inspiration";
-            break;
-        case "mirIll":
-            document.getElementById("perk1Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
-            document.getElementById("perk1").innerHTML = "Mirrored Illusion";
-            break;
-        case "stiSig":
-            document.getElementById("perk1Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
-            document.getElementById("perk1").innerHTML = "Still Sight";
-            break;
-    //Lara Croft Perks
-        case "fin":
-            document.getElementById("perk1Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
-            document.getElementById("perk1").innerHTML = "Finesse";
-            break;
-        case "har":
-            document.getElementById("perk1Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
-            document.getElementById("perk1").innerHTML = "Hardened";
-            break;
-        case "spe":
-            document.getElementById("perk1Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
-            document.getElementById("perk1").innerHTML = "Specialist";
-            break;
-    //Trevor Belmont Perks
-        case "exu":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
-            document.getElementById("perk1").innerHTML = "Exultation";
-            break;
-        case "eyeOfBel":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
-            document.getElementById("perk1").innerHTML = "Eyes of Belmont";
-            break;
-        case "momOfGlo":
-            document.getElementById("perk1Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
-            document.getElementById("perk1").innerHTML = "Moment of Glory";
-            break;
-//End
-        default: 
-            document.getElementById("perk1Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk1").innerHTML = "Error: Not Found!";
-    }
-
-    switch (perk2){
-    //Any Choice Perks Start 
-        case "anyCho":
-            document.getElementById("perk2Img").src="Perks/Perks/RandomPerkPlaceholder.png";
-            document.getElementById("perk2").innerHTML = "Any Choice";
-            break;
-    //No Choice Perks Start
-        case "noCho":
-            document.getElementById("perk2Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk2").innerHTML = "No Choice";
-            break;
-    //Universal Perks Start
-        case "darSen":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_DarkSense.png";
-            document.getElementById("perk2").innerHTML = "Dark Sense";
-            break;
-        case "dejVu":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_DejaVu.png";
-            document.getElementById("perk2").innerHTML = "Déjà Vu";
-            break;
-        case "hope":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Hope.png";
-            document.getElementById("perk2").innerHTML = "Hope";
-            break;
-        case "kindred":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Kindred.png";
-            document.getElementById("perk2").innerHTML = "Kindred";
-            break;
-        case "lightweight":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Lightweight.png";
-            document.getElementById("perk2").innerHTML = "Lightweight";
-            break;
-        case "noOneLefBeh":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
-            document.getElementById("perk2").innerHTML = "No One Left Behind";
-            break;
-        case "pluIns":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
-            document.getElementById("perk2").innerHTML = "Plunder's Instinct";
-            break;
-        case "premonition":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Premonition.png";
-            document.getElementById("perk2").innerHTML = "Premonition";
-            break;
-        case "resilience":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Resilience.png";
-            document.getElementById("perk2").innerHTML = "Resilience";
-            break;
-        case "sliMea":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
-            document.getElementById("perk2").innerHTML = "Slippery Meat";
-            break;
-        case "smaGam":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_SmallGame.png";
-            document.getElementById("perk2").innerHTML = "Small Game";
-            break;
-        case "spiChi":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_SpineChill.png";
-            document.getElementById("perk2").innerHTML = "Spine Chill";
-            break;
-        case "thiIsNotHap":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
-            document.getElementById("perk2").innerHTML = "This is Not Happening";
-            break;
-        case "weMakIt":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
-            document.getElementById("perk2").innerHTML = "We'll Make It";
-            break;
-//Unique Survivor Perks Start
-
-    //Dwight Fairfield Perks
-        case "bon":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Bond.png";
-            document.getElementById("perk2").innerHTML = "Bond";
-            break;
-        case "lea":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Leader.png";
-            document.getElementById("perk2").innerHTML = "Leader";
-            break;
-        case "proThy":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_ProveThyself.png";
-            document.getElementById("perk2").innerHTML = "Prove Thyself";
-            break;
-    //Meg Thomas Perks
-        case "adr":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Adrenaline.png";
-            document.getElementById("perk2").innerHTML = "Adrenaline";
-            break;
-        case "quiQui":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
-            document.getElementById("perk2").innerHTML = "Quick & Quiet";
-            break;
-        case "sprBur":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_SprintBurst.png";
-            document.getElementById("perk2").innerHTML = "Sprint Burst";
-            break;
-    //Claudette Morel Perks
-        case "botKno":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
-            document.getElementById("perk2").innerHTML = "Botany Knowledge";
-            break;
-        case "emp":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Empathy.png";
-            document.getElementById("perk2").innerHTML = "Empathy";
-            break;
-        case "selCar":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_SelfCare.png";
-            document.getElementById("perk2").innerHTML = "Self-Care";
-            break;
-    //Jake Park Perks
-        case "calSpi":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
-            document.getElementById("perk2").innerHTML = "Calm Spirit";
-            break;
-        case "iroWil":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_IronWill.png";
-            document.getElementById("perk2").innerHTML = "Iron Will";
-            break;
-        case "sab":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Saboteur.png";
-            document.getElementById("perk2").innerHTML = "Saboteur";
-            break;
-    //Nea Karlsson Perks
-        case "balLan":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
-            document.getElementById("perk2").innerHTML = "Balanced Landing";
-            break;
-        case "str":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_Streetwise.png";
-            document.getElementById("perk2").innerHTML = "Streetwise";
-            break;
-        case "urbEva":
-            document.getElementById("perk2Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
-            document.getElementById("perk2").innerHTML = "Urban Evasion";
-            break;
-    //Laurie Strode Perks
-        case "decStr":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
-            document.getElementById("perk2").innerHTML = "Decisive Strike";
-            break;
-        case "objOfObs":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
-            document.getElementById("perk2").innerHTML = "Object of Obsession";
-            break;
-        case "solSur":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
-            document.getElementById("perk2").innerHTML = "Sole Survivor";
-            break;
-    //Ace Visconti Perks
-        case "aceInTheHol":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
-            document.getElementById("perk2").innerHTML = "Ace in the Hole";
-            break;
-        case "opeHan":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
-            document.getElementById("perk2").innerHTML = "Open-Handed";
-            break;
-        case "upTheAnt":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
-            document.getElementById("perk2").innerHTML = "Up the Ante";
-            break;
-    //William "Bill" Overbeck Perks
-        case "borTim":
-            document.getElementById("perk2Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
-            document.getElementById("perk2").innerHTML = "Borrowed Time";
-            break;
-        case "lefBeh":
-            document.getElementById("perk2Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
-            document.getElementById("perk2").innerHTML = "Left Behind";
-            break;
-        case "unb":
-            document.getElementById("perk2Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
-            document.getElementById("perk2").innerHTML = "Unbreakable";
-            break;
-    //Feng Min Perks
-        case "ale":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
-            document.getElementById("perk2").innerHTML = "Alert";
-            break;
-        case "lit":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
-            document.getElementById("perk2").innerHTML = "Lithe";
-            break;
-        case "tec":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
-            document.getElementById("perk2").innerHTML = "Technician";
-            break;
-    //David King Perks
-        case "deaHar":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
-            document.getElementById("perk2").innerHTML = "Dead Hard";
-            break;
-        case "noMit":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
-            document.getElementById("perk2").innerHTML = "No Mither";
-            break;
-        case "weGonLivFor":
-            document.getElementById("perk2Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
-            document.getElementById("perk2").innerHTML = "We're Gonna Live Forever";
-            break;
-    //Quentin Smith Perks
-        case "pha":
-            document.getElementById("perk2Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
-            document.getElementById("perk2").innerHTML = "Pharmacy";
-            break;
-        case "vig":
-            document.getElementById("perk2Img").src="Perks/Perks/England/iconPerks_Vigil.png";
-            document.getElementById("perk2").innerHTML = "Vigil";
-            break;
-        case "wakUp":
-            document.getElementById("perk2Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
-            document.getElementById("perk2").innerHTML = "Wake Up!";
-            break;
-    //David Tapp Perks
-        case "decHun":
-            document.getElementById("perk2Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
-            document.getElementById("perk2").innerHTML = "Dectective's Hunch";
-            break;
-        case "staOut":
-            document.getElementById("perk2Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
-            document.getElementById("perk2").innerHTML = "Stake Out";
-            break;
-        case "ten":
-            document.getElementById("perk2Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
-            document.getElementById("perk2").innerHTML = "Tenacity";
-            break;
-    //Kate Denson Perks
-        case "boiOve":
-            document.getElementById("perk2Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
-            document.getElementById("perk2").innerHTML = "Boil Over";
-            break;
-        case "danWitMe":
-            document.getElementById("perk2Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
-            document.getElementById("perk2").innerHTML = "Dance With Me";
-            break;
-        case "winOfOpp":
-            document.getElementById("perk2Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
-            document.getElementById("perk2").innerHTML = "Windows of Opportunity";
-            break;
-    //Adam Francis Perks
-        case "aut":
-            document.getElementById("perk2Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
-            document.getElementById("perk2").innerHTML = "Autodidact";
-            break;
-        case "del":
-            document.getElementById("perk2Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
-            document.getElementById("perk2").innerHTML = "Deliverance";
-            break;
-        case "div":
-            document.getElementById("perk2Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
-            document.getElementById("perk2").innerHTML = "Diversion";
-            break;
-    //Jeff Johansen Perks
-        case "aft":
-            document.getElementById("perk2Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
-            document.getElementById("perk2").innerHTML = "Aftercare";
-            break;
-        case "bre":
-            document.getElementById("perk2Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
-            document.getElementById("perk2").innerHTML = "Breakdown";
-            break;
-        case "dis":
-            document.getElementById("perk2Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
-            document.getElementById("perk2").innerHTML = "Distortion";
-            break;
-    //Jane Romero Perks
-        case "heaOn":
-            document.getElementById("perk2Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
-            document.getElementById("perk2").innerHTML = "Head On";
-            break;
-        case "poi":
-            document.getElementById("perk2Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
-            document.getElementById("perk2").innerHTML = "Poised";
-            break;
-        case "sol":
-            document.getElementById("perk2Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
-            document.getElementById("perk2").innerHTML = "Solidarity";
-            break;
-    //Ash Willaims Perks
-        case "bucUp":
-            document.getElementById("perk2Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
-            document.getElementById("perk2").innerHTML = "Buckle Up";
-            break;
-        case "fliFlo":
-            document.getElementById("perk2Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
-            document.getElementById("perk2").innerHTML = "Flip-Flop";
-            break;
-        case "metOfMan":
-            document.getElementById("perk2Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
-            document.getElementById("perk2").innerHTML = "Mettle of Man";
-            break;
-    //Nancy Wheeler Perks
-        case "betTog":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
-            document.getElementById("perk2").innerHTML = "Better Together";
-            break;
-        case "fix":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
-            document.getElementById("perk2").innerHTML = "Fixated";
-            break;
-        case "innStr":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
-            document.getElementById("perk2").innerHTML = "Inner Strength";
-            break;
-    //Steve Harrington Perks
-        case "bab":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
-            document.getElementById("perk2").innerHTML = "Babysitter";
-            break;
-        case "cam":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
-            document.getElementById("perk2").innerHTML = "Camaradeire";
-            break;
-        case "secWin":
-            document.getElementById("perk2Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
-            document.getElementById("perk2").innerHTML = "Second Wind";
-            break;
-    //Yui Kimura Perks
-        case "anyMeaNec":
-            document.getElementById("perk2Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
-            document.getElementById("perk2").innerHTML = "Any Means Necessary";
-            break;
-        case "brea":
-            document.getElementById("perk2Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
-            document.getElementById("perk2").innerHTML = "Breakout";
-            break;
-        case "lucBre":
-            document.getElementById("perk2Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
-            document.getElementById("perk2").innerHTML = "Lucky Break";
-            break;
-    //Zarina Kassir Perks
-        case "forThePeo":
-            document.getElementById("perk2Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
-            document.getElementById("perk2").innerHTML = "For the People";
-            break;
-        case "offTheRec":
-            document.getElementById("perk2Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
-            document.getElementById("perk2").innerHTML = "Off the Record";
-            break;
-        case "redHer":
-            document.getElementById("perk2Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
-            document.getElementById("perk2").innerHTML = "Red Herring";
-            break;
-    //Cheryl Mason Perks
-        case "bloPac":
-            document.getElementById("perk2Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
-            document.getElementById("perk2").innerHTML = "Blood Pact";
-            break;
-        case "repAll":
-            document.getElementById("perk2Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
-            document.getElementById("perk2").innerHTML = "Repressed Alliance";
-            break;
-        case "souGua":
-            document.getElementById("perk2Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
-            document.getElementById("perk2").innerHTML = "Soul Guard";
-            break;
-    //Felix Richter Perks
-        case "buiToLas":
-            document.getElementById("perk2Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
-            document.getElementById("perk2").innerHTML = "Built to Last";
-            break;
-        case "desMea":
-            document.getElementById("perk2Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
-            document.getElementById("perk2").innerHTML = "Desperate Measures";
-            break;
-        case "vis":
-            document.getElementById("perk2Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
-            document.getElementById("perk2").innerHTML = "Visionary";
-            break;
-    //Élodie Rakoto Perks
-        case "app":
-            document.getElementById("perk2Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
-            document.getElementById("perk2").innerHTML = "Appraisal";
-            break;
-        case "dec":
-            document.getElementById("perk2Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
-            document.getElementById("perk2").innerHTML = "Deception";
-            break;
-        case "powStr":
-            document.getElementById("perk2Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
-            document.getElementById("perk2").innerHTML = "Power Struggle";
-            break;
-    //Yun-Jin Lee Perks
-        case "fasTra":
-            document.getElementById("perk2Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
-            document.getElementById("perk2").innerHTML = "Fast Track";
-            break;
-        case "selPre":
-            document.getElementById("perk2Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
-            document.getElementById("perk2").innerHTML = "Self-Preservation";
-            break;
-        case "smaHit":
-            document.getElementById("perk2Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
-            document.getElementById("perk2").innerHTML = "Smash Hit";
-            break;
-    //Jill Valentine Perks
-        case "blaMin":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
-            document.getElementById("perk2").innerHTML = "Blast Mine";
-            break;
-        case "cou":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
-            document.getElementById("perk2").innerHTML = "Counterforce";
-            break;
-        case "res":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
-            document.getElementById("perk2").innerHTML = "Resurgence";
-            break;
-    //Leon S. Kennedy Perks
-        case "bitTheBul":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
-            document.getElementById("perk2").innerHTML = "Bite the Bullet";
-            break;
-        case "fla":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
-            document.getElementById("perk2").innerHTML = "Flashbang";
-            break;
-        case "rooSpi":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
-            document.getElementById("perk2").innerHTML = "Rookie Spirit";
-            break;
-    //Mikaela Reid Perks
-        case "booCirOfHea":
-            document.getElementById("perk2Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
-            document.getElementById("perk2").innerHTML = "Boon: Circle of Healing";
-            break;
-        case "booShaSte":
-            document.getElementById("perk2Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
-            document.getElementById("perk2").innerHTML = "Boon: Shadow Step";
-            break;
-        case "cla":
-            document.getElementById("perk2Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
-            document.getElementById("perk2").innerHTML = "Clairvoyance";
-            break;
-    //Jonah Vasquez Perks
-        case "booExp":
-            document.getElementById("perk2Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
-            document.getElementById("perk2").innerHTML = "Boon: Exponential";
-            break;
-        case "corAct":
-            document.getElementById("perk2Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
-            document.getElementById("perk2").innerHTML = "Corrective Action";
-            break;
-        case "ove":
-            document.getElementById("perk2Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
-            document.getElementById("perk2").innerHTML = "Overcome";
-            break;
-    //Yoichi Asakawa Perks
-        case "booDarThe":
-            document.getElementById("perk2Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
-            document.getElementById("perk2").innerHTML = "Boon: Dark Theory";
-            break;
-        case "empCon":
-            document.getElementById("perk2Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
-            document.getElementById("perk2").innerHTML = "Empathic Connection";
-            break;
-        case "parGui":
-            document.getElementById("perk2Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
-            document.getElementById("perk2").innerHTML = "Parental Guidance";
-            break;
-    //Haddie Kaur Perks
-        case "innFoc":
-            document.getElementById("perk2Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
-            document.getElementById("perk2").innerHTML = "Inner Focus";
-            break;
-        case "ove":
-            document.getElementById("perk2Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
-            document.getElementById("perk2").innerHTML = "Overzealous";
-            break;
-        case "resMan":
-            document.getElementById("perk2Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
-            document.getElementById("perk2").innerHTML = "Residual Manifest";
-            break;
-    //Ada Wong Perks
-        case "lowPro":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
-            document.getElementById("perk2").innerHTML = "Low Profile";
-            break;
-        case "reaHea":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
-            document.getElementById("perk2").innerHTML = "Reactive Healing";
-            break;
-        case "wir":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
-            document.getElementById("perk2").innerHTML = "Wiretap";
-            break;
-    //Rebecca Chambers Perks
-        case "betThaNew":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
-            document.getElementById("perk2").innerHTML = "Better than New";
-            break;
-        case "hyp":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
-            document.getElementById("perk2").innerHTML = "Hyperfocus";
-            break;
-        case "rea":
-            document.getElementById("perk2Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
-            document.getElementById("perk2").innerHTML = "Reassurance";
-            break;
-    //Vittorio Toscano Perks
-        case "fog":
-            document.getElementById("perk2Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
-            document.getElementById("perk2").innerHTML = "Fogwise";
-            break;
-        case "potEne":
-            document.getElementById("perk2Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
-            document.getElementById("perk2").innerHTML = "Potential Energy";
-            break;
-        case "quiGam":
-            document.getElementById("perk2Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
-            document.getElementById("perk2").innerHTML = "Quick Gambit";
-            break;
-    //Thalita Lyra Perks
-        case "cutLoo":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
-            document.getElementById("perk2").innerHTML = "Cut Loose";
-            break;
-        case "friCom":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
-            document.getElementById("perk2").innerHTML = "Friendly Competition";
-            break;
-        case "teaPowOfTwo":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
-            document.getElementById("perk2").innerHTML = "Teamwork: Power of Two";
-            break;
-    //Renato Lyra Perks
-        case "bacPla":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
-            document.getElementById("perk2").innerHTML = "Background Player";
-            break;
-        case "bloRus":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
-            document.getElementById("perk2").innerHTML = "Blood Rush";
-            break;
-        case "teaColSte":
-            document.getElementById("perk2Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
-            document.getElementById("perk2").innerHTML = "Teamwork: Collective Stealth";
-            break;
-    //Gabriel Soma Perks
-        case "madForThi":
-            document.getElementById("perk2Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
-            document.getElementById("perk2").innerHTML = "Made for This";
-            break;
-        case "sca":
-            document.getElementById("perk2Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
-            document.getElementById("perk2").innerHTML = "Scavenger";
-            break;
-        case "tro":
-            document.getElementById("perk2Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
-            document.getElementById("perk2").innerHTML = "Troubleshooter";
-            break;
-    //Nicolas Cage Perks
-        case "dra":
-            document.getElementById("perk2Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
-            document.getElementById("perk2").innerHTML = "Dramaturgy";
-            break;
-        case "ploTwi":
-            document.getElementById("perk2Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
-            document.getElementById("perk2").innerHTML = "Plot Twist";
-            break;
-        case "scePar":
-            document.getElementById("perk2Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
-            document.getElementById("perk2").innerHTML = "Scene Partner";
-            break;
-    //Ellen Ripley Perks
-        case "cheTra":
-            document.getElementById("perk2Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
-            document.getElementById("perk2").innerHTML = "Chemical Trap";
-            break;
-        case "ligFoo":
-            document.getElementById("perk2Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
-            document.getElementById("perk2").innerHTML = "Light-Footed";
-            break;
-        case "lucSta":
-            document.getElementById("perk2Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
-            document.getElementById("perk2").innerHTML = "Lucky Star";
-            break;
-    //Alan Wake Perks
-        case "booIll":
-            document.getElementById("perk2Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
-            document.getElementById("perk2").innerHTML = "Boon: Illumination";
-            break;
-        case "chaOfLig":
-            document.getElementById("perk2Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
-            document.getElementById("perk2").innerHTML = "Champion of Light";
-            break;
-        case "dea":
-            document.getElementById("perk2Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
-            document.getElementById("perk2").innerHTML = "Deadline";
-            break;
-    //Sable Ward Perks
-        case "invWeaSpi":
-            document.getElementById("perk2Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
-            document.getElementById("perk2").innerHTML = "Invocation: Weaving Spiders";
-            break;
-        case "strInSha":
-            document.getElementById("perk2Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
-            document.getElementById("perk2").innerHTML = "Strength in Shadows";
-            break;
-        case "wic":
-            document.getElementById("perk2Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
-            document.getElementById("perk2").innerHTML = "Wicked";
-            break;
-    //The Troupe Perks
-        case "barIns":
-            document.getElementById("perk2Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
-            document.getElementById("perk2").innerHTML = "Bardic Inspiration";
-            break;
-        case "mirIll":
-            document.getElementById("perk2Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
-            document.getElementById("perk2").innerHTML = "Mirrored Illusion";
-            break;
-        case "stiSig":
-            document.getElementById("perk2Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
-            document.getElementById("perk2").innerHTML = "Still Sight";
-            break;
-    //Lara Croft Perks
-        case "fin":
-            document.getElementById("perk2Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
-            document.getElementById("perk2").innerHTML = "Finesse";
-            break;
-        case "har":
-            document.getElementById("perk2Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
-            document.getElementById("perk2").innerHTML = "Hardened";
-            break;
-        case "spe":
-            document.getElementById("perk2Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
-            document.getElementById("perk2").innerHTML = "Specialist";
-            break;
-    //Trevor Belmont Perks
-        case "exu":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
-            document.getElementById("perk2").innerHTML = "Exultation";
-            break;
-        case "eyeOfBel":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
-            document.getElementById("perk2").innerHTML = "Eyes of Belmont";
-            break;
-        case "momOfGlo":
-            document.getElementById("perk2Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
-            document.getElementById("perk2").innerHTML = "Moment of Glory";
-            break;
-//End
-        default: 
-            document.getElementById("perk2Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk2").innerHTML = "Error: Not Found!";
-    }
-
-    switch (perk3){
-    //Any Choice Perks Start 
-        case "anyCho":
-            document.getElementById("perk3Img").src="Perks/Perks/RandomPerkPlaceholder.png";
-            document.getElementById("perk3").innerHTML = "Any Choice";
-            break;
-    //No Choice Perks Start
-        case "noCho":
-            document.getElementById("perk3Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk3").innerHTML = "No Choice";
-            break;
-    //Universal Perks Start
-        case "darSen":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_DarkSense.png";
-            document.getElementById("perk3").innerHTML = "Dark Sense";
-            break;
-        case "dejVu":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_DejaVu.png";
-            document.getElementById("perk3").innerHTML = "Déjà Vu";
-            break;
-        case "hope":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Hope.png";
-            document.getElementById("perk3").innerHTML = "Hope";
-            break;
-        case "kindred":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Kindred.png";
-            document.getElementById("perk3").innerHTML = "Kindred";
-            break;
-        case "lightweight":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Lightweight.png";
-            document.getElementById("perk3").innerHTML = "Lightweight";
-            break;
-        case "noOneLefBeh":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
-            document.getElementById("perk3").innerHTML = "No One Left Behind";
-            break;
-        case "pluIns":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
-            document.getElementById("perk3").innerHTML = "Plunder's Instinct";
-            break;
-        case "premonition":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Premonition.png";
-            document.getElementById("perk3").innerHTML = "Premonition";
-            break;
-        case "resilience":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Resilience.png";
-            document.getElementById("perk3").innerHTML = "Resilience";
-            break;
-        case "sliMea":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
-            document.getElementById("perk3").innerHTML = "Slippery Meat";
-            break;
-        case "smaGam":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_SmallGame.png";
-            document.getElementById("perk3").innerHTML = "Small Game";
-            break;
-        case "spiChi":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_SpineChill.png";
-            document.getElementById("perk3").innerHTML = "Spine Chill";
-            break;
-        case "thiIsNotHap":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
-            document.getElementById("perk3").innerHTML = "This is Not Happening";
-            break;
-        case "weMakIt":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
-            document.getElementById("perk3").innerHTML = "We'll Make It";
-            break;
-//Unique Survivor Perks Start
-
-    //Dwight Fairfield Perks
-        case "bon":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Bond.png";
-            document.getElementById("perk3").innerHTML = "Bond";
-            break;
-        case "lea":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Leader.png";
-            document.getElementById("perk3").innerHTML = "Leader";
-            break;
-        case "proThy":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_ProveThyself.png";
-            document.getElementById("perk3").innerHTML = "Prove Thyself";
-            break;
-    //Meg Thomas Perks
-        case "adr":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Adrenaline.png";
-            document.getElementById("perk3").innerHTML = "Adrenaline";
-            break;
-        case "quiQui":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
-            document.getElementById("perk3").innerHTML = "Quick & Quiet";
-            break;
-        case "sprBur":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_SprintBurst.png";
-            document.getElementById("perk3").innerHTML = "Sprint Burst";
-            break;
-    //Claudette Morel Perks
-        case "botKno":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
-            document.getElementById("perk3").innerHTML = "Botany Knowledge";
-            break;
-        case "emp":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Empathy.png";
-            document.getElementById("perk3").innerHTML = "Empathy";
-            break;
-        case "selCar":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_SelfCare.png";
-            document.getElementById("perk3").innerHTML = "Self-Care";
-            break;
-    //Jake Park Perks
-        case "calSpi":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
-            document.getElementById("perk3").innerHTML = "Calm Spirit";
-            break;
-        case "iroWil":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_IronWill.png";
-            document.getElementById("perk3").innerHTML = "Iron Will";
-            break;
-        case "sab":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Saboteur.png";
-            document.getElementById("perk3").innerHTML = "Saboteur";
-            break;
-    //Nea Karlsson Perks
-        case "balLan":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
-            document.getElementById("perk3").innerHTML = "Balanced Landing";
-            break;
-        case "str":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_Streetwise.png";
-            document.getElementById("perk3").innerHTML = "Streetwise";
-            break;
-        case "urbEva":
-            document.getElementById("perk3Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
-            document.getElementById("perk3").innerHTML = "Urban Evasion";
-            break;
-    //Laurie Strode Perks
-        case "decStr":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
-            document.getElementById("perk3").innerHTML = "Decisive Strike";
-            break;
-        case "objOfObs":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
-            document.getElementById("perk3").innerHTML = "Object of Obsession";
-            break;
-        case "solSur":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
-            document.getElementById("perk3").innerHTML = "Sole Survivor";
-            break;
-    //Ace Visconti Perks
-        case "aceInTheHol":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
-            document.getElementById("perk3").innerHTML = "Ace in the Hole";
-            break;
-        case "opeHan":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
-            document.getElementById("perk3").innerHTML = "Open-Handed";
-            break;
-        case "upTheAnt":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
-            document.getElementById("perk3").innerHTML = "Up the Ante";
-            break;
-    //William "Bill" Overbeck Perks
-        case "borTim":
-            document.getElementById("perk3Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
-            document.getElementById("perk3").innerHTML = "Borrowed Time";
-            break;
-        case "lefBeh":
-            document.getElementById("perk3Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
-            document.getElementById("perk3").innerHTML = "Left Behind";
-            break;
-        case "unb":
-            document.getElementById("perk3Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
-            document.getElementById("perk3").innerHTML = "Unbreakable";
-            break;
-    //Feng Min Perks
-        case "ale":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
-            document.getElementById("perk3").innerHTML = "Alert";
-            break;
-        case "lit":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
-            document.getElementById("perk3").innerHTML = "Lithe";
-            break;
-        case "tec":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
-            document.getElementById("perk3").innerHTML = "Technician";
-            break;
-    //David King Perks
-        case "deaHar":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
-            document.getElementById("perk3").innerHTML = "Dead Hard";
-            break;
-        case "noMit":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
-            document.getElementById("perk3").innerHTML = "No Mither";
-            break;
-        case "weGonLivFor":
-            document.getElementById("perk3Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
-            document.getElementById("perk3").innerHTML = "We're Gonna Live Forever";
-            break;
-    //Quentin Smith Perks
-        case "pha":
-            document.getElementById("perk3Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
-            document.getElementById("perk3").innerHTML = "Pharmacy";
-            break;
-        case "vig":
-            document.getElementById("perk3Img").src="Perks/Perks/England/iconPerks_Vigil.png";
-            document.getElementById("perk3").innerHTML = "Vigil";
-            break;
-        case "wakUp":
-            document.getElementById("perk3Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
-            document.getElementById("perk3").innerHTML = "Wake Up!";
-            break;
-    //David Tapp Perks
-        case "decHun":
-            document.getElementById("perk3Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
-            document.getElementById("perk3").innerHTML = "Dectective's Hunch";
-            break;
-        case "staOut":
-            document.getElementById("perk3Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
-            document.getElementById("perk3").innerHTML = "Stake Out";
-            break;
-        case "ten":
-            document.getElementById("perk3Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
-            document.getElementById("perk3").innerHTML = "Tenacity";
-            break;
-    //Kate Denson Perks
-        case "boiOve":
-            document.getElementById("perk3Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
-            document.getElementById("perk3").innerHTML = "Boil Over";
-            break;
-        case "danWitMe":
-            document.getElementById("perk3Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
-            document.getElementById("perk3").innerHTML = "Dance With Me";
-            break;
-        case "winOfOpp":
-            document.getElementById("perk3Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
-            document.getElementById("perk3").innerHTML = "Windows of Opportunity";
-            break;
-    //Adam Francis Perks
-        case "aut":
-            document.getElementById("perk3Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
-            document.getElementById("perk3").innerHTML = "Autodidact";
-            break;
-        case "del":
-            document.getElementById("perk3Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
-            document.getElementById("perk3").innerHTML = "Deliverance";
-            break;
-        case "div":
-            document.getElementById("perk3Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
-            document.getElementById("perk3").innerHTML = "Diversion";
-            break;
-    //Jeff Johansen Perks
-        case "aft":
-            document.getElementById("perk3Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
-            document.getElementById("perk3").innerHTML = "Aftercare";
-            break;
-        case "bre":
-            document.getElementById("perk3Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
-            document.getElementById("perk3").innerHTML = "Breakdown";
-            break;
-        case "dis":
-            document.getElementById("perk3Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
-            document.getElementById("perk3").innerHTML = "Distortion";
-            break;
-    //Jane Romero Perks
-        case "heaOn":
-            document.getElementById("perk3Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
-            document.getElementById("perk3").innerHTML = "Head On";
-            break;
-        case "poi":
-            document.getElementById("perk3Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
-            document.getElementById("perk3").innerHTML = "Poised";
-            break;
-        case "sol":
-            document.getElementById("perk3Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
-            document.getElementById("perk3").innerHTML = "Solidarity";
-            break;
-    //Ash Willaims Perks
-        case "bucUp":
-            document.getElementById("perk3Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
-            document.getElementById("perk3").innerHTML = "Buckle Up";
-            break;
-        case "fliFlo":
-            document.getElementById("perk3Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
-            document.getElementById("perk3").innerHTML = "Flip-Flop";
-            break;
-        case "metOfMan":
-            document.getElementById("perk3Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
-            document.getElementById("perk3").innerHTML = "Mettle of Man";
-            break;
-    //Nancy Wheeler Perks
-        case "betTog":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
-            document.getElementById("perk3").innerHTML = "Better Together";
-            break;
-        case "fix":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
-            document.getElementById("perk3").innerHTML = "Fixated";
-            break;
-        case "innStr":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
-            document.getElementById("perk3").innerHTML = "Inner Strength";
-            break;
-    //Steve Harrington Perks
-        case "bab":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
-            document.getElementById("perk3").innerHTML = "Babysitter";
-            break;
-        case "cam":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
-            document.getElementById("perk3").innerHTML = "Camaradeire";
-            break;
-        case "secWin":
-            document.getElementById("perk3Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
-            document.getElementById("perk3").innerHTML = "Second Wind";
-            break;
-    //Yui Kimura Perks
-        case "anyMeaNec":
-            document.getElementById("perk3Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
-            document.getElementById("perk3").innerHTML = "Any Means Necessary";
-            break;
-        case "brea":
-            document.getElementById("perk3Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
-            document.getElementById("perk3").innerHTML = "Breakout";
-            break;
-        case "lucBre":
-            document.getElementById("perk3Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
-            document.getElementById("perk3").innerHTML = "Lucky Break";
-            break;
-    //Zarina Kassir Perks
-        case "forThePeo":
-            document.getElementById("perk3Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
-            document.getElementById("perk3").innerHTML = "For the People";
-            break;
-        case "offTheRec":
-            document.getElementById("perk3Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
-            document.getElementById("perk3").innerHTML = "Off the Record";
-            break;
-        case "redHer":
-            document.getElementById("perk3Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
-            document.getElementById("perk3").innerHTML = "Red Herring";
-            break;
-    //Cheryl Mason Perks
-        case "bloPac":
-            document.getElementById("perk3Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
-            document.getElementById("perk3").innerHTML = "Blood Pact";
-            break;
-        case "repAll":
-            document.getElementById("perk3Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
-            document.getElementById("perk3").innerHTML = "Repressed Alliance";
-            break;
-        case "souGua":
-            document.getElementById("perk3Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
-            document.getElementById("perk3").innerHTML = "Soul Guard";
-            break;
-    //Felix Richter Perks
-        case "buiToLas":
-            document.getElementById("perk3Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
-            document.getElementById("perk3").innerHTML = "Built to Last";
-            break;
-        case "desMea":
-            document.getElementById("perk3Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
-            document.getElementById("perk3").innerHTML = "Desperate Measures";
-            break;
-        case "vis":
-            document.getElementById("perk3Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
-            document.getElementById("perk3").innerHTML = "Visionary";
-            break;
-    //Élodie Rakoto Perks
-        case "app":
-            document.getElementById("perk3Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
-            document.getElementById("perk3").innerHTML = "Appraisal";
-            break;
-        case "dec":
-            document.getElementById("perk3Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
-            document.getElementById("perk3").innerHTML = "Deception";
-            break;
-        case "powStr":
-            document.getElementById("perk3Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
-            document.getElementById("perk3").innerHTML = "Power Struggle";
-            break;
-    //Yun-Jin Lee Perks
-        case "fasTra":
-            document.getElementById("perk3Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
-            document.getElementById("perk3").innerHTML = "Fast Track";
-            break;
-        case "selPre":
-            document.getElementById("perk3Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
-            document.getElementById("perk3").innerHTML = "Self-Preservation";
-            break;
-        case "smaHit":
-            document.getElementById("perk3Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
-            document.getElementById("perk3").innerHTML = "Smash Hit";
-            break;
-    //Jill Valentine Perks
-        case "blaMin":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
-            document.getElementById("perk3").innerHTML = "Blast Mine";
-            break;
-        case "cou":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
-            document.getElementById("perk3").innerHTML = "Counterforce";
-            break;
-        case "res":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
-            document.getElementById("perk3").innerHTML = "Resurgence";
-            break;
-    //Leon S. Kennedy Perks
-        case "bitTheBul":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
-            document.getElementById("perk3").innerHTML = "Bite the Bullet";
-            break;
-        case "fla":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
-            document.getElementById("perk3").innerHTML = "Flashbang";
-            break;
-        case "rooSpi":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
-            document.getElementById("perk3").innerHTML = "Rookie Spirit";
-            break;
-    //Mikaela Reid Perks
-        case "booCirOfHea":
-            document.getElementById("perk3Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
-            document.getElementById("perk3").innerHTML = "Boon: Circle of Healing";
-            break;
-        case "booShaSte":
-            document.getElementById("perk3Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
-            document.getElementById("perk3").innerHTML = "Boon: Shadow Step";
-            break;
-        case "cla":
-            document.getElementById("perk3Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
-            document.getElementById("perk3").innerHTML = "Clairvoyance";
-            break;
-    //Jonah Vasquez Perks
-        case "booExp":
-            document.getElementById("perk3Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
-            document.getElementById("perk3").innerHTML = "Boon: Exponential";
-            break;
-        case "corAct":
-            document.getElementById("perk3Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
-            document.getElementById("perk3").innerHTML = "Corrective Action";
-            break;
-        case "ove":
-            document.getElementById("perk3Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
-            document.getElementById("perk3").innerHTML = "Overcome";
-            break;
-    //Yoichi Asakawa Perks
-        case "booDarThe":
-            document.getElementById("perk3Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
-            document.getElementById("perk3").innerHTML = "Boon: Dark Theory";
-            break;
-        case "empCon":
-            document.getElementById("perk3Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
-            document.getElementById("perk3").innerHTML = "Empathic Connection";
-            break;
-        case "parGui":
-            document.getElementById("perk3Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
-            document.getElementById("perk3").innerHTML = "Parental Guidance";
-            break;
-    //Haddie Kaur Perks
-        case "innFoc":
-            document.getElementById("perk3Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
-            document.getElementById("perk3").innerHTML = "Inner Focus";
-            break;
-        case "ove":
-            document.getElementById("perk3Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
-            document.getElementById("perk3").innerHTML = "Overzealous";
-            break;
-        case "resMan":
-            document.getElementById("perk3Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
-            document.getElementById("perk3").innerHTML = "Residual Manifest";
-            break;
-    //Ada Wong Perks
-        case "lowPro":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
-            document.getElementById("perk3").innerHTML = "Low Profile";
-            break;
-        case "reaHea":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
-            document.getElementById("perk3").innerHTML = "Reactive Healing";
-            break;
-        case "wir":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
-            document.getElementById("perk3").innerHTML = "Wiretap";
-            break;
-    //Rebecca Chambers Perks
-        case "betThaNew":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
-            document.getElementById("perk3").innerHTML = "Better than New";
-            break;
-        case "hyp":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
-            document.getElementById("perk3").innerHTML = "Hyperfocus";
-            break;
-        case "rea":
-            document.getElementById("perk3Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
-            document.getElementById("perk3").innerHTML = "Reassurance";
-            break;
-    //Vittorio Toscano Perks
-        case "fog":
-            document.getElementById("perk3Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
-            document.getElementById("perk3").innerHTML = "Fogwise";
-            break;
-        case "potEne":
-            document.getElementById("perk3Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
-            document.getElementById("perk3").innerHTML = "Potential Energy";
-            break;
-        case "quiGam":
-            document.getElementById("perk3Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
-            document.getElementById("perk3").innerHTML = "Quick Gambit";
-            break;
-    //Thalita Lyra Perks
-        case "cutLoo":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
-            document.getElementById("perk3").innerHTML = "Cut Loose";
-            break;
-        case "friCom":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
-            document.getElementById("perk3").innerHTML = "Friendly Competition";
-            break;
-        case "teaPowOfTwo":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
-            document.getElementById("perk3").innerHTML = "Teamwork: Power of Two";
-            break;
-    //Renato Lyra Perks
-        case "bacPla":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
-            document.getElementById("perk3").innerHTML = "Background Player";
-            break;
-        case "bloRus":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
-            document.getElementById("perk3").innerHTML = "Blood Rush";
-            break;
-        case "teaColSte":
-            document.getElementById("perk3Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
-            document.getElementById("perk3").innerHTML = "Teamwork: Collective Stealth";
-            break;
-    //Gabriel Soma Perks
-        case "madForThi":
-            document.getElementById("perk3Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
-            document.getElementById("perk3").innerHTML = "Made for This";
-            break;
-        case "sca":
-            document.getElementById("perk3Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
-            document.getElementById("perk3").innerHTML = "Scavenger";
-            break;
-        case "tro":
-            document.getElementById("perk3Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
-            document.getElementById("perk3").innerHTML = "Troubleshooter";
-            break;
-    //Nicolas Cage Perks
-        case "dra":
-            document.getElementById("perk3Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
-            document.getElementById("perk3").innerHTML = "Dramaturgy";
-            break;
-        case "ploTwi":
-            document.getElementById("perk3Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
-            document.getElementById("perk3").innerHTML = "Plot Twist";
-            break;
-        case "scePar":
-            document.getElementById("perk3Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
-            document.getElementById("perk3").innerHTML = "Scene Partner";
-            break;
-    //Ellen Ripley Perks
-        case "cheTra":
-            document.getElementById("perk3Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
-            document.getElementById("perk3").innerHTML = "Chemical Trap";
-            break;
-        case "ligFoo":
-            document.getElementById("perk3Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
-            document.getElementById("perk3").innerHTML = "Light-Footed";
-            break;
-        case "lucSta":
-            document.getElementById("perk3Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
-            document.getElementById("perk3").innerHTML = "Lucky Star";
-            break;
-    //Alan Wake Perks
-        case "booIll":
-            document.getElementById("perk3Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
-            document.getElementById("perk3").innerHTML = "Boon: Illumination";
-            break;
-        case "chaOfLig":
-            document.getElementById("perk3Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
-            document.getElementById("perk3").innerHTML = "Champion of Light";
-            break;
-        case "dea":
-            document.getElementById("perk3Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
-            document.getElementById("perk3").innerHTML = "Deadline";
-            break;
-    //Sable Ward Perks
-        case "invWeaSpi":
-            document.getElementById("perk3Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
-            document.getElementById("perk3").innerHTML = "Invocation: Weaving Spiders";
-            break;
-        case "strInSha":
-            document.getElementById("perk3Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
-            document.getElementById("perk3").innerHTML = "Strength in Shadows";
-            break;
-        case "wic":
-            document.getElementById("perk3Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
-            document.getElementById("perk3").innerHTML = "Wicked";
-            break;
-    //The Troupe Perks
-        case "barIns":
-            document.getElementById("perk3Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
-            document.getElementById("perk3").innerHTML = "Bardic Inspiration";
-            break;
-        case "mirIll":
-            document.getElementById("perk3Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
-            document.getElementById("perk3").innerHTML = "Mirrored Illusion";
-            break;
-        case "stiSig":
-            document.getElementById("perk3Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
-            document.getElementById("perk3").innerHTML = "Still Sight";
-            break;
-    //Lara Croft Perks
-        case "fin":
-            document.getElementById("perk3Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
-            document.getElementById("perk3").innerHTML = "Finesse";
-            break;
-        case "har":
-            document.getElementById("perk3Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
-            document.getElementById("perk3").innerHTML = "Hardened";
-            break;
-        case "spe":
-            document.getElementById("perk3Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
-            document.getElementById("perk3").innerHTML = "Specialist";
-            break;
-    //Trevor Belmont Perks
-        case "exu":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
-            document.getElementById("perk3").innerHTML = "Exultation";
-            break;
-        case "eyeOfBel":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
-            document.getElementById("perk3").innerHTML = "Eyes of Belmont";
-            break;
-        case "momOfGlo":
-            document.getElementById("perk3Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
-            document.getElementById("perk3").innerHTML = "Moment of Glory";
-            break;
-//End
-        default: 
-            document.getElementById("perk3Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk3").innerHTML = "Error: Not Found!";
-    }
-
-    switch (perk4){
-    //Any Choice Perks Start 
-        case "anyCho":
-            document.getElementById("perk4Img").src="Perks/Perks/RandomPerkPlaceholder.png";
-            document.getElementById("perk4").innerHTML = "Any Choice";
-            break;
-    //No Choice Perks Start
-        case "noCho":
-            document.getElementById("perk4Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk4").innerHTML = "No Choice";
-            break;
-    //Universal Perks Start
-        case "darSen":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_DarkSense.png";
-            document.getElementById("perk4").innerHTML = "Dark Sense";
-            break;
-        case "dejVu":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_DejaVu.png";
-            document.getElementById("perk4").innerHTML = "Déjà Vu";
-            break;
-        case "hope":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Hope.png";
-            document.getElementById("perk4").innerHTML = "Hope";
-            break;
-        case "kindred":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Kindred.png";
-            document.getElementById("perk4").innerHTML = "Kindred";
-            break;
-        case "lightweight":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Lightweight.png";
-            document.getElementById("perk4").innerHTML = "Lightweight";
-            break;
-        case "noOneLefBeh":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
-            document.getElementById("perk4").innerHTML = "No One Left Behind";
-            break;
-        case "pluIns":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
-            document.getElementById("perk4").innerHTML = "Plunder's Instinct";
-            break;
-        case "premonition":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Premonition.png";
-            document.getElementById("perk4").innerHTML = "Premonition";
-            break;
-        case "resilience":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Resilience.png";
-            document.getElementById("perk4").innerHTML = "Resilience";
-            break;
-        case "sliMea":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
-            document.getElementById("perk4").innerHTML = "Slippery Meat";
-            break;
-        case "smaGam":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_SmallGame.png";
-            document.getElementById("perk4").innerHTML = "Small Game";
-            break;
-        case "spiChi":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_SpineChill.png";
-            document.getElementById("perk4").innerHTML = "Spine Chill";
-            break;
-        case "thiIsNotHap":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
-            document.getElementById("perk4").innerHTML = "This is Not Happening";
-            break;
-        case "weMakIt":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
-            document.getElementById("perk4").innerHTML = "We'll Make It";
-            break;
-//Unique Survivor Perks Start
-
-    //Dwight Fairfield Perks
-        case "bon":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Bond.png";
-            document.getElementById("perk4").innerHTML = "Bond";
-            break;
-        case "lea":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Leader.png";
-            document.getElementById("perk4").innerHTML = "Leader";
-            break;
-        case "proThy":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_ProveThyself.png";
-            document.getElementById("perk4").innerHTML = "Prove Thyself";
-            break;
-    //Meg Thomas Perks
-        case "adr":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Adrenaline.png";
-            document.getElementById("perk4").innerHTML = "Adrenaline";
-            break;
-        case "quiQui":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
-            document.getElementById("perk4").innerHTML = "Quick & Quiet";
-            break;
-        case "sprBur":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_SprintBurst.png";
-            document.getElementById("perk4").innerHTML = "Sprint Burst";
-            break;
-    //Claudette Morel Perks
-        case "botKno":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
-            document.getElementById("perk4").innerHTML = "Botany Knowledge";
-            break;
-        case "emp":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Empathy.png";
-            document.getElementById("perk4").innerHTML = "Empathy";
-            break;
-        case "selCar":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_SelfCare.png";
-            document.getElementById("perk4").innerHTML = "Self-Care";
-            break;
-    //Jake Park Perks
-        case "calSpi":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
-            document.getElementById("perk4").innerHTML = "Calm Spirit";
-            break;
-        case "iroWil":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_IronWill.png";
-            document.getElementById("perk4").innerHTML = "Iron Will";
-            break;
-        case "sab":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Saboteur.png";
-            document.getElementById("perk4").innerHTML = "Saboteur";
-            break;
-    //Nea Karlsson Perks
-        case "balLan":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
-            document.getElementById("perk4").innerHTML = "Balanced Landing";
-            break;
-        case "str":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_Streetwise.png";
-            document.getElementById("perk4").innerHTML = "Streetwise";
-            break;
-        case "urbEva":
-            document.getElementById("perk4Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
-            document.getElementById("perk4").innerHTML = "Urban Evasion";
-            break;
-    //Laurie Strode Perks
-        case "decStr":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
-            document.getElementById("perk4").innerHTML = "Decisive Strike";
-            break;
-        case "objOfObs":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
-            document.getElementById("perk4").innerHTML = "Object of Obsession";
-            break;
-        case "solSur":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
-            document.getElementById("perk4").innerHTML = "Sole Survivor";
-            break;
-    //Ace Visconti Perks
-        case "aceInTheHol":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
-            document.getElementById("perk4").innerHTML = "Ace in the Hole";
-            break;
-        case "opeHan":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
-            document.getElementById("perk4").innerHTML = "Open-Handed";
-            break;
-        case "upTheAnt":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
-            document.getElementById("perk4").innerHTML = "Up the Ante";
-            break;
-    //William "Bill" Overbeck Perks
-        case "borTim":
-            document.getElementById("perk4Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
-            document.getElementById("perk4").innerHTML = "Borrowed Time";
-            break;
-        case "lefBeh":
-            document.getElementById("perk4Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
-            document.getElementById("perk4").innerHTML = "Left Behind";
-            break;
-        case "unb":
-            document.getElementById("perk4Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
-            document.getElementById("perk4").innerHTML = "Unbreakable";
-            break;
-    //Feng Min Perks
-        case "ale":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
-            document.getElementById("perk4").innerHTML = "Alert";
-            break;
-        case "lit":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
-            document.getElementById("perk4").innerHTML = "Lithe";
-            break;
-        case "tec":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
-            document.getElementById("perk4").innerHTML = "Technician";
-            break;
-    //David King Perks
-        case "deaHar":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
-            document.getElementById("perk4").innerHTML = "Dead Hard";
-            break;
-        case "noMit":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
-            document.getElementById("perk4").innerHTML = "No Mither";
-            break;
-        case "weGonLivFor":
-            document.getElementById("perk4Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
-            document.getElementById("perk4").innerHTML = "We're Gonna Live Forever";
-            break;
-    //Quentin Smith Perks
-        case "pha":
-            document.getElementById("perk4Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
-            document.getElementById("perk4").innerHTML = "Pharmacy";
-            break;
-        case "vig":
-            document.getElementById("perk4Img").src="Perks/Perks/England/iconPerks_Vigil.png";
-            document.getElementById("perk4").innerHTML = "Vigil";
-            break;
-        case "wakUp":
-            document.getElementById("perk4Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
-            document.getElementById("perk4").innerHTML = "Wake Up!";
-            break;
-    //David Tapp Perks
-        case "decHun":
-            document.getElementById("perk4Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
-            document.getElementById("perk4").innerHTML = "Dectective's Hunch";
-            break;
-        case "staOut":
-            document.getElementById("perk4Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
-            document.getElementById("perk4").innerHTML = "Stake Out";
-            break;
-        case "ten":
-            document.getElementById("perk4Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
-            document.getElementById("perk4").innerHTML = "Tenacity";
-            break;
-    //Kate Denson Perks
-        case "boiOve":
-            document.getElementById("perk4Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
-            document.getElementById("perk4").innerHTML = "Boil Over";
-            break;
-        case "danWitMe":
-            document.getElementById("perk4Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
-            document.getElementById("perk4").innerHTML = "Dance With Me";
-            break;
-        case "winOfOpp":
-            document.getElementById("perk4Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
-            document.getElementById("perk4").innerHTML = "Windows of Opportunity";
-            break;
-    //Adam Francis Perks
-        case "aut":
-            document.getElementById("perk4Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
-            document.getElementById("perk4").innerHTML = "Autodidact";
-            break;
-        case "del":
-            document.getElementById("perk4Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
-            document.getElementById("perk4").innerHTML = "Deliverance";
-            break;
-        case "div":
-            document.getElementById("perk4Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
-            document.getElementById("perk4").innerHTML = "Diversion";
-            break;
-    //Jeff Johansen Perks
-        case "aft":
-            document.getElementById("perk4Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
-            document.getElementById("perk4").innerHTML = "Aftercare";
-            break;
-        case "bre":
-            document.getElementById("perk4Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
-            document.getElementById("perk4").innerHTML = "Breakdown";
-            break;
-        case "dis":
-            document.getElementById("perk4Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
-            document.getElementById("perk4").innerHTML = "Distortion";
-            break;
-    //Jane Romero Perks
-        case "heaOn":
-            document.getElementById("perk4Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
-            document.getElementById("perk4").innerHTML = "Head On";
-            break;
-        case "poi":
-            document.getElementById("perk4Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
-            document.getElementById("perk4").innerHTML = "Poised";
-            break;
-        case "sol":
-            document.getElementById("perk4Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
-            document.getElementById("perk4").innerHTML = "Solidarity";
-            break;
-    //Ash Willaims Perks
-        case "bucUp":
-            document.getElementById("perk4Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
-            document.getElementById("perk4").innerHTML = "Buckle Up";
-            break;
-        case "fliFlo":
-            document.getElementById("perk4Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
-            document.getElementById("perk4").innerHTML = "Flip-Flop";
-            break;
-        case "metOfMan":
-            document.getElementById("perk4Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
-            document.getElementById("perk4").innerHTML = "Mettle of Man";
-            break;
-    //Nancy Wheeler Perks
-        case "betTog":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
-            document.getElementById("perk4").innerHTML = "Better Together";
-            break;
-        case "fix":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
-            document.getElementById("perk4").innerHTML = "Fixated";
-            break;
-        case "innStr":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
-            document.getElementById("perk4").innerHTML = "Inner Strength";
-            break;
-    //Steve Harrington Perks
-        case "bab":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
-            document.getElementById("perk4").innerHTML = "Babysitter";
-            break;
-        case "cam":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
-            document.getElementById("perk4").innerHTML = "Camaradeire";
-            break;
-        case "secWin":
-            document.getElementById("perk4Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
-            document.getElementById("perk4").innerHTML = "Second Wind";
-            break;
-    //Yui Kimura Perks
-        case "anyMeaNec":
-            document.getElementById("perk4Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
-            document.getElementById("perk4").innerHTML = "Any Means Necessary";
-            break;
-        case "brea":
-            document.getElementById("perk4Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
-            document.getElementById("perk4").innerHTML = "Breakout";
-            break;
-        case "lucBre":
-            document.getElementById("perk4Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
-            document.getElementById("perk4").innerHTML = "Lucky Break";
-            break;
-    //Zarina Kassir Perks
-        case "forThePeo":
-            document.getElementById("perk4Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
-            document.getElementById("perk4").innerHTML = "For the People";
-            break;
-        case "offTheRec":
-            document.getElementById("perk4Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
-            document.getElementById("perk4").innerHTML = "Off the Record";
-            break;
-        case "redHer":
-            document.getElementById("perk4Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
-            document.getElementById("perk4").innerHTML = "Red Herring";
-            break;
-    //Cheryl Mason Perks
-        case "bloPac":
-            document.getElementById("perk4Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
-            document.getElementById("perk4").innerHTML = "Blood Pact";
-            break;
-        case "repAll":
-            document.getElementById("perk4Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
-            document.getElementById("perk4").innerHTML = "Repressed Alliance";
-            break;
-        case "souGua":
-            document.getElementById("perk4Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
-            document.getElementById("perk4").innerHTML = "Soul Guard";
-            break;
-    //Felix Richter Perks
-        case "buiToLas":
-            document.getElementById("perk4Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
-            document.getElementById("perk4").innerHTML = "Built to Last";
-            break;
-        case "desMea":
-            document.getElementById("perk4Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
-            document.getElementById("perk4").innerHTML = "Desperate Measures";
-            break;
-        case "vis":
-            document.getElementById("perk4Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
-            document.getElementById("perk4").innerHTML = "Visionary";
-            break;
-    //Élodie Rakoto Perks
-        case "app":
-            document.getElementById("perk4Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
-            document.getElementById("perk4").innerHTML = "Appraisal";
-            break;
-        case "dec":
-            document.getElementById("perk4Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
-            document.getElementById("perk4").innerHTML = "Deception";
-            break;
-        case "powStr":
-            document.getElementById("perk4Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
-            document.getElementById("perk4").innerHTML = "Power Struggle";
-            break;
-    //Yun-Jin Lee Perks
-        case "fasTra":
-            document.getElementById("perk4Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
-            document.getElementById("perk4").innerHTML = "Fast Track";
-            break;
-        case "selPre":
-            document.getElementById("perk4Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
-            document.getElementById("perk4").innerHTML = "Self-Preservation";
-            break;
-        case "smaHit":
-            document.getElementById("perk4Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
-            document.getElementById("perk4").innerHTML = "Smash Hit";
-            break;
-    //Jill Valentine Perks
-        case "blaMin":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
-            document.getElementById("perk4").innerHTML = "Blast Mine";
-            break;
-        case "cou":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
-            document.getElementById("perk4").innerHTML = "Counterforce";
-            break;
-        case "res":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
-            document.getElementById("perk4").innerHTML = "Resurgence";
-            break;
-    //Leon S. Kennedy Perks
-        case "bitTheBul":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
-            document.getElementById("perk4").innerHTML = "Bite the Bullet";
-            break;
-        case "fla":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
-            document.getElementById("perk4").innerHTML = "Flashbang";
-            break;
-        case "rooSpi":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
-            document.getElementById("perk4").innerHTML = "Rookie Spirit";
-            break;
-    //Mikaela Reid Perks
-        case "booCirOfHea":
-            document.getElementById("perk4Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
-            document.getElementById("perk4").innerHTML = "Boon: Circle of Healing";
-            break;
-        case "booShaSte":
-            document.getElementById("perk4Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
-            document.getElementById("perk4").innerHTML = "Boon: Shadow Step";
-            break;
-        case "cla":
-            document.getElementById("perk4Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
-            document.getElementById("perk4").innerHTML = "Clairvoyance";
-            break;
-    //Jonah Vasquez Perks
-        case "booExp":
-            document.getElementById("perk4Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
-            document.getElementById("perk4").innerHTML = "Boon: Exponential";
-            break;
-        case "corAct":
-            document.getElementById("perk4Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
-            document.getElementById("perk4").innerHTML = "Corrective Action";
-            break;
-        case "ove":
-            document.getElementById("perk4Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
-            document.getElementById("perk4").innerHTML = "Overcome";
-            break;
-    //Yoichi Asakawa Perks
-        case "booDarThe":
-            document.getElementById("perk4Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
-            document.getElementById("perk4").innerHTML = "Boon: Dark Theory";
-            break;
-        case "empCon":
-            document.getElementById("perk4Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
-            document.getElementById("perk4").innerHTML = "Empathic Connection";
-            break;
-        case "parGui":
-            document.getElementById("perk4Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
-            document.getElementById("perk4").innerHTML = "Parental Guidance";
-            break;
-    //Haddie Kaur Perks
-        case "innFoc":
-            document.getElementById("perk4Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
-            document.getElementById("perk4").innerHTML = "Inner Focus";
-            break;
-        case "ove":
-            document.getElementById("perk4Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
-            document.getElementById("perk4").innerHTML = "Overzealous";
-            break;
-        case "resMan":
-            document.getElementById("perk4Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
-            document.getElementById("perk4").innerHTML = "Residual Manifest";
-            break;
-    //Ada Wong Perks
-        case "lowPro":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
-            document.getElementById("perk4").innerHTML = "Low Profile";
-            break;
-        case "reaHea":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
-            document.getElementById("perk4").innerHTML = "Reactive Healing";
-            break;
-        case "wir":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
-            document.getElementById("perk4").innerHTML = "Wiretap";
-            break;
-    //Rebecca Chambers Perks
-        case "betThaNew":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
-            document.getElementById("perk4").innerHTML = "Better than New";
-            break;
-        case "hyp":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
-            document.getElementById("perk4").innerHTML = "Hyperfocus";
-            break;
-        case "rea":
-            document.getElementById("perk4Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
-            document.getElementById("perk4").innerHTML = "Reassurance";
-            break;
-    //Vittorio Toscano Perks
-        case "fog":
-            document.getElementById("perk4Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
-            document.getElementById("perk4").innerHTML = "Fogwise";
-            break;
-        case "potEne":
-            document.getElementById("perk4Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
-            document.getElementById("perk4").innerHTML = "Potential Energy";
-            break;
-        case "quiGam":
-            document.getElementById("perk4Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
-            document.getElementById("perk4").innerHTML = "Quick Gambit";
-            break;
-    //Thalita Lyra Perks
-        case "cutLoo":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
-            document.getElementById("perk4").innerHTML = "Cut Loose";
-            break;
-        case "friCom":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
-            document.getElementById("perk4").innerHTML = "Friendly Competition";
-            break;
-        case "teaPowOfTwo":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
-            document.getElementById("perk4").innerHTML = "Teamwork: Power of Two";
-            break;
-    //Renato Lyra Perks
-        case "bacPla":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
-            document.getElementById("perk4").innerHTML = "Background Player";
-            break;
-        case "bloRus":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
-            document.getElementById("perk4").innerHTML = "Blood Rush";
-            break;
-        case "teaColSte":
-            document.getElementById("perk4Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
-            document.getElementById("perk4").innerHTML = "Teamwork: Collective Stealth";
-            break;
-    //Gabriel Soma Perks
-        case "madForThi":
-            document.getElementById("perk4Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
-            document.getElementById("perk4").innerHTML = "Made for This";
-            break;
-        case "sca":
-            document.getElementById("perk4Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
-            document.getElementById("perk4").innerHTML = "Scavenger";
-            break;
-        case "tro":
-            document.getElementById("perk4Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
-            document.getElementById("perk4").innerHTML = "Troubleshooter";
-            break;
-    //Nicolas Cage Perks
-        case "dra":
-            document.getElementById("perk4Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
-            document.getElementById("perk4").innerHTML = "Dramaturgy";
-            break;
-        case "ploTwi":
-            document.getElementById("perk4Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
-            document.getElementById("perk4").innerHTML = "Plot Twist";
-            break;
-        case "scePar":
-            document.getElementById("perk4Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
-            document.getElementById("perk4").innerHTML = "Scene Partner";
-            break;
-    //Ellen Ripley Perks
-        case "cheTra":
-            document.getElementById("perk4Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
-            document.getElementById("perk4").innerHTML = "Chemical Trap";
-            break;
-        case "ligFoo":
-            document.getElementById("perk4Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
-            document.getElementById("perk4").innerHTML = "Light-Footed";
-            break;
-        case "lucSta":
-            document.getElementById("perk4Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
-            document.getElementById("perk4").innerHTML = "Lucky Star";
-            break;
-    //Alan Wake Perks
-        case "booIll":
-            document.getElementById("perk4Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
-            document.getElementById("perk4").innerHTML = "Boon: Illumination";
-            break;
-        case "chaOfLig":
-            document.getElementById("perk4Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
-            document.getElementById("perk4").innerHTML = "Champion of Light";
-            break;
-        case "dea":
-            document.getElementById("perk4Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
-            document.getElementById("perk4").innerHTML = "Deadline";
-            break;
-    //Sable Ward Perks
-        case "invWeaSpi":
-            document.getElementById("perk4Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
-            document.getElementById("perk4").innerHTML = "Invocation: Weaving Spiders";
-            break;
-        case "strInSha":
-            document.getElementById("perk4Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
-            document.getElementById("perk4").innerHTML = "Strength in Shadows";
-            break;
-        case "wic":
-            document.getElementById("perk4Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
-            document.getElementById("perk4").innerHTML = "Wicked";
-            break;
-    //The Troupe Perks
-        case "barIns":
-            document.getElementById("perk4Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
-            document.getElementById("perk4").innerHTML = "Bardic Inspiration";
-            break;
-        case "mirIll":
-            document.getElementById("perk4Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
-            document.getElementById("perk4").innerHTML = "Mirrored Illusion";
-            break;
-        case "stiSig":
-            document.getElementById("perk4Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
-            document.getElementById("perk4").innerHTML = "Still Sight";
-            break;
-    //Lara Croft Perks
-        case "fin":
-            document.getElementById("perk4Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
-            document.getElementById("perk4").innerHTML = "Finesse";
-            break;
-        case "har":
-            document.getElementById("perk4Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
-            document.getElementById("perk4").innerHTML = "Hardened";
-            break;
-        case "spe":
-            document.getElementById("perk4Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
-            document.getElementById("perk4").innerHTML = "Specialist";
-            break;
-    //Trevor Belmont Perks
-        case "exu":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
-            document.getElementById("perk4").innerHTML = "Exultation";
-            break;
-        case "eyeOfBel":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
-            document.getElementById("perk4").innerHTML = "Eyes of Belmont";
-            break;
-        case "momOfGlo":
-            document.getElementById("perk4Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
-            document.getElementById("perk4").innerHTML = "Moment of Glory";
-            break;
-//End
-        default: 
-            document.getElementById("perk4Img").src="Perks/Perks/NoChoicePerkPlaceholder.png";
-            document.getElementById("perk4").innerHTML = "Error: Not Found!";
+        //Dwight Fairfield Perks
+            case "bon":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Bond.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Bond";
+                break;
+            case "lea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Leader.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Leader";
+                break;
+            case "proThy":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ProveThyself.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Prove Thyself";
+                break;
+        //Meg Thomas Perks
+            case "adr":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Adrenaline.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Adrenaline";
+                break;
+            case "quiQui":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Quick & Quiet";
+                break;
+            case "sprBur":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SprintBurst.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Sprint Burst";
+                break;
+        //Claudette Morel Perks
+            case "botKno":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Botany Knowledge";
+                break;
+            case "emp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Empathy.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Empathy";
+                break;
+            case "selCar":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SelfCare.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Self-Care";
+                break;
+        //Jake Park Perks
+            case "calSpi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Calm Spirit";
+                break;
+            case "iroWil":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_IronWill.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Iron Will";
+                break;
+            case "sab":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Saboteur.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Saboteur";
+                break;
+        //Nea Karlsson Perks
+            case "balLan":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Balanced Landing";
+                break;
+            case "str":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Streetwise.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Streetwise";
+                break;
+            case "urbEva":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Urban Evasion";
+                break;
+        //Laurie Strode Perks
+            case "decStr":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Decisive Strike";
+                break;
+            case "objOfObs":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Object of Obsession";
+                break;
+            case "solSur":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Sole Survivor";
+                break;
+        //Ace Visconti Perks
+            case "aceInTheHol":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Ace in the Hole";
+                break;
+            case "opeHan":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Open-Handed";
+                break;
+            case "upTheAnt":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Up the Ante";
+                break;
+        //William "Bill" Overbeck Perks
+            case "borTim":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Borrowed Time";
+                break;
+            case "lefBeh":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Left Behind";
+                break;
+            case "unb":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Unbreakable";
+                break;
+        //Feng Min Perks
+            case "ale":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Alert";
+                break;
+            case "lit":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lithe";
+                break;
+            case "tec":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Technician";
+                break;
+        //David King Perks
+            case "deaHar":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Dead Hard";
+                break;
+            case "noMit":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "No Mither";
+                break;
+            case "weGonLivFor":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "We're Gonna Live Forever";
+                break;
+        //Quentin Smith Perks
+            case "pha":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Pharmacy";
+                break;
+            case "vig":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_Vigil.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Vigil";
+                break;
+            case "wakUp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Wake Up!";
+                break;
+        //David Tapp Perks
+            case "detHun":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Dectective's Hunch";
+                break;
+            case "staOut":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Stake Out";
+                break;
+            case "ten":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Tenacity";
+                break;
+        //Kate Denson Perks
+            case "boiOve":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boil Over";
+                break;
+            case "danWitMe":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Dance With Me";
+                break;
+            case "winOfOpp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Windows of Opportunity";
+                break;
+        //Adam Francis Perks
+            case "aut":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Autodidact";
+                break;
+            case "del":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Deliverance";
+                break;
+            case "div":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Diversion";
+                break;
+        //Jeff Johansen Perks
+            case "aft":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Aftercare";
+                break;
+            case "bre":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Breakdown";
+                break;
+            case "dis":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Distortion";
+                break;
+        //Jane Romero Perks
+            case "heaOn":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Head On";
+                break;
+            case "poi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Poised";
+                break;
+            case "sol":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Solidarity";
+                break;
+        //Ash Willaims Perks
+            case "bucUp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Buckle Up";
+                break;
+            case "fliFlo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Flip-Flop";
+                break;
+            case "metOfMan":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Mettle of Man";
+                break;
+        //Nancy Wheeler Perks
+            case "betTog":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Better Together";
+                break;
+            case "fix":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Fixated";
+                break;
+            case "innStr":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Inner Strength";
+                break;
+        //Steve Harrington Perks
+            case "bab":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Babysitter";
+                break;
+            case "cam":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Camaradeire";
+                break;
+            case "secWin":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Second Wind";
+                break;
+        //Yui Kimura Perks
+            case "anyMeaNec":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Any Means Necessary";
+                break;
+            case "brea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Breakout";
+                break;
+            case "lucBre":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lucky Break";
+                break;
+        //Zarina Kassir Perks
+            case "forThePeo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "For the People";
+                break;
+            case "offTheRec":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Off the Record";
+                break;
+            case "redHer":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Red Herring";
+                break;
+        //Cheryl Mason Perks
+            case "bloPac":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Blood Pact";
+                break;
+            case "repAll":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Repressed Alliance";
+                break;
+            case "souGua":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Soul Guard";
+                break;
+        //Felix Richter Perks
+            case "buiToLas":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Built to Last";
+                break;
+            case "desMea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Desperate Measures";
+                break;
+            case "vis":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Visionary";
+                break;
+        //Élodie Rakoto Perks
+            case "app":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Appraisal";
+                break;
+            case "dec":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Deception";
+                break;
+            case "powStr":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Power Struggle";
+                break;
+        //Yun-Jin Lee Perks
+            case "fasTra":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Fast Track";
+                break;
+            case "selPre":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Self-Preservation";
+                break;
+            case "smaHit":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Smash Hit";
+                break;
+        //Jill Valentine Perks
+            case "blaMin":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Blast Mine";
+                break;
+            case "cou":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Counterforce";
+                break;
+            case "res":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Resurgence";
+                break;
+        //Leon S. Kennedy Perks
+            case "bitTheBul":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Bite the Bullet";
+                break;
+            case "fla":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Flashbang";
+                break;
+            case "rooSpi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Rookie Spirit";
+                break;
+        //Mikaela Reid Perks
+            case "booCirOfHea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Circle of Healing";
+                break;
+            case "booShaSte":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Shadow Step";
+                break;
+            case "cla":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Clairvoyance";
+                break;
+        //Jonah Vasquez Perks
+            case "booExp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Exponential";
+                break;
+            case "corAct":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Corrective Action";
+                break;
+            case "ove":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Overcome";
+                break;
+        //Yoichi Asakawa Perks
+            case "booDarThe":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Dark Theory";
+                break;
+            case "empCon":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Empathic Connection";
+                break;
+            case "parGui":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Parental Guidance";
+                break;
+        //Haddie Kaur Perks
+            case "innFoc":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Inner Focus";
+                break;
+            case "over":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Overzealous";
+                break;
+            case "resMan":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Residual Manifest";
+                break;
+        //Ada Wong Perks
+            case "lowPro":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Low Profile";
+                break;
+            case "reaHea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Reactive Healing";
+                break;
+            case "wir":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Wiretap";
+                break;
+        //Rebecca Chambers Perks
+            case "betThanNew":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Better than New";
+                break;
+            case "hyp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hyperfocus";
+                break;
+            case "rea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Reassurance";
+                break;
+        //Vittorio Toscano Perks
+            case "fog":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Fogwise";
+                break;
+            case "potEne":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Potential Energy";
+                break;
+            case "quiGam":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Quick Gambit";
+                break;
+        //Thalita Lyra Perks
+            case "cutLoo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Cut Loose";
+                break;
+            case "friCom":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Friendly Competition";
+                break;
+            case "teaPowOfTwo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Power of Two";
+                break;
+        //Renato Lyra Perks
+            case "bacPla":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Background Player";
+                break;
+            case "bloRus":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Blood Rush";
+                break;
+            case "teaColSte":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Collective Stealth";
+                break;
+        //Gabriel Soma Perks
+            case "madForThi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Made for This";
+                break;
+            case "sca":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Scavenger";
+                break;
+            case "tro":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Troubleshooter";
+                break;
+        //Nicolas Cage Perks
+            case "dra":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Dramaturgy";
+                break;
+            case "ploTwi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Plot Twist";
+                break;
+            case "scePar":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Scene Partner";
+                break;
+        //Ellen Ripley Perks
+            case "cheTra":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Chemical Trap";
+                break;
+            case "ligFoo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Light-Footed";
+                break;
+            case "lucSta":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lucky Star";
+                break;
+        //Alan Wake Perks
+            case "booIll":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Illumination";
+                break;
+            case "chaOfLig":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Champion of Light";
+                break;
+            case "dea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Deadline";
+                break;
+        //Sable Ward Perks
+            case "invWeaSpi":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Invocation: Weaving Spiders";
+                break;
+            case "strInSha":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Strength in Shadows";
+                break;
+            case "wic":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Wicked";
+                break;
+        //The Troupe Perks
+            case "barIns":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Bardic Inspiration";
+                break;
+            case "mirIll":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Mirrored Illusion";
+                break;
+            case "stiSig":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Still Sight";
+                break;
+        //Lara Croft Perks
+            case "fin":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Finesse";
+                break;
+            case "har":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hardened";
+                break;
+            case "spe":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Specialist";
+                break;
+        //Trevor Belmont Perks
+            case "exu":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Exultation";
+                break;
+            case "eyeOfBel":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Eyes of Belmont";
+                break;
+            case "momOfGlo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Moment of Glory";
+                break;
+        //Taurie Cain Perks
+            case "cleBre":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_CleanBreak.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Clean Break";
+                break;
+            case "invTreCro":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_InvocationTreacherousCrows.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Invocation: Treacherous Crows";
+                break;
+            case "shoTheBur":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_ShoulderTheBurden.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Shoulder the Burden";
+                break;
+    //End
+            default: 
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Error: Not Found!";
+        }
     }
 }
 //Characters
@@ -4747,7 +2728,7 @@ function fixedChar(char){
             break;
         case "ashWil":
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_ML.png";
-            document.getElementById("charName").innerHTML = "AnySurvivor";
+            document.getElementById("charName").innerHTML = "Ash Williams";
             break;
         case "nancWhe":
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Qatar/QF_storeBackground.png";
@@ -4856,6 +2837,10 @@ function fixedChar(char){
         case "trevBel":
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclair/S44_storeBackground.png";
             document.getElementById("charName").innerHTML = "Trevor Belmont";
+            break;
+        case "taurCai":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Gelato/T_UI_S45_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Taurie Cain";
             break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
@@ -5768,11 +3753,6 @@ function fixedOffering(offering){
             document.getElementById("offeringName").innerHTML = "Yamaoka Family Crest";
             break;
 //Shrouds
-    //Shroud of Separation
-        case "sepShroud": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfSeparation.png";
-            document.getElementById("offeringName").innerHTML = "Shroud of Separation";
-            break;
     //Shroud of Union
         case "unionShroud": 
             document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfUnion.png";
