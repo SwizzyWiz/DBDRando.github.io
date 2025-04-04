@@ -1605,6 +1605,43 @@ function randomAddons(char){
                 addonPool.push("tornNovel");
             }
             break;
+        case "ghoul":
+        //Commons
+            if($("#commons").is(":checked")){
+                addonPool.push("anteikuApron");
+                addonPool.push("freshCoffee");
+                addonPool.push("kanekiWallet");
+                addonPool.push("blackGoatEgg");
+            }
+        //Uncommons
+            if($("#uncommons").is(":checked")){
+                addonPool.push("bloodStainedHandkerchief");
+                addonPool.push("brokenChain");
+                addonPool.push("hideHeadphones");
+                addonPool.push("kanekiSatchel");
+                addonPool.push("taiyaki");
+            }
+        //Rares
+            if($("#rares").is(":checked")){
+                addonPool.push("amonNecktie");
+                addonPool.push("aogiriTreeRobe");
+                addonPool.push("madoGlove");
+                addonPool.push("redSpiderLily");
+                addonPool.push("rizeGlasses");
+            }
+        //Very Rares
+            if($("#veryRares").is(":checked")){
+                addonPool.push("ccgIDCard");
+                addonPool.push("hinamiUmbrella");
+                addonPool.push("redHeadedCentipede");
+                addonPool.push("tortureApparatus");
+            }
+        //Ultra Rares
+            if($("#ultraRares").is(":checked")){
+                addonPool.push("iridEyePatch");
+                addonPool.push("yamoriMask");
+            }
+            break;
         default:
 
     }
@@ -2428,6 +2465,7 @@ function selectAllKill(){
     if(!$("#lich").is(":checked")){checking("lich",true);}
     if(!$("#darkLord").is(":checked")){checking("darkLord",true);}
     if(!$("#houndmaster").is(":checked")){checking("houndmaster",true);}
+    if(!$("#ghoul").is(":checked")){checking("ghoul",true);}
 }
 function deselectAllKill(){
     if($("#trapper").is(":checked")){checking("trapper",false);}
@@ -2468,6 +2506,7 @@ function deselectAllKill(){
     if($("#lich").is(":checked")){checking("lich",false);}
     if($("#darkLord").is(":checked")){checking("darkLord",false);}
     if($("#houndmaster").is(":checked")){checking("houndmaster",false);}
+    if($("#ghoul").is(":checked")){checking("ghoul",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2625,7 +2664,11 @@ function selectAllPerk(){
     //Houndmaster Perks
     if(!$("#allShaThu").is(":checked")){checking("allShaThu",true);}  
     if(!$("#noQua").is(":checked")){checking("noQua",true);}  
-    if(!$("#scoHooJagCom").is(":checked")){checking("scoHooJagCom",true);}   
+    if(!$("#scoHooJagCom").is(":checked")){checking("scoHooJagCom",true);} 
+    //Ghoul Perks
+    if(!$("#hexNotButMis").is(":checked")){checking("hexNotButMis",true);}  
+    if(!$("#forEnt").is(":checked")){checking("forEnt",true);}  
+    if(!$("#nonAreFre").is(":checked")){checking("nonAreFre",true);}   
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2783,6 +2826,10 @@ function deselectAllPerk(){
     if($("#allShaThu").is(":checked")){checking("allShaThu",false);}  
     if($("#noQua").is(":checked")){checking("noQua",false);}  
     if($("#scoHooJagCom").is(":checked")){checking("scoHooJagCom",false);} 
+    //Ghoul Perks
+    if($("#hexNotButMis").is(":checked")){checking("hexNotButMis",false);}  
+    if($("#forEnt").is(":checked")){checking("forEnt",false);}  
+    if($("#nonAreFre").is(":checked")){checking("nonAreFre",false);} 
 }
 //Add-ons
 function selectAllAddon(){
@@ -3084,6 +3131,12 @@ function fixedChar(char){
             document.getElementById("charName").innerHTML = "The Houndmaster";
             document.getElementById("powerImg").src = "Powers/Powers/Gelato/iconPowers_DashCommand_K38.png";
             document.getElementById("powerName").innerHTML = "Scent of Blood";
+            break;
+        case "ghoul":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Icecream/T_UI_K39_storeBackground.png";
+            document.getElementById("charName").innerHTML = "The Ghoul";
+            document.getElementById("powerImg").src = "Powers/Powers/Icecream/iconPowers_AimKaguneLeap_K39.png";
+            document.getElementById("powerName").innerHTML = "One-Eyed Terror";
             break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomKiller Placeholder.png";
@@ -3656,7 +3709,19 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconPerks_ScourgeHookJaggedCompass.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Jagged Compass";
                 break;
-
+        //Ghoul Perks
+            case "hexNotButMis":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_NothingButMisery.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Nothing but Misery";
+                break;
+            case "forEnt":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_ForeverEntwined.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Forever Entwined";
+                break;
+            case "nonAreFre":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_NoneAreFree.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "None Are Free";
+                break;
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoicePerkKillerPlaceholder.png";
@@ -6949,6 +7014,92 @@ function fixedAddon(addon1,addon2){
             case "tornNovel": 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_TornNovel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Torn Novel";
+                break;
+        //Ghoul Addons
+            //Commons
+            case "anteikuApron": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AnteikuApron.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Anteiku Apron";
+                break;
+            case "freshCoffee": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_freshCoffee.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Fresh Coffee";
+                break;
+            case "kanekiWallet": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_KanekisWallet.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Kaneki's Wallet";
+                break;
+            case "blackGoatEgg": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_TheBlackGoatsEgg.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "The Black Goat's Egg";
+                break;
+            //Uncommons
+            case "bloodStainedHandkerchief": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_bloodStainedHandkerchief.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Blood-Stained Handkerchief";
+                break;
+            case "brokenChain": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_brokenChain.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Chain";
+                break;
+            case "hideHeadphones": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_HidesHeadphones.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Hide's Headphones";
+                break;
+            case "kanekiSatchel": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_satchel.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Kaneki's Satchel";
+                break;
+            case "taiyaki": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_taiyaki.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Taiyaki";
+                break;
+            //Rares
+            case "amonNecktie": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AmonsNecktie.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Amon's Necktie";
+                break;
+            case "aogiriTreeRobe": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AogiriTreeRobe.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Aogiri Tree Robe";
+                break;
+            case "madoGlove": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_MadosGlove.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Mado's Glove";
+                break;
+            case "redSpiderLily": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_redSpiderLily.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Red Spider Lily";
+                break;
+            case "rizeGlasses": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_RizesGlasses.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Rize's Glasses";
+                break;
+            //Very Rares
+            case "ccgIDCard": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_CCGIDCard.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "CCG ID Card";
+                break;
+            case "hinamiUmbrella": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_HinamisUmbrella.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Hinami's Umbrella";
+                break;
+            case "redHeadedCentipede": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_redHeadedCentipede.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Red-Headed Centipede";
+                break;
+            case "tortureApparatus": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_medicalApparatus.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Torture Apparatus";
+                break;
+            //Ultra Rares
+            case "iridEyePatch": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_iridescentEyePatch.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Eye Patch";
+                break;
+            case "yamoriMask": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_YamorisMask.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Yamori's Mask";
                 break;
             default: 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/NoChoiceKillerAddonPlaceholder.png";
