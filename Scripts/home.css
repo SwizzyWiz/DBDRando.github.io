@@ -19,9 +19,10 @@
     font-size: 50px;
     height: 200px;
     margin-left: 10%;
+    transition: background-color 1s;
 }
 .navSurvivor button:hover{
-    background-color: #292486;
+    background-color: #231bbe;
 }
 .navKiller{
     height: 365px;
@@ -35,9 +36,10 @@
     font-size: 50px;
     height: 200px;
     margin-left: 10%;
+    transition: background-color 1s;
 }
 .navKiller button:hover{
-    background-color: #7a2323;
+    background-color: #ad2323;
 }
 .changelog{
     width: 90%;

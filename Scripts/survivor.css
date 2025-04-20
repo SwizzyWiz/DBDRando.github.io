@@ -10,9 +10,10 @@
     text-align: center;
     padding: 15px 50px 10px;
     float: right;
+    transition: background-color 1s;
 }
 .navKiller button:hover{
-    background-color: #7a0000;
+    background-color: #ac0000;
 }
 .dropdownSurvBtn {
     display: none;
@@ -200,6 +201,7 @@
     background-color: #1a2e88;
     color: white;
     margin-left: 33%;
+    margin-right: 33%;
 }
 .randoAllBtn{
     font-size: 30px;
@@ -224,6 +226,7 @@
 }
 .perkDisplay fieldset{
     border: 0px;
+    position: relative;
 }
 .perkDisplay legend{
     font-size: 22px;
@@ -231,6 +234,32 @@
 .perkDisplay img{
     width: 200px;
     height: 200px;
+    display: inline;
+    transition: width 1s, height 1s;
+}
+.perkDisplay img:hover{
+    width: 210px;
+    height: 210px;
+}
+.perkDisplay span{
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+    text-shadow: 0 0 1px #000000, 0 0 20px cyan;
+}
+.perkDisplay span ul,dl{
+    margin-top: 5px;
+}
+.perkDisplay span li{
+    text-align: left;
+}
+.perkDisplay span dd{
+    text-align: left;
+}
+.tooltip{
+    display: none;
 }
 .multiAnyHide{
     display: none;

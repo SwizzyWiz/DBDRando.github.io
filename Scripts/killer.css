@@ -10,9 +10,10 @@
     text-align: center;
     padding: 15px 50px 10px;
     float: right;
+    transition: background-color 1s;
 }
 .navSurvivor button:hover{
-    background-color: #002583;
+    background-color: #0032b1;
 }
 .selections{
     background-color: #333;
@@ -208,10 +209,11 @@
     text-align: center;
     width: 25%;
     float: left;
-    color: white;  
+    color: white; 
 }
 .perkDisplay fieldset{
     border: 0px;
+    position: relative;
 }
 .perkDisplay legend{
     font-size: 22px;
@@ -219,6 +221,32 @@
 .perkDisplay img{
     width: 200px;
     height: 200px;
+    display: inline;
+    transition: width 1s, height 1s;
+}
+.perkDisplay img:hover{
+    width: 210px;
+    height: 210px;
+}
+.perkDisplay span{
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+    text-shadow: 0 0 1px #000000, 0 0 20px red;
+}
+.perkDisplay span ul,dl{
+    margin-top: 5px;
+}
+.perkDisplay span li{
+    text-align: left;
+}
+.perkDisplay span dd{
+    text-align: left;
+}
+.tooltip{
+    display: none;
 }
 .randoPerksBtn{
     font-size: 24px;
@@ -226,6 +254,7 @@
     background-color: #881a1a;
     color: white;
     margin-left: 33%;
+    margin-right: 33%;
 }
 .powersDisplay{
     width: 50%;
