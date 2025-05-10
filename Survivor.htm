@@ -39,8 +39,8 @@
                 </div>
             <!--First Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs1">
-                    <input type="checkbox" id="taurCai" name="taurCai" value="Taurie Cain" onchange="namedCharPooled(name)">
-                    <label for="taurCai">Taurie Cain <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="orelRos" name="orelRos" value="Orela Rose" onchange="namedCharPooled(name)">
+                    <label for="orelRos">Orela Rose <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="dwigFai" name="dwigFai" value="Dwight Fairfield" onchange="namedCharPooled(name)">
                     <label for="dwigFai">Dwight Fairfield</label><br>
@@ -66,13 +66,11 @@
                     <input type="checkbox" id="billOve" name="billOve" value="Bill Overbeck" onchange="namedCharPooled(name)">
                     <label for="billOve">William "Bill" Overbeck</label><br>
                                 
-                    
+                    <input type="checkbox" id="fengMin" name="fengMin" value="Feng Min" onchange="namedCharPooled(name)">
+                    <label for="fengMin">Feng Min</label><br>
                 </div>
             <!--Second Survivor Selection Column-->               
                 <div class="dropdownSurv" id="dropSurvs2">
-                    <input type="checkbox" id="fengMin" name="fengMin" value="Feng Min" onchange="namedCharPooled(name)">
-                    <label for="fengMin">Feng Min</label><br>
-
                     <input type="checkbox" id="daviKin" name="daviKin" value="David King" onchange="namedCharPooled(name)">
                     <label for="daviKin">David King</label><br>
                                 
@@ -97,16 +95,14 @@
                     <input type="checkbox" id="ashWil" name="ashWil" value="Ash Williams" onchange="namedCharPooled(name)">
                     <label for="ashWil">Ash Williams</label><br>
                                 
-                    
-                </div>
-            <!--Third Survivor Selection Column-->
-                <div class="dropdownSurv" id="dropSurvs3">
                     <input type="checkbox" id="nancWhe" name="nancWhe" value="Nancy Wheeler" onchange="namedCharPooled(name)">
                     <label for="nancWhe">Nancy Wheeler</label><br>
                                 
                     <input type="checkbox" id="stevHar" name="stevHar" value="Steve Harrington" onchange="namedCharPooled(name)">
                     <label for="stevHar">Steve Harrington</label><br>
-
+                </div>
+            <!--Third Survivor Selection Column-->
+                <div class="dropdownSurv" id="dropSurvs3">
                     <input type="checkbox" id="yuiKim" name="yuiKim" value="Yui Kimura" onchange="namedCharPooled(name)">
                     <label for="yuiKim">Yui Kimura</label><br>
                                  
@@ -127,9 +123,7 @@
                                 
                     <input type="checkbox" id="jillVal" name="jillVal" value="Jill Valentine" onchange="namedCharPooled(name)">
                     <label for="jillVal">Jill Valentine</label><br>
-                </div>                
-            <!--Fourth Survivor Selection Column-->
-                <div class="dropdownSurv" id="dropSurvs4">
+                    
                     <input type="checkbox" id="leonKen" name="leonKen" value="Leon S. Kennedy" onchange="namedCharPooled(name)">
                     <label for="leonKen">Leon S. Kennedy</label><br>
 
@@ -138,7 +132,9 @@
                                 
                     <input type="checkbox" id="jonaVas" name="jonaVas" value="Jonah Vasquez" onchange="namedCharPooled(name)">
                     <label for="jonaVas">Jonah Vasquez</label><br>
-
+                </div>                
+            <!--Fourth Survivor Selection Column-->
+                <div class="dropdownSurv" id="dropSurvs4">
                     <input type="checkbox" id="yoicAsa" name="yoicAsa" value="Yoichi Asakawa" onchange="namedCharPooled(name)">
                     <label for="yoicAsa">Yoichi Asakawa</label><br>
                                 
@@ -156,9 +152,7 @@
                                 
                     <input type="checkbox" id="thalLyr" name="thalLyr" value="Thalita Lyra" onchange="namedCharPooled(name)">
                     <label for="thalLyr">Thalita Lyra</label><br>
-                </div>   
-            <!--Fifth Survivor Selection Column-->
-                <div class="dropdownSurv" id="dropSurvs5">
+                    
                     <input type="checkbox" id="renaLyr" name="renaLyr" value="Renato Lyra" onchange="namedCharPooled(name)">
                     <label for="renaLyr">Renato Lyra</label><br>
                                 
@@ -170,7 +164,9 @@
                                 
                     <input type="checkbox" id="elleRip" name="elleRip" value="Ellen Ripley" onchange="namedCharPooled(name)">
                     <label for="elleRip">Ellen Ripley</label><br>
-
+                </div>   
+            <!--Fifth Survivor Selection Column-->
+                <div class="dropdownSurv" id="dropSurvs5">
                     <input type="checkbox" id="alanWak" name="alanWak" value="Alan Wake" onchange="namedCharPooled(name)">
                     <label for="alanWak">Alan Wake</label><br>
                                 
@@ -185,6 +181,9 @@
 
                     <input type="checkbox" id="trevBel" name="trevBel" value="Trevor Belmont" onchange="namedCharPooled(name)">
                     <label for="trevBel">Trevor Belmont</label><br>
+
+                    <input type="checkbox" id="taurCai" name="taurCai" value="Taurie Cain" onchange="namedCharPooled(name)">
+                    <label for="taurCai">Taurie Cain</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -218,18 +217,18 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="taurCaiPerks">
-                        <legend>Taurie Cain <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="cleBre" name="cleBre" value="Clean Break" onchange="namedPerkPooled(name)">
-                        <label for="cleBre">Clean Break</label><br>
+                    <fieldset class="orelRosPerks">
+                        <legend>Orela Rose <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="doNoHar" name="doNoHar" value="Do No Harm" onchange="namedPerkPooled(name)">
+                        <label for="doNoHar">Do No Harm</label><br>
     
-                        <input type="checkbox" id="invTreCro" name="invTreCro" value="Invocation: Treacherous Crows" onchange="namedPerkPooled(name)">
-                        <label for="invTreCro">Invocation: Treacherous Crows</label><br>
+                        <input type="checkbox" id="dutOfCar" name="dutOfCar" value="Duty of Care" onchange="namedPerkPooled(name)">
+                        <label for="dutOfCar">Duty of Care</label><br>
     
-                        <input type="checkbox" id="shoTheBur" name="shoTheBur" value="Shoulder the Burden" onchange="namedPerkPooled(name)">
-                        <label for="shoTheBur">Shoulder the Burden</label><br>
+                        <input type="checkbox" id="rapRes" name="rapRes" value="Rapid Response" onchange="namedPerkPooled(name)">
+                        <label for="rapRes">Rapid Response</label><br>
                     </fieldset>
-                
+
                     <fieldset class="dwigFaiPerks">
                         <legend>Dwight Fairfield</legend>
                         <input type="checkbox" id="bon" name="bon" value="Bond" onchange="namedPerkPooled(name)">
@@ -764,6 +763,18 @@
     
                         <input type="checkbox" id="momOfGlo" name="momOfGlo" value="Moment of Glory" onchange="namedPerkPooled(name)">
                         <label for="momOfGlo">Moment of Glory</label><br>
+                    </fieldset>
+                    
+                    <fieldset class="taurCaiPerks">
+                        <legend>Taurie Cain</legend>
+                        <input type="checkbox" id="cleBre" name="cleBre" value="Clean Break" onchange="namedPerkPooled(name)">
+                        <label for="cleBre">Clean Break</label><br>
+    
+                        <input type="checkbox" id="invTreCro" name="invTreCro" value="Invocation: Treacherous Crows" onchange="namedPerkPooled(name)">
+                        <label for="invTreCro">Invocation: Treacherous Crows</label><br>
+    
+                        <input type="checkbox" id="shoTheBur" name="shoTheBur" value="Shoulder the Burden" onchange="namedPerkPooled(name)">
+                        <label for="shoTheBur">Shoulder the Burden</label><br>
                     </fieldset>
                 </div>
             </div>

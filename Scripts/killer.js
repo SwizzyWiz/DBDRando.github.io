@@ -3915,13 +3915,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "furCha":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Oman/iconPerks_FurtiveChase.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Furtive Chase";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.1pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time you hook your <b>Obsession</b>, you benefit from the following effects for 
                 <b style="color: #e8c252;">14</b>/
                 <b style="color: #199b1e;">16</b>/
                 <b style="color: #ac3ee3;">18</b> seconds:
                 <ul><li>Grants the <b>Undetectable</b> Status Effect</li>
-                <li>Grants a <b>+5% Haste</b> Status Effect.</li></ul>
+                <li>Grants a <b>+10% Haste</b> Status Effect</li></ul>
                 Whenever the <b>Obsession</b> is rescued from a Hook, their rescuer will become the new <b>Obsession</b>`;
                 break;
             case "imAllEar":
@@ -4283,27 +4283,19 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "hexPen":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_hexPentimento.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Pentimento";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You see the <b>Auras</b> of <b>cleansed Totems</b>.<br><br>
                 You can perform a ritual on a <b>cleansed Totem</b> to resurrect it as a <b>Rekindled Totem</b>.<br>
-                For each <b>Rekindled Totem</b> active at the same time, <i>Hex: Pentimento</i> gains an additional effect:
-                <ul><li><b>1 Totem:</b> reduces all Survivors' Repair speed by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> %</li>
-                <li><b>2 Totem:</b> reduces all Survivors' Healing speed by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> %</li>
-                <li><b>3 Totem:</b> reduces all Survivors' Recovery speed from being downed by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> %</li>
-                <li><b>4 Totem:</b> reduces all Survivors' Gate-Opening speed by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> %</li>
-                <li><b>5 Tokens: all Totems</b> are permanently blocked by The Entity</li></ul>
+                For each <b>Rekindled Totem</b>, <i>Hex: Pentimento</i> gains <b>+1 Token</b>, up to a maximum of <b>5 Tokens</b>:
+                <ul><li><b>1 Token:</b> Reduces the Action speeds for Healing and Repairing by <b>-20%</b></li>
+                <li><b>2 to 5 Tokens:</b> Increase the strength of the Action Speed penalty by a stackable 
+                <b style="color: #e8c252;">1</b>/
+                <b style="color: #199b1e;">2</b>/
+                <b style="color: #ac3ee3;">3</b> % <b>per Token</b>, up to a maximum of 
+                <b style="color: #e8c252;">24</b>/
+                <b style="color: #199b1e;">28</b>/
+                <b style="color: #ac3ee3;">32</b> %</li></ul>
+                Survivors <b>cursed</b> by <i>Hex: Pentimento</i> see the <b>Auras of Rekindled Totems within 16 metres</b><br>
                 When a <b>Rekindled Totem</b> is cleansed, its remains are consumed by The Entity and it <b>cannot be rekindled</b>`;
                 break;
             case "scoHooPaiRes":
@@ -4466,7 +4458,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hit the Survivor with the <b>highest cumulative Chase time</b>, with a <b>Basic Attack</b>, they become the <b>Obsession</b><br>
                 While you are chasing your <b>Obsession</b>, <i>Game Afoot</i> activates its secondary effect:
-                <ul><li>Grants a <b>5% Haste</b> Status Effect for 
+                <ul><li>Grants a <b>7% Haste</b> Status Effect for 
                 <b style="color: #e8c252;">8</b>/
                 <b style="color: #199b1e;">9</b>/
                 <b style="color: #ac3ee3;">10</b> seconds after damaging a Generator or breaking a Breakable Wall or Pallet</li></ul>`;
@@ -4568,7 +4560,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yerkes/iconPerks_batteriesIncluded.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Batteries Included";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within <b>12 metres</b> of a <b>completed Generator</b>, you are granted a <b>+5% Haste</b> Status Effect
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within <b>12 metres</b> of a <b>completed Generator</b>, you are granted a <b>+7% Haste</b> Status Effect
                 <ul><li>This effect lingers for 
                 <b style="color: #e8c252;">1</b>/
                 <b style="color: #199b1e;">3</b>/
@@ -4608,7 +4600,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">24</b>/
                 <b style="color: #199b1e;">27</b>/
                 <b style="color: #ac3ee3;">30</b> seconds:
-                <dl><li>Grants a <b>+5% Haste</b> Status Effect for <b>10 seconds</b> after vaulting a Window</li>
+                <dl><li>Grants a <b>+10% Haste</b> Status Effect for <b>10 seconds</b> after vaulting a Window</li>
                 <dd>- This effect cannot stack with itself</dd></dl>`;
                 break;
             case "und":

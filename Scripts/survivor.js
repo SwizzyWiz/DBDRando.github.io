@@ -1464,7 +1464,7 @@ function selectAllSurv(){
     if(!$("#mikaRei").is(":checked")){checking("mikaRei",true);}
     if(!$("#jonaVas").is(":checked")){checking("jonaVas",true);}
     if(!$("#yoicAsa").is(":checked")){checking("yoicAsa",true);}
-    if(!$("#haddKur").is(":checked")){checking("haddKur",true);}
+    if(!$("#haddKau").is(":checked")){checking("haddKau",true);}
     if(!$("#adaWon").is(":checked")){checking("adaWon",true);}
     if(!$("#rebeCha").is(":checked")){checking("rebeCha",true);}
     if(!$("#vittTos").is(":checked")){checking("vittTos",true);}
@@ -1479,6 +1479,7 @@ function selectAllSurv(){
     if(!$("#laraCro").is(":checked")){checking("laraCro",true);}
     if(!$("#trevBel").is(":checked")){checking("trevBel",true);}
     if(!$("#taurCai").is(":checked")){checking("taurCai",true);}
+    if(!$("#orelRos").is(":checked")){checking("orelRos",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -1511,7 +1512,7 @@ function deselectAllSurv(){
     if($("#mikaRei").is(":checked")){checking("mikaRei",false);}
     if($("#jonaVas").is(":checked")){checking("jonaVas",false);}
     if($("#yoicAsa").is(":checked")){checking("yoicAsa",false);}
-    if($("#haddKur").is(":checked")){checking("haddKur",false);}
+    if($("#haddKau").is(":checked")){checking("haddKau",false);}
     if($("#adaWon").is(":checked")){checking("adaWon",false);}
     if($("#rebeCha").is(":checked")){checking("rebeCha",false);}
     if($("#vittTos").is(":checked")){checking("vittTos",false);}
@@ -1526,6 +1527,7 @@ function deselectAllSurv(){
     if($("#laraCro").is(":checked")){checking("laraCro",false);}
     if($("#trevBel").is(":checked")){checking("trevBel",false);}
     if($("#taurCai").is(":checked")){checking("taurCai",false);}
+    if($("#orelRos").is(":checked")){checking("orelRos",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -1712,6 +1714,10 @@ function selectAllPerk(){
     if(!$("#cleBre").is(":checked")){checking("cleBre",true);}  
     if(!$("#invTreCro").is(":checked")){checking("invTreCro",true);}  
     if(!$("#shoTheBur").is(":checked")){checking("shoTheBur",true);} 
+    //Orela Rose Perks
+    if(!$("#doNoHar").is(":checked")){checking("doNoHar",true);}  
+    if(!$("#dutOfCar").is(":checked")){checking("dutOfCar",true);}  
+    if(!$("#rapRes").is(":checked")){checking("rapRes",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -1897,6 +1903,10 @@ function deselectAllPerk(){
     if($("#cleBre").is(":checked")){checking("cleBre",false);}  
     if($("#invTreCro").is(":checked")){checking("invTreCro",false);}  
     if($("#shoTheBur").is(":checked")){checking("shoTheBur",false);} 
+    //Orela Rose Perks
+    if($("#doNoHar").is(":checked")){checking("doNoHar",false);}  
+    if($("#dutOfCar").is(":checked")){checking("dutOfCar",false);}  
+    if($("#rapRes").is(":checked")){checking("rapRes",false);} 
 }
 //Items
 function selectAllItem(){
@@ -2118,14 +2128,15 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "noOneLefBeh":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No One Left Behind";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>No One Left Behind</i> activates and applies the following effects:
-                <ul><li>Increases the Action speeds for Healing and Unhooking by 
+                <dl><li>The <b>Auras</b> of all other Survivors are revealed to you</li>
+                <li>Increases the Action speeds for Healing and Unhooking by 
                 <b style="color: #e8c252;">50</b>/
                 <b style="color: #199b1e;">75</b>/
                 <b style="color: #ac3ee3;">100</b> %</li>
                 <li>Increases the strength and duration of the <b>Haste</b> Status Effect of Survivors unhooked by you by <b>+10%</b> and <b>+5 seconds</b> respectively</li>
-                <li>The <b>Auras</b> of all other Survivors are revealed to you</li></ul>`;
+                <dd>- Causes them to benefit from a <b>+20% Haste</b> Status Effect for <b>15 seconds</b></dd></dl>`;
                 break;
             case "pluIns":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
@@ -2904,7 +2915,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">25</b>/
                 <b style="color: #ac3ee3;">30</b> seconds instead:
                 <ul><li>Suppresses the <b>creation of their Scratch Marks and Pools of Blood</b></li>
-                <li>Increases the strength of their <b>Haste</b> Status Effect by <b>+10%</b></li></ul>`;
+                <li>Increases the strength of their <b>Haste</b> Status Effect by <b>+15%</b></li></ul>`;
                 break;
             case "cam":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
@@ -2948,9 +2959,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While within <b>5 metres</b> of the Killer <b>carrying another Survivor</b>, the following effects apply:
                 <ul><li>Grants you a 
-                <b style="color: #e8c252;">5</b>/
-                <b style="color: #199b1e;">6</b>/
-                <b style="color: #ac3ee3;">7</b> % Haste Status Effect</li>
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">8</b>/
+                <b style="color: #ac3ee3;">10</b> % Haste Status Effect</li>
                 <li>Increases the Wiggling speed of the <b>carried Survivor</b> by <b>+25%</b></li></ul>`;
                 break;
             case "lucBre":
@@ -3329,7 +3340,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
                 Soft chimes ring out in a radius of <b>24 metres</b>.<br><br>
                 All Survivors benefit from the following effects when inside the <b>Boon Totem's radius</b>:
-                <dl><li>Grants a <b>+2% Haste</b> Status Effect</li>
+                <dl><li>Grants a <b>+3% Haste</b> Status Effect</li>
                 <dd>- This effect lingers for 
                 <b style="color: #e8c252;">2</b>/
                 <b style="color: #199b1e;">3</b>/
@@ -3930,6 +3941,43 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">25</b>/
                 <b style="color: #ac3ee3;">20</b> seconds</li></ul>`;
                 break;
+        //Orela Rose Perks
+            case "doNoHar":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_DoNoHarm.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Do No Harm";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When healing another Survivor, depending on <b>their accumulated Hook Stages</b>, you benefit from the following effects:
+                <ul><li>Increases your Healing speed to other Survivors by 
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">40</b>/
+                <b style="color: #ac3ee3;">50</b> % <b>per Hook Stage</b>, up to a maximum of 
+                <b style="color: #e8c252;">60</b>/
+                <b style="color: #199b1e;">80</b>/
+                <b style="color: #ac3ee3;">100</b> %</li>
+                <li>Increases the Progression bonus of <b>Great Healing Skill Checks</b> by <b>+3% per Hook Stage</b>, up to a maximum of <b>+6%</b></li></ul>`;
+                break;
+            case "dutOfCar":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_DutyOfCare.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Duty of Care";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>healthy</b>, taking a <b>Protection Hit</b> causes <b>all other Survivors within 12 metres of your location</b> to benefit from the following effect:
+                <ul><li>Grants them a <b>+25% Haste</b> Status Effect for 
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">5</b>/
+                <b style="color: #ac3ee3;">6</b> seconds</li></ul>`;
+                break;
+            case "rapRes":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_RapidResponse.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Rapid Response";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing a <b>Rushed action to exit a Locker</b>, <i>Rapid Response</i> triggers its effect:
+                <ul><li>The <b>Aura of the Killer</b> is revealed to you for <b>2 seconds</b></li>
+                <li>Causes you to suffer from the <b>Exhausted</b> Status Effect for 
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">20</b> seconds</li></ul>
+                <i>Rapid Response</i> cannot be used while <b>Exhausted</b>`;
+                break;
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
@@ -4125,6 +4173,10 @@ function fixedChar(char){
         case "taurCai":
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Gelato/T_UI_S45_storeBackground.png";
             document.getElementById("charName").innerHTML = "Taurie Cain";
+            break;
+        case "orelRos":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Jerky/T_UI_S46_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Orela Rose";
             break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
