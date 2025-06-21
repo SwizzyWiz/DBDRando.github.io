@@ -1684,6 +1684,43 @@ function randomAddons(char){
                 addonPool.push("yamoriMask");
             }
             break;
+        case "animatronic":
+        //Commons
+            if($("#commons").is(":checked")){
+                addonPool.push("greasyPaperPlate");
+                addonPool.push("helpWantedAd");
+                addonPool.push("restaurantMenu");
+                addonPool.push("rottenPizza");
+            }
+        //Uncommons
+            if($("#uncommons").is(":checked")){
+                addonPool.push("officePhone");
+                addonPool.push("partyHat");
+                addonPool.push("rippedCurtain");
+                addonPool.push("securityGuardBadge");
+                addonPool.push("streamers");
+            }
+        //Rares
+            if($("#rares").is(":checked")){
+                addonPool.push("bonnieGuitarStrings");
+                addonPool.push("chicaBib");
+                addonPool.push("foxyHook");
+                addonPool.push("freddyHat");
+                addonPool.push("purpleGuyDrawing");
+            }
+        //Very Rares
+            if($("#veryRares").is(":checked")){
+                addonPool.push("accessPanel");
+                addonPool.push("celebratePoster");
+                addonPool.push("endoCPU");
+                addonPool.push("lootBag");
+            }
+        //Ultra Rares
+            if($("#ultraRares").is(":checked")){
+                addonPool.push("fazCoin");
+                addonPool.push("iridRemnant");
+            }
+            break;
         default:
 
     }
@@ -2508,6 +2545,7 @@ function selectAllKill(){
     if(!$("#darkLord").is(":checked")){checking("darkLord",true);}
     if(!$("#houndmaster").is(":checked")){checking("houndmaster",true);}
     if(!$("#ghoul").is(":checked")){checking("ghoul",true);}
+    if(!$("#animatronic").is(":checked")){checking("animatronic",true);}
 }
 function deselectAllKill(){
     if($("#trapper").is(":checked")){checking("trapper",false);}
@@ -2549,6 +2587,7 @@ function deselectAllKill(){
     if($("#darkLord").is(":checked")){checking("darkLord",false);}
     if($("#houndmaster").is(":checked")){checking("houndmaster",false);}
     if($("#ghoul").is(":checked")){checking("ghoul",false);}
+    if($("#animatronic").is(":checked")){checking("animatronic",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2710,7 +2749,11 @@ function selectAllPerk(){
     //Ghoul Perks
     if(!$("#hexNotButMis").is(":checked")){checking("hexNotButMis",true);}  
     if(!$("#forEnt").is(":checked")){checking("forEnt",true);}  
-    if(!$("#nonAreFre").is(":checked")){checking("nonAreFre",true);}   
+    if(!$("#nonAreFre").is(":checked")){checking("nonAreFre",true);}  
+    //Animatronic Perks
+    if(!$("#hay").is(":checked")){checking("hay",true);}  
+    if(!$("#helWan").is(":checked")){checking("helWan",true);}  
+    if(!$("#phaFea").is(":checked")){checking("phaFea",true);}  
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2872,6 +2915,10 @@ function deselectAllPerk(){
     if($("#hexNotButMis").is(":checked")){checking("hexNotButMis",false);}  
     if($("#forEnt").is(":checked")){checking("forEnt",false);}  
     if($("#nonAreFre").is(":checked")){checking("nonAreFre",false);} 
+    //Animatronic Perks
+    if($("#hay").is(":checked")){checking("hay",false);}  
+    if($("#helWan").is(":checked")){checking("helWan",false);}  
+    if($("#phaFea").is(":checked")){checking("phaFea",false);} 
 }
 //Add-ons
 function selectAllAddon(){
@@ -3179,6 +3226,12 @@ function fixedChar(char){
             document.getElementById("charName").innerHTML = "The Ghoul";
             document.getElementById("powerImg").src = "Powers/Powers/Icecream/iconPowers_AimKaguneLeap_K39.png";
             document.getElementById("powerName").innerHTML = "One-Eyed Terror";
+            break;
+        case "animatronic":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ketchup/K40_storeBackground.png";
+            document.getElementById("charName").innerHTML = "The Animatronic";
+            document.getElementById("powerImg").src = "Powers/Powers/Ketchup/iconPowers_throw.png";
+            document.getElementById("powerName").innerHTML = "Fazbear's Fright";
             break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomKiller Placeholder.png";
@@ -3896,9 +3949,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Obsession</b> loses a Health State by any means and thus enters the Injured State, <i>Dark Devotion</i> activates:
                 <ul><li>Your <b>Terror Radius</b> transfers to the <b>Obsession</b> for 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> seconds, and its radius is set to <b>32 metres</b></li>
+                <b style="color: #e8c252;">35</b>/
+                <b style="color: #199b1e;">40</b>/
+                <b style="color: #ac3ee3;">45</b> seconds, and its radius is set to <b>40 metres</b></li>
                 <li>Grants the <b>Undetectable</b> Status Effect for the same duration</li></ul>
                 The <b>Obsession</b> with your transferred <b>Terror Radius</b> is also considered to be '<b>inside the Terror Radius</b>' for other purposes`;
                 break;
@@ -3942,9 +3995,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After picking up a Survivor, all Generators not currently being repaired by Survivors are blocked by The Entity for the next <b>16 seconds</b> 
                 <ul><li>The <b>Auras</b> of blocked Generators are highlighted to you in <b>white</b></li></ul>
                 <i>Thrilling Tremors</i> has a cooldown of 
-                <b style="color: #e8c252;">100</b>/
-                <b style="color: #199b1e;">80</b>/
-                <b style="color: #ac3ee3;">60</b> seconds`;
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
         //Demogorgon Perks
             case "cruLim":
@@ -4043,10 +4096,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor blesses or cleanses a Totem, the following effects apply:
                 <ul><li>Causes that Survivor to suffer from the <b>Oblivious</b> Status Effect for 
-                <b style="color: #e8c252;">35</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">45</b> seconds</li>
-                <li>The <b>Auras</b> of all Survivors are revealed to you for <b>15 seconds<b> after completing the interaction</li></ul>`;
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">60</b> seconds</li>
+                <li>The <b>Auras</b> of all Survivors are revealed to you for <b>20 seconds<b> after completing the interaction</li></ul>`;
                 break;
         //Executioner Perks
             case "dea":
@@ -4321,11 +4374,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_CallOfBrine.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Call of Brine";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action on a Generator, <i>Call of Brine</i> activates for <b>60 seconds</b>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action on a Generator, <i>Call of Brine</i> activates for <b>70 seconds</b>
                 <ul><li>The <b>damaged Generator</b> regresses at 
-                <b style="color: #e8c252;">115</b>/
-                <b style="color: #199b1e;">120</b>/
-                <b style="color: #ac3ee3;">125</b> % of the normal Regression speed and its <b>Aura</b> is highlighted to you in <b>yellow</b></li>
+                <b style="color: #e8c252;">130</b>/
+                <b style="color: #199b1e;">140</b>/
+                <b style="color: #ac3ee3;">150</b> % of the normal Regression speed and its <b>Aura</b> is highlighted to you in <b>yellow</b></li>
                 <li>Receive a <b>Loud Noise Notification</b> each time a Survivor hits a Good Skill Check on the <b>affected Generator</b></li></ul>`;
                 break;
             case "merSto":
@@ -4399,13 +4452,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_SuperiorAnatomy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Superior Anatomy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Rushed Vault within <b>8 metres</b> of your location, <i>Superior Anatomy</i> activates:
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Rushed Vault within <b>12 metres</b> of your location, <i>Superior Anatomy</i> activates:
                 <ul><li>Increases your Vaulting speed by 
                 <b style="color: #e8c252;">30</b>/
                 <b style="color: #199b1e;">35</b>/
                 <b style="color: #ac3ee3;">40</b> %</li></ul>
                 <i>Superior Anatomy</i> deactivates after vaulting.<br>
-                <i>Superior Anatomy</i> has a cooldown of <b>30 seconds</b>`;
+                <i>Superior Anatomy</i> has a cooldown of <b>25 seconds</b>`;
                 break;
             case "ter":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Terminus.png";
@@ -4414,9 +4467,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Terminus</i> activates:
                 <ul><li>All Survivors who are either injured, dying, or hooked, suffer from the <b>Broken</b> Status Effect until an Exit Gate is <b>opened</b></li>
                 <li>This effect lingers for an additional 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">35</b>/
+                <b style="color: #199b1e;">40</b>/
+                <b style="color: #ac3ee3;">45</b> seconds</li></ul>`;
                 break;
         //Knight Perks
             case "hexFacDar":
@@ -4479,10 +4532,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with 3 Tokens.<br>
                 Whenever you break a Breakable Wall or a dropped Pallet, <i>THWACK!</i> consumes <b>-1 Token</b> and applies the following effect:
-                <ul><li>Causes all Survivors within <b>24 metres</b> of your location to scream and reveal their <b>Aura</b> for 
-                <b style="color: #e8c252;">3</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">5</b> seconds</li></ul>
+                <ul><li>Causes all Survivors within <b>36 metres</b> of your location to scream and reveal their <b>Aura</b> for 
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">5</b>/
+                <b style="color: #ac3ee3;">6</b> seconds</li></ul>
                 Whenever you hook a Survivor, <i>THWACK!</i> is granted <b>+1 Token</b>`;
                 break;
         //Singularity Perks
@@ -4514,11 +4567,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Damaging another Generator transfers the state to it instead</dd>
                 <li>The <b>Aura</b> of the <b>Compromised Generator</b> is highlighted to you in <b>yellow</b> until it is completed</li></dl>
                 Once the <b>Compromised Generator</b> is completed, you benefit from the following effects for 
-                <b style="color: #e8c252;">35</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">45</b> seconds:
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">60</b> seconds:
                 <ul><li><b>Undetectable</b> Status Effect</li>
-                <li><b>+10% Haste</b> Status Effect</li></ul>
+                <li><b>+8% Haste</b> Status Effect</li></ul>
                 <i>Machine Learning</i> deactivates after use`;
                 break;
         //Xenomorph Perks
@@ -4560,7 +4613,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yerkes/iconPerks_batteriesIncluded.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Batteries Included";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within <b>12 metres</b> of a <b>completed Generator</b>, you are granted a <b>+7% Haste</b> Status Effect
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within <b>16 metres</b> of a <b>completed Generator</b>, you are granted a <b>+5% Haste</b> Status Effect
                 <ul><li>This effect lingers for 
                 <b style="color: #e8c252;">1</b>/
                 <b style="color: #199b1e;">3</b>/
@@ -4600,7 +4653,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">24</b>/
                 <b style="color: #199b1e;">27</b>/
                 <b style="color: #ac3ee3;">30</b> seconds:
-                <dl><li>Grants a <b>+10% Haste</b> Status Effect for <b>10 seconds</b> after vaulting a Window</li>
+                <dl><li>Grants a <b>+7% Haste</b> Status Effect for <b>10 seconds</b> after vaulting a Window</li>
                 <dd>- This effect cannot stack with itself</dd></dl>`;
                 break;
             case "und":
@@ -4773,6 +4826,41 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">56</b>/
                 <b style="color: #ac3ee3;">64</b> seconds</li></ul>`;
                 break;
+        //Animatronic Perks
+            case "hay":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_Haywire.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Haywire";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>stops opening an Exit Gate</b> after accumulating at least <b>50%</b> Progression towards being opened, <i>Haywire</i> causes it to regress:
+                <ul><li>Regresses at a rate of 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">45</b>/
+                <b style="color: #ac3ee3;">50</b> % of the normal Gate-Opening speed</li>
+                <li>Causes Survivors to see the <b>lights atop the switch</b> flickering randomly while it regresses</li></ul>`;
+                break;
+            case "helWan":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_HelpWanted.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Help Wanted";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action, <i>Help Wanted</i> activates:
+                <ul><li>Causes that Generator to become a <b>Compromised Generator</b></li></ul>
+                Once the <b>Compromised Generator is completed</b>, you benefit from the following effect for 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">60</b> seconds:
+                <ul><li>Increases the Recovery speed of <b>successful Basic Attacks</b> by <b>25%</b></li></ul>`;
+                break;  
+            case "phaFea":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_PhantomFear.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Phantom Fear";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor within your <b>Terror Radius</b> looks at you, they suffer from the following effects:
+                <ul><li>Causes them to <b>scream and reveal their Aura</b> to you for <b>2 seconds</b></li></ul>
+                <i>Phantom Fear</i> has a cooldown of 
+                <b style="color: #e8c252;">80</b>/
+                <b style="color: #199b1e;">70</b>/
+                <b style="color: #ac3ee3;">60</b> seconds`;
+                break;   
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoicePerkKillerPlaceholder.png";
@@ -8153,6 +8241,92 @@ function fixedAddon(addon1,addon2){
             case "yamoriMask": 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_YamorisMask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yamori's Mask";
+                break;
+        //Animatronic Addons
+            //Commons
+            case "greasyPaperPlate": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_GreasyPaperPlate.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Greasy Paper Plate";
+                break;
+            case "helpWantedAd": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_HelpWantedAd.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Help Wanted Ad";
+                break;
+            case "restaurantMenu": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RestaurantMenu.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Restaurant Menu";
+                break;
+            case "rottenPizza": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RottenPizza.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Pizza";
+                break;
+            //Uncommons
+            case "officePhone": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_OfficePhone.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Office Phone";
+                break;
+            case "partyHat": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_PartyHat.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Party Hat";
+                break;
+            case "rippedCurtain": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RippedCurtain.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Ripped Curtain";
+                break;
+            case "securityGuardBadge": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_SecurityGuardsBadge.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Security Guard's Badge";
+                break;
+            case "streamers": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_Streamers.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Streamers";
+                break;
+            //Rares
+            case "bonnieGuitarStrings": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_BonniesGuitarStrings.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Bonnie's Guitar Strings";
+                break;
+            case "chicaBib": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_ChicasBib.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Chica's Bib";
+                break;
+            case "foxyHook": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FoxyHook.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Foxy's Hook";
+                break;
+            case "freddyHat": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FreddysHat.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Freddy's Hat";
+                break;
+            case "purpleGuyDrawing": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_PurpleGuyDrawing.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Purple Guy Drawing";
+                break;
+            //Very Rares
+            case "accessPanel": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_AccessPanel.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Access Panel";
+                break;
+            case "celebratePoster": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_CelebratePoster.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Celebrate! Poster";
+                break;
+            case "endoCPU": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_EndoCPU.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Endo CPU";
+                break;
+            case "lootBag": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_LootBag.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Loot Bag";
+                break;
+            //Ultra Rares
+            case "fazCoin": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FazCoin.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Faz-Coin";
+                break;
+            case "iridRemnant": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_IridescentRemnant.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Remnant";
                 break;
             default: 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/NoChoiceKillerAddonPlaceholder.png";

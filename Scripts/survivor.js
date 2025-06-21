@@ -2316,8 +2316,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Healing speed by 
                 <b style="color: #e8c252;">30</b>/
                 <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">50</b> %<br><br>
-                Reduces the Healing efficiency of <b>Med-Kits</b> by <b>-20%</b>`;
+                <b style="color: #ac3ee3;">50</b> %<br>`;
                 break;
             case "emp":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Empathy.png";
@@ -2915,7 +2914,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">25</b>/
                 <b style="color: #ac3ee3;">30</b> seconds instead:
                 <ul><li>Suppresses the <b>creation of their Scratch Marks and Pools of Blood</b></li>
-                <li>Increases the strength of their <b>Haste</b> Status Effect by <b>+15%</b></li></ul>`;
+                <li>Increases the strength of their <b>Haste</b> Status Effect by <b>+10%</b></li></ul>`;
                 break;
             case "cam":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
@@ -3083,12 +3082,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Desperate Measures";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Action speeds for Healing and Unhooking by 
-                <b style="color: #e8c252;">10</b>/
-                <b style="color: #199b1e;">12</b>/
-                <b style="color: #ac3ee3;">14</b> % <b>for each injured, hooked, or dying Survivor</b>, up to a maximum of 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">48</b>/
-                <b style="color: #ac3ee3;">56</b> %`;
+                <b style="color: #e8c252;">16</b>/
+                <b style="color: #199b1e;">18</b>/
+                <b style="color: #ac3ee3;">20</b> % <b>for each injured, hooked, or dying Survivor</b>, up to a maximum of 
+                <b style="color: #e8c252;">64</b>/
+                <b style="color: #199b1e;">72</b>/
+                <b style="color: #ac3ee3;">80</b> %`;
                 break;
             case "vis":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
@@ -3196,12 +3195,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Counterforce";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You cleanse Totems <b>20%</b> faster
-                <ul><li>Gain another, stackable <b>20%</b> Cleansing Speed bonus <b>per cleansed Totem</b></li>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You cleanse Totems <b>25%</b> faster
+                <ul><li>Gain another, stackable <b>25%</b> Cleansing Speed bonus <b>per cleansed Totem</b></li>
                 <li>After cleansing a Totem, the <b>Aura of the Totem farthest from you</b> is revealed to you for 
-                <b style="color: #e8c252;">2</b>/
-                <b style="color: #199b1e;">3</b>/
-                <b style="color: #ac3ee3;">4</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">12</b>/
+                <b style="color: #ac3ee3;">14</b> seconds</li></ul>`;
                 break;
             case "res":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
@@ -3352,11 +3351,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empathic Connection";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While other Survivors are in the <b>Injured State</b>, they benefit from the following effects:
-                <ul><li><b>Your Aura</b> is revealed to them within 
-                <b style="color: #e8c252;">32</b>/
-                <b style="color: #199b1e;">64</b>/
-                <b style="color: #ac3ee3;">96</b> metres of your location</li>
-                <li>Increases your Healing speed to other Survivors by <b>+30%</b></li></ul>`;
+                <ul><li><b>Your Aura</b> is revealed to them</li>
+                <li>Increases your Healing speed to other Survivors by 
+                <b style="color: #e8c252;">25</b>/
+                <b style="color: #199b1e;">30</b>/
+                <b style="color: #ac3ee3;">35</b> %</li></ul>`;
                 break;
             case "parGui":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
@@ -3693,9 +3692,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are <b>healthy</b>, <i>Light-Footed</i> activates:
                 <ul><li>Suppresses the <b>sound of your footsteps while running</b></li></ul>
                 <i>Light-Footed</i> has a cooldown of 
-                <b style="color: #e8c252;">28</b>/
-                <b style="color: #199b1e;">24</b>/
-                <b style="color: #ac3ee3;">20</b> seconds after performing a <b>Rush Vault action</b>`;
+                <b style="color: #e8c252;">14</b>/
+                <b style="color: #199b1e;">12</b>/
+                <b style="color: #ac3ee3;">10</b> seconds after performing a <b>Rush Vault action</b>`;
                 break;
             case "lucSta":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
@@ -3738,9 +3737,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dl><li>Causes them to suffer from a <b>-20% Hindered</b> Status Effect for <b>6 seconds</b></li>
                 <dd>- This effect does not stack</dd></dl>
                 <i>Champion of Light</i> has a cooldown of 
-                <b style="color: #e8c252;">80</b>/
-                <b style="color: #199b1e;">70</b>/
-                <b style="color: #ac3ee3;">60</b> seconds after <b>blinding the Killer</b>`;
+                <b style="color: #e8c252;">60</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">40</b> seconds after <b>blinding the Killer</b>`;
                 break;
             case "dea":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
@@ -3870,11 +3869,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Exultation";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Stunning</b> the Killer with a <b>Pallet</b> upgrades the <b>Rarity of your held Item to the next tier</b>
-                <ul><li>Recharges the <b>Item</b> by <b>+25%</b></li></ul>
+                <ul><li>Recharges the <b>Item</b> by <b>+75%</b></li></ul>
                 <i>Exultation</i> has a cooldown of 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">35</b>/
-                <b style="color: #ac3ee3;">30</b> seconds`;
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">20</b> seconds`;
                 break;
             case "eyeOfBel":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";

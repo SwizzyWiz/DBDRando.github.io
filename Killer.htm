@@ -37,8 +37,8 @@
                 </div>
             <!--First Killer Selection Column-->
                 <div class="dropdownKill" id="dropKills1">
-                    <input type="checkbox" id="ghoul" name="ghoul" value="The Ghoul" onchange="namedCharPooled(name)">
-                    <label for="ghoul">The Ghoul <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="animatronic" name="animatronic" value="The Animatronic" onchange="namedCharPooled(name)">
+                    <label for="animatronic">The Animatronic <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="trapper" name="trapper" value="The Trapper" onchange="namedCharPooled(name)">
                     <label for="trapper">The Trapper</label><br>
@@ -165,6 +165,9 @@
 
                     <input type="checkbox" id="houndmaster" name="houndmaster" value="The Houndmaster" onchange="namedCharPooled(name)">
                     <label for="houndmaster">The Houndmaster</label><br>
+
+                    <input type="checkbox" id="ghoul" name="ghoul" value="The Ghoul" onchange="namedCharPooled(name)">
+                    <label for="ghoul">The Ghoul</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -198,16 +201,16 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="ghoulPerks">
-                        <legend>The Ghoul <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="forEnt" name="forEnt" value="Forever Entwined" onchange="namedPerkPooled(name)">
-                        <label for="forEnt">Forever Entwined</label><br>
+                    <fieldset class="animatronicPerks">
+                        <legend>The Animatronic <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="hay" name="hay" value="Haywire" onchange="namedPerkPooled(name)">
+                        <label for="hay">Haywire</label><br>
 
-                        <input type="checkbox" id="hexNotButMis" name="hexNotButMis" value="Hex: Nothing but Misery" onchange="namedPerkPooled(name)">
-                        <label for="hexNotButMis">Hex: Nothing but Misery</label><br>    
+                        <input type="checkbox" id="helWan" name="helWan" value="Help Wanted" onchange="namedPerkPooled(name)">
+                        <label for="helWan">Help Wanted</label><br>    
 
-                        <input type="checkbox" id="nonAreFre" name="nonAreFre" value="None Are Free" onchange="namedPerkPooled(name)">
-                        <label for="nonAreFre">None Are Free</label><br>
+                        <input type="checkbox" id="phaFea" name="phaFea" value="Phantom Fear" onchange="namedPerkPooled(name)">
+                        <label for="phaFea">Phantom Fear</label><br>
                     </fieldset>
 
                     <fieldset class="trapperPerks">
@@ -282,9 +285,6 @@
                         <label for="hexThiSea">Hex: The Third Seal</label><br>
                     </fieldset>
 
-                </div>
-            <!--Second Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks2">
                     <fieldset class="doctorPerks">
                         <legend>The Doctor</legend>
                         <input type="checkbox" id="monAbu" name="monAbu" value="Monitor & Abuse" onchange="namedPerkPooled(name)">
@@ -296,6 +296,10 @@
                         <input type="checkbox" id="ovePre" name="ovePre" value="Overwhelming Presence" onchange="namedPerkPooled(name)">
                         <label for="ovePre">Overwhelming Presence</label><br>
                     </fieldset>
+
+                </div>
+            <!--Second Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks2">
 
                     <fieldset class="huntressPerks">
                         <legend>The Huntress</legend>
@@ -380,10 +384,7 @@
                         <input type="checkbox" id="madGri" name="madGri" value="Mad Grit" onchange="namedPerkPooled(name)">
                         <label for="madGri">Mad Grit</label><br>
                     </fieldset>
-             
-                </div>
-            <!--Third Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks3">
+
                     <fieldset class="plaguePerks">
                         <legend>The Plague</legend>
                         <input type="checkbox" id="corInt" name="corInt" value="Corrupt Intervention" onchange="namedPerkPooled(name)">
@@ -407,6 +408,10 @@
                         <input type="checkbox" id="thrTre" name="thrTre" value="Thrilling Tremors" onchange="namedPerkPooled(name)">
                         <label for="thrTre">Thrilling Tremors</label><br>
                     </fieldset>
+
+                </div>
+            <!--Third Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks3">
                                 
                     <fieldset class="demogorgonPerks">
                         <legend>The Demogorgon</legend>
@@ -478,11 +483,8 @@
 
                         <input type="checkbox" id="opp" name="opp" value="Oppression" onchange="namedPerkPooled(name)">
                         <label for="opp">Oppression</label><br>
-                    </fieldset>   
-      
-                </div>
-            <!--Fourth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks4">
+                    </fieldset> 
+
                     <fieldset class="tricksterPerks">
                         <legend>The Trickster</legend>
                         <input type="checkbox" id="hexCroCon" name="hexCroCon" value="Hex: Crowd Control" onchange="namedPerkPooled(name)">
@@ -517,8 +519,11 @@
 
                         <input type="checkbox" id="scoHooGifPai" name="scoHooGifPai" value="Scourge Hook: Gift of Pain" onchange="namedPerkPooled(name)">
                         <label for="scoHooGifPai">Scourge Hook: Gift of Pain</label><br>
-                    </fieldset>   
-                                
+                    </fieldset>  
+                </div>
+            <!--Fourth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks4">
+        
                     <fieldset class="artistPerks">
                         <legend>The Artist</legend>
                         <input type="checkbox" id="griEmb" name="griEmb" value="Grim Embrace" onchange="namedPerkPooled(name)">
@@ -578,10 +583,7 @@
                         <input type="checkbox" id="nowHid" name="nowHid" value="Nowhere to Hide" onchange="namedPerkPooled(name)">
                         <label for="nowHid">Nowhere to Hide</label><br>
                     </fieldset>
- 
-                </div>
-            <!--Fifth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks5">
+
                     <fieldset class="skullMercPerks">
                         <legend>The Skull Merchant</legend>
                         <input type="checkbox" id="gamAfo" name="gamAfo" value="Game Afoot" onchange="namedPerkPooled(name)">
@@ -629,7 +631,10 @@
                         <input type="checkbox" id="hexTwoCanPla" name="hexTwoCanPla" value="Hex: Two Can Play" onchange="namedPerkPooled(name)">
                         <label for="hexTwoCanPla">Hex: Two Can Play</label><br>
                     </fieldset>
-                                
+                </div>
+            <!--Fifth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks5">
+           
                     <fieldset class="unknownPerks">
                         <legend>The Unknown</legend>
                         <input type="checkbox" id="unb" name="unb" value="Unbound" onchange="namedPerkPooled(name)">
@@ -676,6 +681,18 @@
 
                         <input type="checkbox" id="scoHooJagCom" name="scoHooJagCom" value="Scourge Hook: Jagged Compass" onchange="namedPerkPooled(name)">
                         <label for="scoHooJagCom">Scourge Hook: Jagged Compass</label><br>
+                    </fieldset>
+
+                    <fieldset class="ghoulPerks">
+                        <legend>The Ghoul</legend>
+                        <input type="checkbox" id="forEnt" name="forEnt" value="Forever Entwined" onchange="namedPerkPooled(name)">
+                        <label for="forEnt">Forever Entwined</label><br>
+
+                        <input type="checkbox" id="hexNotButMis" name="hexNotButMis" value="Hex: Nothing but Misery" onchange="namedPerkPooled(name)">
+                        <label for="hexNotButMis">Hex: Nothing but Misery</label><br>    
+
+                        <input type="checkbox" id="nonAreFre" name="nonAreFre" value="None Are Free" onchange="namedPerkPooled(name)">
+                        <label for="nonAreFre">None Are Free</label><br>
                     </fieldset>
                 </div>
             </div>
