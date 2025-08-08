@@ -3228,7 +3228,7 @@ function fixedChar(char){
             document.getElementById("powerName").innerHTML = "One-Eyed Terror";
             break;
         case "animatronic":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ketchup/K40_storeBackground.png";
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ketchup/T_UI_K40_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Animatronic";
             document.getElementById("powerImg").src = "Powers/Powers/Ketchup/iconPowers_throw.png";
             document.getElementById("powerName").innerHTML = "Fazbear's Fright";
@@ -3335,9 +3335,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Insidious";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After standing still for 
-                <b style="color: #e8c252;">4</b>/
-                <b style="color: #199b1e;">3</b>/
-                <b style="color: #ac3ee3;">2</b> seconds, <i>Insidous</i> activates:
+                <b style="color: #e8c252;">3</b>/
+                <b style="color: #199b1e;">2</b>/
+                <b style="color: #ac3ee3;">1</b> seconds, <i>Insidous</i> activates:
                 <ul><li>Grants the <b>Undetectable</b> Status Effect for as long as you remain stationary.</li></ul>`;
                 break;
             case "iroGra":
@@ -3659,12 +3659,15 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "ovePre":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_OverwhelmingPresence.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Overwhelming Presence";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Survivors within your <b>Terror Radius</b> suffer from inefficiency:
-                <ul><li>When using an <b>Item</b>, its Depletion rate is increased by 
-                <b style="color: #e8c252;">80</b>/
-                <b style="color: #199b1e;">90</b>/
-                <b style="color: #ac3ee3;">100</b> %</li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor starts using an <b>Item within 32 metres of your location</b>, <i>Overwhelming Presence</i> triggers its primary effect:
+                <li>Inflicts the <b>Exhausted Status Effect</b> for <b>15 seconds</b>.</li><br>
+                Whenever a <b>Survivor within 32 metres of your location becomes Exhausted by any means</b>, <i>Overwhelming Presence</i> triggers its secondary effect:
+                <li>The <b>Aura of whichever Exhausted Survivor is closest</b> to your location is revealed to you for 
+                <b style="color: #e8c252;">2</b>/
+                <b style="color: #199b1e;">3</b>/
+                <b style="color: #ac3ee3;">4</b> seconds.</li>
+                <i>Overwhelming Presence</i> has a cooldown of <b>25 seconds</b>.`;
                 break;
         //Huntress Perks
             case "beaPre":
@@ -3717,14 +3720,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "fraDem":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Cannibal/iconPerks_FranklinsLoss.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Franklin's Demise";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Your vicious <b>Basic Attacks</b> make Survivors drop their <b>Items</b> on impact:
-                <dl><li>Causes dropped <b>Items</b> to slowly lose their Charges over 
-                <b style="color: #e8c252;">150</b>/
-                <b style="color: #199b1e;">120</b>/
-                <b style="color: #ac3ee3;">90</b> seconds</li>
-                <li>The <b>Auras</b> of <b>dropped Items</b> are revealed to you within <b>32 metres</b></li>
-                <dd>- The level of depletion is indicated by the colour of the <b>Aura</b>, ranging from <b>white to red</b> as the timer elapses.</dd></dl>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Survivors hit with your vicious <b>Basic Attack drop any equipped Item</b> on impact:
+                <li>The <b>Auras</b> of <b>dropped Items</b> are revealed to you within 
+                <b style="color: #e8c252;">32</b>/
+                <b style="color: #199b1e;">48</b>/
+                <b style="color: #ac3ee3;">64</b> metres</li>`;
                 break;
             case "knoOut":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Cannibal/iconPerks_KnockOut.png";
@@ -3804,9 +3805,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>The <b>Auras</b> of <b>Scourge Hooks</b> are revealed to you in <b>white</b></li>
                 <li>Receive a <b>Loud Noise Notification</b>, whenever a Survivor starts sabotaging a Hook</li>
                 <li>While carrying a Survivor, the <b>Auras</b> of all Survivors within 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">10</b>/
-                <b style="color: #ac3ee3;">12</b> metres of a <b>Scourge Hook</b> are revealed to you</li></ul>`;
+                <b style="color: #e8c252;">12</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">16</b> metres of a <b>Scourge Hook</b> are revealed to you</li></ul>`;
                 break;
             case "sur":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_Surveillance.png";
@@ -4144,8 +4145,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>The first Survivor interacting with the damaged Generator will scream, revealing their location for <b>4 seconds</b>, and suffer from the <b>Exposed</b> Status Effect for <b>60 seconds</b></li></ul>
                 <i>Dragon's Grip</i> has a cooldown of 
                 <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">40</b> seconds`;
+                <b style="color: #199b1e;">45</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "hexBloFav":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_HexBloodFavor.png";
@@ -4489,9 +4490,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hubris";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are stunned by a Survivor, that Survivor suffers from the <b>Exposed</b> Status Effect for 
-                <b style="color: #e8c252;">10</b>/
-                <b style="color: #199b1e;">15</b>/
-                <b style="color: #ac3ee3;">20</b> seconds<br><br>
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds<br><br>
                 <i>Hubris</i> has a cooldown of <b>20 seconds</b>`;
                 break;
             case "nowHid":

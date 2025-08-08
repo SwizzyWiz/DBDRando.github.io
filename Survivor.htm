@@ -39,8 +39,11 @@
                 </div>
             <!--First Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs1">
-                    <input type="checkbox" id="orelRos" name="orelRos" value="Orela Rose" onchange="namedCharPooled(name)">
-                    <label for="orelRos">Orela Rose <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="rickGri" name="rickGri" value="Rick Grimes" onchange="namedCharPooled(name)">
+                    <label for="rickGri">Rick Grimes <mark>NEW!</mark></label><br>
+
+                    <input type="checkbox" id="michGri" name="michGri" value="Michonne Grimes" onchange="namedCharPooled(name)">
+                    <label for="michGri">Michonne Grimes <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="dwigFai" name="dwigFai" value="Dwight Fairfield" onchange="namedCharPooled(name)">
                     <label for="dwigFai">Dwight Fairfield</label><br>
@@ -65,12 +68,12 @@
                                 
                     <input type="checkbox" id="billOve" name="billOve" value="Bill Overbeck" onchange="namedCharPooled(name)">
                     <label for="billOve">William "Bill" Overbeck</label><br>
-                                
-                    <input type="checkbox" id="fengMin" name="fengMin" value="Feng Min" onchange="namedCharPooled(name)">
-                    <label for="fengMin">Feng Min</label><br>
                 </div>
             <!--Second Survivor Selection Column-->               
                 <div class="dropdownSurv" id="dropSurvs2">
+                    <input type="checkbox" id="fengMin" name="fengMin" value="Feng Min" onchange="namedCharPooled(name)">
+                    <label for="fengMin">Feng Min</label><br>
+
                     <input type="checkbox" id="daviKin" name="daviKin" value="David King" onchange="namedCharPooled(name)">
                     <label for="daviKin">David King</label><br>
                                 
@@ -98,11 +101,13 @@
                     <input type="checkbox" id="nancWhe" name="nancWhe" value="Nancy Wheeler" onchange="namedCharPooled(name)">
                     <label for="nancWhe">Nancy Wheeler</label><br>
                                 
-                    <input type="checkbox" id="stevHar" name="stevHar" value="Steve Harrington" onchange="namedCharPooled(name)">
-                    <label for="stevHar">Steve Harrington</label><br>
+                    
                 </div>
             <!--Third Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs3">
+                    <input type="checkbox" id="stevHar" name="stevHar" value="Steve Harrington" onchange="namedCharPooled(name)">
+                    <label for="stevHar">Steve Harrington</label><br>
+
                     <input type="checkbox" id="yuiKim" name="yuiKim" value="Yui Kimura" onchange="namedCharPooled(name)">
                     <label for="yuiKim">Yui Kimura</label><br>
                                  
@@ -130,11 +135,13 @@
                     <input type="checkbox" id="mikaRei" name="mikaRei" value="Mikaela Reid" onchange="namedCharPooled(name)">
                     <label for="mikaRei">Mikaela Reid</label><br>
                                 
-                    <input type="checkbox" id="jonaVas" name="jonaVas" value="Jonah Vasquez" onchange="namedCharPooled(name)">
-                    <label for="jonaVas">Jonah Vasquez</label><br>
+                    
                 </div>                
             <!--Fourth Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs4">
+                    <input type="checkbox" id="jonaVas" name="jonaVas" value="Jonah Vasquez" onchange="namedCharPooled(name)">
+                    <label for="jonaVas">Jonah Vasquez</label><br>
+
                     <input type="checkbox" id="yoicAsa" name="yoicAsa" value="Yoichi Asakawa" onchange="namedCharPooled(name)">
                     <label for="yoicAsa">Yoichi Asakawa</label><br>
                                 
@@ -162,11 +169,13 @@
                     <input type="checkbox" id="nicoCag" name="nicoCag" value="Nicolas Cage" onchange="namedCharPooled(name)">
                     <label for="nicoCag">Nicolas Cage</label><br>
                                 
-                    <input type="checkbox" id="elleRip" name="elleRip" value="Ellen Ripley" onchange="namedCharPooled(name)">
-                    <label for="elleRip">Ellen Ripley</label><br>
+                    
                 </div>   
             <!--Fifth Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs5">
+                    <input type="checkbox" id="elleRip" name="elleRip" value="Ellen Ripley" onchange="namedCharPooled(name)">
+                    <label for="elleRip">Ellen Ripley</label><br>
+
                     <input type="checkbox" id="alanWak" name="alanWak" value="Alan Wake" onchange="namedCharPooled(name)">
                     <label for="alanWak">Alan Wake</label><br>
                                 
@@ -184,6 +193,9 @@
 
                     <input type="checkbox" id="taurCai" name="taurCai" value="Taurie Cain" onchange="namedCharPooled(name)">
                     <label for="taurCai">Taurie Cain</label><br>
+
+                    <input type="checkbox" id="orelRos" name="orelRos" value="Orela Rose" onchange="namedCharPooled(name)">
+                    <label for="orelRos">Orela Rose</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -217,16 +229,28 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="orelRosPerks">
-                        <legend>Orela Rose <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="doNoHar" name="doNoHar" value="Do No Harm" onchange="namedPerkPooled(name)">
-                        <label for="doNoHar">Do No Harm</label><br>
+                    <fieldset class="rickGriPerks">
+                        <legend>Rick Grimes <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="apoIng" name="apoIng" value="Apocalyptic Ingenuity" onchange="namedPerkPooled(name)">
+                        <label for="apoIng">Apocalyptic Ingenuity</label><br>
     
-                        <input type="checkbox" id="dutOfCar" name="dutOfCar" value="Duty of Care" onchange="namedPerkPooled(name)">
-                        <label for="dutOfCar">Duty of Care</label><br>
+                        <input type="checkbox" id="comAndGetMe" name="comAndGetMe" value="Come and Get Me!" onchange="namedPerkPooled(name)">
+                        <label for="comAndGetMe">Come and Get Me!</label><br>
     
-                        <input type="checkbox" id="rapRes" name="rapRes" value="Rapid Response" onchange="namedPerkPooled(name)">
-                        <label for="rapRes">Rapid Response</label><br>
+                        <input type="checkbox" id="teaTouUp" name="teaTouUp" value="Teamwork: Toughen Up" onchange="namedPerkPooled(name)">
+                        <label for="teaTouUp">Teamwork: Toughen Up</label><br>
+                    </fieldset>
+
+                    <fieldset class="michGriPerks">
+                        <legend>Michonne Grimes <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="con" name="con" value="Conviction" onchange="namedPerkPooled(name)">
+                        <label for="con">Conviction</label><br>
+    
+                        <input type="checkbox" id="lasSta" name="lasSta" value="Last Stand" onchange="namedPerkPooled(name)">
+                        <label for="lasSta">Last Stand</label><br>
+    
+                        <input type="checkbox" id="teaThrDow" name="teaThrDow" value="Teamwork: Throw Down" onchange="namedPerkPooled(name)">
+                        <label for="teaThrDow">Teamwork: Throw Down</label><br>
                     </fieldset>
 
                     <fieldset class="dwigFaiPerks">
@@ -313,6 +337,10 @@
                         <label for="upTheAnt">Up the Ante</label><br>
                     </fieldset>
 
+                    
+                </div>
+            <!--Second Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks2">
                     <fieldset class="billOvePerks">
                         <legend>William "Bill" Overbeck</legend>
                         <input type="checkbox" id="borTim" name="borTim" value="Borrowed Time" onchange="namedPerkPooled(name)">
@@ -324,9 +352,7 @@
                         <input type="checkbox" id="unb" name="unb" value="Unbreakable" onchange="namedPerkPooled(name)">
                         <label for="unb">Unbreakable</label><br>
                     </fieldset>
-                </div>
-            <!--Second Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks2">
+
                     <fieldset class="fengMinPerks">
                         <legend>Feng Min</legend>
                         <input type="checkbox" id="ale" name="ale" value="Alert" onchange="namedPerkPooled(name)">
@@ -435,6 +461,10 @@
                         <label for="metOfMan">Mettle of Man</label><br>
                     </fieldset>
                                 
+                    
+                </div>
+            <!--Third Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks3">
                     <fieldset class="nancWhePerks">
                         <legend>Nancy Wheeler</legend>
                         <input type="checkbox" id="betTog" name="betTog" value="Better Together" onchange="namedPerkPooled(name)">
@@ -446,9 +476,7 @@
                         <input type="checkbox" id="innStr" name="innStr" value="Inner Strength" onchange="namedPerkPooled(name)">
                         <label for="innStr">Inner Strength</label><br>
                     </fieldset>
-                </div>
-            <!--Third Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks3">
+
                     <fieldset class="stevHarPerks">
                         <legend>Steve Harrington</legend>
                         <input type="checkbox" id="bab" name="bab" value="Babysitter" onchange="namedPerkPooled(name)">
@@ -557,6 +585,10 @@
                         <label for="rooSpi">Rookie Spirit</label><br>
                     </fieldset>   
                                 
+                    
+                </div>
+            <!--Fourth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks4">
                     <fieldset class="mikaReiPerks">
                         <legend>Mikaela Reid</legend>
                         <input type="checkbox" id="booCirOfHea" name="booCirOfHea" value="Boon: Circle of Healing" onchange="namedPerkPooled(name)">
@@ -568,9 +600,7 @@
                         <input type="checkbox" id="cla" name="cla" value="Clairvoyance" onchange="namedPerkPooled(name)">
                         <label for="cla">Clairvoyance</label><br>
                     </fieldset> 
-                </div>
-            <!--Fourth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks4">
+
                     <fieldset class="jonaVasPerks">
                         <legend>Jonah Vasquez</legend>
                         <input type="checkbox" id="booExp" name="booExp" value="Boon: Exponential" onchange="namedPerkPooled(name)">
@@ -679,6 +709,10 @@
                         <label for="tro">Troubleshooter</label><br>
                     </fieldset>
                                 
+                    
+                </div>
+            <!--Fifth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks5">
                     <fieldset class="nicoCagPerks">
                         <legend>Nicolas Cage</legend>
                         <input type="checkbox" id="dra" name="dra" value="Dramaturgy" onchange="namedPerkPooled(name)">
@@ -690,9 +724,7 @@
                         <input type="checkbox" id="scePar" name="scePar" value="Scene Partner" onchange="namedPerkPooled(name)">
                         <label for="scePar">Scene Partner</label><br>
                     </fieldset>
-                </div>
-            <!--Fifth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks5">
+
                     <fieldset class="elleRipPerks">
                         <legend>Ellen Ripley</legend>
                         <input type="checkbox" id="cheTra" name="cheTra" value="Chemical Trap" onchange="namedPerkPooled(name)">
@@ -776,6 +808,18 @@
                         <input type="checkbox" id="shoTheBur" name="shoTheBur" value="Shoulder the Burden" onchange="namedPerkPooled(name)">
                         <label for="shoTheBur">Shoulder the Burden</label><br>
                     </fieldset>
+
+                    <fieldset class="orelRosPerks">
+                        <legend>Orela Rose</legend>
+                        <input type="checkbox" id="doNoHar" name="doNoHar" value="Do No Harm" onchange="namedPerkPooled(name)">
+                        <label for="doNoHar">Do No Harm</label><br>
+    
+                        <input type="checkbox" id="dutOfCar" name="dutOfCar" value="Duty of Care" onchange="namedPerkPooled(name)">
+                        <label for="dutOfCar">Duty of Care</label><br>
+    
+                        <input type="checkbox" id="rapRes" name="rapRes" value="Rapid Response" onchange="namedPerkPooled(name)">
+                        <label for="rapRes">Rapid Response</label><br>
+                    </fieldset>
                 </div>
             </div>
     <!--Items Selection Start Here-->
@@ -787,6 +831,32 @@
 
                     <input type="button" id="decheckAllItem" name="decheckAllItem" value="Uncheck All Items" onclick="deselectAllItem()">
                 </div>
+            <!--Fog Vial Selection Column-->
+                <div class="dropdownItem" id="dropFogVial">
+                    <input type="checkbox" id="fogVial" name="fogVial" value="Fog Vial" onchange="namedItemPooled(name)">
+                    <label for="fogVial">Fog Vial</label><br>
+                <!--Fog Vial Add-On Selections-->
+                    <fieldset class="itemAddonHide" id="fogVialAddons">
+                        <legend>Add-Ons</legend>
+                        <input type="checkbox" id="fogVialAnyAddon" name="fogVialAnyAddon" value="Any Addon" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialAnyAddon">Any Add-On</label><br>
+
+                        <input type="checkbox" id="fogVialCommons" name="fogVialCommons" value="Fog Vial Commons" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialCommons" style="color: #4e3418;">Common Add-Ons</label><br>
+
+                        <input type="checkbox" id="fogVialUncommons" name="fogVialUncommons" value="Fog Vial Uncommons" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
+
+                        <input type="checkbox" id="fogVialRares" name="fogVialRares" value="Fog Vial Rares" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialRares" style="color: #268729;">Rare Add-Ons</label><br>
+
+                        <input type="checkbox" id="fogVialVeryRares" name="fogVialVeryRares" value="Fog Vial Very Rares" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialVeryRares" style="color: #6e23b5;">Very Rare Add-Ons</label><br>
+
+                        <input type="checkbox" id="fogVialUltraRares" name="fogVialUltraRares" value="Fog Vial Ultra Rares" onchange="fogVialAddonsPooled(name)">
+                        <label for="fogVialUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>
+                    </fieldset>
+                </div>
             <!--Flashlight Selection Column-->
                 <div class="dropdownItem" id="dropFlashlight">
                     <input type="checkbox" id="flashlight" name="flashlight" value="Flashlight" onchange="namedItemPooled(name)">
@@ -794,20 +864,20 @@
                 <!--Flashlight Add-On Selections-->
                     <fieldset class="itemAddonHide" id="flashlightAddons">
                         <legend>Add-Ons</legend>
-                        <input type="checkbox" id="flashlightAnyAddon" name="anyAddon" value="Any Addon" onchange="flashlightAddonsPooled(name)">
-                        <label for="anyAddon">Any Add-On</label><br>
+                        <input type="checkbox" id="flashlightAnyAddon" name="flashlightAnyAddon" value="Any Addon" onchange="flashlightAddonsPooled(name)">
+                        <label for="flashlightAnyAddon">Any Add-On</label><br>
 
                         <input type="checkbox" id="flashlightCommons" name="flashlightCommons" value="Flashlight Commons" onchange="flashlightAddonsPooled(name)">
-                        <label for="flashlightCommons" style="color: #3b2e08;">Common Add-Ons</label><br>
+                        <label for="flashlightCommons" style="color: #4e3418;">Common Add-Ons</label><br>
 
                         <input type="checkbox" id="flashlightUncommons" name="flashlightUncommons" value="Flashlight Uncommons" onchange="flashlightAddonsPooled(name)">
-                        <label for="flashlightUncommons" style="color: #9b7a20;">Uncommon Add-Ons</label><br>
+                        <label for="flashlightUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
 
                         <input type="checkbox" id="flashlightRares" name="flashlightRares" value="Flashlight Rares" onchange="flashlightAddonsPooled(name)">
-                        <label for="flashlightRares" style="color: #052906;">Rare Add-Ons</label><br>
+                        <label for="flashlightRares" style="color: #268729;">Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="flashlightVeryRares" name="flashlightVeryRares" value="Flashlight Very Rares" onchange="flashlightAddonsPooled(name)">
-                        <label for="flashlightVeryRares" style="color: #4a157c;">Very Rare Add-Ons</label><br>
+                        <label for="flashlightVeryRares" style="color: #6e23b5;">Very Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="flashlightUltraRares" name="flashlightUltraRares" value="Flashlight Ultra Rares" onchange="flashlightAddonsPooled(name)">
                         <label for="flashlightUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>
@@ -820,20 +890,23 @@
                 <!--Key Add-On Selections-->
                     <fieldset class="itemAddonHide" id="keyAddons">
                         <legend>Add-Ons</legend>
-                        <input type="checkbox" id="keyAnyAddon" name="anyAddon" value="Any Addon" onchange="keyAddonsPooled(name)">
-                        <label for="anyAddon">Any Add-On</label><br>
+                        <input type="checkbox" id="keyAnyAddon" name="keyAnyAddon" value="Any Addon" onchange="keyAddonsPooled(name)">
+                        <label for="keyAnyAddon">Any Add-On</label><br>
 
                         <input type="checkbox" id="keyCommons" name="keyCommons" value="Key Commons" onchange="keyAddonsPooled(name)">
-                        <label for="keyCommons" style="color: #3b2e08;">Common Add-Ons</label><br>
+                        <label for="keyCommons" style="color: #4e3418;">Common Add-Ons</label><br>
 
                         <input type="checkbox" id="keyUncommons" name="keyUncommons" value="Key Uncommons" onchange="keyAddonsPooled(name)">
-                        <label for="keyUncommons" style="color: #9b7a20;">Uncommon Add-Ons</label><br>
+                        <label for="keyUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
 
                         <input type="checkbox" id="keyRares" name="keyRares" value="Key Rares" onchange="keyAddonsPooled(name)">
-                        <label for="keyRares" style="color: #052906;">Rare Add-Ons</label><br>
+                        <label for="keyRares" style="color: #268729;">Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="keyVeryRares" name="keyVeryRares" value="Key Very Rares" onchange="keyAddonsPooled(name)">
-                        <label for="keyVeryRares" style="color: #4a157c;">Very Rare Add-Ons</label><br>
+                        <label for="keyVeryRares" style="color: #6e23b5;">Very Rare Add-Ons</label><br>
+
+                        <input type="checkbox" id="keyUltraRares" name="keyUltraRares" value="Key Ultra Rares" onchange="keyAddonsPooled(name)">
+                        <label for="keyUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>
                     </fieldset>
                 </div>
             <!--Map Selection Column-->
@@ -843,20 +916,23 @@
                 <!--Map Add-On Selections-->
                     <fieldset class="itemAddonHide" id="mapAddons">
                         <legend>Add-Ons</legend>
-                        <input type="checkbox" id="mapAnyAddon" name="anyAddon" value="Any Addon" onchange="mapAddonsPooled(name)">
-                        <label for="anyAddon">Any Add-On</label><br>
+                        <input type="checkbox" id="mapAnyAddon" name="mapAnyAddon" value="Any Addon" onchange="mapAddonsPooled(name)">
+                        <label for="mapAnyAddon">Any Add-On</label><br>
 
                         <input type="checkbox" id="mapCommons" name="mapCommons" value="Map Commons" onchange="mapAddonsPooled(name)">
-                        <label for="mapCommons" style="color: #3b2e08;">Common Add-Ons</label><br>
+                        <label for="mapCommons" style="color: #4e3418;">Common Add-Ons</label><br>
 
                         <input type="checkbox" id="mapUncommons" name="mapUncommons" value="Map Uncommons" onchange="mapAddonsPooled(name)">
-                        <label for="mapUncommons" style="color: #9b7a20;">Uncommon Add-Ons</label><br>
+                        <label for="mapUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
 
                         <input type="checkbox" id="mapRares" name="mapRares" value="Map Rares" onchange="mapAddonsPooled(name)">
-                        <label for="mapRares" style="color: #052906;">Rare Add-Ons</label><br>
+                        <label for="mapRares" style="color: #268729;">Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="mapVeryRares" name="mapVeryRares" value="Map Very Rares" onchange="mapAddonsPooled(name)">
-                        <label for="mapVeryRares" style="color: #4a157c;">Very Rare Add-Ons</label><br>
+                        <label for="mapVeryRares" style="color: #6e23b5;">Very Rare Add-Ons</label><br>
+
+                        <input type="checkbox" id="mapUltraRares" name="mapUltraRares" value="Map Ultra Rares" onchange="mapAddonsPooled(name)">
+                        <label for="mapUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>
                     </fieldset>
                 </div>
             <!--Medkit Selection Column-->
@@ -866,20 +942,20 @@
                 <!--Medkit Add-On Selections-->
                     <fieldset class="itemAddonHide" id="medkitAddons">
                         <legend>Add-Ons</legend>
-                        <input type="checkbox" id="medkitAnyAddon" name="anyAddon" value="Any Addon" onchange="medkitAddonsPooled(name)">
-                        <label for="anyAddon">Any Add-On</label><br>
+                        <input type="checkbox" id="medkitAnyAddon" name="medkitAnyAddon" value="Any Addon" onchange="medkitAddonsPooled(name)">
+                        <label for="medkitAnyAddon">Any Add-On</label><br>
 
                         <input type="checkbox" id="medkitCommons" name="medkitCommons" value="Medkit Commons" onchange="medkitAddonsPooled(name)">
-                        <label for="medkitCommons" style="color: #3b2e08;">Common Add-Ons</label><br>
+                        <label for="medkitCommons" style="color: #4e3418;">Common Add-Ons</label><br>
 
                         <input type="checkbox" id="medkitUncommons" name="medkitUncommons" value="Medkit Uncommons" onchange="medkitAddonsPooled(name)">
-                        <label for="keyUncommons" style="color: #9b7a20;">Uncommon Add-Ons</label><br>
+                        <label for="keyUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
 
                         <input type="checkbox" id="medkitRares" name="medkitRares" value="Medkit Rares" onchange="medkitAddonsPooled(name)">
-                        <label for="medkitRares" style="color: #052906;">Rare Add-Ons</label><br>
+                        <label for="medkitRares" style="color: #268729;">Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="medkitVeryRares" name="medkitVeryRares" value="Medkit Very Rares" onchange="medkitAddonsPooled(name)">
-                        <label for="medkitVeryRares" style="color: #4a157c;">Very Rare Add-Ons</label><br>
+                        <label for="medkitVeryRares" style="color: #6e23b5;">Very Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="medkitUltraRares" name="medkitUltraRares" value="Medkit Ultra Rares" onchange="medkitAddonsPooled(name)">
                         <label for="medkitUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>
@@ -892,17 +968,17 @@
                 <!--Toolbox Add-On Selections-->
                     <fieldset class="itemAddonHide" id="toolboxAddons">
                         <legend>Add-Ons</legend>
-                        <input type="checkbox" id="toolboxAnyAddon" name="anyAddon" value="Any Addon" onchange="toolboxAddonsPooled(name)">
-                        <label for="anyAddon">Any Add-On</label><br>
+                        <input type="checkbox" id="toolboxAnyAddon" name="toolboxAnyAddon" value="Any Addon" onchange="toolboxAddonsPooled(name)">
+                        <label for="toolboxAnyAddon">Any Add-On</label><br>
 
                         <input type="checkbox" id="toolboxCommons" name="toolboxCommons" value="Toolbox Commons" onchange="toolboxAddonsPooled(name)">
-                        <label for="toolboxCommons" style="color: #3b2e08;">Common Add-Ons</label><br>
+                        <label for="toolboxCommons" style="color: #4e3418;">Common Add-Ons</label><br>
 
                         <input type="checkbox" id="toolboxUncommons" name="toolboxUncommons" value="Toolbox Uncommons" onchange="toolboxAddonsPooled(name)">
-                        <label for="toolboxUncommons" style="color: #9b7a20;">Uncommon Add-Ons</label><br>
+                        <label for="toolboxUncommons" style="color: #bb983b;">Uncommon Add-Ons</label><br>
 
                         <input type="checkbox" id="toolboxRares" name="toolboxRares" value="Toolbox Rares" onchange="toolboxAddonsPooled(name)">
-                        <label for="toolboxRares" style="color: #052906;">Rare Add-Ons</label><br>
+                        <label for="toolboxRares" style="color: #268729;">Rare Add-Ons</label><br>
 
                         <input type="checkbox" id="toolboxUltraRares" name="toolboxUltraRares" value="Toolbox Ultra Rares" onchange="toolboxAddonsPooled(name)">
                         <label for="toolboxUltraRares" style="color: #ad0c3c;">Ultra Rare Add-Ons</label><br>

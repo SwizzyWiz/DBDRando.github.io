@@ -1,3 +1,687 @@
+let dwigFaiRem = localStorage.getItem("dwigFai");
+let megThoRem = localStorage.getItem("megTho");
+let clauMorRem = localStorage.getItem("clauMor");
+let jakeParRem = localStorage.getItem("jakePar");
+let neaKarRem = localStorage.getItem("neaKar");
+let laurStrRem = localStorage.getItem("laurStr");
+let aceVisRem = localStorage.getItem("aceVis");
+let billOveRem = localStorage.getItem("billOve");
+let fengMinRem = localStorage.getItem("fengMin");
+let daviKinRem = localStorage.getItem("daviKin");
+let quenSmiRem = localStorage.getItem("quenSmi");
+let daviTapRem = localStorage.getItem("daviTap");
+let kateDenRem = localStorage.getItem("kateDen");
+let adamFraRem = localStorage.getItem("adamFra");
+let jeffJohRem = localStorage.getItem("jeffJoh");
+let janeRomRem = localStorage.getItem("janeRom");
+let ashWilRem = localStorage.getItem("ashWil");
+let nancWheRem = localStorage.getItem("nancWhe");
+let stevHarRem = localStorage.getItem("stevHar");
+let yuiKimRem = localStorage.getItem("yuiKim");
+let zariKasRem = localStorage.getItem("zariKas");
+let cherMasRem = localStorage.getItem("cherMas");
+let feliRicRem = localStorage.getItem("feliRic");
+let elodRakRem = localStorage.getItem("elodRak");
+let yunjLeeRem = localStorage.getItem("yunjLee");
+let jillValRem = localStorage.getItem("jillVal");
+let leonKenRem = localStorage.getItem("leonKen");
+let mikaReiRem = localStorage.getItem("mikaRei");
+let jonaVasRem = localStorage.getItem("jonaVas");
+let yoicAsaRem = localStorage.getItem("yoicAsa");
+let haddKauRem = localStorage.getItem("haddKau");
+let adaWonRem = localStorage.getItem("adaWon");
+let rebeChaRem = localStorage.getItem("rebeCha");
+let vittTosRem = localStorage.getItem("vittTos");
+let thalLyrRem = localStorage.getItem("thalLyr");
+let renaLyrRem = localStorage.getItem("renaLyr");
+let gabrSomRem = localStorage.getItem("gabrSom");
+let nicoCagRem = localStorage.getItem("nicoCag");
+let elleRipRem = localStorage.getItem("elleRip");
+let alanWakRem = localStorage.getItem("alanWak");
+let sablWarRem = localStorage.getItem("sablWar");
+let theTroRem = localStorage.getItem("theTro");
+let laraCroRem = localStorage.getItem("laraCro");
+let trevBelRem = localStorage.getItem("trevBel");
+let taurCaiRem = localStorage.getItem("taurCai");
+let orelRosRem = localStorage.getItem("orelRos");
+let rickGriRem = localStorage.getItem("rickGri");
+let michGriRem = localStorage.getItem("michGri");
+
+let univPerksRem = localStorage.getItem("univPerks");
+let anyChoRem = localStorage.getItem("anyCho");
+let noChoRem = localStorage.getItem("noCho");
+    
+let bonRem = localStorage.getItem("bon");
+let leaRem = localStorage.getItem("lea");
+let proThyRem = localStorage.getItem("proThy");
+    
+let adrRem = localStorage.getItem("adr");
+let quiQuiRem = localStorage.getItem("quiQui");
+let sprBurRem = localStorage.getItem("sprBur");
+    
+let botKnoRem = localStorage.getItem("botKno");
+let empRem = localStorage.getItem("emp");
+let selCarRem = localStorage.getItem("selCar");
+    
+let calSpiRem = localStorage.getItem("calSpi");
+let iroWilRem = localStorage.getItem("iroWil");
+let sabRem = localStorage.getItem("sab");
+    
+let balLanRem = localStorage.getItem("balLan");
+let strRem = localStorage.getItem("str");
+let urbEvaRem = localStorage.getItem("urbEva");
+    
+let decStrRem = localStorage.getItem("decStr");
+let objOfObsRem = localStorage.getItem("objOfObs");
+let solSurRem = localStorage.getItem("solSur");
+    
+let aceInTheHolRem = localStorage.getItem("aceInTheHol");
+let opeHanRem = localStorage.getItem("opeHan");
+let upTheAntRem = localStorage.getItem("upTheAnt");
+    
+let borTimRem = localStorage.getItem("borTim");
+let lefBehRem = localStorage.getItem("lefBeh");
+let unbRem = localStorage.getItem("unb");
+        
+let aleRem = localStorage.getItem("ale");
+let litRem = localStorage.getItem("lit");
+let tecRem = localStorage.getItem("tec");
+        
+let deaHarRem = localStorage.getItem("deaHar");
+let noMitRem = localStorage.getItem("noMit");
+let weGonLivForRem = localStorage.getItem("weGonLivFor");
+        
+let phaRem = localStorage.getItem("pha");
+let vigRem = localStorage.getItem("vig");
+let wakUpRem = localStorage.getItem("wakUp");
+        
+let detHunRem = localStorage.getItem("detHun");
+let staOutRem = localStorage.getItem("staOut");
+let tenRem = localStorage.getItem("ten");
+        
+let boiOveRem = localStorage.getItem("boiOve");
+let danWitMeRem = localStorage.getItem("danWitMe");
+let winOfOppRem = localStorage.getItem("winOfOpp");
+        
+let autRem = localStorage.getItem("aut");
+let delRem = localStorage.getItem("del");
+let divRem = localStorage.getItem("div");
+        
+let aftRem = localStorage.getItem("aft");
+let breRem = localStorage.getItem("bre");
+let disRem = localStorage.getItem("dis");
+        
+let heaOnRem = localStorage.getItem("heaOn");
+let poiRem = localStorage.getItem("poi");
+let solRem = localStorage.getItem("sol");
+        
+let bucUpRem = localStorage.getItem("bucUp");
+let fliFloRem = localStorage.getItem("fliFlo");
+let metOfManRem = localStorage.getItem("metOfMan");
+        
+let betTogRem = localStorage.getItem("betTog");
+let fixRem = localStorage.getItem("fix");
+let innStrRem = localStorage.getItem("innStr");
+        
+let babRem = localStorage.getItem("bab");
+let camRem = localStorage.getItem("cam");
+let secWinRem = localStorage.getItem("secWin");
+        
+let anyMeaNecRem = localStorage.getItem("anyMeaNec");
+let breaRem = localStorage.getItem("brea");
+let lucBreRem = localStorage.getItem("lucBre");
+        
+let forThePeoRem = localStorage.getItem("forThePeo");
+let offTheRecRem = localStorage.getItem("offTheRec");
+let redHerRem = localStorage.getItem("redHer");
+        
+let bloPacRem = localStorage.getItem("bloPac");
+let repAllRem = localStorage.getItem("repAll");
+let souGuaRem = localStorage.getItem("souGua");
+        
+let buiToLasRem = localStorage.getItem("buiToLas");
+let desMeaRem = localStorage.getItem("desMea");
+let visRem = localStorage.getItem("vis");
+        
+let appRem = localStorage.getItem("app");
+let decRem = localStorage.getItem("dec");
+let powStrRem = localStorage.getItem("powStr");
+        
+let fasTraRem = localStorage.getItem("fasTra");
+let selPreRem = localStorage.getItem("selPre");
+let smaHitRem = localStorage.getItem("smaHit");
+        
+let blaMinRem = localStorage.getItem("blaMin");
+let couRem = localStorage.getItem("cou");
+let resRem = localStorage.getItem("res");
+        
+let bitTheBulRem = localStorage.getItem("bitTheBul");
+let flaRem = localStorage.getItem("fla");
+let rooSpiRem = localStorage.getItem("rooSpi");
+        
+let booCirOfHeaRem = localStorage.getItem("booCirOfHea");
+let booShaSteRem = localStorage.getItem("booShaSte");
+let claRem = localStorage.getItem("cla");
+        
+let booExpRem = localStorage.getItem("booExp");
+let corActRem = localStorage.getItem("corAct");
+let oveRem = localStorage.getItem("ove");
+        
+let booDarTheRem = localStorage.getItem("booDarThe");
+let empConRem = localStorage.getItem("empCon");
+let parGuiRem = localStorage.getItem("parGui");
+        
+let innFocRem = localStorage.getItem("innFoc");
+let overRem = localStorage.getItem("over");
+let resManRem = localStorage.getItem("resMan");
+        
+let lowProRem = localStorage.getItem("lowPro");
+let reaHeaRem = localStorage.getItem("reaHea");
+let wirRem = localStorage.getItem("wir");
+        
+let betThanNewRem = localStorage.getItem("betThanNew");
+let hypRem = localStorage.getItem("hyp");
+let reaRem = localStorage.getItem("rea");
+        
+let fogRem = localStorage.getItem("fog");
+let potEneRem = localStorage.getItem("potEne");
+let quiGamRem = localStorage.getItem("quiGam");
+        
+let cutLooRem = localStorage.getItem("cutLoo");
+let friComRem = localStorage.getItem("friCom");
+let teaPowOfTwoRem = localStorage.getItem("teaPowOfTwo");
+        
+let bacPlaRem = localStorage.getItem("bacPla");
+let bloRusRem = localStorage.getItem("bloRus");
+let teaColSteRem = localStorage.getItem("teaColSte");
+        
+let madForThiRem = localStorage.getItem("madForThi");
+let scaRem = localStorage.getItem("sca");
+let troRem = localStorage.getItem("tro");
+        
+let draRem = localStorage.getItem("dra");
+let ploTwiRem = localStorage.getItem("ploTwi");
+let sceParRem = localStorage.getItem("scePar");
+        
+let cheTraRem = localStorage.getItem("cheTra");
+let ligFooRem = localStorage.getItem("ligFoo");
+let lucStaRem = localStorage.getItem("lucSta");
+        
+let booIllRem = localStorage.getItem("booIll");
+let chaOfLigRem = localStorage.getItem("chaOfLig");
+let deaRem = localStorage.getItem("dea");
+        
+let invWeaSpiRem = localStorage.getItem("invWeaSpi");
+let strInShaRem = localStorage.getItem("strInSha");
+let wicRem = localStorage.getItem("wic");
+        
+let barInsRem = localStorage.getItem("barIns");
+let mirIllRem = localStorage.getItem("mirIll");
+let stiSigRem = localStorage.getItem("stiSig");
+        
+let finRem = localStorage.getItem("fin");
+let harRem = localStorage.getItem("har");
+let speRem = localStorage.getItem("spe");
+        
+let exuRem = localStorage.getItem("exu");
+let eyeOfBelRem = localStorage.getItem("eyeOfBel");
+let momOfGloRem = localStorage.getItem("momOfGlo");
+        
+let cleBreRem = localStorage.getItem("cleBre");
+let invTreCroRem = localStorage.getItem("invTreCro");
+let shoTheBurRem = localStorage.getItem("shoTheBur");
+    
+let doNoHarRem = localStorage.getItem("doNoHar");
+let dutOfCarRem = localStorage.getItem("dutOfCar");
+let rapResRem = localStorage.getItem("rapRes");
+
+let apoIngRem = localStorage.getItem("apoIng");
+let comAndGetMeRem = localStorage.getItem("comAndGetMe");
+let teaTouUpRem = localStorage.getItem("teaTouUp");
+
+let conRem = localStorage.getItem("con");
+let lasStaRem = localStorage.getItem("lasSta");
+let teaThrDowRem = localStorage.getItem("teaThrDow");
+
+let fogVialRem = localStorage.getItem("fogVial");
+let fogVialAnyAddonRem = localStorage.getItem("fogVialAnyAddon");
+let fogVialCommonsRem = localStorage.getItem("fogVialCommons");
+let fogVialUncommonsRem = localStorage.getItem("fogVialUncommons");
+let fogVialRaresRem = localStorage.getItem("fogVialRares");
+let fogVialVeryRaresRem = localStorage.getItem("fogVialVeryRares");
+let fogVialUltraRaresRem = localStorage.getItem("fogVialUltraRares");
+
+let flashlightRem = localStorage.getItem("flashlight");
+let flashlightAnyAddonRem = localStorage.getItem("flashlightAnyAddon");
+let flashlightCommonsRem = localStorage.getItem("flashlightCommons");
+let flashlightUncommonsRem = localStorage.getItem("flashlightUncommons");
+let flashlightRaresRem = localStorage.getItem("flashlightRares");
+let flashlightVeryRaresRem = localStorage.getItem("flashlightVeryRares");
+let flashlightUltraRaresRem = localStorage.getItem("flashlightUltraRares");
+
+let keyRem = localStorage.getItem("key");
+let keyAnyAddonRem = localStorage.getItem("keyAnyAddon");
+let keyCommonsRem = localStorage.getItem("keyCommons");
+let keyUncommonsRem = localStorage.getItem("keyUncommons");
+let keyRaresRem = localStorage.getItem("keyRares");
+let keyVeryRaresRem = localStorage.getItem("keyVeryRares");
+let keyUltraRaresRem = localStorage.getItem("keyUltraRares");
+    
+let mapRem = localStorage.getItem("map");
+let mapAnyAddonRem = localStorage.getItem("mapAnyAddon");
+let mapCommonsRem = localStorage.getItem("mapCommons");
+let mapUncommonsRem = localStorage.getItem("mapUncommons");
+let mapRaresRem = localStorage.getItem("mapRares");
+let mapVeryRaresRem = localStorage.getItem("mapVeryRares");
+let mapUltraRaresRem = localStorage.getItem("mapUltraRares");
+    
+let medkitRem = localStorage.getItem("medkit");
+let medkitAnyAddonRem = localStorage.getItem("medkitAnyAddon");
+let medkitCommonsRem = localStorage.getItem("medkitCommons");
+let medkitUncommonsRem = localStorage.getItem("medkitUncommons");
+let medkitRaresRem = localStorage.getItem("medkitRares");
+let medkitVeryRaresRem = localStorage.getItem("medkitVeryRares");
+let medkitUltraRaresRem = localStorage.getItem("medkitUltraRares");
+    
+let toolboxRem = localStorage.getItem("toolbox");
+let toolboxAnyAddonRem = localStorage.getItem("toolboxAnyAddon");
+let toolboxCommonsRem = localStorage.getItem("toolboxCommons");
+let toolboxUncommonsRem = localStorage.getItem("toolboxUncommons");
+let toolboxRaresRem = localStorage.getItem("toolboxRares");
+let toolboxUltraRaresRem = localStorage.getItem("toolboxUltraRares");
+   
+let bloodpointsRem = localStorage.getItem("bloodpoints");
+let allCategoriesRem = localStorage.getItem("allCategories");
+let altruismRem = localStorage.getItem("altruism");
+let boldnessRem = localStorage.getItem("boldness");
+let objectivesRem = localStorage.getItem("objectives");
+let survivalRem = localStorage.getItem("survival");
+    
+let luckRem = localStorage.getItem("luck");
+let singleLuckRem = localStorage.getItem("singleLuck");
+let allLuckRem = localStorage.getItem("allLuck");
+let wardsRem = localStorage.getItem("wards");
+    
+let mapModsRem = localStorage.getItem("mapMods");
+let basementRem = localStorage.getItem("basement");
+let chestsRem = localStorage.getItem("chests");
+let fogThickRem = localStorage.getItem("fogThick");
+let hatchRem = localStorage.getItem("hatch");
+let hookRem = localStorage.getItem("hook");
+    
+let realmRem = localStorage.getItem("realm");
+let azaKeyRem = localStorage.getItem("azaKey");
+let grandmaCookRem = localStorage.getItem("grandmaCook");
+let heartLockRem = localStorage.getItem("heartLock");
+let charWedPhotoRem = localStorage.getItem("charWedPhoto");
+let beefTallowRem = localStorage.getItem("beefTallow");
+let airlockDoorsRem = localStorage.getItem("airlockDoors");
+let alienFloraRem = localStorage.getItem("alienFlora");
+let crowEyeRem = localStorage.getItem("crowEye");
+let jigsawPieceRem = localStorage.getItem("jigsawPiece");
+let shatteredBottleRem = localStorage.getItem("shatteredBottle");
+let strodeKeyRem = localStorage.getItem("strodeKey");
+let hawkinsIDRem = localStorage.getItem("hawkinsID");
+let shatteredGlassesRem = localStorage.getItem("shatteredGlasses");
+let macmillanBoneRem = localStorage.getItem("macmillanBone");
+let damagedPhotoRem = localStorage.getItem("damagedPhoto");
+let rpdBadgeRem = localStorage.getItem("rpdBadge");
+let lastMaskRem = localStorage.getItem("lastMask");
+let marysLetterRem = localStorage.getItem("marysLetter");
+let piedPiperRem = localStorage.getItem("piedPiper");
+let ichorousLoamRem = localStorage.getItem("ichorousLoam");
+let yamaokaCrestRem = localStorage.getItem("yamaokaCrest");
+    
+let shroudRem = localStorage.getItem("shroud");
+let unionShroudRem = localStorage.getItem("unionShroud");
+let vigoShroudRem = localStorage.getItem("vigoShroud");
+let bindShroudRem = localStorage.getItem("bindShroud");
+
+function loadPref(){
+//Characters
+    if(dwigFaiRem=="true"){checking("dwigFai",true);}
+    if(megThoRem=="true"){checking("megTho",true);}
+    if(clauMorRem=="true"){checking("clauMor",true);}
+    if(jakeParRem=="true"){checking("jakePar",true);}
+    if(neaKarRem=="true"){checking("neaKar",true);}
+    if(laurStrRem=="true"){checking("laurStr",true);}
+    if(aceVisRem=="true"){checking("aceVis",true);}
+    if(billOveRem=="true"){checking("billOve",true);}
+    if(fengMinRem=="true"){checking("fengMin",true);}
+    if(daviKinRem=="true"){checking("daviKin",true);}
+    if(quenSmiRem=="true"){checking("quenSmi",true);}
+    if(daviTapRem=="true"){checking("daviTap",true);}   
+    if(kateDenRem=="true"){checking("kateDen",true);}
+    if(adamFraRem=="true"){checking("adamFra",true);}
+    if(jeffJohRem=="true"){checking("jeffJoh",true);}
+    if(janeRomRem=="true"){checking("janeRom",true);}
+    if(ashWilRem=="true"){checking("ashWil",true);}
+    if(nancWheRem=="true"){checking("nancWhe",true);}
+    if(stevHarRem=="true"){checking("stevHar",true);}
+    if(yuiKimRem=="true"){checking("yuiKim",true);}
+    if(zariKasRem=="true"){checking("zariKas",true);}
+    if(cherMasRem=="true"){checking("cherMas",true);}
+    if(feliRicRem=="true"){checking("feliRic",true);}
+    if(elodRakRem=="true"){checking("elodRak",true);}
+    if(yunjLeeRem=="true"){checking("yunjLee",true);}
+    if(jillValRem=="true"){checking("jillVal",true);}
+    if(leonKenRem=="true"){checking("leonKen",true);}
+    if(mikaReiRem=="true"){checking("mikaRei",true);}
+    if(jonaVasRem=="true"){checking("jonaVas",true);}
+    if(yoicAsaRem=="true"){checking("yoicAsa",true);}
+    if(haddKauRem=="true"){checking("haddKau",true);}
+    if(adaWonRem=="true"){checking("adaWon",true);}
+    if(rebeChaRem=="true"){checking("rebeCha",true);}
+    if(vittTosRem=="true"){checking("vittTos",true);}
+    if(thalLyrRem=="true"){checking("thalLyr",true);}
+    if(renaLyrRem=="true"){checking("renaLyr",true);}
+    if(gabrSomRem=="true"){checking("gabrSom",true);}
+    if(nicoCagRem=="true"){checking("nicoCag",true);}
+    if(elleRipRem=="true"){checking("elleRip",true);}
+    if(alanWakRem=="true"){checking("alanWak",true);}
+    if(sablWarRem=="true"){checking("sablWar",true);}
+    if(theTroRem=="true"){checking("theTro",true);}
+    if(laraCroRem=="true"){checking("laraCro",true);}
+    if(trevBelRem=="true"){checking("trevBel",true);}
+    if(taurCaiRem=="true"){checking("taurCai",true);}
+    if(orelRosRem=="true"){checking("orelRos",true);}
+    if(rickGriRem=="true"){checking("rickGri",true);}
+    if(michGriRem=="true"){checking("michGri",true);}
+
+//Perks
+    if(univPerksRem=="true"){checking("univPerks",true);}
+    if(anyChoRem=="true"){checking("anyCho",true);}
+    if(noChoRem=="true"){checking("noCho",true);}
+//Dwight Fairfield Perks
+    if(bonRem=="true"){checking("bon",true);}  
+    if(leaRem=="true"){checking("lea",true);}  
+    if(proThyRem=="true"){checking("proThy",true);} 
+//Meg Thomas Perks
+    if(adrRem=="true"){checking("adr",true);}  
+    if(quiQuiRem=="true"){checking("quiQui",true);}  
+    if(sprBurRem=="true"){checking("sprBur",true);} 
+//Claudette Morel Perks
+    if(botKnoRem=="true"){checking("botKno",true);}  
+    if(empRem=="true"){checking("emp",true);}  
+    if(selCarRem=="true"){checking("selCar",true);}  
+//Jake Park Perks
+    if(calSpiRem=="true"){checking("calSpi",true);}  
+    if(iroWilRem=="true"){checking("iroWil",true);}  
+    if(sabRem=="true"){checking("sab",true);}  
+//Nea Karlsson Perks
+    if(balLanRem=="true"){checking("balLan",true);}  
+    if(strRem=="true"){checking("str",true);}  
+    if(urbEvaRem=="true"){checking("urbEva",true);}  
+//Laurie Strode Perks
+    if(decStrRem=="true"){checking("decStr",true);}  
+    if(objOfObsRem=="true"){checking("objOfObs",true);}  
+    if(solSurRem=="true"){checking("solSur",true);}  
+//Ace Visconti Perks
+    if(aceInTheHolRem=="true"){checking("aceInTheHol",true);}  
+    if(opeHanRem=="true"){checking("opeHan",true);}  
+    if(upTheAntRem=="true"){checking("upTheAnt",true);}  
+//William "Bill" Overbeck Perks
+    if(borTimRem=="true"){checking("borTim",true);}  
+    if(lefBehRem=="true"){checking("lefBeh",true);}  
+    if(unbRem=="true"){checking("unb",true);}  
+//Feng Min Perks
+    if(aleRem=="true"){checking("ale",true);}  
+    if(litRem=="true"){checking("lit",true);}  
+    if(tecRem=="true"){checking("tec",true);}  
+//David King Perks
+    if(deaHarRem=="true"){checking("deaHar",true);}  
+    if(noMitRem=="true"){checking("noMit",true);}  
+    if(weGonLivForRem=="true"){checking("weGonLivFor",true);}  
+//Quentin Smith Perks
+    if(phaRem=="true"){checking("pha",true);}  
+    if(vigRem=="true"){checking("vig",true);}  
+    if(wakUpRem=="true"){checking("wakUp",true);}  
+//David Tapp Perks
+    if(detHunRem=="true"){checking("detHun",true);}  
+    if(staOutRem=="true"){checking("staOut",true);}  
+    if(tenRem=="true"){checking("ten",true);}  
+//Kate Denson Perks
+    if(boiOveRem=="true"){checking("boiOve",true);}  
+    if(danWitMeRem=="true"){checking("danWitMe",true);}  
+    if(winOfOppRem=="true"){checking("winOfOpp",true);}  
+//Adam Francis Perks
+    if(autRem=="true"){checking("aut",true);}  
+    if(delRem=="true"){checking("del",true);}  
+    if(divRem=="true"){checking("div",true);}  
+//Jeff Johansen Perks
+    if(aftRem=="true"){checking("aft",true);}  
+    if(breRem=="true"){checking("bre",true);}  
+    if(disRem=="true"){checking("dis",true);}  
+//Jane Romero Perks
+    if(heaOnRem=="true"){checking("heaOn",true);}  
+    if(poiRem=="true"){checking("poi",true);}  
+    if(solRem=="true"){checking("sol",true);}  
+//Ash Willaims Perks
+    if(bucUpRem=="true"){checking("bucUp",true);}  
+    if(fliFloRem=="true"){checking("fliFlo",true);}  
+    if(metOfManRem=="true"){checking("metOfMan",true);}  
+//Nancy Wheeler Perks
+    if(betTogRem=="true"){checking("betTog",true);}  
+    if(fixRem=="true"){checking("fix",true);}  
+    if(innStrRem=="true"){checking("innStr",true);}  
+//Steve Harrington Perks
+    if(babRem=="true"){checking("bab",true);}  
+    if(camRem=="true"){checking("cam",true);}  
+    if(secWinRem=="true"){checking("secWin",true);}  
+//Yui Kimura Perks
+    if(anyMeaNecRem=="true"){checking("anyMeaNec",true);}  
+    if(breaRem=="true"){checking("brea",true);}  
+    if(lucBreRem=="true"){checking("lucBre",true);}  
+//Zarina Kassir Perks
+    if(forThePeoRem=="true"){checking("forThePeo",true);}  
+    if(offTheRecRem=="true"){checking("offTheRec",true);}  
+    if(redHerRem=="true"){checking("redHer",true);}  
+//Cheryl Mason Perks
+    if(bloPacRem=="true"){checking("bloPac",true);}  
+    if(repAllRem=="true"){checking("repAll",true);}  
+    if(souGuaRem=="true"){checking("souGua",true);}  
+//Felix Richter Perks
+    if(buiToLasRem=="true"){checking("buiToLas",true);}  
+    if(desMeaRem=="true"){checking("desMea",true);}  
+    if(visRem=="true"){checking("vis",true);}  
+//Élodie Rakoto Perks
+    if(appRem=="true"){checking("app",true);}  
+    if(decRem=="true"){checking("dec",true);}  
+    if(powStrRem=="true"){checking("powStr",true);}  
+//Yun-Jin Lee Perks
+    if(fasTraRem=="true"){checking("fasTra",true);}  
+    if(selPreRem=="true"){checking("selPre",true);}  
+    if(smaHitRem=="true"){checking("smaHit",true);}  
+//Jill Valentine Perks
+    if(blaMinRem=="true"){checking("blaMin",true);}  
+    if(couRem=="true"){checking("cou",true);}  
+    if(resRem=="true"){checking("res",true);}  
+//Leon S. Kennedy Perks
+    if(bitTheBulRem=="true"){checking("bitTheBul",true);}  
+    if(flaRem=="true"){checking("fla",true);}  
+    if(rooSpiRem=="true"){checking("rooSpi",true);}  
+//Mikaela Reid Perks
+    if(booCirOfHeaRem=="true"){checking("booCirOfHea",true);}  
+    if(booShaSteRem=="true"){checking("booShaSte",true);}  
+    if(claRem=="true"){checking("cla",true);}  
+//Jonah Vasquez Perks
+    if(booExpRem=="true"){checking("booExp",true);}  
+    if(corActRem=="true"){checking("corAct",true);}  
+    if(oveRem=="true"){checking("ove",true);}  
+//Yoichi Asakawa Perks
+    if(booDarTheRem=="true"){checking("booDarThe",true);}  
+    if(empConRem=="true"){checking("empCon",true);}  
+    if(parGuiRem=="true"){checking("parGui",true);}  
+//Haddie Kaur Perks
+    if(innFocRem=="true"){checking("innFoc",true);}  
+    if(overRem=="true"){checking("over",true);}  
+    if(resManRem=="true"){checking("resMan",true);}  
+//Ada Wong Perks
+    if(lowProRem=="true"){checking("lowPro",true);}  
+    if(reaHeaRem=="true"){checking("reaHea",true);}  
+    if(wirRem=="true"){checking("wir",true);}  
+//Rebecca Chambers Perks
+    if(betThanNewRem=="true"){checking("betThanNew",true);}  
+    if(hypRem=="true"){checking("hyp",true);}  
+    if(reaRem=="true"){checking("rea",true);}  
+//Vittorio Toscano Perks
+    if(fogRem=="true"){checking("fog",true);}  
+    if(potEneRem=="true"){checking("potEne",true);} 
+    if(quiGamRem=="true"){checking("quiGam",true);}  
+//Thalita Lyra Perks
+    if(cutLooRem=="true"){checking("cutLoo",true);}  
+    if(friComRem=="true"){checking("friCom",true);} 
+    if(teaPowOfTwoRem=="true"){checking("teaPowOfTwo",true);}  
+//Renato Lyra Perks
+    if(bacPlaRem=="true"){checking("bacPla",true);}  
+    if(bloRusRem=="true"){checking("bloRus",true);}  
+    if(teaColSteRem=="true"){checking("teaColSte",true);} 
+//Gabriel Soma Perks
+    if(madForThiRem=="true"){checking("madForThi",true);}  
+    if(scaRem=="true"){checking("sca",true);}  
+    if(troRem=="true"){checking("tro",true);}  
+//Nicolas Cage Perks
+    if(draRem=="true"){checking("dra",true);}  
+    if(ploTwiRem=="true"){checking("ploTwi",true);}  
+    if(sceParRem=="true"){checking("scePar",true);}  
+//Ellen Ripley Perks
+    if(cheTraRem=="true"){checking("cheTra",true);}  
+    if(ligFooRem=="true"){checking("ligFoo",true);}  
+    if(lucStaRem=="true"){checking("lucSta",true);}  
+//Alan Wake Perks
+    if(booIllRem=="true"){checking("booIll",true);}  
+    if(chaOfLigRem=="true"){checking("chaOfLig",true);}  
+    if(deaRem=="true"){checking("dea",true);}  
+//Sable Ward Perks
+    if(invWeaSpiRem=="true"){checking("invWeaSpi",true);}  
+    if(strInShaRem=="true"){checking("strInSha",true);}  
+    if(wicRem=="true"){checking("wic",true);}  
+//The Troupe Perks
+    if(barInsRem=="true"){checking("barIns",true);}  
+    if(mirIllRem=="true"){checking("mirIll",true);}  
+    if(stiSigRem=="true"){checking("stiSig",true);}  
+//Lara Croft Perks
+    if(finRem=="true"){checking("fin",true);}  
+    if(harRem=="true"){checking("har",true);}  
+    if(speRem=="true"){checking("spe",true);}  
+//Trevor Belmont Perks
+    if(exuRem=="true"){checking("exu",true);}  
+    if(eyeOfBelRem=="true"){checking("eyeOfBel",true);}  
+    if(momOfGloRem=="true"){checking("momOfGlo",true);}  
+//Taurie Cain Perks
+    if(cleBreRem=="true"){checking("cleBre",true);}  
+    if(invTreCroRem=="true"){checking("invTreCro",true);}  
+    if(shoTheBurRem=="true"){checking("shoTheBur",true);} 
+//Orela Rose Perks
+    if(doNoHarRem=="true"){checking("doNoHar",true);}  
+    if(dutOfCarRem=="true"){checking("dutOfCar",true);}  
+    if(rapResRem=="true"){checking("rapRes",true);}
+//Rick Grimes Perks
+    if(apoIngRem=="true"){checking("apoIng",true);}  
+    if(comAndGetMeRem=="true"){checking("comAndGetMe",true);}  
+    if(teaTouUpRem=="true"){checking("teaTouUp",true);}
+//Michonne Grimes Perks
+    if(conRem=="true"){checking("con",true);}  
+    if(lasStaRem=="true"){checking("lasSta",true);}  
+    if(teaThrDowRem=="true"){checking("teaThrDow",true);}
+    
+//Fog Vials
+    if(fogVialRem=="true"){checking("fogVial",true);}
+    if(fogVialAnyAddonRem=="true"){checking("fogVialAnyAddon",true);}
+    if(fogVialCommonsRem=="true"){checking("fogVialCommons",true);}
+    if(fogVialUncommonsRem=="true"){checking("fogVialUncommons",true);}
+    if(fogVialRaresRem=="true"){checking("fogVialRares",true);}
+    if(fogVialVeryRaresRem=="true"){checking("fogVialVeryRares",true);}
+    if(fogVialUltraRaresRem=="true"){checking("fogVialUltraRares",true);}
+//Flashlights
+    if(flashlightRem=="true"){checking("flashlight",true);}
+    if(flashlightAnyAddonRem=="true"){checking("flashlightAnyAddon",true);}
+    if(flashlightCommonsRem=="true"){checking("flashlightCommons",true);}
+    if(flashlightUncommonsRem=="true"){checking("flashlightUncommons",true);}
+    if(flashlightRaresRem=="true"){checking("flashlightRares",true);}
+    if(flashlightVeryRaresRem=="true"){checking("flashlightVeryRares",true);}
+    if(flashlightUltraRaresRem=="true"){checking("flashlightUltraRares",true);}
+//Keys
+    if(keyRem=="true"){checking("key",true);}
+    if(keyAnyAddonRem=="true"){checking("keyAnyAddon",true);}
+    if(keyCommonsRem=="true"){checking("keyCommons",true);}
+    if(keyUncommonsRem=="true"){checking("keyUncommons",true);}
+    if(keyRaresRem=="true"){checking("keyRares",true);}
+    if(keyVeryRaresRem=="true"){checking("keyVeryRares",true);}
+    if(keyUltraRaresRem=="true"){checking("keyUltraRares",true);}
+//Maps
+    if(mapRem=="true"){checking("map",true);}
+    if(mapAnyAddonRem=="true"){checking("mapAnyAddon",true);}
+    if(mapCommonsRem=="true"){checking("mapCommons",true);}
+    if(mapUncommonsRem=="true"){checking("mapUncommons",true);}
+    if(mapRaresRem=="true"){checking("mapRares",true);}
+    if(mapVeryRaresRem=="true"){checking("mapVeryRares",true);}
+    if(mapUltraRaresRem=="true"){checking("mapUltraRares",true);}
+//Medkits
+    if(medkitRem=="true"){checking("medkit",true);}
+    if(medkitAnyAddonRem=="true"){checking("medkitAnyAddon",true);}
+    if(medkitCommonsRem=="true"){checking("medkitCommons",true);}
+    if(medkitUncommonsRem=="true"){checking("medkitUncommons",true);}
+    if(medkitRaresRem=="true"){checking("medkitRares",true);}
+    if(medkitVeryRaresRem=="true"){checking("medkitVeryRares",true);}
+    if(medkitUltraRaresRem=="true"){checking("medkitUltraRares",true);}
+//Toolboxes
+    if(toolboxRem=="true"){checking("toolbox",true);}
+    if(toolboxAnyAddonRem=="true"){checking("toolboxAnyAddon",true);}
+    if(toolboxCommonsRem=="true"){checking("toolboxCommons",true);}
+    if(toolboxUncommonsRem=="true"){checking("toolboxUncommons",true);}
+    if(toolboxRaresRem=="true"){checking("toolboxRares",true);}
+    if(toolboxUltraRaresRem=="true"){checking("toolboxUltraRares",true);}
+
+//Offerings
+    if (bloodpointsRem=="true"){checking("bloodpoints",true);}
+    if (allCategoriesRem=="true"){checking("allCategories",true);}
+    if (altruismRem=="true"){checking("altruism",true);}
+    if (boldnessRem=="true"){checking("boldness",true);}
+    if (objectivesRem=="true"){checking("objectives",true);}
+    if (survivalRem=="true"){checking("survival",true);}
+
+    if(luckRem=="true"){checking("luck",true);}
+    if (singleLuckRem=="true"){checking("singleLuck",true);}
+    if (allLuckRem=="true"){checking("allLuck",true);}
+    if (wardsRem=="true"){checking("wards",true);}
+
+    if (mapModsRem=="true"){checking("mapMods",true);}
+    if (basementRem=="true"){checking("basement",true);}
+    if (chestsRem=="true"){checking("chests",true);}
+    if (fogThickRem=="true"){checking("fogThick",true);}
+    if (hatchRem=="true"){checking("hatch",true);}
+    if (hookRem=="true"){checking("hook",true);}
+
+    if (realmRem=="true"){checking("realm",true);}
+    if (azaKeyRem=="true"){checking("azaKey",true);}
+    if (grandmaCookRem=="true"){checking("grandmaCook",true);}
+    if (heartLockRem=="true"){checking("heartLock",true);}
+    if (charWedPhotoRem=="true"){checking("charWedPhoto",true);}
+    if (beefTallowRem=="true"){checking("beefTallow",true);}
+    if (airlockDoorsRem=="true"){checking("airlockDoors",true);}
+    if (alienFloraRem=="true"){checking("alienFlora",true);}
+    if (crowEyeRem=="true"){checking("crowEye",true);}
+    if (jigsawPieceRem=="true"){checking("jigsawPiece",true);}
+    if (shatteredBottleRem=="true"){checking("shatteredBottle",true);}
+    if (strodeKeyRem=="true"){checking("strodeKey",true);}
+    if (hawkinsIDRem=="true"){checking("hawkinsID",true);}
+    if (shatteredGlassesRem=="true"){checking("shatteredGlasses",true);}
+    if (macmillanBoneRem=="true"){checking("macmillanBone",true);}
+    if (damagedPhotoRem=="true"){checking("damagedPhoto",true);}
+    if (rpdBadgeRem=="true"){checking("rpdBadge",true);}
+    if (lastMaskRem=="true"){checking("lastMask",true);}
+    if (marysLetterRem=="true"){checking("marysLetter",true);}
+    if (piedPiperRem=="true"){checking("piedPiper",true);}
+    if (ichorousLoamRem=="true"){checking("ichorousLoam",true);}
+    if (yamaokaCrestRem=="true"){checking("yamaokaCrest",true);}
+
+    if (shroudRem=="true"){checking("shroud",true);}
+    if (unionShroudRem=="true"){checking("unionShroud",true);}
+    if (vigoShroudRem=="true"){checking("vigoShroud",true);}
+    if (bindShroudRem=="true"){checking("bindShroud",true);}
+}
+
 //Dropdown Button Functions
 function dropdownSelections(){
     $("#selectionsSurv").slideToggle("slow");
@@ -20,6 +704,7 @@ function dropdownSelections(){
     $("#dropPerks5").slideUp("slow");
 
     $("#dropItemsBtn").slideUp("slow");
+    $("#dropFogVial").slideUp("slow");
     $("#dropFlashlight").slideUp("slow");
     $("#dropKey").slideUp("slow");
     $("#dropMap").slideUp("slow");
@@ -51,6 +736,7 @@ function dropdownPerks(){
 }
 function dropdownItems(){
     $("#dropItemsBtn").slideToggle("slow");
+    $("#dropFogVial").slideToggle("slow");
     $("#dropFlashlight").slideToggle("slow");
     $("#dropKey").slideToggle("slow");
     $("#dropMap").slideToggle("slow");
@@ -69,6 +755,7 @@ function dropdownOfferings(){
 const perkPool = [];
 const charPool = ["anyChar"];
 const itemPool = ["none"];
+const fogVialAddonPool = ["none", "none"];
 const flashlightAddonPool = ["none", "none"];
 const keyAddonPool = ["none", "none"];
 const mapAddonPool = ["none", "none"];
@@ -81,8 +768,10 @@ const offeringPool = ["none", "anyOffering"];
 function namedPerkPooled(name){
     if($('#' + name).is(":checked") && !(perkPool.includes(name))){
         perkPool.push(name);
+        localStorage.setItem(name,"true");
     } if (!$('#' + name).is(":checked")) {
         perkPool.splice(perkPool.indexOf(name),1);
+        localStorage.setItem(name,"false");
     } else {
         
     }
@@ -140,6 +829,7 @@ function universalPerkPooled(name){
         perkPool.push("spiChi");
         perkPool.push("thiIsNotHap");
         perkPool.push("weMakIt");
+        localStorage.setItem(name,"true");
     } if (!$('#' + name).is(":checked")){
         perkPool.splice((perkPool.indexOf("darSen")),1);
         perkPool.splice((perkPool.indexOf("dejVu")),1);
@@ -155,6 +845,7 @@ function universalPerkPooled(name){
         perkPool.splice((perkPool.indexOf("spiChi")),1);
         perkPool.splice((perkPool.indexOf("thiIsNotHap")),1);
         perkPool.splice((perkPool.indexOf("weMakIt")),1);
+        localStorage.setItem(name,"false");
     }
 }
 function randomPerks(){
@@ -221,8 +912,10 @@ function showTooltip(id){
 function namedCharPooled(name){
     if($('#' + name).is(":checked") && !(charPool.includes(name))){
         charPool.push(name);
+        localStorage.setItem(name,"true");
     } if (!$('#' + name).is(":checked")) {
         charPool.splice(charPool.indexOf(name),1);
+        localStorage.setItem(name,"false");
     } else {
         
     }
@@ -256,22 +949,33 @@ function namedItemPooled(name){
 }
 function itemAdditions(name){
     switch (name){
+    //Fog Vials
+        case "fogVial":
+            itemPool.push("appFogVial");
+            itemPool.push("artFogVial");
+            itemPool.push("vigoFogVial");
+            localStorage.setItem(name,"true");
+            break;
     //Flashlights
         case "flashlight":
             itemPool.push("basicFlash");
             itemPool.push("sportFlash");
             itemPool.push("utilFlash");
+            localStorage.setItem(name,"true");
             break;
     //Keys
         case "key": 
             itemPool.push("brokeKey");
             itemPool.push("dullKey");
             itemPool.push("skelKey");
+            localStorage.setItem(name,"true");
             break;
     //Maps
         case "map": 
-            itemPool.push("basicMap");
-            itemPool.push("rainMap");
+            itemPool.push("cryptMap");
+            itemPool.push("scribMap");
+            itemPool.push("annoMap");
+            localStorage.setItem(name,"true");
             break;
     //Medkits
         case "medkit": 
@@ -279,6 +983,7 @@ function itemAdditions(name){
             itemPool.push("firstMedkit");
             itemPool.push("emergMedkit");
             itemPool.push("rangerMedkit");
+            localStorage.setItem(name,"true");
             break;
     //Toolboxes
         case "toolbox": 
@@ -288,6 +993,7 @@ function itemAdditions(name){
             itemPool.push("mechToolbox");
             itemPool.push("alexToolbox");
             itemPool.push("engineToolbox");
+            localStorage.setItem(name,"true");
             break;
         default: 
 
@@ -295,22 +1001,33 @@ function itemAdditions(name){
 }
 function itemRemovals(name){
     switch (name){
+    //Fog Vials
+        case "fogVial":
+            itemPool.splice(itemPool.indexOf("appFogVial"),1);
+            itemPool.splice(itemPool.indexOf("artFogVial"),1);
+            itemPool.splice(itemPool.indexOf("vigoFogVial"),1);
+            localStorage.setItem(name,"false");
+            break;
     //Flashlights
         case "flashlight":
             itemPool.splice(itemPool.indexOf("basicFlash"),1);
             itemPool.splice(itemPool.indexOf("sportFlash"),1);
             itemPool.splice(itemPool.indexOf("utilFlash"),1);
+            localStorage.setItem(name,"false");
             break;
     //Keys
         case "key": 
             itemPool.splice(itemPool.indexOf("brokeKey"),1);
             itemPool.splice(itemPool.indexOf("dullKey"),1);
             itemPool.splice(itemPool.indexOf("skelKey"),1);
+            localStorage.setItem(name,"false");
             break;
     //Maps
         case "map": 
-            itemPool.splice(itemPool.indexOf("basicMap"),1);
-            itemPool.splice(itemPool.indexOf("rainMap"),1);
+            itemPool.splice(itemPool.indexOf("cryptMap"),1);
+            itemPool.splice(itemPool.indexOf("scribMap"),1);
+            itemPool.splice(itemPool.indexOf("annoMap"),1);
+            localStorage.setItem(name,"false");
             break;
     //Medkits
         case "medkit": 
@@ -318,6 +1035,7 @@ function itemRemovals(name){
             itemPool.splice(itemPool.indexOf("firstMedkit"),1);
             itemPool.splice(itemPool.indexOf("emergMedkit"),1);
             itemPool.splice(itemPool.indexOf("rangerMedkit"),1);
+            localStorage.setItem(name,"false");
             break;
     //Toolboxes
         case "toolbox": 
@@ -327,24 +1045,50 @@ function itemRemovals(name){
             itemPool.splice(itemPool.indexOf("mechToolbox"),1);
             itemPool.splice(itemPool.indexOf("alexToolbox"),1);
             itemPool.splice(itemPool.indexOf("engineToolbox"),1);
+            localStorage.setItem(name,"false");
             break;
         default: 
             
     }
 }
-function flashlightAddonsPooled(name){
+function fogVialAddonsPooled(name){
     if($('#' + name).is(":checked")){
-        if(name == "anyAddon"){
-            flashlightAddonPool.push(name);
-            flashlightAddonPool.push(name);
+        if(name == "fogVialAnyAddon"){
+            fogVialAddonPool.push(name);
+            fogVialAddonPool.push(name);
+            localStorage.setItem("fogVialAnyAddon","true");
         } else{
             addonAdditions(name);
         }
         
     } if (!$('#' + name).is(":checked")) {
-        if(name == "anyAddon"){
+        if(name == "fogVialAnyAddon"){
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf(name),1);
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf(name),1);
+            localStorage.setItem("fogVialAnyAddon","false");
+        } else{
+            addonRemovals(name);
+        }
+        
+    } else {
+        
+    }
+}
+function flashlightAddonsPooled(name){
+    if($('#' + name).is(":checked")){
+        if(name == "flashlightAnyAddon"){
+            flashlightAddonPool.push(name);
+            flashlightAddonPool.push(name);
+            localStorage.setItem("flashlightAnyAddon","true");
+        } else{
+            addonAdditions(name);
+        }
+        
+    } if (!$('#' + name).is(":checked")) {
+        if(name == "flashlightAnyAddon"){
             flashlightAddonPool.splice(flashlightAddonPool.indexOf(name),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf(name),1);
+            localStorage.setItem("flashlightAnyAddon","false");
         } else{
             addonRemovals(name);
         }
@@ -355,17 +1099,19 @@ function flashlightAddonsPooled(name){
 }
 function keyAddonsPooled(name){
     if($('#' + name).is(":checked")){
-        if(name == "anyAddon"){
+        if(name == "keyAnyAddon"){
             keyAddonPool.push(name);
             keyAddonPool.push(name);
+            localStorage.setItem("keyAnyAddon","true");
         } else{
             addonAdditions(name);
         }
         
     } if (!$('#' + name).is(":checked")) {
-        if(name == "anyAddon"){
+        if(name == "keyAnyAddon"){
             keyAddonPool.splice(keyAddonPool.indexOf(name),1);
             keyAddonPool.splice(keyAddonPool.indexOf(name),1);
+            localStorage.setItem("keyAnyAddon","false");
         } else{
             addonRemovals(name);
         }
@@ -376,17 +1122,19 @@ function keyAddonsPooled(name){
 }
 function mapAddonsPooled(name){
     if($('#' + name).is(":checked")){
-        if(name == "anyAddon"){
+        if(name == "mapAnyAddon"){
             mapAddonPool.push(name);
             mapAddonPool.push(name);
+            localStorage.setItem("mapAnyAddon","true");
         } else{
             addonAdditions(name);
         }
         
     } if (!$('#' + name).is(":checked")) {
-        if(name == "anyAddon"){
+        if(name == "mapAnyAddon"){
             mapAddonPool.splice(mapAddonPool.indexOf(name),1);
             mapAddonPool.splice(mapAddonPool.indexOf(name),1);
+            localStorage.setItem("mapAnyAddon","false");
         } else{
             addonRemovals(name);
         }
@@ -397,17 +1145,19 @@ function mapAddonsPooled(name){
 }
 function medkitAddonsPooled(name){
     if($('#' + name).is(":checked")){
-        if(name == "anyAddon"){
+        if(name == "medkitAnyAddon"){
             medkitAddonPool.push(name);
             medkitAddonPool.push(name);
+            localStorage.setItem("medkitAnyAddon","true");
         } else{
             addonAdditions(name);
         }
         
     } if (!$('#' + name).is(":checked")) {
-        if(name == "anyAddon"){
+        if(name == "medkitAnyAddon"){
             medkitAddonPool.splice(medkitAddonPool.indexOf(name),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf(name),1);
+            localStorage.setItem("medkitAnyAddon","false");
         } else{
             addonRemovals(name);
         }
@@ -418,17 +1168,19 @@ function medkitAddonsPooled(name){
 }
 function toolboxAddonsPooled(name){
     if($('#' + name).is(":checked")){
-        if(name == "anyAddon"){
+        if(name == "toolboxAnyAddon"){
             toolboxAddonPool.push(name);
             toolboxAddonPool.push(name);
+            localStorage.setItem("toolboxAnyAddon","true");
         } else{
             addonAdditions(name);
         }
         
     } if (!$('#' + name).is(":checked")) {
-        if(name == "anyAddon"){
+        if(name == "toolboxAnyAddon"){
             toolboxAddonPool.splice(toolboxAddonPool.indexOf(name),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf(name),1);
+            localStorage.setItem("toolboxAnyAddon","false");
         } else{
             addonRemovals(name);
         }
@@ -439,12 +1191,34 @@ function toolboxAddonsPooled(name){
 }
 function addonAdditions(name){
     switch (name){
+    //Fog Vials
+        case "fogVialCommons":
+            fogVialAddonPool.push("volcanicStone");
+            localStorage.setItem(name,"true");
+            break;
+        case "fogVialUncommons":
+            fogVialAddonPool.push("reactiveCompound");
+            localStorage.setItem(name,"true");
+            break;
+        case "fogVialRares": 
+            fogVialAddonPool.push("oilySap");
+            localStorage.setItem(name,"true");
+            break;
+        case "fogVialVeryRares": 
+            fogVialAddonPool.push("mushroomFormula");
+            localStorage.setItem(name,"true");
+            break;
+        case "fogVialUltraRares": 
+            fogVialAddonPool.push("potentExtract");
+            localStorage.setItem(name,"true");
+            break;
     //Flashlights
         case "flashlightCommons":
             flashlightAddonPool.push("battery");
             flashlightAddonPool.push("leatherGrip");
             flashlightAddonPool.push("powerBulb");
             flashlightAddonPool.push("wideLens");
+            localStorage.setItem(name,"true");
             break;
         case "flashlightUncommons":
             flashlightAddonPool.push("focusLens");
@@ -452,82 +1226,106 @@ function addonAdditions(name){
             flashlightAddonPool.push("lowFilament");
             flashlightAddonPool.push("rubberGrip");
             flashlightAddonPool.push("tirOptic");
+            localStorage.setItem(name,"true");
             break;
         case "flashlightRares": 
             flashlightAddonPool.push("intHalogen");
             flashlightAddonPool.push("longBattery");
+            localStorage.setItem(name,"true");
             break;
         case "flashlightVeryRares": 
             flashlightAddonPool.push("highLens");
+            localStorage.setItem(name,"true");
             break;
         case "flashlightUltraRares": 
             flashlightAddonPool.push("oddBulb");
+            localStorage.setItem(name,"true");
             break;
     //Keys
         case "keyCommons": 
             keyAddonPool.push("prayRope");
+            keyAddonPool.push("friendCharm");
+            localStorage.setItem(name,"true");
             break;
         case "keyUncommons": 
             keyAddonPool.push("erodeToken");
             keyAddonPool.push("prayBeads");
-            keyAddonPool.push("scratchPearl");
+            keyAddonPool.push("shrillWhis");
+            localStorage.setItem(name,"true");
             break;
         case "keyRares": 
-            keyAddonPool.push("goldToken");
+            keyAddonPool.push("braidBauble");
+            localStorage.setItem(name,"true");
             break;
         case "keyVeryRares": 
-            keyAddonPool.push("bloodAmber");
-            keyAddonPool.push("milkyGlass");
             keyAddonPool.push("uniqueRing");
-            keyAddonPool.push("weaveRing");
+            localStorage.setItem(name,"true");
+            break;
+        case "keyUltraRares":
+            keyAddonPool.push("bloodAmber");
+            localStorage.setItem(name,"true");
             break;
     //Maps
         case "mapCommons":
             mapAddonPool.push("mapAddendum");
+            mapAddonPool.push("glowInk");
+            localStorage.setItem(name,"true");
             break;
         case "mapUncommons": 
             mapAddonPool.push("glassBead");
             mapAddonPool.push("redTwine");
             mapAddonPool.push("retardantJelly");
             mapAddonPool.push("unusualStamp");
-            mapAddonPool.push("yellowWire");
+            mapAddonPool.push("gnarlCompass");
+            localStorage.setItem(name,"true");
             break;
         case "mapRares": 
-            mapAddonPool.push("blackCord");
-            mapAddonPool.push("oddStamp");
+            mapAddonPool.push("batterTape");
+            localStorage.setItem(name,"true");
             break;
         case "mapVeryRares": 
-            mapAddonPool.push("crystalBead");
+            mapAddonPool.push("sharpFlint");
+            localStorage.setItem(name,"true");
+            break;
+        case "mapUltraRares": 
+            mapAddonPool.push("crimStamp");
+            localStorage.setItem(name,"true");
             break;
     //Medkits
         case "medkitCommons": 
             medkitAddonPool.push("bandages");
             medkitAddonPool.push("butterflyTape");
             medkitAddonPool.push("rubberGloves");
+            localStorage.setItem(name,"true");
             break;
         case "medkitUncommons": 
             medkitAddonPool.push("medScissors");
             medkitAddonPool.push("needleThread");
             medkitAddonPool.push("selfWrap");
             medkitAddonPool.push("sponge");
+            localStorage.setItem(name,"true");
             break;
         case "medkitRares":
             medkitAddonPool.push("gauzeRoll");
             medkitAddonPool.push("surgSuture");
+            localStorage.setItem(name,"true");
             break;
         case "medkitVeryRares": 
             medkitAddonPool.push("abdomDressing");
             medkitAddonPool.push("stypticAgent");
+            localStorage.setItem(name,"true");
             break;
         case "medkitUltraRares": 
             medkitAddonPool.push("antiSyringe");
             medkitAddonPool.push("gelDressings");
+            localStorage.setItem(name,"true");
             break;
     //Toolboxes
         case "toolboxCommons": 
             toolboxAddonPool.push("cleanRag");
             toolboxAddonPool.push("instructions");
             toolboxAddonPool.push("scraps");
+            localStorage.setItem(name,"true");
             break;
         case "toolboxUncommons":
             toolboxAddonPool.push("cuttingWire");
@@ -535,13 +1333,16 @@ function addonAdditions(name){
             toolboxAddonPool.push("socketSwivels");
             toolboxAddonPool.push("springClamps");
             toolboxAddonPool.push("wireSpool");
+            localStorage.setItem(name,"true");
             break;
         case "toolboxRares": 
             toolboxAddonPool.push("gripWrench");
             toolboxAddonPool.push("hacksaw");
+            localStorage.setItem(name,"true");
             break;
         case "toolboxUltraRares": 
             toolboxAddonPool.push("brandNewPart");
+            localStorage.setItem(name,"true");
             break;
         default:
 
@@ -549,12 +1350,34 @@ function addonAdditions(name){
 }
 function addonRemovals(name){
     switch (name){
+    //Fog Vials
+        case "fogVialCommons":
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf("volcanicStone"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "fogVialUncommons":
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf("reactiveCompound"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "fogVialRares": 
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf("oilySap"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "fogVialVeryRares": 
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf("mushroomFormula"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "fogVialUltraRares": 
+            fogVialAddonPool.splice(fogVialAddonPool.indexOf("potentExtract"),1);
+            localStorage.setItem(name,"false");
+            break;
     //Flashlights
         case "flashlightCommons":
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("battery"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("leatherGrip"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("powerBulb"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("wideLens"),1);
+            localStorage.setItem(name,"false");
             break;
         case "flashlightUncommons":
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("focusLens"),1);
@@ -562,82 +1385,106 @@ function addonRemovals(name){
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("lowFilament"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("rubberGrip"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("tirOptic"),1);
+            localStorage.setItem(name,"false");
             break;
         case "flashlightRares": 
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("intHalogen"),1);
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("longBattery"),1);
+            localStorage.setItem(name,"false");
             break;
         case "flashlightVeryRares": 
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("highLens"),1);
+            localStorage.setItem(name,"false");
             break;
         case "flashlightUltraRares": 
             flashlightAddonPool.splice(flashlightAddonPool.indexOf("oddBulb"),1);
+            localStorage.setItem(name,"false");
             break;
     //Keys
         case "keyCommons": 
             keyAddonPool.splice(keyAddonPool.indexOf("prayRope"),1);
+            keyAddonPool.splice(keyAddonPool.indexOf("friendCharm"),1);
+            localStorage.setItem(name,"false");
             break;
         case "keyUncommons": 
             keyAddonPool.splice(keyAddonPool.indexOf("erodeToken"),1);
             keyAddonPool.splice(keyAddonPool.indexOf("prayBeads"),1);
-            keyAddonPool.splice(keyAddonPool.indexOf("scratchPearl"),1);
+            keyAddonPool.splice(keyAddonPool.indexOf("shrillWhis"),1);
+            localStorage.setItem(name,"false");
             break;
         case "keyRares": 
-            keyAddonPool.splice(keyAddonPool.indexOf("goldToken"),1);
+            keyAddonPool.splice(keyAddonPool.indexOf("braidBauble"),1);
+            localStorage.setItem(name,"false");
             break;
         case "keyVeryRares": 
-            keyAddonPool.splice(keyAddonPool.indexOf("bloodAmber"),1);
-            keyAddonPool.splice(keyAddonPool.indexOf("milkyGlass"),1);
             keyAddonPool.splice(keyAddonPool.indexOf("uniqueRing"),1);
-            keyAddonPool.splice(keyAddonPool.indexOf("weaveRing"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "keyUltraRares": 
+            keyAddonPool.splice(keyAddonPool.indexOf("bloodAmber"),1);
+            localStorage.setItem(name,"false");
             break;
     //Maps
         case "mapCommons":
             mapAddonPool.splice(mapAddonPool.indexOf("mapAddendum"),1);
+            mapAddonPool.splice(mapAddonPool.indexOf("glowInk"),1);
+            localStorage.setItem(name,"false");
             break;
         case "mapUncommons": 
             mapAddonPool.splice(mapAddonPool.indexOf("glassBead"),1);
             mapAddonPool.splice(mapAddonPool.indexOf("redTwine"),1);
             mapAddonPool.splice(mapAddonPool.indexOf("retardantJelly"),1);
             mapAddonPool.splice(mapAddonPool.indexOf("unusualStamp"),1);
-            mapAddonPool.splice(mapAddonPool.indexOf("yellowWire"),1);
+            mapAddonPool.splice(mapAddonPool.indexOf("gnarlCompass"),1);
+            localStorage.setItem(name,"false");
             break;
         case "mapRares": 
-            mapAddonPool.splice(mapAddonPool.indexOf("blackCord"),1);
-            mapAddonPool.splice(mapAddonPool.indexOf("oddStamp"),1);
+            mapAddonPool.splice(mapAddonPool.indexOf("batterTape"),1);
+            localStorage.setItem(name,"false");
             break;
         case "mapVeryRares": 
-            mapAddonPool.splice(mapAddonPool.indexOf("crystalBead"),1);
+            mapAddonPool.splice(mapAddonPool.indexOf("sharpFlint"),1);
+            localStorage.setItem(name,"false");
+            break;
+        case "mapUltraRares": 
+            mapAddonPool.splice(mapAddonPool.indexOf("crimStamp"),1);
+            localStorage.setItem(name,"false");
             break;
     //Medkits
         case "medkitCommons": 
             medkitAddonPool.splice(medkitAddonPool.indexOf("bandages"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("butterflyTape"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("rubberGloves"),1);
+            localStorage.setItem(name,"false");
             break;
         case "medkitUncommons": 
             medkitAddonPool.splice(medkitAddonPool.indexOf("medScissors"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("needleThread"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("selfWrap"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("sponge"),1);
+            localStorage.setItem(name,"false");
             break;
         case "medkitRares":
             medkitAddonPool.splice(medkitAddonPool.indexOf("gauzeRoll"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("surgSuture"),1);
+            localStorage.setItem(name,"false");
             break;
         case "medkitVeryRares": 
             medkitAddonPool.splice(medkitAddonPool.indexOf("abdomDressing"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("stypticAgent"),1);
+            localStorage.setItem(name,"false");
             break;
         case "medkitUltraRares": 
             medkitAddonPool.splice(medkitAddonPool.indexOf("antiSyringe"),1);
             medkitAddonPool.splice(medkitAddonPool.indexOf("gelDressings"),1);
+            localStorage.setItem(name,"false");
             break;
     //Toolboxes
         case "toolboxCommons": 
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("cleanRag"),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("instructions"),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("scraps"),1);
+            localStorage.setItem(name,"false");
             break;
         case "toolboxUncommons":
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("cuttingWire"),1);
@@ -645,13 +1492,16 @@ function addonRemovals(name){
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("socketSwivels"),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("springClamps"),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("wireSpool"),1);
+            localStorage.setItem(name,"false");
             break;
         case "toolboxRares": 
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("gripWrench"),1);
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("hacksaw"),1);
+            localStorage.setItem(name,"false");
             break;
         case "toolboxUltraRares": 
             toolboxAddonPool.splice(toolboxAddonPool.indexOf("brandNewPart"),1);
+            localStorage.setItem(name,"false");
             break;
         default:
 
@@ -668,6 +1518,19 @@ function randomItem(){
     let item = itemPool[itemPool.length - 1];
     //document.getElementById("viewPool").innerHTML = item;
     fixedItem(item);
+}
+function randomFogVials(){
+    for(let l = fogVialAddonPool.length - 1; l > 0; l--){
+        let j = Math.floor(Math.random() * (l + 1));
+        let k = fogVialAddonPool[l];
+        fogVialAddonPool[l] = fogVialAddonPool[j];
+        fogVialAddonPool[j] = k;
+    }
+
+    let addon1 = fogVialAddonPool[fogVialAddonPool.length - 1];
+    let addon2 = fogVialAddonPool[fogVialAddonPool.length - 2];
+
+    fixedAddons(addon1,addon2);
 }
 function randomFlashlights(){
     for(let l = flashlightAddonPool.length - 1; l > 0; l--){
@@ -739,9 +1602,11 @@ function namedOfferingSelected(name){
     if ($('#' + name).is(":checked")){
         selectOfferingOptions(name);
         $('#' + name + "Options").slideToggle("slow");
+        localStorage.setItem(name,"true");
     } if (!$('#' + name).is(":checked")){
         deselectOfferingOptions(name);
         $('#' + name + "Options").slideToggle("slow");
+        localStorage.setItem(name,"false");
     }
 }
 function selectOfferingOptions(name){
@@ -1134,133 +1999,170 @@ function namedOfferingPooled(name){
                 offeringPool.push("seaEnve");
                 offeringPool.push("bloPartStre");
                 offeringPool.push("bouEnve");
+                localStorage.setItem(name,"true");
                 break;
             case "altruism": 
                 offeringPool.push("primrose");
                 offeringPool.push("freshPrim");
                 offeringPool.push("fragPrim");
+                localStorage.setItem(name,"true");
                 break;
             case "boldness": 
                 offeringPool.push("william");
                 offeringPool.push("freshWill");
                 offeringPool.push("fragWill");
+                localStorage.setItem(name,"true");
                 break;
             case "objectives": 
                 offeringPool.push("bog");
                 offeringPool.push("freshBog");
                 offeringPool.push("fragBog");
+                localStorage.setItem(name,"true");
                 break;
             case "survival": 
                 offeringPool.push("amaranth");
                 offeringPool.push("freshAma");
                 offeringPool.push("fragAma");
+                localStorage.setItem(name,"true");
                 break;
             case "singleLuck": 
                 offeringPool.push("chalk");
                 offeringPool.push("creamChalk");
                 offeringPool.push("ivoryChalk");
+                localStorage.setItem(name,"true");
                 break;
             case "allLuck": 
                 offeringPool.push("salt");
                 offeringPool.push("blackSalt");
                 offeringPool.push("lipsSalt");
+                localStorage.setItem(name,"true");
                 break;
             case "wards": 
                 offeringPool.push("sacWard");
                 offeringPool.push("whiteWard");
+                localStorage.setItem(name,"true");
                 break;
             case "basement": 
                 offeringPool.push("bloodBlue");
                 offeringPool.push("tornBlue");
+                localStorage.setItem(name,"true");
                 break;
             case "chests":
                 offeringPool.push("tarnCoin");
                 offeringPool.push("shinyCoin");
+                localStorage.setItem(name,"true");
                 break;
             case "fogThick": 
                 offeringPool.push("clearRea");
                 offeringPool.push("faintRea");
                 offeringPool.push("hazyRea");
                 offeringPool.push("murkyRea");
+                localStorage.setItem(name,"true");
                 break;
             case "hatch": 
                 offeringPool.push("annoBlue");
                 offeringPool.push("vigoBlue");
+                localStorage.setItem(name,"true");
                 break;
             case "hook": 
                 offeringPool.push("petrOak");
+                localStorage.setItem(name,"true");
                 break;
             case "azaKey": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "grandmaCook": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "heartLock": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "charWedPhoto": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "beefTallow": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "airlockDoors": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "alienFlora": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "crowEye": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "jigsawPiece":
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "shatteredBottle": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "strodeKey": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "hawkinsID": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "shatteredGlasses": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "macmillanBone": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "damagedPhoto": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "rpdBadge": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "lastMask": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "marysLetter": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "piedPiper": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "ichorousLoam": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "yamaokaCrest": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "unionShroud": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "vigoShroud": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             case "bindShroud": 
                 offeringPool.push(name);
+                localStorage.setItem(name,"true");
                 break;
             default: 
 
@@ -1272,133 +2174,170 @@ function namedOfferingPooled(name){
                 offeringPool.splice((offeringPool.indexOf("seaEnve")),1);
                 offeringPool.splice((offeringPool.indexOf("bloPartStre")),1);
                 offeringPool.splice((offeringPool.indexOf("bouEnve")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "altruism": 
                 offeringPool.splice((offeringPool.indexOf("primrose")),1);
                 offeringPool.splice((offeringPool.indexOf("freshPrim")),1);
                 offeringPool.splice((offeringPool.indexOf("fragPrim")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "boldness": 
                 offeringPool.splice((offeringPool.indexOf("william")),1);
                 offeringPool.splice((offeringPool.indexOf("freshWill")),1);
                 offeringPool.splice((offeringPool.indexOf("fragWill")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "objectives": 
                 offeringPool.splice((offeringPool.indexOf("bog")),1);
                 offeringPool.splice((offeringPool.indexOf("freshBog")),1);
                 offeringPool.splice((offeringPool.indexOf("fragBog")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "survival": 
                 offeringPool.splice((offeringPool.indexOf("amaranth")),1);
                 offeringPool.splice((offeringPool.indexOf("freshAma")),1);
                 offeringPool.splice((offeringPool.indexOf("fragAma")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "singleLuck": 
                 offeringPool.splice((offeringPool.indexOf("chalk")),1);
                 offeringPool.splice((offeringPool.indexOf("creamChalk")),1);
                 offeringPool.splice((offeringPool.indexOf("ivoryChalk")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "allLuck": 
                 offeringPool.splice((offeringPool.indexOf("salt")),1);
                 offeringPool.splice((offeringPool.indexOf("blackSalt")),1);
                 offeringPool.splice((offeringPool.indexOf("lipsSalt")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "wards": 
                 offeringPool.splice((offeringPool.indexOf("sacWard")),1);
                 offeringPool.splice((offeringPool.indexOf("whiteWard")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "basement": 
                 offeringPool.splice((offeringPool.indexOf("bloodBlue")),1);
                 offeringPool.splice((offeringPool.indexOf("tornBlue")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "chests":
                 offeringPool.splice((offeringPool.indexOf("tarnCoin")),1);
                 offeringPool.splice((offeringPool.indexOf("shinyCoin")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "fogThick": 
                 offeringPool.splice((offeringPool.indexOf("clearRea")),1);
                 offeringPool.splice((offeringPool.indexOf("faintRea")),1);
                 offeringPool.splice((offeringPool.indexOf("hazyRea")),1);
                 offeringPool.splice((offeringPool.indexOf("murkyRea")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "hatch": 
                 offeringPool.splice((offeringPool.indexOf("annoBlue")),1);
                 offeringPool.splice((offeringPool.indexOf("vigoBlue")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "hook": 
                 offeringPool.splice((offeringPool.indexOf("petrOak")),1);
+                localStorage.setItem(name,"false");
                 break;
             case "azaKey": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "grandmaCook": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "heartLock": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "charWedPhoto": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "beefTallow": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "airlockDoors": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "alienFlora": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "crowEye": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "jigsawPiece":
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "shatteredBottle": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "strodeKey": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "hawkinsID": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "shatteredGlasses": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "macmillanBone": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "damagedPhoto": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "rpdBadge": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "lastMask": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "marysLetter": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "piedPiper": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "ichorousLoam": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "yamaokaCrest": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "unionShroud": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "vigoShroud": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "bindShroud": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             default: 
             
@@ -1480,6 +2419,8 @@ function selectAllSurv(){
     if(!$("#trevBel").is(":checked")){checking("trevBel",true);}
     if(!$("#taurCai").is(":checked")){checking("taurCai",true);}
     if(!$("#orelRos").is(":checked")){checking("orelRos",true);}
+    if(!$("#rickGri").is(":checked")){checking("rickGri",true);}
+    if(!$("#michGri").is(":checked")){checking("michGri",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -1528,6 +2469,8 @@ function deselectAllSurv(){
     if($("#trevBel").is(":checked")){checking("trevBel",false);}
     if($("#taurCai").is(":checked")){checking("taurCai",false);}
     if($("#orelRos").is(":checked")){checking("orelRos",false);}
+    if($("#rickGri").is(":checked")){checking("rickGri",false);}
+    if($("#michGri").is(":checked")){checking("michGri",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -1718,6 +2661,14 @@ function selectAllPerk(){
     if(!$("#doNoHar").is(":checked")){checking("doNoHar",true);}  
     if(!$("#dutOfCar").is(":checked")){checking("dutOfCar",true);}  
     if(!$("#rapRes").is(":checked")){checking("rapRes",true);}
+    //Rick Grimes Perks
+    if(!$("#apoIng").is(":checked")){checking("apoIng",true);}  
+    if(!$("#comAndGetMe").is(":checked")){checking("comAndGetMe",true);}  
+    if(!$("#teaTouUp").is(":checked")){checking("teaTouUp",true);}
+    //Michonne Grimes Perks
+    if(!$("#con").is(":checked")){checking("con",true);}  
+    if(!$("#lasSta").is(":checked")){checking("lasSta",true);}  
+    if(!$("#teaThrDow").is(":checked")){checking("teaThrDow",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -1907,9 +2858,25 @@ function deselectAllPerk(){
     if($("#doNoHar").is(":checked")){checking("doNoHar",false);}  
     if($("#dutOfCar").is(":checked")){checking("dutOfCar",false);}  
     if($("#rapRes").is(":checked")){checking("rapRes",false);} 
+    //Rick Grimes Perks
+    if($("#apoIng").is(":checked")){checking("apoIng",false);}  
+    if($("#comAndGetMe").is(":checked")){checking("comAndGetMe",false);}  
+    if($("#teaTouUp").is(":checked")){checking("teaTouUp",false);} 
+    //Michonne Grimes Perks
+    if($("#con").is(":checked")){checking("con",false);}  
+    if($("#lasSta").is(":checked")){checking("lasSta",false);}  
+    if($("#teaThrDow").is(":checked")){checking("teaThrDow",false);} 
 }
 //Items
 function selectAllItem(){
+//Fog Vials
+    if(!$("#fogVial").is(":checked")){checking("fogVial",true);}
+    if(!$("#fogVialAnyAddon").is(":checked")){checking("fogVialAnyAddon",true);}
+    if(!$("#fogVialCommons").is(":checked")){checking("fogVialCommons",true);}
+    if(!$("#fogVialUncommons").is(":checked")){checking("fogVialUncommons",true);}
+    if(!$("#fogVialRares").is(":checked")){checking("fogVialRares",true);}
+    if(!$("#fogVialVeryRares").is(":checked")){checking("fogVialVeryRares",true);}
+    if(!$("#fogVialUltraRares").is(":checked")){checking("fogVialUltraRares",true);}
 //Flashlights
     if(!$("#flashlight").is(":checked")){checking("flashlight",true);}
     if(!$("#flashlightAnyAddon").is(":checked")){checking("flashlightAnyAddon",true);}
@@ -1949,6 +2916,14 @@ function selectAllItem(){
     if(!$("#toolboxUltraRares").is(":checked")){checking("toolboxUltraRares",true);}
 }
 function deselectAllItem(){
+//Fog Vials
+    if($("#fogVial").is(":checked")){checking("fogVial",false);}
+    if($("#fogVialAnyAddon").is(":checked")){checking("fogVialAnyAddon",false);}
+    if($("#fogVialCommons").is(":checked")){checking("fogVialCommons",false);}
+    if($("#fogVialUncommons").is(":checked")){checking("fogVialUncommons",false);}
+    if($("#fogVialRares").is(":checked")){checking("fogVialRares",false);}
+    if($("#fogVialVeryRares").is(":checked")){checking("fogVialVeryRares",false);}
+    if($("#fogVialUltraRares").is(":checked")){checking("fogVialUltraRares",false);}
 //Flashlights
     if($("#flashlight").is(":checked")){checking("flashlight",false);}
     if($("#flashlightAnyAddon").is(":checked")){checking("flashlightAnyAddon",false);}
@@ -2090,8 +3065,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Increases your Repair speed on <b>those Generators</b> by 
                 <b style="color: #e8c252;">4</b>/
                 <b style="color: #199b1e;">5</b>/
-                <b style="color: #ac3ee3;">6</b> %<br><br>
-                Held <b>Maps</b> automatically track <b>Auras</b> revealed by <i>Déjà Vu</i>`;
+                <b style="color: #ac3ee3;">6</b> %`;
                 break;
             case "hope":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Hope.png";
@@ -2392,12 +3366,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "str":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Streetwise.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Streetwise";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Efficiency of <b>your Items</b> by 
-                <b style="color: #e8c252;">15</b>/
-                <b style="color: #199b1e;">20</b>/
-                <b style="color: #ac3ee3;">25</b> %<br><br>
-                <i>Streetwise</i> extends its effect to all other Survivors within <b>8 metres</b> of your location and lingers for <b>15 seconds</b>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Any Items with Charges <b>you retrieve from Chests</b> benefit from the following primary effect:
+                <li>Increases their Charges permanently by 
+                <b style="color: #e8c252;">60</b>/
+                <b style="color: #199b1e;">70</b>/
+                <b style="color: #ac3ee3;">80</b> %.</li>
+                Whenever your <b>currently equipped Item is depleted for the first time</b>, <i>Streetwise</i> triggers its secondary effect:
+                <li>The <b>Aura of the Killer</b> is revealed to you for <b>8 seconds</b>.</li>`;
                 break;
             case "urbEva":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
@@ -2645,16 +3621,15 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "detHun":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dectective's Hunch";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Generator is completed, <i>Detective's Hunch</i> triggers its effect:
                 <dl><li>The <b>Auras</b> of the following objects within 
                 <b style="color: #e8c252;">32</b>/
                 <b style="color: #199b1e;">48</b>/
-                <b style="color: #ac3ee3;">64</b> metres of your location are revealed to you for <b>10 seconds</b>:</li>
+                <b style="color: #ac3ee3;">64</b> metres of your location are revealed to you for <b>20 seconds</b>:</li>
                 <dd>- Chests</dd>
                 <dd>- Generators</dd>
-                <dd>- Totems</dd></dl>
-                When <b>carrying a Map</b>, any objects revealed by <i>Detective's Hunch</i> are automatically added to it`;
+                <dd>- Totems</dd></dl>`;
                 break;
             case "staOut":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
@@ -2877,11 +3852,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Better Together";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing a Generator, its <b>Aura</b> is highlighted in <b>yellow to all other Survivors</b> within <b>32 metres</b>.<br><br>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing a Generator, its <b>Aura</b> is highlighted in <b>yellow to all other Survivors</b>.<br><br>
                 Whenever the Killer downs a Survivor while you are repairing a Generator, the <b>Auras of all other Survivors</b> are revealed to you for 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b> seconds`;
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "fix":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
@@ -2947,9 +3922,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Any Means Necessary";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> for 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">5</b>/
-                <b style="color: #ac3ee3;">4</b> seconds while standing beside a <b>dropped Pallet</b> to reset it to its upright position
+                <b style="color: #e8c252;">5</b>/
+                <b style="color: #199b1e;">4</b>/
+                <b style="color: #ac3ee3;">3</b> seconds while standing beside a <b>dropped Pallet</b> to reset it to its upright position
                 <ul><li>Grants the ability to see the <b>Auras of all dropped but not yet destroyed Pallets</b> in the environment</li></ul>`;
                 break;
             case "brea":
@@ -3070,8 +4045,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Hiding inside a Locker for 
                 <b style="color: #e8c252;">14</b>/
-                <b style="color: #199b1e;">13</b>/
-                <b style="color: #ac3ee3;">12</b> seconds while carrying a <b>depleted Item</b> has the following effect:
+                <b style="color: #199b1e;">12</b>/
+                <b style="color: #ac3ee3;">10</b> seconds while carrying a <b>depleted Item</b> has the following effect:
                 <ul><li><b>First use</b>: Recharges the Item to <b>99%</b></li>
                 <li><b>Second use</b>: Recharges the Item to <b>66%</b></li>
                 <li><b>Third use</b>: Recharges the Item to <b>33%</b></li></ul>
@@ -3104,13 +4079,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Appraisal";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Appraisal</i> has <b>3 Tokens</b> at the start of the Trial:
-                <ul><li>Consume <b>-1 Token</b> to perform the <b>Rummage</b> action on an already unlocked Chest in order to retrieve a <b>second Item</b> from it</li>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Appraisal</i> has <b>4 Tokens</b> at the start of the Trial:
+                <ul><li>Consume <b>-1 Token</b> to perform the <b>Rummage</b> action on an already unlocked Chest in order to retrieve <b>another Item</b> from it</li>
                 <li>Increases Rummaging speed by 
                 <b style="color: #e8c252;">40</b>/
                 <b style="color: #199b1e;">60</b>/
                 <b style="color: #ac3ee3;">80</b> %</li></ul>
-                <b>Rummaging</b> is only available <b>once per Chest</b>`;
+                <b>Rummaging</b> is only available <b>twice per Chest</b>`;
                 break;
             case "dec":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
@@ -3488,14 +4463,16 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "potEne":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Potential Energy";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>uninterruptedly</b> repairing Generators for a total of 
-                <b style="color: #e8c252;">12</b>/
-                <b style="color: #199b1e;">10</b>/
-                <b style="color: #ac3ee3;">8</b> seconds, press the <b>Active Ability button</b> to activate <i>Potential Energy</i>:
-                <ul><li>Continuing to repair the Generator will <b>charge <i>Potential Energy</i> instead of progressing</b> the Generator</li>
-                <li>Converts <b>1.5%</b> of Repair progression into <b>1 Token</b>, up to a maximum of <b>20 Tokens</b></li>
-                <li>Missing Skill Checks results in <b>losing some Tokens</b></li></ul>
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing Generators, press the <b>Active Ability button</b> to activate <i>Potential Energy</i>:
+                <dl><li>Continuing to repair the Generator will <b>charge <i>Potential Energy</i> instead of progressing</b> the Generator</li>
+                <li>Converts <b>1%</b> of Repair progression into <b>1 Token</b>, up to a maximum of 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">15</b>/
+                <b style="color: #ac3ee3;">20</b> Tokens</li>
+                <li><b>Failed Repair Skill Checks</b> incur a penalty depending on how many Tokens have been accumulated:</li>
+                <dd>- <b>Not at Token Limit:</b> Reduces the number of <b>accumulated Tokens by -20%</b>.</dd>
+                <dd>- <b>At Token Limit:</b> Regresses the <b>Generator by -10%</b>.</dd></dl>
                 When <i>Potential Energy</i> has at least <b>1 Token</b>, press the <b>Active Ability button</b> while repairing a Generator to instantly progress it by <b>+1 % per accumulated Token</b>, deactivating <i>Potential Energy</i><br><br>
                 <i>Potential Energy</i> loses <b>all Tokens</b> and deactivates upon <b>losing a Health State</b>`;
                 break;
@@ -3820,11 +4797,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "stiSig":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Still Sight";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>standing still</b> for 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">5</b>/
-                <b style="color: #ac3ee3;">4</b> seconds, <i>Still Sight</i> activates:
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">3</b>/
+                <b style="color: #ac3ee3;">2</b> seconds, <i>Still Sight</i> activates:
                 <ul><li>The <b>Auras of the Killer</b> as well as <b>any Chests and Generators</b> within <b>24 metres</b> of your location are revealed to you until you <b>start moving again</b></li></ul>`;
                 break;
         //Lara Croft Perks
@@ -3977,6 +4954,78 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">20</b> seconds</li></ul>
                 <i>Rapid Response</i> cannot be used while <b>Exhausted</b>`;
                 break;
+        //Rick Grimes Perks
+            case "apoIng":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_ApocalypticIngenuity.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Apocalyptic Ingenuity";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Unlocks potential in your Aura-reading ability:<br>
+                <li>The <b>Auras of broken Pallets</b> are revealed to you within 
+                <b style="color: #e8c252;">24</b>/
+                <b style="color: #199b1e;">28</b>/
+                <b style="color: #ac3ee3;">32</b> metres.</li><br>
+                After <b>unlocking or rummaging through 2 Chests</b>, <i>Apocalyptic Ingenuity</i> gains a special ability.<br><br>
+                While standing next to the location of a <b>broken Pallet</b>, press and hold the <b>Active Ability button</b> for <b>4 seconds</b> to use it:
+                <dl><li>Rebuilds it as a Fragile Pallet.</li>
+                <dd>- Fragile Pallets instantly break when dropped.</dd></dl>`;
+                break;
+            case "comAndGetMe":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_ComeAndGetMe.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Come and Get Me!";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>unhooking a Survivor, while crouched and stationary</b>, press the <b>Active Ability button</b> to trigger the following effects:
+                <ul><li>Suppresses the creation of <b>Grunts of Pain, Pools of Blood, and Scratch Marks</b> for <b>all injured or dying Survivors within 24 metres of your location</b> for the next 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">12.5</b>/
+                <b style="color: #ac3ee3;">15</b> seconds.</li>
+                <li>Causes you to <b>scream and reveal your Aura to the Killer</b> for <b>5 seconds</b>.</li></ul>`;
+                break;
+            case "teaTouUp":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkToughenUp.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Toughen Up";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured</b>, whenever <b>another Survivor within 24 metres of your location blinds the Killer by any means or stuns them using a Pallet</b>, <i>Teamwork: Toughen Up</i> triggers its effect:
+                <li>Suppresses your <b>Grunts of Pain, and the creation of Pools of Blood and Scratch Marks</b> for 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds.</li>`;
+                break;
+        //Michonne Grimes Perks
+            case "con":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_Conviction.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Conviction";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Dying State</b>, after completing a <b>Healing action on any Survivor</b>, <i>Conviction</i> activates.<br><br>
+                While active, press the <b>Active Ability button</b> after reaching at least <b>25% Recovery progress</b> to trigger the following effects:
+                <ul><li>Instantly recover from the <b>Dying State</b>.</li>
+                <li>Inflicts the <b>Broken Status Effect</b> after recovery.</li>
+                <li>Causes you to <b>automatically re-enter the Dying State</b> after 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds.</li></ul>`;
+                break;
+            case "lasSta":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_LastStand.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Last Stand";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>staying in the Terror Radius without being chased</b> for 
+                <b style="color: #e8c252;">120</b>/
+                <b style="color: #199b1e;">105</b>/
+                <b style="color: #ac3ee3;">90</b> seconds, <i>Last Stand</i> activates.<br><br>
+                While active, perform a <b>Rushed Vault action</b> to trigger its effect:
+                <li><b>Stuns the Killer for 3 seconds</b>, if they are <b>within 2.5 metres of that Vault location</b>.</li><br>
+                <i>Last Stand</i> is <b>disabled for the remainder of the Trial after use</b>.`;
+                break;
+            case "teaThrDow":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkThrowDown.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Throw Down";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>blind the Killer by any means or stun them using a Pallet</b>, <i>Teamwork: Throw Down</i> triggers its effect:
+                <li>Grants the <b>Endurance Status Effect to all other injured Survivors within 24 metres of your location</b> for 
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">8</b>/
+                <b style="color: #ac3ee3;">10</b> seconds.`;
+                break;
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
@@ -3994,7 +5043,7 @@ function fixedChar(char){
             document.getElementById("charName").innerHTML = "Any Survivor";
             break;
         case "dwigFai":
-            document.getElementById("charimg").src = "Portraits/StoreBackgrounds/storeBackground_DF.png";
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_DF.png";
             document.getElementById("charName").innerHTML = "Dwight Fairfield";
             break;
         case "megTho":
@@ -4177,6 +5226,14 @@ function fixedChar(char){
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Jerky/T_UI_S46_storeBackground.png";
             document.getElementById("charName").innerHTML = "Orela Rose";
             break;
+        case "rickGri":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Lasagna/T_UI_S47_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Rick Grimes";
+            break;
+        case "michGri":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Lasagna/T_UI_S48_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Michonne Grimes";
+            break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
             document.getElementById("charName").innerHTML = "Any Survivor (Defaulted)";
@@ -4189,6 +5246,22 @@ function fixedItem(item){
             document.getElementById("itemImg").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
             document.getElementById("itemName").innerHTML="No Item";
             fixedAddons("none","none");
+            break;
+    //Fog Vials
+        case "appFogVial":
+            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_apprenticesFogVial.png";
+            document.getElementById("itemName").innerHTML="Apprentice's Fog Vial";
+            randomFogVials();
+            break;
+        case "artFogVial":
+            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_artisansFogVial.png";
+            document.getElementById("itemName").innerHTML="Artisan's Fog Vial"; 
+            randomFogVials();
+            break;
+        case "vigoFogVial":
+            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_vigosFogVial.png";
+            document.getElementById("itemName").innerHTML="Vigo's Fog Vial";
+            randomFogVials();
             break;
     //Flashlights
         case "basicFlash":
@@ -4223,14 +5296,19 @@ function fixedItem(item){
             randomKeys();
             break;
     //Maps
-        case "basicMap": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_map.png";
-            document.getElementById("itemName").innerHTML="Map";
+        case "cryptMap": 
+            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_CrypticMap.png";
+            document.getElementById("itemName").innerHTML="Cryptic Map";
             randomMaps();
             break;
-        case "rainMap": 
+        case "scribMap": 
+            document.getElementById("itemImg").src="Items/Items/iconItems_map.png";
+            document.getElementById("itemName").innerHTML="Scribbled Map";
+            randomMaps();
+            break;
+        case "annoMap": 
             document.getElementById("itemImg").src="Items/Items/iconItems_rainbowMap.png";
-            document.getElementById("itemName").innerHTML="Rainbow Map";
+            document.getElementById("itemName").innerHTML="Annotated Map";
             randomMaps();
             break;
     //Medkits
@@ -4293,13 +5371,59 @@ function fixedItem(item){
 function fixedAddons(addon1,addon2){
     switch (addon1){
     //Any/No Addons
-        case "anyAddon":
+        case "fogVialAnyAddon":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "flashlightAnyAddon":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "keyAnyAddon":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "mapAnyAddon":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "medkitAnyAddon":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "toolboxAnyAddon":
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "none":
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
             document.getElementById("addonName1").innerHTML="No Addon";
+            break;
+    //Fog Vials
+        //Common
+        case "volcanicStone": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_volcanicStone.png";
+            document.getElementById("addonName1").innerHTML="Volcanic Stone";
+            break;
+        //Uncommon
+        case "reactiveCompound": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_reactiveCompound.png";
+            document.getElementById("addonName1").innerHTML="Reactive Compound";
+            break;
+        //Rare
+        case "oilySap": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_oilySap.png";
+            document.getElementById("addonName1").innerHTML="Oily Sap";
+            break;
+        //Very Rare
+        case "mushroomFormula": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_mushroomFormula.png";
+            document.getElementById("addonName1").innerHTML="Mushroom Formula";
+            break;
+        //Ultra Rare
+        case "potentExtract":
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_potentExtract.png";
+            document.getElementById("addonName1").innerHTML="Potent Extract";
             break;
     //Flashlights
         //Common
@@ -4365,6 +5489,10 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_prayerRope.png";
             document.getElementById("addonName1").innerHTML="Prayer Rope";
             break;
+        case "friendCharm": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconIAddon_FriendshipCharm.png";
+            document.getElementById("addonName1").innerHTML="Friendship Charm";
+            break;
         //Uncommon
         case "erodeToken": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_tokenErroded.png";
@@ -4374,37 +5502,34 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_prayerBeads.png";
             document.getElementById("addonName1").innerHTML="Prayer Beads";
             break;
-        case "scratchPearl": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_scratchedPearl.png";
-            document.getElementById("addonName1").innerHTML="Scratched Pearl";
+        case "shrillWhis": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_ShrillWhistle.png";
+            document.getElementById("addonName1").innerHTML="Shrill Whistle";
             break;
         //Rare
-        case "goldToken": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_tokenGold.png";
-            document.getElementById("addonName1").innerHTML="Gold Token";
+        case "braidBauble": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BraidedBauble.png";
+            document.getElementById("addonName1").innerHTML="Braided Bauble";
             break;
         //Very Rare
-        case "bloodAmber": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
-            document.getElementById("addonName1").innerHTML="Blood Amber";
-            break;
-        case "milkyGlass": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_milkyGlass.png";
-            document.getElementById("addonName1").innerHTML="Milky Glass";
-            break;
         case "uniqueRing": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_uniqueRing.png";
             document.getElementById("addonName1").innerHTML="Unique Wedding Ring";
             break;
-        case "weaveRing": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_weavedRing.png";
-            document.getElementById("addonName1").innerHTML="Weaved Ring";
+        //Ultra Rare
+        case "bloodAmber": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
+            document.getElementById("addonName1").innerHTML="Blood Amber";
             break;
     //Maps
         //Common
         case "mapAddendum": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_mapAddendum.png";
             document.getElementById("addonName1").innerHTML="Map Addendum";
+            break;
+        case "glowInk": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GlowingInk.png";
+            document.getElementById("addonName1").innerHTML="Glowing Ink";
             break;
         //Uncommon
         case "glassBead": 
@@ -4423,23 +5548,24 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_stampUnusual.png";
             document.getElementById("addonName1").innerHTML="Unusual Stamp";
             break;
-        case "yellowWire": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_ropeYellow.png";
-            document.getElementById("addonName1").innerHTML="Yellow Wire";
+        case "gnarlCompass": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GnarledCompass.png";
+            document.getElementById("addonName1").innerHTML="Gnarled Compass";
             break;
         //Rare
-        case "blackCord": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_ropeBlack.png";
-            document.getElementById("addonName1").innerHTML="Black Silk Cord";
-            break;
-        case "oddStamp": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_stampOdd.png";
-            document.getElementById("addonName1").innerHTML="Odd Stamp";
+        case "batterTape": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BatteredTape.png";
+            document.getElementById("addonName1").innerHTML="Battered Tape";
             break;
         //Very Rare
-        case "crystalBead": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_beadCrystal.png";
-            document.getElementById("addonName1").innerHTML="Crystal Bead";
+        case "sharpFlint": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_SharpenedFlint.png";
+            document.getElementById("addonName1").innerHTML="Sharpened Flint";
+            break;
+        //Ultra Rare
+        case "crimStamp": 
+            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_CrimsonStamp.png";
+            document.getElementById("addonName1").innerHTML="Crimson Stamp";
             break;
     //Medkits
         //Common
@@ -4453,7 +5579,7 @@ function fixedAddons(addon1,addon2){
             break;
         case "rubberGloves": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_gloves.png";
-            $document.getElementById("addonName1").innerHTML="Rubber Gloves";
+            document.getElementById("addonName1").innerHTML="Rubber Gloves";
             break;
         //Uncommon
         case "medScissors": 
@@ -4554,13 +5680,59 @@ function fixedAddons(addon1,addon2){
     }
     switch (addon2){
     //Any/No Addons
-        case "anyAddon":
+        case "fogVialAnyAddon":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "flashlightAnyAddon":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "keyAnyAddon":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "mapAnyAddon":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "medkitAnyAddon":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "toolboxAnyAddon":
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "none":
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
             document.getElementById("addonName2").innerHTML="No Addon";
+            break;
+    //Fog Vials
+        //Common
+        case "volcanicStone": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_volcanicStone.png";
+            document.getElementById("addonName2").innerHTML="Volcanic Stone";
+            break;
+        //Uncommon
+        case "reactiveCompound": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_reactiveCompound.png";
+            document.getElementById("addonName2").innerHTML="Reactive Compound";
+            break;
+        //Rare
+        case "oilySap": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_oilySap.png";
+            document.getElementById("addonName2").innerHTML="Oily Sap";
+            break;
+        //Very Rare
+        case "mushroomFormula": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_mushroomFormula.png";
+            document.getElementById("addonName2").innerHTML="Mushroom Formula";
+            break;
+        //Ultra Rare
+        case "potentExtract":
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_potentExtract.png";
+            document.getElementById("addonName2").innerHTML="Potent Extract";
             break;
     //Flashlights
         //Common
@@ -4626,6 +5798,10 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_prayerRope.png";
             document.getElementById("addonName2").innerHTML="Prayer Rope";
             break;
+        case "friendCharm": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconIAddon_FriendshipCharm.png";
+            document.getElementById("addonName2").innerHTML="Friendship Charm";
+            break;
         //Uncommon
         case "erodeToken": 
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_tokenErroded.png";
@@ -4635,37 +5811,34 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_prayerBeads.png";
             document.getElementById("addonName2").innerHTML="Prayer Beads";
             break;
-        case "scratchPearl": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_scratchedPearl.png";
-            document.getElementById("addonName2").innerHTML="Scratched Pearl";
+        case "shrillWhis": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_ShrillWhistle.png";
+            document.getElementById("addonName2").innerHTML="Shrill Whistle";
             break;
         //Rare
-        case "goldToken": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_tokenGold.png";
-            document.getElementById("addonName2").innerHTML="Gold Token";
+        case "braidBauble": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BraidedBauble.png";
+            document.getElementById("addonName2").innerHTML="Braided Bauble";
             break;
         //Very Rare
-        case "bloodAmber": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
-            document.getElementById("addonName2").innerHTML="Blood Amber";
-            break;
-        case "milkyGlass": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_milkyGlass.png";
-            document.getElementById("addonName2").innerHTML="Milky Glass";
-            break;
         case "uniqueRing": 
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_uniqueRing.png";
             document.getElementById("addonName2").innerHTML="Unique Wedding Ring";
             break;
-        case "weaveRing": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_weavedRing.png";
-            document.getElementById("addonName2").innerHTML="Weaved Ring";
+        //Ultra Rare
+        case "bloodAmber": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
+            document.getElementById("addonName2").innerHTML="Blood Amber";
             break;
     //Maps
         //Common
         case "mapAddendum": 
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_mapAddendum.png";
             document.getElementById("addonName2").innerHTML="Map Addendum";
+            break;
+        case "glowInk": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GlowingInk.png";
+            document.getElementById("addonName2").innerHTML="Glowing Ink";
             break;
         //Uncommon
         case "glassBead": 
@@ -4684,23 +5857,24 @@ function fixedAddons(addon1,addon2){
             document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_stampUnusual.png";
             document.getElementById("addonName2").innerHTML="Unusual Stamp";
             break;
-        case "yellowWire": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_ropeYellow.png";
-            document.getElementById("addonName2").innerHTML="Yellow Wire";
+        case "gnarlCompass": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GnarledCompass.png";
+            document.getElementById("addonName2").innerHTML="Gnarled Compass";
             break;
         //Rare
-        case "blackCord": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_ropeBlack.png";
-            document.getElementById("addonName2").innerHTML="Black Silk Cord";
-            break;
-        case "oddStamp": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_stampOdd.png";
-            document.getElementById("addonName2").innerHTML="Odd Stamp";
+        case "batterTape": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BatteredTape.png";
+            document.getElementById("addonName2").innerHTML="Battered Tape";
             break;
         //Very Rare
-        case "crystalBead": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_beadCrystal.png";
-            document.getElementById("addonName2").innerHTML="Crystal Bead";
+        case "sharpFlint": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_SharpenedFlint.png";
+            document.getElementById("addonName2").innerHTML="Sharpened Flint";
+            break;
+        //Ultra Rare
+        case "crimStamp": 
+            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_CrimsonStamp.png";
+            document.getElementById("addonName2").innerHTML="Crimson Stamp";
             break;
     //Medkits
         //Common
