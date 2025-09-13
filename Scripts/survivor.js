@@ -1243,13 +1243,10 @@ function addonAdditions(name){
             break;
     //Keys
         case "keyCommons": 
-            keyAddonPool.push("prayRope");
             keyAddonPool.push("friendCharm");
             localStorage.setItem(name,"true");
             break;
         case "keyUncommons": 
-            keyAddonPool.push("erodeToken");
-            keyAddonPool.push("prayBeads");
             keyAddonPool.push("shrillWhis");
             localStorage.setItem(name,"true");
             break;
@@ -1267,15 +1264,10 @@ function addonAdditions(name){
             break;
     //Maps
         case "mapCommons":
-            mapAddonPool.push("mapAddendum");
             mapAddonPool.push("glowInk");
             localStorage.setItem(name,"true");
             break;
         case "mapUncommons": 
-            mapAddonPool.push("glassBead");
-            mapAddonPool.push("redTwine");
-            mapAddonPool.push("retardantJelly");
-            mapAddonPool.push("unusualStamp");
             mapAddonPool.push("gnarlCompass");
             localStorage.setItem(name,"true");
             break;
@@ -1402,13 +1394,10 @@ function addonRemovals(name){
             break;
     //Keys
         case "keyCommons": 
-            keyAddonPool.splice(keyAddonPool.indexOf("prayRope"),1);
             keyAddonPool.splice(keyAddonPool.indexOf("friendCharm"),1);
             localStorage.setItem(name,"false");
             break;
         case "keyUncommons": 
-            keyAddonPool.splice(keyAddonPool.indexOf("erodeToken"),1);
-            keyAddonPool.splice(keyAddonPool.indexOf("prayBeads"),1);
             keyAddonPool.splice(keyAddonPool.indexOf("shrillWhis"),1);
             localStorage.setItem(name,"false");
             break;
@@ -1426,15 +1415,10 @@ function addonRemovals(name){
             break;
     //Maps
         case "mapCommons":
-            mapAddonPool.splice(mapAddonPool.indexOf("mapAddendum"),1);
             mapAddonPool.splice(mapAddonPool.indexOf("glowInk"),1);
             localStorage.setItem(name,"false");
             break;
         case "mapUncommons": 
-            mapAddonPool.splice(mapAddonPool.indexOf("glassBead"),1);
-            mapAddonPool.splice(mapAddonPool.indexOf("redTwine"),1);
-            mapAddonPool.splice(mapAddonPool.indexOf("retardantJelly"),1);
-            mapAddonPool.splice(mapAddonPool.indexOf("unusualStamp"),1);
             mapAddonPool.splice(mapAddonPool.indexOf("gnarlCompass"),1);
             localStorage.setItem(name,"false");
             break;
@@ -4981,7 +4965,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Causes you to <b>scream and reveal your Aura to the Killer</b> for <b>5 seconds</b>.</li></ul>`;
                 break;
             case "teaTouUp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkToughenUp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkThrowDown.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Toughen Up";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured</b>, whenever <b>another Survivor within 24 metres of your location blinds the Killer by any means or stuns them using a Pallet</b>, <i>Teamwork: Toughen Up</i> triggers its effect:
@@ -5017,7 +5001,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Last Stand</i> is <b>disabled for the remainder of the Trial after use</b>.`;
                 break;
             case "teaThrDow":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkThrowDown.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkToughenUp.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Throw Down";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>blind the Killer by any means or stun them using a Pallet</b>, <i>Teamwork: Throw Down</i> triggers its effect:
@@ -5485,23 +5469,11 @@ function fixedAddons(addon1,addon2){
             break;
     //Key
         //Common
-        case "prayRope": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_prayerRope.png";
-            document.getElementById("addonName1").innerHTML="Prayer Rope";
-            break;
         case "friendCharm": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconIAddon_FriendshipCharm.png";
             document.getElementById("addonName1").innerHTML="Friendship Charm";
             break;
         //Uncommon
-        case "erodeToken": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_tokenErroded.png";
-            document.getElementById("addonName1").innerHTML="Eroded Token";
-            break;
-        case "prayBeads": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_prayerBeads.png";
-            document.getElementById("addonName1").innerHTML="Prayer Beads";
-            break;
         case "shrillWhis": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_ShrillWhistle.png";
             document.getElementById("addonName1").innerHTML="Shrill Whistle";
@@ -5523,31 +5495,11 @@ function fixedAddons(addon1,addon2){
             break;
     //Maps
         //Common
-        case "mapAddendum": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_mapAddendum.png";
-            document.getElementById("addonName1").innerHTML="Map Addendum";
-            break;
         case "glowInk": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GlowingInk.png";
             document.getElementById("addonName1").innerHTML="Glowing Ink";
             break;
         //Uncommon
-        case "glassBead": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_beadGlass.png";
-            document.getElementById("addonName1").innerHTML="Glass Bead";
-            break;
-        case "redTwine": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_ropeRed.png";
-            document.getElementById("addonName1").innerHTML="Red Twine";
-            break;
-        case "retardantJelly": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_retardantJelly.png";
-            document.getElementById("addonName1").innerHTML="Retardant Jelly";
-            break;
-        case "unusualStamp": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_stampUnusual.png";
-            document.getElementById("addonName1").innerHTML="Unusual Stamp";
-            break;
         case "gnarlCompass": 
             document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GnarledCompass.png";
             document.getElementById("addonName1").innerHTML="Gnarled Compass";

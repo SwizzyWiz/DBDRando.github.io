@@ -1,3 +1,519 @@
+
+let trapperRem = localStorage.getItem("trapper");
+let wraithRem = localStorage.getItem("wraith");
+let hillbillyRem = localStorage.getItem("hillbilly");
+let nurseRem = localStorage.getItem("nurse");
+let shapeRem = localStorage.getItem("shape");
+let hagRem = localStorage.getItem("hag");
+let doctorRem = localStorage.getItem("doctor");
+let huntressRem = localStorage.getItem("huntress");
+let cannibalRem = localStorage.getItem("cannibal");
+let nightmareRem = localStorage.getItem("nightmare");
+let pigRem = localStorage.getItem("pig");
+let clownRem = localStorage.getItem("clown");
+let spiritRem = localStorage.getItem("spirit");
+let legionRem = localStorage.getItem("legion");
+let plagueRem = localStorage.getItem("plague");
+let ghostfaceRem = localStorage.getItem("ghostface");
+let demogorgonRem = localStorage.getItem("demogorgon");
+let oniRem = localStorage.getItem("oni");
+let deathslingerRem = localStorage.getItem("deathslinger");
+let executionerRem = localStorage.getItem("executioner");
+let blightRem = localStorage.getItem("blight");
+let twinsRem = localStorage.getItem("twins");
+let tricksterRem = localStorage.getItem("trickster");
+let nemesisRem = localStorage.getItem("nemesis");
+let cenobiteRem = localStorage.getItem("cenobite");
+let artistRem = localStorage.getItem("artist");
+let onryoRem = localStorage.getItem("onryo");
+let dredgeRem = localStorage.getItem("dredge");
+let mastermindRem = localStorage.getItem("mastermind");
+let knightRem = localStorage.getItem("knight");
+let skullMercRem = localStorage.getItem("skullMerc");
+let singularityRem = localStorage.getItem("singularity");
+let xenomorphRem = localStorage.getItem("xenomorph");
+let goodGuyRem = localStorage.getItem("goodGuy");
+let unknownRem = localStorage.getItem("unknown");
+let lichRem = localStorage.getItem("lich");
+let darkLordRem = localStorage.getItem("darkLord");
+let houndmasterRem = localStorage.getItem("houndmaster");
+let ghoulRem = localStorage.getItem("ghoul");
+let animatronicRem = localStorage.getItem("animatronic");
+//Base Perks
+let univPerksRem = localStorage.getItem("univPerksKill");
+let anyChoRem = localStorage.getItem("anyChoKill");
+let noChoRem = localStorage.getItem("noChoKill");
+//Trapper Perks
+let agiRem = localStorage.getItem("agiKill");
+let bruStrRem = localStorage.getItem("bruStrKill");
+let unnPreRem = localStorage.getItem("unnPreKill");
+//Wraith Perks
+let bloRem = localStorage.getItem("bloKill");
+let preRem = localStorage.getItem("preKill");
+let shaRem = localStorage.getItem("shaKill");
+//Hillbilly Perks
+let endRem = localStorage.getItem("endKill");
+let ligRem = localStorage.getItem("ligKill");
+let tinRem = localStorage.getItem("tinKill");
+//Nurse Perks
+let nurCalRem = localStorage.getItem("nurCalKill");
+let strRem = localStorage.getItem("strKill");
+let thaRem = localStorage.getItem("thaKill");
+//Shape Perks
+let dyiLigRem = localStorage.getItem("dyiLigKill");
+let plaWitYouFooRem = localStorage.getItem("plaWitYouFooKill");
+let savBesLasRem = localStorage.getItem("savBesLasKill");
+//Hag Perks
+let hexDevHopRem = localStorage.getItem("hexDevHopKill");
+let hexRuiRem = localStorage.getItem("hexRuiKill");
+let hexThiSeaRem = localStorage.getItem("hexThiSeaKill");
+//Doctor Perks
+let monAbuRem = localStorage.getItem("monAbuKill");
+let oveRem = localStorage.getItem("oveKill");
+let ovePreRem = localStorage.getItem("ovePreKill");
+//Huntress Perks
+let beaPreRem = localStorage.getItem("beaPreKill");
+let hexHunLulRem = localStorage.getItem("hexHunLulKill");
+let terImpRem = localStorage.getItem("terImpKill");
+//Cannibal Perks
+let bbqRem = localStorage.getItem("bbqKill");
+let fraDemRem = localStorage.getItem("fraDemKill");
+let knoOutRem = localStorage.getItem("knoOutKill");
+//Nightmare Perks
+let bloWarRem = localStorage.getItem("bloWarKill");
+let firUpRem = localStorage.getItem("firUpKill");
+let remMeRem = localStorage.getItem("remMeKill");
+//Pig Perks
+let makYouChoRem = localStorage.getItem("makYouChoKill");
+let scoHooHanTriRem = localStorage.getItem("scoHooHanTriKill");
+let surRem = localStorage.getItem("surKill");
+//Clown Perks
+let bamRem = localStorage.getItem("bamKill");
+let couRem = localStorage.getItem("couKill");
+let popGoWeaRem = localStorage.getItem("popGoWeaKill");
+//Spirit Perks
+let hexHauGroRem = localStorage.getItem("hexHauGroKill");
+let ranRem = localStorage.getItem("ranKill");
+let spiFurRem = localStorage.getItem("spiFurKill");
+//Legion Perks
+let disRem = localStorage.getItem("disKill");
+let iroMaiRem = localStorage.getItem("iroMaiKill");
+let madGriRem = localStorage.getItem("madGriKill");
+//Plague Perks
+let corIntRem = localStorage.getItem("corIntKill");
+let darDevRem = localStorage.getItem("darDevKill");
+let infFriRem = localStorage.getItem("infFriKill");
+//Ghost Face Perks
+let furChaRem = localStorage.getItem("furChaKill");
+let imAllEarRem = localStorage.getItem("imAllEarKill");
+let thrTreRem = localStorage.getItem("thrTreKill");
+//Demogorgon Perks
+let cruLimRem = localStorage.getItem("cruLimKill");
+let minRem = localStorage.getItem("minKill");
+let surgeRem = localStorage.getItem("surgeKill");
+//Oni Perks
+let bloEchRem = localStorage.getItem("bloEchKill");
+let nemRem = localStorage.getItem("nemKill");
+let zanTacRem = localStorage.getItem("zanTacKill");
+//Deathslinger Perks
+let deaManSwiRem = localStorage.getItem("deaManSwiKill");
+let geaRem = localStorage.getItem("geaKill");
+let hexRetRem = localStorage.getItem("hexRetKill");
+//Executioner Perks
+let deaRem = localStorage.getItem("deaKill");
+let forPenRem = localStorage.getItem("forPenKill");
+let traTorRem = localStorage.getItem("traTorKill");
+//Blight Perks
+let draGriRem = localStorage.getItem("draGriKill");
+let hexBloFavRem = localStorage.getItem("hexBloFavKill");
+let hexUndRem = localStorage.getItem("hexUndKill");
+//Twins Perks
+let couDeGraRem = localStorage.getItem("couDeGraKill");
+let hoaRem = localStorage.getItem("hoaKill");
+let oppRem = localStorage.getItem("oppKill");
+//Trickster Perks
+let hexCroConRem = localStorage.getItem("hexCroConKill");
+let noWayOutRem = localStorage.getItem("noWayOutKill");
+let staRem = localStorage.getItem("staKill");
+//Nemesis Perks
+let eruRem = localStorage.getItem("eruKill");
+let hysRem = localStorage.getItem("hysKill");
+let letPurRem = localStorage.getItem("letPurKill");
+//Cenobite Perks
+let deadRem = localStorage.getItem("deadKill");
+let hexPlaRem = localStorage.getItem("hexPlaKill");
+let scoHooGifPaiRem = localStorage.getItem("scoHooGifPaiKill");
+//Artist Perks
+let griEmbRem = localStorage.getItem("griEmbKill");
+let hexPenRem = localStorage.getItem("hexPenKill");
+let scoHooPaiResRem = localStorage.getItem("scoHooPaiResKill");
+//Onryō Perks
+let calBriRem = localStorage.getItem("calBriKill");
+let merStoRem = localStorage.getItem("merStoKill");
+let scoHooFloRagRem = localStorage.getItem("scoHooFloRagKill");
+//Dredge Perks
+let darRevRem = localStorage.getItem("darRevKill");
+let dissRem = localStorage.getItem("dissKill");
+let sepTouRem = localStorage.getItem("sepTouKill");
+//Mastermind Perks
+let awaAwaRem = localStorage.getItem("awaAwaKill");
+let supAnaRem = localStorage.getItem("supAnaKill");
+let terRem = localStorage.getItem("terKill");
+//Knight Perks
+let hexFacDarRem = localStorage.getItem("hexFacDarKill");
+let hubRem = localStorage.getItem("hubKill");
+let nowHidRem = localStorage.getItem("nowHidKill");
+//Skull Merchant Perks
+let gamAfoRem = localStorage.getItem("gamAfoKill");
+let levRem = localStorage.getItem("levKill");
+let thwRem = localStorage.getItem("thwKill");
+//Singularity Perks
+let forHesRem = localStorage.getItem("forHesKill");
+let genLimRem = localStorage.getItem("genLimKill");
+let macLeaRem = localStorage.getItem("macLeaKill");
+//Xenomorph Perks
+let aliInsRem = localStorage.getItem("aliInsKill");
+let rapBruRem = localStorage.getItem("rapBruKill");
+let ultWeaRem = localStorage.getItem("ultWeaKill");
+//Good Guy Perks
+let batIncRem = localStorage.getItem("batIncKill");
+let friEndRem = localStorage.getItem("friEndKill");
+let hexTwoCanPlaRem = localStorage.getItem("hexTwoCanPlaKill");
+//Unknown Perks
+let unbRem = localStorage.getItem("unbKill");
+let undRem = localStorage.getItem("undKill");
+let unfRem = localStorage.getItem("unfKill");
+//Lich Perks
+let darArrRem = localStorage.getItem("darArrKill");
+let lanTouRem = localStorage.getItem("lanTouKill");
+let weaAttRem = localStorage.getItem("weaAttKill");
+//Dark Lord Perks
+let domRem = localStorage.getItem("domKill");
+let hexWreFatRem = localStorage.getItem("hexWreFatKill");
+let humGreRem = localStorage.getItem("humGreKill");
+//Houndmaster Perks
+let allShaThuRem = localStorage.getItem("allShaThuKill");
+let noQuaRem = localStorage.getItem("noQuaKill");
+let scoHooJagComRem = localStorage.getItem("scoHooJagComKill");
+//Ghoul Perks
+let forEntRem = localStorage.getItem("forEntKill");
+let hexNotButMisRem = localStorage.getItem("hexNotButMisKill");
+let nonAreFreRem = localStorage.getItem("nonAreFreKill");
+//Animatronic Perks
+let hayRem = localStorage.getItem("hayKill");
+let helWanRem = localStorage.getItem("helWanKill");
+let phaFeaRem = localStorage.getItem("phaFeaKill");
+
+//Addons
+let commonsRem = localStorage.getItem("commonsKill");
+let uncommonsRem = localStorage.getItem("uncommonsKill");
+let raresRem = localStorage.getItem("raresKill");
+let veryRaresRem = localStorage.getItem("veryRaresKill");
+let ultraRaresRem = localStorage.getItem("ultraRaresKill");
+
+//Offerings
+//Bloodpoints
+let bloodpointsRem = localStorage.getItem("bloodpointsKill");
+let allCategoriesRem = localStorage.getItem("allCategoriesKill");
+let brutalityRem = localStorage.getItem("brutalityKill");
+let deviousnessRem = localStorage.getItem("deviousnessKill");
+let hunterRem = localStorage.getItem("hunterKill");
+let sacrificeRem = localStorage.getItem("sacrificeKill");
+//Map Modification
+let mapModsRem = localStorage.getItem("mapModsKill");
+let basementRem = localStorage.getItem("basementKill");
+let chestsRem = localStorage.getItem("chestsKill");
+let fogThickRem = localStorage.getItem("fogThickKill");
+let hatchRem = localStorage.getItem("hatchKill");
+let hookRem = localStorage.getItem("hookKill");
+//Realms
+let realmRem = localStorage.getItem("realmKill");
+let azaKeyRem = localStorage.getItem("azaKeyKill");
+let grandmaCookRem = localStorage.getItem("grandmaCookKill");
+let heartLockRem = localStorage.getItem("heartLockKill");
+let charWedPhotoRem = localStorage.getItem("charWedPhotoKill");
+let beefTallowRem = localStorage.getItem("beefTallowKill");
+let airlockDoorsRem = localStorage.getItem("airlockDoorsKill");
+let alienFloraRem = localStorage.getItem("alienFloraKill");
+let crowEyeRem = localStorage.getItem("crowEyeKill");
+let jigsawPieceRem = localStorage.getItem("jigsawPieceKill");
+let shatteredBottleRem = localStorage.getItem("shatteredBottleKill");
+let strodeKeyRem = localStorage.getItem("strodeKeyKill");
+let hawkinsIDRem = localStorage.getItem("hawkinsIDKill");
+let shatteredGlassesRem = localStorage.getItem("shatteredGlassesKill");
+let macmillanBoneRem = localStorage.getItem("macmillanBoneKill");
+let damagedPhotoRem = localStorage.getItem("damagedPhotoKill");
+let rpdBadgeRem = localStorage.getItem("rpdBadgeKill");
+let lastMaskRem = localStorage.getItem("lastMaskKill");
+let marysLetterRem = localStorage.getItem("marysLetterKill");
+let piedPiperRem = localStorage.getItem("piedPiperKill");
+let ichorousLoamRem = localStorage.getItem("ichorousLoamKill");
+let yamaokaCrestRem = localStorage.getItem("yamaokaCrestKill");
+//Secrets/Wards
+let secretsWardsRem = localStorage.getItem("secretsWardsKill");
+let sepShroudRem = localStorage.getItem("sepShroudKill");
+let moriRem = localStorage.getItem("moriKill");
+let wardsRem = localStorage.getItem("wardsKill");
+
+function loadPref(){
+//Characters
+    if(trapperRem=="true"){checking("trapper",true);}
+    if(wraithRem=="true"){checking("wraith",true);}
+    if(hillbillyRem=="true"){checking("hillbilly",true);}
+    if(nurseRem=="true"){checking("nurse",true);}
+    if(shapeRem=="true"){checking("shape",true);}
+    if(hagRem=="true"){checking("hag",true);}
+    if(doctorRem=="true"){checking("doctor",true);}
+    if(huntressRem=="true"){checking("huntress",true);}
+    if(cannibalRem=="true"){checking("cannibal",true);}
+    if(nightmareRem=="true"){checking("nightmare",true);}
+    if(pigRem=="true"){checking("pig",true);}
+    if(clownRem=="true"){checking("clown",true);}   
+    if(spiritRem=="true"){checking("spirit",true);}
+    if(legionRem=="true"){checking("legion",true);}
+    if(plagueRem=="true"){checking("plague",true);}
+    if(ghostfaceRem=="true"){checking("ghostface",true);}
+    if(demogorgonRem=="true"){checking("demogorgon",true);}
+    if(oniRem=="true"){checking("oni",true);}
+    if(deathslingerRem=="true"){checking("deathslinger",true);}
+    if(executionerRem=="true"){checking("executioner",true);}
+    if(blightRem=="true"){checking("blight",true);}
+    if(twinsRem=="true"){checking("twins",true);}
+    if(tricksterRem=="true"){checking("trickster",true);}
+    if(nemesisRem=="true"){checking("nemesis",true);}
+    if(cenobiteRem=="true"){checking("cenobite",true);}
+    if(artistRem=="true"){checking("artist",true);}
+    if(onryoRem=="true"){checking("onryo",true);}
+    if(dredgeRem=="true"){checking("dredge",true);}
+    if(mastermindRem=="true"){checking("mastermind",true);}
+    if(knightRem=="true"){checking("knight",true);}
+    if(skullMercRem=="true"){checking("skullMerc",true);}
+    if(singularityRem=="true"){checking("singularity",true);}
+    if(xenomorphRem=="true"){checking("xenomorph",true);}
+    if(goodGuyRem=="true"){checking("goodGuy",true);}
+    if(unknownRem=="true"){checking("unknown",true);}
+    if(lichRem=="true"){checking("lich",true);}
+    if(darkLordRem=="true"){checking("darkLord",true);}
+    if(houndmasterRem=="true"){checking("houndmaster",true);}
+    if(ghoulRem=="true"){checking("ghoul",true);}
+    if(animatronicRem=="true"){checking("animatronic",true);}
+    
+//Perks
+    if(univPerksRem=="true"){checking("univPerks",true);}
+    if(anyChoRem=="true"){checking("anyCho",true);}
+    if(noChoRem=="true"){checking("noCho",true);}
+//Trapper Perks
+    if(agiRem=="true"){checking("agi",true);}  
+    if(bruStrRem=="true"){checking("bruStr",true);}  
+    if(unnPreRem=="true"){checking("unnPre",true);} 
+//Wraith Perks
+    if(bloRem=="true"){checking("blo",true);}  
+    if(preRem=="true"){checking("pre",true);}  
+    if(shaRem=="true"){checking("sha",true);} 
+//Hillbilly Perks
+    if(endRem=="true"){checking("end",true);}  
+    if(ligRem=="true"){checking("lig",true);}  
+    if(tinRem=="true"){checking("tin",true);}  
+//Nurse Perks
+    if(nurCalRem=="true"){checking("nurCal",true);}  
+    if(strRem=="true"){checking("str",true);}  
+    if(thaRem=="true"){checking("tha",true);}  
+//Shape Perks
+    if(dyiLigRem=="true"){checking("dyiLig",true);}  
+    if(plaWitYouFooRem=="true"){checking("plaWitYouFoo",true);}  
+    if(savBesLasRem=="true"){checking("savBesLas",true);}  
+//Hag Perks
+    if(hexDevHopRem=="true"){checking("hexDevHop",true);}  
+    if(hexRuiRem=="true"){checking("hexRui",true);}  
+    if(hexThiSeaRem=="true"){checking("hexThiSea",true);}  
+//Doctor Perks
+    if(monAbuRem=="true"){checking("monAbu",true);}  
+    if(oveRem=="true"){checking("ove",true);}  
+    if(ovePreRem=="true"){checking("ovePre",true);}  
+//Huntress Perks
+    if(beaPreRem=="true"){checking("beaPre",true);}  
+    if(hexHunLulRem=="true"){checking("hexHunLul",true);}  
+    if(terImpRem=="true"){checking("terImp",true);}  
+//Cannibal Perks
+    if(bbqRem=="true"){checking("bbq",true);}  
+    if(fraDemRem=="true"){checking("fraDem",true);}  
+    if(knoOutRem=="true"){checking("knoOut",true);}  
+//Nightmare Perks
+    if(bloWarRem=="true"){checking("bloWar",true);}  
+    if(firUpRem=="true"){checking("firUp",true);}  
+    if(remMeRem=="true"){checking("remMe",true);}  
+//Pig Perks
+    if(makYouChoRem=="true"){checking("makYouCho",true);}  
+    if(scoHooHanTriRem=="true"){checking("scoHooHanTri",true);}  
+    if(surRem=="true"){checking("sur",true);}  
+//Clown Perks
+    if(bamRem=="true"){checking("bam",true);}  
+    if(couRem=="true"){checking("cou",true);}  
+    if(popGoWeaRem=="true"){checking("popGoWea",true);}  
+//Spirit Perks
+    if(hexHauGroRem=="true"){checking("hexHauGro",true);}  
+    if(ranRem=="true"){checking("ran",true);}  
+    if(spiFurRem=="true"){checking("spiFur",true);}  
+//Legion Perks
+    if(disRem=="true"){checking("dis",true);}  
+    if(iroMaiRem=="true"){checking("iroMai",true);}  
+    if(madGriRem=="true"){checking("madGri",true);}  
+//Plague Perks
+    if(corIntRem=="true"){checking("corInt",true);}  
+    if(darDevRem=="true"){checking("darDev",true);}  
+    if(infFriRem=="true"){checking("infFri",true);}  
+//Ghost Face Perks
+    if(furChaRem=="true"){checking("furCha",true);}  
+    if(imAllEarRem=="true"){checking("imAllEar",true);}  
+    if(thrTreRem=="true"){checking("thrTre",true);}  
+//Demogorgon Perks
+    if(cruLimRem=="true"){checking("cruLim",true);}  
+    if(minRem=="true"){checking("min",true);}  
+    if(surgeRem=="true"){checking("surge",true);}  
+//Oni Perks
+    if(bloEchRem=="true"){checking("bloEch",true);}  
+    if(nemRem=="true"){checking("nem",true);}  
+    if(zanTacRem=="true"){checking("zanTac",true);}  
+//Deathslinger Perks
+    if(deaManSwiRem=="true"){checking("deaManSwi",true);}  
+    if(geaRem=="true"){checking("gea",true);}  
+    if(hexRetRem=="true"){checking("hexRet",true);}  
+//Executioner Perks
+    if(deaRem=="true"){checking("dea",true);}  
+    if(forPenRem=="true"){checking("forPen",true);}  
+    if(traTorRem=="true"){checking("traTor",true);}  
+//Blight Perks
+    if(draGriRem=="true"){checking("draGri",true);}  
+    if(hexBloFavRem=="true"){checking("hexBloFav",true);}  
+    if(hexUndRem=="true"){checking("hexUnd",true);}  
+//Twins Perks
+    if(couDeGraRem=="true"){checking("couDeGra",true);}  
+    if(hoaRem=="true"){checking("hoa",true);}  
+    if(oppRem=="true"){checking("opp",true);}  
+//Trickster Perks
+    if(hexCroConRem=="true"){checking("hexCroCon",true);}  
+    if(noWayOutRem=="true"){checking("noWayOut",true);}  
+    if(staRem=="true"){checking("sta",true);}  
+//Nemesis Perks
+    if(eruRem=="true"){checking("eru",true);}  
+    if(hysRem=="true"){checking("hys",true);}  
+    if(letPurRem=="true"){checking("letPur",true);}  
+//Cenobite Perks
+    if(deadRem=="true"){checking("dead",true);}  
+    if(hexPlaRem=="true"){checking("hexPla",true);}  
+    if(scoHooGifPaiRem=="true"){checking("scoHooGifPai",true);}  
+//Artist Perks
+    if(griEmbRem=="true"){checking("griEmb",true);}  
+    if(hexPenRem=="true"){checking("hexPen",true);}  
+    if(scoHooPaiResRem=="true"){checking("scoHooPaiRes",true);}  
+//Onryō Perks
+    if(calBriRem=="true"){checking("calBri",true);}  
+    if(merStoRem=="true"){checking("merSto",true);}  
+    if(scoHooFloRagRem=="true"){checking("scoHooFloRag",true);}  
+//Dredge Perks
+    if(darRevRem=="true"){checking("darRev",true);}  
+    if(dissRem=="true"){checking("diss",true);}  
+    if(sepTouRem=="true"){checking("sepTou",true);}  
+//Mastermind Perks
+    if(awaAwaRem=="true"){checking("awaAwa",true);}  
+    if(supAnaRem=="true"){checking("supAna",true);}  
+    if(terRem=="true"){checking("ter",true);}  
+//Knight Perks
+    if(hexFacDarRem=="true"){checking("hexFacDar",true);}  
+    if(hubRem=="true"){checking("hub",true);}  
+    if(nowHidRem=="true"){checking("nowHid",true);}  
+//Skull Merchant Perks
+    if(gamAfoRem=="true"){checking("gamAfo",true);}  
+    if(levRem=="true"){checking("lev",true);}  
+    if(thwRem=="true"){checking("thw",true);}  
+//Singularity Perks
+    if(forHesRem=="true"){checking("forHes",true);}  
+    if(genLimRem=="true"){checking("genLim",true);}  
+    if(macLeaRem=="true"){checking("macLea",true);}  
+//Xenomorph Perks
+    if(aliInsRem=="true"){checking("aliIns",true);}  
+    if(rapBruRem=="true"){checking("rapBru",true);}  
+    if(ultWeaRem=="true"){checking("ultWea",true);}  
+//Good Guy Perks
+    if(batIncRem=="true"){checking("batInc",true);}  
+    if(friEndRem=="true"){checking("friEnd",true);} 
+    if(hexTwoCanPlaRem=="true"){checking("hexTwoCanPla",true);}  
+//Unknown Perks
+    if(unbRem=="true"){checking("unb",true);}  
+    if(undRem=="true"){checking("und",true);} 
+    if(unfRem=="true"){checking("unf",true);}  
+//Lich Perks
+    if(darArrRem=="true"){checking("darArr",true);}  
+    if(lanTouRem=="true"){checking("lanTou",true);}  
+    if(weaAttRem=="true"){checking("weaAtt",true);} 
+//Dark Lord Perks
+    if(domRem=="true"){checking("dom",true);}  
+    if(hexWreFatRem=="true"){checking("hexWreFat",true);}  
+    if(humGreRem=="true"){checking("humGre",true);}  
+//Houndmaster Perks
+    if(allShaThuRem=="true"){checking("allShaThu",true);}  
+    if(noQuaRem=="true"){checking("noQua",true);}  
+    if(scoHooJagComRem=="true"){checking("scoHooJagCom",true);}  
+//Ghoul Perks
+    if(forEntRem=="true"){checking("forEnt",true);}  
+    if(hexNotButMisRem=="true"){checking("hexNotButMis",true);}  
+    if(nonAreFreRem=="true"){checking("nonAreFre",true);}  
+//Animatronic Perks
+    if(hayRem=="true"){checking("hay",true);}  
+    if(helWanRem=="true"){checking("helWan",true);}  
+    if(phaFeaRem=="true"){checking("phaFea",true);}  
+    
+//Addons
+    if(commonsRem=="true"){checking("commons",true);}
+    if(uncommonsRem=="true"){checking("uncommons",true);}
+    if(raresRem=="true"){checking("rares",true);}
+    if(veryRaresRem=="true"){checking("veryRares",true);}
+    if(ultraRaresRem=="true"){checking("ultraRares",true);}
+
+//Offerings
+//Bloodpoints
+    if (bloodpointsRem=="true"){checking("bloodpoints",true);}
+    if (allCategoriesRem=="true"){checking("allCategories",true);}
+    if (brutalityRem=="true"){checking("brutality",true);}
+    if (deviousnessRem=="true"){checking("deviousness",true);}
+    if (hunterRem=="true"){checking("hunter",true);}
+    if (sacrificeRem=="true"){checking("sacrifice",true);}
+//Map Modifiaction
+    if (mapModsRem=="true"){checking("mapMods",true);}
+    if (basementRem=="true"){checking("basement",true);}
+    if (chestsRem=="true"){checking("chests",true);}
+    if (fogThickRem=="true"){checking("fogThick",true);}
+    if (hatchRem=="true"){checking("hatch",true);}
+    if (hookRem=="true"){checking("hook",true);}
+//Realms
+    if (realmRem=="true"){checking("realm",true);}
+    if (azaKeyRem=="true"){checking("azaKey",true);}
+    if (grandmaCookRem=="true"){checking("grandmaCook",true);}
+    if (heartLockRem=="true"){checking("heartLock",true);}
+    if (charWedPhotoRem=="true"){checking("charWedPhoto",true);}
+    if (beefTallowRem=="true"){checking("beefTallow",true);}
+    if (airlockDoorsRem=="true"){checking("airlockDoors",true);}
+    if (alienFloraRem=="true"){checking("alienFlora",true);}
+    if (crowEyeRem=="true"){checking("crowEye",true);}
+    if (jigsawPieceRem=="true"){checking("jigsawPiece",true);}
+    if (shatteredBottleRem=="true"){checking("shatteredBottle",true);}
+    if (strodeKeyRem=="true"){checking("strodeKey",true);}
+    if (hawkinsIDRem=="true"){checking("hawkinsID",true);}
+    if (shatteredGlassesRem=="true"){checking("shatteredGlasses",true);}
+    if (macmillanBoneRem=="true"){checking("macmillanBone",true);}
+    if (damagedPhotoRem=="true"){checking("damagedPhoto",true);}
+    if (rpdBadgeRem=="true"){checking("rpdBadge",true);}
+    if (lastMaskRem=="true"){checking("lastMask",true);}
+    if (marysLetterRem=="true"){checking("marysLetter",true);}
+    if (piedPiperRem=="true"){checking("piedPiper",true);}
+    if (ichorousLoamRem=="true"){checking("ichorousLoam",true);}
+    if (yamaokaCrestRem=="true"){checking("yamaokaCrest",true);}
+//Secrets/Wards
+    if (secretsWardsRem=="true"){checking("secretsWards",true);}
+    if (sepShroudRem=="true"){checking("sepShroud",true);}
+    if (moriRem=="true"){checking("mori",true);}
+    if (wardsRem=="true"){checking("wards",true);}
+}
 //Dropdown Button Functions
 function dropdownSelections(){
     $("#selectionsKill").slideToggle("slow");
@@ -73,8 +589,10 @@ const offeringPool = ["none", "anyOffering"];
 function namedCharPooled(name){
     if($('#' + name).is(":checked") && !(charPool.includes(name))){
         charPool.push(name);
+        localStorage.setItem(name,"true");
     } if (!$('#' + name).is(":checked")) {
         charPool.splice(charPool.indexOf(name),1);
+        localStorage.setItem(name,"false");
     } else {
         
     }
@@ -96,8 +614,10 @@ function randomChar(){
 function namedPerkPooled(name){
     if($('#' + name).is(":checked") && !(perkPool.includes(name))){
         perkPool.push(name);
+        localStorage.setItem(name + "Kill","true");
     } if (!$('#' + name).is(":checked")) {
         perkPool.splice(perkPool.indexOf(name),1);
+        localStorage.setItem(name + "Kill","false");
     } else {
         
     }
@@ -111,6 +631,7 @@ function multiPerkPooled(className, name,displayID){
             perkPool.push(name);
         }
         revealPerkOptions(className);
+        localStorage.setItem(name + "Kill","true");
     } if (!$('#' + name).is(":checked") && perkPool.includes(name)){
         let p = perkPool.indexOf(name);
         while (p > -1){
@@ -118,6 +639,7 @@ function multiPerkPooled(className, name,displayID){
             p = perkPool.indexOf(name);
         }
         revealPerkOptions(className);
+        localStorage.setItem(name + "Kill","false");
     }
 }           
 function increase(id,name){
@@ -153,6 +675,7 @@ function universalPerkPooled(name){
         perkPool.push("spiFroSha");
         perkPool.push("unr");
         perkPool.push("whi");
+        localStorage.setItem(name + "Kill","true");
     } if (!$('#' + name).is(":checked")){
         perkPool.splice((perkPool.indexOf("bitMur")),1);
         perkPool.splice((perkPool.indexOf("dee")),1);
@@ -167,6 +690,7 @@ function universalPerkPooled(name){
         perkPool.splice((perkPool.indexOf("spiFroSha")),1);
         perkPool.splice((perkPool.indexOf("unr")),1);
         perkPool.splice((perkPool.indexOf("whi")),1);
+        localStorage.setItem(name + "Kill","false");
     }
 }
 function randomPerks(){
@@ -227,6 +751,13 @@ function showTooltip(id){
     }
 }
 //Add-ons Functions
+function recordedAddon(name){
+    if($('#' + name).is(":checked")){
+        localStorage.setItem(name + "Kill","true");
+    } if (!$('#' + name).is(":checked")) {
+        localStorage.setItem(name + "Kill","false");
+    }
+}
 function resetAddons(){
     for (let addLen = addonPool.length - 1; addLen > -1; addLen--){
         addonPool.splice(addLen,1);
@@ -1741,9 +2272,11 @@ function namedOfferingSelected(name){
     if ($('#' + name).is(":checked")){
         selectOfferingOptions(name);
         $('#' + name + "Options").slideToggle("slow");
+        localStorage.setItem(name + "Kill","true");
     } if (!$('#' + name).is(":checked")){
         deselectOfferingOptions(name);
         $('#' + name + "Options").slideToggle("slow");
+        localStorage.setItem(name + "Kill","false");
     }
 }
 function selectOfferingOptions(name){
@@ -2101,123 +2634,157 @@ function namedOfferingPooled(name){
                 offeringPool.push("hollowShell");
                 offeringPool.push("survPudding");
                 offeringPool.push("bloPartStre");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "brutality": 
                 offeringPool.push("tanager");
                 offeringPool.push("devTanager");
                 offeringPool.push("ardTanager");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "deviousness": 
                 offeringPool.push("raven");
                 offeringPool.push("devRaven");
                 offeringPool.push("ardRaven");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "hunter": 
                 offeringPool.push("spotOwl");
                 offeringPool.push("devSpotOwl");
                 offeringPool.push("ardSpotOwl");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "sacrifice": 
                 offeringPool.push("shrike");
                 offeringPool.push("devShrike");
                 offeringPool.push("ardShrike");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "basement": 
                 offeringPool.push("bloodBlue");
                 offeringPool.push("tornBlue");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "chests":
                 offeringPool.push("scratchCoin");
                 offeringPool.push("cutCoin");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "fogThick": 
                 offeringPool.push("clearRea");
                 offeringPool.push("faintRea");
                 offeringPool.push("hazyRea");
                 offeringPool.push("murkyRea");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "hatch": 
                 offeringPool.push("annoBlue");
                 offeringPool.push("vigoBlue");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "hook": 
                 offeringPool.push("mouldyOak");
                 offeringPool.push("rotOak");
                 offeringPool.push("putrOak");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "azaKey": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "grandmaCook": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "heartLock": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "charWedPhoto": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "beefTallow": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "airlockDoors": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "alienFlora": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "crowEye": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "jigsawPiece":
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "shatteredBottle": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "strodeKey": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "hawkinsID": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "shatteredGlasses": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "macmillanBone": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "damagedPhoto": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "rpdBadge": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "lastMask": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "marysLetter": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "piedPiper": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "ichorousLoam": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "yamaokaCrest": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "sepShroud": 
                 offeringPool.push(name);
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "mori": 
                 offeringPool.push("ivoryMori");
                 offeringPool.push("ebonyMori");
+                localStorage.setItem(name + "Kill","true");
                 break;
             case "wards": 
                 offeringPool.push("sacWard");
                 offeringPool.push("blackWard");
+                localStorage.setItem(name + "Kill","true");
                 break;
             default: 
 
@@ -2225,253 +2792,160 @@ function namedOfferingPooled(name){
     }if (!$('#' + name).is(":checked")){
         switch (name){
             case "allCategories": 
-                offeringPool.push("hollowShell");
-                offeringPool.push("survPudding");
-                offeringPool.push("bloPartStre");
-                break;
-            case "brutality": 
-                offeringPool.push("tanager");
-                offeringPool.push("devTanager");
-                offeringPool.push("ardTanager");
-                break;
-            case "deviousness": 
-                offeringPool.push("raven");
-                offeringPool.push("devRaven");
-                offeringPool.push("ardRaven");
-                break;
-            case "hunter": 
-                offeringPool.push("spotOwl");
-                offeringPool.push("devSpotOwl");
-                offeringPool.push("ardSpotOwl");
-                break;
-            case "sacrifice": 
-                offeringPool.push("shrike");
-                offeringPool.push("devShrike");
-                offeringPool.push("ardShrike");
-                break;
-            case "basement": 
-                offeringPool.push("bloodBlue");
-                offeringPool.push("tornBlue");
-                break;
-            case "chests":
-                offeringPool.push("scratchCoin");
-                offeringPool.push("cutCoin");
-                break;
-            case "fogThick": 
-                offeringPool.push("clearRea");
-                offeringPool.push("faintRea");
-                offeringPool.push("hazyRea");
-                offeringPool.push("murkyRea");
-                break;
-            case "hatch": 
-                offeringPool.push("annoBlue");
-                offeringPool.push("vigoBlue");
-                break;
-            case "hook": 
-                offeringPool.push("mouldyOak");
-                offeringPool.push("rotOak");
-                offeringPool.push("putrOak");
-                break;
-            case "azaKey": 
-                offeringPool.push(name);
-                break;
-            case "grandmaCook": 
-                offeringPool.push(name);
-                break;
-            case "heartLock": 
-                offeringPool.push(name);
-                break;
-            case "charWedPhoto": 
-                offeringPool.push(name);
-                break;
-            case "beefTallow": 
-                offeringPool.push(name);
-                break;
-            case "airlockDoors": 
-                offeringPool.push(name);
-                break;
-            case "alienFlora": 
-                offeringPool.push(name);
-                break;
-            case "crowEye": 
-                offeringPool.push(name);
-                break;
-            case "jigsawPiece":
-                offeringPool.push(name);
-                break;
-            case "shatteredBottle": 
-                offeringPool.push(name);
-                break;
-            case "strodeKey": 
-                offeringPool.push(name);
-                break;
-            case "hawkinsID": 
-                offeringPool.push(name);
-                break;
-            case "shatteredGlasses": 
-                offeringPool.push(name);
-                break;
-            case "macmillanBone": 
-                offeringPool.push(name);
-                break;
-            case "damagedPhoto": 
-                offeringPool.push(name);
-                break;
-            case "rpdBadge": 
-                offeringPool.push(name);
-                break;
-            case "lastMask": 
-                offeringPool.push(name);
-                break;
-            case "marysLetter": 
-                offeringPool.push(name);
-                break;
-            case "piedPiper": 
-                offeringPool.push(name);
-                break;
-            case "ichorousLoam": 
-                offeringPool.push(name);
-                break;
-            case "yamaokaCrest": 
-                offeringPool.push(name);
-                break;
-            case "sepShroud": 
-                offeringPool.push(name);
-                break;
-            case "mori": 
-                offeringPool.push("ivoryMori");
-                offeringPool.push("ebonyMori");
-                break;
-            case "wards": 
-                offeringPool.push("sacWard");
-                offeringPool.push("blackWard");
-                break;
-            default: 
-
-        }
-    }if (!$('#' + name).is(":checked")){
-        switch (name){
-            case "allCategories": 
                 offeringPool.splice((offeringPool.indexOf("hollowShell")),1);
                 offeringPool.splice((offeringPool.indexOf("survPudding")),1);
                 offeringPool.splice((offeringPool.indexOf("bloPartStre")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "brutality": 
                 offeringPool.splice((offeringPool.indexOf("tanager")),1);
                 offeringPool.splice((offeringPool.indexOf("devTanager")),1);
                 offeringPool.splice((offeringPool.indexOf("ardTanager")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "deviousness": 
                 offeringPool.splice((offeringPool.indexOf("raven")),1);
                 offeringPool.splice((offeringPool.indexOf("devRaven")),1);
                 offeringPool.splice((offeringPool.indexOf("ardRaven")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "hunter": 
                 offeringPool.splice((offeringPool.indexOf("spotOwl")),1);
                 offeringPool.splice((offeringPool.indexOf("devSpotOwl")),1);
                 offeringPool.splice((offeringPool.indexOf("ardSpotOwl")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "sacrifice": 
                 offeringPool.splice((offeringPool.indexOf("shrike")),1);
                 offeringPool.splice((offeringPool.indexOf("devShrike")),1);
                 offeringPool.splice((offeringPool.indexOf("ardShrike")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "basement": 
                 offeringPool.splice((offeringPool.indexOf("bloodBlue")),1);
                 offeringPool.splice((offeringPool.indexOf("tornBlue")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "chests":
                 offeringPool.splice((offeringPool.indexOf("scratchCoin")),1);
                 offeringPool.splice((offeringPool.indexOf("cutCoin")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "fogThick": 
                 offeringPool.splice((offeringPool.indexOf("clearRea")),1);
                 offeringPool.splice((offeringPool.indexOf("faintRea")),1);
                 offeringPool.splice((offeringPool.indexOf("hazyRea")),1);
                 offeringPool.splice((offeringPool.indexOf("murkyRea")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "hatch": 
                 offeringPool.splice((offeringPool.indexOf("annoBlue")),1);
                 offeringPool.splice((offeringPool.indexOf("vigoBlue")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "hook": 
                 offeringPool.splice((offeringPool.indexOf("mouldyOak")),1);
                 offeringPool.splice((offeringPool.indexOf("rotOak")),1);
                 offeringPool.splice((offeringPool.indexOf("putrOak")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "azaKey": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "grandmaCook": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "heartLock": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "charWedPhoto": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "beefTallow": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "airlockDoors": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "alienFlora": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "crowEye": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "jigsawPiece":
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "shatteredBottle": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "strodeKey": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "hawkinsID": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "shatteredGlasses": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name,"false");
                 break;
             case "macmillanBone": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "damagedPhoto": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "rpdBadge": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "lastMask": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "marysLetter": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "piedPiper": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "ichorousLoam": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "yamaokaCrest": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "sepShroud": 
                 offeringPool.splice((offeringPool.indexOf(name)),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "mori": 
                 offeringPool.splice((offeringPool.indexOf("ivoryMori")),1);
                 offeringPool.splice((offeringPool.indexOf("ebonyMori")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             case "wards": 
                 offeringPool.splice((offeringPool.indexOf("sacWard")),1);
                 offeringPool.splice((offeringPool.indexOf("blackWard")),1);
+                localStorage.setItem(name + "Kill","false");
                 break;
             default: 
             
