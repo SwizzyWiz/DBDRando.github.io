@@ -39,6 +39,7 @@ let darkLordRem = localStorage.getItem("darkLord");
 let houndmasterRem = localStorage.getItem("houndmaster");
 let ghoulRem = localStorage.getItem("ghoul");
 let animatronicRem = localStorage.getItem("animatronic");
+let krasueRem = localStorage.getItem("krasue");
 //Base Perks
 let univPerksRem = localStorage.getItem("univPerksKill");
 let anyChoRem = localStorage.getItem("anyChoKill");
@@ -203,6 +204,10 @@ let nonAreFreRem = localStorage.getItem("nonAreFreKill");
 let hayRem = localStorage.getItem("hayKill");
 let helWanRem = localStorage.getItem("helWanKill");
 let phaFeaRem = localStorage.getItem("phaFeaKill");
+//Krasue Perks
+let hexOveDooRem = localStorage.getItem("hexOveDoo");
+let ravRem = localStorage.getItem("rav");
+let wanEyeRem = localStorage.getItem("wanEye");
 
 //Addons
 let commonsRem = localStorage.getItem("commonsKill");
@@ -297,6 +302,7 @@ function loadPref(){
     if(houndmasterRem=="true"){checking("houndmaster",true);}
     if(ghoulRem=="true"){checking("ghoul",true);}
     if(animatronicRem=="true"){checking("animatronic",true);}
+    if(krasueRem=="true"){checking("krasue",true);}
     
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -461,7 +467,11 @@ function loadPref(){
 //Animatronic Perks
     if(hayRem=="true"){checking("hay",true);}  
     if(helWanRem=="true"){checking("helWan",true);}  
-    if(phaFeaRem=="true"){checking("phaFea",true);}  
+    if(phaFeaRem=="true"){checking("phaFea",true);} 
+//Krasue Perks
+    if(ghoNotRem=="true"){checking("ghoNot",true);}  
+    if(oneTwoThrFouRem=="true"){checking("oneTwoThrFou",true);}  
+    if(roaLifRem=="true"){checking("roaLif",true);} 
     
 //Addons
     if(commonsRem=="true"){checking("commons",true);}
@@ -2252,6 +2262,43 @@ function randomAddons(char){
                 addonPool.push("iridRemnant");
             }
             break;
+        case "krasue":
+        //Commons
+            if($("#commons").is(":checked")){
+                addonPool.push("brokenTiara");
+                addonPool.push("firstLibretto");
+                addonPool.push("lucklessMouse");
+                addonPool.push("stickyLozenge");
+            }
+        //Uncommons
+            if($("#uncommons").is(":checked")){
+                addonPool.push("chunkMalai");
+                addonPool.push("crumpledSheetMusic");
+                addonPool.push("defectiveMetronome");
+                addonPool.push("pigsEye");
+                addonPool.push("wrigglingParasite");
+            }
+        //Rares
+            if($("#rares").is(":checked")){
+                addonPool.push("dulledKnife");
+                addonPool.push("framedNewspaper");
+                addonPool.push("janjiraHand");
+                addonPool.push("spatteredHandkerchief");
+                addonPool.push("theatreBinoculars");
+            }
+        //Very Rares
+            if($("#veryRares").is(":checked")){
+                addonPool.push("lorenzaRemain");
+                addonPool.push("mysteriousElixir");
+                addonPool.push("queenSceptre");
+                addonPool.push("rottenSwine");
+            }
+        //Ultra Rares
+            if($("#ultraRares").is(":checked")){
+                addonPool.push("chickenHead");
+                addonPool.push("shreddedGown");
+            }
+            break;
         default:
 
     }
@@ -3020,6 +3067,7 @@ function selectAllKill(){
     if(!$("#houndmaster").is(":checked")){checking("houndmaster",true);}
     if(!$("#ghoul").is(":checked")){checking("ghoul",true);}
     if(!$("#animatronic").is(":checked")){checking("animatronic",true);}
+    if(!$("#krasue").is(":checked")){checking("krasue",true);}
 }
 function deselectAllKill(){
     if($("#trapper").is(":checked")){checking("trapper",false);}
@@ -3062,6 +3110,7 @@ function deselectAllKill(){
     if($("#houndmaster").is(":checked")){checking("houndmaster",false);}
     if($("#ghoul").is(":checked")){checking("ghoul",false);}
     if($("#animatronic").is(":checked")){checking("animatronic",false);}
+    if($("#krasue").is(":checked")){checking("krasue",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -3227,7 +3276,11 @@ function selectAllPerk(){
     //Animatronic Perks
     if(!$("#hay").is(":checked")){checking("hay",true);}  
     if(!$("#helWan").is(":checked")){checking("helWan",true);}  
-    if(!$("#phaFea").is(":checked")){checking("phaFea",true);}  
+    if(!$("#phaFea").is(":checked")){checking("phaFea",true);} 
+    //Krasue Perks
+    if(!$("#hexOveDoo").is(":checked")){checking("hexOveDoo",true);}  
+    if(!$("#rav").is(":checked")){checking("rav",true);}  
+    if(!$("#wanEye").is(":checked")){checking("wanEye",true);} 
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -3393,6 +3446,10 @@ function deselectAllPerk(){
     if($("#hay").is(":checked")){checking("hay",false);}  
     if($("#helWan").is(":checked")){checking("helWan",false);}  
     if($("#phaFea").is(":checked")){checking("phaFea",false);} 
+    //Krasue Perks
+    if($("#hexOveDoo").is(":checked")){checking("hexOveDoo",false);}  
+    if($("#rav").is(":checked")){checking("rav",false);}  
+    if($("#wanEye").is(":checked")){checking("wanEye",false);} 
 }
 //Add-ons
 function selectAllAddon(){
@@ -3707,6 +3764,12 @@ function fixedChar(char){
             document.getElementById("powerImg").src = "Powers/Powers/Ketchup/iconPowers_throw.png";
             document.getElementById("powerName").innerHTML = "Fazbear's Fright";
             break;
+        case "krasue":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Maple/T_UI_K41_storeBackground.png";
+            document.getElementById("charName").innerHTML = "The Krasue";
+            document.getElementById("powerImg").src = "Powers/Powers/Maple/T_UI_iconPowers_HeadForm_K41.png";
+            document.getElementById("powerName").innerHTML = "Unbodied Flesh";
+            break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomKiller Placeholder.png";
             document.getElementById("charName").innerHTML = "Any Killer (Defaulted)";
@@ -3759,11 +3822,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "dee":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Deerstalker.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deerstalker";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of all Survivors in the Dying State are revealed to you within 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">28</b>/
-                <b style="color: #ac3ee3;">36</b> metres`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>reads your Aura</b>, <i>Deerstalker</i> activates for the <b>same duration as their Aura-reading action</b>:
+                <ul><li>The <b>Aura of that Survivor</b> is revealed to you</li></ul>
+                Furthermore, the following effect triggers automatically every 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds:
+                <ul><li><b>Your Aura</b> is revealed for <b>3 seconds</b> to the Survivor with <b>currently the lowest cumulative Chase time</b></li></ul>`;
                 break;
             case "dist":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Distressing.png";
@@ -3994,11 +4060,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "nurCal":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ANursesCalling.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "A Nurse's Calling";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "19pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of Survivors who are healing or being healed are revealed to you within 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">24</b>/
-                <b style="color: #ac3ee3;">28</b> metres`;
+                <b style="color: #e8c252;">28</b>/
+                <b style="color: #199b1e;">30</b>/
+                <b style="color: #ac3ee3;">32</b> metres <br><br>
+                Does not affect Survivors that are in the <b>Dying State</b>`;
                 break;
             case "str":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Stridor.png";
@@ -4087,11 +4154,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "hexRui":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_Ruin.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Ruin";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is not being repaired by a Survivor, it will immediately and automatically regress its Repair progress at 
-                <b style="color: #e8c252;">50</b>/
-                <b style="color: #199b1e;">75</b>/
-                <b style="color: #ac3ee3;">100</b> % of the normal Regression speed`;
+                <b style="color: #e8c252;">100</b>/
+                <b style="color: #199b1e;">125</b>/
+                <b style="color: #ac3ee3;">150</b> % of the normal Regression speed`;
                 break;
             case "hexThiSea":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_TheThirdSeal.png";
@@ -4106,16 +4173,17 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "monAbu":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_MonitorAndAbuse.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Monitor & Abuse";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the base value of your <b>Terror Radius</b> by 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">7</b>/
-                <b style="color: #ac3ee3;">8</b> metres for the entire Trial.<br><br>
-                Whenever you are not in a Chase with a Survivor, the following effect applies:
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>are in a Chase with a Survivor</b>, the following effect applies: 
+                <ul><li>Increases your <b>Terror Radius</b> 
+                <b style="color: #e8c252;">5</b>/
+                <b style="color: #199b1e;">10</b>/
+                <b style="color: #ac3ee3;">15</b> %.</li></ul>
+                Whenever you are <b>not in a Chase with a Survivor</b>, the following effect applies:
                 <ul><li>Reduces your <b>Terror Radius</b> by 
-                <b style="color: #e8c252;">12</b>/
-                <b style="color: #199b1e;">14</b>/
-                <b style="color: #ac3ee3;">16</b> metres</li></ul>`;
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> %</li></ul>`;
                 break;
             case "ove":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_GeneratorOvercharge.png";
@@ -4549,9 +4617,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hooking a Survivor, <i>Dead Man's Switch</i> activates:
                 <ul><li>Blocks the first Generator any Survivor stops repairing for 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">45</b>/
-                <b style="color: #ac3ee3;">50</b> seconds</li>
+                <b style="color: #e8c252;">25</b>/
+                <b style="color: #199b1e;">30</b>/
+                <b style="color: #ac3ee3;">35</b> seconds</li>
                 <li>The Blocked Generator is highlighted to you in <b>white</b></li></ul>
                 <i>Dead Man's Switch</i> cannot activate if its effect is still active from a previous activation`;
                 break;
@@ -4670,14 +4738,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "opp":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Oppression.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Oppression";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator activates <i>Oppression</i>:
-                <ul><li>Causes up to <b>3 additional Generators</b> to also start regressing</li>
+                <ul><li>Causes up to <b>4 additional Generators</b> to also start regressing</li>
                 <li>Triggers a difficult Skill Check for all Survivors currently repairing an <b>affected Generator</b></li></ul>
                 <i>Oppression</i> has a cooldown of 
-                <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">40</b> seconds`;
+                <b style="color: #e8c252;">45</b>/
+                <b style="color: #199b1e;">40</b>/
+                <b style="color: #ac3ee3;">35</b> seconds`;
                 break;
         //Trickster Perks
             case "hexCroCon":
@@ -4905,12 +4973,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "sepTou":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_SepticTouch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Septic Touch";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Healing action while they are inside your <b>Terror Radius</b>, that Survivor suffers from the <b>Blindness</b> and <b>Exhausted</b> Status Effects
                 <ul><li>These effects linger for 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">8</b>/
-                <b style="color: #ac3ee3;">10</b> seconds after the Healing action is <b>interrupted by any means</b></li></ul>`;
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds after the Healing action is <b>interrupted by any means</b></li></ul>`;
                 break;
         //Mastermind Perks
             case "awaAwa":
@@ -4995,11 +5063,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_Leverage.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Leverage";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs an Unhook action, they suffer from the following effect for <b>30 seconds</b>:
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs an Unhook action, they suffer from the following effect for <b>60 seconds</b>:
                 <ul><li>Reduces their Healing speed by 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b> %</li></ul>`;
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> %</li></ul>`;
                 break;
             case "thw":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_Thwack.png";
@@ -5075,13 +5143,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_UltimateWeapon.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ultimate Weapon";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Opening a Locker causes all Survivors within <b>32 metres</b> to suffer from the following effects:
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Opening a Locker causes all Survivors within <b>40 metres</b> to suffer from the following effects:
                 <ul><li>Causes them to scream and reveal their location to you</li>
                 <li>Inflicts the <b>Blindness</b> Status Effect for <b>30 seconds</b></li></ul>
                 <i>Ultimate Weapon</i> has a cooldown of 
-                <b style="color: #e8c252;">80</b>/
-                <b style="color: #199b1e;">70</b>/
-                <b style="color: #ac3ee3;">60</b> seconds`;
+                <b style="color: #e8c252;">55</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">45</b> seconds`;
                 break;
         //Good Guy Perks
             case "batInc":
@@ -5162,7 +5230,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Arrogance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Vaulting speed in exchange for increased vulnerability to being blinded and stunned:
-                <ul><li>Permanently increases the duration of Killer Blinds by any means and the duration of Pallet Stuns by <b>+25%</b></li>
+                <ul><li>Permanently increases the duration of Killer Blinds by any means and the duration of Pallet Stuns by <b>15%</b></li>
                 <li>Permanently increases your Vaulting speed by 
                 <b style="color: #e8c252;">15</b>/
                 <b style="color: #199b1e;">20</b>/
@@ -5232,9 +5300,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "All-Shaking Thunder";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After falling from a height, <i>All-Shaking Thunder</i> activates for 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">12</b>/
-                <b style="color: #ac3ee3;">16</b> seconds:
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> seconds:
                 <ul><li>Increases the range of your <b>Lunge Attack</b> by <b>+75%</b></li></ul>
                 <i>All-Shaking Thunder</i> has a cooldown of <b>5 seconds</b>`;
                 break;
@@ -5336,6 +5404,46 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">70</b>/
                 <b style="color: #ac3ee3;">60</b> seconds`;
                 break;   
+        //Krasue Perks
+            case "hexOveDoo":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_HexOvertureOfDoom.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Overture of Doom";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Creates a <b>Hex Totem</b> that <b>curses the farthest Generator from its location</b>:
+                <li>The <b>Aura of the Cursed Generator</b> is highlighted in <b>yellow</b>.</li>
+                When a Survivor repairs the <b>Cursed Generator</b> for at least <b>5 seconds</b>, <i>Hex: Overture of Doom</i> triggers the following effects for 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds:
+                <dl><li>Transfers your <b>Terror Radius</b> to the <b>Cursed Generator</b>.</li>
+                <dd>- <b>This Terror Radius</b> is set to <b>32 metres</b></dd>
+                <li>Grants the <b>Undetectable Status Effect</b></li></dl>
+                Once the <b>Cursed Generator is repaired</b>, the <b>next farthest Generator becomes cursed</b>.<br>
+                All <b>Hex Effects</b> persist until their <b>associated Hex Totem</b> is either <b>cleansed or blessed</b>.`;
+                break;
+            case "rav":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_Ravenous.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Ravenous";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>hook a Survivor for the first time</b>, <i>Ravenous</i> gains <b>1 Token</b>, up to a maximum of <b>4 Tokens</b>.<br>
+                Once you accumulate <b>4 Tokens</b>, <b>all Survivors</b> suffer from the following effects:
+                <ul><li>Causes them to scream</li>
+                <li>Inflicts the <b>Exposed Status Effect</b> for 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">60</b> seconds</li></ul>`;
+                break;  
+            case "wanEye":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_WanderingEye.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Wandering Eye";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>start chasing a Survivor</b>, <i>Wandering Eye</i> triggers the following effect:
+                <ul><li>The <b>Auras of all other injured Survivors</b> within <b>20 metres</b> of your location are revealed to you for <b>5 seconds</b></li></ul>
+                <i>Wandering Eye</i> has a cooldown of 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
+                break; 
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoicePerkKillerPlaceholder.png";
@@ -8802,6 +8910,92 @@ function fixedAddon(addon1,addon2){
             case "iridRemnant": 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_IridescentRemnant.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Remnant";
+                break;
+        //Krasue Addons
+            //Commons
+            case "brokenTiara": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_BrokenTiara.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Tiara";
+                break;
+            case "firstLibretto": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_FirstLibretto.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "First Libretto";
+                break;
+            case "lucklessMouse": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_LucklessMouse.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Luckless Mouse";
+                break;
+            case "stickyLozenge": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_StickyLozenge.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Sticky Lozenge";
+                break;
+            //Uncommons
+            case "chunkMalai": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ChunkOfMalai.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Chunk of Malai";
+                break;
+            case "crumpledSheetMusic": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_CrumpledSheetMusic.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Crumpled Sheet Music";
+                break;
+            case "defectiveMetronome": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_DefectiveMetronome.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Defective Metronome";
+                break;
+            case "pigsEye": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_PigsEye.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Pig's Eye";
+                break;
+            case "wrigglingParasite": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_WrigglingParasite.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Wriggling Parasite";
+                break;
+            //Rares
+            case "dulledKnife": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_DulledKnife.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Dulled Knife";
+                break;
+            case "framedNewspaper": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_FramedNewspaper.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Framed Newspaper";
+                break;
+            case "janjiraHand": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_JanjirasHand.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Janjira's Hand";
+                break;
+            case "spatteredHandkerchief": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_SpottedHandkerchief.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Spattered Handkerchief";
+                break;
+            case "theatreBinoculars": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_TheaterBinoculars.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Theatre Binoculars";
+                break;
+            //Very Rares
+            case "lorenzaRemain": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_LorenzasRemains.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Lorenza's Remains";
+                break;
+            case "mysteriousElixir": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_IridescentElixir.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Mysterious Elixir";
+                break;
+            case "queenSceptre": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_QueensScepter.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Queen's Sceptre";
+                break;
+            case "rottenSwine": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_RottenSwine.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Swine";
+                break;
+            //Ultra Rares
+            case "chickenHead": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ChickenHead.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Chicken Head";
+                break;
+            case "shreddedGown": 
+                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ShreddedGown.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Shredded Gown";
                 break;
             default: 
                 document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/NoChoiceKillerAddonPlaceholder.png";

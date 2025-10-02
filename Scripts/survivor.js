@@ -1,3 +1,4 @@
+//Characters
 let dwigFaiRem = localStorage.getItem("dwigFai");
 let megThoRem = localStorage.getItem("megTho");
 let clauMorRem = localStorage.getItem("clauMor");
@@ -46,203 +47,209 @@ let taurCaiRem = localStorage.getItem("taurCai");
 let orelRosRem = localStorage.getItem("orelRos");
 let rickGriRem = localStorage.getItem("rickGri");
 let michGriRem = localStorage.getItem("michGri");
-
+let veeBooRem = localStorage.getItem("veeBoo");
+//Perks
 let univPerksRem = localStorage.getItem("univPerks");
 let anyChoRem = localStorage.getItem("anyCho");
 let noChoRem = localStorage.getItem("noCho");
-    
+//Dwight Fairfield Perks
 let bonRem = localStorage.getItem("bon");
 let leaRem = localStorage.getItem("lea");
 let proThyRem = localStorage.getItem("proThy");
-    
+//Meg Thomas Perks
 let adrRem = localStorage.getItem("adr");
 let quiQuiRem = localStorage.getItem("quiQui");
 let sprBurRem = localStorage.getItem("sprBur");
-    
+//Claudette Morel Perks
 let botKnoRem = localStorage.getItem("botKno");
 let empRem = localStorage.getItem("emp");
 let selCarRem = localStorage.getItem("selCar");
-    
+//Jake Park Perks
 let calSpiRem = localStorage.getItem("calSpi");
 let iroWilRem = localStorage.getItem("iroWil");
 let sabRem = localStorage.getItem("sab");
-    
+//Nea Karlsson Perks
 let balLanRem = localStorage.getItem("balLan");
 let strRem = localStorage.getItem("str");
 let urbEvaRem = localStorage.getItem("urbEva");
-    
+//Laurie Strode Perks
 let decStrRem = localStorage.getItem("decStr");
 let objOfObsRem = localStorage.getItem("objOfObs");
 let solSurRem = localStorage.getItem("solSur");
-    
+//Ace Visconti Perks
 let aceInTheHolRem = localStorage.getItem("aceInTheHol");
 let opeHanRem = localStorage.getItem("opeHan");
 let upTheAntRem = localStorage.getItem("upTheAnt");
-    
+//William "Bill" Overbeck Perks
 let borTimRem = localStorage.getItem("borTim");
 let lefBehRem = localStorage.getItem("lefBeh");
 let unbRem = localStorage.getItem("unb");
-        
+//Feng Min Perks
 let aleRem = localStorage.getItem("ale");
 let litRem = localStorage.getItem("lit");
 let tecRem = localStorage.getItem("tec");
-        
+//David King Perks
 let deaHarRem = localStorage.getItem("deaHar");
 let noMitRem = localStorage.getItem("noMit");
 let weGonLivForRem = localStorage.getItem("weGonLivFor");
-        
+//Quentin Smith Perks
 let phaRem = localStorage.getItem("pha");
 let vigRem = localStorage.getItem("vig");
 let wakUpRem = localStorage.getItem("wakUp");
-        
+//David Tapp Perks
 let detHunRem = localStorage.getItem("detHun");
 let staOutRem = localStorage.getItem("staOut");
 let tenRem = localStorage.getItem("ten");
-        
+//Kate Denson Perks
 let boiOveRem = localStorage.getItem("boiOve");
 let danWitMeRem = localStorage.getItem("danWitMe");
 let winOfOppRem = localStorage.getItem("winOfOpp");
-        
+//Adam Francis Perks
 let autRem = localStorage.getItem("aut");
 let delRem = localStorage.getItem("del");
 let divRem = localStorage.getItem("div");
-        
+//Jeff Johansen Perks
 let aftRem = localStorage.getItem("aft");
 let breRem = localStorage.getItem("bre");
 let disRem = localStorage.getItem("dis");
-        
+//Jane Romero Perks
 let heaOnRem = localStorage.getItem("heaOn");
 let poiRem = localStorage.getItem("poi");
 let solRem = localStorage.getItem("sol");
-        
+//Ash Willaims Perks
 let bucUpRem = localStorage.getItem("bucUp");
 let fliFloRem = localStorage.getItem("fliFlo");
 let metOfManRem = localStorage.getItem("metOfMan");
-        
+//Nancy Wheeler Perks
 let betTogRem = localStorage.getItem("betTog");
 let fixRem = localStorage.getItem("fix");
 let innStrRem = localStorage.getItem("innStr");
-        
+//Steve Harrington Perks
 let babRem = localStorage.getItem("bab");
 let camRem = localStorage.getItem("cam");
 let secWinRem = localStorage.getItem("secWin");
-        
+//Yui Kimura Perks
 let anyMeaNecRem = localStorage.getItem("anyMeaNec");
 let breaRem = localStorage.getItem("brea");
 let lucBreRem = localStorage.getItem("lucBre");
-        
+//Zarina Kassir Perks
 let forThePeoRem = localStorage.getItem("forThePeo");
 let offTheRecRem = localStorage.getItem("offTheRec");
 let redHerRem = localStorage.getItem("redHer");
-        
+//Cheryl Mason Perks
 let bloPacRem = localStorage.getItem("bloPac");
 let repAllRem = localStorage.getItem("repAll");
 let souGuaRem = localStorage.getItem("souGua");
-        
+//Felix Richter Perks
 let buiToLasRem = localStorage.getItem("buiToLas");
 let desMeaRem = localStorage.getItem("desMea");
 let visRem = localStorage.getItem("vis");
-        
+//Élodie Rakoto Perks
 let appRem = localStorage.getItem("app");
 let decRem = localStorage.getItem("dec");
 let powStrRem = localStorage.getItem("powStr");
-        
+//Yun-Jin Lee Perks
 let fasTraRem = localStorage.getItem("fasTra");
 let selPreRem = localStorage.getItem("selPre");
 let smaHitRem = localStorage.getItem("smaHit");
-        
+//Jill Valentine Perks
 let blaMinRem = localStorage.getItem("blaMin");
 let couRem = localStorage.getItem("cou");
 let resRem = localStorage.getItem("res");
-        
+//Leon S. Kennedy Perks
 let bitTheBulRem = localStorage.getItem("bitTheBul");
 let flaRem = localStorage.getItem("fla");
 let rooSpiRem = localStorage.getItem("rooSpi");
-        
+//Mikaela Reid Perks
 let booCirOfHeaRem = localStorage.getItem("booCirOfHea");
 let booShaSteRem = localStorage.getItem("booShaSte");
 let claRem = localStorage.getItem("cla");
-        
+//Jonah Vasquez Perks
 let booExpRem = localStorage.getItem("booExp");
 let corActRem = localStorage.getItem("corAct");
 let oveRem = localStorage.getItem("ove");
-        
+//Yoichi Asakawa Perks
 let booDarTheRem = localStorage.getItem("booDarThe");
 let empConRem = localStorage.getItem("empCon");
 let parGuiRem = localStorage.getItem("parGui");
-        
+//Haddie Kaur Perks
 let innFocRem = localStorage.getItem("innFoc");
 let overRem = localStorage.getItem("over");
 let resManRem = localStorage.getItem("resMan");
-        
+//Ada Wong Perks
 let lowProRem = localStorage.getItem("lowPro");
 let reaHeaRem = localStorage.getItem("reaHea");
 let wirRem = localStorage.getItem("wir");
-        
+//Rebecca Chambers Perks
 let betThanNewRem = localStorage.getItem("betThanNew");
 let hypRem = localStorage.getItem("hyp");
 let reaRem = localStorage.getItem("rea");
-        
+//Vittorio Toscano Perks
 let fogRem = localStorage.getItem("fog");
 let potEneRem = localStorage.getItem("potEne");
 let quiGamRem = localStorage.getItem("quiGam");
-        
+//Thalita Lyra Perks
 let cutLooRem = localStorage.getItem("cutLoo");
 let friComRem = localStorage.getItem("friCom");
 let teaPowOfTwoRem = localStorage.getItem("teaPowOfTwo");
-        
+//Renato Lyra Perks
 let bacPlaRem = localStorage.getItem("bacPla");
 let bloRusRem = localStorage.getItem("bloRus");
 let teaColSteRem = localStorage.getItem("teaColSte");
-        
+//Gabriel Soma Perks
 let madForThiRem = localStorage.getItem("madForThi");
 let scaRem = localStorage.getItem("sca");
 let troRem = localStorage.getItem("tro");
-        
+//Nicolas Cage Perks
 let draRem = localStorage.getItem("dra");
 let ploTwiRem = localStorage.getItem("ploTwi");
 let sceParRem = localStorage.getItem("scePar");
-        
+//Ellen Ripley Perks
 let cheTraRem = localStorage.getItem("cheTra");
 let ligFooRem = localStorage.getItem("ligFoo");
 let lucStaRem = localStorage.getItem("lucSta");
-        
+//Alan Wake Perks
 let booIllRem = localStorage.getItem("booIll");
 let chaOfLigRem = localStorage.getItem("chaOfLig");
 let deaRem = localStorage.getItem("dea");
-        
+//Sable Ward Perks
 let invWeaSpiRem = localStorage.getItem("invWeaSpi");
 let strInShaRem = localStorage.getItem("strInSha");
 let wicRem = localStorage.getItem("wic");
-        
+//The Troupe Perks
 let barInsRem = localStorage.getItem("barIns");
 let mirIllRem = localStorage.getItem("mirIll");
 let stiSigRem = localStorage.getItem("stiSig");
-        
+//Lara Croft Perks
 let finRem = localStorage.getItem("fin");
 let harRem = localStorage.getItem("har");
 let speRem = localStorage.getItem("spe");
-        
+//Trevor Belmont Perks
 let exuRem = localStorage.getItem("exu");
 let eyeOfBelRem = localStorage.getItem("eyeOfBel");
 let momOfGloRem = localStorage.getItem("momOfGlo");
-        
+//Taurie Cain Perks
 let cleBreRem = localStorage.getItem("cleBre");
 let invTreCroRem = localStorage.getItem("invTreCro");
 let shoTheBurRem = localStorage.getItem("shoTheBur");
-    
+//Orela Rose Perks  
 let doNoHarRem = localStorage.getItem("doNoHar");
 let dutOfCarRem = localStorage.getItem("dutOfCar");
 let rapResRem = localStorage.getItem("rapRes");
-
+//Rick Grimes Perks
 let apoIngRem = localStorage.getItem("apoIng");
 let comAndGetMeRem = localStorage.getItem("comAndGetMe");
 let teaTouUpRem = localStorage.getItem("teaTouUp");
-
+//Michonne Grimes Perks
 let conRem = localStorage.getItem("con");
 let lasStaRem = localStorage.getItem("lasSta");
 let teaThrDowRem = localStorage.getItem("teaThrDow");
+//Vee Boonyasak Perks
+let ghoNotRem = localStorage.getItem("ghoNot");
+let oneTwoThrFouRem = localStorage.getItem("oneTwoThrFou");
+let roaLifRem = localStorage.getItem("roaLif");
 
+//Fog Vials
 let fogVialRem = localStorage.getItem("fogVial");
 let fogVialAnyAddonRem = localStorage.getItem("fogVialAnyAddon");
 let fogVialCommonsRem = localStorage.getItem("fogVialCommons");
@@ -250,7 +257,7 @@ let fogVialUncommonsRem = localStorage.getItem("fogVialUncommons");
 let fogVialRaresRem = localStorage.getItem("fogVialRares");
 let fogVialVeryRaresRem = localStorage.getItem("fogVialVeryRares");
 let fogVialUltraRaresRem = localStorage.getItem("fogVialUltraRares");
-
+//Flashlights
 let flashlightRem = localStorage.getItem("flashlight");
 let flashlightAnyAddonRem = localStorage.getItem("flashlightAnyAddon");
 let flashlightCommonsRem = localStorage.getItem("flashlightCommons");
@@ -258,7 +265,7 @@ let flashlightUncommonsRem = localStorage.getItem("flashlightUncommons");
 let flashlightRaresRem = localStorage.getItem("flashlightRares");
 let flashlightVeryRaresRem = localStorage.getItem("flashlightVeryRares");
 let flashlightUltraRaresRem = localStorage.getItem("flashlightUltraRares");
-
+//Keys
 let keyRem = localStorage.getItem("key");
 let keyAnyAddonRem = localStorage.getItem("keyAnyAddon");
 let keyCommonsRem = localStorage.getItem("keyCommons");
@@ -266,7 +273,7 @@ let keyUncommonsRem = localStorage.getItem("keyUncommons");
 let keyRaresRem = localStorage.getItem("keyRares");
 let keyVeryRaresRem = localStorage.getItem("keyVeryRares");
 let keyUltraRaresRem = localStorage.getItem("keyUltraRares");
-    
+//Maps
 let mapRem = localStorage.getItem("map");
 let mapAnyAddonRem = localStorage.getItem("mapAnyAddon");
 let mapCommonsRem = localStorage.getItem("mapCommons");
@@ -274,7 +281,7 @@ let mapUncommonsRem = localStorage.getItem("mapUncommons");
 let mapRaresRem = localStorage.getItem("mapRares");
 let mapVeryRaresRem = localStorage.getItem("mapVeryRares");
 let mapUltraRaresRem = localStorage.getItem("mapUltraRares");
-    
+//Medkits
 let medkitRem = localStorage.getItem("medkit");
 let medkitAnyAddonRem = localStorage.getItem("medkitAnyAddon");
 let medkitCommonsRem = localStorage.getItem("medkitCommons");
@@ -282,33 +289,35 @@ let medkitUncommonsRem = localStorage.getItem("medkitUncommons");
 let medkitRaresRem = localStorage.getItem("medkitRares");
 let medkitVeryRaresRem = localStorage.getItem("medkitVeryRares");
 let medkitUltraRaresRem = localStorage.getItem("medkitUltraRares");
-    
+//Toolboxes
 let toolboxRem = localStorage.getItem("toolbox");
 let toolboxAnyAddonRem = localStorage.getItem("toolboxAnyAddon");
 let toolboxCommonsRem = localStorage.getItem("toolboxCommons");
 let toolboxUncommonsRem = localStorage.getItem("toolboxUncommons");
 let toolboxRaresRem = localStorage.getItem("toolboxRares");
 let toolboxUltraRaresRem = localStorage.getItem("toolboxUltraRares");
-   
+
+//Offerings
+//Bloodpoints
 let bloodpointsRem = localStorage.getItem("bloodpoints");
 let allCategoriesRem = localStorage.getItem("allCategories");
 let altruismRem = localStorage.getItem("altruism");
 let boldnessRem = localStorage.getItem("boldness");
 let objectivesRem = localStorage.getItem("objectives");
 let survivalRem = localStorage.getItem("survival");
-    
+//Luck/Wards
 let luckRem = localStorage.getItem("luck");
 let singleLuckRem = localStorage.getItem("singleLuck");
 let allLuckRem = localStorage.getItem("allLuck");
 let wardsRem = localStorage.getItem("wards");
-    
+//Map Mods
 let mapModsRem = localStorage.getItem("mapMods");
 let basementRem = localStorage.getItem("basement");
 let chestsRem = localStorage.getItem("chests");
 let fogThickRem = localStorage.getItem("fogThick");
 let hatchRem = localStorage.getItem("hatch");
 let hookRem = localStorage.getItem("hook");
-    
+//Realms 
 let realmRem = localStorage.getItem("realm");
 let azaKeyRem = localStorage.getItem("azaKey");
 let grandmaCookRem = localStorage.getItem("grandmaCook");
@@ -331,7 +340,7 @@ let marysLetterRem = localStorage.getItem("marysLetter");
 let piedPiperRem = localStorage.getItem("piedPiper");
 let ichorousLoamRem = localStorage.getItem("ichorousLoam");
 let yamaokaCrestRem = localStorage.getItem("yamaokaCrest");
-    
+//Shrouds  
 let shroudRem = localStorage.getItem("shroud");
 let unionShroudRem = localStorage.getItem("unionShroud");
 let vigoShroudRem = localStorage.getItem("vigoShroud");
@@ -387,6 +396,7 @@ function loadPref(){
     if(orelRosRem=="true"){checking("orelRos",true);}
     if(rickGriRem=="true"){checking("rickGri",true);}
     if(michGriRem=="true"){checking("michGri",true);}
+    if(veeBooRem=="true"){checking("veeBoo",true);}
 
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -584,7 +594,11 @@ function loadPref(){
     if(conRem=="true"){checking("con",true);}  
     if(lasStaRem=="true"){checking("lasSta",true);}  
     if(teaThrDowRem=="true"){checking("teaThrDow",true);}
-    
+//Vee Boonyasak Perks
+    if(ghoNotRem=="true"){checking("ghoNot",true);}  
+    if(oneTwoThrFouRem=="true"){checking("oneTwoThrFou",true);}  
+    if(roaLifRem=="true"){checking("roaLif",true);}
+
 //Fog Vials
     if(fogVialRem=="true"){checking("fogVial",true);}
     if(fogVialAnyAddonRem=="true"){checking("fogVialAnyAddon",true);}
@@ -634,25 +648,27 @@ function loadPref(){
     if(toolboxUltraRaresRem=="true"){checking("toolboxUltraRares",true);}
 
 //Offerings
+
+//Bloodpoints
     if (bloodpointsRem=="true"){checking("bloodpoints",true);}
     if (allCategoriesRem=="true"){checking("allCategories",true);}
     if (altruismRem=="true"){checking("altruism",true);}
     if (boldnessRem=="true"){checking("boldness",true);}
     if (objectivesRem=="true"){checking("objectives",true);}
     if (survivalRem=="true"){checking("survival",true);}
-
+//Luck/Wards
     if(luckRem=="true"){checking("luck",true);}
     if (singleLuckRem=="true"){checking("singleLuck",true);}
     if (allLuckRem=="true"){checking("allLuck",true);}
     if (wardsRem=="true"){checking("wards",true);}
-
+//Map Mods
     if (mapModsRem=="true"){checking("mapMods",true);}
     if (basementRem=="true"){checking("basement",true);}
     if (chestsRem=="true"){checking("chests",true);}
     if (fogThickRem=="true"){checking("fogThick",true);}
     if (hatchRem=="true"){checking("hatch",true);}
     if (hookRem=="true"){checking("hook",true);}
-
+//Realms 
     if (realmRem=="true"){checking("realm",true);}
     if (azaKeyRem=="true"){checking("azaKey",true);}
     if (grandmaCookRem=="true"){checking("grandmaCook",true);}
@@ -675,7 +691,7 @@ function loadPref(){
     if (piedPiperRem=="true"){checking("piedPiper",true);}
     if (ichorousLoamRem=="true"){checking("ichorousLoam",true);}
     if (yamaokaCrestRem=="true"){checking("yamaokaCrest",true);}
-
+//Shrouds  
     if (shroudRem=="true"){checking("shroud",true);}
     if (unionShroudRem=="true"){checking("unionShroud",true);}
     if (vigoShroudRem=="true"){checking("vigoShroud",true);}
@@ -2405,6 +2421,7 @@ function selectAllSurv(){
     if(!$("#orelRos").is(":checked")){checking("orelRos",true);}
     if(!$("#rickGri").is(":checked")){checking("rickGri",true);}
     if(!$("#michGri").is(":checked")){checking("michGri",true);}
+    if(!$("#veeBoo").is(":checked")){checking("veeBoo",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -2455,6 +2472,7 @@ function deselectAllSurv(){
     if($("#orelRos").is(":checked")){checking("orelRos",false);}
     if($("#rickGri").is(":checked")){checking("rickGri",false);}
     if($("#michGri").is(":checked")){checking("michGri",false);}
+    if($("#veeBoo").is(":checked")){checking("veeBoo",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2653,6 +2671,10 @@ function selectAllPerk(){
     if(!$("#con").is(":checked")){checking("con",true);}  
     if(!$("#lasSta").is(":checked")){checking("lasSta",true);}  
     if(!$("#teaThrDow").is(":checked")){checking("teaThrDow",true);}
+    //Vee Boonyasak Perks
+    if(!$("#ghoNot").is(":checked")){checking("ghoNot",true);}  
+    if(!$("#oneTwoThrFou").is(":checked")){checking("oneTwoThrFou",true);}  
+    if(!$("#roaLif").is(":checked")){checking("roaLif",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2850,6 +2872,10 @@ function deselectAllPerk(){
     if($("#con").is(":checked")){checking("con",false);}  
     if($("#lasSta").is(":checked")){checking("lasSta",false);}  
     if($("#teaThrDow").is(":checked")){checking("teaThrDow",false);} 
+    //Vee Boonyasak Perks
+    if($("#ghoNot").is(":checked")){checking("ghoNot",false);}  
+    if($("#oneTwoThrFou").is(":checked")){checking("oneTwoThrFou",false);}  
+    if($("#roaLif").is(":checked")){checking("roaLif",false);}
 }
 //Items
 function selectAllItem(){
@@ -3057,9 +3083,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Hope</i> activates:
                 <ul><li>Grants a <b>permanent</b> 
-                <b style="color: #e8c252;">5</b>/
-                <b style="color: #199b1e;">6</b>/
-                <b style="color: #ac3ee3;">7</b> % <b>Haste</b> Status Effect</li></ul>`;
+                <b style="color: #e8c252;">3</b>/
+                <b style="color: #199b1e;">4</b>/
+                <b style="color: #ac3ee3;">5</b> % <b>Haste</b> Status Effect</li></ul>`;
                 break;
             case "kindred":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Kindred.png";
@@ -3207,12 +3233,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "lea":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Leader.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Leader";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Other Survivors within <b>8 metres</b> of your location benefit from the following effect:
-                <dl><li>Increases the Action speeds for Cleansing, Gate-Opening, Healing, Sabotaging, Unhooking, and Unlocking by 
-                <b style="color: #e8c252;">15</b>/
-                <b style="color: #199b1e;">20</b>/
-                <b style="color: #ac3ee3;">25</b> %</li>
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Other Survivors within <b>10 metres</b> of your location benefit from the following effect:
+                <dl><li>Increases the Action speeds for <b>Cleansing, Gate-Opening, Healing, Sabotaging, Unhooking, and Unlocking</b> by 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> %</li>
                 <dd>- This effect lingers for <b>15 seconds</b> after leaving the Area of Effect</dd></dl>
                 Survivors can only be affected by <b>one</b> instance of <i>Leader</i> at a time`;
                 break;
@@ -3540,10 +3566,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Causes the following <b>permanent</b> effects in the Trial:
                 <dl><li>Inflicts the <b>Broken</b> Status Effect</li>
                 <li>Suppresses the creation of Pools of Blood</li>
-                <li>Reduces the <b>volume of Grunts of Pain</b> by 
-                <b style="color: #e8c252;">25</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">75</b> % while in the <b>Injured State</b> or the <b>Dying State</b></li>
+                <li>Reduces the <b>volume of Grunts of Pain</b> by <b>100%</b> while in the <b>Injured State</b> or the <b>Dying State</b></li>
                 <li>Unlocks the <b>Self-Recovery ability</b>, allowing you to <b>fully recover</b> from the <b>Dying State</b>:</li>
                 <dd>- Increases the Recovery speed by 
                 <b style="color: #e8c252;">15</b>/
@@ -3569,10 +3592,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Pharmacy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Unlocking speed of <b>Chests</b> by 
-                <b style="color: #e8c252;">70</b>/
-                <b style="color: #199b1e;">85</b>/
-                <b style="color: #ac3ee3;">100</b> %<br><br>
-                Reduces the audible range of all noises related to the Unlocking interaction by <b>-20 metres</b><br><br>
+                <b style="color: #e8c252;">75</b>/
+                <b style="color: #199b1e;">100</b>/
+                <b style="color: #ac3ee3;">125</b> %<br><br>
+                Reduces the audible range of all noises related to the <b>Unlocking interaction</b> by <b>12 metres</b><br><br>
                 <i>Pharmacy</i> guarantees an <b>Emergency Med-Kit</b> from <b>all Chests</b>`;
                 break;
             case "vig":
@@ -3584,7 +3607,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">55</b>/
                 <b style="color: #ac3ee3;">66</b> %
                 <ul><li>The <b>Blindness</b>, <b>Broken</b>, <b>Exhausted</b>, <b>Exposed</b>, <b>Haemorrhage</b>, <b>Hindered</b>, <b>Mangled</b>, and <b>Oblivious</b> Status Effects</li></ul>
-                <i>Vigil</i> extends its effect to all Survivors within <b>16 metres</b> of your location and lingers for <b>15 seconds</b>`;
+                <i>Vigil</i> extends its effect to all Survivors within <b>16 metres</b> of your location and lingers for <b>15 seconds</b><br>
+                Survivors can only be affected by one instance of <i>Vigil</i> at a time`;
                 break;
             case "wakUp":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
@@ -3636,10 +3660,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Your ferocious tenacity in dire situations allows you to benefit from the following effects while in the <b>Dying State</b>:
                 <ul><li>Grants the ability to recover and crawl at the same time</li>
                 <li>Increases the Crawling Movement speed by 
-                <b style="color: #e8c252;">30</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">50</b> %</li>
-                <li>Reduces the <b>volume of Grunts of Pain</b> by <b>-75%</b></li></ul>`;
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> %</li>
+                <li>Reduces the <b>volume of Grunts of Pain</b> by <b>-75%</b></li>
+                <li><b>Blocks your Aura from being read</b></li></ul>`;
                 break;
         //Kate Denson Perks
             case "boiOve":
@@ -3780,11 +3805,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Poised";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, you benefit from the following effect for 
-                <b style="color: #e8c252;">10</b>/
-                <b style="color: #199b1e;">12</b>/
-                <b style="color: #ac3ee3;">14</b> seconds:
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds:
                 <ul><li>Suppresses the <b>creation of your Scratch Marks</b></li></ul>
-                <b>First starting to repair a given Generator</b> reveals the <b>Aura of the Killer</b> to you for <b>6 seconds</b>`;
+                <b>First starting to repair a given Generator</b> reveals the <b>Aura of the Killer</b> to you for <b>8 seconds</b>`;
                 break;
             case "sol":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
@@ -3953,16 +3978,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "offTheRec":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Off the Record";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After being unhooked or unhooking yourself, <i>Off the Record</i> activates for 
                 <b style="color: #e8c252;">60</b>/
                 <b style="color: #199b1e;">70</b>/
                 <b style="color: #ac3ee3;">80</b> seconds:
                 <dl><li>Prevents <b>your Aura</b> from being revealed to the Killer, if they attempt to read it</li>
                 <li>Suppresses <b>Grunts of Pain when injured</b></li>
-                <li>Grants the <b>Endurance</b> Status Effect</li>
-                <dd>- <b>Endurance</b> is cancelled prematurely when performing a <b>Conspicuous Action</b></dd></dl>
-                <i>Off the Record</i> deactivates once the Exit Gates are <b>powered</b>`;
+                <li>Suppresses the <b>creation of Scratch Marks</b></li></dl>`;
                 break;
             case "redHer":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
@@ -4241,9 +4264,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After cleansing or blessing a Totem, <i>Clairvoyance</i> activates:
                 <dl><li>While <b>empty-handed</b>, press and hold the <b>Use Item button</b> to unlock your full Aura-reading potential for up to 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b> seconds, allowing you to see the <b>Auras</b> of the following environmental objects within <b>64 metres</b>:</li>
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">11</b>/
+                <b style="color: #ac3ee3;">12</b> seconds, allowing you to see the <b>Auras</b> of the following environmental objects within <b>64 metres</b>:</li>
                 <dd>- Chests</dd>
                 <dd>- Exit Gate Switches</dd>
                 <dd>- Generators</dd>
@@ -4470,7 +4493,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">3</b>/
                 <b style="color: #199b1e;">4</b>/
                 <b style="color: #ac3ee3;">5</b> %</li></ul>
-                <i>Quick Gambit</i> has a cooldown of <b>60 seconds</b> upon <b>losing a Health State</b>`;
+                <i>Quick Gambit</i> has a cooldown of <b>40 seconds</b> upon <b>losing a Health State</b>`;
                 break;
         //Thalita Lyra Perks
             case "cutLoo":
@@ -4491,9 +4514,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you complete a Generator <b>with at least one other Survivor</b>, <i>Friendly Competition</i> activates:
                 <ul><li>Increases your Repair speed, and that of the other Survivor(s) who completed the repairs with you, by <b>+5%</b> for the next 
-                <b style="color: #e8c252;">45</b>/
-                <b style="color: #199b1e;">60</b>/
-                <b style="color: #ac3ee3;">75</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">100</b>/
+                <b style="color: #199b1e;">110</b>/
+                <b style="color: #ac3ee3;">120</b> seconds</li></ul>`;
                 break;
             case "teaPowOfTwo":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
@@ -4607,12 +4630,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "ploTwi":
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Plot Twist";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Injured State</b>, <i>Plot Twist</i> activates:
                 <dl><li>While <b>crouching and motionless</b>, press the <b>Active Ability button</b> to <b>silently enter the Dying State</b> with the following benefits:</li>
                 <dd>- Suppresses <b>Grunts of Pain</b></dd>
                 <dd>- Suppresses <b>Pools of Blood</b></dd>
                 <dd>- Grants the ability to <b>fully recover from the Dying State</b></dd>
+                <dd>- Increases recovery speed by <b>25%</b> when used</dd>
                 <li>After full recovery using <i>Plot Twist</i>, you are healed instantly and gain a <b>+50% Haste</b> Status Effect for 
                 <b style="color: #e8c252;">2</b>/
                 <b style="color: #199b1e;">3</b>/
@@ -4668,9 +4692,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Auras of the other Survivors</b> are revealed to you</li>
                 <li>The <b>Aura of the closest Generator</b> is revealed to you in <b>yellow</b></li></ul>
                 <i>Lucky Star</i> has a cooldown of 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">35</b>/
-                <b style="color: #ac3ee3;">30</b> seconds`;
+                <b style="color: #e8c252;">35</b>/
+                <b style="color: #199b1e;">30</b>/
+                <b style="color: #ac3ee3;">25</b> seconds`;
                 break;
         //Alan Wake Perks
             case "booIll":
@@ -5010,6 +5034,49 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">8</b>/
                 <b style="color: #ac3ee3;">10</b> seconds.`;
                 break;
+        //Vee Boonyasak Perks
+            case "ghoNot":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_GhostNotes.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Ghost Notes";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While suffering from the <b>Exhausted Status Effect</b>, you benefit from the following effects:
+                <li>Causes your <b>Scratch Marks</b> to disappear <b>50%</b> faster.</li>
+                <li>Increases your Recovery rate from the <b>Exhausted Status Effect</b> by 
+                <b style="color: #e8c252;">5</b>/
+                <b style="color: #199b1e;">7.5</b>/
+                <b style="color: #ac3ee3;">10</b> %.</li>`;
+                break;
+            case "oneTwoThrFou":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_OneTwoThreeFour.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "One-Two-Three-Four!";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>standing and idle</b>, press the <b>Active Ability button</b> to start a <b>Performance</b>:
+                <ul><li>Lasts for up to <b>15 seconds</b></li>
+                <li>Empowers Survivors within <b>16 metres</b> of your location</li>
+                <li>Triggers <b>continuous Skill Checks</b></li></ul>
+                After successfully completing the <b>Performance</b>, empowered Survivors performing <b>Healing or Repairing actions</b> benefit from the following effect for <b>90 seconds</b>:
+                <ul><li>Increases the <b>chances of triggering Skill Checks</b> by <b>20%</b></li></ul>
+                <i>One-Two-Three-Four!</i> has a cooldown of 
+                <b style="color: #e8c252;">110</b>/
+                <b style="color: #199b1e;">100</b>/
+                <b style="color: #ac3ee3;">90</b> seconds after <b>cancelling or completing the Performance.</b>`;
+                break;
+            case "roaLif":
+                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_RoadLife.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Road Life";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured and repairing a Generator</b>, <b>regular Skill Checks</b> have the following effects:
+                <ul><li>Gain <b>1 Token</b> for <b>Great Repair</b> Skill Checks.</li>
+                <li>Gain <b>0 Tokens</b> for <b>Good Repair</b> Skill Checks.</li>
+                <li>Lose <b>1 Token</b> for <b>Failed Repair</b> Skill Checks.</li></ul>
+                Once you accumulate 
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">5</b>/
+                <b style="color: #ac3ee3;">4</b> Tokens, consume <b>all Tokens</b> to benefit from the following effect:
+                <ul><li>Increases <b>your Healing speed</b> by <b>100%</b> until <b>you stop healing</b></li></ul>
+                <i>Road Life</i> deactivates after use and does not activate while suffering from the <b>Broken Status Effect</b>.<br>
+                <i>Road Life</i> does not interact with <b>special Skill Checks</b> triggered by outside effects.`;
+                break;
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
@@ -5217,6 +5284,10 @@ function fixedChar(char){
         case "michGri":
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Lasagna/T_UI_S48_storeBackground.png";
             document.getElementById("charName").innerHTML = "Michonne Grimes";
+            break;
+        case "veeBoo":
+            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Maple/T_UI_S49_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Vee Boonyasak";
             break;
         default:
             document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
