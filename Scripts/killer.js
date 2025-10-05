@@ -9245,10 +9245,10 @@ function fixedOffering(offering){
             document.getElementById("offeringName").innerHTML = "Yamaoka Family Crest";
             break;
 //Secrets/Wards
-    //Shroud of Separation
+    //Shroud of Vanishing
         case "sepShroud": 
             document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfSeparation.png";
-            document.getElementById("offeringName").innerHTML = "Shroud of Separation";
+            document.getElementById("offeringName").innerHTML = "Shroud of Vanishing";
             break;
     //Mori
         case "ivoryMori": 
