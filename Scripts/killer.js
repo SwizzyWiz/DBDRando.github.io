@@ -1,4 +1,4 @@
-
+//Characters
 let trapperRem = localStorage.getItem("trapper");
 let wraithRem = localStorage.getItem("wraith");
 let hillbillyRem = localStorage.getItem("hillbilly");
@@ -469,9 +469,9 @@ function loadPref(){
     if(helWanRem=="true"){checking("helWan",true);}  
     if(phaFeaRem=="true"){checking("phaFea",true);} 
 //Krasue Perks
-    if(ghoNotRem=="true"){checking("ghoNot",true);}  
-    if(oneTwoThrFouRem=="true"){checking("oneTwoThrFou",true);}  
-    if(roaLifRem=="true"){checking("roaLif",true);} 
+    if(hexOveDooRem=="true"){checking("hexOveDoo",true);}  
+    if(ravRem=="true"){checking("rav",true);}  
+    if(wanEyeRem=="true"){checking("wanEye",true);} 
     
 //Addons
     if(commonsRem=="true"){checking("commons",true);}
@@ -941,10 +941,10 @@ function randomAddons(char){
         //Uncommons
             if($("#uncommons").is(":checked")){
                 addonPool.push("deadRabbit");
+                addonPool.push("fragTuftHair");
                 addonPool.push("glassFrag");
                 addonPool.push("hairBrush");
                 addonPool.push("jewellery");
-                addonPool.push("reflectFrag");
             }
         //Rares
             if($("#rares").is(":checked")){
@@ -957,14 +957,14 @@ function randomAddons(char){
         //Very Rares
             if($("#veryRares").is(":checked")){
                 addonPool.push("lockHair");
-                addonPool.push("scratchMirror");
+                addonPool.push("reflectFrag");
                 addonPool.push("tombPiece");
                 addonPool.push("vanityMirror");
             }
         //Ultra Rares
             if($("#ultraRares").is(":checked")){
-                addonPool.push("fragTuftHair");
                 addonPool.push("judithTomb");
+                addonPool.push("scratchMirror");
             }
             break;
         case "hag":
@@ -3519,261 +3519,261 @@ function deselectAllOffering(){
 function fixedChar(char){
     switch(char){
         case "anyChar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomKiller Placeholder.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Universal/RandomKiller Placeholder.png";
             document.getElementById("charName").innerHTML = "Any Killer";
-            document.getElementById("powerImg").src = "Powers/Powers/RandomKillerPowerPlaceholder.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Universal/Killer Any Choice Power.png";
             document.getElementById("powerName").innerHTML = "Selected Killer's Power";
             break;
         case "trapper":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_TR.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Trapper/storeBackground_TR.png";
             document.getElementById("charName").innerHTML = "The Trapper";
-            document.getElementById("powerImg").src = "Powers/Powers/iconPowers_trap.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Trapper/Bear Trap.png";
             document.getElementById("powerName").innerHTML = "Bear Trap";
             break;
         case "wraith":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_WR.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Wraith/storeBackground_WR.png";
             document.getElementById("charName").innerHTML = "The Wraith";
-            document.getElementById("powerImg").src = "Powers/Powers/iconPowers_bell.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Wraith/The Wailing Bell.png";
             document.getElementById("powerName").innerHTML = "Wailing Bell";
             break;
         case "hillbilly":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_HB.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Hillbilly/storeBackground_HB.png";
             document.getElementById("charName").innerHTML = "The Hillbilly";
-            document.getElementById("powerImg").src = "Powers/Powers/iconPowers_chainsaw.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Hillbilly/Chainsaw.png";
             document.getElementById("powerName").innerHTML = "Chainsaw";
             break;
         case "nurse":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_NR.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Nurse/storeBackground_NR.png";
             document.getElementById("charName").innerHTML = "The Nurse";
-            document.getElementById("powerImg").src = "Powers/Powers/iconPowers_breath.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Nurse/Spencers Last Breath.png";
             document.getElementById("powerName").innerHTML = "Spencer's Last Breath";
             break;
         case "shape":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_SH.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Shape/storeBackground_SH.png";
             document.getElementById("charName").innerHTML = "The Shape";
-            document.getElementById("powerImg").src = "Powers/Powers/DLC2/iconPowers_stalker1.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Shape/Evil Within.png";
             document.getElementById("powerName").innerHTML = "Evil Within";
             break;
         case "hag":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_HA.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Hag/storeBackground_HA.png";
             document.getElementById("charName").innerHTML = "The Hag";
-            document.getElementById("powerImg").src = "Powers/Powers/DLC3/iconPowers_blackenedCatalyst.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Hag/Blackened Catalyst.png";
             document.getElementById("powerName").innerHTML = "Blackened Catalyst";
             break;
         case "doctor":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_DO.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Doctor/storeBackground_DO.png";
             document.getElementById("charName").innerHTML = "The Doctor";
-            document.getElementById("powerImg").src = "Powers/Powers/DLC4/iconPowers_cartersSpark.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Doctor/Carters Spark.png";
             document.getElementById("powerName").innerHTML = "Carter's Spark";
             break;
         case "huntress":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_BE.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Huntress/storeBackground_BE.png";
             document.getElementById("charName").innerHTML = "The Huntress";
-            document.getElementById("powerImg").src = "Powers/Powers/DLC5/iconPowers_huntingHatchets.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Huntress/Hunting Hatchets.png";
             document.getElementById("powerName").innerHTML = "Hunting Hatchets";
             break;
         case "cannibal":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_CA.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Cannibal/storeBackground_CA.png";
             document.getElementById("charName").innerHTML = "The Cannibal";
-            document.getElementById("powerImg").src = "Powers/Powers/Cannibal/iconPowers_bubbasChainsaw.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Cannibal/Bubbas Chainsaw.png";
             document.getElementById("powerName").innerHTML = "Bubba's Chainsaw";
             break;
         case "nightmare":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_SD.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Nightmare/storeBackground_SD.png";
             document.getElementById("charName").innerHTML = "The Nightmare";
-            document.getElementById("powerImg").src = "Powers/Powers/England/iconPowers_dreamMaster.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Nightmare/Dream Demon.png";
             document.getElementById("powerName").innerHTML = "Dream Demon";
             break;
         case "pig":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_FK.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Pig/storeBackground_FK.png";
             document.getElementById("charName").innerHTML = "The Pig";
-            document.getElementById("powerImg").src = "Powers/Powers/Finland/iconPowers_reverseBearTrap.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Pig/Jigsaws Baptism.png";
             document.getElementById("powerName").innerHTML = "Jigsaw's Baptism";
             break;
         case "clown":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_GK.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Clown/storeBackground_GK.png";
             document.getElementById("charName").innerHTML = "The Clown";
-            document.getElementById("powerImg").src = "Powers/Powers/Guam/iconPowers_gasBomb.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Clown/The Afterpiece Tonic.png";
             document.getElementById("powerName").innerHTML = "The Afterpiece Tonic";
             break;
         case "spirit":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_RY.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Spirit/storeBackground_RY.png";
             document.getElementById("charName").innerHTML = "The Spirit";
-            document.getElementById("powerImg").src = "Powers/Powers/Haiti/iconPowers_yamaokasHaunting.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Spirit/Yamaokas Haunting.png";
             document.getElementById("powerName").innerHTML = "Yamaoka's Haunting";
             break;
         case "legion":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_KK.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Legion/storeBackground_KK.png";
             document.getElementById("charName").innerHTML = "The Legion";
-            document.getElementById("powerImg").src = "Powers/Powers/Kenya/iconPowers_feralFrenzy.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Legion/Feral Frenzy.png";
             document.getElementById("powerName").innerHTML = "Feral Frenzy";
             break;
         case "plague":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_MK.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Plague/storeBackground_MK.png";
             document.getElementById("charName").innerHTML = "The Plague";
-            document.getElementById("powerImg").src = "Powers/Powers/Mali/iconPowers_vilePurge.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Plague/Vile Purge.png";
             document.getElementById("powerName").innerHTML = "Vile Purge";
             break;
         case "ghostface":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_OK.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Ghost Face/storeBackground_OK.png";
             document.getElementById("charName").innerHTML = "The Ghost Face";
-            document.getElementById("powerImg").src = "Powers/Powers/Oman/iconPowers_ghostPower_activated.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Ghost Face/Night Shroud.png";
             document.getElementById("powerName").innerHTML = "Night Shroud";
             break;
         case "demogorgon":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Qatar/QK_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Demogorgon/QK_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Demogorgon";
-            document.getElementById("powerImg").src = "Powers/Powers/Qatar/iconPowers_ofTheAbyss.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Demogorgon/Of the Abyss.png";
             document.getElementById("powerName").innerHTML = "Of the Abyss";
             break;
         case "oni":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Sweden/SK_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Oni/SK_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Oni";
-            document.getElementById("powerImg").src = "Powers/Powers/Sweden/iconPowers_yamaokasWrath_demon.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Oni/Yamaokas Wrath.png";
             document.getElementById("powerName").innerHTML = "Yamaoka's Wrath";
             break;
         case "deathslinger":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ukraine/UK_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Deathslinger/UK_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Deathslinger";
-            document.getElementById("powerImg").src = "Powers/Powers/Ukraine/iconPowers_UK.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Deathslinger/The Redeemer.png";
             document.getElementById("powerName").innerHTML = "The Redeemer";
             break;
         case "executioner":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Wales/K20_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Executioner/K20_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Executioner";
-            document.getElementById("powerImg").src = "Powers/Powers/Wales/iconPowers_Wales_ritesOfJudgement.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Executioner/Rites of Judgement.png";
             document.getElementById("powerName").innerHTML = "Rites of Judgement";
             break;
         case "blight":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Yemen/K21_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Blight/K21_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Blight";
-            document.getElementById("powerImg").src = "Powers/Powers/Yemen/iconPowers_K21.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Blight/Blighted Corruption.png";
             document.getElementById("powerName").innerHTML = "Blighted Corruption";
             break;
         case "twins":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Aurora/K22_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Twins/K22_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Twins";
-            document.getElementById("powerImg").src = "Powers/Powers/Aurora/iconPowers_bloodBond_01.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Twins/Blood Bond.png";
             document.getElementById("powerName").innerHTML = "Blood Bond";
             break;
         case "trickster":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Comet/K23_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Trickster/K23_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Trickster";
-            document.getElementById("powerImg").src = "Powers/Powers/Comet/iconPowers_Showstopper_02.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Trickster/Showstopper.png";
             document.getElementById("powerName").innerHTML = "Showstopper";
             break;
         case "nemesis":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclipse/K24_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Nemesis/K24_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Nemesis";
-            document.getElementById("powerImg").src = "Powers/Powers/Eclipse/iconPowers_T-virus1.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Nemesis/T-Virus.png";
             document.getElementById("powerName").innerHTML = "T-Virus";
             break;
         case "cenobite":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Gemini/K25_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Cenobite/K25_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Cenobite";
-            document.getElementById("powerImg").src = "Powers/Powers/Gemini/iconPowers_summonsOfPain.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Cenobite/Summons of Pain.png";
             document.getElementById("powerName").innerHTML = "Summons of Pain";
             break;
         case "artist":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ion/K26_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Artist/K26_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Artist";
-            document.getElementById("powerImg").src = "Powers/Powers/Ion/T_iconPowers_birdsOfTorment.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Artist/Birds of Torment.png";
             document.getElementById("powerName").innerHTML = "Birds of Torment";
             break;
         case "onryo":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Kepler/K27_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Onryo/K27_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Onryō";
-            document.getElementById("powerImg").src = "Powers/Powers/Kepler/iconPowers_delugeOfFear2.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Onryo/Deluge of Fear.png";
             document.getElementById("powerName").innerHTML = "Deluge of Fear";
             break;
         case "dredge":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Meteor/K28_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Dredge/K28_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Dredge";
-            document.getElementById("powerImg").src = "Powers/Powers/Meteor/T_iconPowers_ReignofDarkness.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Dredge/Reign of Darkness.png";
             document.getElementById("powerName").innerHTML = "Reign of Darkness";
             break;
         case "mastermind":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Orion/K29_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Mastermind/K29_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Mastermind";
-            document.getElementById("powerImg").src = "Powers/Powers/Orion/iconPowers_virulentBound.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Mastermind/Virulent Bound.png";
             document.getElementById("powerName").innerHTML = "Virulent Bound";
             break;
         case "knight":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Quantum/K30_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Knight/K30_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Knight";
-            document.getElementById("powerImg").src = "Powers/Powers/Quantum/T_iconPowers_Executioner.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Knight/Guardia Compagnia.png";
             document.getElementById("powerName").innerHTML = "Guardia Compagnia";
             break;
         case "skullMerc":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Saturn/K31_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Skull Merchant/K31_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Skull Merchant";
-            document.getElementById("powerImg").src = "Powers/Powers/Saturn/iconPowers_drones.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Skull Merchant/Eyes in the Sky.png";
             document.getElementById("powerName").innerHTML = "Eyes in the Sky";
             break;
         case "singularity":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Umbra/K32_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Singularity/K32_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Singularity";
-            document.getElementById("powerImg").src = "Powers/Powers/Umbra/iconPowers_quantumInstantiation.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Singularity/Quantum Instantiation.png";
             document.getElementById("powerName").innerHTML = "Quantum Instantiation";
             break;
         case "xenomorph":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Wormhole/K33_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Xenomorph/K33_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Xenomorph";
-            document.getElementById("powerImg").src = "Powers/Powers/Wormhole/iconPowers_hiddenPursuit_inactive.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Xenomorph/Hidden Pursuit.png";
             document.getElementById("powerName").innerHTML = "Hidden Pursuit";
             break;
         case "goodGuy":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Yerkes/K34_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Good Guy/K34_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Good Guy";
-            document.getElementById("powerImg").src = "Powers/Powers/Yerkes/iconPowers_K34.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Good Guy/Playtimes Over.png";
             document.getElementById("powerName").innerHTML = "Playtime's Over";
             break;
         case "unknown":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Applepie/K35_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Unknown/K35_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Unknown";
-            document.getElementById("powerImg").src = "Powers/Powers/Applepie/iconPowers_AOE_Projectile.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Unknown/UVX.png";
             document.getElementById("powerName").innerHTML = "UVX";
             break;
         case "lich":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Churros/K36_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Lich/K36_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Lich";
-            document.getElementById("powerImg").src = "Powers/Powers/Churros/iconPowers_VileDarkness.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Lich/Vile Darkness.png";
             document.getElementById("powerName").innerHTML = "Vile Darkness";
             break;
         case "darkLord":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclair/K37_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Dark Lord/K37_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Dark Lord";
-            document.getElementById("powerImg").src = "Powers/Powers/Eclair/iconPowers_K37_Shapeshift.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Dark Lord/Vampiric Shift.png";
             document.getElementById("powerName").innerHTML = "Vampiric Power";
             break;
         case "houndmaster":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Gelato/T_UI_K38_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Houndmaster/T_UI_K38_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Houndmaster";
-            document.getElementById("powerImg").src = "Powers/Powers/Gelato/iconPowers_DashCommand_K38.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Houndmaster/Scent of Blood.png";
             document.getElementById("powerName").innerHTML = "Scent of Blood";
             break;
         case "ghoul":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Icecream/T_UI_K39_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Ghoul/T_UI_K39_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Ghoul";
-            document.getElementById("powerImg").src = "Powers/Powers/Icecream/iconPowers_AimKaguneLeap_K39.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Ghoul/One-Eyed Terror.png";
             document.getElementById("powerName").innerHTML = "One-Eyed Terror";
             break;
         case "animatronic":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ketchup/T_UI_K40_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Animatronic/K40_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Animatronic";
-            document.getElementById("powerImg").src = "Powers/Powers/Ketchup/iconPowers_throw.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Animatronic/Fazbears Fright.png";
             document.getElementById("powerName").innerHTML = "Fazbear's Fright";
             break;
         case "krasue":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Maple/T_UI_K41_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Krasue/T_UI_K41_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Krasue";
-            document.getElementById("powerImg").src = "Powers/Powers/Maple/T_UI_iconPowers_HeadForm_K41.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Krasue/Unbodied Flesh.png";
             document.getElementById("powerName").innerHTML = "Unbodied Flesh";
             break;
         default:
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomKiller Placeholder.png";
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Universal/RandomKiller Placeholder.png";
             document.getElementById("charName").innerHTML = "Any Killer (Defaulted)";
-            document.getElementById("powerImg").src = "Powers/Powers/RandomKillerPowerPlaceholder.png";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Universal/Killer Any Choice Power.png";
             document.getElementById("powerName").innerHTML = "Selected Killer's Power (Defaulted)";
     }
 }
@@ -3794,21 +3794,21 @@ function fixedPerks(perk1,perk2,perk3,perk4){
         switch(perks[i]){
         //Any Choice Perks Start 
             case "anyCho":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/RandomPerkKillerPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Killer Any Choice Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Any Choice";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = "Choose any Perk that you want in this slot";
                 break;
         //No Choice Perks Start
             case "noCho":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoicePerkKillerPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Killer No Choice Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No Choice";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = "Lose any Perk from this slot";
                 break;
         //Universal Perks Start
             case "bitMur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BitterMurmur.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Bitter Murmur.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bitter Murmur";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, <i>Bitter Murmur</i> triggers its primary effect:
@@ -3820,7 +3820,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
                 break;
             case "dee":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Deerstalker.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Deerstalker.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deerstalker";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>reads your Aura</b>, <i>Deerstalker</i> activates for the <b>same duration as their Aura-reading action</b>:
@@ -3832,7 +3832,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li><b>Your Aura</b> is revealed for <b>3 seconds</b> to the Survivor with <b>currently the lowest cumulative Chase time</b></li></ul>`;
                 break;
             case "dist":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Distressing.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Distressing.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Distressing";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Permanently increases your <b>Terror Radius</b> by 
@@ -3841,7 +3841,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b>%.`;
                 break;
             case "hexNoOneEscDea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_NoOneEscapesDeath.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Hex_No One Escapes Death.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: No One Escapes Death";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are powered, if there is still a Dull Totem remaining in the environment, <i>Hex: No One Escapes Death</i> activates and lights it:
@@ -3857,7 +3857,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hex: No One Escapes Death</i> remains inactive if no Dull Totems are available.`;
                 break;
             case "hexThrHun":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_ThrillOfTheHunt.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Hex_Thrill of the Hunt.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Thrill of the Hunt";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with <b>5 Tokens</b>, one per Totem:
@@ -3871,7 +3871,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hex: Thrill of the Hunt</i> loses <b>-1 Token</b> whenever a Totem is cleansed.`;
                 break;
             case "ins":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Insidious.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Insidious.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Insidious";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After standing still for 
@@ -3881,7 +3881,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Grants the <b>Undetectable</b> Status Effect for as long as you remain stationary.</li></ul>`;
                 break;
             case "iroGra":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_IronGrasp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Iron Grasp.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Iron Grasp";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are carrying a Survivor, the following effects apply: 
@@ -3892,7 +3892,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">12</b>%</li></ul>`;
                 break;
             case "scoHooMonShr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_MonstrousShrine.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Scourge Hook_Monstrous Shrine.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Monstrous Shrine";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b>, as well as the <b>4 Basement Hooks</b>, are changed into <b>Scourge Hooks</b>: 
@@ -3904,7 +3904,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">20</b>%.</li></ul>`;
                 break;
             case "shaHop":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_BoonDestroyer.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Shattered Hope.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Shattered Hope";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Instead of snuffing <b>Boon Totems</b> you destroy them.
@@ -3914,7 +3914,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">8</b> seconds.`;
                 break;
             case "sloBut":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SloppyButcher.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Sloppy Butcher.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Sloppy Butcher";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Wounds inflicted by <b>Basic Attacks</b> cause Survivors to suffer from the <b>Haemorrhage</b> and <b>Mangled</b> Status Effects for 
@@ -3928,7 +3928,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Increases the Regression rate at which partial Healing Progression is lost because of <b>Haemorrhage</b> by +25 %.`;
                 break;
             case "spiFroSha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SpiesFromTheShadows.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Spies from the Shadows.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Spies from the Shadows";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within 
@@ -3938,7 +3938,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Spies from the Shadows</i> has a cool-down of <b>5 seconds</b> between alerts.`;
                 break;
             case "unr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Unrelenting.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Unrelenting.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unrelenting";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reduces the Cooldown of missed <b>Basic Attacks</b> by 
@@ -3947,7 +3947,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b>%.`;
                 break;
             case "whi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Whispers.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Whispers.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Whispers";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever at least one Survivor is within 
@@ -3959,7 +3959,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
 
         //Trapper Perks
             case "agi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Agitation.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trapper/Agitation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Agitation";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While carrying a Survivor, <i>Agitation</i> activates:
@@ -3970,7 +3970,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases your <b>Terror Radius</b> by <b>+12 metres</b>.</li></ul>`;
                 break;
             case "bruStr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BrutalStrength.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trapper/Brutal Strength.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Brutal Strength";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While performing the Break or Damage action on Breakable Walls, Pallets, or Generators, <i>Brutal Strength</i> triggers its effect:
@@ -3980,7 +3980,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">20</b> %</li></ul>`;
                 break;
             case "unnPre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_UnnervingPresence.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trapper/Unnerving Presence.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unnerving Presence";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While inside your <b>Terror Radius</b>, Survivors performing Repairing or Healing actions suffer from the following effects:
@@ -3992,7 +3992,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Wraith Perks
             case "blo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Bloodhound.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Wraith/Bloodhound.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bloodhound";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Bloodhound</i> causes the following effects:
@@ -4003,7 +4003,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">4</b> seconds</li></ul>`;
                 break;
             case "pre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Predator.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Wraith/Predator.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Predator";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you lose a Survivor in a Chase, <i>Predator</i> triggers its effect:
@@ -4014,7 +4014,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">40</b> seconds.`;
                 break;
             case "sha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Shadowborn.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Wraith/Shadowborn.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Shadowborn";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are blinded by any means, <i>Shadowborn</i> triggers its effect:
@@ -4025,7 +4025,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Hillbilly Perks
             case "end":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Enduring.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hillbilly/Enduring.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Enduring";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reduces the duration of Pallet Stuns by 
@@ -4035,7 +4035,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Enduring</i> has no effect while carrying a Survivor.`;
                 break;
             case "lig":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Lightborn.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hillbilly/Lightborn.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lightborn";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of Survivors attempting to blind you by any means are revealed to you for
@@ -4045,7 +4045,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Grants immunity from being blinded from <b>Flashlights</b>, <b>Firecrackers</b>, <b>Flash Grenades</b>, and <b><i>Blast Mine</i></b>`;
                 break;
             case "tin":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Tinkerer.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hillbilly/Tinkerer.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Tinkerer";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is repaired to <b>70%</b>, you benefit from the following effects:
@@ -4058,7 +4058,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nurse Perks
             case "nurCal":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ANursesCalling.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nurse/A Nurses Calling.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "A Nurse's Calling";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "19pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of Survivors who are healing or being healed are revealed to you within 
@@ -4068,7 +4068,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Does not affect Survivors that are in the <b>Dying State</b>`;
                 break;
             case "str":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Stridor.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nurse/Stridor.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Stridor";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the volume of <b>Grunts of Pain</b> of injured Survivors by 
@@ -4081,7 +4081,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">25</b> %`;
                 break;
             case "tha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Thatanophobia.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nurse/Thanatophobia.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Thanatophobia";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each injured, dying, or hooked Survivor afflicts Survivors with a stackable 
@@ -4095,7 +4095,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Shape Perks
             case "dyiLig":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_DyingLight.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Shape/Dying Light.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dying Light";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time you hook a Survivor other than your <b>Obsession</b>, you gain <b>+1 Token</b>:
@@ -4109,7 +4109,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Obsession</b> is unaffected by this penalty and instead granted a permanent <b>+33%</b> Action Speed bonus to Unhooking and Healing other Survivors</li></ul>`;
                 break;
             case "plaWitYouFoo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_PlayWithYourFood.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Shape/Play with Your Food.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Play with Your Food";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time you chase your <b>Obsession</b> and let them escape, <i>Play with Your Food</i> gains <b>+1 Token</b>, up to a maximum of <b>3 Tokens</b>
@@ -4124,7 +4124,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Play with Your Food</i> has a cooldown of <b>10 seconds</b> on Token-accumulation`;
                 break;
             case "savBesLas":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_SaveTheBestForLast.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Shape/Save the Best for Last.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Save the Best for Last";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hit a Survivor other than your <b>Obsession</b> with a <b>Basic Attack</b>, <i>Save the Best for Last</i> gains <b>+1 Token</b>, up to a maximum of 
@@ -4140,7 +4140,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Hag Perks
             case "hexDevHop":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_DevourHope.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hag/Hex_Devour Hope.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Devour Hope";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor is rescued from a Hook while you are at least <b>24 metres</b> away, <i>Hex: Devour Hope</i> is granted <b>+1 Token</b>, up to a maximum of <b>5 Tokens</b>:
@@ -4152,7 +4152,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li><b>5 Tokens:</b> Grants the ability to <b>kill all Survivors by your own hand</b>.</li></ul>`;
                 break;
             case "hexRui":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_Ruin.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hag/Hex_Ruin.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Ruin";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is not being repaired by a Survivor, it will immediately and automatically regress its Repair progress at 
@@ -4161,7 +4161,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">150</b> % of the normal Regression speed`;
                 break;
             case "hexThiSea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_TheThirdSeal.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Hag/Hex_The Third Seal.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: The Third Seal";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The last 
@@ -4171,7 +4171,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Doctor Perks
             case "monAbu":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_MonitorAndAbuse.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Doctor/Monitor and Abuse.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Monitor & Abuse";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>are in a Chase with a Survivor</b>, the following effect applies: 
@@ -4186,7 +4186,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">25</b> %</li></ul>`;
                 break;
             case "ove":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_GeneratorOvercharge.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Doctor/Overcharge.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Overcharge";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator applies <i>Overcharge</i>:
@@ -4199,7 +4199,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Increases the Regression speed from <b>85%</b> to <b>130%</b> of its default value over the next <b>30 seconds</b></li></ul>`;
                 break;
             case "ovePre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_OverwhelmingPresence.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Doctor/Overwhelming Presence.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Overwhelming Presence";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor starts using an <b>Item within 32 metres of your location</b>, <i>Overwhelming Presence</i> triggers its primary effect:
@@ -4213,7 +4213,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Huntress Perks
             case "beaPre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_BeastOfPrey.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Huntress/Beast of Prey.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Beast of Prey";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Grants the <b>Undetectable</b> Status Effect for 
@@ -4222,7 +4222,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">40</b> seconds upon triggering the <b>Bloodlust</b> Status Effect`;
                 break;
             case "hexHunLul":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_HuntressLullaby.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Huntress/Hex_Huntress Lullaby.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Huntress Lullaby";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the default Progression penalty incurred by Failed Skill Checks by
@@ -4239,7 +4239,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- <b>5 Tokens: Suppresses the audio cue altogether</b></dd></dl>`;
                 break;
             case "terImp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_TerritorialImperative.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Huntress/Territorial Imperative.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Territorial Imperative";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are farther than <b>24 metres</b> from the Basement while a Survivor enters it, <i>Territorial Imperative</i> activates: 
@@ -4251,7 +4251,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Cannibal Perks
             case "bbq":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Cannibal/iconPerks_BBQAndChili.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cannibal/Barbecue and Chilli.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Barbecue & Chilli";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hooking a Survivor, all Survivors who are at least 
@@ -4260,7 +4260,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">40</b> metres away from that Hook have their <b>Aura</b> revealed to you for <b>5 seconds</b>`;
                 break;
             case "fraDem":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Cannibal/iconPerks_FranklinsLoss.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cannibal/Franklins Demise.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Franklin's Demise";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Survivors hit with your vicious <b>Basic Attack drop any equipped Item</b> on impact:
@@ -4270,7 +4270,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">64</b> metres</li>`;
                 break;
             case "knoOut":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Cannibal/iconPerks_KnockOut.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cannibal/Knock Out.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Knock Out";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor moves farther than <b>6 metres</b> from a Pallet within <b>6 seconds</b> of dropping it, <i>Knock Out</i> triggers its effect:
@@ -4281,7 +4281,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nightmare Perks
             case "bloWar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_BloodWarden.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nightmare/Blood Warden.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blood Warden";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `As soon as at least one Exit Gate is opened, <i>Blood Warden</i> activates:
@@ -4293,7 +4293,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">60</b> seconds, preventing any remaining Survivor from leaving the Trial through them.</li></ul>`;
                 break;
             case "firUp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_FireUp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nightmare/Fire Up.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fire Up";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For each completed Generator, <i>Fire Up</i> gains <b>+1 Token</b>, up to a maximum of <b>5 Tokens</b>:
@@ -4310,7 +4310,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Vaulting Windows</dd></dl>`;
                 break;
             case "remMe":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_RememberMe.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nightmare/Remember Me.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Remember Me";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Obsession</b> loses a Health State by any means, <i>Remember Me</i> gains <b>+1 Token</b>, up to a maximum of 
@@ -4325,7 +4325,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Pig Perks
             case "makYouCho":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_MakeYourChoice.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Pig/Make Your Choice.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Make Your Choice";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor is rescued from a Hook, while you are farther than <b>32 metres</b> away, <i>Make Your Choice</i> activates:
@@ -4340,7 +4340,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">60</b> seconds`;
                 break;
             case "scoHooHanTri":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_HangmansTrick.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Pig/Scourge Hook_Hangmans Trick.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Hangman's Trick";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, 4 random Hooks are changed into <b>Scourge Hooks</b>:
@@ -4352,7 +4352,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">16</b> metres of a <b>Scourge Hook</b> are revealed to you</li></ul>`;
                 break;
             case "sur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_Surveillance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Pig/Surveillance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Surveillance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of regressing Generators are highlighted in <b>white</b>
@@ -4364,7 +4364,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Clown Perks
             case "bam":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Guam/iconPerks_Bamboozle.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Clown/Bamboozle.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bamboozle";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After vaulting a Window, <i>Bamboozle</i> calls upon The Entity to block that Window for the next 
@@ -4379,7 +4379,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Bamboozle</i> only blocks one Window at a time and does not apply either of its effects to vaulting Pallets`;
                 break;
             case "cou":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Guam/iconPerks_Coulrophobia.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Clown/Coulrophobia.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Coulrophobia";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For all Survivors within your <b>Terror Radius</b>, the following effects apply:
@@ -4390,7 +4390,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases the Rotation speed of Healing Skill Checks by <b>+50%</b></li></ul>`;
                 break;
             case "popGoWea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Guam/iconPerks_PopGoesTheWeasel.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Clown/Pop Goes the Weasel.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Pop Goes the Weasel";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hooking a Survivor, <i>Pop Goes the Weasel</i> activates for 
@@ -4403,7 +4403,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Spirit Perks
             case "hexHauGro":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_HauntedGround.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Spirit/Hex_Haunted Ground.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Haunted Ground";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <i>Hex: Haunted Ground</i> spawns <b>2 Hex Totems</b> in the environment.<br>
@@ -4415,7 +4415,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Transforms the <b>second Hex Totem</b> into a Dull Totem</li></ul>`;
                 break;
             case "ran":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Hatred.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Spirit/Rancor.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Rancor";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Generator is completed, the following effects apply:
@@ -4429,7 +4429,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Grants the ability to <b>kill the Obsession</b> by your own hand</li></ul>`;
                 break;
             case "spiFur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_SpiritFury.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Spirit/Spirit Fury.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Spirit Fury";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After manually breaking a dropped Pallet by any means for a total of 
@@ -4442,7 +4442,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Legion Perks
             case "dis":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Discordance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Legion/Discordance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Discordance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Any Generator within a range of 
@@ -4453,7 +4453,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>After the Generator is no longer within range or is being repaired by just <b>1 Survivor</b>, the highlighted <b>Aura</b> will linger for another <b>4 seconds</b></li></ul>`;
                 break;
             case "iroMai":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_IronMaiden.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Legion/Iron Maiden.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Iron Maiden";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Iron Maiden</i> increases your Locker Search speed by 
@@ -4465,7 +4465,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Suffer from the <b>Exposed</b> Status Effect for <b>30 seconds</b></li></ul>`;
                 break;
             case "madGri":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_MadGrit.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Legion/Mad Grit.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Mad Grit";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are carrying a Survivor, <i>Mad Grit</i> activates:
@@ -4477,7 +4477,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Plague Perks
             case "corInt":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_CorruptIntervention.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Plague/Corrupt Intervention.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Corrupt Intervention";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, the 3 Generators located farthest from you are blocked by The Entity for 
@@ -4487,7 +4487,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Corrupt Intervention</i> deactivates prematurely once the first Survivor is put into the Dying State`;
                 break;
             case "darDev":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_DarkDevotion.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Plague/Dark Devotion.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Devotion";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Obsession</b> loses a Health State by any means and thus enters the Injured State, <i>Dark Devotion</i> activates:
@@ -4499,7 +4499,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 The <b>Obsession</b> with your transferred <b>Terror Radius</b> is also considered to be '<b>inside the Terror Radius</b>' for other purposes`;
                 break;
             case "infFri":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_InfectiousFright.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Plague/Infectious Fright.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Infectious Fright";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor is put into the Dying State by any means, all other Survivors within your <b>Terror Radius</b> will scream and reveal their current location to you for
@@ -4509,7 +4509,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ghostface Perks
             case "furCha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Oman/iconPerks_FurtiveChase.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghost Face/Furtive Chase.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Furtive Chase";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.1pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time you hook your <b>Obsession</b>, you benefit from the following effects for 
@@ -4521,7 +4521,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Whenever the <b>Obsession</b> is rescued from a Hook, their rescuer will become the new <b>Obsession</b>`;
                 break;
             case "imAllEar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Oman/iconPerks_ImAllEars.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghost Face/Im All Ears.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "I'm All Ears";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Rushed Vault action within <b>48 metres</b> of your location, you benefit from the following effect: 
@@ -4532,7 +4532,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "thrTre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Oman/iconPerks_ThrillingTremors.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghost Face/Thrilling Tremors.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Thrilling Tremors";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After picking up a Survivor, all Generators not currently being repaired by Survivors are blocked by The Entity for the next <b>16 seconds</b> 
@@ -4544,7 +4544,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Demogorgon Perks
             case "cruLim":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_CruelConfinement.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Demogorgon/Cruel Limits.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Cruel Limits";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, <i>Cruel Limits</i> activates:
@@ -4555,7 +4555,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Auras</b> of the blocked Vault locations are highlighted to you in <b>yellow</b></li></ul>`;
                 break;
             case "min":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_MindBreaker.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Demogorgon/Mindbreaker.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Mindbreaker";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `All Survivors repairing a Generator suffer from the following afflictions:
@@ -4567,7 +4567,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">5</b> seconds after a Survivor stops repairing</dd></ul>`;
                 break;
             case "surge":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Surge.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Demogorgon/Surge.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Surge";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you put a Survivor into the Dying State with your <b>Basic Attack</b>, <i>Surge</i> triggers its effect:
@@ -4579,7 +4579,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Oni Perks
             case "bloEch":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_BloodEcho.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Oni/Blood Echo.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blood Echo";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hook a Survivor, all other injured Survivors suffer from the <b>Exhausted</b> and <b>Haemorrhage</b> Status Effects for
@@ -4588,7 +4588,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "nem":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_Nemesis.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Oni/Nemesis.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Nemesis";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor other than your <b>Obsession</b> blinds you by any means or stuns you with a Pallet or a Locker, <i>Nemesis</i> triggers its primary effect:
@@ -4601,7 +4601,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Their <b>Aura</b> is revealed to you for <b>8 seconds</b></li></ul>`;
                 break;
             case "zanTac":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_ZanshinTactics.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Oni/Zanshin Tactics.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Zanshin Tactics";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The Auras of Pallets and Windows are revealed to you within 32 metres<br>><br>
@@ -4612,7 +4612,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Deathslinger Perks
             case "deaManSwi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_DeadManSwitch.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Deathslinger/Dead Mans Switch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dead Man's Switch";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hooking a Survivor, <i>Dead Man's Switch</i> activates:
@@ -4624,7 +4624,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Dead Man's Switch</i> cannot activate if its effect is still active from a previous activation`;
                 break;
             case "gea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_GearHead.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Deathslinger/Gearhead.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Gearhead";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After a Survivor loses a Health State, <i>Gearhead</i> activates for <b>30 seconds</b>:
@@ -4634,7 +4634,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">8</b> seconds</li></ul>`;
                 break;
             case "hexRet":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_HexRetribution.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Deathslinger/Hex_Retribution.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Retribution";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor blesses or cleanses a Totem, the following effects apply:
@@ -4646,7 +4646,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Executioner Perks
             case "dea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_Deathbound.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Executioner/Deathbound.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deathbound";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor finishes healing another Survivor for the equivalent of 1 Health State, <i>Deathbound</i> activates:
@@ -4658,7 +4658,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Deathbound</i> deactivates after the Healer loses a Health State`;
                 break;
             case "forPen":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_ForcedPenance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Executioner/Forced Penance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Forced Penance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Survivors who take a Protection Hit suffer from the <b>Broken</b> Status Effect for the next 
@@ -4667,7 +4667,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">80</b> seconds`;
                 break;
             case "traTor":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_TrailOfTorment.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Executioner/Trail of Torment.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Trail of Torment";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator activates <i>Trail of Torment</i>:
@@ -4680,7 +4680,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Blight Perks
             case "draGri":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_DragonsGrip.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Blight/Dragons Grip.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dragon's Grip";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator activates <i>Dragon's Grip</i> for the next <b>30 seconds</b>:
@@ -4691,7 +4691,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "hexBloFav":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_HexBloodFavor.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Blight/Hex_Blood Favour.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Blood Favour";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor loses a Health State by any means, <i>Hex: Blood Favour</i> triggers its effect:
@@ -4702,7 +4702,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Blocked Pallets cannot be dropped</dd></dl>`;
                 break;
             case "hexUnd":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_HexUndying.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Blight/Hex_Undying.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Undying";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of Survivors within 
@@ -4713,7 +4713,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Twins Perks
             case "couDeGra":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_CoupDeGrace.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Twins/Coup de Grace.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Coup de Grâce";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, <i>Coup de Grâce</i> gains <b>+2 Tokens</b>, up to a maximum of <b>10 Tokens</b> per Trial:
@@ -4724,7 +4724,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Coup de Grâce</i> can only hold a maximum of <b>5 Tokens</b> at a time`;
                 break;
             case "hoa":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Hoarder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Twins/Hoarder.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hoarder";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Hoarder</i> triggers a <b>Loud Noise Notification</b> for <b>4 seconds</b>, whenever a Survivor performs any of the following actions within 
@@ -4736,7 +4736,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hoarder</i> spawns <b>2 additional Chests</b> in the Trial`;
                 break;
             case "opp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Oppression.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Twins/Oppression.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Oppression";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator activates <i>Oppression</i>:
@@ -4749,7 +4749,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Trickster Perks
             case "hexCroCon":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_HexCrowdControl.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trickster/Hex_Crowd Control.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Crowd Control";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever any Survivor performs a Rushed action to vault a Window, <i>Hex: Crowd Control</i> triggers its effect:
@@ -4760,7 +4760,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Any successive trigger unblocks the <b>oldest Blocked Window</b>`;
                 break;
             case "noWayOut":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_NoWayOut.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trickster/No Way Out.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No Way Out";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For each Survivor you hook for the <b>first time</b>, <i>No Way Out</i> gains <b>+1 Token</b>.<br><br>
@@ -4774,7 +4774,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">60</b> seconds</li></ul>`;
                 break;
             case "sta":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_Starstruck.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trickster/Starstruck.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Starstruck";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When carrying a Survivor, <i>Starstruck</i> activates:
@@ -4792,7 +4792,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nemesis Perks
             case "eru":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Eruption.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nemesis/Eruption.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Eruption";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator applies <i>Eruption</i>:
@@ -4806,7 +4806,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Eruption</i> has a cooldown of <b>30 seconds</b>`;
                 break;
             case "hys":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Hysteria.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nemesis/Hysteria.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hysteria";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you injure a healthy Survivor, <i>Hysteria</i> triggers its effect:
@@ -4818,7 +4818,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hysteria</i> has a cooldown of <b>20 seconds</b>`;
                 break;
             case "letPur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_LethalPursuer.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Nemesis/Lethal Pursuer.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lethal Pursuer";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, the <b>Auras</b> of all Survivors are revealed to you for 
@@ -4830,7 +4830,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Cenobite Perks
             case "dead":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gemini/iconPerks_Deadlock.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cenobite/Deadlock.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deadlock";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, The Entity blocks the Generator with the most progression for 
@@ -4840,7 +4840,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>The <b>Aura</b> of the blocked Generator is revealed to you in <b>white</b> during this time</li></ul>`;
                 break;
             case "hexPla":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gemini/iconPerks_HexPlaything.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cenobite/Hex_Plaything.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Plaything";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `If there is at least <b>one Dull Totem remaining</b> in the Trial Grounds, <i>Hex: Plaything</i> activates on a random Totem each time a Survivor is hooked for the <b>first time</b>:
@@ -4852,7 +4852,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">16</b> metres</li></ul>`;
                 break;
             case "scoHooGifPai":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gemini/iconPerks_ScourgeHookGiftOfPain.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cenobite/Scourge Hook_Gift of Pain.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Gift of Pain";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b> are changed into <b>Scourge Hooks</b>:
@@ -4866,7 +4866,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Artist Perks
             case "griEmb":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_grimEmbrace.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Artist/Grim Embrace.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Grim Embrace";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Survivor is <b>hooked for the first time</b>, <i>Grim Embrace</i> gains <b>+1 Token</b> and activates once you are at least <b>16 metres</b> away from the Hook:
@@ -4877,7 +4877,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li><b>4 Tokens:</b> Blocks all Generators for <b>40 seconds</b> and the <b>Aura</b> of the <b>Obsession</b> is revealed to you for <b>6 seconds</b></li></ul>`;
                 break;
             case "hexPen":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_hexPentimento.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Artist/Hex_Pentimento.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Pentimento";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You see the <b>Auras</b> of <b>cleansed Totems</b>.<br><br>
@@ -4895,7 +4895,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 When a <b>Rekindled Totem</b> is cleansed, its remains are consumed by The Entity and it <b>cannot be rekindled</b>`;
                 break;
             case "scoHooPaiRes":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_painResonance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Artist/Scourge Hook_Pain Resonance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Pain Resonance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b> are changed into <b>Scourge Hooks</b>:
@@ -4914,7 +4914,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Onryo Perks
             case "calBri":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_CallOfBrine.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Onryo/Call of Brine.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Call of Brine";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action on a Generator, <i>Call of Brine</i> activates for <b>70 seconds</b>
@@ -4925,7 +4925,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Receive a <b>Loud Noise Notification</b> each time a Survivor hits a Good Skill Check on the <b>affected Generator</b></li></ul>`;
                 break;
             case "merSto":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_MercilessStorm.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Onryo/Merciless Storm.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Merciless Storm";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator reaches <b>90%</b> of Repair progression, <i>Merciless Storm</i> triggers its effect:
@@ -4937,7 +4937,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Merciless Storm</i> can only trigger once per Generator per Trial`;
                 break;
             case "scoHooFloRag":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_FloodOfRage.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Onryo/Scourge Hook_Floods of Rage.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Floods of Rage";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b> are changed into <b>Scourge Hooks</b>:
@@ -4950,7 +4950,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Dredge Perks
             case "darRev":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_DarknessRevelated.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dredge/Darkness Revealed.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Darkness Revealed";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Searching a Locker has the following effect:
@@ -4961,7 +4961,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Darkness Revealed</i> has a cooldown of <b>30 seconds</b>`;
                 break;
             case "diss":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_Dissolution.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dredge/Dissolution.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dissolution";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>3 seconds</b> of injuring a Survivor by any means, <i>Dissolution</i> activates for 
@@ -4971,7 +4971,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Instantly breaks the next Pallet that Survivor performs a Fast Vault across while inside your <b>Terror Radius</b></li></ul>`;
                 break;
             case "sepTou":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_SepticTouch.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dredge/Septic Touch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Septic Touch";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Healing action while they are inside your <b>Terror Radius</b>, that Survivor suffers from the <b>Blindness</b> and <b>Exhausted</b> Status Effects
@@ -4982,7 +4982,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Mastermind Perks
             case "awaAwa":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_AwakenedAwarenesss.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Mastermind/Awakened Awareness.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Awakened Awareness";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While carrying a Survivor, you benefit from the following effect:
@@ -4992,7 +4992,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">20</b> metres of your location are revealed to you</li></ul>`;
                 break;
             case "supAna":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_SuperiorAnatomy.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Mastermind/Superior Anatomy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Superior Anatomy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs a Rushed Vault within <b>12 metres</b> of your location, <i>Superior Anatomy</i> activates:
@@ -5004,7 +5004,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Superior Anatomy</i> has a cooldown of <b>25 seconds</b>`;
                 break;
             case "ter":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Terminus.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Mastermind/Terminus.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Terminus";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Terminus</i> activates:
@@ -5016,7 +5016,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Knight Perks
             case "hexFacDar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_HexFaceTheDarkness.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Knight/Hex_Face the Darkness.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Face the Darkness";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you injure a Survivor by any means, if there is still <b>a Dull Totem remaining</b> on the Map, <i>Hex: Face the Darkness</i> activates and lights it, <b>cursing that Survivor</b>:
@@ -5028,7 +5028,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hex: Face the Darkness</i> is disabled for the remainder of the Trial, if a Survivor manages to cleanse its Hex Totem`;
                 break;
             case "hub":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_Hubris.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Knight/Hubris.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hubris";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are stunned by a Survivor, that Survivor suffers from the <b>Exposed</b> Status Effect for 
@@ -5038,7 +5038,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hubris</i> has a cooldown of <b>20 seconds</b>`;
                 break;
             case "nowHid":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_NowhereToHide.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Knight/Nowhere to Hide.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Nowhere to Hide";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator triggers <i>Nowhere to Hide</i>:
@@ -5049,7 +5049,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Skull Merchant Perks
             case "gamAfo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_GameAfoot.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Skull Merchant/Game Afoot.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Game Afoot";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hit the Survivor with the <b>highest cumulative Chase time</b>, with a <b>Basic Attack</b>, they become the <b>Obsession</b><br>
@@ -5060,7 +5060,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds after damaging a Generator or breaking a Breakable Wall or Pallet</li></ul>`;
                 break;
             case "lev":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_Leverage.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Skull Merchant/Leverage.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Leverage";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor performs an Unhook action, they suffer from the following effect for <b>60 seconds</b>:
@@ -5070,7 +5070,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> %</li></ul>`;
                 break;
             case "thw":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_Thwack.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Skull Merchant/THWACK.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "THWACK!";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with 3 Tokens.<br>
@@ -5083,7 +5083,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Singularity Perks
             case "forHes":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_ForcedHesitation.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Singularity/Forced Hesitation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Forced Hesitation";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor is put into the Dying State by any means, all <b>other Survivors</b> within <b>16 metres</b> of them suffer from a <b>-20% Hindered</b> Status Effect for <b>10 seconds.</b><br><br>
@@ -5093,7 +5093,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "genLim":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_GeneticLimits.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Singularity/Genetic Limits.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Genetic Limits";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor loses a Health State, they suffer from the <b>Exhausted</b> Status Effect for 
@@ -5102,7 +5102,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">8</b> seconds`;
                 break;
             case "macLea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_SelfAware.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Singularity/Machine Learning.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Machine Learning";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action, <i>Machine Learning</i> activates:
@@ -5119,7 +5119,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Xenomorph Perks
             case "aliIns":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_AlienInstinct.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Xenomorph/Alien Instinct.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Alien Instinct";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hook a Survivor, <i>Alien Instinct</i> activates:
@@ -5130,7 +5130,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">60</b> seconds</li></ul>`;
                 break;
             case "rapBru":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_RapidBrutality.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Xenomorph/Rapid Brutality.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Rapid Brutality";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You can no longer gain the <b>Bloodlust</b> Status Effect<br><br>
@@ -5140,7 +5140,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds`;
                 break;
             case "ultWea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_UltimateWeapon.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Xenomorph/Ultimate Weapon.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ultimate Weapon";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Opening a Locker causes all Survivors within <b>40 metres</b> to suffer from the following effects:
@@ -5153,7 +5153,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Good Guy Perks
             case "batInc":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yerkes/iconPerks_batteriesIncluded.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Good Guy/Batteries Included.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Batteries Included";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within <b>16 metres</b> of a <b>completed Generator</b>, you are granted a <b>+5% Haste</b> Status Effect
@@ -5163,7 +5163,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">5</b> second(s) after leaving the Generator's range</li></ul>`;
                 break;
             case "friEnd":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yerkes/iconPerks_friendsTillTheEnd.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Good Guy/Friends til the End.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Friends 'til the End";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you hook any Survivor that is <b>not the Obsession</b>, the following effects apply to the <b>Obsession</b>:
@@ -5177,7 +5177,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>They become the new <b>Obsession</b></li></ul>`;
                 break;
             case "hexTwoCanPla":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yerkes/iconPerks_twoCanPlay.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Good Guy/Hex_Two Can Play.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Two Can Play";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Anytime you are stunned or blinded by any Survivor a total of 
@@ -5189,7 +5189,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Unknown Perks
             case "unb":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconPerks_Unbound.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Unbound.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unbound";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When a Survivor becomes injured by any means, <i>Unbound</i> activates for 
@@ -5200,7 +5200,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- This effect cannot stack with itself</dd></dl>`;
                 break;
             case "und":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconPerks_Undone.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Undone.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Undone";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor fails a Skill Check while repairing or healing, <i>Undone</i> gains <b>+3 Tokens</b>, up to a maximum of 
@@ -5214,7 +5214,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Undone</i> has a cooldown of <b>60 seconds</b>`;
                 break;
             case "unf":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconPerks_Unforeseen.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Unforeseen.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unforeseen";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator applies <i>Unforeseen</i> for 
@@ -5226,7 +5226,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Lich Perks
             case "darArr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_DarkArrogance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Lich/Dark Arrogance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Arrogance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Vaulting speed in exchange for increased vulnerability to being blinded and stunned:
@@ -5237,7 +5237,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">25</b> %</li></ul>`;
                 break;
             case "lanTou":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_LanguidTouch.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Lich/Languid Touch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Languid Touch";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When a Survivor scares off a Crow within <b>36 metres</b> of your location, <i>Languid Touch</i> activates:
@@ -5248,7 +5248,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Languid Touch</i> has a cooldown of <b>5 seconds</b>`;
                 break;
             case "weaAtt":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_WeaveAttunement.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Lich/Weave Attunement.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Weave Attunement";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever an <b>Item is depleted for the first time</b>, it is automatically dropped:
@@ -5261,7 +5261,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Dark Lord Perks
             case "dom":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_Dominance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dark Lord/Dominance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dominance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The first time each Chest and each Totem are interacted with by a Survivor, <i>Dominance</i> triggers its effect:
@@ -5272,7 +5272,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Aura of the blocked Prop</b> is revealed to you in <b>white</b></li></ul>`;
                 break;
             case "hexWreFat":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_HexWretchedFate.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dark Lord/Hex_Wretched Fate.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Wretched Fate";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After a Generator is completed, <i>Hex: Wretched Fate</i> activates and lights a random Dull Totem, <b>cursing the Obsession</b>:
@@ -5283,7 +5283,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Aura of the Hex Totem</b> is revealed to them within <b>12 metres</b></li></ul>`;
                 break;
             case "humGre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_HumanGreed.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dark Lord/Human Greed.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Human Greed";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Grants the ability to <b>kick open Chests and close them</b>
@@ -5296,7 +5296,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Houndmaster Perks
             case "allShaThu":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconPerks_AllShakingThunder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Houndmaster/All-Shaking Thunder.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "All-Shaking Thunder";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After falling from a height, <i>All-Shaking Thunder</i> activates for 
@@ -5307,7 +5307,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>All-Shaking Thunder</i> has a cooldown of <b>5 seconds</b>`;
                 break;
             case "noQua":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconPerks_NoQuarter.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Houndmaster/No Quarter.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No Quarter";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>healing themselves</b> by any means reaches <b>75%</b> Healing Progress, <i>No Quarter</i> triggers its effect:
@@ -5318,7 +5318,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds</li></ul>`;
                 break;
             case "scoHooJagCom":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconPerks_ScourgeHookJaggedCompass.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Houndmaster/Scourge Hook_Jagged Compass.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scourge Hook: Jagged Compass";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b> are changed into <b>Scourge Hooks</b>:
@@ -5333,7 +5333,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ghoul Perks
             case "forEnt":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_ForeverEntwined.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghoul/Forever Entwined.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Forever Entwined";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor takes damage, <i>Forever Entwined</i> gains <b>+1 Token</b>, up to a maximum of 
@@ -5346,7 +5346,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">32</b> %</li></ul>`;
                 break;
             case "hexNotButMis":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_NothingButMisery.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghoul/Hex_Nothing but Misery.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Nothing but Misery";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After damaging Survivors a total of <b>8 times with Basic Attacks</b>, a random Dull Totem becomes a <b>Hex Totem</b>, <b>cursing all Survivors</b>:
@@ -5356,7 +5356,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b> seconds</li></ul>`;
                 break;
             case "nonAreFre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Icecream/T_UI_iconPerks_NoneAreFree.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghoul/None Are Free.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "None Are Free";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hook a Survivor for the <b>first time</b>, <i>None Are Free</i> gains <b>+1 Token</b>, up to a maximum of <b>4 Tokens</b>.<br>
@@ -5371,7 +5371,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Animatronic Perks
             case "hay":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_Haywire.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Animatronic/Haywire.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Haywire";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>stops opening an Exit Gate</b> after accumulating at least <b>50%</b> Progression towards being opened, <i>Haywire</i> causes it to regress:
@@ -5382,7 +5382,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Causes Survivors to see the <b>lights atop the switch</b> flickering randomly while it regresses</li></ul>`;
                 break;
             case "helWan":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_HelpWanted.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Animatronic/Help Wanted.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Help Wanted";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action, <i>Help Wanted</i> activates:
@@ -5394,7 +5394,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Increases the Recovery speed of <b>successful Basic Attacks</b> by <b>25%</b></li></ul>`;
                 break;  
             case "phaFea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ketchup/T_UI_iconPerks_PhantomFear.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Animatronic/Phantom Fear.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Phantom Fear";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor within your <b>Terror Radius</b> looks at you, they suffer from the following effects:
@@ -5406,7 +5406,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;   
         //Krasue Perks
             case "hexOveDoo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_HexOvertureOfDoom.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Krasue/Hex_Overture of Doom.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Overture of Doom";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Creates a <b>Hex Totem</b> that <b>curses the farthest Generator from its location</b>:
@@ -5422,7 +5422,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 All <b>Hex Effects</b> persist until their <b>associated Hex Totem</b> is either <b>cleansed or blessed</b>.`;
                 break;
             case "rav":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_Ravenous.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Krasue/Ravenous.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ravenous";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>hook a Survivor for the first time</b>, <i>Ravenous</i> gains <b>1 Token</b>, up to a maximum of <b>4 Tokens</b>.<br>
@@ -5434,7 +5434,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">60</b> seconds</li></ul>`;
                 break;  
             case "wanEye":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_WanderingEye.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Krasue/Wandering Eye.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Wandering Eye";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>start chasing a Survivor</b>, <i>Wandering Eye</i> triggers the following effect:
@@ -5446,7 +5446,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break; 
     //End
             default: 
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoicePerkKillerPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Killer No Choice Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empty Slot";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `This is an empty slot for a Perk.<br><br>Add another Perk?`;
@@ -5462,3543 +5462,3543 @@ function fixedAddon(addon1,addon2){
         switch(addons[i]){
             //Any Choice Addons
             case "any": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/RandomKillerAddonPlaceholder.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Universal/Killer Any Choice Addon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Any Addon Choice";
                 break;
             //No Choice Addons
             case "none": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/NoChoiceKillerAddonPlaceholder.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Universal/Killer No Choice Addon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "No Addon Choice";
                 break;
         //Killer Addons Start Here
         //Trapper Addons
             //Commons
             case "bearOil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bearOil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Bear Oil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bear Oil";
                 break;
             case "makeWrap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_makeshiftWrap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Makeshift Wrap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Makeshift Wrap";
                 break;
             case "padJaws": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_paddedJaws.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Padded Jaws.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Padded Jaws";
                 break;
             case "trapGloves": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_trapperGloves.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Trapper Gloves.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trapper Gloves";
                 break;
             //Uncommons
             case "fourSpringKit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_coilsKit4.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/4 Coil Spring Kit.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "4-Coil Spring Kit";
                 break;
             case "coffeeGrounds": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_coffeeGrinds.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Coffee Grounds.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Coffee Grounds";
                 break;
             case "lenJaws": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_lengthenedJaws.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Lengthened Jaws.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lengthened Jaws";
                 break;
             case "serrJaws": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_serratedJaws.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Serrated Jaws.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Serrated Jaws";
                 break;
             case "waxBrick": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_waxBrick.png";
-                document.getElementById("addonName" + (i + 1)).innerHTML = "Wax Bricks";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Wax Brick.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Wax Brick";
                 break;
             //Rares
             case "fastTools": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_fasteningTools.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Fastening Tools.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fastening Tools";
                 break;
             case "rustJaws": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_rustedJaws.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Rusted Jaws.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusted Jaws";
                 break;
             case "secCoil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_secondaryCoil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Secondary Coil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Secondary Coil";
                 break;
             case "tarBottle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_tarBottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Tar Bottle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tar Bottle";
                 break;
             case "trapBag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_trapperBag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Trapper Bag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trapper Bag";
                 break;
             //Very Rares
             case "honStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_honingStone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Honing Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Honing Stone";
                 break;
             case "oilyCoil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_oilyCoil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Oily Coil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Oily Coil";
                 break;
             case "tensSpring": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_tensionSpring.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Tension Spring.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tension Spring";
                 break;
             case "trapSack": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_trapperSack.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Trapper Sack.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trapper Sack";
                 break;
             //Ultra Rares
             case "bloodCoil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bloodyCoil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Bloody Coil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Coil";
                 break;
             case "iridStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_diamondStone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trapper/Addons/Iridescent Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Stone";
                 break;
         //Wraith Addons
             //Commons
             case "beastSoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_sootTheBeast.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/The Beast Soot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"The Beast" - Soot';
                 break;
             case "ghostSoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_sootTheGhost.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/The Ghost Soot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"The Ghost" - Soot';
                 break;
             case "houndSoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_sootTheHound.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/The Hound Soot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"The Hound" - Soot';
                 break;
             case "serpentSoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_sootTheSerpent.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/The Serpent Soot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"The Serpent" - Soot';
                 break;
             //Uncommons
             case "warMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_mudBaikraKaeug.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Blind Warrior Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Blind Warrior" - Mud';
                 break;
             case "blinkMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_mudBlink.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Blink Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Blink" - Mud';
                 break;
             case "swiftMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_mudSwiftHunt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Swift Hunt Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Swift Hunt" - Mud';
                 break;
             case "windstormMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_mudWindstorm.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Windstorm Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Windstorm" - Mud';
                 break;
             case "boneClapper": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_boneClapper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Bone Clapper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bone Clapper";
                 break;
             //Rares
             case "warWhite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteBlindWarrior.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Blind Warrior White.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Blind Warrior" - White';
                 break;
             case "blinkWhite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteBlink.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Blink White.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Blink" - White';
                 break;
             case "shadowWhite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteShadowDance.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Shadow Dance White.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Shadow Dance" - White';
                 break;
             case "swiftWhite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteKuntinTakkho.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Swift Hunt White.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Swift Hunt" - White';
                 break;
             case "windstormWhite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteWindstorm.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Windstorm White.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Windstorm" - White';
                 break;
             //Very Rares
             case "allBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bloodKraFabai.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/All Seeing Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"All Seeing" - Blood';
                 break;
             case "shadowBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bloodShadowDance.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Shadow Dance Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Shadow Dance" - Blood';
                 break;
             case "swiftBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bloodSwiftHunt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Swift Hunt Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Swift Hunt" - Blood';
                 break;
             case "windstormBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_bloodWindstorm.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Windstorm Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Windstorm" - Blood';
                 break;
             //Ultra Rares
             case "allSpirit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_spiritAllSeeing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/All Seeing Spirit.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"All Seeing" - Spirit';
                 break;
             case "coxClapper": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_coxcombedClapper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Wraith/Addons/Coxcombed Clapper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Coxcombed Clapper";
                 break;
         //Hillbilly Addons
             //Commons
             case "counterweight": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_counterweight.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Counterweight.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Counterweight";
                 break;
             case "crackPrimeBulb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_crackedPrimerBulb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Cracked Primer Bulb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cracked Primer Bulb";
                 break;
             case "discardAirFilter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_discardedAirFilter.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Discarded Air Filter.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Discarded Air Filter";
                 break;
             case "steelBoots": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_steelToeBoots.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Steel Toe Boots.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Steel Toe Boots";
                 break;
             //Uncommons
             case "clogIntake": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_cloggedIntake.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Clogged Intake.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Clogged Intake";
                 break;
             case "greasedThrottle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_greasedThrottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Greased Throttle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Greased Throttle";
                 break;
             case "highSpeedScrew": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_highSpeedIdlerScrew.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/High-Speed Idler Screw.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "High-Speed Idler Screw";
                 break;
             case "offMotorOil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_offBrandMotorOil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Off-Brand Motor Oil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Off-Brand Motor Oil";
                 break;
             case "thermalCasing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_thermalCasing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Thermal Casing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Thermal Casing";
                 break;
             //Rares
             case "begrimeChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_chainsBloody.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Begrimed Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Begrimed Chains";
                 break;
             case "dadBoots": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_dadsBoots.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Dad Boots.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dad's Boots";
                 break;
             case "lowKickChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_lowKickbackChains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Low Kickback Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Low Kickback Chains";
                 break;
             case "ragEngine": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_raggedEngine.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Ragged Engine.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ragged Engine";
                 break;
             case "thompsonMix": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_theThompsonsMix.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/The Thompsons Mix.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "The Thompson's Mix";
                 break;
             //Very Rares
             case "apexMuffler": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_apexMuffler.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Apex Muffler.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Apex Muffler";
                 break;
             case "filthySlippers": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_filthySlippers.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Filthy Slippers.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Filthy Slippers";
                 break;
             case "loproChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_lowProChains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/LoPro Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "LoPro Chains";
                 break;
             case "spikedBoots": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_spikedBoots.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Spiked Boots.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spiked Boots";
                 break;
             //Ultra Rares
             case "iridEngrave": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Zodiac/iconAddon_iridescentEngravings.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Iridescent Engravings.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Engravings";
                 break;
             case "tunedCar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Xipre/iconAddon_tunedCarburetor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hillbilly/Addons/Tuned Carburettor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tuned Carburettor";
                 break;
         //Nurse Addons
             //Commons
             case "metalSpoon": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_metalSpoon.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Metal Spoon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Metal Spoon";
                 break;
             case "plaidFlannel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_plaidFlannel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Plaid Flannel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Plaid Flannel";
                 break;
             case "whiteComb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_whiteNitComb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/White Nit Comb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "White Nit Comb";
                 break;
             case "woodHorse": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_woodenHorse.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Wooden Horse.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wooden Horse";
                 break;
             //Uncommons
             case "badManKeepsake": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_badManKeepsake.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Bad Man Keepsake.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bad Man Keepsake";
                 break;
             case "catBoyTreasure": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_catatonicTreasure.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Catatonic Boys Treasure.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Catatonic Boy's Treasure";
                 break;
             case "darkCincture": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_darkCincture.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Dark Cincture.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dark Cincture";
                 break;
             case "dullBracelet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_dullBracelet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Dull Bracelet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dull Bracelet";
                 break;
             case "pocketWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_pocketWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Pocket Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pocket Watch";
                 break;
             //Rares
             case "anxiousGasp": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_anxiousGasp.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Anxious Gasp.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Anxious Gasp";
                 break;
             case "ataxRes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_ataxicRespiration.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Ataxic Respiration.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ataxic Respiration";
                 break;
             case "fragWheeze": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_fragileWheeze.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Fragile Wheeze.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fragile Wheeze";
                 break;
             case "heavyPanting": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_heavyPanting.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Heavy Panting.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Heavy Panting";
                 break;
             case "spasBreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_spasmodicBreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Spasmodic Breath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spasmodic Breath";
                 break;
             //Very Rares
             case "badManBreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_badMansLastBreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Bad Mans Last Breath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = `"Bad Man's" Last Breath`;
                 break;
             case "campbellBreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_campbellsLastBreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Campbells Last Breath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Campbell's Last Breath";
                 break;
             case "jennerBreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_jennersLastBreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Jenners Last Breath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jenner's Last Breath";
                 break;
             case "kavBreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_kavanaghsLastBreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Kavanaghs Last Breath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kavanagh's Last Breath";
                 break;
             //Ultra Rares
             case "matchbox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_matchBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Matchbox.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Matchbox";
                 break;
             case "tornBookmark": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_tornBookmark.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nurse/Addons/Torn Bookmark.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Torn Bookmark";
                 break;
         //Shape Addons
             //Commons
             case "blondHair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_blondeHair.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Blond Hair.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blond Hair";
                 break;
             case "bfMemo": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_boyfriendsMemo.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Boyfriends Memo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Boyfriend's Memo";
                 break;
             case "memoFlower": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_memorialFlower.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Memorial Flowers.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Memorial Flower";
                 break;
             case "tackyEar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_tackyEarrings.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Tacky Earrings.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tacky Earrings";
                 break;
             //Uncommons
             case "deadRabbit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_deadRabbit.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Dead Rabbit.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dead Rabbit";
                 break;
+            case "fragTuftHair": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Fragrant Tuft of Hair.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Fragrant Tuft of Hair";
+                break;
             case "glassFrag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_glassFragment.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Glass Fragment.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Glass Fragment";
                 break;
             case "hairBrush": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_hairBrush.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Hair Brush.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hair Brush";
                 break;
             case "jewellery": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_jewelry.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Jewellery.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jewellery";
-                break;
-            case "reflectFrag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_reflectiveFragment.png";
-                document.getElementById("addonName" + (i + 1)).innerHTML = "Reflective Fragment";
                 break;
             //Rares
             case "hairBow": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_hairBow.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Hair Bow.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hair Bow";
                 break;
             case "jMyersMemo": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_jMyersMemorial.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/J Myers Memorial.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "J. Myers Memorial";
                 break;
             case "jewelBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_jewelryBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Jewellery Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jewellery Box";
                 break;
             case "judithJournal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_judithsJournal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Judiths Journal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Judith's Journal";
                 break;
             case "mirrorShard": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_mirrorShard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Mirror Shard.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mirror Shard";
                 break;
             //Very Rares
             case "lockHair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_lockOfHair.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Lock of Hair.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lock of Hair";
                 break;
-            case "scratchMirror": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_scratchedMirror.png";
-                document.getElementById("addonName" + (i + 1)).innerHTML = "Scratched Mirror";
+            case "reflectFrag": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Reflective Fragment.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Reflective Fragment";
                 break;
             case "tombPiece": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_tombstonePiece.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Tombstone Piece.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tombstone Piece";
                 break;
             case "vanityMirror": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_vanityMirror.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Vanity Mirror.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vanity Mirror";
                 break;
-            //Ultra Rares
-            case "fragTuftHair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_tuftOfHair.png";
-                document.getElementById("addonName" + (i + 1)).innerHTML = "Fragrant Tuft of Hair";
-                break;
+            //Ultra Rares           
             case "judithTomb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC2/iconAddon_judithsTombstone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Judiths Tombstone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Judith's Tombstone";
+                break;
+            case "scratchMirror": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Shape/Addons/Scratched Mirror.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Scratched Mirror";
                 break;
         //Hag Addons
             //Commons
             case "bogWater": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_bogWater.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Bog Water.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bog Water";
                 break;
             case "deadFlyMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_deadFlyMud.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Dead Fly Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dead Fly Mud";
                 break;
             case "powderEggshell": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_powderedEggshell.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Powdered Eggshell.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Powdered Eggshell";
                 break;
             case "ropeNecklet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_ropeNecklet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Rope Necklet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rope Necklet";
                 break;
             //Uncommons
             case "bloodWater": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_bloodiedWater.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Bloodied Water.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloodied Water";
                 break;
             case "cypressNecklet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_cypressNecklet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Cypress Necklet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cypress Necklet";
                 break;
             case "dragonflyWings": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_dragonflyWings.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Dragonfly Wings.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dragonfly Wings";
                 break;
             case "halfEggshell": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_halfEggshell.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Half Eggshell.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Half Eggshell";
                 break;
             case "pussyWillowCat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_pussyWillowCatkins.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Pussy Willow Catkins.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pussy Willow Catkins";
                 break;
             //Rares
             case "bloodiedMud": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_bloodiedMud.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Bloodied Mud.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloodied Mud";
                 break;
             case "crackTurtleEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_crackedTurtleEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Cracked Turtle Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cracked Turtle Egg";
                 break;
             case "driedCicada": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_driedCicada.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Dried Cicada.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dried Cicada";
                 break;
             case "swampOrchidNecklet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_swampOrchidNecklet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Swamp Orchid Necklet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Swamp Orchid Necklet";
                 break;
             case "willowWreath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_willowWreath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Willow Wreath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Willow Wreath";
                 break;
             //Very Rares
             case "disfigEar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_disfiguredEar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Disfigured Ear.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Disfigured Ear";
                 break;
             case "grandmaHeart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_granmasHeart.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Grandmas Heart.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Grandma's Heart";
                 break;
             case "rustyShackles": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_rustyShackles.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Rusty Shackles.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusty Shackles";
                 break;
             case "scarHand": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_scarredHand.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Scarred Hand.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Scarred Hand";
                 break;
             //Ultra Rares
             case "mintRag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_mintRag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Mint Rag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mint Rag";
                 break;
             case "waterlogShoe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC3/iconAddon_waterloggedShoe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Hag/Addons/Waterlogged Shoe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Waterlogged Shoe";
                 break;
         //Doctor Addons
             //Commons
             case "calmClass1": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_calmClassI.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Calm Class I.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Calm" - Class I';
                 break;
             case "orderClass1": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_orderClassI.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Order Class I.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Order" - Class I';
                 break;
             case "mapleKnight": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_mapleKnight.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Maple Knight.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Maple Knight";
                 break;
             case "mouldyElectrode": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_moldyElectrode.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Mouldy Electrode.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mouldy Electrode";
                 break;
             //Uncommons
             case "calmClass2": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_calmClassII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Calm Class II.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Calm" - Class II';
                 break;
             case "disClass2": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_diciplineClassII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Discipline Class II.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Discipline" - Class II';
                 break;
             case "orderClass2": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_orderClassII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Order Class II.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Order" - Class II';
                 break;
             case "resClass2": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_restraintClassII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Restraint Class II.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Restraint" - Class II';
                 break;
             case "polishElectrode": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_polishedElectrode.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Polished Electrode.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Polished Electrode";
                 break;
             //Rares
             case "disClass3": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_diciplineClassIII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Discipline Class III.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Discipline" - Class III';
                 break;
             case "resClass3": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_restraintClassIII.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Restraint Class III.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Restraint" - Class III';
                 break;
             case "highStimElectrode": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_highStimulusElectrode.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/High Stimulus Electrode.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "High Stimulus Electrode";
                 break;
             case "interviewTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_interviewTape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Interview Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Interview Tape";
                 break;
             case "scrapTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_scrappedTape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Scrapped Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Scrapped Tape";
                 break;
             //Very Rares
             case "calmCarter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_calmCartersNotes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Calm Carters Notes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = `"Calm" - Carter's Notes`;
                 break;
             case "disCarter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_diciplineCartersNotes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Discipline Carters Notes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = `"Discipline" - Carter's Notes`;
                 break;
             case "orderCarter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_orderCartersNotes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Order Carters Notes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = `"Order" - Carter's Notes`;
                 break;
             case "resCarter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_restraintCartersNotes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Restraint Carters Notes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = `"Restraint" - Carter's Notes`;
                 break;
             //Ultra Rares
             case "iridKing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_iridescentKing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Iridescent King.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent King";
                 break;
             case "iridQueen": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC4/iconAddon_iridescentQueen.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Doctor/Addons/Iridescent Queen.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Queen";
                 break;
         //Huntress Addons
             //Commons
             case "amanToxin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_amanitaToxin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Amanita Toxin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Amanita Toxin";
                 break;
             case "bandageHaft": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_bandagedHaft.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Bandaged Haft.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bandaged Haft";
                 break;
             case "coarseStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_coarseStone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Coarse Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Coarse Stone";
                 break;
             case "yellowedCloth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_yellowedCloth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Yellowed Cloth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yellowed Cloth";
                 break;
             //Uncommons
             case "leatherLoop": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_leatherLoop.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Leather Loop.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leather Loop";
                 break;
             case "mannaGrassBraid": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_mannaGrassBraid.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Manna Grass Braid.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Manna Grass Braid";
                 break;
             case "oakHaft": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_oakHaft.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Oak Haft.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Oak Haft";
                 break;
             case "shinyPin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_shinyPin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Shiny Pin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shiny Pin";
                 break;
             case "weightedHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_weightedHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Weighted Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Weighted Head";
                 break;
             //Rares
             case "deerskinGloves": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_deerskinGloves.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Deerskin Gloves.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Deerskin Gloves";
                 break;
             case "flowerBabu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_flowerBabushka.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Flower Babushka.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Flower Babushka";
                 break;
             case "roseRoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_roseRoot.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Rose Root.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rose Root";
                 break;
             case "rustyHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_rustyHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Rusty Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusty Head";
                 break;
             case "venomConcoct": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_venomousConcoction.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Venomous Concoction.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Venomous Concoction";
                 break;
             //Very Rares
             case "begrimedHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_begrimedHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Begrimed Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Begrimed Head";
                 break;
             case "glowingConcoct": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_glowingConcoction.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Glowing Concoction.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Glowing Concoction";
                 break;
             case "infantryBelt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_infantryBelt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Infantry Belt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Infantry Belt";
                 break;
             case "woodFox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_woodenFox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Wooden Fox.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wooden Fox";
                 break;
             //Ultra Rares
             case "iridHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_iridescentHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Iridescent Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Head";
                 break;
             case "soldierPuttee": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/DLC5/iconAddon_soldiersPuttee.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Huntress/Addons/Soldiers Puttee.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Soldier's Puttee";
                 break;
         //Cannibal Addons
             //Commons
             case "chainsawFile": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_chainsawFile.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Chainsaw File.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chainsaw File";
                 break;
             case "sparkPlug": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_sparkPlug.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Spark Plug.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spark Plug";
                 break;
             case "speedLimiter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_speedLimiter.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Speed Limiter.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Speed Limiter";
                 break;
             case "vegeOil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_vegetableOil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Vegetable Oil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vegetable Oil";
                 break;
             //Uncommons
             case "chilli": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_chili.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Chilli.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chilli";
                 break;
             case "homemadeMuffler": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_homemadeMuffler.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Homemade Muffler.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Homemade Muffler";
                 break;
             case "knifeScratch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_knifeScratches.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Knife Scratches.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Knife Scratches";
                 break;
             case "longGuideBar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_longGuideBar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Long Guide Bar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Long Guide Bar";
                 break;
             case "primerBulb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_primerBulb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Primer Bulb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Primer Bulb";
                 break;
             //Rares
             case "begrimedChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_chainsBloody.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Begrimed Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Begrimed Chains";
                 break;
             case "grislyChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_chainsGrisly.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Grisly Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Grisly Chains";
                 break;
             case "shopLube": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_shopLubricant.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Shop Lubricant.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shop Lubricant";
                 break;
             case "beastMarks": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_theBeastsMark.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/The Beasts Marks.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "The Beast's Marks";
                 break;
             case "theGrease": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_theGrease.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/The Grease.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "The Grease";
                 break;
             //Very Rares
             case "awardChilli": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_awardwinningChili.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Award-winning Chilli.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Award-winning Chilli";
                 break;
             case "depthGaugeRake": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_depthGaugeRake.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Depth Gauge Rake.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Depth Gauge Rake";
                 break;
             case "lightChassis": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_lightChassis.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Light Chassis.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Light Chassis";
                 break;
             case "rustChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_chainsRusted.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Rusted Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusted Chains";
                 break;
             //Ultra Rares
             case "carTuneGuide": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/iconAddon_carburetorTuningGuide.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Carburettor Tuning Guide.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Carburettor Tuning Guide";
                 break;
             case "iridFlesh": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Cannibal/iconAddon_iridescentFlesh.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cannibal/Addons/Iridescent Flesh.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Flesh";
                 break;
         //Nightmare Addons
             //Commons
             case "gardenRake": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_gardenRake.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Garden Rake.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Garden Rake";
                 break;
             case "kidDrawing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_kidsDrawing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Kids Drawing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kid's Drawing";
                 break;
             case "sheepBlock": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_sheepBlock.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Sheep Block.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sheep Block";
                 break;
             case "woolShirt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_woolShirt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Wool Shirt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wool Shirt";
                 break;
             //Uncommons
             case "catBlock": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_catBlock.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Cat Block.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cat Block";
                 break;
             case "greenDress": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_greenDress.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Green Dress.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Green Dress";
                 break;
             case "nancySketch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_nancysSketch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Nancys Sketch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Nancy's Sketch";
                 break;
             case "outdoorRope": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_outdoorRope.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Outdoor Rope.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Outdoor Rope";
                 break;
             case "protoClaws": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_prototypeClaw.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Prototype Claws.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Prototype Claws";
                 break;
             //Rares
             case "blueDress": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_blueDress.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Blue Dress.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blue Dress";
                 break;
             case "jumpRope": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_jumpRope.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Jump Rope.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jump Rope";
                 break;
             case "nancyMasterpiece": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_nancysMasterpiece.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Nancys Masterpiece.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Nancy's Masterpiece";
                 break;
             case "paintThinner": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_paintThinner.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Paint Thinner.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Paint Thinner";
                 break;
             case "unicornBlock": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_unicornBlock.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Unicorn Block.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Unicorn Block";
                 break;
             //Very Rares
             case "zBlock": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_zBlock.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Z Block.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Z" Block';
                 break;
             case "classPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_classPhoto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Class Photo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Class Photo";
                 break;
             case "pillBottle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_pillBottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Pill Bottle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pill Bottle";
                 break;
             case "swingChains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_swingChains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Swing Chains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Swing Chains";
                 break;
             //Ultra Rares
             case "blackBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_blackBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Black Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Black Box";
                 break;
             case "redPaintBrush": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/England/iconAddon_redPaintBrush.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nightmare/Addons/Red Paint Brush.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Red Paint Brush";
                 break;
         //Pig Addons
             //Commons
             case "combatStraps": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_combatStraps.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Combat Straps.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Combat Straps";
                 break;
             case "interRazor": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_interlockingRazor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Interlocking Razor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Interlocking Razor";
                 break;
             case "johnMedFile": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_johnsMedicalFile.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Johns Medical File.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "John's Medical File";
                 break;
             case "shatterSyringe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_shatteredSyringe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Shattered Syringe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shattered Syringe";
                 break;
             //Uncommons
             case "faceMask": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_faceMask.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Face Mask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Face Mask";
                 break;
             case "lastWill": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_lastWill.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Last Will.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Last Will";
                 break;
             case "razorWires": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_razerWire.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Razor Wires.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Razor Wires";
                 break;
             case "utilBlades": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_utilityBlades.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Utility Blades.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Utility Blades";
                 break;
             case "workshopGrease": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_workshopGrease.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Workshop Grease.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Workshop Grease";
                 break;
             //Rares
             case "bagGears": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_bagOfGears.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Bag of Gears.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bag of Gears";
                 break;
             case "jigsawAnnoPlan": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_jigsawsAnnotatedPlan.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Jigsaws Annotated Plan.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jigsaw's Annotated Plan";
                 break;
             case "rulesSet2": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_rulesSetN2.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Rule Set No 2.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rules Set No.2";
                 break;
             case "rustyAttach": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_rustyAttachments.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Rusty Attachments.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusty Attachments";
                 break;
             case "slowReleaseTox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_slowReleaseToxin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Slow-Release Toxin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Slow-Release Toxin";
                 break;
             //Very Rares
             case "amandaSecret": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_amandasSecret.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Amandas Secret.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Amanda's Secret";
                 break;
             case "crateGears": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_crateOfGears.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Crate of Gears.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crate of Gears";
                 break;
             case "jigsawSketch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_jigsawsSketch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Jigsaws Sketch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jigsaw's Sketch";
                 break;
             case "tamperTimer": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_tamperedTimer.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Tampered Timer.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tampered Timer";
                 break;
             //Ultra Rares
             case "amandaLetter": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_amandasLetter.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Amandas Letter.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Amanda's Letter";
                 break;
             case "videoTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Finland/iconAddon_videoTape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Pig/Addons/Video Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Video Tape";
                 break;
         //Clown Addons
             //Commons
             case "fingerlessParadeGloves": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_fingerlessParadeGloves.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Fingerless Parade Gloves.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fingerless Parade Gloves";
                 break;
             case "partyBottle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_partyBottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Party Bottle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Party Bottle";
                 break;
             case "robinFeather": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_robinFeather.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Robin Feather.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Robin Feather";
                 break;
             case "vhsPorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_vhsPorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/VHS Porn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "VHS Porn";
                 break;
             //Uncommons
             case "keroseneCan": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_keroseneCan.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Kerosene Can.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kerosene Can";
                 break;
             case "solventJug": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_solventJug.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Solvent Jug.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Solvent Jug";
                 break;
             case "starlingFeather": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_starlingFeather.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Starling Feather.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Starling Feather";
                 break;
             case "stickySodaBottle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_stickySodaBottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Sticky Soda Bottle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sticky Soda Bottle";
                 break;
             case "thickCorkStop": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_thickCorkStopper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Thick Cork Stopper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Thick Cork Stopper";
                 break;
             //Rares
             case "botChloro": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_bottleOfChloroform.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Bottle of Chloroform.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bottle of Chloroform";
                 break;
             case "flaskBleach": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_flaskOfBleach.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Flask of Bleach.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Flask of Bleach";
                 break;
             case "smellyInnerSoles": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_smellyInnerSoles.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Smelly Inner Soles.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Smelly Inner Soles";
                 break;
             case "spiritHartshorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_spiritOfHartshorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Spirit of Hartshorn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spirit of Hartshorn";
                 break;
             case "sulphAcidVial": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_sulfuricAcidVial.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Sulphuric Acid Vial.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sulphuric Acid Vial";
                 break;
             //Very Rares
             case "cheapGinBot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_cheapGinBottle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Cheap Gin Bottle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cheap Gin Bottle";
                 break;
             case "cigarBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_cigarBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Cigar Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cigar Box";
                 break;
             case "ether15": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_ether15.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Ether 15 Vol.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ether 15 Vol%";
                 break;
             case "garishMakeupKit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_garishMakeupKit.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Garish Make-Up Kit.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Garish Make-Up Kit";
                 break;
             //Ultra Rares
             case "redheadPinkFinger": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_redheadsPinkyFinger.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Redheads Pinkie Finger.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Redhead's Pinkie Finger";
                 break;
             case "tattooMidFinger": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Guam/iconAddon_tattoosMiddleFinger.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Clown/Addons/Tattoos Middle Finger.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tattoo's Middle Finger";
                 break;
         //Spirit Addons
             //Commons
             case "giftBambooComb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_giftedBambooComb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Gifted Bamboo Comb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Gifted Bamboo Comb";
                 break;
             case "origamiCrane": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_origamiCrane.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Origami Crane.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Origami Crane";
                 break;
             case "shiaAmulet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_ShiawaseAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Shiawase Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shiawase Amulet";
                 break;
             case "zori": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_zori.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Zori.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Zōri";
                 break;
             //Uncommons
             case "juniBonsai": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_juniperBonzai.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Juniper Bonsai.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Juniper Bonsai";
                 break;
             case "kaiunTali": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_kaiunTalisman.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Kaiun Talisman.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kaiun Talisman";
                 break;
             case "mudSportDayCap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_muddySportCap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Muddy Sports Day Cap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Muddy Sports Day Cap";
                 break;
             case "rinBrokeWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_rinsBrokenWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Rins Broken Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rin's Broken Watch";
                 break;
             case "whiteHairRib": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_whiteHairRibbon.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/White Hair Ribbon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "White Hair Ribbon";
                 break;
             //Rares
             case "katanaTsuba": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_katanaTsuba.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Katana Tsuba.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Katana Tsuba";
                 break;
             case "motherGlasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Hubble/iconAddon_mothersGlasses.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Mothers Glasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mother's Glasses";
                 break;
             case "rustyFlute": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_rustyFlute.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Rusty Flute.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusty Flute";
                 break;
             case "senkoHanabi": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Hubble/iconAddon_senkoHanabi.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Senko Hanabi.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Senko Hanabi";
                 break;
             case "uchiwa": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Hubble/iconAddon_uchiwa.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Uchiwa.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Uchiwa";
                 break;
             //Very Rares
             case "driedCherBlos": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_driedCherryBlossom.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Dried Cherry Blossom.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dried Cherry Blossom";
                 break;
             case "furin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Hubble/iconAddon_furin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Furin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Furin";
                 break;
             case "wakiSaya": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_wakizashiSaya.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Wakizashi Saya.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wakizashi Saya";
                 break;
             case "yakuAmu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_yakuyokeAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Yakuyoke Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yakuyoke Amulet";
                 break;
             //Ultra Rares
             case "kintsugiTea": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Hubble/iconAddon_kintsugiTeacup.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Kintsugi Teacup.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kintsugi Teacup";
                 break;
             case "motDauRing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Haiti/iconAddon_motherDaughterRing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Spirit/Addons/Mother-Daughter Ring.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mother-Daughter Ring";
                 break;
         //Legion Addons
             //Commons
             case "friendshipBrace": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_friendshipBracelet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Friendship Bracelet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Friendship Bracelet";
                 break;
             case "mischiefList": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_mischiefList.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Mischief List.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mischief List";
                 break;
             case "scratchRuler": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_scratchedRuler.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Scratched Ruler.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Scratched Ruler";
                 break;
             case "smileFacePin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_smileyFaceButton.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Smiley Face Pin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Smiley Face Pin";
                 break;
             //Uncommons
             case "defaceSmilePin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_defacedSmileyButton.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Defaced Smiley Pin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Defaced Smiley Pin";
                 break;
             case "etchRuler": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_etchedRuler.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Etched Ruler.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Etched Ruler";
                 break;
             case "julieMixTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_juliesMixtape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Julies Mix Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Julie's Mix Tape";
                 break;
             case "muralSketch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_muralSketch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Mural Sketch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mural Sketch";
                 break;
             case "neverSleepPills": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_neverSleepPills.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Never-Sleep Pills.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Never-Sleep Pills";
                 break;
             //Rares
             case "joeyMixTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_joeysMixtape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Joeys Mix Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Joey's Mix Tape";
                 break;
             case "stolenSketchBook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_stolenSketchbook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Stolen Sketch Book.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Stolen Sketch Book";
                 break;
             case "stylishGlasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_nastyBlade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Stylish Sunglasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Stylish Sunglasses";
                 break;
             case "susieMixTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_suziesMixtape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Susies Mix Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Susie's Mix Tape";
                 break;
             case "legionPin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_theLegionButton.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/The Legion Pin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "The Legion Pin";
                 break;
             //Very Rares
             case "bffs": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_coldDirt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/BFFs.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "BFFs";
                 break;
             case "filthBlade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_filthyBlade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Filthy Knife.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Filthy Blade";
                 break;
             case "frankMixTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_franksMixtape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Franks Mix Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Frank's Mix Tape";
                 break;
             case "stabWoundStudy": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_stabWoundsStudy.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Stab Wounds Study.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Stab Wounds Study";
                 break;
             //Ultra Rares
             case "fumingMixTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_fumingMixtape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Fuming Mix Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fuming Mix Tape";
                 break;
             case "iridButton": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kenya/iconAddon_iridescentButton.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Legion/Addons/Iridescent Button.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Button";
                 break;
         //Plague Addons
             //Commons
             case "healingSalve": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_healingSalve.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Healing Salve.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Healing Salve";
                 break;
             case "limestoneSeal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_limestoneSeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Limestone Seal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Limestone Seal";
                 break;
             case "oliIncense": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_olibanumIncense.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Olibanum Incense.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Olibanum Incense";
                 break;
             case "prayTabFrag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_prayerTabletFragment.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Prayer Tablet Fragment.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Prayer Tablet Fragment";
                 break;
             //Uncommons
             case "blessApple": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_prayerApple.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Blessed Apple.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blessed Apple";
                 break;
             case "emeticPot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_emeticPotion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Emetic Potion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Emetic Potion";
                 break;
             case "haemSeal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_hematiteSeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Haematite Seal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Haematite Seal";
                 break;
             case "potentTinct": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_potentTincture.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Potent Tincture.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Potent Tincture";
                 break;
             case "prophyAmu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_prophylacticAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Prophylactic Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Prophylactic Amulet";
                 break;
             //Rares
             case "ashApple": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_ashenApple.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Ashen Apple.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ashen Apple";
                 break;
             case "exorAmu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_exorcismAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Exorcism Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Exorcism Amulet";
                 break;
             case "incenseOint": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_incensedOintment.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Incensed Ointment.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Incensed Ointment";
                 break;
             case "infectEme": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_infectedEmetic.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Infected Emetic.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Infected Emetic";
                 break;
             case "rubbingOil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_rubbingOil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Rubbing Oil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rubbing Oil";
                 break;
             //Very Rares
             case "devotAmu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_devoteesAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Devotees Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Devotee's Amulet";
                 break;
             case "severToe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_severedToe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Severed Toe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Severed Toe";
                 break;
             case "vileEme": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_vileEmetic.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Vile Emetic.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vile Emetic";
                 break;
             case "worshipTab": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_worshipTablet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Worship Tablet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Worship Tablet";
                 break;
             //Ultra Rares
             case "blackIncense": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_blackIncense.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Black Incense.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Black Incense";
                 break;
             case "iridSeal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Mali/iconAddon_IridescentSeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Plague/Addons/Iridescent Seal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Seal";
                 break;
         //Ghostface Addons
             //Commons
             case "philly": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_philly.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Philly.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Philly"';
                 break;
             case "cheapCologne": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_cheapCologne.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Cheap Cologne.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cheap Cologne";
                 break;
             case "headlineCutouts": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_headlinesCutouts.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Headline Cut-Outs.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Headline Cut-Outs";
                 break;
             case "walleyeMatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_walleyesMatchbook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Walleyes Matchbook.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Walleye's Matchbook";
                 break;
             //Uncommons
             case "cinchStraps": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_reusuableCinchStraps.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Cinch Straps.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cinch Straps";
                 break;
             case "markedMap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_markedMap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Marked Map.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Marked Map";
                 break;
             case "olsenAddressBook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_olsensAddressBook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Olsens Address Book.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Olsen's Address Book";
                 break;
             case "olsenJournal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_olsensJournal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Olsens Journal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Olsen's Journal";
                 break;
             case "teleLens": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_telephotoLens.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Telephoto Lens.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Telephoto Lens";
                 break;
             //Rares
             case "chewedPen": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_chewedPen.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Chewed Pen.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chewed Pen";
                 break;
             case "knifeBeltClip": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_knifeBeltClip.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Knife Belt Clip.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Knife Belt Clip";
                 break;
             case "lastingPerf": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_lastingPerfume.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Lasting Perfume.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lasting Perfume";
                 break;
             case "leatherKnifeSheath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_leatherKnifeSheath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Leather Knife Sheath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leather Knife Sheath";
                 break;
             case "olsenWallet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_olsensWallet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Olsens Wallet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Olsen's Wallet";
                 break;
             //Very Rares
             case "driverLicense": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_driversLicense.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Drivers License.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Driver's License";
                 break;
             case "droplegKnifeSheath": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_dropLegKnifeSheath.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Drop-Leg Knife Sheath.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Drop-Leg Knife Sheath";
                 break;
             case "nightVisMono": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_nightvisionMoncular.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Night Vision Monocular.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Night Vision Monocular";
                 break;
             case "victDetailRout": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_victimsDetailedRoutine.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Victims Detailed Routine.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Victim's Detailed Routine";
                 break;
             //Ultra Rares
             case "ghostfaceTape": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_caughtOnTape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Ghost Face Caught on Tape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = '"Ghost Face Caught on Tape"';
                 break;
             case "outdoorSecCam": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Oman/iconAddon_outdoorSecurityCamera.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghost Face/Addons/Outdoor Security Camera.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Outdoor Security Camera";
                 break;
         //Demogorgon Addons
             //Commons
             case "blackHeart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_blackHeart.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Black Heart.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Black Heart";
                 break;
             case "ratLiver": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_ratLiver.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Rat Liver.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rat Liver";
                 break;
             case "ratTail": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_ratTail.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Rat Tail.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rat Tail";
                 break;
             case "rotPumpkin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_rottenPumpkin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Rotten Pumpkin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Pumpkin";
                 break;
             //Uncommons
             case "barbGlasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_barbsGlasses.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Barbs Glasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Barb's Glasses";
                 break;
             case "mewGuts": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_mewsGuts.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Mews Guts.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mew's Guts";
                 break;
             case "rotGreenTripe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_rottenGreenTripe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Rotten Green Tripe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Green Tripe";
                 break;
             case "stickLining": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_stickyLining.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Sticky Lining.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sticky Lining";
                 break;
             case "viscWebbing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_viscousWebbing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Viscous Webbing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Viscous Webbing";
                 break;
             //Rares
             case "brassCaseLight": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_brassCaseLighter.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Brass Case Lighter.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Brass Case Lighter";
                 break;
             case "deerLung": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_deerLung.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Deer Lung.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Deer Lung";
                 break;
             case "elevenSoda": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_elevensSoda.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Elevens Soda.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Eleven's Soda";
                 break;
             case "thornyVines": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_thornyVines.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Thorny Vines.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Thorny Vines";
                 break;
             case "violetWaxcap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_violetWaxcap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Violet Waxcap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Violet Waxcap";
                 break;
             //Very Rares
             case "lifeguardWhis": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_lifeguardWhistle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Lifeguard Whistle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lifeguard Whistle";
                 break;
             case "unknownEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_unknownEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Unknown Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Unknown Egg";
                 break;
             case "upDownResin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_upsidedownResin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Upside Down Resin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Upside Down Resin";
                 break;
             case "vermWebcap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_vermillionWebcap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Vermilion Webcap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vermilion Webcap";
                 break;
             //Ultra Rares
             case "lepLichen": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_leproseLichen.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Leprose Lichen.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leprose Lichen";
                 break;
             case "redMoss": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Qatar/iconAddon_redMoss.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Demogorgon/Addons/Red Moss.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Red Moss";
                 break;
         //Oni Addons
             //Commons
             case "blackenToenail": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_blackenedToenail.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Blackened Toenail.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blackened Toenail";
                 break;
             case "crackSaka": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_crackedSakazuki.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Cracked Sakazuki.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cracked Sakazuki";
                 break;
             case "paperLant": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_paperLantern.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Paper Lantern.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Paper Lantern";
                 break;
             case "rotRope": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_rottingRope.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Rotting Rope.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rotting Rope";
                 break;
             //Uncommons
             case "bloodSash": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_bloodySash.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Bloody Sash.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Sash";
                 break;
             case "childWoodSword": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_childsWoodenSword.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Childs Wooden Sword.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Child's Wooden Sword";
                 break;
             case "chipSaihai": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_chippedSaihai.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Chipped Saihai.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chipped Saihai";
                 break;
             case "inkLion": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_inkLion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Ink Lion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ink Lion";
                 break;
             case "polishMae": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_polishedMaedate.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Polished Maedate.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Polished Maedate";
                 break;
             //Rares
             case "kanaiTali": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_kanaianzenTalisman.png";
-                document.getElementById("addonName" + (i + 1)).innerHTML = "Kanai-Anzen";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Kanai-Anzen Talisman.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Kanai-Anzen Talisman";
                 break;
             case "scalpTopknot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_scalpedTopknot.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Scalped Topknot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Scalped Topknot";
                 break;
             case "shatterWaki": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_shatteredWakizashi.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Shattered Wakizashi.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shattered Wakizashi";
                 break;
             case "woodOniMask": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_woodenOniMask.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Wooden Oni Mask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wooden Oni Mask";
                 break;
             case "yamaSashi": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_yamaokaSashimono.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Yamaoka Sashimono.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yamaoka Sashimono";
                 break;
             //Very Rares
             case "akitoCrutch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_akitosCrutch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Akitos Crutch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Akito's Crutch";
                 break;
             case "lionFang": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_lionFang.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Lion Fang.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lion Fang";
                 break;
             case "splintHull": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_splinteredHull.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Splintered Hull.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Splintered Hull";
                 break;
             case "tearTenu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_tearSoakedTenugui.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Tear-Soaked Tenugui.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tear-Soaked Tenugui";
                 break;
             //Ultra Rares
             case "iridCrest": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_IridescentFamilyCrest.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Iridescent Family Crest.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Family Crest";
                 break;
             case "renjiroBloodGlove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Sweden/iconAddon_renirosBloodyGlove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Oni/Addons/Renjiros Bloody Glove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Renjro's Bloody Glove";
                 break;
         //Deathslinger Addons
             //Commons
             case "modAmmoBelt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_modifiedAmmoBelt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Modified Ammo Belt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Modified Ammo Belt";
                 break;
             case "rickChain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_ricketyChain.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Rickety Chain.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rickety Chain";
                 break;
             case "snakeOil": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_snakeOil.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Snake Oil.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Snake Oil";
                 break;
             case "spitPolishRag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_spitPolishRag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Spit Polish Rag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spit Polish Ring";
                 break;
             //Uncommons
             case "chewTobacco": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_chewingTobacco.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Chewing Tobacco.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chewing Tobacco";
                 break;
             case "jawSmash": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_jawSmasher.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Jaw Smasher.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jaw Smasher";
                 break;
             case "marshalBadge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_marshalsBadge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Marshalls Badge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Marshal's Badge";
                 break;
             case "poisonOakLeaves": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_poisonOakLeaves.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Poison Oak Leaves.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Poison Oak Leaves";
                 break;
             case "rustedSpike": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_rustedSpike.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Rusted Spike.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusted Spike";
                 break;
             //Rares
             case "bayshoreGoldTooth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_bayshoresGoldTooth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Bayshores Gold Tooth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bayshore's Gold Tooth";
                 break;
             case "honeyLocustThorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_honeyLocustThorns.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Honey Locust Thorn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Honey Locust Thorn";
                 break;
             case "tinOilCan": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_tinOilCan.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Tin Oil Can.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tin Oil Can";
                 break;
             case "wantedPost": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_wantedPoster.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Wanted Poster.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wanted Poster";
                 break;
             case "wardenKeys": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_wardensKeys.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Wardens Keys.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Warden's Keys";
                 break;
             //Very Rares
             case "barbedWire": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_barbedWire.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Barbed Wire.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Barbed Wire";
                 break;
             case "bayshoreCig": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_bayshoresCigar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Bayshores Cigar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bayshore's Cigar";
                 break;
             case "goldCreekWhis": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_clearCreekWhiskey.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Gold Creek Whiskey.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Gold Creek Whiskey";
                 break;
             case "prisonChain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_prisonChain.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Prison Chain.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Prison Chain";
                 break;
             //Ultra Rares
             case "hellshireIron": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_hellshireIron.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Hellshire Iron.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hellshire Iron";
                 break;
             case "iridCoin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ukraine/iconAddon_iridescentCoin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Deathslinger/Addons/Iridescent Coin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Coin";
                 break;
         //Executioner Addons
             //Commons
             case "blackStrap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_blackStrap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Black Strap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Black Strap";
                 break;
             case "copperRing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_copperRing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Copper Ring.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Copper Ring";
                 break;
             case "deadButterfly": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_deadButterfly.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Dead Butterfly.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dead Butterfly";
                 break;
             case "leadRing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_leadRing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Lead Ring.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lead Ring";
                 break;
             //Uncommons
             case "cinderMusicBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_cinderellaMusicBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Cinderella Music Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cinderella Music box";
                 break;
             case "forgotVideo": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_forgottenVideoTape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Forgotten Videotape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Forgotten Videotape";
                 break;
             case "leopardFabric": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_leopardPrintFabric.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Leopard-Print Fabric.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leopard-Print Fabric";
                 break;
             case "spearhead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_spearhead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Spearhead.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spearhead";
                 break;
             case "waxDoll": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_waxDoll.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Wax Doll.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wax Doll";
                 break;
             //Rares
             case "burnManPaint": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_burningManPainting.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Burning Man Painting.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Burning Man Painting";
                 break;
             case "mannequinFoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_mannequinFoot.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Mannequin Foot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mannequin Foot";
                 break;
             case "mistDayRemainJudge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_mistyDay.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Misty Day Remains of Judgement.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Misty Day, Remains of Judgement";
                 break;
             case "tabOppress": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_tabletOfTheOppressor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Tablet of the Oppressor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tablet of the Oppressor";
                 break;
             case "valSectPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_valtielSectPhotograph.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Valtiel Sect Photograph.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Valtiel Sect Photograph";
                 break;
             //Very Rares
             case "crimCereBook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_crimsonCeremonyBook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Crimson Ceremony Book.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crimson Ceremony Book";
                 break;
             case "lostMemoBook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_lostMemoriesBook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Lost Memories Book.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lost Memories Book";
                 break;
             case "rustColorEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_rustColoredEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Rust-Coloured Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rust-Coloured Egg";
                 break;
             case "scarletEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_scarletEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Scarlet Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Scarlet Egg";
                 break;
             //Ultra Rares
             case "iridSealMeta": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_iridescentSeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Iridescent Seal of Metatron.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Seal of Metatron";
                 break;
             case "obsidGoblet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wales/iconAddon_obsidianGoblet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Executioner/Addons/Obsidian Goblet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Obsidian Goblet";
                 break;
         //Blight Addons
             //Commons
             case "chipMono": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_chippedMonocle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Chipped Monocle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chipped Monocle";
                 break;
             case "comp7": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_compoundSeven.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Compound Seven.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Compound Seven";
                 break;
             case "foxglove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_foxglove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Foxglove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Foxglove";
                 break;
             case "placeboTab": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_placeboTablet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Placebo Tablet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Placebo Tablet";
                 break;
             //Uncommons
             case "blightRat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_blightedRat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Blighted Rat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blighted Rat";
                 break;
             case "cankerThorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_cankerThorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Canker Thorn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Canker Thorn";
                 break;
             case "plagBile": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_plagueBile.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Plague Bile.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Plague Bile";
                 break;
             case "pustDust": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_pustulaDust.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Pustula Dust.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pustula Dust";
                 break;
             case "shredNotes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_shreddedNotes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Shredded Notes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shredded Notes";
                 break;
             //Rares
             case "adrenVial": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_adrenalineVial.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Adrenaline Vial.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Adrenaline Vial";
                 break;
             case "blightCrow": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_blightedCrow.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Blighted Crow.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blighted Crow";
                 break;
             case "comp21": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_compoundTwentyOne.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Compound Twenty-One.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Compound Twenty-One";
                 break;
             case "roseTonic": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_roseTonic.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Rose Tonic.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rose Tonic";
                 break;
             case "umbraSalt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_umbraSalts.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Umbra Salts.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Umbra Salts";
                 break;
             //Very Rares
             case "alchemRing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_alchemistsRing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Alchemists Ring.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Alchemist's Ring";
                 break;
             case "soulChem": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_soulChemical.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Soul Chemical.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Soul Chemical";
                 break;
             case "summonStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_summoningStone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Summoning Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Summoning Stone";
                 break;
             case "vigoJourn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_vigosJournal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Vigos Journal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vigo's Journal";
                 break;
             //Ultra Rares
             case "comp33": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_compoundThirtyThree.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Compound Thirty-Three.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Compound Thirty-Three";
                 break;
             case "iridBlightTag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yemen/iconAddon_iridescentBlightTag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Blight/Addons/Iridescent Blight Tag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Blight Tag";
                 break;
         //Twins Addons
             //Commons
             case "catFig": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_catFigurine.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Cat Figurine.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cat Figurine";
                 break;
             case "sourMilk": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_souredMilk.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Soured Milk.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Soured Milk";
                 break;
             case "tinyFingernail": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_tinyFingernail.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Tiny Fingernail.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tiny Fingernail";
                 break;
             case "toySword": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_toySword.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Toy Sword.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Toy Sword";
                 break;
             //Uncommons
             case "babyTeeth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_babyTeeth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Baby Teeth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Baby Teeth";
                 break;
             case "bloodBlackHood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_bloodiedBlackHood.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Bloody Black Hood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Black Hood";
                 break;
             case "catEye": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_catsEye.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Cats Eye.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cat's Eye";
                 break;
             case "cereCandela": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_ceremonialCandelabrum.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Ceremonial Candelabrum.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ceremonial Candelabrum";
                 break;
             case "madeleineGlove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_madeleinesGlove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Madeleines Glove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Madeleine's Glove";
                 break;
             //Rares
             case "madeleineScarf": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_madeleinesScarf.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Madeleines Scarf.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Madeleine's Scarf";
                 break;
             case "rustedNeedle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_rustedNeedle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Rusted Needle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rusted Needle";
                 break;
             case "sewerSludge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_sewerSludge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Sewer Sludge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sewer Sludge";
                 break;
             case "staleBiscuit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_staleBiscuit.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Stale Biscuit.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Stale Biscuit";
                 break;
             case "weightRattle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_weightyRattle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Weighty Rattle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Weighty Rattle";
                 break;
             //Very Rares
             case "dropPerf": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_dropOfPerfume.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Drop of Perfume.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Drop of Perfume";
                 break;
             case "forestStew": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_forestStew.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Forest Stew.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Forest Stew";
                 break;
             case "spinTop": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_spinningTop.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Spinning Top.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spinning Top";
                 break;
             case "victorSoldier": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_victorsSoldier.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Victors Soldier.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Victor's Soldier";
                 break;
             //Ultra Rares
             case "iridPendant": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_iridescentPendant.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Iridescent Pendant.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Pendant";
                 break;
             case "silencingCloth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Aurora/iconAddon_silencingCloth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Twins/Addons/Silencing Cloth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Silencing Cloth";
                 break;
         //Trickster Addons
             //Commons
             case "infernoWire": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_InfernoWires.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Inferno Wires.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Inferno Wires";
                 break;
             case "killPartChords": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_KillingPartChords.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Killing Part Chords.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Killing Part Chords";
                 break;
             case "mementoBlades": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_MementoBlades.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Memento Blades.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Memento Blades";
                 break;
             case "trickPouch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_TrickPouch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Trick Pouch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trick Pouch";
                 break;
             //Uncommons
             case "cageHeartShoe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_CagedHeartShoes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Caged Heart Shoes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Caged Heart Shoes";
                 break;
             case "jiwoonAuto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_JiWoonsAutograph.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Ji-Woons Autograph.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ji-Woon's Autograph";
                 break;
             case "luckyBlade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_LuckyBlade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Lucky Blade.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lucky Blade";
                 break;
             case "onTargSing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_OnTargetSingle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/On Target Single.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "On Target Single";
                 break;
             case "teqMoonrock": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_TequilaMoonrock.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Tequila Moonrock.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tequila Moonrock";
                 break;
             //Rares
             case "bloodBoa": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_BloodyBoa.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Bloody Boa.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Boa";
                 break;
             case "fizzSoda": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_FizzSpinSoda.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Fizz-Spin Soda.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fizz-Spin Soda";
                 break;
             case "melodiMurder": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_YumisMurder.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Melodious Murder.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Melodious Murder";
                 break;
             case "ripperBrace": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_RipperBrace.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Ripper Brace.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ripper Brace";
                 break;
             case "waitYouWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_WaitingForYouWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Waiting For You Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Waiting For You Watch";
                 break;
             //Very Rares
             case "cutThruSing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_CutThruUsingle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Cut Thru U Single.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cut Thru U Single";
                 break;
             case "diaCuff": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_DiamondCufflinks.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Diamond Cufflinks.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Diamond Cufflinks";
                 break;
             case "edgeRevAlbum": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_EdgeOfRevivalAlbum.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Edge of Revival Album.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Edge of Revival Album";
                 break;
             case "trickBlade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_TrickBlades.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Trick Blades.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trick Blades";
                 break;
             //Ultra Rares
             case "deathThroesComp": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_DeathThroesCompilation.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Death THroes Compilation.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Death Throes Compilation";
                 break;
             case "iridPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Comet/icons_Addon_IridescentPhotocard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Trickster/Addons/Iridescent Photocard.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Photocard";
                 break;
         //Nemesis Addons
             //Commons
             case "brianIntestine": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_briansIntestines.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Brians Intestine.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Brian's Intestine";
                 break;
             case "damageSyringe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_damagedSyringe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Damaged Syringe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Damaged Syringe";
                 break;
             case "starsFieldComMan": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_starsFieldCombatManual.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/STARS Field Combat Manual.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "S.T.A.R.S. Field Combat Manual";
                 break;
             case "visitWrist": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_visitorWristband.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Visitor Wristband.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Visitor Wristband";
                 break;
             //Uncommons
             case "adminWrist": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_adminWristband.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Admin Wristband.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Admin Wristband";
                 break;
             case "adrenInject": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_adrenalineInjector.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Adrenaline Injector.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Adrenaline Injector";
                 break;
             case "marvBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_marvinsBlood.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Marvins Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Marvin's Blood";
                 break;
             case "mikhailEye": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_mikhailsEye.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Mikhails Eye.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mikhail's Eye";
                 break;
             case "zomHeart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_zombieHeart.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Zombie Heart.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Zombie Heart";
                 break;
             //Rares
             case "lickTongue": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_lickerTongue.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Licker Tongue.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Licker Tongue";
                 break;
             case "plant43Vines": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_plant43Vines.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Plant 43 Vines.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Plant 43 Vines";
                 break;
             case "seroInject": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_serotoninInjector.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Serotonin Injector.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Serotonin Injector";
                 break;
             case "tVirusSamp": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_TVirusSample.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/T-Virus Sample.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "T-Virus Sample";
                 break;
             case "tyrantGore": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_tyrantGore.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Tyrant Gore.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tyrant Gore";
                 break;
             //Very Rares
             case "brokeRecCoin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_brokenRecoveryCoin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Broken Recovery Coin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Recovery Coin";
                 break;
             case "depleteInkRib": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_depletedInkRibbon.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Depleted Ink Ribbon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Depleted Ink Ribbon";
                 break;
             case "jillSand": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_jillSandwich.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Jills Sandwich.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jill's Sandwich";
                 break;
             case "neaPara": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_neaParasite.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Ne-a Parasite.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ne-α Parasite";
                 break;
             //Ultra Rares
             case "iridUmbBadge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_iridescentUmbrellaBadge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Iridescent Umbrella Badge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Umbrella Badge";
                 break;
             case "shatterStarsBadge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclipse/iconAddon_shatteredStarsBadge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Nemesis/Addons/Shattered STARS Badge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shattered S.T.A.R.S. Badge";
                 break;
         //Cenobite Addons
             //Commons
             case "bentNail": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_bentNail.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Bent Nail.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bent Nail";
                 break;
             case "burnCandle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_burningCandle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Burning Candle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Burning Candle";
                 break;
             case "leatherStrip": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_leatherStrip.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Leather Strip.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leather Strip";
                 break;
             case "livelyCrickets": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_livelyCrickets.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Lively Crickets.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lively Crickets";
                 break;
             //Uncommons
             case "flickerTele": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_flickeringTelevision.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Flickering Television.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Flickering Television";
                 break;
             case "liquiGore": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_liquifiedGore.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Liquified Gore.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Liquified Gore";
                 break;
             case "skewerRat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_skeweredRat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Skewered Rat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Skewered Rat";
                 break;
             case "spoilMeal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_spoiledMeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Spoiled Meal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spoiled Meal";
                 break;
             case "wrigMaggots": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_wrigglingMaggots.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Wriggling Maggots.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wriggling Maggots";
                 break;
             //Rares
             case "frankHeart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_franksHeart.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Franks Heart.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Frank's Heart";
                 break;
             case "larryBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_larrysBlood.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Larrys Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Larry's Blood";
                 break;
             case "larryRemains": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_larrysRemains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Larrys Remains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Larry's Remains";
                 break;
             case "sliceFrank": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_sliceofFrank.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Slice of Frank.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Slice of Frank";
                 break;
             case "torturePillar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_torturePillar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Torture Pillar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Torture Pillar";
                 break;
             //Very Rares
             case "chattererTooth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_chatterersTooth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Chatterers Tooth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chatterer's Tooth";
                 break;
             case "greasyBlackLens": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_greasyBlackLens.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Greasy Black Lens.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Greasy Black Lens";
                 break;
             case "impalingWire": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_impalingWire.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Impaling Wire.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Impaling Wire";
                 break;
             case "origPain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_originalPain.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Original Pain.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Original Pain";
                 break;
             //Ultra Rares
             case "engineerFang": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_engineersFang.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Engineers Fang.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Engineer's Fang";
                 break;
             case "iridLamentConfig": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gemini/iconAddon_iridescentLamentConfiguration.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Cenobite/Addons/Iridescent Lament Configuration.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Lament Configuration";
                 break;
         //Artist Addons
             //Commons
             case "chocloCorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_ChocloCorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Choclo Corn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Choclo Corn";
                 break;
             case "oilPaints": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_OilPaints.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Oil Paints.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Oil Paints";
                 break;
             case "thickTar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_ThickTar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Thick Tar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Thick Tar";
                 break;
             case "vibObit": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_VibrantObituary.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Vibrant Obituary.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vibrant Obituary";
                 break;
             //Uncommons
             case "autoDraw": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_AutomaticDrawing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Automatic Drawing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Automatic Drawing";
                 break;
             case "festerCarrion": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_FesteringCarrion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Festering Carrion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Festering Carrion";
                 break;
             case "stillLifeCrow": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_StillLifeCrow.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Still Life Crow.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Still Life Crow";
                 break;
             case "untitledAgony": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_UntitledAgony.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Untitled Agony.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Untitled Agony";
                 break;
             case "velvetFab": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_VelvetFabric.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Velvet Fabric.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Velvet Fabric";
                 break;
             //Rares
             case "charcoalStick": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_CharcoalStick.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Charcoal Stick.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Charcoal Stick";
                 break;
             case "darkInk": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_DarkestInk.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Darkest Ink.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Darkest Ink";
                 break;
             case "oGriefLover": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_OGriefOLover.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/O Grief O Lover.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "O Grief, O Lover";
                 break;
             case "silverBell": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_SilverBell.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Silver Bell.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Silver Bell";
                 break;
             case "thornyNest": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_ThornyNest.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Thorny Nest.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Thorny Nest";
                 break;
             //Very Rares
             case "inkEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_InkEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Ink Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ink Egg";
                 break;
             case "matiasBabyShoes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_JacobsBabyShoes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Matias Baby Shoes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Matias' Baby Shoes";
                 break;
             case "severHands": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_SeveredHands.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Severed Hands.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Severed Hands";
                 break;
             case "severTongue": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_SeveredTongue.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Severed Tongue.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Severed Tongue";
                 break;
             //Ultra Rares
             case "gardenRot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_GardenofRot.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Garden of Rot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Garden of Rot";
                 break;
             case "iridFeather": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ion/iconAddon_IridescentFeather.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Artist/Addons/Iridescent Feather.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Feather";
                 break;
         //Onryo Addons
             //Commons
             case "cabinSign": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_CabinSign.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Cabin Sign.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cabin Sign";
                 break;
             case "motherMirror": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_MothersMirror.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Mothers Mirror.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mother's Mirror";
                 break;
             case "oldNews": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_OldNewspaper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Old Newspaper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Old Newspaper";
                 break;
             case "videoCopy": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_VhsCopy.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Videotape Copy.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Videotape Copy";
                 break;
             //Uncommons
             case "clumpHair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_ClumpOfHair.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Clump of Hair.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Clump of Hair";
                 break;
             case "reikoWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_ReikosWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Reikos Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Reiko's Watch";
                 break;
             case "seaSoakCloth": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_SeaSoakedCloth.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Sea-Soaked Cloth.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sea-Soaked Cloth";
                 break;
             case "wellStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_WellStone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Well Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Well Stone";
                 break;
             case "yoichiFishNet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_YoichisFishingNet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Yoichis Fishing Net.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yoichi's Fishing Net";
                 break;
             //Rares
             case "bloodFingernails": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_BloodyFingernail.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Bloody Fingernails.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Fingernails";
                 break;
             case "motherComb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_MothersComb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Mothers Comb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mother's Comb";
                 break;
             case "rickPinwheel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_RicketyPinwheel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Rickety Pinwheel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rickety Pinwheel";
                 break;
             case "ringDraw": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_RingDrawing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Ring Drawing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ring Drawing";
                 break;
             case "wellWater": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_WellWater.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Well Water.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Well Water";
                 break;
             //Very Rares
             case "distortPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_DisortedPhoto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Distorted Photo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Distorted Photo";
                 break;
             case "tapeEditDeck": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_TapeEditingDeck.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Tape Editing Deck.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tape Editing Deck";
                 break;
             case "telephone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_Telephone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Telephone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Telephone";
                 break;
             case "vcr": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_VCR.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/VCR.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "VCR";
                 break;
             //Ultra Rares
             case "iridVideo": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_IridescentVHStape.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Iridescent Videotape.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Videotape";
                 break;
             case "remoteControl": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Kepler/iconAddon_RemoteControl.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Onryo/Addons/Remote Control.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Remote Control";
                 break;
         //Dredge Addons
             //Commons
             case "caffeineTab": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_CaffeineTablets.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Caffiene Tablets.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Caffeine Tablets";
                 break;
             case "followCowl": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_FollowersCowl.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Followers Cowl.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Follower's Cowl";
                 break;
             case "mortarPestle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_MortarAndPestle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Mortar and Pestle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mortar and Pestle";
                 break;
             case "woodPlank": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_WoodenPlank.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Wooden Plank.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wooden Plank";
                 break;
             //Uncommons
             case "airFreshener": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_AirFreshner.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Air Freshener.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Air Freshener";
                 break;
             case "burntLetters": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_BurntLetters.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Burnt Letters.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Burnt Letters";
                 break;
             case "fallShingle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_FallenShingle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Fallen Shingle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fallen Shingle";
                 break;
             case "haddieCalendar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_HaddiesCalendar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Haddies Calendar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Haddie's Calendar";
                 break;
             case "malthinkSkull": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_MalthinkersSkull.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Malthinkers Skull.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Malthinker's Skull";
                 break;
             //Rares
             case "brokeDoll": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_BrokenDoll.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Broken Doll.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Doll";
                 break;
             case "destroyPillow": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_DestroyedPillow.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Destroyed Pillow.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Destroyed Pillow";
                 break;
             case "ottomaWriting": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_OttomarianWriting.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Ottomarian Writing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ottomarian Writing";
                 break;
             case "warHelmet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_WarHelmet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/War Helmet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "War Helmet";
                 break;
             case "worryStone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_WorryStones.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Worry Stone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Worry Stone";
                 break;
             //Very Rares
             case "boatKey": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_BoatKey.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Boat Key.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Boat Key";
                 break;
             case "fieldRecord": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_FieldRecorder.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Field Recorder.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Field Recorder";
                 break;
             case "lavaMic": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_LavalierMicrophone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Lavalier Microphone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lavalier Microphone";
                 break;
             case "tillBlade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_TilingBlade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Tilling Blade.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tilling Blade";
                 break;
             //Ultra Rares
             case "iridWoodPlank": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_IridescentWoodenPlank.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Iridescent Wooden Plank.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Wooden Plank";
                 break;
             case "sacKnife": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Meteor/iconAddon_SacrificialKnife.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dredge/Addons/Sacrificial Knife.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sacrificial Knife";
                 break;
         //Mastermind Addons
             //Commons
             case "jewelBeetle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_jewelBeetle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Jewel Beetle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jewel Beetle";
                 break;
             case "rpdShoWalkie": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_RPDShoulderWalkie.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/RPD Shoulder Walkie.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "R.P.D. Shoulder Walkie";
                 break;
             case "unicornMedal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_unicornMedallion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Unicorn Medallion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Unicorn Medallion";
                 break;
             case "uroTendril": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_uroborosTendril.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Uroboros Tendril.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Uroboros Tendril";
                 break;
             //Uncommons
             case "bullhorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_bullhorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Bullhorn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bullhorn";
                 break;
             case "chaliceGold": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_goldChalice.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Chalice Gold.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chalice (Gold)";
                 break;
             case "leatherGloves": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_leatherGloves.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Leather Gloves.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leather Gloves";
                 break;
             case "lionMedal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_lionMedallion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Lion Medallion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lion Medallion";
                 break;
             case "looseCrank": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_looseCrank.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Loose Crank.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Loose Crank";
                 break;
             //Rares
             case "eggGold": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_goldenEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Egg Gold.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Egg (Gold)";
                 break;
             case "maidenMedal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_maidenMedalliom.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Maiden Medallion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Maiden Medallion";
                 break;
             case "portSafe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_portableSafe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Portable Safe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Portable Safe";
                 break;
             case "redHerb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_redHerb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Red Herb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Red Herb";
                 break;
             case "videoConDev": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_videoConferenceDevice.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Video Conference Device.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Video Conference Device";
                 break;
             //Very Rares
             case "darkSunglasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_darkSunglasses.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Dark Sunglasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dark Sunglasses";
                 break;
             case "greenHerb": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_greenHerb.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Green Herb.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Green Herb";
                 break;
             case "heliStick": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_helicopterStick.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Helicopter Stick.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Helicopter Stick";
                 break;
             case "uroVirus": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_lasPlagasVariant.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Uroboros Virus.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Uroboros Virus";
                 break;
             //Ultra Rares
             case "iridUroVial": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_iridescentUroborosVial.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Iridescent Uroboros Vial.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Uroboros Vial";
                 break;
             case "labPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Orion/iconAddon_labPhoto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Mastermind/Addons/Lab Photo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lab Photo";
                 break;
         //Knight Addons
             //Commons
             case "grittyLump": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_GrittyLump.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Gritty Lump.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Gritty Lump";
                 break;
             case "mapRealm": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_MapoftheRealms.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Map of the Realm.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Map of the Realm";
                 break;
             case "pillageMead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_PillagedMead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Pillaged Mead.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pillaged Mead";
                 break;
             case "tatterTabard": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_TatteredTabard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Tattered Tabard.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tattered Tabard";
                 break;
             //Uncommons
             case "battleAxeHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_BattleaxeHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Battle Axe Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Battle Axe Head";
                 break;
             case "callArms": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_CallToArms.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Call to Arms.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Call to Arms";
                 break;
             case "coldSteelMana": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_ColdSteelManacles.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Cold Steel Manacles.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cold Steel Manacles";
                 break;
             case "driedHorsemeat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_DriedHorsemeat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Dried Horsemeat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dried Horsemeat";
                 break;
             case "treatedBlade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_TreatedBlade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Treated Blade.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Treated Blade";
                 break;
             //Rares
             case "brokeHilt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_BrokenHilt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Broken Hilt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Hilt";
                 break;
             case "grimIronMask": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_GrimIronMask.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Grim Iron Mask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Grim Iron Mask";
                 break;
             case "ironworkTongs": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_IronworkerTongs.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Ironworkers Tongs.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ironworker's Tongs";
                 break;
             case "sharpMount": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Donut/iconAddon_SharpenedMount.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Sharpened Mount.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sharpened Mount";
                 break;
             case "townWatchTorch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_TownWatctTorch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Town Watchs Torch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Town Watch's Torch";
                 break;
             //Very Rares
             case "blacksmithHammer": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_BlacksmithHammer.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Blacksmiths Hammer.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blacksmith's Hammer";
                 break;
             case "flintSteel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_FlintandSteel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Flint and Steel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Flint and Steel";
                 break;
             case "healingPoul": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_HealingPoultice.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Healing Poultice.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Healing Poultice";
                 break;
             case "jailerChime": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Donut/iconAddon_JailersChimes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Jailers Chimes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jailer's Chimes";
                 break;
             //Ultra Rares
             case "iridComBan": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_IridescentCompanyBanner.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Iridescent Company Banner.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Company Banner";
                 break;
             case "knightCont": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Quantum/iconAddon_KnightContract.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Knight/Addons/Knights Contract.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Knight's Contract";
                 break;
         //Skull Merchant Addons
             //Commons
             case "adiValIssue": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_AdiValente1.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Adi Valente Issue 1.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Adi Valente Issue 1";
                 break;
             case "highCurrUpgrade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_HighCurrentUpgrade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/High-Current Upgrade.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "High-Current Upgrade";
                 break;
             case "highPowFlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_HighPowerFloodlight.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/High-Power Floodlight.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "High-Power Floodlight";
                 break;
             case "ultraSpeak": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_UltrasonicTrapSpeaker.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Ultrasonic Speaker.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ultrasonic Speaker";
                 break;
             //Uncommons
             case "adaptLight": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_AdaptiveLighting.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Adaptive Lighting.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Adaptive Lighting";
                 break;
             case "lowPowMode": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_LowPowerMode.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Low-Power Mode.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Low-Power Mode";
                 break;
             case "shotgunSpeak": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_ShotgunSpeakers.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Shotgun Speakers.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shotgun Speakers";
                 break;
             case "stereoRemMic": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_StereoRemoteMic.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Stereo Remote Mic.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Stereo Remote Mic";
                 break;
             case "supercharge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_Overcharge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Supercharge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Supercharge";
                 break;
             //Rares
             case "brownNoiseGen": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_BrownNoiseGenerator.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Brown Noise Generator.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Brown Noise Generator";
                 break;
             case "infraUpgrade": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_InfaredUpgrade.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Infrared Upgrade.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Infrared Upgrade";
                 break;
             case "looseScrew": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_LooseScrew.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Loose Screw.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Loose Screw";
                 break;
             case "powderGlass": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_PowderedGlass.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Powdered Glass.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Powdered Glass";
                 break;
             case "vitTarProcess": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_VitalTargetingProcessor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Vital Targeting Processor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vital Targeting Processor";
                 break;
             //Very Rares
             case "advMovePred": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_AdvancedMovementPrediction.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Advanced Movement Prediction.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Advanced Movement Prediction";
                 break;
             case "geographRead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_GeographicalReadout.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Geographical Readout.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Geographical Readout";
                 break;
             case "protoRotor": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_PrototypeRotor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Prototype Rotor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Prototype Rotor";
                 break;
             case "randomStorbe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_RandomizedStrobes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Randomised Strobes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Randomised Strobes";
                 break;
             //Ultra Rares
             case "expireBatt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_ExpiredBatteries.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Expired Batteries.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Expired Batteries";
                 break;
             case "iridUnpubManu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Saturn/iconAddon_IridescentUnpublishedManuscript.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Skull Merchant/Addons/Iridescent Unpublished Manuscript.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Unpublished Manuscript";
                 break;
         //Singularity Addons
             //Commons
             case "brokeSecKey": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_brokenSecurityKey.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Broken Security Key.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Security Key";
                 break;
             case "diagToolRepair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_diagnosticToolRepair.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Diagnostic Tool Repair.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Diagnostic Tool (Repair)";
                 break;
             case "heavyWater": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_heavyWater.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Heavy Water.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Heavy Water";
                 break;
             case "nutSlurry": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_nutritionalSlurry.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Nutritional Slurry.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Nutritional Slurry";
                 break;
             //Uncommons
             case "androidArm": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_androidArm.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Android Arm.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Android Arm";
                 break;
             case "cremateRemain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_crematedRemains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Cremated Remains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cremated Remains";
                 break;
             case "cryoGel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_cryoGel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Cryo Gel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cryo Gel";
                 break;
             case "kidBallGlove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_kidsBallGlove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Kids Ball Glove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kid's Ball Glove";
                 break;
             case "ultraSensor": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_ultrasonicSensor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Ultrasonic Sensor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ultrasonic Sensor";
                 break;
             //Rares
             case "holoGen": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_hologramGenerator.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Hologram Generator.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hologram Generator";
                 break;
             case "hyperSpray": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_hyperawarenessSpray.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Hyperawareness Spray.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hyperawareness Spray";
                 break;
             case "liveWire": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_liveWires.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Live Wires.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Live Wires";
                 break;
             case "nanoGel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_nanomachineGel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Nanomachine Gel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Nanomachine Gel";
                 break;
             case "spentOxyTank": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_spentOxygenTank.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Spent Oxygen Tank.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spent Oxygen Tank";
                 break;
             //Very Rares
             case "crewMani": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_crewManifest.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Crew Manifest.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crew Manifest";
                 break;
             case "diagToolConstruct": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_diagnosticToolConstruction.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Diagnostic Tool Construction.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Diagnostic Tool (Construction)";
                 break;
             case "foreignPlantFib": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_foreignPlantFibers.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Foreign Plant Fibres.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Foreign Plant Fibres";
                 break;
             case "somaFamPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_somaFamilyPhoto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Soma Family Photo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Soma Family Photo";
                 break;
             //Ultra Rares
             case "deniRequisForm": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_deniedRequisitionForm.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Denied Requisition Form.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Denied Requisition Form";
                 break;
             case "iridCrystalShard": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Umbra/iconAddon_iridiscentCrystalShard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Singularity/Addons/Iridescent Crystal Shard.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Crystal Shard";
                 break;
         //Xenomorph Addons
             //Commons
             case "cerealRation": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_CerealRations.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Cereal Rations.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cereal Rations";
                 break;
             case "drinkBird": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_drinkingBird.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Drinking Bird.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Drinking Bird";
                 break;
             case "ovomorph": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_ovomorph.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Ovomorph.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ovomorph";
                 break;
             case "ripleyWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_ripleysWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Ripleys Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ripley's Watch";
                 break;
             //Uncommons
             case "ashInnards": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_ashsInnards.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Ashs Innards.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ash's Innards";
                 break;
             case "brettCap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_brettsCap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Bretts Cap.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Brett's Cap";
                 break;
             case "crewHeadset": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_crewHeadset.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Crew Headset.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crew Headset";
                 break;
             case "lambertStarMap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_lambertsStarMap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Lamberts Star Map.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lambert's Star Map";
                 break;
             case "lightWand": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_lightWand.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Light Wand.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Light Wand";
                 break;
             //Rares
             case "emergHelmet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_emergencyHelmet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Emergency Helmet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Emergency Helmet";
                 break;
             case "kaneHelmet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_kanesHelmet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Kanes Helmet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kane's Helmet";
                 break;
             case "moultSkin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_moltedSkin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Moulted Skin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Moulted Skin";
                 break;
             case "multiHatchet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_multipurposeHatchet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Multipurpose Hatchet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Multipurpose Hatchet";
                 break;
             case "parkerHeadband": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_parkersHeadband.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Parkers Headband.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Parker's Headband";
                 break;
             //Very Rares
             case "catCarrier": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_catCarrier.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Cat Carrier.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cat Carrier";
                 break;
             case "harpoonGun": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_harpoonGun.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Harpoon Gun.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Harpoon Gun";
                 break;
             case "selfDestBolt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_selfDestructBolt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Self-Destruct Bolt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Self-Destruct Bolt";
                 break;
             case "semiKeyBoard": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_semioticKeyboard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Semiotic Keyboard.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Semiotic Keyboard";
                 break;
             //Ultra Rares
             case "acidicBlood": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_acidicBlood.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Acidic Blood.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Acidic Blood";
                 break;
             case "improvCattleProd": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Wormhole/iconAddon_improvisedCattleProd.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Xenomorph/Addons/Improvised Cattle Prod.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Improvised Cattle Prod";
                 break;
         //Good Guy Addons
             //Commons
             case "dollEyes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_dollEyes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Doll Eyes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Doll Eyes";
                 break;
             case "goodGuyBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_goodGuyBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Good Guy Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Good Guy Box";
                 break;
             case "strobLight": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_strobingLight.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Strobing Light.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Strobing Light";
                 break;
             case "tinyScalpel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_tinyScalpel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Tiny Scapel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tiny Scalpel";
                 break;
             //Uncommons
             case "autoScrewdriver": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_automaticScrewdriver.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Automatic Screwdriver.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Automatic Screwdriver";
                 break;
             case "electricCarvKnife": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_electricCarvingKnife.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Electric Carving Knife.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Electric Carving Knife";
                 break;
             case "hairSprayCandle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_flamingHairSpray.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Hair Spray and Candle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hair Spray & Candle";
                 break;
             case "jumpRope": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_jumpRope.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Jump Rope.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Jump Rope";
                 break;
             case "powerDrill": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_powerDrill.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Power Drill.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Power Drill";
                 break;
             //Rares
             case "portTv": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_portableTV.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Portable TV.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Portable TV";
                 break;
             case "ratPoison": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_ratPoison.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Rat Poison.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rat Poison";
                 break;
             case "runningShoes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_runningShoes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Running Shoes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Running Shoes";
                 break;
             case "silkPillow": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_silkPillow.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Silk Pillow.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Silk Pillow";
                 break;
             case "yardstick": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_yardstick.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Yardstick.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yardstick";
                 break;
             //Very Rares
             case "mirrorShards": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_mirrorShards.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Mirror Shards.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mirror Shards";
                 break;
             case "pileNails": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_pileOfNails.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Pile of Nails.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pile of Nails";
                 break;
             case "plasticBag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_plasticBag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Plastic Bag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Plastic Bag";
                 break;
             case "straightRazor": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_straightRazor.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Straight Razor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Straight Razor";
                 break;
             //Ultra Rares
             case "hardHat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_hardHat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Hard Hat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hard Hat";
                 break;
             case "iridAmu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Yerkes/iconAddon_iridescentAmulet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Good Guy/Addons/Iridescent Amulet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Amulet";
                 break;
         //Unknown Addons
             //Commons
             case "blurryPhoto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_blurryPhoto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Blurry Photo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blurry Photo";
                 break;
             case "punctEyeball": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_puncturedEyeball.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Punctured Eyeball.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Punctured Eyeball";
                 break;
             case "rabbitFoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_rabbitsFoot.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Rabbits Foot.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rabbit's Foot";
                 break;
             case "sketchAttempt": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_sketchAttempt.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Sketch Attempt.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sketch Attempt";
                 break;
             //Uncommons
             case "devUndisOrigin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_deviceOfUndisclosedOrigin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Device of Undisclosed Origin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Device of Undisclosed Origin";
                 break;
             case "lastKnownRecord": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_lastKnownRecording.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Last Known Recording.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Last Known Recording";
                 break;
             case "noteTheories": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_notebookOfTheories.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Notebook of Theories.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Notebook of Theories";
                 break;
             case "slashBackpack": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_slashedBackpack.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Slashed Backpack.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Slashed Backpack";
                 break;
             case "victimMap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_victimsMap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Victims Map.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Victim's Map";
                 break;
             //Rares
             case "bMoviePoster": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_b-moviePoster.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/B-Movie Poster.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "B-Movie Poster";
                 break;
             case "footprintCast": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_footprintCast.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Footprint Cast.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Footprint Cast";
                 break;
             case "frontPageArticle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_frontPageArticle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Front-Page Article.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Front-Page Article";
                 break;
             case "hypnoWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_hypnotistsWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Hypnotists Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hypnotist's Watch";
                 break;
             case "vanishBox": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_vanishingBox.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Vanishing Box.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vanishing Box";
                 break;
             //Very Rares
             case "discardMilkCart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_discardedMilkCarton.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Discarded Milk Carton.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Discarded Milk Carton";
                 break;
             case "homemadeMask": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_homemadeMask.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Homemade Mask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Homemade Mask";
                 break;
             case "obscureGameCart": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_obscureGameCartridge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Obscure Game Cartridge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Obscure Game Cartridge";
                 break;
             case "serumVial": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_serumVial.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Serum Vial.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Serum Vial";
                 break;
             //Ultra Rares
             case "capDark": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_capturedByTheDark.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Captured by the Dark.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Captured by the Dark";
                 break;
             case "iridOssRep": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Applepie/iconAddon_iridescentOSSReport.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Unknown/Addons/Iridescent OSS Report.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent OSS Report";
                 break;
         //Lich Addons
             //Commons
             case "crystalBall": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_CrystalBall.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Crystal Ball.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crystal Ball";
                 break;
             case "ravenFeather": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_RavensFeather.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Ravens Feather.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Raven's Feather";
                 break;
             case "tatterHeadband": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_TatteredHeadband.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Tattered Headband.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Tattered Headband";
                 break;
             case "trickGlove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_TrickstersGlove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Tricksters Glove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trickster's Glove";
                 break;
             //Uncommons
             case "glassEye": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_GlassEye.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Glass Eye.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Glass Eye";
                 break;
             case "lantReveal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_LanternOfRevealing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Lantern of Revealing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lantern of Revealing";
                 break;
             case "potSpeed": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_PotionOfSpeed.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Potion of Speed.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Potion of Speed";
                 break;
             case "ringSpellStor": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_RingOfSpellStoring.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Ring of Spell Storing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ring of Spell Storing";
                 break;
             case "ringTelekin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_RingOfTelekinesis.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Ring of Telekinesis.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ring of Telekinesis";
                 break;
             //Rares
             case "bootSpeed": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_BootsOfSpeed.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Boots of Speed.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Boots of Speed";
                 break;
             case "cloakElven": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_CloakOfElvenkind.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Cloak of Elvenkind.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cloak of Elvenkind";
                 break;
             case "ornateHorn": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_OrnateHorn.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Ornate Horn.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ornate Horn";
                 break;
             case "pearlPower": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_PearlOfPower.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Pearl of Power.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pearl of Power";
                 break;
             case "staffWither": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_StaffOfWithering.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Staff of Withering.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Staff of Withering";
                 break;
             //Very Rares
             case "bagHold": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_BagOfHolding.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Bag of Holding.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bag of Holding";
                 break;
             case "cloakInvis": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_CloakOfInvisibility.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Cloak of Invisibility.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cloak of Invisibility";
                 break;
             case "dragonDagger": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_DragontoothDagger.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Dragontooth Dagger.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dragontooth Dagger";
                 break;
             case "robeEyes": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_RobeOfEyes.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Robe of Eyes.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Robe of Eyes";
                 break;
             //Ultra Rares
             case "iridBookVileDark": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_IridescentBookOfVileDarkness.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Iridescent Book of Vile Darkness.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Book of Vile Darkness";
                 break;
             case "vorpalSword": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Churros/iconAddon_SwordOfKass.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Lich/Addons/Vorpal Sword.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Vorpal Sword";
                 break;
         //Dark Lord Addons
             //Commons
             case "cerbTalon": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_CerberusTalon.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Cerberus Talon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cerburus Talon";
                 break;
             case "clockTowerGear": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_ClockTowerGear.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Clock Tower Gear.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Clock Tower Gear";
                 break;
             case "rubyCirclet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_RubyCirclet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Ruby Circlet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ruby Circlet";
                 break;
             case "travHat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_TravelersHat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Travellers Hat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Traveller's Hat";
                 break;
             //Uncommons
             case "bloodFillGob": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_BloodFilledGoblet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Blood-Filled Goblet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blood-Filled Goblet";
                 break;
             case "magicTicket": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_MagicalTicket.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Magical Ticket.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Magical Ticket";
                 break;
             case "moonstoneNeck": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_MoonstoneNecklace.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Moonstone Necklace.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Moonstone Necklace";
                 break;
             case "whiteWolfMedal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_WhiteWolfMedallion.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/White Wolf Medallion.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "White Wolf Medallion";
                 break;
             case "wingedBoot": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_WingedBoots.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Winged Boots.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Winged Boots";
                 break;
             //Rares
             case "forceEcho": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_ForceOfEcho.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Force of Echo.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Force of Echo";
                 break;
             case "killDoll": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_KillerDoll.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Killer Doll.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Killer Doll";
                 break;
             case "pocketWatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_PocketWatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Pocket Watch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pocket Watch";
                 break;
             case "sunglasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_Sunglasses.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Sunglasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sunglasses";
                 break;
             case "sylphFeather": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_SylphFeather.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Sylph Feather.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sylph Feather";
                 break;
             //Very Rares
             case "cubeZoe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_CubeOfZoe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Cube of Zoe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Cube of Zoe";
                 break;
             case "lapisLazuli": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_LapisLazuli.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Lapis Lazuli.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lapis Lazuli";
                 break;
             case "medusaHair": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_MedusasHair.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Medusas Hair.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Medusa's Hair";
                 break;
             case "wargFang": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_WargsFang.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Wargs Fang.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Warg's Fang";
                 break;
             //Ultra Rares
             case "alucardShield": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_AlucardsShield.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Alucards Shield.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Alucard's Shield";
                 break;
             case "iridRingVlad": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Eclair/iconAddon_IridescentRingOfVlad.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Dark Lord/Addons/Iridescent Ring of Vlad.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Ring of Vlad";
                 break;
         //Houndmaster Addons
             //Commons
             case "creatureBone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_CreaturesBone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Creatures Bone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Creature's Bone";
                 break;
             case "stickyPitch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_StickyPitch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Sticky Pitch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sticky Pitch";
                 break;
             case "trainerBook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_TrainersBook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Trainers Book.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Trainer's Book";
                 break;
             case "youngCoconut": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_YoungCoconut.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Young Coconut.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Young Coconut";
                 break;
             //Uncommons
             case "barleyMeal": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_BarleyMeal.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Barley Meal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Barley Meal";
                 break;
             case "belayingPins": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_BelayingPins.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Belaying Pins.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Belaying Pins";
                 break;
             case "knottedRope": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_KnottedRope.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Knotted Rope.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Knotted Rope";
                 break;
             case "smokedSnapper": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_SmokedSnapper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Smoked Snapper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Smoked Snapper";
                 break;
             case "spyglass": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_Spyglass.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Spyglass.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spyglass";
                 break;
             //Rares
             case "fattyMeat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_FattyMeat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Fatty Meal.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fatty Meat";
                 break;
             case "spikedCollar": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_SpikedCollar.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Spiked Collar.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spiked Collar";
                 break;
             case "trainingBell": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_TrainingBell.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Training Bell.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Training Bell";
                 break;
             case "unfinishMap": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_UnfinishedMap.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Unfinished Map.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Unfinished Map";
                 break;
             case "waterskin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_Waterskin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Waterskin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Waterskin";
                 break;
             //Very Rares
             case "gunpowderTin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_GunpowderTin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Gunpowder Tin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Gunpowder Tin";
                 break;
             case "leatherHarness": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_LeatherHarness.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Leather Harness.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Leather Harness";
                 break;
             case "marlinspike": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_Marlinspike.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Marlinspike.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Marlinspike";
                 break;
             case "shipFigurehead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_ShipFigurehead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Ship Figurehead.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ship Figurehead";
                 break;
             //Ultra Rares
             case "iridWheelHandle": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_IridescentWheelHandle.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Iridescent Wheel Handle.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Wheel Handle";
                 break;
             case "tornNovel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Gelato/T_UI_iconAddon_TornNovel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Houndmaster/Addons/Torn Novel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Torn Novel";
                 break;
         //Ghoul Addons
             //Commons
             case "anteikuApron": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AnteikuApron.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Anteiku Apron.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Anteiku Apron";
                 break;
             case "freshCoffee": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_freshCoffee.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Fresh Coffee.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Fresh Coffee";
                 break;
             case "kanekiWallet": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_KanekisWallet.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Kanekis Wallet.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kaneki's Wallet";
                 break;
             case "blackGoatEgg": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_TheBlackGoatsEgg.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/The Black Goats Egg.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "The Black Goat's Egg";
                 break;
             //Uncommons
             case "bloodStainedHandkerchief": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_bloodStainedHandkerchief.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Blood-Stained Handkerchief.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Blood-Stained Handkerchief";
                 break;
             case "brokenChain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_brokenChain.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Broken Chain.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Chain";
                 break;
             case "hideHeadphones": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_HidesHeadphones.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Hides Headphones.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hide's Headphones";
                 break;
             case "kanekiSatchel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_satchel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Kanekis Satchel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Kaneki's Satchel";
                 break;
             case "taiyaki": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_taiyaki.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Taiyaki.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Taiyaki";
                 break;
             //Rares
             case "amonNecktie": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AmonsNecktie.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Amons Necktie.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Amon's Necktie";
                 break;
             case "aogiriTreeRobe": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_AogiriTreeRobe.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Aogiri Tree Robe.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Aogiri Tree Robe";
                 break;
             case "madoGlove": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_MadosGlove.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Mados Glove.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mado's Glove";
                 break;
             case "redSpiderLily": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_redSpiderLily.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Red Spider Lily.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Red Spider Lily";
                 break;
             case "rizeGlasses": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_RizesGlasses.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Rizes Glasses.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rize's Glasses";
                 break;
             //Very Rares
             case "ccgIDCard": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_CCGIDCard.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/CCG ID Card.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "CCG ID Card";
                 break;
             case "hinamiUmbrella": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_HinamisUmbrella.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Hinamis Umbrella.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Hinami's Umbrella";
                 break;
             case "redHeadedCentipede": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_redHeadedCentipede.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Red-Headed Centipede.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Red-Headed Centipede";
                 break;
             case "tortureApparatus": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_medicalApparatus.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Torture Apparatus.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Torture Apparatus";
                 break;
             //Ultra Rares
             case "iridEyePatch": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_iridescentEyePatch.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Iridescent Eye Patch.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Eye Patch";
                 break;
             case "yamoriMask": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Icecream/T_UI_iconAddon_YamorisMask.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Ghoul/Addons/Yamoris Mask.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Yamori's Mask";
                 break;
         //Animatronic Addons
             //Commons
             case "greasyPaperPlate": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_GreasyPaperPlate.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Greasy Paper Plate.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Greasy Paper Plate";
                 break;
             case "helpWantedAd": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_HelpWantedAd.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Help Wanted Ad.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Help Wanted Ad";
                 break;
             case "restaurantMenu": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RestaurantMenu.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Restaurant Menu.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Restaurant Menu";
                 break;
             case "rottenPizza": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RottenPizza.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Rotten Pizza.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Pizza";
                 break;
             //Uncommons
             case "officePhone": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_OfficePhone.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Office Phone.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Office Phone";
                 break;
             case "partyHat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_PartyHat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Party Hat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Party Hat";
                 break;
             case "rippedCurtain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_RippedCurtain.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Ripped Curtain.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Ripped Curtain";
                 break;
             case "securityGuardBadge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_SecurityGuardsBadge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Security Guards Badge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Security Guard's Badge";
                 break;
             case "streamers": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_Streamers.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Streamers.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Streamers";
                 break;
             //Rares
             case "bonnieGuitarStrings": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_BonniesGuitarStrings.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Bonnies Guitar Strings.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Bonnie's Guitar Strings";
                 break;
             case "chicaBib": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_ChicasBib.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Chicas Bib.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chica's Bib";
                 break;
             case "foxyHook": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FoxyHook.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Foxys Hook.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Foxy's Hook";
                 break;
             case "freddyHat": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FreddysHat.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Freddys Hat.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Freddy's Hat";
                 break;
             case "purpleGuyDrawing": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_PurpleGuyDrawing.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Purple Guy Drawing.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Purple Guy Drawing";
                 break;
             //Very Rares
             case "accessPanel": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_AccessPanel.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Access Panel.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Access Panel";
                 break;
             case "celebratePoster": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_CelebratePoster.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Celebrate Poster.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Celebrate! Poster";
                 break;
             case "endoCPU": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_EndoCPU.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Endo CPU.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Endo CPU";
                 break;
             case "lootBag": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_LootBag.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Loot Bag.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Loot Bag";
                 break;
             //Ultra Rares
             case "fazCoin": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_FazCoin.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Faz-Coin.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Faz-Coin";
                 break;
             case "iridRemnant": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Ketchup/T_UI_iconAddon_IridescentRemnant.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Animatronic/Addons/Iridescent Remnant.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Remnant";
                 break;
         //Krasue Addons
             //Commons
             case "brokenTiara": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_BrokenTiara.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Broken Tiara.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Broken Tiara";
                 break;
             case "firstLibretto": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_FirstLibretto.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/First Libretto.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "First Libretto";
                 break;
             case "lucklessMouse": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_LucklessMouse.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Luckless Mouse.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Luckless Mouse";
                 break;
             case "stickyLozenge": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_StickyLozenge.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Sticky Lozenge.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Sticky Lozenge";
                 break;
             //Uncommons
             case "chunkMalai": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ChunkOfMalai.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Chunk of Malai.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chunk of Malai";
                 break;
             case "crumpledSheetMusic": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_CrumpledSheetMusic.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Crumpled Sheet Music.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Crumpled Sheet Music";
                 break;
             case "defectiveMetronome": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_DefectiveMetronome.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Defective Metronome.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Defective Metronome";
                 break;
             case "pigsEye": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_PigsEye.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Pigs Eye.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Pig's Eye";
                 break;
             case "wrigglingParasite": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_WrigglingParasite.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Wriggling Parasite.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Wriggling Parasite";
                 break;
             //Rares
             case "dulledKnife": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_DulledKnife.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Dulled Knife.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Dulled Knife";
                 break;
             case "framedNewspaper": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_FramedNewspaper.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Framed Newspaper.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Framed Newspaper";
                 break;
             case "janjiraHand": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_JanjirasHand.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Janjiras Hand.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Janjira's Hand";
                 break;
             case "spatteredHandkerchief": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_SpottedHandkerchief.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Spattered Handkerchief.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Spattered Handkerchief";
                 break;
             case "theatreBinoculars": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_TheaterBinoculars.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Theatre Binoculars.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Theatre Binoculars";
                 break;
             //Very Rares
             case "lorenzaRemain": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_LorenzasRemains.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Lorenzas Remains.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Lorenza's Remains";
                 break;
             case "mysteriousElixir": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_IridescentElixir.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Mysterious Elixir.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Mysterious Elixir";
                 break;
             case "queenSceptre": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_QueensScepter.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Queens Sceptre.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Queen's Sceptre";
                 break;
             case "rottenSwine": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_RottenSwine.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Rotten Swine.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Rotten Swine";
                 break;
             //Ultra Rares
             case "chickenHead": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ChickenHead.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Chicken Head.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Chicken Head";
                 break;
             case "shreddedGown": 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/Maple/T_UI_iconAddon_ShreddedGown.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Krasue/Addons/Shredded Gown.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Shredded Gown";
                 break;
             default: 
-                document.getElementById("addonImg" + (i + 1)).src = "Add-Ons/ItemAddons/NoChoiceKillerAddonPlaceholder.png";
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Universal/Killer No Choice Addon.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Error: Not Found!";
         }
     }
@@ -9007,269 +9007,269 @@ function fixedAddon(addon1,addon2){
 function fixedOffering(offering){
     switch(offering){
         case "none": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/NoChoiceOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Killer No Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "No Offering Choice";
             break;
         case "anyOffering": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/RandomOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Killer Any Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "Any Offering Choice";
             break;
 //Bloodpoints
     //All Categories
         case "hollowShell": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_hollowShell.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Hollow Shell.png";
             document.getElementById("offeringName").innerHTML = "Hollow Shell";
             break;
         case "survPudding": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Anniversary/iconFavors_survivorPudding.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Survivor Pudding.png";
             document.getElementById("offeringName").innerHTML = "Survivor Pudding";
             break;
         case "bloPartStre": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Anniversary/iconFavors_bloodyPartyStreamers.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Bloody Party Streamers.png";
             document.getElementById("offeringName").innerHTML = "Bloody Party Streamers";
             break;
     //Brutality
         case "tanager": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_tanagerWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Tanager Wreath.png";
             document.getElementById("offeringName").innerHTML = "Tanager Wreath";
             break;
         case "devTanager": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_devoutTanagerWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Devout Tanager Wreath.png";
             document.getElementById("offeringName").innerHTML = "Devout Tanager Wreath";
             break;
         case "ardTanager": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ardentTanagerWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Ardent Tanager Wreath.png";
             document.getElementById("offeringName").innerHTML = "Ardent Tanager Wreath";
             break;
     //Deviousness
         case "raven": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ravenWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Raven Wreath.png";
             document.getElementById("offeringName").innerHTML = "Raven Wreath";
             break;
         case "devRaven": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_devoutRavenWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Devout Raven Wreath.png";
             document.getElementById("offeringName").innerHTML = "Devout Raven Wreath";
             break;
         case "ardRaven": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ardentRavenWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Ardent Raven Wreath.png";
             document.getElementById("offeringName").innerHTML = "Ardent Raven Wreath";
             break;
     //Hunter
         case "spotOwl": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_spottedOwlWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Spotted Owl Wreath.png";
             document.getElementById("offeringName").innerHTML = "Spotted Owl Wreath";
             break;
         case "devSpotOwl": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_devoutSpottedOwlWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Devout Spotted Owl Wreath.png";
             document.getElementById("offeringName").innerHTML = "Devout Spotted Owl Wreath";
             break;
         case "ardSpotOwl": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ardentSpottedOwlWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Ardent Spotted Owl Wreath.png";
             document.getElementById("offeringName").innerHTML = "Ardent Spotted Owl Wreath";
             break;
     //Sacrifice
         case "shrike": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shrikeWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Shrike Wreath.png";
             document.getElementById("offeringName").innerHTML = "Shrike Wreath";
             break;
         case "devShrike": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_devoutShrikeWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Devout Shrike Wreath.png";
             document.getElementById("offeringName").innerHTML = "Devout Shrike Wreath";
             break;
         case "ardShrike": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ardentShrikeWreath.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Bloodpoints/Ardent Shrike Wreath.png";
             document.getElementById("offeringName").innerHTML = "Ardent Shrike Wreath";
             break;
 //Map Modifications
     //Basement
         case "bloodBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_bloodiedBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Bloodied Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Bloodied Blueprint";
             break;
         case "tornBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_tornBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Torn Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Torn Blueprint";
             break;
     //Chests
         case "scratchCoin": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_scratchedCoin.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Scrathed Coin.png";
             document.getElementById("offeringName").innerHTML = "Scratched Coin";
             break;
         case "cutCoin": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_cutCoin.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Cut Coin.png";
             document.getElementById("offeringName").innerHTML = "Cut Coin";
             break;
     //Fog Thickness
         case "clearRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_clearReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Clear Reagent.png";
             document.getElementById("offeringName").innerHTML = "Clear Reagent";
             break;
         case "faintRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_faintReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Faint Reagent.png";
             document.getElementById("offeringName").innerHTML = "Faint Reagent";
             break;
         case "hazyRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_hazyReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Hazy Reagent.png";
             document.getElementById("offeringName").innerHTML = "Hazy Reagent";
             break;
         case "murkyRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_murkyReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Murky Reagent.png";
             document.getElementById("offeringName").innerHTML = "Murky Reagent";
             break;
     //Hatch
         case "annoBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_annotatedBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Annotated Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Annotated Blueprint";
             break;
         case "vigoBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_vigosBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Vigos Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Vigo's Blueprint";
             break;
     //Hook
         case "mouldyOak": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_moldyOak.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Mouldy Oak.png";
             document.getElementById("offeringName").innerHTML = "Mouldy Oak";
             break;
         case "rotOak": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_rottenOak.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Rotten Oak.png";
             document.getElementById("offeringName").innerHTML = "Rotten Oak";
             break;
         case "putrOak": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_putridOak.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Map Mods/Putrid Oak.png";
             document.getElementById("offeringName").innerHTML = "Putrid Oak";
             break;
 //Realm
     //Azarov's Key (Autohaven)
         case "azaKey": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_azarovsKey.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Azarovs Key.png";
             document.getElementById("offeringName").innerHTML = "Azarov's Key";
             break;
     //Grandma's Cookbook (Swamp)
         case "grandmaCook": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC3/iconFavors_granmasCookbook.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Grandmas Cookbook.png";
             document.getElementById("offeringName").innerHTML = "Grandma's Cookbook";
             break;
     //Heart Locket (Coldwind Farm)   
         case "heartLock": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_heartLocket.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Heart Locket.png";
             document.getElementById("offeringName").innerHTML = "Heart Locket";
             break;
     //Charred Wedding Photo (Crotus Prenn Asylum)    
         case "charWedPhoto": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_charredWeddingPhotograph.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Charred Wedding Photograph.png";
             document.getElementById("offeringName").innerHTML = "Charred Wedding Photograph";
             break;
     //Beef Tallow Mixture (Decimated Borgo)    
         case "beefTallow": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Quantum/iconFavors_BeefTallowMixture.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Beef Tallow Mixture.png";
             document.getElementById("offeringName").innerHTML = "Beef Tallow Mixture";
             break;
     //Airlock Doors (Nostromo)    
         case "airlockDoors": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Wormhole/iconFavors_airlockDoors.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Airlock Doors.png";
             document.getElementById("offeringName").innerHTML = "Airlock Doors";
             break;
     //Alien Flora (Toba Landing)    
         case "alienFlora": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Umbra/iconFavors_alienFlora.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Alien Flora.png";
             document.getElementById("offeringName").innerHTML = "Alien Flora";
             break;
     //Crow's Eye (Forsaken Boneyard)    
         case "crowEye": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Ion/iconFavors_crowsEye.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Crows Eye.png";
             document.getElementById("offeringName").innerHTML = "Crow's Eye";
             break;
     //Jigsaw Piece (Gideon Meat Plant)
         case "jigsawPiece": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Finland/iconFavors_jigsawPiece.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Jigsaw Piece.png";
             document.getElementById("offeringName").innerHTML = "Jigsaw Piece";
             break;
     //Shattered Bottle (Glenvale)
         case "shatteredBottle": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Ukraine/iconFavors_ShatteredBottle.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Shattered Bottle.png";
             document.getElementById("offeringName").innerHTML = "Shattered Bottle";
             break;
     //Strode Realty Key (Haddonfield)
         case "strodeKey": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC2/iconFavors_strodeRealtyKey.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Strode Realty Key.png";
             document.getElementById("offeringName").innerHTML = "Strode Realty Key";
             break;
     //Hawkins National Labatory ID
         case "hawkinsID": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Qatar/iconFavors_hawkinsNationalLaboratoryID.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Hawkins National Laboratory ID.png";
             document.getElementById("offeringName").innerHTML = "Hawkins National Labatory ID";
             break;
     //Shattered Glasses (Lery's)
         case "shatteredGlasses": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC4/iconFavors_shatteredGlasses.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Shattered Glasses.png";
             document.getElementById("offeringName").innerHTML = "Shattered Glasses";
             break;
     //MacMillan's Phalanx Bone (MacMillan Estate)
         case "macmillanBone": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_macmilliansPhalanxBone.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/MacMillans Phalanx Bone.png";
             document.getElementById("offeringName").innerHTML = "MacMillan's Phalanx Bone";
             break;
     //Damaged Photo (Ormond)
         case "damagedPhoto": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Kenya/iconFavors_damagedPhoto.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Damaged Photo.png";
             document.getElementById("offeringName").innerHTML = "Damaged Photo";
             break;
     //RPD Badge (Raccoon City)
         case "rpdBadge": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Eclipse/iconsFavors_RPDBadge.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/RPD Badge.png";
             document.getElementById("offeringName").innerHTML = "RPD Badge";
             break;
     //The Last Mask (Red Forest)
         case "lastMask": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC5/iconFavors_theLastMask.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/The Last Mask.png";
             document.getElementById("offeringName").innerHTML = "The Last Mask";
             break;
     //Mary's Letter (Silent Hill)
         case "marysLetter": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Wales/iconFavors_marysLetter.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Marys Letter.png";
             document.getElementById("offeringName").innerHTML = "Mary's Letter";
             break;
     //The Pied Piper (Springwood)
         case "piedPiper": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/England/iconFavors_thePiedPiper.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/The Pied Piper.png";
             document.getElementById("offeringName").innerHTML = "The Pied Piper";
             break;
     //Ichorous Loam (Withered Isle)
         case "ichorousLoam": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Meteor/iconFavors_IchorousLoam.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Ichorous Loam.png";
             document.getElementById("offeringName").innerHTML = "Ichorous Loam";
             break;
     //Yamaoka Family Crest
         case "yamaokaCrest": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Haiti/iconFavors_yamaokasCrest.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Realms/Yamaoka Family Crest.png";
             document.getElementById("offeringName").innerHTML = "Yamaoka Family Crest";
             break;
 //Secrets/Wards
     //Shroud of Vanishing
         case "sepShroud": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfSeparation.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Secrets_Wards/Shroud of Vanishing.png";
             document.getElementById("offeringName").innerHTML = "Shroud of Vanishing";
             break;
     //Mori
         case "ivoryMori": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_momentoMoriIvory.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Secrets_Wards/Ivory Memento Mori.png";
             document.getElementById("offeringName").innerHTML = "Ivory Memento Mori";
             break;
         case "ebonyMori": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_momentoMoriEbony.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Secrets_Wards/Ebony Memento Mori.png";
             document.getElementById("offeringName").innerHTML = "Ebony Memento Mori";
             break;
     //Wards
         case "sacWard": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_wardSacrificial.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Secrets_Wards/Sacrificial Ward.png";
             document.getElementById("offeringName").innerHTML = "Sacrificial Ward";
             break;
         case "blackWard": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_wardBlack.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Secrets_Wards/Black Ward.png";
             document.getElementById("offeringName").innerHTML = "Black Ward";
             break;
         default:  
-            document.getElementById("offeringImg").src = "Offerings/Favors/NoChoiceOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Killer/Offerings/Killer No Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "Error: No Offering Found!";
             
     }

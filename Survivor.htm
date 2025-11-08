@@ -2,30 +2,26 @@
 <html lang="en-US">
     <head>
         <title>Survivor Perk Randomizer</title>
+        <link rel="icon" type="image/x-icon" href="DBD Website/Survivor/SurvivorLogo.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/3bdd4bb3ab.js" crossorigin="anonymous"></script>
         <script src="Scripts/survivor.js"></script>
         <script>
             $(document).ready(function(){
-                selectAllSurv();
-                selectAllPerk();
-                selectAllItem();
-                selectAllOffering();
+                loadPref();
             });
 
         </script>
         <link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
         <link rel="stylesheet" href="Scripts/survivor.css">
-        <style>
-            
-            
-        </style>
     </head>
     <body class="body">
+        <div class="navHome">
+            <button onclick="document.location='index.htm'"><i class="fa-solid fa-house"></i></button>
+        </div>
         <div class="navKiller">
             <button onclick="document.location='Killer.htm'">Switch to Killer</button>
         </div>
-        
         <div class="selections">
             <button class="dropSelections" onclick="dropdownSelections()">Show Selections</button>
     <!--Survivors Selection Start Here-->
@@ -1170,87 +1166,86 @@
                 </div>
             </div>
         </div>
-        <button class="randoAllBtn" onclick="randomize()">Randomize All</button>
-        <div class="displayResults">
-        <!--Perks Display-->
-            <div>
-                <h2 style="text-align: center;">Perks</h2>
-                <div class="perkDisplay">
-                    <fieldset>
-                        <legend>Perk 1</legend>
-                        <span class="tooltip" id="perkTooltip1" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
-                        <img id= "perk1Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
-                        <h2 id="perk1">Select</h2>
-                    </fieldset>
-                </div>
-                <div class="perkDisplay">
-                    <fieldset>
-                        <legend>Perk 2</legend>
-                        <span class="tooltip" id="perkTooltip2" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
-                        <img id= "perk2Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
-                        <h2 id="perk2">Your</h2>
-                    </fieldset>
-                </div>
-                <div class="perkDisplay">
-                    <fieldset>
-                        <legend>Perk 3</legend>
-                        <span class="tooltip" id="perkTooltip3" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
-                        <img id= "perk3Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
-                        <h2 id="perk3">Randomized</h2>
-                    </fieldset>
-                </div>
-                <div class="perkDisplay">
-                    <fieldset>
-                        <legend>Perk 4</legend>
-                        <span class="tooltip" id="perkTooltip4" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
-                        <img id= "perk4Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="Perks/Perks/RandomSurvPerkPlaceholder.png" alt="Missing Perk Image">
-                        <h2 id="perk4">Perks</h2>
-                    </fieldset>
-                </div>
-                <button class="randoPerksBtn" onclick="randomPerks()">Randomize Perks</button>
-            </div>
-        <!--Items Display-->
-            <div class="itemsDisplay">
-                <fieldset>
-                    <legend>Item & Add-Ons</legend>
-                    <div class="itemDisplay">
-                        <img id="itemImg" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Item Image">
-                        <h2 id="itemName">Random Item</h2>
+        <div class="displayBackground">
+            <div class="displayResults">
+                <button class="randoAllBtn" onclick="randomize()">Randomize All</button>
+            <!--Perks Display-->
+                <div>
+                    <h2 style="text-align: center;">Perks</h2>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 1</legend>
+                            <span class="tooltip" id="perkTooltip1" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
+                            <img id= "perk1Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="DBD Website/Survivor/Characters/Universal/Random Choice Survivor Perk.png" alt="Missing Perk Image">
+                            <h2 id="perk1">Select</h2>
+                        </fieldset>
                     </div>
-                    <div class="addonDisplay">
-                        <div>
-                            <img id="addonImg1" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
-                            <p id="addonName1">Random Add-On</p><br>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 2</legend>
+                            <span class="tooltip" id="perkTooltip2" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
+                            <img id= "perk2Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="DBD Website/Survivor/Characters/Universal/Random Choice Survivor Perk.png" alt="Missing Perk Image">
+                            <h2 id="perk2">Your</h2>
+                        </fieldset>
+                    </div>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 3</legend>
+                            <span class="tooltip" id="perkTooltip3" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
+                            <img id= "perk3Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="DBD Website/Survivor/Characters/Universal/Random Choice Survivor Perk.png" alt="Missing Perk Image">
+                            <h2 id="perk3">Randomized</h2>
+                        </fieldset>
+                    </div>
+                    <div class="perkDisplay">
+                        <fieldset>
+                            <legend>Perk 4</legend>
+                            <span class="tooltip" id="perkTooltip4" style="font-size: 16pt;">Click the "Randomize All" or "Randomize Perks" buttons to see the description of the new Perk in this slot<br><br>Click the Perk again to toggle seeing the Perk better</span>
+                            <img id= "perk4Img" style="opacity: 1.0;" onclick="showTooltip(id)" src="DBD Website/Survivor/Characters/Universal/Random Choice Survivor Perk.png" alt="Missing Perk Image">
+                            <h2 id="perk4">Perks</h2>
+                        </fieldset>
+                    </div>
+                    <button class="randoPerksBtn" onclick="randomPerks()">Randomize Perks</button>
+                </div>
+            <!--Items Display-->
+                <div class="itemsDisplay">
+                    <fieldset>
+                        <legend>Item & Add-Ons</legend>
+                        <div class="itemDisplay">
+                            <img id="itemImg" src="DBD Website/Survivor/Items/Survivor Any Choice Item.png" alt="Missing Item Image">
+                            <h2 id="itemName">Random Item</h2>
                         </div>
-                        <div>
-                            <img id="addonImg2" src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png" alt="Missing Add-On Image">
-                            <p id="addonName2">Random Add-On</p>
-                        </div> 
-                    </div>
-                    <button class="randoOthersBtn" onclick="randomItem()">Randomize Items</button>
-                </fieldset>
-            </div>
-        <!--Offerings Display-->
-            <div class="offeringDisplay">
-                <fieldset>
-                    <legend>Offering</legend>
-                    <img id="offeringImg" src="Offerings/Favors/RandomOfferingPlaceholder.png" alt="Missing Offering Image">
-                    <h2 id="offeringName">Random Offering</h2>
-                    <button class="randoOthersBtn" onclick="randomOffering()">Randomize Offering</button>
-                </fieldset>
-            </div>
-        <!--Character Display-->
-            <div class="characterDisplay">
-                <fieldset>
-                    <legend>Character</legend>
-                    <img id="charImg" src="Portraits/StoreBackgrounds/RandomSurvPlaceholder.png" alt="Missing Character Image">
-                    <h2 id="charName">Random Character</h2>
-                    <button class="randoOthersBtn" onclick="randomChar()">Randomize Character</button>
-                </fieldset>
+                        <div class="addonDisplay">
+                            <div>
+                                <img id="addonImg1" src="DBD Website/Survivor/Items/Survivor Any Choice Item.png" alt="Missing Add-On Image">
+                                <p id="addonName1">Random Add-On</p><br>
+                            </div>
+                            <div>
+                                <img id="addonImg2" src="DBD Website/Survivor/Items/Survivor Any Choice Item.png" alt="Missing Add-On Image">
+                                <p id="addonName2">Random Add-On</p>
+                            </div> 
+                        </div>
+                        <button class="randoOthersBtn" onclick="randomItem()">Randomize Items</button>
+                    </fieldset>
+                </div>
+            <!--Offerings Display-->
+                <div class="offeringDisplay">
+                    <fieldset>
+                        <legend>Offering</legend>
+                        <img id="offeringImg" src="DBD Website/Survivor/Offerings/Survivor Any Choice Offering.png" alt="Missing Offering Image">
+                        <h2 id="offeringName">Random Offering</h2>
+                        <button class="randoOthersBtn" onclick="randomOffering()">Randomize Offering</button>
+                    </fieldset>
+                </div>
+            <!--Character Display-->
+                <div class="characterDisplay">
+                    <fieldset>
+                        <legend>Character</legend>
+                        <img id="charImg" src="DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png" alt="Missing Character Image">
+                        <h2 id="charName">Random Character</h2>
+                        <button class="randoOthersBtn" onclick="randomChar()">Randomize Character</button>
+                    </fieldset>
+                </div>
             </div>
         </div>
-        <script>
-    
-        </script>
     </body>
 </html>

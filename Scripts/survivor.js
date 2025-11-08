@@ -770,7 +770,7 @@ function dropdownOfferings(){
 //Initialized Random Array Pools
 const perkPool = [];
 const charPool = ["anyChar"];
-const itemPool = ["none"];
+const itemPool = ["any","none"];
 const fogVialAddonPool = ["none", "none"];
 const flashlightAddonPool = ["none", "none"];
 const keyAddonPool = ["none", "none"];
@@ -3043,21 +3043,21 @@ function fixedPerks(perk1,perk2,perk3,perk4){
         switch (perks[i]){
         //Any Choice Perks Start 
             case "anyCho":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/RandomSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Random Choice Survivor Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Any Choice";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = "Choose any Perk that you want in this slot";
                 break;
         //No Choice Perks Start
             case "noCho":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No Choice Survivor Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No Choice";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = "Lose any Perk from this slot";
                 break;
         //Universal Perks Start
             case "darSen":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_DarkSense.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Dark Sense.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Sense";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>Generator is completed</b>, <i>Dark Sense</i> activates:
@@ -3068,7 +3068,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Dark Sense</i> deactivates after use`;
                 break;
             case "dejVu":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_DejaVu.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Deja Vu.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Déjà Vu";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of whichever <b>3 Generators are currently in closest proximity to one another</b> are revealed to you.<br><br>
@@ -3078,7 +3078,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">6</b> %`;
                 break;
             case "hope":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Hope.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Hope.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hope";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Hope</i> activates:
@@ -3088,7 +3088,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">5</b> % <b>Haste</b> Status Effect</li></ul>`;
                 break;
             case "kindred":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Kindred.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Kindred.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Kindred";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever any Survivor is hooked, <i>Kindred</i> activates and applies the following effects:
@@ -3100,7 +3100,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>If you <b>are not the Hooked Survivor</b>, the <b>Auras</b> of all other Survivors are only revealed to you</li></ul>`;
                 break;
             case "lightweight":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Lightweight.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Lightweight.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lightweight";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reduces the Lifetime of your <b>Scratch Marks</b> by 
@@ -3110,7 +3110,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Reduces the Spawn chance of patches of <b>Scratch Marks</b> by <b>-60%</b>, making their spacing inconsistent`;
                 break;
             case "noOneLefBeh":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_NoOneLeftBehind.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No One Left Behind.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No One Left Behind";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>No One Left Behind</i> activates and applies the following effects:
@@ -3123,7 +3123,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Causes them to benefit from a <b>+20% Haste</b> Status Effect for <b>15 seconds</b></dd></dl>`;
                 break;
             case "pluIns":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_PlunderersInstinct.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Plunderers Instinct.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Plunder's Instinct";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of the following objects are revealed to you within 
@@ -3136,7 +3136,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Increases the Odds of finding <b>Items of higher Rarities</b> in Chests by <b>+50%</b>`;
                 break;
             case "premonition":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Premonition.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Premonition.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Premonition";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Receive an <b>auditory warning</b> when looking in the direction of the Killer within a <b>45° cone</b> and at a maximum range of <b>36 metres</b><br><br>
@@ -3146,7 +3146,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "resilience":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Resilience.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Resilience.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Resilience";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Action speeds for the following interactions by 
@@ -3163,7 +3163,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Vaulting Windows</li></ul>`;
                 break;
             case "sliMea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SlipperyMeat.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Slippery Meat.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Slippery Meat";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Grants the ability to <b>attempt +3 additional Self-Unhooks</b> during the first Hook Stage<br><br>
@@ -3173,7 +3173,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">4</b> %`;
                 break;
             case "smaGam":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SmallGame.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Small Game.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Small Game";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Receive an <b>auditory warning</b> upon looking in the direction of Totems in a <b>45° cone</b> within 
@@ -3188,7 +3188,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Each <b>Token</b> reduces the Detection cone's angle by <b>5°</b>, down to a minimum of <b>20°</b></li></ul>`;
                 break;
             case "spiChi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SpineChill.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Spine Chill.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Spine Chill";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the Killer is within <b>36 metres</b> of your location <b>and looking at you with a clear Line of Sight</b>, <i>Spine Chill</i> activates:
@@ -3200,7 +3200,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- This effect lingers for <b>0.5 seconds</b> after the Killer loses Line of Sight or exits the Activation range</dd></dl>`;
                 break;
             case "thiIsNotHap":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ThisIsNotHappening.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/This Is Not Happening.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "This is Not Happening";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Success zone of Great Skill Checks while Repairing and Healing by 
@@ -3209,7 +3209,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> % when in the Injured State`;
                 break;
             case "weMakIt":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_WellMakeIt.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Well Make It.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "We'll Make It";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After unhooking another Survivor, <i>We'll Make It</i> activates:
@@ -3222,7 +3222,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
 
         //Dwight Fairfield Perks
             case "bon":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Bond.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dwight Fairfield/Bond.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bond";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of all other Survivors are revealed to you within 
@@ -3231,7 +3231,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">36</b> metres`;
                 break;
             case "lea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Leader.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dwight Fairfield/Leader.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Leader";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Other Survivors within <b>10 metres</b> of your location benefit from the following effect:
@@ -3243,7 +3243,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Survivors can only be affected by <b>one</b> instance of <i>Leader</i> at a time`;
                 break;
             case "proThy":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_ProveThyself.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dwight Fairfield/Prove Thyself.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Prove Thyself";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Repair speed by a stackable 
@@ -3258,7 +3258,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Meg Thomas Perks
             case "adr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Adrenaline.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Meg Thomas/Adrenaline.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Adrenaline";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Adrenaline</i> activates:
@@ -3270,7 +3270,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">40</b> seconds`;
                 break;
             case "quiQui":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_QuickAndQuiet.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Meg Thomas/Quick and Quiet.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Quick & Quiet";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When performing a <b>Rushed action</b> to vault across <b>Pallets or Windows</b>, or to enter or exit <b>Lockers</b>, <i>Quick & Quiet</i> triggers its effect:
@@ -3281,7 +3281,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b> seconds`;
                 break;
             case "sprBur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SprintBurst.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Meg Thomas/Sprint Burst.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Sprint Burst";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Starting to run triggers <i>Sprint Burst</i>:
@@ -3294,7 +3294,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Claudette Morel Perks
             case "botKno":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BotanyKnowledge.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Claudette Morel/Botany Knowledge.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Botany Knowledge";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Healing speed by 
@@ -3303,7 +3303,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">50</b> %<br>`;
                 break;
             case "emp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Empathy.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Claudette Morel/Empathy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empathy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras of injured or dying Survivors</b> are revealed to you within 
@@ -3312,7 +3312,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">128</b> metres`;
                 break;
             case "selCar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_SelfCare.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Claudette Morel/Self-Care.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Self-Care";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Unlocks the Self-Care ability:
@@ -3323,7 +3323,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Jake Park Perks
             case "calSpi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_CalmSpirit.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jake Park/Calm Spirit.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Calm Spirit";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Prevents Crows from being alerted by your proximity and flying off, unless they are being stepped on<br><br>
@@ -3335,7 +3335,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> %`;
                 break;
             case "iroWil":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_IronWill.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jake Park/Iron Will.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Iron Will";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reduces the <b>volume of Grunts of Pain</b> while in the <b>Injured State</b> by 
@@ -3345,7 +3345,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Iron Will</i> cannot be used when suffering from <b>Exhaustion</b>, but does not cause the <b>Exhausted</b> Status Effect`;
                 break;
             case "sab":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Saboteur.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jake Park/Saboteur.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Saboteur";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While the Killer is <b>carrying another Survivor</b>, the <b>Auras</b> of all Hooks within <b>56 metres</b> of their original <b>Pick-up location</b> are revealed to you:
@@ -3360,7 +3360,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nea Karlsson Perks
             case "balLan":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_BalancedLanding.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nea Karlsson/Balanced Landing.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Balanced Landing";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>falling from a height</b>, you benefit from the following effects:
@@ -3374,7 +3374,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Balanced Landing</i> cannot be used when <b>Exhausted</b>`;
                 break;
             case "str":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_Streetwise.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nea Karlsson/Streetwise.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Streetwise";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Any Items with Charges <b>you retrieve from Chests</b> benefit from the following primary effect:
@@ -3386,7 +3386,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>The <b>Aura of the Killer</b> is revealed to you for <b>8 seconds</b>.</li>`;
                 break;
             case "urbEva":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/iconPerks_UrbanEvasion.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nea Karlsson/Urban Evasion.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Urban Evasion";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your <b>Crouching</b> Movement speed by 
@@ -3396,7 +3396,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Laurie Strode Perks
             case "decStr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_DecisiveStrike.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Laurie Strode/Decisive Strike.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Decisive Strike";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After being unhooked or unhooking yourself, <i>Decisive Strike</i> activates for the next 
@@ -3412,7 +3412,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Increases your chance of becoming the <b>initial Obsession</b> by increasing the default value by <b>+100%</b>`;
                 break;
             case "objOfObs":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_ObjectOfObsession.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Laurie Strode/Object of Obsession.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Object of Obsession";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Killer reads your Aura</b>, <i>Object of Obsession</i> activates for the same duration as their Aura-reading action:
@@ -3426,7 +3426,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Increases your chance of becoming the <b>initial Obsession</b> by increasing the default value by <b>+100%</b>`;
                 break;
             case "solSur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC2/iconPerks_SoleSurvivor.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Laurie Strode/Sole Survivor.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Sole Survivor";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Survivor other than yourself is <b>killed or sacrificed</b>, <i>Sole Survivor</i> gains <b>+1 Token</b>, up to a maximum of <b>3 Tokens</b>:
@@ -3444,7 +3444,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ace Visconti Perks
             case "aceInTheHol":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_AceInTheHole.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ace Visconti/Ace In The Hole.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ace in the Hole";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When retrieving an <b>Item from a Chest</b>, there is a chance an <b>Add-on</b> will be attached to it:
@@ -3456,7 +3456,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Ace in the Hole</i> allows you to <b>keep any Add-ons your Item has attached</b> to it upon escaping`;
                 break;
             case "opeHan":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_OpenHanded.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ace Visconti/Open Handed.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Open-Handed";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the radius of <b>all Aura-reading abilities</b> emanating from yourself or other Survivors by 
@@ -3466,7 +3466,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Survivors can only be affected by one instance of <i>Open-Handed</i> at a time`;
                 break;
             case "upTheAnt":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC3/iconPerks_UpTheAnte.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ace Visconti/Up The Ante.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Up the Ante";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For <b>every other Survivor</b> still in the Trial, <i>Up the Ante</i> is granted <b>+1 Token</b>:
@@ -3480,7 +3480,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //William "Bill" Overbeck Perks
             case "borTim":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_BorrowedTime.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Bill Overbeck/Borrowed Time.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Borrowed Time";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The Survivors you unhook benefit from the following effects:
@@ -3491,7 +3491,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Extends the duration of their <b>Haste</b> Status Effect by <b>10 seconds</b></li></ul>`;
                 break;
             case "lefBeh":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_LeftBehind.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Bill Overbeck/Left Behind.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Left Behind";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once you are the <b>Last Survivor Standing</b>, <i>Left Behind</i> activates:
@@ -3501,7 +3501,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">32</b> metres</li></ul>`;
                 break;
             case "unb":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/L4D/iconPerks_Unbreakable.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Bill Overbeck/Unbreakable.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unbreakable";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once per Trial, you can <b>completely recover from the Dying State</b>
@@ -3512,7 +3512,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Feng Min Perks
             case "ale":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Alert.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Feng Min/Alert.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Alert";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the Killer performs the <b>Break or Damage Action</b>, <i>Alert</i> triggers:
@@ -3522,7 +3522,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">5</b> seconds</li></ul>`;
                 break;
             case "lit":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Lithe.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Feng Min/Lithe.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lithe";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you perform a <b>Rushed Vault</b> action, <i>Lithe</i> triggers its effect:
@@ -3534,7 +3534,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Lithe</i> cannot be used when <b>Exhausted</b>`;
                 break;
             case "tec":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC4/iconPerks_Technician.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Feng Min/Technician.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Technician";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing a Generator, the following effects apply:
@@ -3547,7 +3547,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //David King Perks
             case "deaHar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_DeadHard.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David King/Dead Hard.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dead Hard";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After being unhooked or unhooking yourself, <i>Dead Hard</i> activates whenever you are <b>injured and running</b>, and allows you to tap into your adrenaline bank to avoid taking further damage:
@@ -3560,7 +3560,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Dead Hard</i> cannot be used when <b>Exhausted</b>`;
                 break;
             case "noMit":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_NoMither.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David King/No Mither.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No Mither";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Causes the following <b>permanent</b> effects in the Trial:
@@ -3574,7 +3574,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">25</b> %</dd></dl>`;
                 break;
             case "weGonLivFor":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/DLC5/iconPerks_WereGonnaLiveForever.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David King/Were Gonna Live Forever.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "We're Gonna Live Forever";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You benefit from the following effect when <b>healing a dying Survivor</b>:
@@ -3588,7 +3588,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Quentin Smith Perks
             case "pha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_Pharmacy.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Pharmacy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Pharmacy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Unlocking speed of <b>Chests</b> by 
@@ -3599,7 +3599,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Pharmacy</i> guarantees an <b>Emergency Med-Kit</b> from <b>all Chests</b>`;
                 break;
             case "vig":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_Vigil.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Vigil.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Vigil";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Recovery rate from the following Status Effects by 
@@ -3611,7 +3611,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Survivors can only be affected by one instance of <i>Vigil</i> at a time`;
                 break;
             case "wakUp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/England/iconPerks_WakeUp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Wake Up.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Wake Up!";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once all Generators are completed, <i>Wake Up!</i> activates:
@@ -3627,7 +3627,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //David Tapp Perks
             case "detHun":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_DetectivesHunch.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David Tapp/Detectives Hunch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dectective's Hunch";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Generator is completed, <i>Detective's Hunch</i> triggers its effect:
@@ -3640,7 +3640,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Totems</dd></dl>`;
                 break;
             case "staOut":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_StakeOut.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David Tapp/Stake Out.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Stake Out";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Staying in the <b>Terror Radius without being chased</b> grants <b>+1 Token every 15 seconds</b>, up to a maximum of 
@@ -3654,7 +3654,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Stake Out</i> does not apply to regular Great Skill Checks nor do they consume any Tokens`;
                 break;
             case "ten":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Finland/iconPerks_Tenacity.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David Tapp/Tenacity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Tenacity";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Your ferocious tenacity in dire situations allows you to benefit from the following effects while in the <b>Dying State</b>:
@@ -3668,7 +3668,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Kate Denson Perks
             case "boiOve":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_BoilOver.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kate Denson/Boil Over.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boil Over";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While being <b>carried by the Killer</b>, the following effects apply:
@@ -3680,7 +3680,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Grants <b>+33% of your current</b> Wiggle progression upon landing, if the Killer drops from height</li></ul>`;
                 break;
             case "danWitMe":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_DanceWithMe.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kate Denson/Dance With Me.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dance With Me";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When performing a <b>Rushed action</b> to vault a Window or exit a Locker, <i>Dance With Me</i> triggers its effect:
@@ -3691,7 +3691,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b> seconds`;
                 break;
             case "winOfOpp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kate/iconPerks_WindowsOfOpportunity.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kate Denson/Windows of Opportunity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Windows of Opportunity";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras of Breakable Walls, Pallets, and Windows</b> are revealed to you within 
@@ -3701,7 +3701,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Adam Francis Perks
             case "aut":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Autodidact.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Adam Francis/Autodidact.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Autodidact";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Succeeding a Skill Check while healing another Survivor grants <b>+1 Token</b>, up to a maximum of 
@@ -3719,7 +3719,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Autodidact</i> is inactive when <b>healing using a Med-Kit</b>`;
                 break;
             case "del":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Deliverance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Adam Francis/Deliverance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deliverance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>safely unhooking</b> another Survivor, <i>Deliverance</i> activates:
@@ -3732,7 +3732,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Deliverance</i> is disabled for the remainder of the Trial after use`;
                 break;
             case "div":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Haiti/iconPerks_Diversion.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Adam Francis/Diversion.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Diversion";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>staying in the Terror Radius without being chased</b> for 
@@ -3747,7 +3747,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Jeff Johansen Perks
             case "aft":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Aftercare.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jeff Johansen/Aftercare.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Aftercare";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of the last 
@@ -3762,7 +3762,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Aftercare</i> resets its effect once you are hooked`;
                 break;
             case "bre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Breakdown.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jeff Johansen/Breakdown.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Breakdown";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are unhooked by another Survivor or unhook yourself, the following effects apply:
@@ -3774,7 +3774,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Hooks broken by <i>Breakdown</i> take <b>180 seconds</b> to respawn`;
                 break;
             case "dis":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kenya/iconPerks_Distortion.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jeff Johansen/Distortion.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Distortion";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with <b>1 Token</b>.<br><br>
@@ -3789,7 +3789,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Jane Romero Perks
             case "heaOn":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_HeadOn.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jane Romero/Head On.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Head On";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hiding in a Locker for <b>3 seconds</b>, <i>Head On</i> activates:
@@ -3801,7 +3801,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Head On</i> cannot be used while <b>Exhausted</b> or when having accrued <b>Idle Crows</b>`;
                 break;
             case "poi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_Poised.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jane Romero/Poised.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Poised";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, you benefit from the following effect for 
@@ -3812,7 +3812,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b>First starting to repair a given Generator</b> reveals the <b>Aura of the Killer</b> to you for <b>8 seconds</b>`;
                 break;
             case "sol":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Mali/iconPerks_Solidarity.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jane Romero/Solidarity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Solidarity";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured and healing another Survivor without using a Med-Kit</b>, you benefit from the following effect:
@@ -3823,7 +3823,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ash Williams Perks
             case "bucUp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_BuckleUp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ash Williams/Buckle Up.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Buckle Up";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When healing a Survivor in the <b>Dying State</b>, <i>Buckle Up</i> activates:
@@ -3835,7 +3835,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Buckle Up</i> does not cause the <b>Exhausted</b> Status Effect`;
                 break;
             case "fliFlo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_FlipFlop.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ash Williams/Flip-Flop.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Flip-Flop";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Recovering in the <b>Dying State</b> also charges the Wiggle Meter at <b>50%</b> of the Recovery rate and up to a maximum of 
@@ -3844,7 +3844,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">50</b> % of Wiggle Progression`;
                 break;
             case "metOfMan":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ash/iconPerks_MettleOfMan.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ash Williams/Mettle of Man.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Mettle of Man";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After triggering a third Protection Hit by any means, Mettle of Man activates:
@@ -3858,7 +3858,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nancy Wheeler Perks
             case "betTog":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_betterTogether.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nancy Wheeler/Better Together.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Better Together";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing a Generator, its <b>Aura</b> is highlighted in <b>yellow to all other Survivors</b>.<br><br>
@@ -3868,7 +3868,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "fix":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Fixated.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nancy Wheeler/Fixated.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fixated";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Walking speed by 
@@ -3878,7 +3878,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Unlocks the ability to <b>see your own Scratch Marks</b>`;
                 break;
             case "innStr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_innerStrength.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nancy Wheeler/Inner Strength.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Inner Strength";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time you cleanse a Totem, <i>Inner Strength</i> activates:
@@ -3890,7 +3890,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Steve Harrington Perks
             case "bab":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_babySitter.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Steve Harrington/Babysitter.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Babysitter";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you unhook a Survivor, the <b>Aura of the Killer</b> is revealed to you for <b>8 seconds</b>, while the unhooked Survivor benefits from the following effects for 
@@ -3901,7 +3901,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases the strength of their <b>Haste</b> Status Effect by <b>+10%</b></li></ul>`;
                 break;
             case "cam":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_Camaraderie.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Steve Harrington/Camaraderie.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Camaradeire";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `If you are hooked and enter the Struggle Phase, <i>Camaraderie</i> activates:
@@ -3911,7 +3911,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">34</b> seconds as soon as any Survivor comes within <b>16 metres</b> of your Hook</li></ul>`;
                 break;
             case "secWin":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Qatar/iconPerks_secondWind.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Steve Harrington/Second Wind.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Second Wind";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you heal another Survivor for the equivalent of <b>1 Health State</b>, <i>Second Wind</i> activates:
@@ -3927,7 +3927,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Yui Kimura Perks
             case "anyMeaNec":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_AnyMeansNecessary.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yui Kimura/Any Means Necessary.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Any Means Necessary";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> for 
@@ -3937,7 +3937,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Grants the ability to see the <b>Auras of all dropped but not yet destroyed Pallets</b> in the environment</li></ul>`;
                 break;
             case "brea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_Breakout.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yui Kimura/Breakout.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Breakout";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While within <b>5 metres</b> of the Killer <b>carrying another Survivor</b>, the following effects apply:
@@ -3948,7 +3948,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases the Wiggling speed of the <b>carried Survivor</b> by <b>+25%</b></li></ul>`;
                 break;
             case "lucBre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Sweden/iconPerks_LuckyBreak.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yui Kimura/Lucky Break.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lucky Break";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Injured State</b>, <i>Lucky Break</i> activates:
@@ -3961,7 +3961,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Zarina Kassir Perks
             case "forThePeo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_ForThePeople.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Zarina Kassir/For the People.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "For the People";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>healthy and healing another Survivor without using a Med-Kit</b>, press the <b>Active Ability button</b> to trigger the following effects:
@@ -3976,19 +3976,22 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Reduces your chance of becoming the <b>initial Obsession</b> by reducing the default value by <b>-100%</b>`;
                 break;
             case "offTheRec":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_OffTheRecord.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Zarina Kassir/Off the Record.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Off the Record";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After being unhooked or unhooking yourself, <i>Off the Record</i> activates for 
-                <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">70</b>/
-                <b style="color: #ac3ee3;">80</b> seconds:
-                <dl><li>Prevents <b>your Aura</b> from being revealed to the Killer, if they attempt to read it</li>
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> seconds:
+                <dl><li>Blocks <b>your Aura</b> from being revealed</li>
                 <li>Suppresses <b>Grunts of Pain when injured</b></li>
-                <li>Suppresses the <b>creation of Scratch Marks</b></li></dl>`;
+                <li>Suppresses the <b>creation of Scratch Marks</b></li>
+                <li>Grants the <b>Endurance Status Effect</b></li>
+                <dd>- <b>Endurance</b> is cancelled prematurely when performing a <b>Conspicuous Action</b></dd></dl>
+                <i>Off the Record</i> deactivates prematurely and is <b>disabled for the remainder of the Trial</b> upon <b>powering the Exit Gates</b>`;
                 break;
             case "redHer":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ukraine/iconPerks_RedHerring.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Zarina Kassir/Red Herring.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Red Herring";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing a Generator for at least <b>1 second</b>, <i>Red Herring</i> triggers its primary effect:
@@ -4006,7 +4009,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Cheryl Mason Perks
             case "bloPac":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_BloodPact.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Cheryl Mason/Blood Pact.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blood Pact";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When either you or the <b>Obsession</b> become <b>injured</b> by any means, <i>Blood Pact</i> activates:
@@ -4020,7 +4023,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Reduces your chance of becoming the <b>initial Obsession</b> by reducing the default value by <b>-100%</b>`;
                 break;
             case "repAll":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_RepressedAlliance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Cheryl Mason/Repressed Alliance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Repressed Alliance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of 
@@ -4032,7 +4035,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Repressed Alliance</i> can only be triggered when <b>no other Survivors</b> are repairing your Generator`;
                 break;
             case "souGua":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wales/iconPerks_SoulGuard.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Cheryl Mason/Soul Guard.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Soul Guard";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After being healed from or having recovered from the <b>Dying State</b>, you benefit from the following effect:
@@ -4047,7 +4050,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Felix Richter Perks
             case "buiToLas":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_BuiltToLast.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Felix Richter/Built to Last.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Built to Last";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Hiding inside a Locker for 
@@ -4060,7 +4063,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Built to Last</i> is disabled for the remainder of the Trial after the third use`;
                 break;
             case "desMea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_DesperateMeasures.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Felix Richter/Desperate Measures.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Desperate Measures";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Action speeds for Healing and Unhooking by 
@@ -4072,7 +4075,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">80</b> %`;
                 break;
             case "vis":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Yemen/iconPerks_Visionary.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Felix Richter/Visionary.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Visionary";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras of Generators</b> are revealed to you within <b>32 metres</b>.<br><br>
@@ -4083,7 +4086,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Élodie Rakoto Perks
             case "app":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Appraisal.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Elodie Rakoto/Appraisal.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Appraisal";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Appraisal</i> has <b>4 Tokens</b> at the start of the Trial:
@@ -4095,7 +4098,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b>Rummaging</b> is only available <b>twice per Chest</b>`;
                 break;
             case "dec":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_Deception.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Elodie Rakoto/Deception.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deception";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Sprint button while interacting with a Locker</b> for the following effects:
@@ -4109,7 +4112,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b> seconds`;
                 break;
             case "powStr":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Aurora/iconPerks_PowerStruggle.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Elodie Rakoto/Power Struggle.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Power Struggle";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reveals the <b>Auras of available Pallets</b> whenever you are in the <b>Dying State</b>.<br><br>
@@ -4122,7 +4125,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Yun-Jin Lee Perks
             case "fasTra":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_FastTrack.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Fast Track.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fast Track";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>other than yourself is hooked</b>, <i>Fast Track</i> is granted 
@@ -4136,7 +4139,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases the bonus Progression awarded for succeeding <b>that Skill Check</b> by a stackable <b>+1 % per Token</b></li></ul>`;
                 break;
             case "selPre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_Self-Preservation.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Self-Preservation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Self-Preservation";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor is hit with a <b>Basic Attack or Special Attack</b> within <b>16 metres</b> of you, <i>Self-Preservation</i> activates:
@@ -4146,7 +4149,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
                 break;
             case "smaHit":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Comet/iconPerks_SmashHit.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Smash Hit.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Smash Hit";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Stunning the Killer with a Pallet</b> triggers <i>Smash Hit</i>:
@@ -4159,7 +4162,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Jill Valentine Perks
             case "blaMin":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_BlastMine.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jill Valentine/Blast Mine.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blast Mine";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of <b>40%</b>, <i>Blast Mine</i> activates:
@@ -4174,7 +4177,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 The <b>Auras of Trapped Generators</b> are revealed to all Survivors in <b>yellow</b>`;
                 break;
             case "cou":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Counterforce.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jill Valentine/Counterforce.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Counterforce";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You cleanse Totems <b>25%</b> faster
@@ -4185,7 +4188,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">14</b> seconds</li></ul>`;
                 break;
             case "res":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Resurgence.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jill Valentine/Resurgence.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Resurgence";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Being unhooked or unhooking yourself grants you 
@@ -4195,7 +4198,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Leon S. Kennedy Perks
             case "bitTheBul":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_BiteTheBullet.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Leon S Kennedy/Bite the Bullet.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bite the Bullet";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When healing yourself or another Survivor, you benefit from the following effects:
@@ -4207,7 +4210,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">1</b> % of the total Progression</dd></dl>`;
                 break;
             case "fla":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_Flashbang.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Leon S Kennedy/Flashbang.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Flashbang";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of 
@@ -4218,7 +4221,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Flashbang</i> deactivates after use`;
                 break;
             case "rooSpi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclipse/iconPerks_RookieSpirit.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Leon S Kennedy/Rookie Spirit.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Rookie Spirit";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing Generators, succeed 
@@ -4229,7 +4232,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Mikaela Reid Perks
             case "booCirOfHea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_BoonCircleOfHealing.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Mikaela Reid/Boon_Circle of Healing.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Circle of Healing";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
@@ -4244,7 +4247,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
             case "booShaSte":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_BoonShadowStep.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Mikaela Reid/Boon_Shadow Step.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Shadow Step";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
@@ -4259,7 +4262,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
             case "cla":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Hubble/iconPerks_Clairvoyance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Mikaela Reid/Clairvoyance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Clairvoyance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After cleansing or blessing a Totem, <i>Clairvoyance</i> activates:
@@ -4275,7 +4278,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Jonah Vasquez Perks
             case "booExp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_BoonExponential.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jonah Vasquez/Boon_Exponential.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Exponential";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
@@ -4288,7 +4291,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
             case "corAct":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_CorrectiveAction.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jonah Vasquez/Corrective Action.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Corrective Action";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You start the Trial with 
@@ -4302,7 +4305,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Corrective Action</i> does not apply to <b>special</b> Skill Checks`;
                 break;
             case "ove":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Ion/T_iconPerks_Overcome.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jonah Vasquez/Overcome.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Overcome";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Becoming injured by any means triggers <i>Overcome</i>:
@@ -4315,7 +4318,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Yoichi Asakawa Perks
             case "booDarThe":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_DarkTheory.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yoichi Asakawa/Boon_Dark Theory.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Dark Theory";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
@@ -4329,7 +4332,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
             case "empCon":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_EmpathicConnection.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yoichi Asakawa/Empathic Connection.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empathic Connection";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While other Survivors are in the <b>Injured State</b>, they benefit from the following effects:
@@ -4340,7 +4343,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">35</b> %</li></ul>`;
                 break;
             case "parGui":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Kepler/iconPerks_ParentalGuidance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yoichi Asakawa/Parental Guidance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Parental Guidance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>stunning the Killer</b> by any means, <i>Parental Guidance</i> triggers its effect:
@@ -4351,7 +4354,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Haddie Kaur Perks
             case "innFoc":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_InnerFocus.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Haddie Kaur/Inner Focus.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Inner Focus";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Grants the ability to see the <b>Scratch Marks of other Survivors</b>.<br><br>
@@ -4361,7 +4364,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds`;
                 break;
             case "over":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_Overzealous.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Haddie Kaur/Overzealous.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Overzealous";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After cleansing or blessing a Totem, <i>Overzealous</i> activates:
@@ -4376,7 +4379,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Overzealous</i> deactivates after <b>losing a Health State</b> by any means`;
                 break;
             case "resMan":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Meteor/iconPerks_ResidualManifest.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Haddie Kaur/Residual Manifest.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Residual Manifest";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After a successful <b>Killer Blind</b>, the Killer suffers from the <b>Blindness</b> Status Effect for 
@@ -4387,7 +4390,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ada Wong Perks
             case "lowPro":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_LowProfile.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ada Wong/Low Profile.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Low Profile";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are the <b>only Survivor</b> not currently incapacitated by either being <b>downed, carried, or hooked</b>, <i>Low Profile</i> activates:
@@ -4398,7 +4401,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Low Profile</i> deactivates after use and only accounts for <b>Survivors still participating</b> in the Trial`;
                 break;
             case "reaHea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_ReactiveHealing.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ada Wong/Reactive Healing.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Reactive Healing";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor within <b>32 metres</b> of your location <b>loses a Health State</b> by any means while you are in the <b>Injured State</b>, you benefit from the following effect:
@@ -4408,7 +4411,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">50</b> % of your <b>missing</b> Healing Progression towards your Health Bar</li></ul>`;
                 break;
             case "wir":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Wiretap.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ada Wong/Wiretap.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Wiretap";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of <b>40%</b>, <i>Wiretap</i> activates:
@@ -4422,7 +4425,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Rebecca Chambers Perks
             case "betThanNew":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_BetterThanNew.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rebecca Chambers/Better than New.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Better than New";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Completing a Healing action on <b>another Survivor</b> grants them the following benefits until <b>they receive damage</b> again:
@@ -4432,7 +4435,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">16</b> %</li></ul>`;
                 break;
             case "hyp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Hyperfocus.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rebecca Chambers/Hyperfocus.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hyperfocus";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Succeeding a <b>Great Skill Check</b> while repairing or healing grants <b>+1 Token</b>, up to a maximum of <b>6 Tokens</b>:
@@ -4447,7 +4450,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Hyperfocus</i> loses <b>all Tokens</b> after succeeding just a Good Skill Check, failing one, or if the action is interrupted by any means`;
                 break;
             case "rea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Orion/iconPerks_Reassurance.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rebecca Chambers/Reassurance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Reassurance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press the <b>Active Ability button</b> while within <b>6 metres</b> of a <b>hooked Survivor</b> to pause their Sacrifice Process for the next 
@@ -4459,7 +4462,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Vittorio Toscano Perks
             case "fog":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_Fogwise.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vittorio Toscano/Fogwise.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fogwise";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Succeeding a <b>Great Skill Check</b> while repairing a Generator reveals the <b>Aura of the Killer</b> to you for 
@@ -4468,7 +4471,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">6</b> seconds`;
                 break;
             case "potEne":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_PotentialEnergy.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vittorio Toscano/Potential Energy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Potential Energy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing Generators, press the <b>Active Ability button</b> to activate <i>Potential Energy</i>:
@@ -4484,7 +4487,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Potential Energy</i> loses <b>all Tokens</b> and deactivates upon <b>losing a Health State</b>`;
                 break;
             case "quiGam":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Quantum/iconPerks_VittoriosGambit.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vittorio Toscano/Quick Gambit.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Quick Gambit";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While being <b>chased</b> by the Killer, the following effects apply:
@@ -4497,7 +4500,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Thalita Lyra Perks
             case "cutLoo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_CutLoose.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Thalita Lyra/Cut Loose.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Cut Loose";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing a <b>Rush Vault action in a Chase</b>, <i>Cut Loose</i> activates for the next 
@@ -4509,7 +4512,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Cut Loose</i> has a cooldown of <b>45 seconds</b>`;
                 break;
             case "friCom":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_FriendlyCompetition.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Thalita Lyra/Friendly Competition.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Friendly Competition";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you complete a Generator <b>with at least one other Survivor</b>, <i>Friendly Competition</i> activates:
@@ -4519,7 +4522,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">120</b> seconds</li></ul>`;
                 break;
             case "teaPowOfTwo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_TeamworkPowerOfTwo.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Thalita Lyra/Teamwork_Power of Two.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Power of Two";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you finish healing another Survivor, <i>Teamwork: Power of Two</i> activates, and both you and the healed Survivor benefit from the following effect:
@@ -4532,7 +4535,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Renato Lyra Perks
             case "bacPla":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_BackgroundPlayer.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Renato Lyra/Background Player.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Background Player";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor is <b>picked up</b>, <i>Background Player</i> activates for <b>10 seconds</b>.<br><br>
@@ -4545,7 +4548,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Background Player</i> cannot be used when <b>Exhausted</b>`;
                 break;
             case "bloRus":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_BloodRush.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Renato Lyra/Blood Rush.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blood Rush";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After unhooking yourself or being unhooked, <i>Blood Rush</i> activates for 
@@ -4557,7 +4560,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Blood Rush</i> is disabled for the remainder of the Trial once the Exit Gates are <b>powered</b>`;
                 break;
             case "teaColSte":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Saturn/iconPerks_TeamworkCollectiveStealth.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Renato Lyra/Teamwork_Collective Stealth.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Collective Stealth";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor finishes healing you, Teamwork: Collective Stealth activates, and both you and the Survivor who healed you benefit from the following effect:
@@ -4570,7 +4573,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Gabriel Soma Perks
             case "madForThi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_madeForThis.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Gabriel Soma/Made for This.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Made for This";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.25pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Injured State</b>, <i>Made for This</i> activates and you benefit from the following effects:
@@ -4585,7 +4588,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">3</b> % <b>Haste</b> Status Effect <b>while running</b> and also suffering from the <b>Deep Wound</b> Status Effect</li></dl>`;
                 break;
             case "sca":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_scavenger.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Gabriel Soma/Scavenger.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scavenger";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While holding a <b>depleted Toolbox</b>, <i>Scavenger</i> activates:
@@ -4598,7 +4601,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Scavenger</i> grants the ability to <b>rummage</b> through an opened Chest <b>once per Trial</b> and will guarantee a <b>basic Toolbox</b>`;
                 break;
             case "tro":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Umbra/IconPerks_troubleshooter.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Gabriel Soma/Troubleshooter.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Troubleshooter";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you are <b>chased by the Killer</b>, <i>Troubleshooter</i> activates:
@@ -4611,7 +4614,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Nicolas Cage Perks
             case "dra":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_Dramaturgy.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nicolas Cage/Dramaturgy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dramaturgy";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are <b>Healthy</b>, <i>Dramaturgy</i> activates:
@@ -4628,7 +4631,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Dramaturgy</i> cannot be used when <b>Exhausted</b>`;
                 break;
             case "ploTwi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_PlotTwist.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nicolas Cage/Plot Twist.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Plot Twist";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Injured State</b>, <i>Plot Twist</i> activates:
@@ -4644,7 +4647,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Plot Twist</i> deactivates after recovering yourself by any means and reactivates once more once the Exit Gates are <b>powered</b>`;
                 break;
             case "scePar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Venus/iconPerks_ScenePartner.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Nicolas Cage/Scene Partner.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Scene Partner";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are inside the <b>Terror Radius</b>, <i>Scene Partner</i> activates:
@@ -4657,7 +4660,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Ellen Ripley Perks
             case "cheTra":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_ChemicalTrap.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ellen Ripley/Chemical Trap.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Chemical Trap";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of <b>20%</b>, <i>Chemical Trap</i> activates:
@@ -4671,7 +4674,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 The <b>Auras of Trapped Pallets</b> are revealed to all Survivors in <b>yellow</b>`;
                 break;
             case "ligFoo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_LightFooted.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ellen Ripley/Light-Footed.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Light-Footed";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are <b>healthy</b>, <i>Light-Footed</i> activates:
@@ -4682,7 +4685,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds after performing a <b>Rush Vault action</b>`;
                 break;
             case "lucSta":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Wormhole/iconPerks_LuckyStar.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ellen Ripley/Lucky Star.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Lucky Star";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While hiding inside a Locker, you benefit from the following effect:
@@ -4698,7 +4701,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Alan Wake Perks
             case "booIll":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_Illumination.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Alan Wake/Boon_Illumination.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Illumination";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
@@ -4713,7 +4716,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
             case "chaOfLig":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_ChampionOfLight.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Alan Wake/Champion of Light.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Champion of Light";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Shining a Flashlight</b> applies the following effect:
@@ -4727,7 +4730,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">40</b> seconds after <b>blinding the Killer</b>`;
                 break;
             case "dea":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Zodiac/iconsPerks_Deadline.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Alan Wake/Deadline.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Deadline";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Injured State</b>, <i>Deadline</i> activates:
@@ -4740,7 +4743,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Sable Ward Perks
             case "invWeaSpi":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_InvocationWeavingSpiders.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Sable Ward/Invocation_Weaving Spiders.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Invocation: Weaving Spiders";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "7.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When in the <b>Basement near the circle</b>, press the <b>Active Ability button</b> to begin the <b>Invocation</b>, which takes <b>60 seconds</b> to complete.<br><br>
@@ -4754,7 +4757,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Completing this <b>Invocation</b> disables all other instances of <i>Invocation: Weaving Spiders</i> for the remainder of the Trial`;
                 break;
             case "strInSha":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_StrengthInShadows.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Sable Ward/Strength in Shadows.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Strength in Shadows";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you are in the <b>Basement</b>, <i>Strength in Shadows</i> activates:
@@ -4765,7 +4768,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
                 break;
             case "wic":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Applepie/iconsPerks_Wicked.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Sable Ward/Wicked.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Wicked";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Aura of the Killer</b> is revealed to you for 
@@ -4777,7 +4780,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //The Troupe Perks
             case "barIns":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_BardicInspiration.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Troupe/Bardic Inspiration.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bardic Inspiration";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press the <b>Active Ability button while standing and motionless</b> to enter the <b>Performance</b> interaction that lasts up to <b>15 seconds</b> and empowers other Survivors within <b>16 metres</b> of your location.<br><br>
@@ -4792,7 +4795,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">90</b> seconds after completing the <b>Performance or cancelling it</b>`;
                 break;
             case "mirIll":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_MirroredIllusion.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Troupe/Mirrored Illusion.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Mirrored Illusion";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After repairing Generators for a total of <b>20%</b>, <i>Mirrored Illusion</i> activates:
@@ -4803,7 +4806,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Mirrored Illusion</i> deactivates after triggering successfully`;
                 break;
             case "stiSig":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Churros/iconPerks_StillSight.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Troupe/Still Sight.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Still Sight";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>standing still</b> for 
@@ -4814,7 +4817,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Lara Croft Perks
             case "fin":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Finesse.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Lara Croft/Finesse.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Finesse";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are <b>healthy</b>, <i>Finesse</i> activates:
@@ -4825,7 +4828,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds after performing a <b>Fast Vault</b>`;
                 break;
             case "har":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Hardened.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Lara Croft/Hardened.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hardened";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>unlocking a Chest and either blessing or cleansing a Totem</b>, <i>Hardened</i> activates:
@@ -4835,7 +4838,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">5</b> seconds</li></ul>`;
                 break;
             case "spe":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Donut/iconPerks_Specialist.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Lara Croft/Specialist.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Specialist";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11.75pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>unlock or rummage</b> through a Chest, <i>Specialist</i> gains <b>+1 Token</b>, up to a maximum of <b>6 Tokens</b>:
@@ -4850,7 +4853,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Trevor Belmont Perks
             case "exu":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_Exultation.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Trevor Belmont/Exultation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Exultation";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Stunning</b> the Killer with a <b>Pallet</b> upgrades the <b>Rarity of your held Item to the next tier</b>
@@ -4861,7 +4864,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">20</b> seconds`;
                 break;
             case "eyeOfBel":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_EyesOfBelmont.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Trevor Belmont/Eyes of Belmont.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Eyes of Belmont";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is <b>completed</b>, the <b>Aura of the Killer</b> is revealed to you for 
@@ -4872,7 +4875,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Eyes of Belmont</i> benefits from its own effect`;
                 break;
             case "momOfGlo":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Eclair/iconPerks_MomentOfGlory.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Trevor Belmont/Moment of Glory.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Moment of Glory";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the <b>Unlocking or Rummaging</b> action on Chests a total of <b>2 times</b>, <i>Moment of Glory</i> activates:
@@ -4887,7 +4890,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Taurie Cain Perks
             case "cleBre":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_CleanBreak.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Taurie Cain/Clean Break.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Clean Break";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After completing a Healing action on <b>another Survivor</b>, <i>Clean Break</i> activates.<br><br>
@@ -4902,7 +4905,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Clean Break</i> deactivates after healing you`;
                 break;
             case "invTreCro":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_InvocationTreacherousCrows.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Taurie Cain/Invocation_Treacherous Crows.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Invocation: Treacherous Crows";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When in the <b>Basement near the circle</b>, press the <b>Active Ability button</b> to begin the <b>Invocation</b>, which takes <b>60 seconds</b> to complete.<br><br>
@@ -4915,7 +4918,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>You automatically enter the <b>Injured State</b> from <b>any previous Health State</b>, and suffer from the <b>Broken</b> Status Effect <b>for the remainder of the Trial</b></li></ul>`;
                 break;
             case "shoTheBur":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Gelato/T_UI_iconsPerks_ShoulderTheBurden.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Taurie Cain/Shoulder the Burden.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Shoulder the Burden";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Once per Trial</b>, and while <b>you are not on Death Hook</b>, press the <b>Active Ability button</b> while <b>standing in front of a Hooked Survivor</b> to unhook them and trigger the following effects:
@@ -4927,7 +4930,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Orela Rose Perks
             case "doNoHar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_DoNoHarm.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Orela Rose/Do No Harm.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Do No Harm";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When healing another Survivor, depending on <b>their accumulated Hook Stages</b>, you benefit from the following effects:
@@ -4941,7 +4944,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Increases the Progression bonus of <b>Great Healing Skill Checks</b> by <b>+3% per Hook Stage</b>, up to a maximum of <b>+6%</b></li></ul>`;
                 break;
             case "dutOfCar":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_DutyOfCare.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Orela Rose/Duty of Care.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Duty of Care";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>healthy</b>, taking a <b>Protection Hit</b> causes <b>all other Survivors within 12 metres of your location</b> to benefit from the following effect:
@@ -4951,7 +4954,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">6</b> seconds</li></ul>`;
                 break;
             case "rapRes":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Jerky/T_UI_iconsPerks_RapidResponse.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Orela Rose/Rapid Response.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Rapid Response";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing a <b>Rushed action to exit a Locker</b>, <i>Rapid Response</i> triggers its effect:
@@ -4964,7 +4967,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Rick Grimes Perks
             case "apoIng":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_ApocalypticIngenuity.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rick Grimes/Apocalyptic Ingenuity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Apocalyptic Ingenuity";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Unlocks potential in your Aura-reading ability:<br>
@@ -4978,7 +4981,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <dd>- Fragile Pallets instantly break when dropped.</dd></dl>`;
                 break;
             case "comAndGetMe":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_ComeAndGetMe.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rick Grimes/Come and Get Me.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Come and Get Me!";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>unhooking a Survivor, while crouched and stationary</b>, press the <b>Active Ability button</b> to trigger the following effects:
@@ -4989,7 +4992,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <li>Causes you to <b>scream and reveal your Aura to the Killer</b> for <b>5 seconds</b>.</li></ul>`;
                 break;
             case "teaTouUp":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkThrowDown.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rick Grimes/Teamwork_Toughen Up.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Toughen Up";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured</b>, whenever <b>another Survivor within 24 metres of your location blinds the Killer by any means or stuns them using a Pallet</b>, <i>Teamwork: Toughen Up</i> triggers its effect:
@@ -5000,7 +5003,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Michonne Grimes Perks
             case "con":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_Conviction.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Michonne Grimes/Conviction.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Conviction";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Dying State</b>, after completing a <b>Healing action on any Survivor</b>, <i>Conviction</i> activates.<br><br>
@@ -5013,7 +5016,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">30</b> seconds.</li></ul>`;
                 break;
             case "lasSta":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_LastStand.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Michonne Grimes/Last Stand.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Last Stand";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>staying in the Terror Radius without being chased</b> for 
@@ -5025,7 +5028,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <i>Last Stand</i> is <b>disabled for the remainder of the Trial after use</b>.`;
                 break;
             case "teaThrDow":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Lasagna/T_UI_iconPerks_TeamworkToughenUp.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Michonne Grimes/Teamwork_Throw Down.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Throw Down";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>blind the Killer by any means or stun them using a Pallet</b>, <i>Teamwork: Throw Down</i> triggers its effect:
@@ -5036,7 +5039,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
         //Vee Boonyasak Perks
             case "ghoNot":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_GhostNotes.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vee Boonyasak/Ghost Notes.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ghost Notes";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While suffering from the <b>Exhausted Status Effect</b>, you benefit from the following effects:
@@ -5047,7 +5050,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">10</b> %.</li>`;
                 break;
             case "oneTwoThrFou":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_OneTwoThreeFour.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vee Boonyasak/One-Two-Three-Four.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "One-Two-Three-Four!";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>standing and idle</b>, press the <b>Active Ability button</b> to start a <b>Performance</b>:
@@ -5062,7 +5065,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">90</b> seconds after <b>cancelling or completing the Performance.</b>`;
                 break;
             case "roaLif":
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/Maple/T_UI_iconPerks_RoadLife.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Vee Boonyasak/Road Life.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Road Life";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured and repairing a Generator</b>, <b>regular Skill Checks</b> have the following effects:
@@ -5079,7 +5082,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 break;
     //End
             default: 
-                document.getElementById("perk" + (i + 1) + "Img").src="Perks/Perks/NoChoiceSurvPerkPlaceholder.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No Choice Survivor Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empty Slot";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `This is an empty slot for a Perk.<br><br>Add another Perk?`;
@@ -5090,336 +5093,341 @@ function fixedPerks(perk1,perk2,perk3,perk4){
 function fixedChar(char){
     switch(char){
         case "anyChar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";
             document.getElementById("charName").innerHTML = "Any Survivor";
             break;
         case "dwigFai":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_DF.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Dwight Fairfield/storeBackground_DF.png";
             document.getElementById("charName").innerHTML = "Dwight Fairfield";
             break;
         case "megTho":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_MT.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Meg Thomas/storeBackground_MT.png";
             document.getElementById("charName").innerHTML = "Meg Thomas";
             break;
         case "clauMor":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_CM.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Claudette Morel/storeBackground_CM.png";
             document.getElementById("charName").innerHTML = "Claudette Morel";
             break;
         case "jakePar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_JP.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Jake Park/storeBackground_JP.png";
             document.getElementById("charName").innerHTML = "Jake Park";
             break;
         case "neaKar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_NK.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Nea Karlsson/storeBackground_NK.png";
             document.getElementById("charName").innerHTML = "Nea Karlsson";
             break;
         case "laurStr":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_LS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Laurie Strode/storeBackground_LS.png";
             document.getElementById("charName").innerHTML = "Laurie Strode";
             break;
         case "aceVis":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_AV.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Ace Visconti/AceVisconti.png";
             document.getElementById("charName").innerHTML = "Ace Visconti";
             break;
         case "billOve":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_BO.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Bill Overbeck/storeBackground_BO.png";
             document.getElementById("charName").innerHTML = "William 'Bill' Overbeck";
             break;
         case "fengMin":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_FM.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Feng Min/storeBackground_FM.png";
             document.getElementById("charName").innerHTML = "Feng Min";
             break;
         case "daviKin":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_DK.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/David King/storeBackground_DK.png";
             document.getElementById("charName").innerHTML = "David King";
             break;
         case "quenSmi":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_QS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Ouentin Smith/storeBackground_QS.png";
             document.getElementById("charName").innerHTML = "Quentin Smith";
             break;
         case "daviTap":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_FS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/David Tapp/storeBackground_FS.png";
             document.getElementById("charName").innerHTML = "David Tapp";
             break;
         case "kateDen":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_GS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Kate Denson/storeBackground_GS.png";
             document.getElementById("charName").innerHTML = "Kate Denson";
             break;
         case "adamFra":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_AF.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Adam Francis/AdamFrancis.png";
             document.getElementById("charName").innerHTML = "Adam Francis";
             break;
         case "jeffJoh":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_KS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Jeff Johansen/storeBackground_KS.png";
             document.getElementById("charName").innerHTML = "Jeff Johansen";
             break;
         case "janeRom":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_MS.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Jane Romero/storeBackground_MS.png";
             document.getElementById("charName").innerHTML = "Jane Romero";
             break;
         case "ashWil":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/storeBackground_ML.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Ash Williams/storeBackground_ML.png";
             document.getElementById("charName").innerHTML = "Ash Williams";
             break;
         case "nancWhe":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Qatar/QF_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Nancy Wheeler/QF_storeBackground.png";
             document.getElementById("charName").innerHTML = "Nancy Wheeler";
             break;
         case "stevHar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Qatar/QM_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Steve Harrington/QM_storeBackground.png";
             document.getElementById("charName").innerHTML = "Steve Harrington";
             break;
         case "yuiKim":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Sweden/SS_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Yui Kimura/SS_storeBackground.png";
             document.getElementById("charName").innerHTML = "Yui Kimura";
             break;
         case "zariKas":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ukraine/US_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Zarina Kassir/US_storeBackground.png";
             document.getElementById("charName").innerHTML = "Zarina Kassir";
             break;
         case "cherMas":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Wales/S22_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Cheryl Mason/S22_storeBackground.png";
             document.getElementById("charName").innerHTML = "Cheryl Mason";
             break;
         case "feliRic":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Yemen/S23_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Felix Richter/S23_storeBackground.png";
             document.getElementById("charName").innerHTML = "Felix Richter";
             break;
         case "elodRak":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Aurora/S24_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Elodie Rakoto/S24_storeBackground.png";
             document.getElementById("charName").innerHTML = "Élodie Rakoto";
             break;
         case "yunjLee":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Comet/S25_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/YunJin Lee/S25_storeBackground.png";
             document.getElementById("charName").innerHTML = "Yun-Jin Lee";
             break;
         case "jillVal":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclipse/S26_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Jill Valentine/S26_storeBackground.png";
             document.getElementById("charName").innerHTML = "Jill Valentine";
             break;
         case "leonKen":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclipse/S27_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Leon S Kennedy/S27_storeBackground.png";
             document.getElementById("charName").innerHTML = "Leon S. Kennedy";
             break;
         case "mikaRei":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Hubble/S28_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Mikaela Reid/S28_storeBackground.png";
             document.getElementById("charName").innerHTML = "Mikaela Reid";
             break;
         case "jonaVas":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Ion/S29_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Jonah Vasquez/S29_storeBackground.png";
             document.getElementById("charName").innerHTML = "Jonah Vasquez";
             break;
         case "yoicAsa":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Kepler/S30_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Yoichi Asakawa/S30_storeBackground.png";
             document.getElementById("charName").innerHTML = "Yoichi Asakawa";
             break;
         case "haddKau":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Meteor/S31_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Haddie Kaur/S31_storeBackground.png";
             document.getElementById("charName").innerHTML = "Haddie Kaur";
             break;
         case "adaWon":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Orion/S32_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Ada Wong/AdaWong.png";
             document.getElementById("charName").innerHTML = "Ada Wong";
             break;
         case "rebeCha":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Orion/S33_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Rebecca Chambers/S33_storeBackground.png";
             document.getElementById("charName").innerHTML = "Rebecca Chambers";
             break;
         case "vittTos":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Quantum/S34_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Vittorio Toscano/S34_storeBackground.png";
             document.getElementById("charName").innerHTML = "Vittorio Toscano";
             break;
         case "thalLyr":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Saturn/S35_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Thalita Lyra/S35_storeBackground.png";
             document.getElementById("charName").innerHTML = "Thalita Lyra";
             break;
         case "renaLyr":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Saturn/S36_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Renato Lyra/S36_storeBackground.png";
             document.getElementById("charName").innerHTML = "Renato Lyra";
             break;
         case "gabrSom":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Umbra/S37_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Gabriel Soma/S37_storeBackground.png";
             document.getElementById("charName").innerHTML = "Gabriel Soma";
             break;
         case "nicoCag":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Venus/S38_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Nicolas Cage/S38_storeBackground.png";
             document.getElementById("charName").innerHTML = "Nicolas Cage";
             break;
         case "elleRip":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Wormhole/S39_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Ellen Ripley/S39_storeBackground.png";
             document.getElementById("charName").innerHTML = "Ellen Ripley";
             break;
         case "alanWak":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Zodiac/S40_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Alan Wake/S40_storeBackground.png";
             document.getElementById("charName").innerHTML = "Alan Wake";
             break;
         case "sablWar":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Applepie/S41_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Sable Ward/S41_storeBackground.png";
             document.getElementById("charName").innerHTML = "Sable Ward";
             break;
         case "theTro":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Churros/S42_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Troupe/S42_storeBackground.png";
             document.getElementById("charName").innerHTML = "The Troupe";
             break;
         case "laraCro":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Donut/S43_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Lara Croft/S43_storeBackground.png";
             document.getElementById("charName").innerHTML = "Lara Croft";
             break;
         case "trevBel":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Eclair/S44_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Trevor Belmont/S44_storeBackground.png";
             document.getElementById("charName").innerHTML = "Trevor Belmont";
             break;
         case "taurCai":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Gelato/T_UI_S45_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Taurie Cain/T_UI_S45_storeBackground.png";
             document.getElementById("charName").innerHTML = "Taurie Cain";
             break;
         case "orelRos":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Jerky/T_UI_S46_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Orela Rose/T_UI_S46_storeBackground.png";
             document.getElementById("charName").innerHTML = "Orela Rose";
             break;
         case "rickGri":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Lasagna/T_UI_S47_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Rick Grimes/T_UI_S47_storeBackground.png";
             document.getElementById("charName").innerHTML = "Rick Grimes";
             break;
         case "michGri":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Lasagna/T_UI_S48_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Michonne Grimes/T_UI_S48_storeBackground.png";
             document.getElementById("charName").innerHTML = "Michonne Grimes";
             break;
         case "veeBoo":
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/Maple/T_UI_S49_storeBackground.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Vee Boonyasak/T_UI_S49_storeBackground.png";
             document.getElementById("charName").innerHTML = "Vee Boonyasak";
             break;
         default:
-            document.getElementById("charImg").src = "Portraits/StoreBackgrounds/RandomSurvPlaceholder.png";
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";
             document.getElementById("charName").innerHTML = "Any Survivor (Defaulted)";
     }
 }
 //Items
 function fixedItem(item){
     switch (item){
+        case "any":
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
+            document.getElementById("itemName").innerHTML="Any Item";
+            fixedAddons("any","any");
+            break;
         case "none": 
-            document.getElementById("itemImg").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("itemName").innerHTML="No Item";
             fixedAddons("none","none");
             break;
     //Fog Vials
         case "appFogVial":
-            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_apprenticesFogVial.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Fog Vials/Apprentices Fog Vial.png";
             document.getElementById("itemName").innerHTML="Apprentice's Fog Vial";
             randomFogVials();
             break;
         case "artFogVial":
-            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_artisansFogVial.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Fog Vials/Artisans Fog Vial.png";
             document.getElementById("itemName").innerHTML="Artisan's Fog Vial"; 
             randomFogVials();
             break;
         case "vigoFogVial":
-            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_vigosFogVial.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Fog Vials/Vigos Fog Vial.png";
             document.getElementById("itemName").innerHTML="Vigo's Fog Vial";
             randomFogVials();
             break;
     //Flashlights
         case "basicFlash":
-            document.getElementById("itemImg").src="Items/Items/iconItems_flashlight.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Flashlights/Flashlight.png";
             document.getElementById("itemName").innerHTML="Flashlight";
             randomFlashlights();
             break;
         case "sportFlash":
-            document.getElementById("itemImg").src="Items/Items/iconItems_flashlightSport.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Flashlights/Sport Flashlight.png";
             document.getElementById("itemName").innerHTML="Sport Flashlight"; 
             randomFlashlights();
             break;
         case "utilFlash":
-            document.getElementById("itemImg").src="Items/Items/iconItems_flashlightUtility.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Flashlights/Utility Flashlight.png";
             document.getElementById("itemName").innerHTML="Utility Flashlight";
             randomFlashlights();
             break;
     //Keys
         case "brokeKey": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_brokenKey.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Keys/Broken Key.png";
             document.getElementById("itemName").innerHTML="Broken Key";
             randomKeys();
             break;
         case "dullKey": 
-        document.getElementById("itemImg").src="Items/Items/iconItems_dullKey.png";
-        document.getElementById("itemName").innerHTML="Dull Key";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Keys/Dull Key.png";
+            document.getElementById("itemName").innerHTML="Dull Key";
             randomKeys();
             break;
         case "skelKey": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_key.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Keys/Skeleton Key.png";
             document.getElementById("itemName").innerHTML="Skeleton Key";
             randomKeys();
             break;
     //Maps
         case "cryptMap": 
-            document.getElementById("itemImg").src="Items/Items/T_UI_iconItems_CrypticMap.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Maps/Cryptic Map.png";
             document.getElementById("itemName").innerHTML="Cryptic Map";
             randomMaps();
             break;
         case "scribMap": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_map.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Maps/Scribbled Map.png";
             document.getElementById("itemName").innerHTML="Scribbled Map";
             randomMaps();
             break;
         case "annoMap": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_rainbowMap.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Maps/Annotated Map.png";
             document.getElementById("itemName").innerHTML="Annotated Map";
             randomMaps();
             break;
     //Medkits
         case "campMedkit": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_rundownAidKit.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Med-Kits/Camping Aid Kit.png";
             document.getElementById("itemName").innerHTML="Camping Aid Kit";
             randomMedkits();
             break;
         case "firstMedkit": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_firstAidKit.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Med-Kits/First Aid Kit.png";
             document.getElementById("itemName").innerHTML="First Aid Kit";
             randomMedkits();
             break;
         case "emergMedkit": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_medkit.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Med-Kits/Emergency Med-Kit.png";
             document.getElementById("itemName").innerHTML="Emergency Med-Kit";
             randomMedkits();
             break;
         case "rangerMedkit": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_rangersAidKit.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Med-Kits/Ranger Med-Kit.png";
             document.getElementById("itemName").innerHTML="Ranger Med-Kit";
             randomMedkits();
             break;
     //Toolboxes
         case "wornToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolboxWornOut.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Worn-Out Tools.png";
             document.getElementById("itemName").innerHTML="Worn-Out Tools";
             randomToolboxes();
             break;
         case "basicToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolbox.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Toolbox.png";
             document.getElementById("itemName").innerHTML="Toolbox";
             randomToolboxes();
             break;
         case "commodToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolboxCommodious.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Commodious Toolbox.png";
             document.getElementById("itemName").innerHTML="Commodious Toolbox";
             randomToolboxes();
             break;
         case "mechToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolboxMechanics.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Mechanics Toolbox.png";
             document.getElementById("itemName").innerHTML="Mechanic's Toolbox";
             randomToolboxes();
             break;
         case "alexToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolboxAlexs.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Alexs Toolbox.png";
             document.getElementById("itemName").innerHTML="Alex's Toolbox";
             randomToolboxes();
             break;
         case "engineToolbox": 
-            document.getElementById("itemImg").src="Items/Items/iconItems_toolboxEngineers.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Toolboxes/Engineers Toolbox.png";
             document.getElementById("itemName").innerHTML="Engineer's Toolbox";
             randomToolboxes();
             break;
         default: 
-            document.getElementById("itemImg").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("itemImg").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("itemName").innerHTML="No Items Found!";
     }
 }
@@ -5427,587 +5435,563 @@ function fixedAddons(addon1,addon2){
     switch (addon1){
     //Any/No Addons
         case "fogVialAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "flashlightAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "keyAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "mapAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "medkitAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "toolboxAnyAddon":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
+            document.getElementById("addonName1").innerHTML="Any Addon";
+            break;
+        case "any":
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName1").innerHTML="Any Addon";
             break;
         case "none":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("addonName1").innerHTML="No Addon";
             break;
     //Fog Vials
         //Common
         case "volcanicStone": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_volcanicStone.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Fog Vials/Addons/Volcanic Stone.png";
             document.getElementById("addonName1").innerHTML="Volcanic Stone";
             break;
         //Uncommon
         case "reactiveCompound": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_reactiveCompound.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Fog Vials/Addons/Reactive Compound.png";
             document.getElementById("addonName1").innerHTML="Reactive Compound";
             break;
         //Rare
         case "oilySap": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_oilySap.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Fog Vials/Addons/Oily Sap.png";
             document.getElementById("addonName1").innerHTML="Oily Sap";
             break;
         //Very Rare
         case "mushroomFormula": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_mushroomFormula.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Fog Vials/Addons/Mushroom Formula.png";
             document.getElementById("addonName1").innerHTML="Mushroom Formula";
             break;
         //Ultra Rare
         case "potentExtract":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_potentExtract.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Fog Vials/Addons/Potent Extract.png";
             document.getElementById("addonName1").innerHTML="Potent Extract";
             break;
     //Flashlights
         //Common
         case "battery": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_battery.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Battery.png";
             document.getElementById("addonName1").innerHTML="Battery";
             break;
         case "leatherGrip": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_leatherGrip.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Leather Grip.png";
             document.getElementById("addonName1").innerHTML="Leather Grip";
             break;
         case "powerBulb": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_powerBulb.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Power Bulb.png";
             document.getElementById("addonName1").innerHTML="Power Bulb";
             break;
         case "wideLens": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_wideLens.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Wide Lens.png";
             document.getElementById("addonName1").innerHTML="Wide Lens";
             break;
         //Uncommon
         case "focusLens": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_focusLens.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Focus Lens.png";
             document.getElementById("addonName1").innerHTML="Focus Lens";
             break;
         case "heavyBattery": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_heavyDutyBattery.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Heavy Duty Battery.png";
             document.getElementById("addonName1").innerHTML="Heavy Duty Battery";
             break;
         case "lowFilament": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_threadedFilament.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Low Amp Filament.png";
             document.getElementById("addonName1").innerHTML="Low Amp Filament";
             break;
         case "rubberGrip": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_rubberGrip.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Rubber Grip.png";
             document.getElementById("addonName1").innerHTML="Rubber Grip";
             break;
         case "tirOptic": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_tirOptic.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/TIR Optic.png";
             document.getElementById("addonName1").innerHTML="TIR Optic";
             break;
         //Rare
         case "intHalogen": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_intenseHalogen.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Intense Halogen.png";
             document.getElementById("addonName1").innerHTML="Intense Halogen";
             break;
         case "longBattery": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_longLifeBattery.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Long Life Battery.png";
             document.getElementById("addonName1").innerHTML="Long Life Battery";
             break;
         //Very Rare
         case "highLens": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_highEndSapphireLens.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/High-End Sapphire Lens.png";
             document.getElementById("addonName1").innerHTML="High-End Sapphire Lens";
             break;
         //Ultra Rare
         case "oddBulb":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_oddBulb.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Flashlights/Addons/Odd Bulb.png";
             document.getElementById("addonName1").innerHTML="Odd Bulb";
             break;
     //Key
         //Common
         case "friendCharm": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconIAddon_FriendshipCharm.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Keys/Addons/Friendship Charm.png";
             document.getElementById("addonName1").innerHTML="Friendship Charm";
             break;
         //Uncommon
         case "shrillWhis": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_ShrillWhistle.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Keys/Addons/Shrill Whistle.png";
             document.getElementById("addonName1").innerHTML="Shrill Whistle";
             break;
         //Rare
         case "braidBauble": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BraidedBauble.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Keys/Addons/Braided Bauble.png";
             document.getElementById("addonName1").innerHTML="Braided Bauble";
             break;
         //Very Rare
         case "uniqueRing": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_uniqueRing.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Keys/Addons/Unique Wedding Ring.png";
             document.getElementById("addonName1").innerHTML="Unique Wedding Ring";
             break;
         //Ultra Rare
         case "bloodAmber": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Keys/Addons/Blood Amber.png";
             document.getElementById("addonName1").innerHTML="Blood Amber";
             break;
     //Maps
         //Common
         case "glowInk": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GlowingInk.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Maps/Addons/Glowing Ink.png";
             document.getElementById("addonName1").innerHTML="Glowing Ink";
             break;
         //Uncommon
         case "gnarlCompass": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GnarledCompass.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Maps/Addons/Gnarled Compass.png";
             document.getElementById("addonName1").innerHTML="Gnarled Compass";
             break;
         //Rare
         case "batterTape": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BatteredTape.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Maps/Addons/Battered Tape.png";
             document.getElementById("addonName1").innerHTML="Battered Tape";
             break;
         //Very Rare
         case "sharpFlint": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_SharpenedFlint.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Maps/Addons/Sharpened Flint.png";
             document.getElementById("addonName1").innerHTML="Sharpened Flint";
             break;
         //Ultra Rare
         case "crimStamp": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_CrimsonStamp.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Maps/Addons/Crimson Stamp.png";
             document.getElementById("addonName1").innerHTML="Crimson Stamp";
             break;
     //Medkits
         //Common
         case "bandages": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_bandages.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Bandages.png";
             document.getElementById("addonName1").innerHTML="Bandages";
             break;
         case "butterflyTape": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_butterflyTape.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Butterfly Tape.png";
             document.getElementById("addonName1").innerHTML="Butterfly Tape";
             break;
         case "rubberGloves": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_gloves.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Rubber Gloves.png";
             document.getElementById("addonName1").innerHTML="Rubber Gloves";
             break;
         //Uncommon
         case "medScissors": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_scissors.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Medical Scissors.png";
             document.getElementById("addonName1").innerHTML="Medical Scissors";
             break;
         case "needleThread": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_needAndThread.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Needle and Thread.png";
             document.getElementById("addonName1").innerHTML="Needle & Thread";
             break;
         case "selfWrap": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_selfAdherentWrap.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Self Adherent Wrap.png";
             document.getElementById("addonName1").innerHTML="Self Adherent Wrap";
             break;
         case "sponge": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_sponge.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Sponge.png";
             document.getElementById("addonName1").innerHTML="Sponge";
             break;
         //Rare
         case "gauzeRoll": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_gauseRoll.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gauze Roll.png";
             document.getElementById("addonName1").innerHTML="Gauze Roll";
             break;
         case "surgSuture": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_surgicalSuture.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Surgical Suture.png";
             document.getElementById("addonName1").innerHTML="Surgical Suture";
             break;
         //Very Rare
         case "abdomDressing": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_abdominalDressing.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Abdominal Dressing.png";
             document.getElementById("addonName1").innerHTML="Abdominal Dressing";
             break;
         case "stypticAgent": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_stypticAgent.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Styptic Agent.png";
             document.getElementById("addonName1").innerHTML="Styptic Agent";
             break;
         //Ultra Rare
         case "antiSyringe":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_syringe.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Anti-Haemorrhagic Syringe.png";
             document.getElementById("addonName1").innerHTML="Anti-Haemorrhagic Syringe";
             break;
         case "gelDressings": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_gelDressings.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gel Dressings.png";
             document.getElementById("addonName1").innerHTML="Gel Dressings";
             break;
     //Toolboxes
         //Common
         case "cleanRag": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_cleanRag.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Clean Rag.png";
             document.getElementById("addonName1").innerHTML="Clean Rag";
             break;
         case "instructions": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_instructions.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Instructions.png";
             document.getElementById("addonName1").innerHTML="Instructions";
             break;
         case "scraps": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_scraps.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Scraps.png";
             document.getElementById("addonName1").innerHTML="Scraps";
             break;
         //Uncommon
         case "cuttingWire": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_cuttingWire.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Cutting Wire.png";
             document.getElementById("addonName1").innerHTML="Cutting Wire";
             break;
         case "protectiveGloves": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_protectiveGloves.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Protective Gloves.png";
             document.getElementById("addonName1").innerHTML="Protective Gloves";
             break;
         case "socketSwivels": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_socketSwivels.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Socket Swivels.png";
             document.getElementById("addonName1").innerHTML="Socket Swivels";
             break;
         case "springClamps": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_springClamp.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Spring Clamp.png";
             document.getElementById("addonName1").innerHTML="Spring Clamp";
             break;
         case "wireSpool": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_spoolOfWire.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Wire Spool.png";
             document.getElementById("addonName1").innerHTML="Wire Spool";
             break;
         //Rare
         case "gripWrench": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_gripWrench.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Grip Wrench.png";
             document.getElementById("addonName1").innerHTML="Grip Wrench";
             break;
         case "hacksaw": 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_metalSaw.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Hacksaw.png";
             document.getElementById("addonName1").innerHTML="Hacksaw";
             break;
         //Ultra Rare
         case "brandNewPart":
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/iconAddon_brandNewPart.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Toolboxes/Addons/Brand New Part.png";
             document.getElementById("addonName1").innerHTML="Brand New Part";
             break;
         default: 
-            document.getElementById("addonImg1").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("addonName1").innerHTML="No Addon Found!";
     }
     switch (addon2){
     //Any/No Addons
         case "fogVialAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "flashlightAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "keyAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "mapAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "medkitAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "toolboxAnyAddon":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/RandomSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
+            document.getElementById("addonName2").innerHTML="Any Addon";
+            break;
+        case "any":
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor Any Choice Item.png";
             document.getElementById("addonName2").innerHTML="Any Addon";
             break;
         case "none":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("addonName2").innerHTML="No Addon";
             break;
     //Fog Vials
         //Common
         case "volcanicStone": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_volcanicStone.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Fog Vials/Addons/Volcanic Stone.png";
             document.getElementById("addonName2").innerHTML="Volcanic Stone";
             break;
         //Uncommon
         case "reactiveCompound": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_reactiveCompound.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Fog Vials/Addons/Reactive Compound.png";
             document.getElementById("addonName2").innerHTML="Reactive Compound";
             break;
         //Rare
         case "oilySap": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_oilySap.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Fog Vials/Addons/Oily Sap.png";
             document.getElementById("addonName2").innerHTML="Oily Sap";
             break;
         //Very Rare
         case "mushroomFormula": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_mushroomFormula.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Fog Vials/Addons/Mushroom Formula.png";
             document.getElementById("addonName2").innerHTML="Mushroom Formula";
             break;
         //Ultra Rare
         case "potentExtract":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_potentExtract.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Fog Vials/Addons/Potent Extract.png";
             document.getElementById("addonName2").innerHTML="Potent Extract";
             break;
     //Flashlights
         //Common
         case "battery": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_battery.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Battery.png";
             document.getElementById("addonName2").innerHTML="Battery";
             break;
         case "leatherGrip": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_leatherGrip.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Leather Grip.png";
             document.getElementById("addonName2").innerHTML="Leather Grip";
             break;
         case "powerBulb": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_powerBulb.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Power Bulb.png";
             document.getElementById("addonName2").innerHTML="Power Bulb";
             break;
         case "wideLens": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_wideLens.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Wide Lens.png";
             document.getElementById("addonName2").innerHTML="Wide Lens";
             break;
         //Uncommon
         case "focusLens": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_focusLens.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Focus Lens.png";
             document.getElementById("addonName2").innerHTML="Focus Lens";
             break;
         case "heavyBattery": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_heavyDutyBattery.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Heavy Duty Battery.png";
             document.getElementById("addonName2").innerHTML="Heavy Duty Battery";
             break;
         case "lowFilament": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_threadedFilament.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Low Amp Filament.png";
             document.getElementById("addonName2").innerHTML="Low Amp Filament";
             break;
         case "rubberGrip": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_rubberGrip.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Rubber Grip.png";
             document.getElementById("addonName2").innerHTML="Rubber Grip";
             break;
         case "tirOptic": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_tirOptic.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/TIR Optic.png";
             document.getElementById("addonName2").innerHTML="TIR Optic";
             break;
         //Rare
         case "intHalogen": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_intenseHalogen.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Intense Halogen.png";
             document.getElementById("addonName2").innerHTML="Intense Halogen";
             break;
         case "longBattery": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_longLifeBattery.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Long Life Battery.png";
             document.getElementById("addonName2").innerHTML="Long Life Battery";
             break;
         //Very Rare
         case "highLens": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_highEndSapphireLens.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/High-End Sapphire Lens.png";
             document.getElementById("addonName2").innerHTML="High-End Sapphire Lens";
             break;
         //Ultra Rare
         case "oddBulb":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_oddBulb.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Flashlights/Addons/Odd Bulb.png";
             document.getElementById("addonName2").innerHTML="Odd Bulb";
             break;
     //Key
         //Common
-        case "prayRope": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_prayerRope.png";
-            document.getElementById("addonName2").innerHTML="Prayer Rope";
-            break;
         case "friendCharm": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconIAddon_FriendshipCharm.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Keys/Addons/Friendship Charm.png";
             document.getElementById("addonName2").innerHTML="Friendship Charm";
             break;
         //Uncommon
-        case "erodeToken": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_tokenErroded.png";
-            document.getElementById("addonName2").innerHTML="Eroded Token";
-            break;
-        case "prayBeads": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_prayerBeads.png";
-            document.getElementById("addonName2").innerHTML="Prayer Beads";
-            break;
         case "shrillWhis": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_ShrillWhistle.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Keys/Addons/Shrill Whistle.png";
             document.getElementById("addonName2").innerHTML="Shrill Whistle";
             break;
         //Rare
         case "braidBauble": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BraidedBauble.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Keys/Addons/Braided Bauble.png";
             document.getElementById("addonName2").innerHTML="Braided Bauble";
             break;
         //Very Rare
         case "uniqueRing": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_uniqueRing.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Keys/Addons/Unique Wedding Ring.png";
             document.getElementById("addonName2").innerHTML="Unique Wedding Ring";
             break;
         //Ultra Rare
         case "bloodAmber": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_bloodAmber.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Keys/Addons/Blood Amber.png";
             document.getElementById("addonName2").innerHTML="Blood Amber";
             break;
     //Maps
         //Common
-        case "mapAddendum": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_mapAddendum.png";
-            document.getElementById("addonName2").innerHTML="Map Addendum";
-            break;
         case "glowInk": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GlowingInk.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Maps/Addons/Glowing Ink.png";
             document.getElementById("addonName2").innerHTML="Glowing Ink";
             break;
         //Uncommon
-        case "glassBead": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_beadGlass.png";
-            document.getElementById("addonName2").innerHTML="Glass Bead";
-            break;
-        case "redTwine": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_ropeRed.png";
-            document.getElementById("addonName2").innerHTML="Red Twine";
-            break;
-        case "retardantJelly": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_retardantJelly.png";
-            document.getElementById("addonName2").innerHTML="Retardant Jelly";
-            break;
-        case "unusualStamp": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_stampUnusual.png";
-            document.getElementById("addonName2").innerHTML="Unusual Stamp";
-            break;
         case "gnarlCompass": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_GnarledCompass.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Maps/Addons/Gnarled Compass.png";
             document.getElementById("addonName2").innerHTML="Gnarled Compass";
             break;
         //Rare
         case "batterTape": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_BatteredTape.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Maps/Addons/Battered Tape.png";
             document.getElementById("addonName2").innerHTML="Battered Tape";
             break;
         //Very Rare
         case "sharpFlint": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_SharpenedFlint.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Maps/Addons/Sharpened Flint.png";
             document.getElementById("addonName2").innerHTML="Sharpened Flint";
             break;
         //Ultra Rare
         case "crimStamp": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/Lasagna/T_UI_iconAddon_CrimsonStamp.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Maps/Addons/Crimson Stamp.png";
             document.getElementById("addonName2").innerHTML="Crimson Stamp";
             break;
     //Medkits
         //Common
         case "bandages": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_bandages.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Bandages.png";
             document.getElementById("addonName2").innerHTML="Bandages";
             break;
         case "butterflyTape": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_butterflyTape.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Butterfly Tape.png";
             document.getElementById("addonName2").innerHTML="Butterfly Tape";
             break;
         case "rubberGloves": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_gloves.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Rubber Gloves.png";
             document.getElementById("addonName2").innerHTML="Rubber Gloves";
             break;
         //Uncommon
         case "medScissors": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_scissors.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Medical Scissors.png";
             document.getElementById("addonName2").innerHTML="Medical Scissors";
             break;
         case "needleThread": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_needAndThread.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Needle and Thread.png";
             document.getElementById("addonName2").innerHTML="Needle & Thread";
             break;
         case "selfWrap": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_selfAdherentWrap.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Self Adherent Wrap.png";
             document.getElementById("addonName2").innerHTML="Self Adherent Wrap";
             break;
         case "sponge": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_sponge.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Sponge.png";
             document.getElementById("addonName2").innerHTML="Sponge";
             break;
         //Rare
         case "gauzeRoll": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_gauseRoll.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gauze Roll.png";
             document.getElementById("addonName2").innerHTML="Gauze Roll";
             break;
         case "surgSuture": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_surgicalSuture.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Surgical Suture.png";
             document.getElementById("addonName2").innerHTML="Surgical Suture";
             break;
         //Very Rare
         case "abdomDressing": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_abdominalDressing.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Abdominal Dressing.png";
             document.getElementById("addonName2").innerHTML="Abdominal Dressing";
             break;
         case "stypticAgent": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_stypticAgent.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Styptic Agent.png";
             document.getElementById("addonName2").innerHTML="Styptic Agent";
             break;
         //Ultra Rare
         case "antiSyringe":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_syringe.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Anti-Haemorrhagic Syringe.png";
             document.getElementById("addonName2").innerHTML="Anti-Haemorrhagic Syringe";
             break;
         case "gelDressings": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_gelDressings.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gel Dressings.png";
             document.getElementById("addonName2").innerHTML="Gel Dressings";
             break;
     //Toolboxes
         //Common
         case "cleanRag": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_cleanRag.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Clean Rag.png";
             document.getElementById("addonName2").innerHTML="Clean Rag";
             break;
         case "instructions": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_instructions.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Instructions.png";
             document.getElementById("addonName2").innerHTML="Instructions";
             break;
         case "scraps": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_scraps.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Scraps.png";
             document.getElementById("addonName2").innerHTML="Scraps";
             break;
         //Uncommon
         case "cuttingWire": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_cuttingWire.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Cutting Wire.png";
             document.getElementById("addonName2").innerHTML="Cutting Wire";
             break;
         case "protectiveGloves": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_protectiveGloves.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Protective Gloves.png";
             document.getElementById("addonName2").innerHTML="Protective Gloves";
             break;
         case "socketSwivels": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_socketSwivels.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Socket Swivels.png";
             document.getElementById("addonName2").innerHTML="Socket Swivels";
             break;
         case "springClamps": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_springClamp.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Spring Clamp.png";
             document.getElementById("addonName2").innerHTML="Spring Clamp";
             break;
         case "wireSpool": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_spoolOfWire.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Wire Spool.png";
             document.getElementById("addonName2").innerHTML="Wire Spool";
             break;
         //Rare
         case "gripWrench": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_gripWrench.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Grip Wrench.png";
             document.getElementById("addonName2").innerHTML="Grip Wrench";
             break;
         case "hacksaw": 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_metalSaw.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Hacksaw.png";
             document.getElementById("addonName2").innerHTML="Hacksaw";
             break;
         //Ultra Rare
         case "brandNewPart":
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/iconAddon_brandNewPart.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Toolboxes/Addons/Brand New Part.png";
             document.getElementById("addonName2").innerHTML="Brand New Part";
             break;
         default: 
-            document.getElementById("addonImg2").src="Add-Ons/ItemAddons/NoChoiceSurvAddonPlaceholder.png";
+            document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Survivor No Choice Item.png";
             document.getElementById("addonName2").innerHTML="No Addon Found!";
     }
 }
@@ -6015,293 +5999,293 @@ function fixedAddons(addon1,addon2){
 function fixedOffering(offering){
     switch(offering){
         case "none": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/NoChoiceOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Survivor No Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "No Offering Choice";
             break;
         case "anyOffering": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/RandomOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Survivor Any Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "Any Offering Choice";
             break;
 //Bloodpoints
     //All Categories
         case "escCake": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Anniversary/iconFavors_escapeCake.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Escape Cake.png";
             document.getElementById("offeringName").innerHTML = "Escape! Cake";
             break;
         case "seaEnve": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_sealedEnvelope.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Sealed Envelope.png";
             document.getElementById("offeringName").innerHTML = "Sealed Envelope";
             break;
         case "bloPartStre": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Anniversary/iconFavors_bloodyPartyStreamers.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Bloody Party Streamers.png";
             document.getElementById("offeringName").innerHTML = "Bloody Party Streamers";
             break;
         case "bouEnve": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_boundEnvelope.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Bound Envelope.png";
             document.getElementById("offeringName").innerHTML = "Bound Envelope";
             break;
     //Altruism
         case "primrose": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_primroseBlossomSachet.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Primrose Blossom Sachet.png";
             document.getElementById("offeringName").innerHTML = "Primrose Blossom Sachet";
             break;
         case "freshPrim": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_freshPrimroseBlossom.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fresh Primrose Blossom.png";
             document.getElementById("offeringName").innerHTML = "Fresh Primrose Blossom";
             break;
         case "fragPrim": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_fragrantPrimroseBlossom.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fragrant Primrose Blossom.png";
             document.getElementById("offeringName").innerHTML = "Fragrant Primrose Blossom";
             break;
     //Boldness
         case "william": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_sweetWilliamSachet.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Sweet William Sachet.png";
             document.getElementById("offeringName").innerHTML = "Sweet Willaim Sachet";
             break;
         case "freshWill": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_freshSweetWilliam.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fresh Sweet William.png";
             document.getElementById("offeringName").innerHTML = "Fresh Sweet William";
             break;
         case "fragWill": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_fragrantSweetWilliam.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fragrant Sweet William.png";
             document.getElementById("offeringName").innerHTML = "Fragrant Sweet William";
             break;
     //Objectives
         case "bog": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_bogLaurelSachet.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Bog Laurel Sachet.png";
             document.getElementById("offeringName").innerHTML = "Bog Laurel Sachet";
             break;
         case "freshBog": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_freshBogLaurel.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fresh Bog Laurel.png";
             document.getElementById("offeringName").innerHTML = "Fresh Bog Laurel";
             break;
         case "fragBog": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_fragrantBogLaurel.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fragrant Bog Laurel.png";
             document.getElementById("offeringName").innerHTML = "Fragrant Bog Laurel";
             break;
     //Survival
         case "amaranth": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_crispleafAmaranthSachet.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Crispleaf Amaranth Sachet.png";
             document.getElementById("offeringName").innerHTML = "Crispleaf Amaranth Sachet";
             break;
         case "freshAma": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_freshCrispleafAmaranth.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fresh Crispleaf Amaranth.png";
             document.getElementById("offeringName").innerHTML = "Fresh Crispleaf Amaranth";
             break;
         case "fragAma": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_fragrantCrispleafAmaranth.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Bloodpoints/Fragrant Crispleaf Amaranth.png";
             document.getElementById("offeringName").innerHTML = "Fragrant Crispleaf Amaranth";
             break;
 //Luck
     //Single Luck
         case "chalk": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_chalkPouch.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Chalk Pouch.png";
             document.getElementById("offeringName").innerHTML = "Chalk Pouch";
             break;
         case "creamChalk": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_creamChalkPouch.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Cream Chalk Pouch.png";
             document.getElementById("offeringName").innerHTML = "Cream Chalk Pouch";
             break;
         case "ivoryChalk": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_ivoryChalkPouch.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Ivory Chalk Pouch.png";
             document.getElementById("offeringName").innerHTML = "Ivory Chalk Pouch";
             break;
     //All Luck
         case "salt": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_saltPouch.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Salt Pouch.png";
             document.getElementById("offeringName").innerHTML = "Salt Pouch";
             break;
         case "blackSalt": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_blackSaltStatuette.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Black Salt Statuette.png";
             document.getElementById("offeringName").innerHTML = "Black Salt Statuette";
             break;
         case "lipsSalt": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_jarOfSaltyLips.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Vigos Jar of Salty Lips.png";
             document.getElementById("offeringName").innerHTML = "Vigo's Jar of Saly Lips";
             break;
     //Wards
         case "sacWard": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_wardSacrificial.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/Sacrificial Ward.png";
             document.getElementById("offeringName").innerHTML = "Sacrificial Ward";
             break;
         case "whiteWard": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_wardWhite.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Luck_Wards/White Ward.png";
             document.getElementById("offeringName").innerHTML = "White Ward";
             break;
 //Map Modifications
     //Basement
         case "bloodBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_bloodiedBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Bloodied Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Bloodied Blueprint";
             break;
         case "tornBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_tornBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Torn Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Torn Blueprint";
             break;
     //Chests
         case "tarnCoin": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_tarnishedCoin.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Tarnished Coin.png";
             document.getElementById("offeringName").innerHTML = "Tarnished Coin";
             break;
         case "shinyCoin": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shinyCoin.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Shiny Coin.png";
             document.getElementById("offeringName").innerHTML = "Shiny Coin";
             break;
     //Fog Thickness
         case "clearRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_clearReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Clear Reagent.png";
             document.getElementById("offeringName").innerHTML = "Clear Reagent";
             break;
         case "faintRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_faintReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Faint Reagent.png";
             document.getElementById("offeringName").innerHTML = "Faint Reagent";
             break;
         case "hazyRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_hazyReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Hazy Reagent.png";
             document.getElementById("offeringName").innerHTML = "Hazy Reagent";
             break;
         case "murkyRea": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_murkyReagent.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Murky Reagent.png";
             document.getElementById("offeringName").innerHTML = "Murky Reagent";
             break;
     //Hatch
         case "annoBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_annotatedBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Annotated Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Annotated Blueprint";
             break;
         case "vigoBlue": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Yemen/iconFavors_vigosBlueprint.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Vigos Blueprint.png";
             document.getElementById("offeringName").innerHTML = "Vigo's Blueprint";
             break;
     //Hook
         case "petrOak": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_petrifiedOak.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Map Mods/Petrified Oak.png";
             document.getElementById("offeringName").innerHTML = "Petrified Oak";
             break;
 //Realm
     //Azarov's Key (Autohaven)
         case "azaKey": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_azarovsKey.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Azarovs Key.png";
             document.getElementById("offeringName").innerHTML = "Azarov's Key";
             break;
     //Grandma's Cookbook (Swamp)
         case "grandmaCook": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC3/iconFavors_granmasCookbook.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Grandmas Cookbook.png";
             document.getElementById("offeringName").innerHTML = "Grandma's Cookbook";
             break;
     //Heart Locket (Coldwind Farm)   
         case "heartLock": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_heartLocket.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Heart Locket.png";
             document.getElementById("offeringName").innerHTML = "Heart Locket";
             break;
     //Charred Wedding Photo (Crotus Prenn Asylum)    
         case "charWedPhoto": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_charredWeddingPhotograph.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Charred Wedding Photo.png";
             document.getElementById("offeringName").innerHTML = "Charred Wedding Photograph";
             break;
     //Beef Tallow Mixture (Decimated Borgo)    
         case "beefTallow": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Quantum/iconFavors_BeefTallowMixture.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Beef Tallow Mixture.png";
             document.getElementById("offeringName").innerHTML = "Beef Tallow Mixture";
             break;
     //Airlock Doors (Nostromo)    
         case "airlockDoors": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Wormhole/iconFavors_airlockDoors.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Airlock Doors.png";
             document.getElementById("offeringName").innerHTML = "Airlock Doors";
             break;
     //Alien Flora (Toba Landing)    
         case "alienFlora": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Umbra/iconFavors_alienFlora.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Alien Flora.png";
             document.getElementById("offeringName").innerHTML = "Alien Flora";
             break;
     //Crow's Eye (Forsaken Boneyard)    
         case "crowEye": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Ion/iconFavors_crowsEye.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Crows Eye.png";
             document.getElementById("offeringName").innerHTML = "Crow's Eye";
             break;
     //Jigsaw Piece (Gideon Meat Plant)
         case "jigsawPiece": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Finland/iconFavors_jigsawPiece.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Jigsaw Piece.png";
             document.getElementById("offeringName").innerHTML = "Jigsaw Piece";
             break;
     //Shattered Bottle (Glenvale)
         case "shatteredBottle": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Ukraine/iconFavors_ShatteredBottle.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Shattered Bottle.png";
             document.getElementById("offeringName").innerHTML = "Shattered Bottle";
             break;
     //Strode Realty Key (Haddonfield)
         case "strodeKey": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC2/iconFavors_strodeRealtyKey.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Strode Realty Key.png";
             document.getElementById("offeringName").innerHTML = "Strode Realty Key";
             break;
     //Hawkins National Labatory ID
         case "hawkinsID": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Qatar/iconFavors_hawkinsNationalLaboratoryID.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Hawkins National Laboratory ID.png";
             document.getElementById("offeringName").innerHTML = "Hawkins National Labatory ID";
             break;
     //Shattered Glasses (Lery's)
         case "shatteredGlasses": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC4/iconFavors_shatteredGlasses.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Shattered Glasses.png";
             document.getElementById("offeringName").innerHTML = "Shattered Glasses";
             break;
     //MacMillan's Phalanx Bone (MacMillan Estate)
         case "macmillanBone": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_macmilliansPhalanxBone.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/MacMillans Phalanx Bone.png";
             document.getElementById("offeringName").innerHTML = "MacMillan's Phalanx Bone";
             break;
     //Damaged Photo (Ormond)
         case "damagedPhoto": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Kenya/iconFavors_damagedPhoto.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Damaged Photo.png";
             document.getElementById("offeringName").innerHTML = "Damaged Photo";
             break;
     //RPD Badge (Raccoon City)
         case "rpdBadge": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Eclipse/iconsFavors_RPDBadge.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/RPD Badge.png";
             document.getElementById("offeringName").innerHTML = "RPD Badge";
             break;
     //The Last Mask (Red Forest)
         case "lastMask": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/DLC5/iconFavors_theLastMask.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/The Last Mask.png";
             document.getElementById("offeringName").innerHTML = "The Last Mask";
             break;
     //Mary's Letter (Silent Hill)
         case "marysLetter": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Wales/iconFavors_marysLetter.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Marys Letter.png";
             document.getElementById("offeringName").innerHTML = "Mary's Letter";
             break;
     //The Pied Piper (Springwood)
         case "piedPiper": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/England/iconFavors_thePiedPiper.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/The Pied Piper.png";
             document.getElementById("offeringName").innerHTML = "The Pied Piper";
             break;
     //Ichorous Loam (Withered Isle)
         case "ichorousLoam": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Meteor/iconFavors_IchorousLoam.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Ichorous Loam.png";
             document.getElementById("offeringName").innerHTML = "Ichorous Loam";
             break;
     //Yamaoka Family Crest
         case "yamaokaCrest": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/Haiti/iconFavors_yamaokasCrest.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Realms/Yamaoka Family Crest.png";
             document.getElementById("offeringName").innerHTML = "Yamaoka Family Crest";
             break;
 //Shrouds
     //Shroud of Union
         case "unionShroud": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfUnion.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Shrouds/Shroud of Union.png";
             document.getElementById("offeringName").innerHTML = "Shroud of Union";
             break;
     //Vigo's Shroud
         case "vigoShroud": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_vigosShroud.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Shrouds/Vigos Shroud.png";
             document.getElementById("offeringName").innerHTML = "Vigo's Shroud";
             break;
-    //Shroud of Binding
+    //Shroud of Separation
         case "bindShroud": 
-            document.getElementById("offeringImg").src = "Offerings/Favors/iconFavors_shroudOfBinding.png";
-            document.getElementById("offeringName").innerHTML = "Shroud of Binding";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Shrouds/Shroud of Separation.png";
+            document.getElementById("offeringName").innerHTML = "Shroud of Separation";
             break;
         default:  
-            document.getElementById("offeringImg").src = "Offerings/Favors/NoChoiceOfferingPlaceholder.png";
+            document.getElementById("offeringImg").src = "DBD Website/Survivor/Offerings/Survivor No Choice Offering.png";
             document.getElementById("offeringName").innerHTML = "Error: No Offering Found!";
             
     }

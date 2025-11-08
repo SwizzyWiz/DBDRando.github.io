@@ -2,202 +2,291 @@
 <html lang="en-US">
     <head>
         <title>DBD Perk Randomizer</title>
+        <link rel="icon" type="image/x-icon" href="DBD Website/Logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/3bdd4bb3ab.js" crossorigin="anonymous"></script>
+        <script src="Scripts/home.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
         <link rel="stylesheet" href="Scripts/home.css">
-        <style>
-            
-        </style>
     </head>
     <body class="body">
-        <div class="a">
-            <h1>Welcome to DBD Rando</h1>
-            <h3>Version 1.7.1</h3>
-            <i>Updated to Dead By Daylight Version: <mark>Sinister Grace 9.2.0</mark> </i>
-        </div>
-        <div class="navSurvivor">
-            <button onclick="document.location='Survivor.htm'">Survivor Side</button>
-        </div>
-        <div class="navKiller">
-            <button onclick="document.location='Killer.htm'">Killer Side</button>
+        <div class="face">
+            <div class="a">
+                <img class="faceImg" src="DBD Website/Logo.png">
+                <h1>Welcome to DBD Rando</h1>
+                <h2>Version 2.0.0</h2>
+                <i>Updated to Dead By Daylight Version: <em>Sinister Grace 9.2.2</em> </i>
+            </div>
+            <div class="navSurvivor">
+                <button onclick="document.location='Survivor.htm'"><img class="navImg" src="DBD Website/Survivor/IconHelpLoading_survivor.png"><div class="navText">Survivor Side</div></button>
+            </div>
+            <div class="navKiller">
+                <button onclick="document.location='Killer.htm'"><img class="navImg" src="DBD Website/Killer/IconHelpLoading_killer.png"><div class="navText">Killer Side</div></button>
+            </div>
         </div>
         <div class="changelog">
             <h1>Changelog</h1>
-            <h3>Version 1.7.1</h3>
-            <h5>October 5, 2025</h5>
-            <dl>
-                <li>Fixed a line where the Killer Side Offering: <b style="color: #860e0e;">Shroud of Separation</b> was meant to be updated and changed into <b style="color: #860e0e;">Shroud of Vanishing</b> back during DBD Patch 9.0.0</li>
-            </dl>
-            <h3>Version 1.7.0</h3>
-            <h5>October 1, 2025</h5>
-            <dl>
-                <li>Added <b style="color: #003bb9;">Vee Boonyasak</b> and their Unique Perks</li>
-                <li>Added <b style="color: #860e0e;">The Krasue</b> and their Unique Perks</li>
-                <li>Survivor Perks Updated</li>
-                <dd>- <b style="color: #003bb9;">Clairvoyance</b></dd>
-                <dd>- <b style="color: #003bb9;">Friendly Competition</b></dd>
-                <dd>- <b style="color: #003bb9;">Hope</b></dd>
-                <dd>- <b style="color: #003bb9;">No Mither</b></dd>
-                <dd>- <b style="color: #003bb9;">Off the Record</b></dd>
-                <dd>- <b style="color: #003bb9;">Leader</b></dd>
-                <dd>- <b style="color: #003bb9;">Lucky Star</b></dd>
-                <dd>- <b style="color: #003bb9;">Pharmacy</b></dd>
-                <dd>- <b style="color: #003bb9;">Plot Twist</b></dd>
-                <dd>- <b style="color: #003bb9;">Poised</b></dd>
-                <dd>- <b style="color: #003bb9;">Quick Gambit</b></dd>
-                <dd>- <b style="color: #003bb9;">Tenacity</b></dd>
-                <dd>- <b style="color: #003bb9;">Vigil</b></dd>
-                <li>Killer Perks Updated</li>
-                <dd>- <b style="color: #860e0e;">All-Shaking Thunder</b></dd>
-                <dd>- <b style="color: #860e0e;">A Nurse's Calling</b></dd>
-                <dd>- <b style="color: #860e0e;">Dark Arrogance</b></dd>
-                <dd>- <b style="color: #860e0e;">Dead Man's Switch</b></dd>
-                <dd>- <b style="color: #860e0e;">Deerstalker</b> (Reworked)</dd>
-                <dd>- <b style="color: #860e0e;">Hex: Ruin</b></dd>
-                <dd>- <b style="color: #860e0e;">Leverage</b></dd>
-                <dd>- <b style="color: #860e0e;">Monitor and Abuse</b></dd>
-                <dd>- <b style="color: #860e0e;">Oppression</b></dd>
-                <dd>- <b style="color: #860e0e;">Septic Touch</b></dd>
-                <dd>- <b style="color: #860e0e;">Ultimate Weapon</b></dd>
-            </dl>
-            <h3>Version 1.6.1</h3>
-            <h5>September 13, 2025</h5>
-            <dl>
-                <li>Fixed a bug where Offerings on the Killer Side Randomizer were not working as intended on the backend</li>
-                <dd>- Worked fine on the frontend of the webpage but had duplicate code on the backend</dd>
-                <li>Fixed a bug where the Survivor Perks: <b style="color: #003bb9;">Teamwork: Toughen Up</b> and <b style="color: #003bb9;">Teamwork: Throw Down</b>had their icons switched</li>
-                <li>Fixed a bug where Map and Key Addons for Survivors that were retired were still being displayed</li>
-            </dl>
-            <h3>Version 1.6.0</h3>
-            <h5>August 8, 2025</h5>
-            <p><em>Dev Note:</em></p>
-            <p><em>It has been brought to my attention that BHVR Interactive has changed the name of the Rarity: <b style="color: #9b1658;">Ultra Rare</b> to <b style="color: #9b1658;">Visceral</b> </em></p><br>
-            <p><em>I'm not changing it</em></p><br>
-            <dl>
-                <li>Added <b style="color: #003bb9;">Rick Grimes</b> and their Unique Perks</li>
-                <li>Added <b style="color: #003bb9;">Michonne Grimes</b> and their Unique Perks</li>
-                <li>Fixed an issue where <b style="color: #003bb9;">Dwight Fairfield</b> was not showing in the Character Display</li>
-                <li>Fixed an issue where <b style="color: #725433;">Rubber Gloves</b> Addon was not being shown properly in the top Addon slot of the Item Display and incorrectly displaying the wrong Addon in the bottom Addon slot</li>
-                <li>Fixed an issue where the <b>Any Add-On</b> selection was not adding the <b style="color: #ad0c3c;">Any Add-On</b> properly to the Item Display's Add-On Randomizer</li>
-                <li>Raised the brightness of the rarities for Item Add-Ons on the Survivor Side Randomizer Webpage</li>
-                <li><i>Hidden feature to be announced at Website's Anniversary...</i></li>
-                <li>Survivor Perks Updated</li>
-                <dd>- <b style="color: #003bb9;">Any Means Necessary</b></dd>
-                <dd>- <b style="color: #003bb9;">Appraisal</b></dd>
-                <dd>- <b style="color: #003bb9;">Better Together</b></dd>
-                <dd>- <b style="color: #003bb9;">Built to Last</b></dd>
-                <dd>- <b style="color: #003bb9;">Déjà Vu</b></dd>
-                <dd>- <b style="color: #003bb9;">Detective's Hunch</b></dd>
-                <dd>- <b style="color: #003bb9;">Potential Energy</b></dd>
-                <dd>- <b style="color: #003bb9;">Still Sight</b></dd>
-                <dd>- <b style="color: #003bb9;">Streetwise</b> (Reworked)</dd>
-                <li>Killer Perks Updated</li>
-                <dd>- <b style="color: #860e0e;">Dragon's Grip</b></dd>
-                <dd>- <b style="color: #860e0e;">Franklin's Demise</b></dd>
-                <dd>- <b style="color: #860e0e;">Hubris</b></dd>
-                <dd>- <b style="color: #860e0e;">Insidious</b></dd>
-                <dd>- <b style="color: #860e0e;">Scourge Hook: Hangman's Trick</b></dd>
-                <dd>- <b style="color: #860e0e;">Overwhelming Presence</b> (Reworked)</dd>
-            </dl>
-            <h3>Version 1.5.0</h3>
-            <h5>June 21, 2025</h5>
-            <p><em>Dev Note:</em></p>
-            <p><em>BHVR Interactive has changed the coloring scheme for rarities from:</em></p>
-            <p><em><b style="color: #725433;">Common</b>-<b style="color: #ceb753;">Uncommon</b>-<b style="color: #1d5028;">Rare</b>-<b style="color: #5c278d;">Very Rare</b>-<b style="color: #9b1658;">Ultra Rare</b></em></p>
-            <p><em>to:</em></p>
-            <p><em><b style="color: #725433;">Common</b>-<b style="color: #1d5028;">Uncommon</b>-<b style="color: #2f3091;">Rare</b>-<b style="color: #5c278d;">Very Rare</b>-<b style="color: #9b1658;">Ultra Rare</b></em></p>
-            <p><em>Survivor Item Addons on the website are <b>unaffected</b> by this change but Killer Power Addons are <b>affected</b> by this change</em></p>
-            <p><em>Perk Descriptions are <b>unaffected</b> by this change (Too much redundant work just to swap every yellow text to green and green text to blue)</em></p>
-            <dl>
-                <li>Added <b style="color: #860e0e;">The Animatronic</b> and their Unique Perks</li>
-                <li>Survivor Perks Updated</li>
-                <dd>- <b style="color: #003bb9;">Babysitter</b></dd>
-                <dd>- <b style="color: #003bb9;">Botany Knowledge</b></dd>
-                <dd>- <b style="color: #003bb9;">Champion of Light</b></dd>
-                <dd>- <b style="color: #003bb9;">Counterforce</b></dd>
-                <dd>- <b style="color: #003bb9;">Desperate Measures</b></dd>
-                <dd>- <b style="color: #003bb9;">Empathic Connection</b></dd>
-                <dd>- <b style="color: #003bb9;">Exultation</b></dd>
-                <dd>- <b style="color: #003bb9;">Light-Footed</b></dd>
-                <li>Killer Perks Updated</li>
-                <dd>- <b style="color: #860e0e;">Batteries Included</b></dd>
-                <dd>- <b style="color: #860e0e;">Call of Brine</b></dd>
-                <dd>- <b style="color: #860e0e;">Dark Devotion</b></dd>
-                <dd>- <b style="color: #860e0e;">Hex: Retribution</b></dd>
-                <dd>- <b style="color: #860e0e;">Machine Learning</b></dd>
-                <dd>- <b style="color: #860e0e;">Superior Anantomy</b></dd>
-                <dd>- <b style="color: #860e0e;">Terminus</b></dd>
-                <dd>- <b style="color: #860e0e;">Thrilling Tremors</b></dd>
-                <dd>- <b style="color: #860e0e;">THWACK!</b></dd>
-                <dd>- <b style="color: #860e0e;">Unbound</b></dd>
-            </dl>
-            <h3>Version 1.4.0</h3>
-            <h5>May 9, 2025</h5>
-            <dl>
-                <li>Added <b style="color: #003bb9;">Orela Rose</b> and their Unique Perks</li>
-                <li>Fixed a bug where <b style="color: #003bb9;">Haddie Kaur</b> was not being selected or deselected with the Select All Survivors button or Deselect All Survivors button respectively</li>
-                <li>Survivor Perks Updated</li>
-                <dd>- <b style="color: #003bb9;">Babysitter</b></dd>
-                <dd>- <b style="color: #003bb9;">Boon: Dark Theory</b></dd>
-                <dd>- <b style="color: #003bb9;">Breakout</b></dd>
-                <dd>- <b style="color: #003bb9;">No One Left Behind</b></dd>
-                <li>Killer Perks Updated</li>
-                <dd>- <b style="color: #860e0e;">Batteries Included</b></dd>
-                <dd>- <b style="color: #860e0e;">Furtive Chase</b></dd>
-                <dd>- <b style="color: #860e0e;">Game Afoot</b></dd>
-                <dd>- <b style="color: #860e0e;">Hex: Pentimento</b> (Reworked)</dd>
-                <dd>- <b style="color: #860e0e;">Unbound</b></dd>
-            </dl>
-            <h3>Version 1.3.1</h3>
-            <h5>April 20, 2025</h5>
-            <ul>
-                <li>Updated Homepage details</li>
-            </ul>
-            <h3>Version 1.3</h3>
-            <h5>April 20, 2025</h5>
-            <ul>
-                <li>Added new tooltip feature that toggles the selected Perk's Description of the perk when it's image is clicked on</li>
-                <li>Fixed a bug where the <b style="color: #860e0e;">Blood Warden</b> Perk was not being selected or deselcted with the Select All Perks button or Deselect All Perks button respectively</li>
-                <li>Fixed a bug where the <b style="color: #003bb9;">Second Wind</b> Perk was not being selected or deselcted with the Select All Perks button or Deselect All Perks button respectively</li>
-                <li>Fixed a typo where the <b style="color: #860e0e;">The Ghoul's</b> Perks were not in alphabetical order <i>(F comes BEFORE H)</i></li>
-                <li>Fixed the bug where the Survivor name, <b style="color: #003bb9;">Claudette Morel</b> was shown instead of the Killer name, <b style="color: #860e0e;">The Nurse</b> in the Perk Selection on the Killer Side Randomizer Webpage</li>
-                <li>Replaced the "Error: Not Found!" Perk Name text with "Empty Slot" to represent what it's truly meant to be, an Empty Slot for Perks</li>
-                <li>Design changes for the navigation buttons</li>
-            </ul>
-            <h3>Version 1.2.1</h3>
-            <h5>April 4, 2025</h5>
-            <ul>
-                <li>Updated Homepage details</li>
-            </ul>
-            <h3>Version 1.2</h3>
-            <h5>April 4, 2025</h5>
-            <ul>
-                <li>Added <b style="color: #860e0e;">The Ghoul</b> and their Unique Perks</li>
-            </ul>
-            <h3>Version 1.1</h3>
-            <h5>December 11, 2024</h5>
-            <ul>
-                <li>Added Killer Side Randomizer Webpage</li>
-                <li>Added <b>Changelog</b> to the Homepage</li>
-                <li>Added button to navigate to the <b>Killer Side Randomzier</b> on the Survivor Side Randomizer Webpage</li> 
-                <li>Added button to navigate to the <b>Survivor Side Randomzier</b> on the Killer Side Randomizer Webpage</li>               
-                <li>Added <b style="color: #003bb9;">Taurie Cain</b> and their Unique Perks</li>
-                <li>Added <b style="color: #860e0e;">The Houndmaster</b> and their Unique Perks</li>
-                <li>Removed <b style="color: #ad9217;">Shroud of Separation</b> from the Survivor Side as it is not a Survivor Offering</li>
-                <li>Enabled the Killer Side Randomizer Button on the Homepage</li>
-                <li>Fixed Typo for <b style="color: #003bb9;">Ashley Williams</b> when chosen to display "Any Survivor" on Survivor Side Randomizer</li>
-                <li>Fixed a bug where <b style="color: #003bb9;">Detective's Hunch Perk</b> was not being selected</li>
-                <li>Fixed a bug where <b style="color: #003bb9;">Overzealous Perk</b> was not being selected</li>
-                <li>Fixed a bug where <b style="color: #003bb9;">Better Than New Perk</b> was not being selected</li>
-                <li>Fixed bugs where <b style="color: #003bb9;">Survivor Side Select/Deselect All Buttons</b> were not working as intended</li>
-                <li>Design changes for the display area</li>
-                <li>Fixed minor issues and added optimizations for Survivor Side Randomizer</li>
-            </ul>
-            <h3>Version 1.0</h3>
-            <h5>November 8, 2024</h5>
-            <ul>
-                <li>Website Created</li>
-                <li>Added Functional Survivor Side Randomizer</li>
-                <li>Added Homepage</li>
-            </ul>
+        <!--Version 2.0.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version200')">Version 2.0.0: November 8, 2025</button>
+                <div class="patch" id="Version200">
+                    <h4>Website Anniversary Update</h4>
+                    <dl>
+                        <li>New Feature: Device Saved Selections!!!</li>
+                        <dd>- Your computer will now remember and save selections you've made for the Survivor Side and Killer Side Randomizers</dd>
+                        <li>Added Homepage Navigation button to Survivor and Killer Side Randomizers</li>
+                        <li>Added Favicons (The small icons on the browser tabs)</li>
+                        <li>Design updates to the Homepage</li>
+                        <dd>- Adjustments to Navigation Buttons</dd>
+                        <dd>- Version Updates and Patches are now displayed with dropdown buttons</dd>
+                        <dd>- Font Changes</dd>
+                        <dd>- Color Adjustments</dd>
+                        <li>Added the <b style="color: #246aff;">Any Survivor Item</b> to the base pool of Survivor Item Randomizer to Survivor Side Randomizer</li>
+                        <li>New Custom made Survivor and Killer Design Changes:</li>
+                        <dd>- Perks</dd>
+                        <dd>- Offerings</dd>
+                        <dd>- Items</dd>
+                        <dd>- Powers</dd>
+                        <dd>- Add-Ons</dd>
+                        <dd>- Background</dd>
+                        <dd>- Buttons</dd>
+                        <li>The following previous images will be retired from the website:</li>
+                        <dd>- Survivor Perks made by <a style="color: #0044fd;" href="https://nightlight.gg/u/CatzuZ/packs">CatzuZ' Glowy Icon Pack</a></dd>
+                        <dd>- Survivor Items and Add-Ons made by <a style="color: #0044fd;" href="https://nightlight.gg/u/ClemDBD/packs">ClemDBD and Haydun's Chaos Theory Pack</a></dd>
+                        <dd>- Killer Perks, Powers, and Add-Ons made by <a style="color: #0044fd;" href="https://nightlight.gg/u/Elucens/packs">Elucens' Smokie Pack</a></dd>
+                        <dd>- Survivor and Killer Offerings made by <a style="color: #0044fd;" href="https://nightlight.gg/u/faery/packs">Faery's Galaxy Pack</a></dd>
+                        <li>Removed some redundant lines of code</li>
+                        <li>Fixed a line where the Survivor Side Offering: <b style="color: #246aff;">Shroud of Binding</b> was meant to be updated and changed into <b style="color: #246aff;">Shroud of Separation</b> back during DBD Patch 9.0.0 changes</li>
+                        <li>Updated <b style="color: #c91414;">The Shape's</b> Add-Ons to match DBD Patch 9.2.0 changes</li>
+                        <li>Updated/Reverted the <b style="color: #246aff;">Off The Record</b> Perk to match DBD Patch 9.2.2 changes</li>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.7.1-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version171')">Version 1.7.1: October 5, 2025</button>
+                <div class="patch" id="Version171">
+                    <dl>
+                        <li>Fixed a line where the Killer Side Offering: <b style="color: #c91414;">Shroud of Separation</b> was meant to be updated and changed into <b style="color: #c91414;">Shroud of Vanishing</b> back during DBD Patch 9.0.0 changes</li>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.7.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version170')">Version 1.7.0: October 1, 2025</button>
+                <div class="patch" id="Version170">
+                    <dl>
+                        <li>Added <b style="color: #246aff;">Vee Boonyasak</b> and their Unique Perks</li>
+                        <li>Added <b style="color: #c91414;">The Krasue</b> and their Unique Perks</li>
+                        <li>Survivor Perks Updated</li>
+                        <dd>- <b style="color: #246aff;">Clairvoyance</b></dd>
+                        <dd>- <b style="color: #246aff;">Friendly Competition</b></dd>
+                        <dd>- <b style="color: #246aff;">Hope</b></dd>
+                        <dd>- <b style="color: #246aff;">No Mither</b></dd>
+                        <dd>- <b style="color: #246aff;">Off the Record</b></dd>
+                        <dd>- <b style="color: #246aff;">Leader</b></dd>
+                        <dd>- <b style="color: #246aff;">Lucky Star</b></dd>
+                        <dd>- <b style="color: #246aff;">Pharmacy</b></dd>
+                        <dd>- <b style="color: #246aff;">Plot Twist</b></dd>
+                        <dd>- <b style="color: #246aff;">Poised</b></dd>
+                        <dd>- <b style="color: #246aff;">Quick Gambit</b></dd>
+                        <dd>- <b style="color: #246aff;">Tenacity</b></dd>
+                        <dd>- <b style="color: #246aff;">Vigil</b></dd>
+                        <li>Killer Perks Updated</li>
+                        <dd>- <b style="color: #c91414;">All-Shaking Thunder</b></dd>
+                        <dd>- <b style="color: #c91414;">A Nurse's Calling</b></dd>
+                        <dd>- <b style="color: #c91414;">Dark Arrogance</b></dd>
+                        <dd>- <b style="color: #c91414;">Dead Man's Switch</b></dd>
+                        <dd>- <b style="color: #c91414;">Deerstalker</b> (Reworked)</dd>
+                        <dd>- <b style="color: #c91414;">Hex: Ruin</b></dd>
+                        <dd>- <b style="color: #c91414;">Leverage</b></dd>
+                        <dd>- <b style="color: #c91414;">Monitor and Abuse</b></dd>
+                        <dd>- <b style="color: #c91414;">Oppression</b></dd>
+                        <dd>- <b style="color: #c91414;">Septic Touch</b></dd>
+                        <dd>- <b style="color: #c91414;">Ultimate Weapon</b></dd>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.6.1-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version161')">Version 1.6.1: September 13, 2025</button>
+                <div class="patch" id="Version161">
+                    <dl>
+                        <li>Fixed a bug where Offerings on the Killer Side Randomizer were not working as intended on the backend</li>
+                        <dd>- Worked fine on the frontend of the webpage but had duplicate code on the backend</dd>
+                        <li>Fixed a bug where the Survivor Perks: <b style="color: #246aff;">Teamwork: Toughen Up</b> and <b style="color: #246aff;">Teamwork: Throw Down</b>had their icons switched</li>
+                        <li>Fixed a bug where Map and Key Addons for Survivors that were retired were still being displayed</li>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.6.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version160')">Version 1.6.0: August 8, 2025</button>
+                <div class="patch" id="Version160">
+                    <p><em>Dev Note:</em></p>
+                    <p><em>It has been brought to my attention that BHVR Interactive has changed the name of the Rarity: <b style="color: #9b1658;">Ultra Rare</b> to <b style="color: #9b1658;">Visceral</b> </em></p><br>
+                    <p><em>I'm not changing it</em></p><br>
+                    <dl>
+                        <li>Added <b style="color: #246aff;">Rick Grimes</b> and their Unique Perks</li>
+                        <li>Added <b style="color: #246aff;">Michonne Grimes</b> and their Unique Perks</li>
+                        <li>Fixed an issue where <b style="color: #246aff;">Dwight Fairfield</b> was not showing in the Character Display</li>
+                        <li>Fixed an issue where <b style="color: #725433;">Rubber Gloves</b> Addon was not being shown properly in the top Addon slot of the Item Display and incorrectly displaying the wrong Addon in the bottom Addon slot</li>
+                        <li>Fixed an issue where the <b>Any Add-On</b> selection was not adding the <b style="color: #ad0c3c;">Any Add-On</b> properly to the Item Display's Add-On Randomizer</li>
+                        <li>Raised the brightness of the rarities for Item Add-Ons on the Survivor Side Randomizer Webpage</li>
+                        <li><i>Hidden feature to be announced at Website's Anniversary...</i></li>
+                        <li>Survivor Perks Updated</li>
+                        <dd>- <b style="color: #246aff;">Any Means Necessary</b></dd>
+                        <dd>- <b style="color: #246aff;">Appraisal</b></dd>
+                        <dd>- <b style="color: #246aff;">Better Together</b></dd>
+                        <dd>- <b style="color: #246aff;">Built to Last</b></dd>
+                        <dd>- <b style="color: #246aff;">Déjà Vu</b></dd>
+                        <dd>- <b style="color: #246aff;">Detective's Hunch</b></dd>
+                        <dd>- <b style="color: #246aff;">Potential Energy</b></dd>
+                        <dd>- <b style="color: #246aff;">Still Sight</b></dd>
+                        <dd>- <b style="color: #246aff;">Streetwise</b> (Reworked)</dd>
+                        <li>Killer Perks Updated</li>
+                        <dd>- <b style="color: #c91414;">Dragon's Grip</b></dd>
+                        <dd>- <b style="color: #c91414;">Franklin's Demise</b></dd>
+                        <dd>- <b style="color: #c91414;">Hubris</b></dd>
+                        <dd>- <b style="color: #c91414;">Insidious</b></dd>
+                        <dd>- <b style="color: #c91414;">Scourge Hook: Hangman's Trick</b></dd>
+                        <dd>- <b style="color: #c91414;">Overwhelming Presence</b> (Reworked)</dd>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.5.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version150')">Version 1.5.0: June 21, 2025</button>
+                <div class="patch" id="Version150">
+                    <p><em>Dev Note:</em></p>
+                    <p><em>BHVR Interactive has changed the coloring scheme for rarities from:</em></p>
+                    <p><em><b style="color: #725433;">Common</b>-<b style="color: #ceb753;">Uncommon</b>-<b style="color: #1d5028;">Rare</b>-<b style="color: #5c278d;">Very Rare</b>-<b style="color: #9b1658;">Ultra Rare</b></em></p>
+                    <p><em>to:</em></p>
+                    <p><em><b style="color: #725433;">Common</b>-<b style="color: #1d5028;">Uncommon</b>-<b style="color: #2f3091;">Rare</b>-<b style="color: #5c278d;">Very Rare</b>-<b style="color: #9b1658;">Ultra Rare</b></em></p>
+                    <p><em>Survivor Item Addons on the website are <b>unaffected</b> by this change but Killer Power Addons are <b>affected</b> by this change</em></p>
+                    <p><em>Perk Descriptions are <b>unaffected</b> by this change (Too much redundant work just to swap every yellow text to green and green text to blue)</em></p>
+                    <dl>
+                        <li>Added <b style="color: #c91414;">The Animatronic</b> and their Unique Perks</li>
+                        <li>Survivor Perks Updated</li>
+                        <dd>- <b style="color: #246aff;">Babysitter</b></dd>
+                        <dd>- <b style="color: #246aff;">Botany Knowledge</b></dd>
+                        <dd>- <b style="color: #246aff;">Champion of Light</b></dd>
+                        <dd>- <b style="color: #246aff;">Counterforce</b></dd>
+                        <dd>- <b style="color: #246aff;">Desperate Measures</b></dd>
+                        <dd>- <b style="color: #246aff;">Empathic Connection</b></dd>
+                        <dd>- <b style="color: #246aff;">Exultation</b></dd>
+                        <dd>- <b style="color: #246aff;">Light-Footed</b></dd>
+                        <li>Killer Perks Updated</li>
+                        <dd>- <b style="color: #c91414;">Batteries Included</b></dd>
+                        <dd>- <b style="color: #c91414;">Call of Brine</b></dd>
+                        <dd>- <b style="color: #c91414;">Dark Devotion</b></dd>
+                        <dd>- <b style="color: #c91414;">Hex: Retribution</b></dd>
+                        <dd>- <b style="color: #c91414;">Machine Learning</b></dd>
+                        <dd>- <b style="color: #c91414;">Superior Anantomy</b></dd>
+                        <dd>- <b style="color: #c91414;">Terminus</b></dd>
+                        <dd>- <b style="color: #c91414;">Thrilling Tremors</b></dd>
+                        <dd>- <b style="color: #c91414;">THWACK!</b></dd>
+                        <dd>- <b style="color: #c91414;">Unbound</b></dd>
+                    </dl>
+                </div>
+            </div>
+        <!--Version 1.4.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version140')">Version 1.4.0: May 9, 2025</button>
+                <div class="patch" id="Version140">
+                    <dl>
+                        <li>Added <b style="color: #246aff;">Orela Rose</b> and their Unique Perks</li>
+                        <li>Fixed a bug where <b style="color: #246aff;">Haddie Kaur</b> was not being selected or deselected with the Select All Survivors button or Deselect All Survivors button respectively</li>
+                        <li>Survivor Perks Updated</li>
+                        <dd>- <b style="color: #246aff;">Babysitter</b></dd>
+                        <dd>- <b style="color: #246aff;">Boon: Dark Theory</b></dd>
+                        <dd>- <b style="color: #246aff;">Breakout</b></dd>
+                        <dd>- <b style="color: #246aff;">No One Left Behind</b></dd>
+                        <li>Killer Perks Updated</li>
+                        <dd>- <b style="color: #c91414;">Batteries Included</b></dd>
+                        <dd>- <b style="color: #c91414;">Furtive Chase</b></dd>
+                        <dd>- <b style="color: #c91414;">Game Afoot</b></dd>
+                        <dd>- <b style="color: #c91414;">Hex: Pentimento</b> (Reworked)</dd>
+                        <dd>- <b style="color: #c91414;">Unbound</b></dd>
+                    </dl>
+                </div>
+            </div>    
+        <!--Version 1.3.1-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version131')">Version 1.3.1: April 20, 2025</button>
+                <div class="patch" id="Version131">
+                    <ul>
+                        <li>Updated Homepage details</li>
+                    </ul>
+                </div>
+            </div>    
+        <!--Version 1.3.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version130')">Version 1.3.0: April 20, 2025</button>
+                <div class="patch" id="Version130">
+                    <ul>
+                        <li>Added new tooltip feature that toggles the selected Perk's Description of the perk when it's image is clicked on</li>
+                        <li>Fixed a bug where the <b style="color: #c91414;">Blood Warden</b> Perk was not being selected or deselcted with the Select All Perks button or Deselect All Perks button respectively</li>
+                        <li>Fixed a bug where the <b style="color: #246aff;">Second Wind</b> Perk was not being selected or deselcted with the Select All Perks button or Deselect All Perks button respectively</li>
+                        <li>Fixed a typo where the <b style="color: #c91414;">The Ghoul's</b> Perks were not in alphabetical order <i>(F comes BEFORE H)</i></li>
+                        <li>Fixed the bug where the Survivor name, <b style="color: #246aff;">Claudette Morel</b> was shown instead of the Killer name, <b style="color: #c91414;">The Nurse</b> in the Perk Selection on the Killer Side Randomizer Webpage</li>
+                        <li>Replaced the "Error: Not Found!" Perk Name text with "Empty Slot" to represent what it's truly meant to be, an Empty Slot for Perks</li>
+                        <li>Design changes for the navigation buttons</li>
+                    </ul>
+                </div>
+            </div>    
+        <!--Version 1.2.1-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version121')">Version 1.2.1: April 4, 2025</button>
+                <div class="patch" id="Version121">
+                    <ul>
+                        <li>Updated Homepage details</li>
+                    </ul>
+                </div>
+            </div>     
+        <!--Version 1.2.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version120')">Version 1.2.0: April 4, 2025</button>
+                <div class="patch" id="Version120">
+                    <ul>
+                        <li>Added <b style="color: #c91414;">The Ghoul</b> and their Unique Perks</li>
+                    </ul>
+                </div>
+            </div> 
+        <!--Version 1.1.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version110')">Version 1.1.0: December 11, 2024</button>
+                <div class="patch" id="Version110">
+                    <ul>
+                        <li>Added Killer Side Randomizer Webpage</li>
+                        <li>Added <b>Changelog</b> to the Homepage</li>
+                        <li>Added button to navigate to the <b>Killer Side Randomzier</b> on the Survivor Side Randomizer Webpage</li> 
+                        <li>Added button to navigate to the <b>Survivor Side Randomzier</b> on the Killer Side Randomizer Webpage</li>               
+                        <li>Added <b style="color: #246aff;">Taurie Cain</b> and their Unique Perks</li>
+                        <li>Added <b style="color: #c91414;">The Houndmaster</b> and their Unique Perks</li>
+                        <li>Removed <b style="color: #c3a419;">Shroud of Separation</b> from the Survivor Side as it is not a Survivor Offering</li>
+                        <li>Enabled the Killer Side Randomizer Button on the Homepage</li>
+                        <li>Fixed Typo for <b style="color: #246aff;">Ashley Williams</b> when chosen to display "Any Survivor" on Survivor Side Randomizer</li>
+                        <li>Fixed a bug where <b style="color: #246aff;">Detective's Hunch Perk</b> was not being selected</li>
+                        <li>Fixed a bug where <b style="color: #246aff;">Overzealous Perk</b> was not being selected</li>
+                        <li>Fixed a bug where <b style="color: #246aff;">Better Than New Perk</b> was not being selected</li>
+                        <li>Fixed bugs where <b style="color: #246aff;">Survivor Side Select/Deselect All Buttons</b> were not working as intended</li>
+                        <li>Design changes for the display area</li>
+                        <li>Fixed minor issues and added optimizations for Survivor Side Randomizer</li>
+                    </ul>
+                </div>
+            </div>    
+        <!--Version 1.0.0-->
+            <div>
+                <button class="dropBtn" onclick="dropdownVersion('Version100')">Version 1.0.0: November 8, 2024</button>
+                <div class="patch" id="Version100">
+                    <ul>
+                        <li>Website Created</li>
+                        <li>Added Functional Survivor Side Randomizer</li>
+                        <li>Added Homepage</li>
+                    </ul>
+                </div>
+            </div>     
         </div>
     </body>
 </html>

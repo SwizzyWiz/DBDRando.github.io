@@ -1,55 +1,111 @@
 .body{
     margin: 0px;
     background-image: linear-gradient(#0d0c4b, #09007d, #230c0c, #851616);
+    font-family: 'Julee';
+}
+.face{
+    width: 100%;
+    float: left;
+    padding-top: 15px;
 }
 .a{
     text-align: center;
     color: white;
     height: 250px;
+    float: left;
+    width: 40%;
+}
+.a h1{
+    font-size: 32pt;
 }
 .a i{
     font-size: 22px;
 }
+.a em{
+    text-decoration: underline;
+}
+.faceImg{
+    width: 400px;
+    height: 400px;
+}
+.navSurvivor{
+    width: 60%;
+    float: right;
+}
 .navSurvivor button{
     padding: 30px;
-    background-color: #19155e;
+    background-color: #0a0826c4;
     color: white;
     text-align: center;
-    width: 80%;
+    font-family: inherit;
+    width: 75%;
     font-size: 50px;
     height: 200px;
-    margin-left: 10%;
+    margin: 10%;
+    margin-bottom: 0%;
     transition: background-color 1s;
 }
 .navSurvivor button:hover{
-    background-color: #231bbe;
+    background-color: #0900b9;
 }
 .navKiller{
-    height: 365px;
+    width: 60%;
+    float: right;
 }
 .navKiller button{
     padding: 30px;
-    background-color: #581717;
+    background-color: #2e0000c4;
     color: white;
     text-align: center;
-    width: 80%;
+    font-family: inherit;
+    width: 75%;
     font-size: 50px;
     height: 200px;
-    margin-left: 10%;
+    margin: 10%;
+    margin-top: 0%;
     transition: background-color 1s;
 }
 .navKiller button:hover{
-    background-color: #ad2323;
+    background-color: #690000;
+}
+.navImg{
+    height: 120px;
+    width: 125px;
+    float: left;
+}
+.navText{
+    padding-top: 30px;
 }
 .changelog{
-    width: 90%;
+    width: 100%;
     height: fit-content;
-    background-color: #000000cc;
-    margin-left: 5%;
+    background-image: linear-gradient(#16064529,#200101);
     color: white;
-    padding: 5px;
     font-size: larger;
-    margin-bottom: 10px;
+    float: left;
+    padding-bottom: 50px;
+}
+.dropBtn{
+    font-size: 20px;
+    font-family: inherit;
+    background-color: #1c1c1c;
+    color: white;
+    float: left;
+    width: 100%;
+    padding: 12px 60px;
+    text-align: left;
+    transition: background-color 0.5s;
+}
+.dropBtn:hover{
+    background-color: #0f0f0fba;
+}
+.patch{
+    display: none;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #220000b9;
+    float: left;
 }
 .changelog h1{
     text-align: center;
