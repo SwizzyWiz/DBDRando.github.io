@@ -34,8 +34,8 @@
                 </div>
             <!--First Killer Selection Column-->
                 <div class="dropdownKill" id="dropKills1">
-                    <input type="checkbox" id="krasue" name="krasue" value="The Krasue" onchange="namedCharPooled(name)">
-                    <label for="krasue">The Krasue <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="first" name="first" value="The First" onchange="namedCharPooled(name)">
+                    <label for="first">The First <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="trapper" name="trapper" value="The Trapper" onchange="namedCharPooled(name)">
                     <label for="trapper">The Trapper</label><br>
@@ -168,6 +168,9 @@
 
                     <input type="checkbox" id="animatronic" name="animatronic" value="The Animatronic" onchange="namedCharPooled(name)">
                     <label for="animatronic">The Animatronic</label><br>
+
+                    <input type="checkbox" id="krasue" name="krasue" value="The Krasue" onchange="namedCharPooled(name)">
+                    <label for="krasue">The Krasue</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -201,16 +204,16 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="krasuePerks">
-                        <legend>The Krasue <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="hexOveDoo" name="hexOveDoo" value="Hex: Overture of Doom" onchange="namedPerkPooled(name)">
-                        <label for="hexOveDoo">Hex: Overture of Doom</label><br>
+                    <fieldset class="firstPerks">
+                        <legend>The First <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="hexHivMin" name="hexHivMin" value="Hex: Hive Mind" onchange="namedPerkPooled(name)">
+                        <label for="hexHivMin">Hex: Hive Mind</label><br>
 
-                        <input type="checkbox" id="rav" name="rav" value="Ravenous" onchange="namedPerkPooled(name)">
-                        <label for="rav">Ravenous</label><br>    
+                        <input type="checkbox" id="secPro" name="secPro" value="Secret Project" onchange="namedPerkPooled(name)">
+                        <label for="secPro">Secret Project</label><br>    
 
-                        <input type="checkbox" id="wanEye" name="wanEye" value="Wandering Eye" onchange="namedPerkPooled(name)">
-                        <label for="wanEye">Wandering Eye</label><br>
+                        <input type="checkbox" id="turBacClo" name="turBacClo" value="Turn Back the Clock" onchange="namedPerkPooled(name)">
+                        <label for="turBacClo">Turn Back the Clock</label><br>
                     </fieldset>
 
                     <fieldset class="trapperPerks">
@@ -264,13 +267,13 @@
                     <fieldset class="shapePerks">
                         <legend>The Shape</legend>
                         <input type="checkbox" id="dyiLig" name="dyiLig" value="Dying Light" onchange="namedPerkPooled(name)">
-                        <label for="dyiLig">Dying Light</label><br>
+                        <label title="Cull the Weak" for="dyiLig">Dying Light</label><br>
     
                         <input type="checkbox" id="plaWitYouFoo" name="plaWitYouFoo" value="Play with Your Food" onchange="namedPerkPooled(name)">
-                        <label for="plaWitYouFoo">Play with Your Food</label><br>
+                        <label title="See How They Run" for="plaWitYouFoo">Play with Your Food</label><br>
     
                         <input type="checkbox" id="savBesLas" name="savBesLas" value="Save the Best for Last" onchange="namedPerkPooled(name)">
-                        <label for="savBesLas">Save the Best for Last</label><br>
+                        <label title="Keep Them Waiting" for="savBesLas">Save the Best for Last</label><br>
                     </fieldset>
                 
                     <fieldset class="hagPerks">
@@ -512,13 +515,13 @@
                     <fieldset class="cenobitePerks">
                         <legend>The Cenobite</legend>
                         <input type="checkbox" id="dead" name="dead" value="Deadlock" onchange="namedPerkPooled(name)">
-                        <label for="dead">Deadlock</label><br>
+                        <label title="No Holds Barred" for="dead">Deadlock</label><br>
 
                         <input type="checkbox" id="hexPla" name="hexPla" value="Hex: Plaything" onchange="namedPerkPooled(name)">
-                        <label for="hexPla">Hex: Plaything</label><br>
+                        <label title="Hex: Fortune's Fool" for="hexPla">Hex: Plaything</label><br>
 
                         <input type="checkbox" id="scoHooGifPai" name="scoHooGifPai" value="Scourge Hook: Gift of Pain" onchange="namedPerkPooled(name)">
-                        <label for="scoHooGifPai">Scourge Hook: Gift of Pain</label><br>
+                        <label title="Scourge Hook: Weeping Wounds" for="scoHooGifPai">Scourge Hook: Gift of Pain</label><br>
                     </fieldset>  
                 </div>
             <!--Fourth Perk Selection Column-->
@@ -705,6 +708,18 @@
 
                         <input type="checkbox" id="phaFea" name="phaFea" value="Phantom Fear" onchange="namedPerkPooled(name)">
                         <label for="phaFea">Phantom Fear</label><br>
+                    </fieldset>
+
+                    <fieldset class="krasuePerks">
+                        <legend>The Krasue</legend>
+                        <input type="checkbox" id="hexOveDoo" name="hexOveDoo" value="Hex: Overture of Doom" onchange="namedPerkPooled(name)">
+                        <label for="hexOveDoo">Hex: Overture of Doom</label><br>
+
+                        <input type="checkbox" id="rav" name="rav" value="Ravenous" onchange="namedPerkPooled(name)">
+                        <label for="rav">Ravenous</label><br>    
+
+                        <input type="checkbox" id="wanEye" name="wanEye" value="Wandering Eye" onchange="namedPerkPooled(name)">
+                        <label for="wanEye">Wandering Eye</label><br>
                     </fieldset>
                 </div>
             </div>

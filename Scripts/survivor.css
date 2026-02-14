@@ -83,7 +83,7 @@
 .dropdownSurv {
     display: none;
     background-color: rgb(16, 17, 39, 0.9);
-    height: 715px;
+    height: 785px;
     width: 20%;
     float: left;
     text-align: left;
@@ -114,7 +114,7 @@
 .dropdownPerk {
     display: none;
     background-color: rgb(8, 16, 122, 0.9);
-    height: 1650px;
+    height: 1800px;
     float: left;
     width: 20%;
 }

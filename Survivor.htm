@@ -35,8 +35,11 @@
                 </div>
             <!--First Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs1">
-                    <input type="checkbox" id="veeBoo" name="veeBoo" value="Vee Boonyasak" onchange="namedCharPooled(name)">
-                    <label for="veeBoo">Vee Boonyasak <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="dustHen" name="dustHen" value="Dustin Henderson" onchange="namedCharPooled(name)">
+                    <label for="dustHen">Dustin Henderson <mark>NEW!</mark></label><br>
+
+                    <input type="checkbox" id="elev" name="elev" value="Eleven" onchange="namedCharPooled(name)">
+                    <label for="elev">Eleven <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="dwigFai" name="dwigFai" value="Dwight Fairfield" onchange="namedCharPooled(name)">
                     <label for="dwigFai">Dwight Fairfield</label><br>
@@ -68,7 +71,6 @@
             <!--Second Survivor Selection Column-->               
                 <div class="dropdownSurv" id="dropSurvs2">
                      
-
                     <input type="checkbox" id="daviKin" name="daviKin" value="David King" onchange="namedCharPooled(name)">
                     <label for="daviKin">David King</label><br>
                                 
@@ -99,14 +101,13 @@
                     <input type="checkbox" id="stevHar" name="stevHar" value="Steve Harrington" onchange="namedCharPooled(name)">
                     <label for="stevHar">Steve Harrington</label><br>
                                 
-                    
+                    <input type="checkbox" id="yuiKim" name="yuiKim" value="Yui Kimura" onchange="namedCharPooled(name)">
+                    <label for="yuiKim">Yui Kimura</label><br>
+
                 </div>
             <!--Third Survivor Selection Column-->
                 <div class="dropdownSurv" id="dropSurvs3">
-
-                    <input type="checkbox" id="yuiKim" name="yuiKim" value="Yui Kimura" onchange="namedCharPooled(name)">
-                    <label for="yuiKim">Yui Kimura</label><br>
-                                 
+     
                     <input type="checkbox" id="zariKas" name="zariKas" value="Zarina Kassir" onchange="namedCharPooled(name)">
                     <label for="zariKas">Zarina Kassir</label><br>
                                  
@@ -134,17 +135,16 @@
                     <input type="checkbox" id="jonaVas" name="jonaVas" value="Jonah Vasquez" onchange="namedCharPooled(name)">
                     <label for="jonaVas">Jonah Vasquez</label><br>
                                 
-                    
-                </div>                
-            <!--Fourth Survivor Selection Column-->
-                <div class="dropdownSurv" id="dropSurvs4">
-
                     <input type="checkbox" id="yoicAsa" name="yoicAsa" value="Yoichi Asakawa" onchange="namedCharPooled(name)">
                     <label for="yoicAsa">Yoichi Asakawa</label><br>
                                 
                     <input type="checkbox" id="haddKau" name="haddKau" value="Haddie Kaur" onchange="namedCharPooled(name)">
                     <label for="haddKau">Haddie Kaur</label><br>
-                                
+
+                </div>                
+            <!--Fourth Survivor Selection Column-->
+                <div class="dropdownSurv" id="dropSurvs4">
+      
                     <input type="checkbox" id="adaWon" name="adaWon" value="Ada Wong" onchange="namedCharPooled(name)">
                     <label for="adaWon">Ada Wong</label><br>
                                 
@@ -169,11 +169,6 @@
                     <input type="checkbox" id="elleRip" name="elleRip" value="Ellen Ripley" onchange="namedCharPooled(name)">
                     <label for="elleRip">Ellen Ripley</label><br>
                                 
-                    
-                </div>   
-            <!--Fifth Survivor Selection Column-->
-                <div class="dropdownSurv" id="dropSurvs5">
-
                     <input type="checkbox" id="alanWak" name="alanWak" value="Alan Wake" onchange="namedCharPooled(name)">
                     <label for="alanWak">Alan Wake</label><br>
                                 
@@ -182,7 +177,11 @@
                                 
                     <input type="checkbox" id="theTro" name="theTro" value="The Troupe" onchange="namedCharPooled(name)">
                     <label for="theTro">The Troupe</label><br>
-                
+
+                </div>   
+            <!--Fifth Survivor Selection Column-->
+                <div class="dropdownSurv" id="dropSurvs5">
+
                     <input type="checkbox" id="laraCro" name="laraCro" value="Lara Croft" onchange="namedCharPooled(name)">
                     <label for="laraCro">Lara Croft</label><br>
 
@@ -200,6 +199,9 @@
 
                     <input type="checkbox" id="michGri" name="michGri" value="Michonne Grimes" onchange="namedCharPooled(name)">
                     <label for="michGri">Michonne Grimes</label><br>
+
+                    <input type="checkbox" id="veeBoo" name="veeBoo" value="Vee Boonyasak" onchange="namedCharPooled(name)">
+                    <label for="veeBoo">Vee Boonyasak</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -233,16 +235,28 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="veeBooPerks">
-                        <legend>Vee Boonyasak <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="ghoNot" name="ghoNot" value="Ghost Notes" onchange="namedPerkPooled(name)">
-                        <label for="ghoNot">Ghost Notes</label><br>
+                    <fieldset class="dustHenPerks">
+                        <legend>Dustin Henderson <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="badBadBoo" name="badBadBoo" value="Bada Bada Boom" onchange="namedPerkPooled(name)">
+                        <label for="badBadBoo">Bada Bada Boom</label><br>
     
-                        <input type="checkbox" id="oneTwoThrFou" name="oneTwoThrFou" value="One-Two-Three-Four!" onchange="namedPerkPooled(name)">
-                        <label for="oneTwoThrFou">One-Two-Three-Four!</label><br>
+                        <input type="checkbox" id="chaPla" name="chaPla" value="Change of Plan" onchange="namedPerkPooled(name)">
+                        <label for="chaPla">Change of Plan</label><br>
     
-                        <input type="checkbox" id="roaLif" name="roaLif" value="Road Life" onchange="namedPerkPooled(name)">
-                        <label for="roaLif">Road Life</label><br>
+                        <input type="checkbox" id="teaFulCir" name="teaFulCir" value="Teamwork: Full Circuit" onchange="namedPerkPooled(name)">
+                        <label for="teaFulCir">Teamwork: Full Circuit</label><br>
+                    </fieldset>
+
+                    <fieldset class="elevPerks">
+                        <legend>Eleven <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="extPer" name="extPer" value="Extrasensory Perception" onchange="namedPerkPooled(name)">
+                        <label for="extPer">Extrasensory Perception</label><br>
+    
+                        <input type="checkbox" id="teaSofSpo" name="teaSofSpo" value="Teamwork: Soft-Spoken" onchange="namedPerkPooled(name)">
+                        <label for="teaSofSpo">Teamwork: Soft-Spoken</label><br>
+    
+                        <input type="checkbox" id="weSeeYou" name="weSeeYou" value="We See You" onchange="namedPerkPooled(name)">
+                        <label for="weSeeYou">We See You</label><br>
                     </fieldset>
 
                     <fieldset class="dwigFaiPerks">
@@ -308,13 +322,13 @@
                     <fieldset class="laurStrPerks">
                         <legend>Laurie Strode</legend>
                         <input type="checkbox" id="decStr" name="decStr" value="Decisive Strike" onchange="namedPerkPooled(name)">
-                        <label for="decStr">Decisive Strike</label><br>
+                        <label title="Will to Live" for="decStr">Decisive Strike</label><br>
     
                         <input type="checkbox" id="objOfObs" name="objOfObs" value="Object of Obsession" onchange="namedPerkPooled(name)">
-                        <label for="objOfObs">Object of Obssession</label><br>
+                        <label title="Bound by Obssession" for="objOfObs">Object of Obssession</label><br>
     
                         <input type="checkbox" id="solSur" name="solSur" value="Sole Survivor" onchange="namedPerkPooled(name)">
-                        <label for="solSur">Sole Survivor</label><br>
+                        <label title="Down to the Last" for="solSur">Sole Survivor</label><br>
                     </fieldset>
                 
                     <fieldset class="aceVisPerks">
@@ -465,10 +479,6 @@
                         <input type="checkbox" id="innStr" name="innStr" value="Inner Strength" onchange="namedPerkPooled(name)">
                         <label for="innStr">Inner Strength</label><br>
                     </fieldset>
-                    
-                </div>
-            <!--Third Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks3">
 
                     <fieldset class="stevHarPerks">
                         <legend>Steve Harrington</legend>
@@ -481,6 +491,10 @@
                         <input type="checkbox" id="secWin" name="secWin" value="Second Wind" onchange="namedPerkPooled(name)">
                         <label for="secWin">Second Wind</label><br>
                     </fieldset>
+
+                </div>
+            <!--Third Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks3">
 
                     <fieldset class="yuiKimPerks">
                         <legend>Yui Kimura</legend>
@@ -590,11 +604,6 @@
                         <label for="cla">Clairvoyance</label><br>
                     </fieldset>   
                                 
-                    
-                </div>
-            <!--Fourth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks4">
-
                     <fieldset class="jonaVasPerks">
                         <legend>Jonah Vasquez</legend>
                         <input type="checkbox" id="booExp" name="booExp" value="Boon: Exponential" onchange="namedPerkPooled(name)">
@@ -618,7 +627,11 @@
                         <input type="checkbox" id="parGui" name="parGui" value="Parental Guidance" onchange="namedPerkPooled(name)">
                         <label for="parGui">Parental Guidance</label><br>
                     </fieldset>
-                                
+
+                </div>
+            <!--Fourth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks4">
+
                     <fieldset class="haddKauPerks">
                         <legend>Haddie Kaur</legend>
                         <input type="checkbox" id="innFoc" name="innFoc" value="Inner Focus" onchange="namedPerkPooled(name)">
@@ -715,11 +728,6 @@
                         <label for="scePar">Scene Partner</label><br>
                     </fieldset>
                                 
-                    
-                </div>
-            <!--Fifth Perk Selection Column-->
-                <div class="dropdownPerk" id="dropPerks5">
-
                     <fieldset class="elleRipPerks">
                         <legend>Ellen Ripley</legend>
                         <input type="checkbox" id="cheTra" name="cheTra" value="Chemical Trap" onchange="namedPerkPooled(name)">
@@ -755,7 +763,11 @@
                         <input type="checkbox" id="wic" name="wic" value="Wicked" onchange="namedPerkPooled(name)">
                         <label for="wic">Wicked</label><br>
                     </fieldset>
-                                
+
+                </div>
+            <!--Fifth Perk Selection Column-->
+                <div class="dropdownPerk" id="dropPerks5">
+   
                     <fieldset class="theTroPerks">
                         <legend>The Troupe</legend>
                         <input type="checkbox" id="barIns" name="barIns" value="Bardic Inspiration" onchange="namedPerkPooled(name)">
@@ -838,6 +850,18 @@
     
                         <input type="checkbox" id="teaThrDow" name="teaThrDow" value="Teamwork: Throw Down" onchange="namedPerkPooled(name)">
                         <label for="teaThrDow">Teamwork: Throw Down</label><br>
+                    </fieldset>
+
+                    <fieldset class="veeBooPerks">
+                        <legend>Vee Boonyasak</legend>
+                        <input type="checkbox" id="ghoNot" name="ghoNot" value="Ghost Notes" onchange="namedPerkPooled(name)">
+                        <label for="ghoNot">Ghost Notes</label><br>
+    
+                        <input type="checkbox" id="oneTwoThrFou" name="oneTwoThrFou" value="One-Two-Three-Four!" onchange="namedPerkPooled(name)">
+                        <label for="oneTwoThrFou">One-Two-Three-Four!</label><br>
+    
+                        <input type="checkbox" id="roaLif" name="roaLif" value="Road Life" onchange="namedPerkPooled(name)">
+                        <label for="roaLif">Road Life</label><br>
                     </fieldset>
                 </div>
             </div>

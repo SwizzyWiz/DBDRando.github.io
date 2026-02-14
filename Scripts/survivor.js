@@ -1,3 +1,13 @@
+/** New Survivor Additions Checklist
+ * User Preference
+ * loadPref()
+ * selectAllSurv()
+ * deselectAllSurv()
+ * selectAllPerk()
+ * deselectAllPerk()
+ * fixedChar()
+ * fixedPerks()
+ */
 //Characters
 let dwigFaiRem = localStorage.getItem("dwigFai");
 let megThoRem = localStorage.getItem("megTho");
@@ -48,6 +58,8 @@ let orelRosRem = localStorage.getItem("orelRos");
 let rickGriRem = localStorage.getItem("rickGri");
 let michGriRem = localStorage.getItem("michGri");
 let veeBooRem = localStorage.getItem("veeBoo");
+let dustHenRem = localStorage.getItem("dustHen");
+let elevRem = localStorage.getItem("elev");
 //Perks
 let univPerksRem = localStorage.getItem("univPerks");
 let anyChoRem = localStorage.getItem("anyCho");
@@ -248,6 +260,14 @@ let teaThrDowRem = localStorage.getItem("teaThrDow");
 let ghoNotRem = localStorage.getItem("ghoNot");
 let oneTwoThrFouRem = localStorage.getItem("oneTwoThrFou");
 let roaLifRem = localStorage.getItem("roaLif");
+//Dustin Henderson Perks
+let badBadBooRem = localStorage.getItem("badBadBoo");
+let chaPlaRem = localStorage.getItem("chaPla");
+let teaFulCirRem = localStorage.getItem("teaFulCir");
+//Eleven Perks
+let extPerRem = localStorage.getItem("extPer");
+let teaSofSpoRem = localStorage.getItem("teaSofSpo");
+let weSeeYouRem = localStorage.getItem("weSeeYou");
 
 //Fog Vials
 let fogVialRem = localStorage.getItem("fogVial");
@@ -397,6 +417,8 @@ function loadPref(){
     if(rickGriRem=="true"){checking("rickGri",true);}
     if(michGriRem=="true"){checking("michGri",true);}
     if(veeBooRem=="true"){checking("veeBoo",true);}
+    if(dustHenRem=="true"){checking("dustHen",true);}
+    if(elevRem=="true"){checking("elev",true);}
 
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -598,6 +620,14 @@ function loadPref(){
     if(ghoNotRem=="true"){checking("ghoNot",true);}  
     if(oneTwoThrFouRem=="true"){checking("oneTwoThrFou",true);}  
     if(roaLifRem=="true"){checking("roaLif",true);}
+//Dustin Henderson Perks
+    if(badBadBooRem=="true"){checking("badBadBoo",true);}  
+    if(chaPlaRem=="true"){checking("chaPla",true);}  
+    if(teaFulCirRem=="true"){checking("teaFulCir",true);}
+//Eleven Perks
+    if(extPerRem=="true"){checking("extPer",true);}  
+    if(teaSofSpoRem=="true"){checking("teaSofSpo",true);}  
+    if(weSeeYouRem=="true"){checking("weSeeYou",true);}
 
 //Fog Vials
     if(fogVialRem=="true"){checking("fogVial",true);}
@@ -872,9 +902,6 @@ function randomPerks(){
         perkPool[j] = k;
     }
 
-    //document.getElementById("viewPool").innerHTML = perkPool;
-
-
     let perk1 = perkPool[perkPool.length - 1];
     let perk2 = perkPool[perkPool.length - 2];
     let perk3 = perkPool[perkPool.length - 3];
@@ -943,9 +970,6 @@ function randomChar(){
         charPool[l] = charPool[j];
         charPool[j] = k;
     }
-
-    //document.getElementById("viewPool").innerHTML = charPool;
-
 
     let char = charPool[charPool.length - 1];
 
@@ -2422,6 +2446,8 @@ function selectAllSurv(){
     if(!$("#rickGri").is(":checked")){checking("rickGri",true);}
     if(!$("#michGri").is(":checked")){checking("michGri",true);}
     if(!$("#veeBoo").is(":checked")){checking("veeBoo",true);}
+    if(!$("#dustHen").is(":checked")){checking("dustHen",true);}
+    if(!$("#elev").is(":checked")){checking("elev",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -2473,6 +2499,8 @@ function deselectAllSurv(){
     if($("#rickGri").is(":checked")){checking("rickGri",false);}
     if($("#michGri").is(":checked")){checking("michGri",false);}
     if($("#veeBoo").is(":checked")){checking("veeBoo",false);}
+    if($("#dustHen").is(":checked")){checking("dustHen",false);}
+    if($("#elev").is(":checked")){checking("elev",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2675,6 +2703,14 @@ function selectAllPerk(){
     if(!$("#ghoNot").is(":checked")){checking("ghoNot",true);}  
     if(!$("#oneTwoThrFou").is(":checked")){checking("oneTwoThrFou",true);}  
     if(!$("#roaLif").is(":checked")){checking("roaLif",true);}
+    //Dustin Henderson Perks
+    if(!$("#badBadBoo").is(":checked")){checking("badBadBoo",true);}  
+    if(!$("#chaPla").is(":checked")){checking("chaPla",true);}  
+    if(!$("#teaFulCir").is(":checked")){checking("teaFulCir",true);}
+    //Eleven Perks
+    if(!$("#extPer").is(":checked")){checking("extPer",true);}  
+    if(!$("#teaSofSpo").is(":checked")){checking("teaSofSpo",true);}  
+    if(!$("#weSeeYou").is(":checked")){checking("weSeeYou",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2876,6 +2912,14 @@ function deselectAllPerk(){
     if($("#ghoNot").is(":checked")){checking("ghoNot",false);}  
     if($("#oneTwoThrFou").is(":checked")){checking("oneTwoThrFou",false);}  
     if($("#roaLif").is(":checked")){checking("roaLif",false);}
+    //Dustin Henderson Perks
+    if($("#badBadBoo").is(":checked")){checking("badBadBoo",false);}  
+    if($("#chaPla").is(":checked")){checking("chaPla",false);}  
+    if($("#teaFulCir").is(":checked")){checking("teaFulCir",false);}
+    //Eleven Perks
+    if($("#extPer").is(":checked")){checking("extPer",false);}  
+    if($("#teaSofSpo").is(":checked")){checking("teaSofSpo",false);}  
+    if($("#weSeeYou").is(":checked")){checking("weSeeYou",false);}
 }
 //Items
 function selectAllItem(){
@@ -3660,9 +3704,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Your ferocious tenacity in dire situations allows you to benefit from the following effects while in the <b>Dying State</b>:
                 <ul><li>Grants the ability to recover and crawl at the same time</li>
                 <li>Increases the Crawling Movement speed by 
-                <b style="color: #e8c252;">15</b>/
-                <b style="color: #199b1e;">20</b>/
-                <b style="color: #ac3ee3;">25</b> %</li>
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">40</b>/
+                <b style="color: #ac3ee3;">50</b> %</li>
                 <li>Reduces the <b>volume of Grunts of Pain</b> by <b>-75%</b></li>
                 <li><b>Blocks your Aura from being read</b></li></ul>`;
                 break;
@@ -5006,7 +5050,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Michonne Grimes/Conviction.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Conviction";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10.5pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Dying State</b>, after completing a <b>Healing action on any Survivor</b>, <i>Conviction</i> activates.<br><br>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are in the <b>Dying State</b>, after completing a <b>Healing action on another Survivor</b>, <i>Conviction</i> activates.<br><br>
                 While active, press the <b>Active Ability button</b> after reaching at least <b>25% Recovery progress</b> to trigger the following effects:
                 <ul><li>Instantly recover from the <b>Dying State</b>.</li>
                 <li>Inflicts the <b>Broken Status Effect</b> after recovery.</li>
@@ -5079,6 +5123,75 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Increases <b>your Healing speed</b> by <b>100%</b> until <b>you stop healing</b></li></ul>
                 <i>Road Life</i> deactivates after use and does not activate while suffering from the <b>Broken Status Effect</b>.<br>
                 <i>Road Life</i> does not interact with <b>special Skill Checks</b> triggered by outside effects.`;
+                break;
+        //Dustin Henderson Perks
+            case "badBadBoo":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dustin Henderson/Bada Bada Boom.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Bada Bada Boom";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After completing <b>20% worth of Generator repairs</b>, <i>Bada Bada Boom</i> activates:<br><br>
+                While active, press <b>Active Ability button</b> next to a <b>window</b> to install a <b>Trap</b>, which stays active for up to 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">60</b> seconds<br>
+                The Trap triggers when the <b>Killer performs a vault through the window</b>, causing the <b>Killer</b> to suffer from a <b>-50% Hindered</b> Status Effect for <b>6 seconds</b>.<br>
+                <i>Bada Bada Boom</i> deactivates after triggering successfully or once the timer runs out.<br>
+                The <b>Auras of Trapped Windows</b> are revealed to <b>all Survivors in yellow</b>`;
+                break;
+            case "chaPla":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dustin Henderson/Change of Plan.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Change of Plan";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `You start the Trial with 2 Tokens.<br><br>
+                While <b>hiding inside a Locker and holding a non-event Toolbox</b>, press <b>Active Ability button</b> to spend <b>1 Token</b> and transform your <b>Toolbox into a Med-Kit of the same rarity with a random add-on of the same rarity</b>.<br>
+                The <b>new Med-kit</b> has 
+                <b style="color: #e8c252;">80</b>/
+                <b style="color: #199b1e;">90</b>/
+                <b style="color: #ac3ee3;">100</b> % of its charges`;
+                break;
+            case "teaFulCir":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Dustin Henderson/Teamwork_Full Circuit.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Full Circuit";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For <b>each Survivor repairing a Generator with you</b>, the size of the <b>Good Skill Check zone</b> is increased by 
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> %.<br>
+                While <b>repairing with at least 1 other Survivor</b>, you repair <b>5%</b> faster.`;
+                break;
+        //Eleven Perks
+            case "extPer":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Eleven/Extrasensory Perception.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Extrasensory Perception";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Crouch for 4 seconds</b> to activate this perk. While active:<br>
+                You see the <b>Auras of Survivors, the Killer, and a variety of objects</b>. These are revealed in an <b>expanding 44 meter radius</b>.<br>
+                <dl><dd>- Revealed objects include <b>Chests, Exit Gates, Generators, Hatch, Items, Pallets, Totems, and Windows</b>.</dd></dl>
+                You gain <b>Elusive and Oblivious</b> Status Effects. When you <b>stop crouching, or after 11 seconds</b>, all effects of this perk end and it enters a 
+                <b style="color: #e8c252;">60</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">40</b> seconds cooldown.`;
+                break;
+            case "teaSofSpo":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Eleven/Teamwork_Soft-Spoken.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Teamwork: Soft-Spoken";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For <b>each other Survivor repairing a Generator with you</b>, the <b>range of the Generator's repair noise</b> is heard is reduced by 
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> %.<br>
+                While <b>repairing with at least 1 other Survivor</b>, you repair <b>5%</b> faster`;
+                break;
+            case "weSeeYou":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Eleven/We See You.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "We See You";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Gain <b>1 Token</b> when the <b>Killer reveals your Aura</b>.<br>
+                When you have <b>4 Tokens, they are all consumed, and the Killer's Aura</b> is revealed to <b>you and all other Survivors</b> for 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">12.5</b>/
+                <b style="color: #ac3ee3;">15</b> seconds.<br>
+                This perk has a <b>10 second cooldown for gaining Tokens</b>.`;
                 break;
     //End
             default: 
@@ -5291,6 +5404,14 @@ function fixedChar(char){
         case "veeBoo":
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Vee Boonyasak/T_UI_S49_storeBackground.png";
             document.getElementById("charName").innerHTML = "Vee Boonyasak";
+            break;
+        case "dustHen":
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Dustin Henderson/T_UI_S50_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Dustin Henderson";
+            break;
+        case "elev":
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Eleven/T_UI_S51_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Eleven";
             break;
         default:
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";
@@ -5654,7 +5775,7 @@ function fixedAddons(addon1,addon2){
         //Ultra Rare
         case "antiSyringe":
             document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Anti-Haemorrhagic Syringe.png";
-            document.getElementById("addonName1").innerHTML="Anti-Haemorrhagic Syringe";
+            document.getElementById("addonName1").innerHTML="Anti-Exhaustion Syringe";
             break;
         case "gelDressings": 
             document.getElementById("addonImg1").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gel Dressings.png";
@@ -5935,7 +6056,7 @@ function fixedAddons(addon1,addon2){
         //Ultra Rare
         case "antiSyringe":
             document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Anti-Haemorrhagic Syringe.png";
-            document.getElementById("addonName2").innerHTML="Anti-Haemorrhagic Syringe";
+            document.getElementById("addonName2").innerHTML="Anti-Exhaustion Syringe";
             break;
         case "gelDressings": 
             document.getElementById("addonImg2").src="DBD Website/Survivor/Items/Med-Kits/Addons/Gel Dressings.png";
