@@ -60,6 +60,7 @@ let michGriRem = localStorage.getItem("michGri");
 let veeBooRem = localStorage.getItem("veeBoo");
 let dustHenRem = localStorage.getItem("dustHen");
 let elevRem = localStorage.getItem("elev");
+let kwonTaeRem = localStorage.getItem("kwonTae");
 //Perks
 let univPerksRem = localStorage.getItem("univPerks");
 let anyChoRem = localStorage.getItem("anyCho");
@@ -268,6 +269,10 @@ let teaFulCirRem = localStorage.getItem("teaFulCir");
 let extPerRem = localStorage.getItem("extPer");
 let teaSofSpoRem = localStorage.getItem("teaSofSpo");
 let weSeeYouRem = localStorage.getItem("weSeeYou");
+//Kwon Tae-young Perks
+let aPlaForUsRem = localStorage.getItem("aPlaForUs");
+let fivMovAheRem = localStorage.getItem("fivMovAhe");
+let floStaRem = localStorage.getItem("floSta");
 
 //Fog Vials
 let fogVialRem = localStorage.getItem("fogVial");
@@ -419,6 +424,7 @@ function loadPref(){
     if(veeBooRem=="true"){checking("veeBoo",true);}
     if(dustHenRem=="true"){checking("dustHen",true);}
     if(elevRem=="true"){checking("elev",true);}
+    if(kwonTaeRem=="true"){checking("kwonTae",true);}
 
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -628,6 +634,10 @@ function loadPref(){
     if(extPerRem=="true"){checking("extPer",true);}  
     if(teaSofSpoRem=="true"){checking("teaSofSpo",true);}  
     if(weSeeYouRem=="true"){checking("weSeeYou",true);}
+//Kwon Tae-young Perks
+    if(aPlaForUsRem=="true"){checking("aPlaForUs",true);}
+    if(fivMovAheRem=="true"){checking("fivMovAhe",true);}
+    if(floStaRem=="true"){checking("floSta",true);}
 
 //Fog Vials
     if(fogVialRem=="true"){checking("fogVial",true);}
@@ -2448,6 +2458,7 @@ function selectAllSurv(){
     if(!$("#veeBoo").is(":checked")){checking("veeBoo",true);}
     if(!$("#dustHen").is(":checked")){checking("dustHen",true);}
     if(!$("#elev").is(":checked")){checking("elev",true);}
+    if(!$("#kwonTae").is(":checked")){checking("kwonTae",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -2501,6 +2512,7 @@ function deselectAllSurv(){
     if($("#veeBoo").is(":checked")){checking("veeBoo",false);}
     if($("#dustHen").is(":checked")){checking("dustHen",false);}
     if($("#elev").is(":checked")){checking("elev",false);}
+    if($("#kwonTae").is(":checked")){checking("kwonTae",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2711,6 +2723,10 @@ function selectAllPerk(){
     if(!$("#extPer").is(":checked")){checking("extPer",true);}  
     if(!$("#teaSofSpo").is(":checked")){checking("teaSofSpo",true);}  
     if(!$("#weSeeYou").is(":checked")){checking("weSeeYou",true);}
+    //Kwon Tae-young Perks
+    if(!$("#aPlaForUs").is(":checked")){checking("aPlaForUs",true);}
+    if(!$("#fivMovAhe").is(":checked")){checking("fivMovAhe",true);}
+    if(!$("#floSta").is(":checked")){checking("floSta",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2920,6 +2936,10 @@ function deselectAllPerk(){
     if($("#extPer").is(":checked")){checking("extPer",false);}  
     if($("#teaSofSpo").is(":checked")){checking("teaSofSpo",false);}  
     if($("#weSeeYou").is(":checked")){checking("weSeeYou",false);}
+    //Kwon Tae-young Perks
+    if($("#aPlaForUs").is(":checked")){checking("aPlaForUs",false);}
+    if($("#fivMovAhe").is(":checked")){checking("fivMovAhe",false);}
+    if($("#floSta").is(":checked")){checking("floSta",false);}
 }
 //Items
 function selectAllItem(){
@@ -3547,9 +3567,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "unb":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Bill Overbeck/Unbreakable.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unbreakable";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once per Trial, you can <b>completely recover from the Dying State</b>
-                <ul><li>Your Recovery speed is increased by 
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once per Trial, while <b>downed by the Killer</b>, you can <b>completely recover from the Dying State</b>
+                <ul><li>While downed, your Recovery speed is increased by 
                 <b style="color: #e8c252;">25</b>/
                 <b style="color: #199b1e;">30</b>/
                 <b style="color: #ac3ee3;">35</b> %</li></ul>`;
@@ -4172,25 +4192,22 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Fast Track.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fast Track";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>other than yourself is hooked</b>, <i>Fast Track</i> is granted 
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>other than yourself is hooked</b>, <i>Fast Track</i> earns 
                 <b style="color: #e8c252;">1</b>/
                 <b style="color: #199b1e;">2</b>/
-                <b style="color: #ac3ee3;">3</b> Token(s), up to a maximum of 
-                <b style="color: #e8c252;">9</b>/
-                <b style="color: #199b1e;">18</b>/
-                <b style="color: #ac3ee3;">27</b> Tokens
-                <ul><li>Succeeding a <b>Great Repair Skill Check</b> consumes <b>all accumulated Tokens</b></li>
-                <li>Increases the bonus Progression awarded for succeeding <b>that Skill Check</b> by a stackable <b>+1 % per Token</b></li></ul>`;
+                <b style="color: #ac3ee3;">3</b> Token(s), up to a maximum of <b>9</b> Tokens
+                <ul><li>While repairing, whenever you hit a <b>Great Repair Skill Check</b>, consume <b>all accumulated Tokens</b></li>
+                <li>For each <b>Token</b> spent, that <b>Generator</b> gains <b>2 permanent Charges</b></li></ul>`;
                 break;
             case "selPre":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Self-Preservation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Self-Preservation";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15.5pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor is hit with a <b>Basic Attack or Special Attack</b> within <b>16 metres</b> of you, <i>Self-Preservation</i> activates:
-                <ul><li><b>Scratch Marks, Grunts of Pain when injured, and Bleeding</b> are suppressed for the next 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">8</b>/
-                <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor is hooked, <i>Self-Preservation</i> activates:
+                <ul><li>Grants the <b>Elusive</b> Status Effect for 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> seconds</li></ul>`;
                 break;
             case "smaHit":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Smash Hit.png";
@@ -5193,7 +5210,51 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b> seconds.<br>
                 This perk has a <b>10 second cooldown for gaining Tokens</b>.`;
                 break;
-    //End
+        
+        //Kwon Tae-young Perks
+            case "aPlaForUs":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/A Place for Us.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "A Place for Us";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>healing another Survivor</b>, both you and the healed Survivor gain the <b>Elusive</b> Status Effect<br><br>
+                When you finish healing the <b>Obsession</b>, they gain the <b>Elusive</b> Status Effect for 
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25.5</b>/
+                <b style="color: #ac3ee3;">30</b> seconds.<br><br>
+                <b>Reduces</b> your chance of becoming the <b>initial Obsession</b> by reducing the default value by <b>-100%</b>.`;
+                break;
+            case "fivMovAhe":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/Five Moves Ahead.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Five Moves Ahead";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Five Moves Ahead</i> activates while you are <b>being chased by the Killer</b> or are <b>inside the Killer's Terror Radius</b>:
+                <ul><li>Perform the <b>Pallet Drop</b> interaction <b>50%</b> faster.</li>
+                <li>See the <b>Auras</b> of the <b>5</b> closest <b>Pallets</b> and <b>Windows</b></li></ul>
+                <i>Five Moves Ahead</i> goes on a 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds cooldown when you <b>drop a Pallet</b>.`;
+                break;
+            case "floSta":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/Flow State.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Flow State";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>Generator is completed</b>, you gain a Token, up to a maximum of <b>5 Tokens</b>.<br><br>
+                For <b>each Token</b>:
+                <ul><li><b>Bless and cleanse Totems</b> 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b>% faster.</li>
+                <li><b>Heal</b> 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b>% faster.</li>
+                <li><b>Unhook Survivors</b> 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b>% faster.</li></ul>`;
+                break;
+        //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No Choice Survivor Perk.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empty Slot";
@@ -5412,6 +5473,10 @@ function fixedChar(char){
         case "elev":
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Eleven/T_UI_S51_storeBackground.png";
             document.getElementById("charName").innerHTML = "Eleven";
+            break;
+        case "kwonTae":
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Kwon Tae-young/Kwon Tae-young.png";
+            document.getElementById("charName").innerHTML = "Kwon Tae-young";
             break;
         default:
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";

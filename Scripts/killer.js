@@ -4473,7 +4473,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">40</b>/
                 <b style="color: #ac3ee3;">45</b> seconds<br>
                 Perform the Damage Generator action while <i>Pop Goes the Weasel</i> is active to benefit from the following effect:
-                <ul><li>Instantly regresses the damaged Generator by <b>-20%</b> of its current Progression</li></ul>
+                <ul><li>Instantly regresses the damaged Generator by <b>-15%</b> of its total Progression</li></ul>
                 <i>Pop Goes the Weasel</i> deactivates after the Generator is damaged or once the timer runs out`;
                 break;
         //Spirit Perks
@@ -4826,13 +4826,15 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "hexCroCon":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trickster/Hex_Crowd Control.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Crowd Control";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever any Survivor performs a Rushed action to vault a Window, <i>Hex: Crowd Control</i> triggers its effect:
-                <ul><li>Permanently blocks the last 
-                <b style="color: #e8c252;">3</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">5</b> Windows to all Survivors</li></ul>
-                Any successive trigger unblocks the <b>oldest Blocked Window</b>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever any Survivor performs a Rushed action to vault a <b>Window</b>, <i>Hex: Crowd Control</i> activates on a <b>random Totem</b> andtriggers its effect:
+                <ul><li>Blocks that <b>Window</b> for all Survivors</li>
+                <li>Increases <b>basic-vault</b> speed of <b>blocked Windows</b> by <b>15%</b></li>
+                <li>Reveals <b>Auras</b> of <b>blocked Windows</b> to you within <b>24</b> metres</li></ul>
+                <i>Hex: Crowd Control</i> has a limit of 
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">5</b>/
+                <b style="color: #ac3ee3;">6</b> Windows it can affect at a time</i>`;
                 break;
             case "noWayOut":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trickster/No Way Out.png";
