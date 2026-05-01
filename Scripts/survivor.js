@@ -4192,12 +4192,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Fast Track.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Fast Track";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor <b>other than yourself is hooked</b>, <i>Fast Track</i> earns 
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever <b>you unhook another Survivor</b>, <i>Fast Track</i> earns <b>1</b> Token, up to a maximum of 
                 <b style="color: #e8c252;">1</b>/
                 <b style="color: #199b1e;">2</b>/
-                <b style="color: #ac3ee3;">3</b> Token(s), up to a maximum of <b>9</b> Tokens
+                <b style="color: #ac3ee3;">3</b> Token(s).
                 <ul><li>While repairing, whenever you hit a <b>Great Repair Skill Check</b>, consume <b>all accumulated Tokens</b></li>
-                <li>For each <b>Token</b> spent, that <b>Generator</b> gains <b>2 permanent Charges</b></li></ul>`;
+                <li>For each <b>Token</b> spent, that <b>Generator</b> gains <b>5% permanent progress</b></li></ul>`;
                 break;
             case "selPre":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Self-Preservation.png";
