@@ -53,6 +53,7 @@ let ghoulRem = localStorage.getItem("ghoul");
 let animatronicRem = localStorage.getItem("animatronic");
 let krasueRem = localStorage.getItem("krasue");
 let firstRem = localStorage.getItem("first");
+let slasherRem = localStorage.getItem("slasher");
 //Base Perks
 let univPerksRem = localStorage.getItem("univPerksKill");
 let anyChoRem = localStorage.getItem("anyChoKill");
@@ -218,13 +219,17 @@ let hayRem = localStorage.getItem("hayKill");
 let helWanRem = localStorage.getItem("helWanKill");
 let phaFeaRem = localStorage.getItem("phaFeaKill");
 //Krasue Perks
-let hexOveDooRem = localStorage.getItem("hexOveDoo");
-let ravRem = localStorage.getItem("rav");
-let wanEyeRem = localStorage.getItem("wanEye");
+let hexOveDooRem = localStorage.getItem("hexOveDooKill");
+let ravRem = localStorage.getItem("ravKill");
+let wanEyeRem = localStorage.getItem("wanEyeKill");
 //First Perks
-let hexHivMinRem = localStorage.getItem("hexHivMin");
-let secProRem = localStorage.getItem("secPro");
-let turBacCloRem = localStorage.getItem("turBacClo");
+let hexHivMinRem = localStorage.getItem("hexHivMinKill");
+let secProRem = localStorage.getItem("secProKill");
+let turBacCloRem = localStorage.getItem("turBacCloKill");
+//Slasher Perks
+let hexScaToDeaRem = localStorage.getItem("hexScaToDeaKill");
+let ramRem = localStorage.getItem("ramKill");
+let silShaRem = localStorage.getItem("silShaKill");
 
 //Addons
 let commonsRem = localStorage.getItem("commonsKill");
@@ -321,6 +326,7 @@ function loadPref(){
     if(animatronicRem=="true"){checking("animatronic",true);}
     if(krasueRem=="true"){checking("krasue",true);}
     if(firstRem=="true"){checking("first",true);}
+    if(slasherRem=="true"){checking("slasher",true);}
     
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -494,6 +500,10 @@ function loadPref(){
     if(hexHivMinRem=="true"){checking("hexHivMin",true);}  
     if(secProRem=="true"){checking("secPro",true);}  
     if(turBacCloRem=="true"){checking("turBacClo",true);} 
+//Slasher Perks
+    if(hexScaToDeaRem=="true"){checking("hexScaToDea",true);}  
+    if(ramRem=="true"){checking("ram",true);}  
+    if(silShaRem=="true"){checking("silSha",true);}
     
 //Addons
     if(commonsRem=="true"){checking("commons",true);}
@@ -2358,6 +2368,43 @@ function randomAddons(char){
                 addonPool.push("iridSoteriaChip");
             }
             break;
+        case "slasher":
+        //Commons
+            if($("#commons").is(":checked")){
+                addonPool.push("bentWheel");
+                addonPool.push("gardenClaw");
+                addonPool.push("knittingNeedle");
+                addonPool.push("orderlysShoe");
+            }
+        //Uncommons
+            if($("#uncommons").is(":checked")){
+                addonPool.push("bloodySmile");
+                addonPool.push("coronersCoffee");
+                addonPool.push("partyNoisemaker");
+                addonPool.push("sleepingBag");
+                addonPool.push("toxicWaste");
+            }
+        //Rares
+            if($("#rares").is(":checked")){
+                addonPool.push("eyeGoop");
+                addonPool.push("imprintedAluminum");
+                addonPool.push("mirrorShardsSlasher");
+                addonPool.push("saunaRock");
+                addonPool.push("twoNails");
+            }
+        //Very Rares
+            if($("#veryRares").is(":checked")){
+                addonPool.push("bloodyMagazine");
+                addonPool.push("burntFuse");
+                addonPool.push("deputysBadge");
+                addonPool.push("missingCorkscrew");
+            }
+        //Ultra Rares
+            if($("#ultraRares").is(":checked")){
+                addonPool.push("dirtyMoney");
+                addonPool.push("iridBoatMotor");
+            }
+            break;
         default:
 
     }
@@ -3128,6 +3175,7 @@ function selectAllKill(){
     if(!$("#animatronic").is(":checked")){checking("animatronic",true);}
     if(!$("#krasue").is(":checked")){checking("krasue",true);}
     if(!$("#first").is(":checked")){checking("first",true);}
+    if(!$("#slasher").is(":checked")){checking("slasher",true);}
 }
 function deselectAllKill(){
     if($("#trapper").is(":checked")){checking("trapper",false);}
@@ -3172,6 +3220,7 @@ function deselectAllKill(){
     if($("#animatronic").is(":checked")){checking("animatronic",false);}
     if($("#krasue").is(":checked")){checking("krasue",false);}
     if($("#first").is(":checked")){checking("first",false);}
+    if($("#slasher").is(":checked")){checking("slasher",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -3346,6 +3395,10 @@ function selectAllPerk(){
     if(!$("#hexHivMin").is(":checked")){checking("hexHivMin",true);}  
     if(!$("#secPro").is(":checked")){checking("secPro",true);}  
     if(!$("#turBacClo").is(":checked")){checking("turBacClo",true);} 
+    //Slasher Perks
+    if(!$("#hexScaToDea").is(":checked")){checking("hexScaToDea",true);}  
+    if(!$("#ram").is(":checked")){checking("ram",true);}  
+    if(!$("#silSha").is(":checked")){checking("silSha",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -3519,6 +3572,10 @@ function deselectAllPerk(){
     if($("#hexHivMin").is(":checked")){checking("hexHivMin",false);}  
     if($("#secPro").is(":checked")){checking("secPro",false);}  
     if($("#turBacClo").is(":checked")){checking("turBacClo",false);} 
+    //Slasher Perks
+    if($("#hexScaToDea").is(":checked")){checking("hexScaToDea",false);}  
+    if($("#ram").is(":checked")){checking("ram",false);}  
+    if($("#silSha").is(":checked")){checking("silSha",false);}
 }
 //Add-ons
 function selectAllAddon(){
@@ -3844,6 +3901,12 @@ function fixedChar(char){
             document.getElementById("charName").innerHTML = "The First";
             document.getElementById("powerImg").src = "DBD Website/Killer/Powers/First/Test Subject 001.png";
             document.getElementById("powerName").innerHTML = "Test Subject #001";
+            break;
+        case "slasher":
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Slasher/T_UI_K43_storeBackground.png";
+            document.getElementById("charName").innerHTML = "The Slasher";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Slasher/Omnipresent Evil.png";
+            document.getElementById("powerName").innerHTML = "Omnipresent Evil";
             break;
         default:
             document.getElementById("charImg").src = "DBD Website/Killer/Characters/Universal/RandomKiller Placeholder.png";
@@ -5554,6 +5617,38 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">40</b>/
                 <b style="color: #199b1e;">50</b>/
                 <b style="color: #ac3ee3;">60</b> seconds, press the <b>Active Ability button</b> to make a target <b>Generator within 20 meters</b> explode, lose <b>-10% progress</b>, and start <b>regressing</b>`;
+                break; 
+        //Slasher Perks
+            case "hexScaToDea":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Slasher/Hex_Scared to Death.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Scared to Death";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you <b>Hook 3 different Survivors</b>, <i>Hex: Scared to Death</i> activates on a random Totem and triggers its effect:
+                <ul><li><b>Basic-breaking a Pallet during a chase</b> causes all Survivors within <b>13 meters</b> to scream and gain 
+                <b style="color: #e8c252;">11</b>/
+                <b style="color: #199b1e;">12</b>/
+                <b style="color: #ac3ee3;">13</b> % <b>Hindered</b> Status Effect for <b>3 seconds</b></li></ul>
+                <i>Hex: Scared to Death</i> persist until the <b>Hex Totem</b> is either <b>blessed or cleansed</b> by a Survivor, <b>disabling it for the remainder of the Trial</b>`;
+                break;
+            case "ram":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Slasher/Rampage.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Rampage";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>basic-break a Pallet or a Breakable Wall</b>, gain <b>1 Token</b>, up to <b>13 Tokens</b> 
+                <ul><li>Whenever you are <b>blinded or Pallet-stunned</b>, you are granted <b>1% Haste</b> Status Effect for each <b>Token</b> this perk has for <b>13 seconds</b></li></ul>
+                This perk has a cooldown of <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">20</b> seconds <b>after being blinded or Pallet-stunned</b>`;
+                break;  
+            case "silSha":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Slasher/Silent Shadow.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Silent Shadow";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When you <b>hook a Survivor</b>, you are granted <b>Undetectable</b> Status Effect for 
+                <b style="color: #e8c252;">11</b>/
+                <b style="color: #199b1e;">12</b>/
+                <b style="color: #ac3ee3;">13</b> seconds<br><br>
+                When the <b>Exit Gates are powered</b>, you are granted <b>Undetectable</b> for the <b>rest of the Trial</b>`;
                 break; 
     //End
             default: 
@@ -9193,6 +9288,92 @@ function fixedAddon(addon1,addon2){
             case "iridSoteriaChip": 
                 document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/First/Addons/Iridescent Soteria Chip.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Soteria Chip";
+                break;
+        //Slasher Addons
+            //Commons
+            case "bentWheel": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Bent Wheel.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Bent Wheel";
+                break;
+            case "gardenClaw": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Garden Claw.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Garden Claw";
+                break;
+            case "knittingNeedle": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Knitting Needle.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Knitting Needle";
+                break;
+            case "orderlysShoe": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Orderlys Shoe.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Orderly's Shoe";
+                break;
+            //Uncommons
+            case "bloodySmile": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Bloody Smile.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Smile";
+                break;
+            case "coronersCoffee": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Coroners Coffee.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Coroner's Coffee";
+                break;
+            case "partyNoisemaker": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Party Noisemaker.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Party Noisemaker";
+                break;
+            case "sleepingBag": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Sleeping Bag.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Sleeping Bag";
+                break;
+            case "toxicWaste": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Toxic Waste.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Toxic Waste";
+                break;
+            //Rares
+            case "eyeGoop": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Eye Goop.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Eye Goop";
+                break;
+            case "imprintedAluminum": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Imprinted Aluminum.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Imprinted Aluminum";
+                break;
+            case "mirrorShardsSlasher": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Mirror Shards.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Mirror Shards";
+                break;
+            case "saunaRock": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Sauna Rock.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Sauna Rock";
+                break;
+            case "twoNails": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Two Nails.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Two Nails";
+                break;
+            //Very Rares
+            case "bloodyMagazine": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Bloody Magazine.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Bloody Magazine";
+                break;
+            case "burntFuse": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Burnt Fuse.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Burnt Fuse";
+                break;
+            case "deputysBadge": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Deputys Badge.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Deputy's Badge";
+                break;
+            case "missingCorkscrew": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Missing Corkscrew.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Missing Corkscrew";
+                break;
+            //Ultra Rares
+            case "dirtyMoney": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Dirty Money.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Dirty Money";
+                break;
+            case "iridBoatMotor": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Iridescent Boat Motor.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Boat Motor";
                 break;
             default: 
                 document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Universal/Killer No Choice Addon.png";

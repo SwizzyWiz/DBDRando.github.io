@@ -61,6 +61,7 @@ let veeBooRem = localStorage.getItem("veeBoo");
 let dustHenRem = localStorage.getItem("dustHen");
 let elevRem = localStorage.getItem("elev");
 let kwonTaeRem = localStorage.getItem("kwonTae");
+let shanWiiRem = localStorage.getItem("shanWii");
 //Perks
 let univPerksRem = localStorage.getItem("univPerks");
 let anyChoRem = localStorage.getItem("anyCho");
@@ -273,6 +274,10 @@ let weSeeYouRem = localStorage.getItem("weSeeYou");
 let aPlaForUsRem = localStorage.getItem("aPlaForUs");
 let fivMovAheRem = localStorage.getItem("fivMovAhe");
 let floStaRem = localStorage.getItem("floSta");
+//Shane Wiigwaas Perks
+let croExaRem = localStorage.getItem("croExa");
+let lenAHanRem = localStorage.getItem("lenAHan");
+let widOpeThrRem = localStorage.getItem("widOpeThr");
 
 //Fog Vials
 let fogVialRem = localStorage.getItem("fogVial");
@@ -425,6 +430,7 @@ function loadPref(){
     if(dustHenRem=="true"){checking("dustHen",true);}
     if(elevRem=="true"){checking("elev",true);}
     if(kwonTaeRem=="true"){checking("kwonTae",true);}
+    if(shanWiiRem=="true"){checking("shanWii",true);}
 
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -638,6 +644,10 @@ function loadPref(){
     if(aPlaForUsRem=="true"){checking("aPlaForUs",true);}
     if(fivMovAheRem=="true"){checking("fivMovAhe",true);}
     if(floStaRem=="true"){checking("floSta",true);}
+//Shane Wiigwaas Perks
+    if(croExaRem=="true"){checking("croExa",true);}
+    if(lenAHanRem=="true"){checking("lenAHan",true);}
+    if(widOpeThrRem=="true"){checking("widOpeThr",true);}
 
 //Fog Vials
     if(fogVialRem=="true"){checking("fogVial",true);}
@@ -2459,6 +2469,7 @@ function selectAllSurv(){
     if(!$("#dustHen").is(":checked")){checking("dustHen",true);}
     if(!$("#elev").is(":checked")){checking("elev",true);}
     if(!$("#kwonTae").is(":checked")){checking("kwonTae",true);}
+    if(!$("#shanWii").is(":checked")){checking("shanWii",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -2513,6 +2524,7 @@ function deselectAllSurv(){
     if($("#dustHen").is(":checked")){checking("dustHen",false);}
     if($("#elev").is(":checked")){checking("elev",false);}
     if($("#kwonTae").is(":checked")){checking("kwonTae",false);}
+    if($("#shanWii").is(":checked")){checking("shanWii",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2727,6 +2739,10 @@ function selectAllPerk(){
     if(!$("#aPlaForUs").is(":checked")){checking("aPlaForUs",true);}
     if(!$("#fivMovAhe").is(":checked")){checking("fivMovAhe",true);}
     if(!$("#floSta").is(":checked")){checking("floSta",true);}
+    //Shane Wiigwaas Perks
+    if(!$("#croExa").is(":checked")){checking("croExa",true);}
+    if(!$("#lenAHan").is(":checked")){checking("lenAHan",true);}
+    if(!$("#widOpeThr").is(":checked")){checking("widOpeThr",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2940,6 +2956,10 @@ function deselectAllPerk(){
     if($("#aPlaForUs").is(":checked")){checking("aPlaForUs",false);}
     if($("#fivMovAhe").is(":checked")){checking("fivMovAhe",false);}
     if($("#floSta").is(":checked")){checking("floSta",false);}
+    //Shane Wiigwaas Perks
+    if($("#croExa").is(":checked")){checking("croExa",false);}
+    if($("#lenAHan").is(":checked")){checking("lenAHan",false);}
+    if($("#widOpeThr").is(":checked")){checking("widOpeThr",false);}
 }
 //Items
 function selectAllItem(){
@@ -5254,6 +5274,37 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">9</b>/
                 <b style="color: #ac3ee3;">10</b>% faster.</li></ul>`;
                 break;
+        //Shane Wiigwaas Perks
+            case "croExa":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Shane Wiigwaas/Cross-Examination.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Cross-Examination";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>inside the Killer's Terror Radius</b>, the Killer leaves behind <b>Light Marks</b> that you can see. <b>Light Marks</b> have a duration of <b>10 seconds</b> 
+                <ul><li>While <b>standing on a Light Mark</b>, gain <b>Elusive</b> Status Effect. This lingers for <b style="color: #e8c252;">3</b>/
+                <b style="color: #199b1e;">4</b>/
+                <b style="color: #ac3ee3;">5</b> seconds.</li></ul>`;
+                break;
+            case "lenAHan":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Shane Wiigwaas/Lend a Hand.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lend a Hand";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Cleansing or Blessing a Totem</b> activates this perk:
+                <ul><li><b>Once per Survivor, while healing a Survivor</b>, press the <b>Activate Ability button</b> to give the <b>healed Survivor</b> <b style="color: #e8c252;">2</b>/
+                <b style="color: #199b1e;">3</b>/
+                <b style="color: #ac3ee3;">4</b> <b>permanent healing charges</b>.</li></ul>`;
+                break;
+            case "widOpeThr":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Shane Wiigwaas/Wide Open Throttle.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Wide Open Throttle";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Fast-vaulting a Pallet</b> triggers the following effects:
+                <ul><li>Gain 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">12.5</b>/
+                <b style="color: #ac3ee3;">15</b>%  <b>Haste</b> Status Effect for <b>3 seconds</b></li>
+                <li>The <b>Pallet is immediately reset and blocked by the Entity</b> for <b>60 seconds</b></li></ul>
+                This perk then goes on a <b>60 second</b> cooldown`;
+                break;
         //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No Choice Survivor Perk.png";
@@ -5477,6 +5528,10 @@ function fixedChar(char){
         case "kwonTae":
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Kwon Tae-young/Kwon Tae-young.png";
             document.getElementById("charName").innerHTML = "Kwon Tae-young";
+            break;
+        case "shanWii":
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Shane Wiigwaas/S53_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Shane Wiigwaas";
             break;
         default:
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";
