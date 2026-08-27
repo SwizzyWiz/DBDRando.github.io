@@ -54,6 +54,7 @@ let animatronicRem = localStorage.getItem("animatronic");
 let krasueRem = localStorage.getItem("krasue");
 let firstRem = localStorage.getItem("first");
 let slasherRem = localStorage.getItem("slasher");
+let judgmentRem = localStorage.getItem("judgment");
 //Base Perks
 let univPerksRem = localStorage.getItem("univPerksKill");
 let anyChoRem = localStorage.getItem("anyChoKill");
@@ -230,6 +231,10 @@ let turBacCloRem = localStorage.getItem("turBacCloKill");
 let hexScaToDeaRem = localStorage.getItem("hexScaToDeaKill");
 let ramRem = localStorage.getItem("ramKill");
 let silShaRem = localStorage.getItem("silShaKill");
+//Judgment Perks
+let celWitRem = localStorage.getItem("celWitKill");
+let hexUndYouThuRem = localStorage.getItem("hexUndYouThuKill");
+let layWasRem = localStorage.getItem("layWasKill");
 
 //Addons
 let commonsRem = localStorage.getItem("commonsKill");
@@ -327,6 +332,7 @@ function loadPref(){
     if(krasueRem=="true"){checking("krasue",true);}
     if(firstRem=="true"){checking("first",true);}
     if(slasherRem=="true"){checking("slasher",true);}
+    if(judgmentRem=="true"){checking("judgment",true);}
     
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -504,6 +510,10 @@ function loadPref(){
     if(hexScaToDeaRem=="true"){checking("hexScaToDea",true);}  
     if(ramRem=="true"){checking("ram",true);}  
     if(silShaRem=="true"){checking("silSha",true);}
+//Judgment Perks
+    if(celWitRem=="true"){checking("celWit",true);}  
+    if(hexUndYouThuRem=="true"){checking("hexUndYouThu",true);}  
+    if(layWasRem=="true"){checking("layWas",true);}
     
 //Addons
     if(commonsRem=="true"){checking("commons",true);}
@@ -2405,6 +2415,43 @@ function randomAddons(char){
                 addonPool.push("iridBoatMotor");
             }
             break;
+        case "judgment":
+        //Commons
+            if($("#commons").is(":checked")){
+                addonPool.push("hereticsMark");
+                addonPool.push("koenradsGauntlet");
+                addonPool.push("prayerKneeler");
+                addonPool.push("searchersSkull");
+            }
+        //Uncommons
+            if($("#uncommons").is(":checked")){
+                addonPool.push("aurorasTelereceptor");
+                addonPool.push("confessorsWarHorn");
+                addonPool.push("magnetisedManacles");
+                addonPool.push("markOfTheAdherent");
+                addonPool.push("undyingFlame");
+            }
+        //Rares
+            if($("#rares").is(":checked")){
+                addonPool.push("blindfoldOfTheDevoted");
+                addonPool.push("electricTorch");
+                addonPool.push("holyWingedIcon");
+                addonPool.push("orderOfInquisition");
+                addonPool.push("superheatedGlass");
+            }
+        //Very Rares
+            if($("#veryRares").is(":checked")){
+                addonPool.push("chainsOfTheHeretic");
+                addonPool.push("crownOfTheDestroyer");
+                addonPool.push("eyesOfGerhardt");
+                addonPool.push("improvisedDetonators");
+            }
+        //Ultra Rares
+            if($("#ultraRares").is(":checked")){
+                addonPool.push("mirrorOfTheCreators");
+                addonPool.push("obsidianFeather");
+            }
+            break;
         default:
 
     }
@@ -3176,6 +3223,7 @@ function selectAllKill(){
     if(!$("#krasue").is(":checked")){checking("krasue",true);}
     if(!$("#first").is(":checked")){checking("first",true);}
     if(!$("#slasher").is(":checked")){checking("slasher",true);}
+    if(!$("#judgment").is(":checked")){checking("judgment",true);}
 }
 function deselectAllKill(){
     if($("#trapper").is(":checked")){checking("trapper",false);}
@@ -3221,6 +3269,7 @@ function deselectAllKill(){
     if($("#krasue").is(":checked")){checking("krasue",false);}
     if($("#first").is(":checked")){checking("first",false);}
     if($("#slasher").is(":checked")){checking("slasher",false);}
+    if($("#judgment").is(":checked")){checking("judgment",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -3399,6 +3448,10 @@ function selectAllPerk(){
     if(!$("#hexScaToDea").is(":checked")){checking("hexScaToDea",true);}  
     if(!$("#ram").is(":checked")){checking("ram",true);}  
     if(!$("#silSha").is(":checked")){checking("silSha",true);}
+    //Judgment Perks
+    if(!$("#celWit").is(":checked")){checking("celWit",true);}  
+    if(!$("#hexUndYouThu").is(":checked")){checking("hexUndYouThu",true);}  
+    if(!$("#layWas").is(":checked")){checking("layWas",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -3576,6 +3629,10 @@ function deselectAllPerk(){
     if($("#hexScaToDea").is(":checked")){checking("hexScaToDea",false);}  
     if($("#ram").is(":checked")){checking("ram",false);}  
     if($("#silSha").is(":checked")){checking("silSha",false);}
+    //Judgment Perks
+    if($("#celWit").is(":checked")){checking("celWit",false);}  
+    if($("#hexUndYouThu").is(":checked")){checking("hexUndYouThu",false);}  
+    if($("#layWas").is(":checked")){checking("layWas",false);}
 }
 //Add-ons
 function selectAllAddon(){
@@ -3908,6 +3965,12 @@ function fixedChar(char){
             document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Slasher/Omnipresent Evil.png";
             document.getElementById("powerName").innerHTML = "Omnipresent Evil";
             break;
+        case "judgment":
+            document.getElementById("charImg").src = "DBD Website/Killer/Characters/Judgment/T_UI_K44_storeBackground.png";
+            document.getElementById("charName").innerHTML = "The Judgment";
+            document.getElementById("powerImg").src = "DBD Website/Killer/Powers/Judgment/Will of the Gods.png";
+            document.getElementById("powerName").innerHTML = "Will of the Gods";
+            break;
         default:
             document.getElementById("charImg").src = "DBD Website/Killer/Characters/Universal/RandomKiller Placeholder.png";
             document.getElementById("charName").innerHTML = "Any Killer (Defaulted)";
@@ -4001,11 +4064,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with <b>5 Tokens</b>, one per Totem:
                 <ul><li>Reduces the Action speeds for Blessing and Cleansing by a stack-able
                 <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">10</b>/
-                <b style="color: #ac3ee3;">12</b>% per Token, up to a maximum of 
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b>% per Token, up to a maximum of 
                 <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">60</b>%.</li></ul>
+                <b style="color: #199b1e;">45</b>/
+                <b style="color: #ac3ee3;">50</b>%.</li></ul>
                 <i>Hex: Thrill of the Hunt</i> loses <b>-1 Token</b> whenever a Totem is cleansed.`;
                 break;
             case "ins":
@@ -4269,10 +4332,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">6</b>/
                 <b style="color: #199b1e;">7</b>/
                 <b style="color: #ac3ee3;">8</b> Tokens:
-                <ul><li>Grants a stackable <b>-4%</b> Cooldown reduction on <b>successful Basic Attacks</b> per Token, up to a maximum of
-                <b style="color: #e8c252;">24</b>/
-                <b style="color: #199b1e;">28</b>/
-                <b style="color: #ac3ee3;">32</b> %</li></ul>
+                <ul><li>Grants a stackable <b>-5%</b> Cooldown reduction on <b>successful Basic Attacks</b> per Token, up to a maximum of
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> %</li></ul>
                 Whenever you hit your <b>Obsession</b> with a <b>Basic or Special Attack</b>, <i>Save the Best for Last</i> loses <b>-2 Tokens</b>
                 <ul><li>When the <b>Obsession</b> is sacrificed or killed, <i>Save the Best for Last</i> freezes its current Token count</li></ul>`;
                 break;
@@ -4522,9 +4585,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For all Survivors within your <b>Terror Radius</b>, the following effects apply:
                 <ul><li>Reduces their Healing speed by 
-                <b style="color: #e8c252;">30</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">50</b> %</li>
+                <b style="color: #e8c252;">20</b>/
+                <b style="color: #199b1e;">25</b>/
+                <b style="color: #ac3ee3;">30</b> %</li>
                 <li>Increases the Rotation speed of Healing Skill Checks by <b>+50%</b></li></ul>`;
                 break;
             case "popGoWea":
@@ -5057,7 +5120,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Onryo/Call of Brine.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Call of Brine";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action on a Generator, <i>Call of Brine</i> activates for <b>70 seconds</b>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action on a Generator, <i>Call of Brine</i> activates for <b>90 seconds</b>
                 <ul><li>The <b>damaged Generator</b> regresses at 
                 <b style="color: #e8c252;">130</b>/
                 <b style="color: #199b1e;">140</b>/
@@ -5182,7 +5245,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Nowhere to Hide";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Performing the Damage Generator action on a Generator triggers <i>Nowhere to Hide</i>:
-                <ul><li>The <b>Auras</b> of all Survivors within <b>24 metres</b> of your location are revealed to you for 
+                <ul><li>The <b>Auras</b> of all Survivors within <b>24 metres</b> of the <b>affected Generator</b> are revealed to you for 
                 <b style="color: #e8c252;">3</b>/
                 <b style="color: #199b1e;">4</b>/
                 <b style="color: #ac3ee3;">5</b> seconds</li></ul>`;
@@ -5650,6 +5713,38 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">13</b> seconds<br><br>
                 When the <b>Exit Gates are powered</b>, you are granted <b>Undetectable</b> for the <b>rest of the Trial</b>`;
                 break; 
+        //Judgment Perks
+            case "celWit":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Judgment/Celestial Witness.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Celestial Witness";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Every 30 seconds</b>, if the <b>Obsession is at least 40 meters</b> away from you, you see <b>their Aura</b> for 
+                <b style="color: #e8c252;">2</b>/
+                <b style="color: #199b1e;">2.5</b>/
+                <b style="color: #ac3ee3;">3</b> seconds.<br><br>
+                Otherwise, the <b>farthest Survivor becomes the Obsession</b>`;
+                break;
+            case "hexUndYouThu":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Judgment/Hex_Under Your Thumb.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Under Your Thumb";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>Hook a Survivor for the first time</b>, <i>Hex: Under Your Thumb</i> activates on a random Totem and triggers its effect:
+                <ul><li>Whenever a <b>running Survivor gains Haste within 32 meters of you</b>, you are <b>alerted</b>.</li>
+                <li><b>Running Survivors</b> cannot gain more than <b style="color: #e8c252;">25</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">15</b> % Haste at a time</li></ul>
+                <i>Hex: Under Your Thumb</i> persist until the <b>Hex Totem</b> is either <b>blessed or cleansed</b> by a Survivor, <b>disabling it for the remainder of the Trial</b>`;
+                break;  
+            case "layWas":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Judgment/Lay Waste.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Lay Waste";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "19pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>damage a Generator</b>, <b>for each Charge</b> it has, it regresses <b>2% faster</b>.<br>
+                <i>Lay Waste</i> has a cooldown of 
+                <b style="color: #e8c252;">55</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">45</b> seconds.`;
+                break;
     //End
             default: 
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Killer No Choice Perk.png";
@@ -9374,6 +9469,92 @@ function fixedAddon(addon1,addon2){
             case "iridBoatMotor": 
                 document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Slasher/Addons/Iridescent Boat Motor.png";
                 document.getElementById("addonName" + (i + 1)).innerHTML = "Iridescent Boat Motor";
+                break;
+        //Judgment Addons
+            //Commons
+            case "hereticsMark": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Heretics Mark.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Heretic's Mark";
+                break;
+            case "koenradsGauntlet": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Koenrads Gauntlet.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Koenrad's Gauntlet";
+                break;
+            case "prayerKneeler": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Prayer Kneeler.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Prayer Kneeler";
+                break;
+            case "searchersSkull": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Searchers Skull.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Searcher's Skull";
+                break;
+            //Uncommons
+            case "aurorasTelereceptor": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Auroras Telereceptor.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Aurora's Telereceptor";
+                break;
+            case "confessorsWarHorn": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Confessors War Horn.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Confessor's War Horn";
+                break;
+            case "magnetisedManacles": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Magnetised Manacles.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Magnetised Manacles";
+                break;
+            case "markOfTheAdherent": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Mark of the Adherent.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Mark of the Adherent";
+                break;
+            case "undyingFlame": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Undying Flame.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Undying Flame";
+                break;
+            //Rares
+            case "blindfoldOfTheDevoted": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Blindfold of the Devoted.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Blindfold of the Devoted";
+                break;
+            case "electricTorch": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Electric Torch.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Electric Torch";
+                break;
+            case "holyWingedIcon": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Holy Winged Icon.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Holy Winged Icon";
+                break;
+            case "orderOfInquisition": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Order of Inquisition.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Order of Inquistion";
+                break;
+            case "superheatedGlass": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Superheated Glass.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Superheated Glass";
+                break;
+            //Very Rares
+            case "chainsOfTheHeretic": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Chains of the Heretic.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Chains of the Heretic";
+                break;
+            case "crownOfTheDestroyer": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Crown of the Destroyer.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Crown of the Destroyer";
+                break;
+            case "eyesOfGerhardt": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Eyes of Gerhardt.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Eyes of Gerhardt";
+                break;
+            case "improvisedDetonators": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Improvised Detonators.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Improvised Detonators";
+                break;
+            //Ultra Rares
+            case "mirrorOfTheCreators": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Mirror of the Creators.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Mirror of the Creators";
+                break;
+            case "obsidianFeather": 
+                document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Judgment/Addons/Obsidian Feather.png";
+                document.getElementById("addonName" + (i + 1)).innerHTML = "Obsidian Feather";
                 break;
             default: 
                 document.getElementById("addonImg" + (i + 1)).src = "DBD Website/Killer/Powers/Universal/Killer No Choice Addon.png";

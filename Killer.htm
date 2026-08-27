@@ -34,8 +34,8 @@
                 </div>
             <!--First Killer Selection Column-->
                 <div class="dropdownKill" id="dropKills1">
-                    <input type="checkbox" id="slasher" name="slasher" value="The Slasher" onchange="namedCharPooled(name)">
-                    <label for="first">The Slasher <mark>NEW!</mark></label><br>
+                    <input type="checkbox" id="judgment" name="judgment" value="The Judgment" onchange="namedCharPooled(name)">
+                    <label for="judgment">The Judgment <mark>NEW!</mark></label><br>
 
                     <input type="checkbox" id="trapper" name="trapper" value="The Trapper" onchange="namedCharPooled(name)">
                     <label for="trapper">The Trapper</label><br>
@@ -174,6 +174,9 @@
 
                     <input type="checkbox" id="first" name="first" value="The First" onchange="namedCharPooled(name)">
                     <label for="first">The First</label><br>
+
+                    <input type="checkbox" id="slasher" name="slasher" value="The Slasher" onchange="namedCharPooled(name)">
+                    <label for="slasher">The Slasher</label><br>
                 </div>  
             </div>
     <!--Perks Selection Start Here-->
@@ -207,16 +210,16 @@
                         <br>
                     </fieldset>
 
-                    <fieldset class="slasherPerks">
-                        <legend>The Slasher <mark>NEW!</mark></legend>
-                        <input type="checkbox" id="hexScaToDea" name="hexScaToDea" value="Hex: Scared to Death" onchange="namedPerkPooled(name)">
-                        <label for="hexScaToDea">Hex: Scared to Death</label><br>
+                    <fieldset class="judgmentPerks">
+                        <legend>The Judgment <mark>NEW!</mark></legend>
+                        <input type="checkbox" id="celWit" name="celWit" value="Celestial Witness" onchange="namedPerkPooled(name)">
+                        <label for="celWit">Celestial Witness</label><br>
 
-                        <input type="checkbox" id="ram" name="ram" value="Rampage" onchange="namedPerkPooled(name)">
-                        <label for="ram">Rampage</label><br>    
+                        <input type="checkbox" id="hexUndYouThu" name="hexUndYouThu" value="Hex Under Your Thumb" onchange="namedPerkPooled(name)">
+                        <label for="hexUndYouThu">Hex: Under Your Thumb</label><br>    
 
-                        <input type="checkbox" id="silSha" name="silSha" value="Silent Shadow" onchange="namedPerkPooled(name)">
-                        <label for="silSha">Silent Shadow</label><br>
+                        <input type="checkbox" id="layWas" name="layWas" value="Lay Waste" onchange="namedPerkPooled(name)">
+                        <label for="layWas">Lay Waste</label><br>
                     </fieldset>
 
                     <fieldset class="trapperPerks">
@@ -735,6 +738,18 @@
 
                         <input type="checkbox" id="turBacClo" name="turBacClo" value="Turn Back the Clock" onchange="namedPerkPooled(name)">
                         <label for="turBacClo">Turn Back the Clock</label><br>
+                    </fieldset>
+
+                    <fieldset class="slasherPerks">
+                        <legend>The Slasher</legend>
+                        <input type="checkbox" id="hexScaToDea" name="hexScaToDea" value="Hex: Scared to Death" onchange="namedPerkPooled(name)">
+                        <label for="hexScaToDea">Hex: Scared to Death</label><br>
+
+                        <input type="checkbox" id="ram" name="ram" value="Rampage" onchange="namedPerkPooled(name)">
+                        <label for="ram">Rampage</label><br>    
+
+                        <input type="checkbox" id="silSha" name="silSha" value="Silent Shadow" onchange="namedPerkPooled(name)">
+                        <label for="silSha">Silent Shadow</label><br>
                     </fieldset>
                 </div>
             </div>

@@ -62,6 +62,7 @@ let dustHenRem = localStorage.getItem("dustHen");
 let elevRem = localStorage.getItem("elev");
 let kwonTaeRem = localStorage.getItem("kwonTae");
 let shanWiiRem = localStorage.getItem("shanWii");
+let auroStaRem = localStorage.getItem("auroSta");
 //Perks
 let univPerksRem = localStorage.getItem("univPerks");
 let anyChoRem = localStorage.getItem("anyCho");
@@ -278,6 +279,10 @@ let floStaRem = localStorage.getItem("floSta");
 let croExaRem = localStorage.getItem("croExa");
 let lenAHanRem = localStorage.getItem("lenAHan");
 let widOpeThrRem = localStorage.getItem("widOpeThr");
+//Aurora Stardotter Perks
+let booSteRem = localStorage.getItem("booSte");
+let fruYouLabRem = localStorage.getItem("fruYouLab");
+let salCryRem = localStorage.getItem("salCry");
 
 //Fog Vials
 let fogVialRem = localStorage.getItem("fogVial");
@@ -431,6 +436,7 @@ function loadPref(){
     if(elevRem=="true"){checking("elev",true);}
     if(kwonTaeRem=="true"){checking("kwonTae",true);}
     if(shanWiiRem=="true"){checking("shanWii",true);}
+    if(auroStaRem=="true"){checking("auroSta",true);}
 
 //Perks
     if(univPerksRem=="true"){checking("univPerks",true);}
@@ -648,6 +654,10 @@ function loadPref(){
     if(croExaRem=="true"){checking("croExa",true);}
     if(lenAHanRem=="true"){checking("lenAHan",true);}
     if(widOpeThrRem=="true"){checking("widOpeThr",true);}
+//Aurora Stardotter Perks
+    if(booSteRem=="true"){checking("booSte",true);}
+    if(fruYouLabRem=="true"){checking("fruYouLab",true);}
+    if(salCryRem=="true"){checking("salCry",true);}
 
 //Fog Vials
     if(fogVialRem=="true"){checking("fogVial",true);}
@@ -2470,6 +2480,7 @@ function selectAllSurv(){
     if(!$("#elev").is(":checked")){checking("elev",true);}
     if(!$("#kwonTae").is(":checked")){checking("kwonTae",true);}
     if(!$("#shanWii").is(":checked")){checking("shanWii",true);}
+    if(!$("#auroSta").is(":checked")){checking("auroSta",true);}
 }
 function deselectAllSurv(){
     if($("#dwigFai").is(":checked")){checking("dwigFai",false);}
@@ -2525,6 +2536,7 @@ function deselectAllSurv(){
     if($("#elev").is(":checked")){checking("elev",false);}
     if($("#kwonTae").is(":checked")){checking("kwonTae",false);}
     if($("#shanWii").is(":checked")){checking("shanWii",false);}
+    if($("#auroSta").is(":checked")){checking("auroSta",false);}
 }
 //Perks
 function selectAllPerk(){
@@ -2743,6 +2755,10 @@ function selectAllPerk(){
     if(!$("#croExa").is(":checked")){checking("croExa",true);}
     if(!$("#lenAHan").is(":checked")){checking("lenAHan",true);}
     if(!$("#widOpeThr").is(":checked")){checking("widOpeThr",true);}
+    //Aurora Stardotter Perks
+    if(!$("#booSte").is(":checked")){checking("booSte",true);}
+    if(!$("#fruYouLab").is(":checked")){checking("fruYouLab",true);}
+    if(!$("#salCry").is(":checked")){checking("salCry",true);}
 }
 function deselectAllPerk(){
     if($("#univPerks").is(":checked")){checking("univPerks",false);}
@@ -2960,6 +2976,10 @@ function deselectAllPerk(){
     if($("#croExa").is(":checked")){checking("croExa",false);}
     if($("#lenAHan").is(":checked")){checking("lenAHan",false);}
     if($("#widOpeThr").is(":checked")){checking("widOpeThr",false);}
+    //Aurora Stardotter Perks
+    if($("#booSte").is(":checked")){checking("booSte",false);}
+    if($("#fruYouLab").is(":checked")){checking("fruYouLab",false);}
+    if($("#salCry").is(":checked")){checking("salCry",false);}
 }
 //Items
 function selectAllItem(){
@@ -3347,7 +3367,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>Adrenaline</i> activates:
                 <ul><li>Instantly heal the equivalent of <b>1 Health State</b></li>
-                <li>Grants a <b>+50% Haste</b> Status Effect for <b>3 seconds</b></li></ul>
+                <li>Grants a <b>+50% Haste</b> Status Effect for <b>4 seconds</b></li></ul>
                 <i>Adrenaline</i> ignores an existing <b>Exhausted</b> Status Effect , but causes it for 
                 <b style="color: #e8c252;">60</b>/
                 <b style="color: #199b1e;">50</b>/
@@ -3369,7 +3389,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Sprint Burst";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Starting to run triggers <i>Sprint Burst</i>:
-                <ul><li>Grants a <b>+50% Haste</b> Status Effect for <b>3 seconds</b></li></ul>
+                <ul><li>Grants a <b>+50% Haste</b> Status Effect for <b>2 seconds</b></li></ul>
                 <i>Sprint Burst</i> causes the <b>Exhausted</b> Status Effect for 
                 <b style="color: #e8c252;">60</b>/
                 <b style="color: #199b1e;">50</b>/
@@ -3622,11 +3642,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Technician";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While repairing a Generator, the following effects apply:
-                <ul><li>Reduces the audible range of all noises related to the Repair interaction by <b>-8 metres</b></li>
+                <ul><li>Reduces the audible range of all noises related to the Repair interaction by <b>-16 metres</b></li>
                 <li>Increases the Progression penalty incurred when failing a Skill Check by 
-                <b style="color: #e8c252;">5</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">3</b> %</li>
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">3</b>/
+                <b style="color: #ac3ee3;">2</b> %</li>
                 <li>Suppresses the <b>explosion of the Generator and the Loud Noise Notification</b> usually triggered by that</li></ul>`;
                 break;
         //David King Perks
@@ -3687,10 +3707,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Vigil";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Recovery rate from the following Status Effects by 
-                <b style="color: #e8c252;">43</b>/
-                <b style="color: #199b1e;">55</b>/
-                <b style="color: #ac3ee3;">66</b> %
-                <ul><li>The <b>Blindness</b>, <b>Broken</b>, <b>Exhausted</b>, <b>Exposed</b>, <b>Haemorrhage</b>, <b>Hindered</b>, <b>Mangled</b>, and <b>Oblivious</b> Status Effects</li></ul>
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> %
+                <ul><li>The <b>Blindness</b>, <b>Broken</b>, <b>Exhausted</b>, <b>Exposed</b>, <b>Hemorrhage</b>, <b>Hindered</b>, <b>Mangled</b>, and <b>Oblivious</b> Status Effects</li></ul>
                 <i>Vigil</i> extends its effect to all Survivors within <b>16 metres</b> of your location and lingers for <b>15 seconds</b><br>
                 Survivors can only be affected by one instance of <i>Vigil</i> at a time`;
                 break;
@@ -3809,9 +3829,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>safely unhooking</b> another Survivor, <i>Deliverance</i> activates:
                 <ul><li>Grants the ability to <b>perform a successful Self-Unhook</b> at any point during the <b>first Hook Stage</b></li>
                 <li>Causes the <b>Broken</b> Status Effect for 
-                <b style="color: #e8c252;">100</b>/
-                <b style="color: #199b1e;">80</b>/
-                <b style="color: #ac3ee3;">60</b> seconds after unhooking yourself</li></ul>
+                <b style="color: #e8c252;">160</b>/
+                <b style="color: #199b1e;">140</b>/
+                <b style="color: #ac3ee3;">120</b> seconds after unhooking yourself</li></ul>
                 <i>Deliverance</i> cannot be used during the <b>second Hook Stage</b> or if you are hooked as the <b>Last Survivor Standing</b><br><br>
                 <i>Deliverance</i> is disabled for the remainder of the Trial after use`;
                 break;
@@ -4114,7 +4134,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">55</b>/
                 <b style="color: #199b1e;">50</b>/
                 <b style="color: #ac3ee3;">45</b> seconds, <i>Repressed Alliance</i> activates:
-                <ul><li>Press the <b>Active Ability button</b> to call upon The Entity to <b>block the Generator</b> you are currently repairing for <b>30 seconds</b>, after which <i>Repressed Alliance</i> deactivates</li>
+                <ul><li>Press the <b>Active Ability button</b> to call upon The Entity to <b>block the Generator</b> you are currently repairing for <b>15 seconds</b>, after which <i>Repressed Alliance</i> deactivates</li>
                 <li>The <b>Aura of the blocked Generator</b> is revealed to all Survivors in <b>white</b></li></ul>
                 <i>Repressed Alliance</i> can only be triggered when <b>no other Survivors</b> are repairing your Generator`;
                 break;
@@ -4959,7 +4979,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Trevor Belmont/Moment of Glory.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Moment of Glory";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the <b>Unlocking or Rummaging</b> action on Chests a total of <b>2 times</b>, <i>Moment of Glory</i> activates:
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the <b>Unlocking or Rummaging action on 1 Chest</b>, <i>Moment of Glory</i> activates:
                 <dl><li>When you become <b>injured</b>, you instantly suffer from the <b>Broken</b> Status Effect</li>
                 <li>You are automatically <b>healed 1 Health State</b> after 
                 <b style="color: #e8c252;">80</b>/
@@ -4978,9 +4998,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Press the <b>Active Ability button</b> while <b>being healed by another Survivor</b> to trigger the following effects:
                 <dl><li>Suffer from the <b>Broken</b> Status Effect</li>
                 <li>You are automatically <b>healed 1 Health State</b> after 
-                <b style="color: #e8c252;">80</b>/
-                <b style="color: #199b1e;">70</b>/
-                <b style="color: #ac3ee3;">60</b> seconds</li>
+                <b style="color: #e8c252;">75</b>/
+                <b style="color: #199b1e;">60</b>/
+                <b style="color: #ac3ee3;">45</b> seconds</li>
                 <dd>- This effect is cancelled prematurely if you enter the <b>Dying State</b></dd></dl>
                 <i>Clean Break</i> does not activate if you already suffer from the <b>Broken</b> Status Effect.<br><br>
                 <i>Clean Break</i> deactivates after healing you`;
@@ -5056,8 +5076,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">24</b>/
                 <b style="color: #199b1e;">28</b>/
                 <b style="color: #ac3ee3;">32</b> metres.</li><br>
-                After <b>unlocking or rummaging through 2 Chests</b>, <i>Apocalyptic Ingenuity</i> gains a special ability.<br><br>
-                While standing next to the location of a <b>broken Pallet</b>, press and hold the <b>Active Ability button</b> for <b>4 seconds</b> to use it:
+                After <b>unlocking or rummaging through 1 Chest</b>, <i>Apocalyptic Ingenuity</i> gains a special ability.<br><br>
+                While standing next to the location of a <b>broken Pallet</b>, press and hold the <b>Active Ability button</b> for <b>3 seconds</b> to use it:
                 <dl><li>Rebuilds it as a Fragile Pallet.</li>
                 <dd>- Fragile Pallets instantly break when dropped.</dd></dl>`;
                 break;
@@ -5279,7 +5299,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Shane Wiigwaas/Cross-Examination.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Cross-Examination";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>inside the Killer's Terror Radius</b>, the Killer leaves behind <b>Light Marks</b> that you can see. <b>Light Marks</b> have a duration of <b>10 seconds</b> 
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>inside the Killer's Terror Radius and not being chased by the Killer</b>, the Killer leaves behind <b>Light Marks</b> that you can see. <b>Light Marks</b> have a duration of <b>10 seconds</b> 
                 <ul><li>While <b>standing on a Light Mark</b>, gain <b>Elusive</b> Status Effect. This lingers for <b style="color: #e8c252;">3</b>/
                 <b style="color: #199b1e;">4</b>/
                 <b style="color: #ac3ee3;">5</b> seconds.</li></ul>`;
@@ -5304,6 +5324,45 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #ac3ee3;">15</b>%  <b>Haste</b> Status Effect for <b>3 seconds</b></li>
                 <li>The <b>Pallet is immediately reset and blocked by the Entity</b> for <b>60 seconds</b></li></ul>
                 This perk then goes on a <b>60 second</b> cooldown`;
+                break;
+        //Aurora Stardotter Perks
+            case "booSte":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Aurora Stardotter/Boon_Steadfast.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Boon: Steadfast";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Press and hold the <b>Active Ability button</b> on a Dull or Hex Totem to <b>bless it</b> and create a <b>Boon Totem</b>.<br>
+                Soft chimes ring out in a radius of <b>24 metres</b>.<br><br>
+                All Generators benefit from the following effects when inside the <b>Boon Totem's radius</b>:
+                <ul><li>Regress <b>50% slower</b>.</li>
+                <li>Survivors repair them 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> % faster.</li>
+                <li>The <b>Auras of affected Generators</b> are revealed to you in <b>blue</b></li></ul>`;
+                break;
+            case "fruYouLab":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Aurora Stardotter/Fruits of Your Labor.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Fruits of Your Labor";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever <b>a Generator is completed</b>, you earn <b>1 Token</b>.<br>
+                Whenever <b>you finish repairing a Generator</b>, for each Token:
+                <ul><li>Gain <b>5 % Haste for 2 seconds</b></li>
+                <li>Gain 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">15</b>/
+                <b style="color: #ac3ee3;">20</b> % healing progress.</li></ul>`;
+                break;
+            case "salCry":
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Aurora Stardotter/Salvations Cry.png";
+                document.getElementById("perk" + (i + 1)).innerHTML = "Salvation's Cry";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Killer is chasing you</b>:
+                <ul><li>You see the <b>Auras of other Survivors</b> for  
+                <b style="color: #e8c252;">1</b>/
+                <b style="color: #199b1e;">2</b>/
+                <b style="color: #ac3ee3;">3</b> seconds.</li>
+                <li>Survivors <b>not being chased</b> see <b>your Aura for 5 seconds</b>.</li>
+                <li>Survivors <b>not being chased</b> see the <b>Killer's Aura for 5 seconds</b>.</li></ul>`;
                 break;
         //End
             default: 
@@ -5532,6 +5591,10 @@ function fixedChar(char){
         case "shanWii":
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Shane Wiigwaas/S53_storeBackground.png";
             document.getElementById("charName").innerHTML = "Shane Wiigwaas";
+            break;
+        case "auroSta":
+            document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Aurora Stardotter/T_UI_S54_storeBackground.png";
+            document.getElementById("charName").innerHTML = "Aurora Stardotter";
             break;
         default:
             document.getElementById("charImg").src = "DBD Website/Survivor/Characters/Universal/RandomSurvPlaceholder.png";
