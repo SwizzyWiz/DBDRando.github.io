@@ -4011,14 +4011,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "bitMur":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Bitter Murmur.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Bitter Murmur";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Generator is completed, <i>Bitter Murmur</i> triggers its primary effect:
-                <ul><li>The <b>Auras</b> of any Survivors within 16 metres of that Generator are revealed to you for 5 seconds</li></ul>
+                <ul><li>The <b>Auras</b> of any Survivors within 20 metres of that Generator are revealed to you for 10 seconds</li></ul>
                 Once the last Generator is completed, <i>Bitter Murmur</i> triggers its secondary effect:
                 <ul><li>The <b>Auras</b> of all Survivors are revealed to you for 
-                <b style="color: #e8c252;">5</b>/
-                <b style="color: #199b1e;">7</b>/
-                <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">16</b>/
+                <b style="color: #199b1e;">18</b>/
+                <b style="color: #ac3ee3;">20</b> seconds</li></ul>`;
                 break;
             case "dee":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Deerstalker.png";
@@ -4030,16 +4030,17 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">40</b>/
                 <b style="color: #199b1e;">35</b>/
                 <b style="color: #ac3ee3;">30</b> seconds:
-                <ul><li><b>Your Aura</b> is revealed for <b>3 seconds</b> to the Survivor with <b>currently the lowest cumulative Chase time</b></li></ul>`;
+                <ul><li><b>Your Aura</b> is revealed for <b>4 seconds</b> to the Survivor with <b>currently the lowest cumulative Chase time</b></li></ul>`;
                 break;
             case "dist":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Distressing.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Distressing";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Permanently increases your <b>Terror Radius</b> by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b>%.`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "19pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Survivors within your Terror Radius</b> repair 
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">7</b>/
+                <b style="color: #ac3ee3;">8</b>% slower.<br><br>
+                Permanently increases your <b>Terror Radius</b> by <b>30</b> %`;
                 break;
             case "hexNoOneEscDea":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Hex_No One Escapes Death.png";
@@ -4060,26 +4061,23 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "hexThrHun":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Hex_Thrill of the Hunt.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Thrill of the Hunt";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Start the Trial with <b>5 Tokens</b>, one per Totem:
-                <ul><li>Reduces the Action speeds for Blessing and Cleansing by a stack-able
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b>% per Token, up to a maximum of 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">45</b>/
-                <b style="color: #ac3ee3;">50</b>%.</li></ul>
-                <i>Hex: Thrill of the Hunt</i> loses <b>-1 Token</b> whenever a Totem is cleansed.`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>first time you hook a Survivor</b>, a <b>Dull Totem ignites</b>.<br><br>
+                When you <b>hook a Survivor</b>, <b>block all Hex Totems</b> for 
+                <b style="color: #e8c252;">4</b>/
+                <b style="color: #199b1e;">5</b>/
+                <b style="color: #ac3ee3;">6</b> seconds for <b>each lit Hex Totem</b>`;
                 break;
             case "ins":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Insidious.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Insidious";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After standing still for 
-                <b style="color: #e8c252;">3</b>/
-                <b style="color: #199b1e;">2</b>/
-                <b style="color: #ac3ee3;">1</b> seconds, <i>Insidous</i> activates:
-                <ul><li>Grants the <b>Undetectable</b> Status Effect for as long as you remain stationary.</li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After standing still for <b>2</b> seconds, <i>Insidous</i> activates:
+                <ul><li>Grants the <b>Undetectable</b> Status Effect for as long as you remain stationary.</li>
+                <li>Whenever you act, this ends after 
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">7</b>/
+                <b style="color: #ac3ee3;">8</b> seconds</li></ul>`;
                 break;
             case "iroGra":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Iron Grasp.png";
@@ -4088,8 +4086,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are carrying a Survivor, the following effects apply: 
                 <ul><li>Reduces the strength of the Wiggle effects, causing involuntary strafing, by 75%.</li>
                 <li>Increases the maximum Wiggle duration by 
-                <b style="color: #e8c252;">4</b>/
-                <b style="color: #199b1e;">8</b>/
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">11</b>/
                 <b style="color: #ac3ee3;">12</b>%</li></ul>`;
                 break;
             case "scoHooMonShr":
@@ -4099,20 +4097,25 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `At the start of the Trial, <b>4 random Hooks</b>, as well as the <b>4 Basement Hooks</b>, are changed into <b>Scourge Hooks</b>: 
                 <ul><li>The <b>Auras</b> of <b>Scourge Hooks</b> are revealed to you in white.</li></ul>
                 Whenever a Survivor is hooked onto a <b>Scourge Hook</b>, the following effect applies when you are farther than 24 metres from the hooked Survivor:
-                <ul><li>Accelerates the Sacrifice Process by 
-                <b style="color: #e8c252;">10</b>/
-                <b style="color: #199b1e;">15</b>/
-                <b style="color: #ac3ee3;">20</b>%.</li></ul>`;
+                <ul><li>Generators not being repaired regress at 
+                <b style="color: #e8c252;">150</b>/
+                <b style="color: #199b1e;">175</b>/
+                <b style="color: #ac3ee3;">200</b>% speed.</li></ul>`;
                 break;
             case "shaHop":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Shattered Hope.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Shattered Hope";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Instead of snuffing <b>Boon Totems</b> you destroy them.
-                <br><br> Destroying a <b>Boon Totem</b> this way reveals the <b>Auras</b> of all Survivors that were within its range at that moment for 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">7</b>/
-                <b style="color: #ac3ee3;">8</b> seconds.`;
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Instead of snuffing <b>Boon Totems</b> you destroy them.<br><br> 
+                Whenever a Totem is blessed, cleansed or destroyed: 
+                <ul><li><b>Dull and Hex Totems are blocked</b> for 
+                <b style="color: #e8c252;">16</b>/
+                <b style="color: #199b1e;">18</b>/
+                <b style="color: #ac3ee3;">20</b> seconds.</li>
+                <li>You see the <b>Auras of Boon Totems</b> for 
+                <b style="color: #e8c252;">16</b>/
+                <b style="color: #199b1e;">18</b>/
+                <b style="color: #ac3ee3;">20</b> seconds.</li></ul>`;
                 break;
             case "sloBut":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Sloppy Butcher.png";
@@ -4131,30 +4134,35 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "spiFroSha":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Spies from the Shadows.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Spies from the Shadows";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you are within 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">28</b>/
-                <b style="color: #ac3ee3;">36</b> metres of a Crow that was startled by a nearby Survivor, you are alerted with a <b>Loud Noise Notification</b>.<br><br>
-                <i>Spies from the Shadows</i> has a cool-down of <b>5 seconds</b> between alerts.`;
+                <b style="color: #e8c252;">36</b>/
+                <b style="color: #199b1e;">38</b>/
+                <b style="color: #ac3ee3;">40</b> metres of a Crow that was startled by a nearby Survivor, you are alerted with a <b>Loud Noise Notification</b>.<br><br>
+                <i>Spies from the Shadows</i> has a cool-down of <b>3 seconds</b> between alerts.`;
                 break;
             case "unr":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Unrelenting.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unrelenting";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Reduces the Cooldown of missed <b>Basic Attacks</b> by 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b>%.`;
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b>%.<br><br>
+                Reduces the Cooldown of successful <b>Basic Attacks</b> by <b>10</b> %`;
                 break;
             case "whi":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Universal/Whispers.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Whispers";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever at least one Survivor is within 
-                <b style="color: #e8c252;">48</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">32</b> metres of your location, you hear the sporadic whispers of the Entity.`;
+                <b style="color: #e8c252;">28</b>/
+                <b style="color: #199b1e;">26</b>/
+                <b style="color: #ac3ee3;">24</b> metres of your location, you hear the sporadic whispers of the Entity.<br><br>
+                While outside of 
+                <b style="color: #e8c252;">28</b>/
+                <b style="color: #199b1e;">26</b>/
+                <b style="color: #ac3ee3;">24</b> metres of at least one Survivor, you gain <b>5</b> % <b>Haste</b> Status Effect`;
                 break;
     //Unique Killer Perks Start
 
@@ -4162,11 +4170,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "agi":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Trapper/Agitation.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Agitation";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While carrying a Survivor, <i>Agitation</i> activates:
                 <ul><li>Increases your Carrying speed by 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">12</b>/
+                <b style="color: #e8c252;">14</b>/
+                <b style="color: #199b1e;">16</b>/
                 <b style="color: #ac3ee3;">18</b> %</li>
                 <li>Increases your <b>Terror Radius</b> by <b>+12 metres</b>.</li></ul>`;
                 break;
@@ -4473,12 +4481,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "knoOut":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Cannibal/Knock Out.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Knock Out";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor moves farther than <b>6 metres</b> from a Pallet within <b>6 seconds</b> of dropping it, <i>Knock Out</i> triggers its effect:
-                <ul><li>Causes them to suffer from a <b>-5% Hindered</b> Status Effect for 
-                <b style="color: #e8c252;">3</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">5</b> seconds</li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor moves farther than <b>10 metres</b> from a Pallet within <b>6 seconds</b> of dropping it, <i>Knock Out</i> triggers its effect:
+                <ul><li>Causes them to suffer from a <b>-20% Hindered</b> Status Effect for 
+                <b style="color: #e8c252;">2</b>/
+                <b style="color: #199b1e;">3</b>/
+                <b style="color: #ac3ee3;">4</b> seconds</li></ul>
+                <i>Knock Out</i> ends early if the <b>Pallet</b> is broken`;
                 break;
         //Nightmare Perks
             case "bloWar":
@@ -4499,12 +4508,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `For each completed Generator, <i>Fire Up</i> gains <b>+1 Token</b>, up to a maximum of <b>5 Tokens</b>:
                 <dl><li>Increases the Action speeds for the following interactions by a stackable 
-                <b style="color: #e8c252;">4</b>/
-                <b style="color: #199b1e;">5</b>/
-                <b style="color: #ac3ee3;">6</b> % per <b>Token</b>, up to a maximum of 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> %:</li>
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">7</b>/
+                <b style="color: #ac3ee3;">8</b> % per <b>Token</b>, up to a maximum of 
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> %:</li>
                 <dd>- Picking up and dropping Survivors</dd>
                 <dd>- Breaking Breakable Walls and dropped Pallets</dd>
                 <dd>- Damaging Generators</dd>
@@ -4815,12 +4824,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "deaManSwi":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Deathslinger/Dead Mans Switch.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dead Man's Switch";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After hooking a Survivor, <i>Dead Man's Switch</i> activates:
-                <ul><li>Blocks the first Generator any Survivor stops repairing for 
-                <b style="color: #e8c252;">25</b>/
-                <b style="color: #199b1e;">30</b>/
-                <b style="color: #ac3ee3;">35</b> seconds</li>
+                <ul><li>Blocks the first Generator any Survivor stops repairing after <b>2</b> seconds for 
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> seconds</li>
                 <li>The Blocked Generator is highlighted to you in <b>white</b></li></ul>
                 <i>Dead Man's Switch</i> cannot activate if its effect is still active from a previous activation`;
                 break;
@@ -4895,11 +4904,11 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Blight/Hex_Blood Favour.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Blood Favour";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor loses a Health State by any means, <i>Hex: Blood Favour</i> triggers its effect:
-                <dl><li>Blocks all upright Pallets within 
-                <b style="color: #e8c252;">24</b>/
-                <b style="color: #199b1e;">28</b>/
-                <b style="color: #ac3ee3;">32</b> metres of that Survivor's location at the time for <b>15 seconds</b></li>
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>healthy Survivor</b> becomes <b>injured by your Basic Attack</b>, <i>Hex: Blood Favour</i> triggers its effect:
+                <dl><li>Blocks all upright Pallets within <b>32</b> metres of that Survivor's location at the time for 
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b> seconds</li>
                 <dd>- Blocked Pallets cannot be dropped</dd></dl>`;
                 break;
             case "hexUnd":
@@ -5167,10 +5176,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dredge/Dissolution.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dissolution";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>3 seconds</b> of injuring a Survivor by any means, <i>Dissolution</i> activates for 
-                <b style="color: #e8c252;">12</b>/
-                <b style="color: #199b1e;">16</b>/
-                <b style="color: #ac3ee3;">20</b> seconds
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After <b>3 seconds</b> of injuring a Survivor with your <b>Basic Attack</b>, <i>Dissolution</i> activates for 
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b> seconds:
                 <ul><li>Instantly breaks the next Pallet that Survivor performs a Fast Vault across while inside your <b>Terror Radius</b></li></ul>`;
                 break;
             case "sepTou":
@@ -5202,9 +5211,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <ul><li>Increases your Vaulting speed by 
                 <b style="color: #e8c252;">30</b>/
                 <b style="color: #199b1e;">35</b>/
-                <b style="color: #ac3ee3;">40</b> %</li></ul>
-                <i>Superior Anatomy</i> deactivates after vaulting.<br>
-                <i>Superior Anatomy</i> has a cooldown of <b>25 seconds</b>`;
+                <b style="color: #ac3ee3;">40</b> % for <b>10</b> seconds</li></ul>
+                <i>Superior Anatomy</i> has a cooldown of <b>20 seconds</b>`;
                 break;
             case "ter":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Mastermind/Terminus.png";
@@ -5257,7 +5265,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hit the Survivor with the <b>highest cumulative Chase time</b>, with a <b>Basic Attack</b>, they become the <b>Obsession</b><br>
                 While you are chasing your <b>Obsession</b>, <i>Game Afoot</i> activates its secondary effect:
-                <ul><li>Grants a <b>7% Haste</b> Status Effect for 
+                <ul><li>Grants a <b>10% Haste</b> Status Effect for 
                 <b style="color: #e8c252;">8</b>/
                 <b style="color: #199b1e;">9</b>/
                 <b style="color: #ac3ee3;">10</b> seconds after damaging a Generator or breaking a Breakable Wall or Pallet</li></ul>`;
@@ -5307,17 +5315,18 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "macLea":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Singularity/Machine Learning.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Machine Learning";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action, <i>Machine Learning</i> activates:
                 <dl><li>Causes that Generator to become a <b>Compromised Generator</b></li>
-                <dd>- Damaging another Generator transfers the state to it instead</dd>
+                <dd>- Up to 3 Generators can be comprimised</dd>
                 <li>The <b>Aura</b> of the <b>Compromised Generator</b> is highlighted to you in <b>yellow</b> until it is completed</li></dl>
-                Once the <b>Compromised Generator</b> is completed, you benefit from the following effects for 
+                Once a <b>Compromised Generator</b> is completed, you benefit from the following effects for 
                 <b style="color: #e8c252;">40</b>/
                 <b style="color: #199b1e;">50</b>/
                 <b style="color: #ac3ee3;">60</b> seconds:
                 <ul><li><b>Undetectable</b> Status Effect</li>
-                <li><b>+8% Haste</b> Status Effect</li></ul>
+                <li><b>+8% Haste</b> Status Effect</li>
+                <li>Other Generators <b>lose compromised</b></li></ul>
                 <i>Machine Learning</i> deactivates after use`;
                 break;
         //Xenomorph Perks
@@ -5394,27 +5403,28 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "unb":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Unbound.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Unbound";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When a Survivor becomes injured by any means, <i>Unbound</i> activates for 
-                <b style="color: #e8c252;">24</b>/
-                <b style="color: #199b1e;">27</b>/
+                <b style="color: #e8c252;">26</b>/
+                <b style="color: #199b1e;">28</b>/
                 <b style="color: #ac3ee3;">30</b> seconds:
-                <dl><li>Grants a <b>+7% Haste</b> Status Effect for <b>10 seconds</b> after vaulting a Window</li>
+                <dl><li>Grants a <b>+5% Haste</b> Status Effect for <b>25 seconds</b> after vaulting a Window</li>
                 <dd>- This effect cannot stack with itself</dd></dl>`;
                 break;
             case "und":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Undone.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Undone";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a Survivor fails a Skill Check while repairing or healing, <i>Undone</i> gains <b>+3 Tokens</b>, up to a maximum of 
-                <b style="color: #e8c252;">18</b>/
-                <b style="color: #199b1e;">24</b>/
-                <b style="color: #ac3ee3;">30</b> <b>Tokens</b>
-                Performing the Damage Generator action on a Generator consumes <b>all accumulated Tokens</b> and applies the following effects:
-                <ul><li>Instantly regresses the damaged Generator by <b>-1% per Token</b> of its total Progression</li>
-                <li>Blocks the damaged Generator for <b>1 second per Token</b></li>
-                <li>Causes the damaged Generator to start regressing once it becomes unblocked</li></ul>
-                <i>Undone</i> has a cooldown of <b>60 seconds</b>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you hook a Survivor, <i>Undone</i> gains <b>+1 Tokens</b>, up to a maximum of <b>3 Tokens<b><br><br>
+                Whenever you damage a Generator, <b>spend all Tokens</b>. For <b>each Token spent</b>:
+                <ul><li> The Generator loses 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> % progress</li>
+                <li> The Generator is blocked for 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
                 break;
             case "unf":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Unknown/Unforeseen.png";
@@ -5431,10 +5441,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "darArr":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Lich/Dark Arrogance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Arrogance";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases your Vaulting speed in exchange for increased vulnerability to being blinded and stunned:
-                <ul><li>Permanently increases the duration of Killer Blinds by any means and the duration of Pallet Stuns by <b>15%</b></li>
+                <ul><li>Permanently increases the duration of Killer Blinds by any means and the duration of Pallet Stuns by <b>25%</b></li>
                 <li>Permanently increases your Vaulting speed by 
+                <b style="color: #e8c252;">15</b>/
+                <b style="color: #199b1e;">20</b>/
+                <b style="color: #ac3ee3;">25</b> %</li>
+                <li>Permanently decreases your Basic Attack cooldown by 
                 <b style="color: #e8c252;">15</b>/
                 <b style="color: #199b1e;">20</b>/
                 <b style="color: #ac3ee3;">25</b> %</li></ul>`;
@@ -5467,12 +5481,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dark Lord/Dominance.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dominance";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The first time each Chest and each Totem are interacted with by a Survivor, <i>Dominance</i> triggers its effect:
-                <ul><li>Calls upon The Entity to block it for 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">12</b>/
-                <b style="color: #ac3ee3;">16</b> seconds</li>
-                <li>The <b>Aura of the blocked Prop</b> is revealed to you in <b>white</b></li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The first time each Totem are blessed or cleansed with by a Survivor, <i>Dominance</i> triggers its effect:
+                <ul><li>The Totem is blocked for <b>25</b> seconds</li>
+                <li>The Survivor screams</li>
+                <li>You see their <b>Aura</b> for 
+                <b style="color: #e8c252;">3</b>/
+                <b style="color: #199b1e;">4</b>/
+                <b style="color: #ac3ee3;">5</b> seconds</li></ul>`;
                 break;
             case "hexWreFat":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Dark Lord/Hex_Wretched Fate.png";
@@ -5552,11 +5567,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghoul/Hex_Nothing but Misery.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Hex: Nothing but Misery";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After damaging Survivors a total of <b>8 times with Basic Attacks</b>, a random Dull Totem becomes a <b>Hex Totem</b>, <b>cursing all Survivors</b>:
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After damaging Survivors a total of <b>4 times with Basic Attacks</b>, a random Dull Totem becomes a <b>Hex Totem</b>, <b>cursing all Survivors</b>:
                 <ul><li>Survivors damaged by a <b>Basic Attack</b> suffer from a <b>-5% Hindered</b> Status Effect for 
                 <b style="color: #e8c252;">10</b>/
                 <b style="color: #199b1e;">12.5</b>/
-                <b style="color: #ac3ee3;">15</b> seconds</li></ul>`;
+                <b style="color: #ac3ee3;">15</b> seconds and vault 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">12.5</b>/
+                <b style="color: #ac3ee3;">15</b> % slower</li></ul>`;
                 break;
             case "nonAreFre":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Ghoul/None Are Free.png";
@@ -5587,14 +5605,17 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "helWan":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Animatronic/Help Wanted.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Help Wanted";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After performing the Damage Generator action, <i>Help Wanted</i> activates:
-                <ul><li>Causes that Generator to become a <b>Compromised Generator</b></li></ul>
+                <ul><li>Causes that Generator to become a <b>Compromised Generator</b></li>
+                <li>Up to 3 Generators can be compromised at a time</li></ul>
                 Once the <b>Compromised Generator is completed</b>, you benefit from the following effect for 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">60</b> seconds:
-                <ul><li>Increases the Recovery speed of <b>successful Basic Attacks</b> by <b>25%</b></li></ul>`;
+                <b style="color: #e8c252;">70</b>/
+                <b style="color: #199b1e;">80</b>/
+                <b style="color: #ac3ee3;">90</b> seconds:
+                <ul><li>Increases the Recovery speed of <b>successful Basic Attacks</b> by <b>25%</b></li>
+                <li>Generators not being repaired regress at <b>150%</b> speed</li>
+                <li>Other Generators <b>lose compromised</b></li></ul>`;
                 break;  
             case "phaFea":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Animatronic/Phantom Fear.png";
@@ -5627,14 +5648,17 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "rav":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Krasue/Ravenous.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Ravenous";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>hook a Survivor for the first time</b>, <i>Ravenous</i> gains <b>1 Token</b>, up to a maximum of <b>4 Tokens</b>.<br>
+                For each Token:
+                <ul><li>Gain <b>4% Haste</b> Status Effect while carrying Survivors</li>
+                <li>Hook Survivors <b>4%</b> faster</li></ul>
                 Once you accumulate <b>4 Tokens</b>, <b>all Survivors</b> suffer from the following effects:
                 <ul><li>Causes them to scream</li>
                 <li>Inflicts the <b>Exposed Status Effect</b> for 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">50</b>/
-                <b style="color: #ac3ee3;">60</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">80</b>/
+                <b style="color: #199b1e;">85</b>/
+                <b style="color: #ac3ee3;">90</b> seconds</li></ul>`;
                 break;  
             case "wanEye":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Killer/Characters/Krasue/Wandering Eye.png";

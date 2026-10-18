@@ -3163,18 +3163,19 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "darSen":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Dark Sense.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Dark Sense";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>Generator is completed</b>, <i>Dark Sense</i> activates:
-                <ul><li>The <b>Aura of the Killer</b> is revealed to you for 
-                <b style="color: #e8c252;">5</b>/
-                <b style="color: #199b1e;">7</b>/
-                <b style="color: #ac3ee3;">10</b> seconds once they come within <b>24 metres</b> of your location</li></ul>
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>Generator is completed</b>, <i>Dark Sense</i> activates when the Killer gets within <b>20 metres</b> of your location for <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b> seconds:
+                <ul><li>The <b>Aura of the Killer</b> is revealed to you</li>
+                <li>The <b>Aura of other Survivors</b> is revealed to you</li>
+                <li>The <b>Aura of Pallets and Windows</b> within <b>32</b> meters is revealed to you</li></ul>
                 <i>Dark Sense</i> deactivates after use`;
                 break;
             case "dejVu":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Deja Vu.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Déjà Vu";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of whichever <b>3 Generators are currently in closest proximity to one another</b> are revealed to you.<br><br>
                 Increases your Repair speed on <b>those Generators</b> by 
                 <b style="color: #e8c252;">4</b>/
@@ -3197,8 +3198,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever any Survivor is hooked, <i>Kindred</i> activates and applies the following effects:
                 <ul><li>The <b>Aura of the Killer</b> is revealed to all Survivors whenever the Killer comes within 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">12</b>/
+                <b style="color: #e8c252;">14</b>/
+                <b style="color: #199b1e;">15</b>/
                 <b style="color: #ac3ee3;">16</b> metres of the Hook</li>
                 <li>If you <b>are the Hooked Survivor</b>, the <b>Auras</b> of all Survivors are revealed to each other</li>
                 <li>If you <b>are not the Hooked Survivor</b>, the <b>Auras</b> of all other Survivors are only revealed to you</li></ul>`;
@@ -3216,46 +3217,44 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "noOneLefBeh":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/No One Left Behind.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "No One Left Behind";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once the Exit Gates are <b>powered</b>, <i>No One Left Behind</i> activates and applies the following effects:
                 <dl><li>The <b>Auras</b> of all other Survivors are revealed to you</li>
                 <li>Increases the Action speeds for Healing and Unhooking by 
-                <b style="color: #e8c252;">50</b>/
-                <b style="color: #199b1e;">75</b>/
+                <b style="color: #e8c252;">80</b>/
+                <b style="color: #199b1e;">90</b>/
                 <b style="color: #ac3ee3;">100</b> %</li>
-                <li>Increases the strength and duration of the <b>Haste</b> Status Effect of Survivors unhooked by you by <b>+10%</b> and <b>+5 seconds</b> respectively</li>
-                <dd>- Causes them to benefit from a <b>+20% Haste</b> Status Effect for <b>15 seconds</b></dd></dl>`;
+                <li>Increases the strength of the <b>Haste</b> Status Effect of Survivors unhooked by you by <b>+10%</b></li></dl>`;
                 break;
             case "pluIns":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Plunderers Instinct.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Plunder's Instinct";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of the following objects are revealed to you within 
-                <b style="color: #e8c252;">32</b>/
-                <b style="color: #199b1e;">48</b>/
-                <b style="color: #ac3ee3;">64</b> metres:
-                <ul><li><b>Closed Chests</b> located in the environment</li>
-                <li><b>Items</b> sitting inside <b>opened Chests</b></li>
-                <li><b>Items</b> dropped in the environment</li></ul>
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras</b> of <b>Chests and Items</b> are revealed to you<br><br>
+                You unlock <b>Chests</b> <b style="color: #e8c252;">150</b>/
+                <b style="color: #199b1e;">175</b>/
+                <b style="color: #ac3ee3;">200</b> % faster<br><br>
                 Increases the Odds of finding <b>Items of higher Rarities</b> in Chests by <b>+50%</b>`;
                 break;
             case "premonition":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Premonition.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Premonition";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Receive an <b>auditory warning</b> when looking in the direction of the Killer within a <b>45° cone</b> and at a maximum range of <b>36 metres</b><br><br>
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>not chased by the Killer</b>, whenever you <b>look in the Killer's direction</b> within <b>32</b> meters:
+                <ul><li>You are notified with an <b>audio cue</b></li>
+                <li>You see the <b>Killer's Aura</b> for <b>3</b> seconds</li></ul>
                 <i>Premonition</i> has a cooldown of 
-                <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">45</b>/
-                <b style="color: #ac3ee3;">30</b> seconds`;
+                <b style="color: #e8c252;">55</b>/
+                <b style="color: #199b1e;">50</b>/
+                <b style="color: #ac3ee3;">45</b> seconds`;
                 break;
             case "resilience":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Resilience.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Resilience";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Action speeds for the following interactions by 
-                <b style="color: #e8c252;">3</b>/
-                <b style="color: #199b1e;">6</b>/
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured</b>, increases the Action speeds for the following interactions by 
+                <b style="color: #e8c252;">7</b>/
+                <b style="color: #199b1e;">8</b>/
                 <b style="color: #ac3ee3;">9</b> %:
                 <ul><li>Blessing or Cleansing Totems</li>
                 <li>Healing yourself or other Survivors</li>
@@ -3269,48 +3268,41 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "sliMea":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Slippery Meat.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Slippery Meat";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Grants the ability to <b>attempt +3 additional Self-Unhooks</b> during the first Hook Stage<br><br>
-                Increases the chances to successfully perform a <b>Self-Unhook</b> by 
-                <b style="color: #e8c252;">2</b>/
-                <b style="color: #199b1e;">3</b>/
-                <b style="color: #ac3ee3;">4</b> %`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Other Survivors unhook you <b style="color: #e8c252;">90</b>/
+                <b style="color: #199b1e;">95</b>/
+                <b style="color: #ac3ee3;">100</b> % faster<br><br>
+                Whenever you are unhooked, you gain <b>5</b> % more <b>Haste</b> Status Effect`;
                 break;
             case "smaGam":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Small Game.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Small Game";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Receive an <b>auditory warning</b> upon looking in the direction of Totems in a <b>45° cone</b> within 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">10</b>/
-                <b style="color: #ac3ee3;">12</b> metres
-                <ul><li><i>Small Game</i> has a cooldown of 
-                <b style="color: #e8c252;">14</b>/
-                <b style="color: #199b1e;">12</b>/
-                <b style="color: #ac3ee3;">10</b> seconds each time it activates</li></ul>
-                For each <b>Dull or Hex Totem</b> cleansed by any Player, <i>Small Game</i> is automatically granted <b>+1 Token</b>:
-                <ul><li>Each <b>Token</b> reduces the Detection cone's angle by <b>5°</b>, down to a minimum of <b>20°</b></li></ul>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Within 
+                <b style="color: #e8c252;">10</b>/
+                <b style="color: #199b1e;">11</b>/
+                <b style="color: #ac3ee3;">12</b> metres of a <b>Totem</b>, you see it's <b>Aura</b>`;
                 break;
             case "spiChi":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Spine Chill.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Spine Chill";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the Killer is within <b>36 metres</b> of your location <b>and looking at you with a clear Line of Sight</b>, <i>Spine Chill</i> activates:
-                <dl><li>Warns of the Killer's proximity and their potential awareness of your location by <b>lighting its icon</b></li>
-                <li>Increases your Action speeds for Blessing, Cleansing, Gate-Opening, Healing, Repairing, Sabotaging, Unhooking, and Unlocking by 
-                <b style="color: #e8c252;">2</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">6</b> %</li>
-                <dd>- This effect lingers for <b>0.5 seconds</b> after the Killer loses Line of Sight or exits the Activation range</dd></dl>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the Killer is within <b>40 metres</b> of your location <b>and looking at you with a clear Line of Sight</b>, <i>Spine Chill</i> activates:
+                <dl><li>You are notified with an <b>audio cue</b></li>
+                <li>You cannot scream for <b>12</b> seconds</li>
+                <li>You vault <b>10</b>% faster for <b>12</b> seconds</li></dl>
+                <i>Spine Chill</i> has a cooldown of <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
             case "thiIsNotHap":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/This Is Not Happening.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "This is Not Happening";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Success zone of Great Skill Checks while Repairing and Healing by 
-                <b style="color: #e8c252;">10</b>/
-                <b style="color: #199b1e;">20</b>/
-                <b style="color: #ac3ee3;">30</b> % when in the Injured State`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "20pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Success zone of Good Skill Checks while Repairing and Healing by 
+                <b style="color: #e8c252;">150</b>/
+                <b style="color: #199b1e;">175</b>/
+                <b style="color: #ac3ee3;">200</b> %`;
                 break;
             case "weMakIt":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Universal/Well Make It.png";
@@ -3318,8 +3310,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `After unhooking another Survivor, <i>We'll Make It</i> activates:
                 <ul><li>Increases your Healing speed to <b>other Survivors</b> by <b>+100%</b> for 
-                <b style="color: #e8c252;">30</b>/
-                <b style="color: #199b1e;">60</b>/
+                <b style="color: #e8c252;">70</b>/
+                <b style="color: #199b1e;">80</b>/
                 <b style="color: #ac3ee3;">90</b> seconds</li></ul>`;
                 break;
     //Unique Survivor Perks Start
@@ -3433,10 +3425,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Prevents Crows from being alerted by your proximity and flying off, unless they are being stepped on<br><br>
                 Suppresses the <b>urge to scream from any cause</b> at all times<br><br>
                 Suppresses all noises related to <b>unlocking Chests</b>, and <b>cleansing or blessing Totems</b><br><br>
-                Reduces the Interaction speeds with <b>Chests</b> and <b>Totems</b> by 
-                <b style="color: #e8c252;">40</b>/
-                <b style="color: #199b1e;">35</b>/
-                <b style="color: #ac3ee3;">30</b> %`;
+                Speeds up the Interaction speeds with <b>Chests</b> and <b>Totems</b> by 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> %`;
                 break;
             case "iroWil":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jake Park/Iron Will.png";
@@ -3518,33 +3510,29 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "objOfObs":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Laurie Strode/Object of Obsession.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Object of Obsession";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever the <b>Killer reads your Aura</b>, <i>Object of Obsession</i> activates for the same duration as their Aura-reading action:
                 <ul><li>The <b>Aura of the Killer</b> is revealed to you</li>
-                <li>Increases your Action speeds for Cleansing, Healing, and Repairing actions by 
-                <b style="color: #e8c252;">2</b>/
-                <b style="color: #199b1e;">4</b>/
-                <b style="color: #ac3ee3;">6</b> %</li></ul>
+                <li>Increases your Action speeds for Cleansing, Blessing, Healing, and Repairing actions by 
+                <b style="color: #e8c252;">8</b>/
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> %</li></ul>
                 If you are the Killer's current <b>Obsession</b>, the following effect triggers automatically every <b>30 seconds</b>:
-                <ul><li><b>Your Aura</b> is revealed to the Killer for <b>3 seconds</b></li></ul>
+                <ul><li><b>Your Aura</b> is revealed to the Killer for <b>4 seconds</b></li></ul>
                 Increases your chance of becoming the <b>initial Obsession</b> by increasing the default value by <b>+100%</b>`;
                 break;
             case "solSur":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Laurie Strode/Sole Survivor.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Sole Survivor";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Each time a Survivor other than yourself is <b>killed or sacrificed</b>, <i>Sole Survivor</i> gains <b>+1 Token</b>, up to a maximum of <b>3 Tokens</b>:
-                <ul><li>Grants a stackable radius of 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">22</b>/
-                <b style="color: #ac3ee3;">24</b> metres per <b>Token</b> around you, up to a maximum of 
-                <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">66</b>/
-                <b style="color: #ac3ee3;">72</b> metres, within which you are <b>immune to the Killer's Aura-reading</b> abilities</li></ul>
-                When you are the <b>Last Survivor Standing</b>, you benefit from the following effects:
-                <ul><li>Increases your Repair speed by <b>+75%</b></li>
-                <li>Increases your Gate and Hatch Opening speeds by <b>+50%</b></li></ul>
-                Increases your chance of becoming the <b>initial Obsession</b> by increasing the default value by <b>+100%</b>`;
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever <b>you are hooked</b> or <b>complete a generator</b>, you earn <b>1 Token</b>, up to <b>6</b>.<br><br>
+                For each <b>Token</b>, <b>other Survivors</b> open Exit Gates <b>10</b> % faster.<br><br>
+                When you are the <b>last Survivor</b>, if you have at least <b>3 Tokens</b>:
+                <ul><li>You can <b>unlock the Hatch</b></li>
+                <li>For each <b>Token</b>, the <b>Killer cannot see your Aura</b> for 
+                <b style="color: #e8c252;">6</b>/
+                <b style="color: #199b1e;">8</b>/
+                <b style="color: #ac3ee3;">10</b> seconds</li></ul>`;
                 break;
         //Ace Visconti Perks
             case "aceInTheHol":
@@ -3694,13 +3682,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "pha":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Pharmacy.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Pharmacy";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Increases the Unlocking speed of <b>Chests</b> by 
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you <b>unlock a Chest</b>, it will contain a <b>rare Med-Kit</b>.<br><br>
+                You <b>unlock and rummage Chests</b> 
                 <b style="color: #e8c252;">75</b>/
                 <b style="color: #199b1e;">100</b>/
-                <b style="color: #ac3ee3;">125</b> %<br><br>
-                Reduces the audible range of all noises related to the <b>Unlocking interaction</b> by <b>12 metres</b><br><br>
-                <i>Pharmacy</i> guarantees an <b>Emergency Med-Kit</b> from <b>all Chests</b>`;
+                <b style="color: #ac3ee3;">125</b> % faster<br><br>
+                You can <b>rummage each Chest 1</b> time.<br><br>
+                The range at which the <b>Killer hears you unlocking Chests</b> is <b>12</b> meters shorter.`;
                 break;
             case "vig":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Vigil.png";
@@ -3717,17 +3706,14 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "wakUp":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Ouentin Smith/Wake Up.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Wake Up!";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Once all Generators are completed, <i>Wake Up!</i> activates:
                 <ul><li>The <b>Auras of the Exit Gate Switches</b> are revealed to you permanently while within <b>128 metres</b></li>
                 <li><b>Your Aura</b> is revealed to all other Survivors within <b>128 metres while you are opening an Exit Gate</b></li>
-                <li>Increases your Gate-Opening speed by a stackable 
+                <li>You open Exit Gates 
                 <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">10</b>/
-                <b style="color: #ac3ee3;">12.5</b> <b>% for each Survivor still alive</b> in the Trial, <b>including yourself</b>, up to a maximum of 
-                <b style="color: #e8c252;">32</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">50</b> %</li></ul>`;
+                <b style="color: #199b1e;">9</b>/
+                <b style="color: #ac3ee3;">10</b> % faster, and an additional <b>20% for each Survivor still alive</b> in the Trial</li></ul>`;
                 break;
         //David Tapp Perks
             case "detHun":
@@ -3746,16 +3732,15 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "staOut":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David Tapp/Stake Out.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Stake Out";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "10pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Staying in the <b>Terror Radius without being chased</b> grants <b>+1 Token every 15 seconds</b>, up to a maximum of 
                 <b style="color: #e8c252;">2</b>/
                 <b style="color: #199b1e;">3</b>/
                 <b style="color: #ac3ee3;">4</b> Tokens<br><br>
                 While performing a skillful interaction that can trigger Skill Checks, you benefit from the following effects:
-                <dl><li>Converts any Good Skill Check into a <b>Great Skill Check</b></li>
-                <dd>- This consumes <b>-1 Token</b></dd>
-                <li>Increases the Progression bonus of those Great Skill Checks by <b>+1 %</b></li></dl>
-                <i>Stake Out</i> does not apply to regular Great Skill Checks nor do they consume any Tokens`;
+                <dl><li>Converts any Skill Check into a <b>special Skill Check</b></li>
+                <dd>- Whenever you miss or hit this <b>special Skill Check</b>, consume <b>-1 Token</b></dd>
+                <li>Increases the Progression bonus of those Skill Checks by <b>+4 %</b></li></dl>`;
                 break;
             case "ten":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/David Tapp/Tenacity.png";
@@ -3798,10 +3783,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kate Denson/Windows of Opportunity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Windows of Opportunity";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras of Breakable Walls, Pallets, and Windows</b> are revealed to you within 
-                <b style="color: #e8c252;">24</b>/
-                <b style="color: #199b1e;">28</b>/
-                <b style="color: #ac3ee3;">32</b> metres`;
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `The <b>Auras of Windows</b> are revealed to you within <b>24</b> meters.<br><br>
+                You <b>vault Windows 10</b>% faster.<br><br>
+                Whenever you <b>vault a Window</b>, <i>Windows of Opportunity</i> goes on cooldown for 
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">30</b> seconds`;
                 break;
         //Adam Francis Perks
             case "aut":
@@ -3918,12 +3905,12 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "sol":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Jane Romero/Solidarity.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Solidarity";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "16pt";
-                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured and healing another Survivor without using a Med-Kit</b>, you benefit from the following effect:
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "17pt";
+                document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>injured and healing another Survivor</b>, you benefit from the following effect:
                 <ul><li>Passively heal yourself at a rate of 
-                <b style="color: #e8c252;">50</b>/
-                <b style="color: #199b1e;">60</b>/
-                <b style="color: #ac3ee3;">70</b> % of your Healing speed to the other Survivor</li></ul>`;
+                <b style="color: #e8c252;">65</b>/
+                <b style="color: #199b1e;">70</b>/
+                <b style="color: #ac3ee3;">75</b> % of your Healing speed to the other Survivor</li></ul>`;
                 break;
         //Ash Williams Perks
             case "bucUp":
@@ -4115,7 +4102,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "bloPac":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Cheryl Mason/Blood Pact.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Blood Pact";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "9.5pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "8.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When either you or the <b>Obsession</b> become <b>injured</b> by any means, <i>Blood Pact</i> activates:
                 <dl><li>Your <b>Auras</b> are constantly revealed to one another</li>
                 <li>Completing a Healing Action on the <b>Obsession</b> or having them complete one on yourself, grants both of you a 
@@ -4123,7 +4110,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #199b1e;">6</b>/
                 <b style="color: #ac3ee3;">7</b> % <b>Haste</b> Status Effect</li>
                 <dd>- This effect lasts for as long as you both remain within <b>16 metres</b> of one another</dd></dl>
-                <i>Blood Pact</i> is temporarily disabled if you yourself are the <b>Obsession</b><br><br>
+                While <b>you are the Obsession</b> if you are hooked <b>another Survivor becomes the Obsession</b>.<br><br>
                 Reduces your chance of becoming the <b>initial Obsession</b> by reducing the default value by <b>-100%</b>`;
                 break;
             case "repAll":
@@ -4245,9 +4232,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "18pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever another Survivor is hooked, <i>Self-Preservation</i> activates:
                 <ul><li>Grants the <b>Elusive</b> Status Effect for 
-                <b style="color: #e8c252;">20</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">30</b> seconds</li></ul>`;
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b> seconds</li></ul>`;
                 break;
             case "smaHit":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/YunJin Lee/Smash Hit.png";
@@ -4435,13 +4422,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "empCon":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yoichi Asakawa/Empathic Connection.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Empathic Connection";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While other Survivors are in the <b>Injured State</b>, they benefit from the following effects:
                 <ul><li><b>Your Aura</b> is revealed to them</li>
                 <li>Increases your Healing speed to other Survivors by 
-                <b style="color: #e8c252;">25</b>/
-                <b style="color: #199b1e;">30</b>/
-                <b style="color: #ac3ee3;">35</b> %</li></ul>`;
+                <b style="color: #e8c252;">30</b>/
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> %</li></ul>`;
                 break;
             case "parGui":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Yoichi Asakawa/Parental Guidance.png";
@@ -4531,9 +4518,9 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "15.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Completing a Healing action on <b>another Survivor</b> grants them the following benefits until <b>they receive damage</b> again:
                 <ul><li>Increases their Action speeds for Blessing, Cleansing, Healing, and Unlocking by 
-                <b style="color: #e8c252;">12</b>/
-                <b style="color: #199b1e;">14</b>/
-                <b style="color: #ac3ee3;">16</b> %</li></ul>`;
+                <b style="color: #e8c252;">40</b>/
+                <b style="color: #199b1e;">45</b>/
+                <b style="color: #ac3ee3;">50</b> %</li></ul>`;
                 break;
             case "hyp":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Rebecca Chambers/Hyperfocus.png";
@@ -4617,10 +4604,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perk" + (i + 1)).innerHTML = "Friendly Competition";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "14.5pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever you complete a Generator <b>with at least one other Survivor</b>, <i>Friendly Competition</i> activates:
-                <ul><li>Increases your Repair speed, and that of the other Survivor(s) who completed the repairs with you, by <b>+5%</b> for the next 
-                <b style="color: #e8c252;">100</b>/
-                <b style="color: #199b1e;">110</b>/
-                <b style="color: #ac3ee3;">120</b> seconds</li></ul>`;
+                <ul><li>Increases your Repair speed, and that of the other Survivor(s) who completed the repairs with you, by <b>+10%</b> for the next 
+                <b style="color: #e8c252;">80</b>/
+                <b style="color: #199b1e;">85</b>/
+                <b style="color: #ac3ee3;">90</b> seconds</li></ul>`;
                 break;
             case "teaPowOfTwo":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Thalita Lyra/Teamwork_Power of Two.png";
@@ -4809,10 +4796,10 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 Soft chimes ring out in a radius of <b>24 metres</b>.<br><br>
                 All Survivors benefit from the following effects when inside the <b>Boon Totem's radius</b>:
                 <ul><li>The <b>Auras of all Chests and Generators</b> are revealed to you in <b>blue</b></li></ul>
-                Increases your Action speeds for Blessing and Cleansing by 
-                <b style="color: #e8c252;">6</b>/
-                <b style="color: #199b1e;">8</b>/
-                <b style="color: #ac3ee3;">10</b> % while you have a <b>lit Boon Totem</b>.<br><br>
+                Increases your Action speeds for Blessing by 
+                <b style="color: #e8c252;">150</b>/
+                <b style="color: #199b1e;">175</b>/
+                <b style="color: #ac3ee3;">200</b> % while you have a <b>lit Boon Totem</b>.<br><br>
                 Survivors can only be affected by <b>one instance</b> of <i>Boon: Illumination</i> at a time.<br><br>
                 Only <b>one Totem</b> can be blessed by your <b>Boon Perks</b> at a time and all of their effects are active on the <b>same Boon Totem</b>`;
                 break;
@@ -5021,13 +5008,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "shoTheBur":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Taurie Cain/Shoulder the Burden.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Shoulder the Burden";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<b>Once per Trial</b>, and while <b>you are not on Death Hook</b>, press the <b>Active Ability button</b> while <b>standing in front of a Hooked Survivor</b> to unhook them and trigger the following effects:
                 <ul><li>Trade <b>1 Hook Stage with the other Survivor</b> to their benefit</li>
-                <li>Causes you to <b>scream</b> and suffer from the <b>Exposed</b> Status Effect for 
-                <b style="color: #e8c252;">30</b>/
-                <b style="color: #199b1e;">25</b>/
-                <b style="color: #ac3ee3;">20</b> seconds</li></ul>`;
+                <li>Causes you to <b>scream</b>, become <b>injured</b>, and suffer from the <b>Broken</b> Status Effect for 
+                <b style="color: #e8c252;">160</b>/
+                <b style="color: #199b1e;">140</b>/
+                <b style="color: #ac3ee3;">120</b> seconds</li></ul>`;
                 break;
         //Orela Rose Perks
             case "doNoHar":
@@ -5037,12 +5024,13 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `When healing another Survivor, depending on <b>their accumulated Hook Stages</b>, you benefit from the following effects:
                 <ul><li>Increases your Healing speed to other Survivors by 
                 <b style="color: #e8c252;">30</b>/
-                <b style="color: #199b1e;">40</b>/
-                <b style="color: #ac3ee3;">50</b> % <b>per Hook Stage</b>, up to a maximum of 
+                <b style="color: #199b1e;">35</b>/
+                <b style="color: #ac3ee3;">40</b> % <b>per Hook Stage</b>, up to a maximum of 
                 <b style="color: #e8c252;">60</b>/
-                <b style="color: #199b1e;">80</b>/
-                <b style="color: #ac3ee3;">100</b> %</li>
-                <li>Increases the Progression bonus of <b>Great Healing Skill Checks</b> by <b>+3% per Hook Stage</b>, up to a maximum of <b>+6%</b></li></ul>`;
+                <b style="color: #199b1e;">70</b>/
+                <b style="color: #ac3ee3;">80</b> %</li>
+                <li>Increases the Progression bonus of <b>Great Healing Skill Checks</b> by <b>+3</b> %</li>
+                <li>Increase the odds of triggering a Skill Check by <b>5</b> %</li></ul>`;
                 break;
             case "dutOfCar":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Orela Rose/Duty of Care.png";
@@ -5177,8 +5165,8 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 <b style="color: #e8c252;">6</b>/
                 <b style="color: #199b1e;">5</b>/
                 <b style="color: #ac3ee3;">4</b> Tokens, consume <b>all Tokens</b> to benefit from the following effect:
-                <ul><li>Increases <b>your Healing speed</b> by <b>100%</b> until <b>you stop healing</b></li></ul>
-                <i>Road Life</i> deactivates after use and does not activate while suffering from the <b>Broken Status Effect</b>.<br>
+                <dl><li>You can heal yourself <b>10</b> % faster</li>
+                <dd>- When you stop healing, this ends after <b>4</b> seconds</dd></dl>
                 <i>Road Life</i> does not interact with <b>special Skill Checks</b> triggered by outside effects.`;
                 break;
         //Dustin Henderson Perks
@@ -5253,7 +5241,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
         
         //Kwon Tae-young Perks
             case "aPlaForUs":
-                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/A Place for Us.png";
+                document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/APlaceforUs.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "A Place for Us";
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "13pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `While <b>healing another Survivor</b>, both you and the healed Survivor gain the <b>Elusive</b> Status Effect<br><br>
@@ -5269,7 +5257,7 @@ function fixedPerks(perk1,perk2,perk3,perk4){
                 document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `<i>Five Moves Ahead</i> activates while you are <b>being chased by the Killer</b> or are <b>inside the Killer's Terror Radius</b>:
                 <ul><li>Perform the <b>Pallet Drop</b> interaction <b>50%</b> faster.</li>
-                <li>See the <b>Auras</b> of the <b>5</b> closest <b>Pallets</b> and <b>Windows</b></li></ul>
+                <li>See the <b>Auras</b> of the <b>5</b> closest <b>Pallets</b></li></ul>
                 <i>Five Moves Ahead</i> goes on a 
                 <b style="color: #e8c252;">40</b>/
                 <b style="color: #199b1e;">35</b>/
@@ -5278,21 +5266,21 @@ function fixedPerks(perk1,perk2,perk3,perk4){
             case "floSta":
                 document.getElementById("perk" + (i + 1) + "Img").src="DBD Website/Survivor/Characters/Kwon Tae-young/Flow State.png";
                 document.getElementById("perk" + (i + 1)).innerHTML = "Flow State";
-                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "12pt";
+                document.getElementById("perkTooltip" + (i + 1)).style.fontSize = "11pt";
                 document.getElementById("perkTooltip" + (i + 1)).innerHTML = `Whenever a <b>Generator is completed</b>, you gain a Token, up to a maximum of <b>5 Tokens</b>.<br><br>
                 For <b>each Token</b>:
                 <ul><li><b>Bless and cleanse Totems</b> 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b>% faster.</li>
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b>% faster.</li>
                 <li><b>Heal</b> 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b>% faster.</li>
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b>% faster.</li>
                 <li><b>Unhook Survivors</b> 
-                <b style="color: #e8c252;">8</b>/
-                <b style="color: #199b1e;">9</b>/
-                <b style="color: #ac3ee3;">10</b>% faster.</li></ul>`;
+                <b style="color: #e8c252;">13</b>/
+                <b style="color: #199b1e;">14</b>/
+                <b style="color: #ac3ee3;">15</b>% faster.</li></ul>`;
                 break;
         //Shane Wiigwaas Perks
             case "croExa":
